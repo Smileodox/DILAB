@@ -1,0 +1,17 @@
+Background 
+Strategic technology foresight is not about predicting the future, but about exploring possible futures, to enable us to make the right business and technology decisions today (for some background reading, check out Professor von der Gracht, oder Professor Florence Gaub). 
+ 
+There are some established techniques in the field of technology foresight, such as scenario planning which lend themselves to automation or at the very least, augmentation with large language models / AI.  This enables us for example to explore many more possible futures, than is normally manually feasible (think Dr. Strange in “Endgame”). 
+ 
+We want to explore automated technology foresight within and around the technology domains of our organisation.  How can we identify critical technology drivers and the corresponding capabilities that they enable, and how can we do this at scale? 
+ 
+Objectives 
+Identification and collection of a relevant knowledge base, spanning everything from science fiction literature, to latest technology research to our web-page.  This is critical to ensure groundedness of LLM statements (we want to rather exploit an LLMs capabilities than its knowledge) 
+Identification and description of the most important technology drivers. Some examples will include massive multi-sensor networks, mobility (unmanned vehicles, robots and drones), GPU power, receivers in space and so on. Here it is critical to have a good descriptive structure, e.g. some kind of knowledge tree or knowledge graph.
+By making assumptions on how different technology drivers may develop, and also if new drivers enter the playing field, we can create plausible future scenarios, e.g. a day in the life of a spectrum monitoring operator in 2035.  If we do this in a reliable way, we can perform this at scale. 
+Lastly we need to analyse the results.  Which scenarios were particularly impactful and how probable are they.  This helps us to map our plan for now so that we are ready when the future arrives! 
+ 
+Scope 
+The scope is partially already described above. 
+The target result would be for one product domain to have achieved each of the objectives.  This would be in the form of a presentation or report, describing the results, the roadblocks and hurdles, and ideally the insights we were able to gain. 
+Ideally a small python library or app has been generated, such that this is not a one off effort, but can be applied to arbitrary further product domains. 
