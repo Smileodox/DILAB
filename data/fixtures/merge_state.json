@@ -1,0 +1,334 @@
+{
+  "unified_drivers": [
+    {
+      "id": "ca9ace6bafb0",
+      "name": "Ultra Wideband RF Frontend and Millimeter-Wave/Sub-THz Spectrum Monitoring",
+      "description": "BOM: Covers frequency range from 8 kHz to 40 GHz enabling reception of a broad spectrum including mmWave bands. Ultra Wideband RF Frontends covering an extremely broad frequency range from 8 kHz to 40 GHz, | Trend: New spectrum allocations above 24 GHz, including millimeter-wave bands (24-47 GHz) and sub-THz frequencies (100-300 GHz), are being designated for 5G and 6G use.. Impact: The expansion of spectrum mon",
+      "origin": "both",
+      "confidence": "high",
+      "bom_node_id": "a823f9622d08",
+      "source_chunk_ids": [
+        "1e8a7e2f7123",
+        "a45f2f413b77",
+        "b346caa67981",
+        "bbcd106cb48c",
+        "28d8ca4efd25",
+        "8e50d93cb7ee",
+        "116b040f244d",
+        "2791b93d374d",
+        "a6a655193dbe",
+        "c2519cd9e984"
+      ],
+      "merge_reasoning": "The BOM driver describes ultra wideband RF frontends covering 8 kHz to 40 GHz including mmWave bands, matching trend drivers focused on expansion into millimeter-wave and sub-THz frequency monitoring (24-47 GHz and 100-300 GHz)."
+    },
+    {
+      "id": "48a044afb0c0",
+      "name": "High Sensitivity Receiver and Quantum RF Sensing with Rydberg Atoms",
+      "description": "BOM: Provides exceptional RF sensitivity (e.g., -164 dBm DANL) and high dynamic range for detecting weak signals in dense signal environments. High sensitivity receivers are critical components in regulato | Trend: Use of Rydberg atom-based electric field sensors that detect RF signals across an extremely wide frequency range (DC to THz) with ultra-high sensitivity approaching quantum limits. These sensors offer",
+      "origin": "both",
+      "confidence": "high",
+      "bom_node_id": "8ef051ea7d93",
+      "source_chunk_ids": [
+        "1e8a7e2f7123",
+        "bbcd106cb48c",
+        "b346caa67981",
+        "28d8ca4efd25",
+        "8e50d93cb7ee",
+        "fa3fdb690ed9",
+        "116b040f244d",
+        "2791b93d374d",
+        "a6a655193dbe",
+        "c2519cd9e984"
+      ],
+      "merge_reasoning": "The BOM driver focuses on high sensitivity RF receivers for weak signal detection, which aligns with trend drivers describing quantum RF sensing technologies using Rydberg atoms offering ultra-high sensitivity across wide frequency ranges."
+    },
+    {
+      "id": "4842454330e8",
+      "name": "Real-Time Digitizer and Photonic Signal Processing for Ultra-Wideband Monitoring",
+      "description": "BOM: Digitizes incoming RF signals with up to 2 GHz instantaneous bandwidth for wideband signal capture and analysis. Real-time digitizers with multi-GHz instantaneous bandwidth are critical components in  | Trend: Use of microwave photonics including photonic ADCs and optical beamforming to achieve ultra-wideband signal processing beyond electronic limits with reduced size, weight, and power consumption.. Impac",
+      "origin": "both",
+      "confidence": "high",
+      "bom_node_id": "e4ca380ed953",
+      "source_chunk_ids": [
+        "1e8a7e2f7123",
+        "b346caa67981",
+        "28d8ca4efd25",
+        "fa3fdb690ed9",
+        "2791b93d374d",
+        "c2519cd9e984"
+      ],
+      "merge_reasoning": "The BOM driver digitizes RF signals with multi-GHz bandwidth for wideband capture, matching trend drivers describing photonic signal processing and photonic ADCs enabling ultra-wideband signal processing beyond electronic limits."
+    },
+    {
+      "id": "9a3bc0fdb612",
+      "name": "Panorama Scan Engine and Shift to Continuous, Automated, Real-Time Spectrum Monitoring",
+      "description": "BOM: Performs ultra-fast spectrum scanning at rates up to 2.6 THz/s to detect transient and frequency-hopping signals. The Panorama Scan Engine performs ultra-fast spectrum scanning at extremely high rates | Trend: Regulatory frameworks and spectrum sharing regimes are moving from periodic compliance checks to continuous, automated, real-time monitoring integrated into network infrastructure.. Impact: The shift ",
+      "origin": "both",
+      "confidence": "high",
+      "bom_node_id": "7a81ad62742d",
+      "source_chunk_ids": [
+        "1e8a7e2f7123",
+        "b346caa67981",
+        "28d8ca4efd25",
+        "116b040f244d",
+        "a6a655193dbe",
+        "c2519cd9e984"
+      ],
+      "merge_reasoning": "The BOM driver performs ultra-fast spectrum scanning to detect transient signals, which supports the trend towards continuous, automated, real-time spectrum monitoring frameworks."
+    },
+    {
+      "id": "908595a5a7a6",
+      "name": "I/Q Data Streaming Interface and Edge Computing for Distributed Spectrum Monitoring",
+      "description": "BOM: Streams digitized I/Q data via 100 Gigabit Ethernet for offline processing and analysis. The I/Q Data Streaming Interface, which streams digitized I/Q data via 100 Gigabit Ethernet for offline process | Trend: Processing data locally at sensor nodes using edge computing integrated with 5G/6G infrastructure, reducing bandwidth needs and enabling real-time local decision-making.. Impact: Edge computing for di",
+      "origin": "both",
+      "confidence": "high",
+      "bom_node_id": "3d612229b37c",
+      "source_chunk_ids": [
+        "1e8a7e2f7123",
+        "b346caa67981",
+        "28d8ca4efd25",
+        "fa3fdb690ed9",
+        "2791b93d374d",
+        "c2519cd9e984"
+      ],
+      "merge_reasoning": "The BOM driver streams digitized I/Q data for offline processing, which complements trend drivers emphasizing edge computing at sensor nodes integrated with 5G/6G infrastructure for real-time local processing."
+    },
+    {
+      "id": "0c6f77459f97",
+      "name": "Direction Finding Module and Space-Based Spectrum Monitoring via LEO Satellite Constellations",
+      "description": "BOM: Implements Angle of Arrival (AoA) and Time Difference of Arrival (TDOA) techniques for geolocation of signal sources. Direction Finding technologies such as Angle of Arrival (AoA) and Time Difference  | Trend: Deployment of low Earth orbit satellite constellations equipped with spectrum monitoring payloads (including cubesats) to provide global, continuous, and remote area coverage of spectrum usage.. Impac",
+      "origin": "both",
+      "confidence": "high",
+      "bom_node_id": "bb4b484dae4c",
+      "source_chunk_ids": [
+        "1e8a7e2f7123",
+        "b346caa67981",
+        "28d8ca4efd25",
+        "fa3fdb690ed9",
+        "116b040f244d",
+        "2791b93d374d",
+        "a6a655193dbe",
+        "c2519cd9e984"
+      ],
+      "merge_reasoning": "The BOM driver implements AoA and TDOA for geolocation of signals, which relates to trend drivers deploying LEO satellite constellations with spectrum monitoring payloads for global geolocation and monitoring."
+    },
+    {
+      "id": "748495722079",
+      "name": "AI-Driven Spectrum Sensing, Prediction, and Dynamic Spectrum Access in Cognitive Radio Networks",
+      "description": "BOM: Processes received signals and ensures measurements comply with ITU regulatory standards. Signal processing and compliance engines in regulatory frequency monitoring are subject to ongoing R&D to hand | Trend: The integration of AI and machine learning models such as CNNs, LSTMs, GNNs, and multi-agent reinforcement learning enables real-time, adaptive, and distributed spectrum sensing and access. Frameworks",
+      "origin": "both",
+      "confidence": "high",
+      "bom_node_id": "4cfd620424eb",
+      "source_chunk_ids": [
+        "1e8a7e2f7123",
+        "a45f2f413b77",
+        "b346caa67981",
+        "229c6a558520",
+        "bbcd106cb48c",
+        "8e50d93cb7ee",
+        "28d8ca4efd25",
+        "2791b93d374d",
+        "25e1fb29cca9",
+        "a6a655193dbe",
+        "c2519cd9e984"
+      ],
+      "merge_reasoning": "The BOM driver processes signals ensuring regulatory compliance, aligning with trend drivers integrating AI and machine learning models for real-time adaptive spectrum sensing and compliance."
+    },
+    {
+      "id": "b9c3a7851f44",
+      "name": "Federated Learning and Energy-Efficient AI Architectures for Secure and Decentralized Spectrum Monitoring",
+      "description": "Federated learning enables decentralized AI model training across distributed cognitive radio networks without sharing raw data, addressing privacy and communication overhead. Energy-efficient AI architectures are being developed to reduce computational complexity and adapt to real-time environments.. Impact: Federated learning combined with energy-efficient AI architectures significantly enhances regulatory frequency monitoring by enabling decentralized, privacy-preserving, and communication-efficient spectrum sensing across distributed networks such as UAV swarms. This approach addresses key challenges in traditional centralized monitoring, including data privacy concerns, communication overhead, and computational limitations at edge devices. The proposed FedSNR aggregation method improves model accuracy by weighting updates based on signal quality, which is critical in dynamic and noisy environments. Lightweight CNN models optimized for resource-constrained devices allow real-time, adaptive spectrum sensing in 3D environments, improving detection of primary users and minimizing interference. Overall, this trend facilitates more scalable, accurate, and energy-efficient regulatory monitoring of spectrum usage, supporting dynamic spectrum access and compliance enforcement in increasingly complex wireless ecosystems anticipated with 6G and beyond.",
+      "origin": "trend",
+      "confidence": "low",
+      "bom_node_id": null,
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "bbcd106cb48c",
+        "b346caa67981",
+        "229c6a558520",
+        "8e50d93cb7ee",
+        "28d8ca4efd25",
+        "2791b93d374d",
+        "25e1fb29cca9",
+        "a6a655193dbe"
+      ],
+      "merge_reasoning": ""
+    },
+    {
+      "id": "ecbcd4440682",
+      "name": "AI-Enabled Software-Defined Radio (SDR) and Open Radio Access Networks (ORAN) Modular Architectures",
+      "description": "Transition to fully software-defined radio architectures with direct RF sampling ADCs and integration of machine learning for automatic modulation recognition and signal classification.. Impact: The evolution to fully software-defined radio (SDR) architectures with direct RF sampling ADCs and integrated machine learning significantly enhances regulatory frequency monitoring by enabling rapid reconfiguration to new waveforms, standards, and frequency bands, thus improving adaptability and responsiveness. Machine learning facilitates automatic modulation recognition and signal classification, increasing the accuracy and efficiency of identifying unauthorized or non-compliant transmissions. This reduces reliance on hardware changes and manual analysis, enabling real-time, intelligent spectrum monitoring. Combined with edge computing, these advancements allow distributed, local processing at sensor nodes, reducing bandwidth needs and enabling faster decision-making. Overall, this trend supports more dynamic, scalable, and precise regulatory monitoring in increasingly congested and complex spectrum environments anticipated with 6G and beyond.",
+      "origin": "trend",
+      "confidence": "low",
+      "bom_node_id": null,
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "bbcd106cb48c",
+        "b346caa67981",
+        "229c6a558520",
+        "28d8ca4efd25",
+        "8e50d93cb7ee",
+        "fa3fdb690ed9",
+        "2791b93d374d",
+        "25e1fb29cca9"
+      ],
+      "merge_reasoning": ""
+    },
+    {
+      "id": "949506c3c6e4",
+      "name": "Dynamic Spectrum Sharing and Real-Time Automated Environmental Sensing Capability (ESC) Networks",
+      "description": "Expansion of dynamic spectrum sharing frameworks (e.g., CBRS) with automated real-time environmental sensing networks to enable shared access and enforcement.. Impact: The expansion of dynamic spectrum sharing frameworks like CBRS combined with automated real-time Environmental Sensing Capability (ESC) networks significantly transforms regulatory frequency monitoring by embedding real-time, automated spectrum sensing and enforcement into the network infrastructure. This shift moves monitoring from periodic external checks to continuous, automated compliance verification, enabling regulators to manage spectrum access dynamically and efficiently. It necessitates advanced monitoring equipment capable of operating in diverse frequency bands (including millimeter-wave and sub-THz ranges) and integrating AI-driven spectrum sensing and prediction models to handle complex, nonlinear spectrum data. Additionally, the trend drives harmonization of monitoring standards and cross-border coordination, especially in regions like Europe, to support dynamic spectrum management frameworks.",
+      "origin": "trend",
+      "confidence": "low",
+      "bom_node_id": null,
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "b346caa67981",
+        "28d8ca4efd25",
+        "8e50d93cb7ee",
+        "fa3fdb690ed9",
+        "2791b93d374d",
+        "a6a655193dbe"
+      ],
+      "merge_reasoning": ""
+    },
+    {
+      "id": "9da500c3abd4",
+      "name": "AI-Native 6G Networks with Embedded Spectrum Sensing",
+      "description": "6G networks will integrate AI-driven, self-learning capabilities that embed spectrum sensing directly into network infrastructure rather than relying on external monitoring devices.. Impact: The integration of AI-driven, self-learning spectrum sensing directly into 6G network infrastructure fundamentally transforms regulatory frequency monitoring by shifting from reliance on external monitoring devices to embedded, real-time, automated compliance verification. This enables continuous, dynamic spectrum access management and more efficient spectrum utilization, requiring regulators to adopt new frameworks that support real-time data collection, AI-based analysis, and decentralized monitoring approaches. Additionally, the convergence with edge computing and federated learning introduces challenges and opportunities for energy-efficient, cooperative spectrum sensing, necessitating updates in regulatory standards and cross-border coordination mechanisms.",
+      "origin": "trend",
+      "confidence": "low",
+      "bom_node_id": null,
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "b346caa67981",
+        "229c6a558520",
+        "28d8ca4efd25",
+        "8e50d93cb7ee",
+        "116b040f244d",
+        "25e1fb29cca9",
+        "a6a655193dbe"
+      ],
+      "merge_reasoning": ""
+    },
+    {
+      "id": "28f017831151",
+      "name": "Cross-Border and Harmonized Spectrum Monitoring Coordination",
+      "description": "European initiatives such as ETSI EN 303 420, CEPT ECC harmonization, and the Digital Single Market promote coordinated, standardized spectrum monitoring equipment and dynamic spectrum management across national borders.. Impact: The trend toward cross-border and harmonized spectrum monitoring in Europe significantly transforms regulatory frequency monitoring by promoting standardized equipment requirements (ETSI EN 303 420) and coordinated approaches across national administrations (CEPT ECC harmonization). This enables more efficient, dynamic spectrum management aligned with the European Electronic Communications Code and Digital Single Market initiatives, facilitating real-time, automated compliance verification and cross-border data sharing. Such harmonization reduces fragmentation, improves monitoring consistency, and supports advanced spectrum sharing and interference management in increasingly dense 5G/6G environments.",
+      "origin": "trend",
+      "confidence": "low",
+      "bom_node_id": null,
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "b346caa67981",
+        "8e50d93cb7ee",
+        "28d8ca4efd25",
+        "116b040f244d",
+        "a6a655193dbe"
+      ],
+      "merge_reasoning": ""
+    },
+    {
+      "id": "f73e1de8ec1e",
+      "name": "Increasing Cybersecurity Requirements for Monitoring Infrastructure",
+      "description": "Monitoring systems are becoming networked and must resist sophisticated cyber threats, including nation-state level attacks.. Impact: Increasing cybersecurity requirements significantly transform regulatory frequency monitoring by necessitating networked monitoring systems that can withstand sophisticated cyber threats, including nation-state level attacks. This drives a shift from traditional periodic compliance checks to continuous, automated, and real-time monitoring embedded within network infrastructure. Monitoring equipment must incorporate advanced security features and anomaly detection capabilities, often leveraging AI and machine learning to detect and adapt to novel cyberattacks. Regulators become active technology buyers, requiring long-term procurement strategies that balance security robustness with evolving technology adoption. Additionally, the complexity of interference management in dense 5G/6G environments and new spectrum bands (including sub-THz and above 100 GHz) further amplifies the need for secure, resilient monitoring infrastructure.",
+      "origin": "trend",
+      "confidence": "low",
+      "bom_node_id": null,
+      "source_chunk_ids": [
+        "b346caa67981",
+        "116b040f244d",
+        "a6a655193dbe",
+        "28d8ca4efd25"
+      ],
+      "merge_reasoning": ""
+    },
+    {
+      "id": "9150c7269776",
+      "name": "Digital Twin Networks for Spectrum Monitoring",
+      "description": "Creation of dynamic, cognitive replicas of physical networks that generate intelligence from historical and real-time data to enable self-boosting, self-evolving, and self-optimizing network functionalities.. Impact: Digital Twin Networks (DTNs) for spectrum monitoring significantly enhance regulatory frequency monitoring by providing dynamic, real-time, and cognitive replicas of physical wireless networks. This enables continuous, precise, and predictive monitoring of spectrum usage and network behaviors, allowing regulators to detect anomalies, optimize spectrum allocation, and verify new functionalities before deployment. The integration of AI, semantic communications, and 6G technologies within DTNs facilitates self-boosting, self-evolving, and self-optimizing capabilities, improving the accuracy and responsiveness of frequency monitoring systems. Additionally, DTNs support real-time synchronization and closed-loop control between physical networks and their digital counterparts, enabling proactive decision-making and adaptive management of spectrum resources. This leads to more efficient spectrum utilization, enhanced detection of unauthorized or anomalous transmissions, and improved enforcement of regulatory policies.",
+      "origin": "trend",
+      "confidence": "low",
+      "bom_node_id": null,
+      "source_chunk_ids": [
+        "bbcd106cb48c",
+        "8e50d93cb7ee",
+        "2791b93d374d",
+        "28d8ca4efd25"
+      ],
+      "merge_reasoning": ""
+    }
+  ],
+  "merge_result": {
+    "matches": [
+      {
+        "bom_driver_index": 0,
+        "trend_driver_index": 12,
+        "unified_name": "Ultra Wideband RF Frontend and Millimeter-Wave/Sub-THz Spectrum Monitoring",
+        "reasoning": "The BOM driver describes ultra wideband RF frontends covering 8 kHz to 40 GHz including mmWave bands, matching trend drivers focused on expansion into millimeter-wave and sub-THz frequency monitoring (24-47 GHz and 100-300 GHz)."
+      },
+      {
+        "bom_driver_index": 1,
+        "trend_driver_index": 5,
+        "unified_name": "High Sensitivity Receiver and Quantum RF Sensing with Rydberg Atoms",
+        "reasoning": "The BOM driver focuses on high sensitivity RF receivers for weak signal detection, which aligns with trend drivers describing quantum RF sensing technologies using Rydberg atoms offering ultra-high sensitivity across wide frequency ranges."
+      },
+      {
+        "bom_driver_index": 2,
+        "trend_driver_index": 9,
+        "unified_name": "Real-Time Digitizer and Photonic Signal Processing for Ultra-Wideband Monitoring",
+        "reasoning": "The BOM driver digitizes RF signals with multi-GHz bandwidth for wideband capture, matching trend drivers describing photonic signal processing and photonic ADCs enabling ultra-wideband signal processing beyond electronic limits."
+      },
+      {
+        "bom_driver_index": 3,
+        "trend_driver_index": 18,
+        "unified_name": "Panorama Scan Engine and Shift to Continuous, Automated, Real-Time Spectrum Monitoring",
+        "reasoning": "The BOM driver performs ultra-fast spectrum scanning to detect transient signals, which supports the trend towards continuous, automated, real-time spectrum monitoring frameworks."
+      },
+      {
+        "bom_driver_index": 4,
+        "trend_driver_index": 8,
+        "unified_name": "I/Q Data Streaming Interface and Edge Computing for Distributed Spectrum Monitoring",
+        "reasoning": "The BOM driver streams digitized I/Q data for offline processing, which complements trend drivers emphasizing edge computing at sensor nodes integrated with 5G/6G infrastructure for real-time local processing."
+      },
+      {
+        "bom_driver_index": 5,
+        "trend_driver_index": 6,
+        "unified_name": "Direction Finding Module and Space-Based Spectrum Monitoring via LEO Satellite Constellations",
+        "reasoning": "The BOM driver implements AoA and TDOA for geolocation of signals, which relates to trend drivers deploying LEO satellite constellations with spectrum monitoring payloads for global geolocation and monitoring."
+      },
+      {
+        "bom_driver_index": 6,
+        "trend_driver_index": 0,
+        "unified_name": "Signal Processing and Compliance Engine and AI-Driven Dynamic Spectrum Sensing and Cognitive Radio Networks",
+        "reasoning": "The BOM driver processes signals ensuring regulatory compliance, aligning with trend drivers integrating AI and machine learning models for real-time adaptive spectrum sensing and compliance."
+      }
+    ],
+    "bom_only": [],
+    "trend_only": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  }
+}

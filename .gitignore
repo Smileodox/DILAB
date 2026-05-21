@@ -11,3 +11,4 @@ data/outputs/
 dist/
 build/
 .chroma/
+*_executed.ipynb
