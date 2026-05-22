@@ -10,6 +10,11 @@ _client = None
 def get_client() -> AzureOpenAI:
     global _client
     if _client is None:
+        if not config.AZURE_OPENAI_ENDPOINT or not config.AZURE_OPENAI_API_KEY:
+            raise RuntimeError(
+                "AZURE_OPENAI_ENDPOINT and AZURE_OPENAI_API_KEY must be set. "
+                "Copy .env.example to .env and fill in your credentials."
+            )
         _client = AzureOpenAI(
             azure_endpoint=config.AZURE_OPENAI_ENDPOINT,
             api_key=config.AZURE_OPENAI_API_KEY,

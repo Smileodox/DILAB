@@ -37,8 +37,23 @@ Four scenarios are constructed from different driver-state combinations:
 
 A **CIB consistency check** validates that driver-state assumptions don't contradict the cross-impact matrix (e.g., if A="breakthrough" and CIB[A→B] is strongly negative, B cannot also be "breakthrough"). Each scenario is generated with RAG-grounded context to maintain source traceability.
 
-### 7. Comparative Scenario Assessment
-All scenarios are evaluated in a single **batch prompt with forced ranking** — the LLM must assign distinct Impact (1–10) and Probability (1–10) scores with explicit calibration anchors. Confidence is computed from the mean driver confidence of each scenario's assumptions. Results are visualized as an Impact vs. Probability matrix with confidence overlay.
+### 7. Multi-Criteria Scenario Assessment (MCDA)
+All scenarios are evaluated in a single **batch prompt with forced ranking** across five criteria:
+- **Impact** (1–10): How transformative the scenario is for R&S products and the domain
+- **Probability** (1–10): Likelihood of materialization by 2035
+- **Actionability** (1–10): How much R&S can proactively prepare or influence the outcome
+- **Time Horizon** (1–10, 10 = imminent): How soon effects will be felt
+- **Risk Severity** (1–10): Severity of consequences if R&S fails to prepare
+
+Confidence is computed from the mean driver confidence of each scenario's assumptions.
+
+The raw scores are then processed through a two-stage **Multi-Criteria Decision Analysis (MCDA)**:
+
+1. **AHP (Analytic Hierarchy Process)** derives criterion weights from a pairwise comparison matrix. Each pair of criteria is compared on Saaty's 1–9 scale (how much more important is criterion A vs. B?). The eigenvector of the comparison matrix yields normalized weights, and a consistency ratio (CR < 0.10) validates that the comparisons are logically coherent. Default weights encode: Impact > Probability ≥ Risk Severity > Time Horizon > Actionability.
+
+2. **TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution)** ranks scenarios using the AHP-weighted criteria. The decision matrix is vector-normalized, weighted, then each scenario's Euclidean distance to the ideal best and ideal worst solutions is computed. The closeness coefficient C = D⁻/(D⁺+D⁻) produces a single composite score (0–1) per scenario, enabling a definitive ranking.
+
+Results are visualized as an MCDA ranking bar chart, a criteria radar overlay, and the classic Impact vs. Probability scatter with MCDA rank annotations.
 
 ## Key Design Decisions
 
@@ -47,6 +62,8 @@ All scenarios are evaluated in a single **batch prompt with forced ranking** —
 **LLM Bias Mitigation**: Two techniques address the known positivity/sycophancy bias of LLMs:
 1. CIB split-scoring forces explicit inhibition scores rather than letting the model optimize away negative relationships
 2. Batch assessment with forced ranking prevents all scenarios from clustering at the same score
+
+**MCDA over simple scoring**: A 2D Impact×Probability matrix misses strategically important dimensions (actionability, urgency, risk). AHP+TOPSIS was chosen over simpler weighted-sum because TOPSIS handles inter-criteria tradeoffs more robustly and produces a single composite score that accounts for distance to both the ideal and anti-ideal solution.
 
 **Focused RAG**: Following the principle of lean prompts, each LLM call retrieves only 3–5 relevant chunks rather than dumping the entire knowledge base, improving both quality and traceability.
 

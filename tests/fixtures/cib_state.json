@@ -1,0 +1,59 @@
+{
+  "entries": [
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "48a044afb0c0",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in A (ultra-wideband frontends) may help B by establishing the importance of wideband coverage and high sensitivity in regulatory monitoring, creating a market expectation that quantum sensing (B) can exceed. Additionally, integration challenges solved by A (e.g., compact design, wideband digitization) may inform or accelerate system-level integration for B. | Inh(2): Significant inhibition: A's progress could divert funding/talent from B, partially reduce the need for B in regulatory monitoring, and delay regulatory or market adoption of quantum sensing. Unless B offers clear, unique advantages (e.g., quantum-limited sensitivity, traceability, operation above 40 GHz), A's entrenched position may slow B's development and deployment.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "fa3fdb690ed9",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "4842454330e8",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Progress in Driver A (ultra wideband RF frontend) directly enables and increases the value of Driver B (real-time digitizer and photonic signal processing), since a frontend capable of capturing signals from 8 kHz to 40 GHz is only fully useful if the backend digitizer and processing chain can handle the resulting wide instantaneous bandwidth and dynamic range. Driver B's technologies are needed to realize the full potential of Driver A's wideband capture, especially for real-time analysis and advanced regulatory applications. | Inh(1): There is minor resource competition and potential for partial obsolescence pressure if Driver A's advancements are seen as sufficient for regulatory needs, possibly reducing the urgency or funding for Driver B. However, A does not fully replace or block B, as B's advanced digitization and photonic processing are still required to exploit A's full capabilities.",
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "982cd1166f26",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "9a3bc0fdb612",
+      "impact_score": 0,
+      "reasoning": "Pro(2): A significant advance in ultra wideband RF frontends (A) enables B to scan a much broader spectrum in real time, as the scan engine (B) is limited by the frontend's frequency coverage and instantaneous bandwidth. Improved hardware (A) is a strong enabler for more effective and comprehensive real-time scanning (B), especially for new mmWave and sub-THz regulatory requirements. | Inh(2): There is significant resource competition (funding, engineering) between hardware (A) and software/scan engine (B) development. Additionally, if A's capabilities allow for direct wideband capture, some use cases for B (such as detecting transient signals) may be addressed by A alone, partially reducing the need for B's ultra-fast scanning.",
+      "source_chunk_ids": [
+        "982cd1166f26",
+        "c2519cd9e984",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "908595a5a7a6",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in ultra wideband RF frontends directly increases the volume and diversity of spectrum data that can be captured, making high-speed I/Q data streaming and distributed edge processing more valuable and necessary to handle, analyze, and act on this data. The ability to monitor a broader frequency range (including mmWave and sub-THz) creates new requirements for scalable data transport and edge analytics, thus enabling and motivating further development of Driver B. | Inh(1): Minor resource competition and partial obsolescence: While there is some competition for R&D resources and a possibility that advanced frontends with integrated processing could reduce the need for external I/Q streaming, these effects are secondary. The primary trend is complementary, but minor inhibition exists due to overlapping budgets and potential architectural lock-in.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "982cd1166f26",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "0c6f77459f97",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Ultra wideband RF frontends (A) significantly enable direction finding and space-based monitoring (B) by providing the necessary hardware to receive and process signals across the full frequency range of interest, including mmWave and sub-THz bands. This broad coverage is essential for modern AoA/TDOA techniques and for monitoring new spectrum allocations used by LEO satellites. In hybrid ground-space architectures, A's capabilities directly enhance B's effectiveness. | Inh(1): There is minor resource competition and some potential for partial obsolescence in non-remote areas, as ground-based ultra wideband systems (A) may reduce the unique value proposition of space-based monitoring (B) where ground coverage is feasible. However, B retains unique advantages for global/remote coverage and geolocation, so the inhibition is limited.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "f09a877ff82e",
+        "116b040f244d"
+      ]
+    }
+  ]
+}
