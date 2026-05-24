@@ -3,3 +3,4 @@ from src.models.kb import *  # noqa: F401,F403
 from src.models.drivers import *  # noqa: F401,F403
 from src.models.scenarios import *  # noqa: F401,F403
 from src.models.evaluation import *  # noqa: F401,F403
+from src.models.morphological import *  # noqa: F401,F403

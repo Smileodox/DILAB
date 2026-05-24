@@ -15,7 +15,8 @@ class CIBEntry(BaseModel):
 
 class DriverAssumption(BaseModel):
     driver_id: str
-    state: str  # "breakthrough", "steady_progress", "stagnation"
+    manifestation_id: str = ""
+    state: str  # manifestation label or legacy generic state
     description: str
 
 

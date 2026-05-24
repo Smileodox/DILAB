@@ -1,0 +1,39 @@
+{
+  "configs": [
+    {
+      "id": "cfg_001",
+      "configuration": {
+        "drv_rf": "m_rf_opt",
+        "drv_ai": "m_ai_opt",
+        "drv_quantum": "m_q_pes"
+      },
+      "consistency_score": 4.5,
+      "is_consistent": true
+    },
+    {
+      "id": "cfg_002",
+      "configuration": {
+        "drv_rf": "m_rf_pes",
+        "drv_ai": "m_ai_pes",
+        "drv_quantum": "m_q_mid"
+      },
+      "consistency_score": 3.2,
+      "is_consistent": true
+    },
+    {
+      "id": "cfg_003",
+      "configuration": {
+        "drv_rf": "m_rf_mid",
+        "drv_ai": "m_ai_mid",
+        "drv_quantum": "m_q_pes"
+      },
+      "consistency_score": 3.8,
+      "is_consistent": true
+    }
+  ],
+  "algorithm_stats": {
+    "random_restarts": 5000,
+    "unique_fixed_points": 3,
+    "selected_count": 3
+  }
+}

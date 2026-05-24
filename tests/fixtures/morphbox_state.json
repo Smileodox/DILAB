@@ -1,0 +1,92 @@
+{
+  "drivers": ["drv_rf", "drv_ai", "drv_quantum"],
+  "manifestations": {
+    "drv_rf": ["m_rf_opt", "m_rf_mid", "m_rf_pes"],
+    "drv_ai": ["m_ai_opt", "m_ai_mid", "m_ai_pes"],
+    "drv_quantum": ["m_q_opt", "m_q_mid", "m_q_pes"]
+  },
+  "all_manifestations": [
+    {
+      "id": "m_rf_opt",
+      "driver_id": "drv_rf",
+      "label": "Sub-THz coverage achieved",
+      "description": "Single platform covers 8 kHz to 300 GHz with integrated sub-THz frontend.",
+      "plausibility": "low",
+      "source_chunk_ids": ["chunk_01"]
+    },
+    {
+      "id": "m_rf_mid",
+      "driver_id": "drv_rf",
+      "label": "Millimeter-wave extension",
+      "description": "Coverage extends to 110 GHz. Sub-THz requires external module.",
+      "plausibility": "high",
+      "source_chunk_ids": ["chunk_01"]
+    },
+    {
+      "id": "m_rf_pes",
+      "driver_id": "drv_rf",
+      "label": "Current range maintained",
+      "description": "8 kHz to 40 GHz with incremental sensitivity gains only.",
+      "plausibility": "medium",
+      "source_chunk_ids": ["chunk_01"]
+    },
+    {
+      "id": "m_ai_opt",
+      "driver_id": "drv_ai",
+      "label": "Autonomous spectrum management",
+      "description": "AI handles real-time spectrum allocation, violation detection, and enforcement recommendations without human intervention.",
+      "plausibility": "low",
+      "source_chunk_ids": ["chunk_02"]
+    },
+    {
+      "id": "m_ai_mid",
+      "driver_id": "drv_ai",
+      "label": "AI-assisted monitoring",
+      "description": "AI flags anomalies and suggests actions, but humans remain in the loop for decisions.",
+      "plausibility": "high",
+      "source_chunk_ids": ["chunk_02"]
+    },
+    {
+      "id": "m_ai_pes",
+      "driver_id": "drv_ai",
+      "label": "Limited ML adoption",
+      "description": "Regulatory conservatism and data quality issues prevent meaningful AI deployment.",
+      "plausibility": "medium",
+      "source_chunk_ids": ["chunk_02"]
+    },
+    {
+      "id": "m_q_opt",
+      "driver_id": "drv_quantum",
+      "label": "Room-temperature quantum sensors deployed",
+      "description": "Quantum RF sensors operate at room temperature and are integrated into monitoring stations.",
+      "plausibility": "low",
+      "source_chunk_ids": ["chunk_03"]
+    },
+    {
+      "id": "m_q_mid",
+      "driver_id": "drv_quantum",
+      "label": "Lab-scale quantum sensing",
+      "description": "Quantum sensors work in controlled environments but are not field-deployable.",
+      "plausibility": "medium",
+      "source_chunk_ids": ["chunk_03"]
+    },
+    {
+      "id": "m_q_pes",
+      "driver_id": "drv_quantum",
+      "label": "Quantum sensing remains theoretical",
+      "description": "No practical quantum RF sensing achieved by 2035.",
+      "plausibility": "high",
+      "source_chunk_ids": ["chunk_03"]
+    }
+  ],
+  "cib_matrix": [
+    [0, 2, -1],
+    [1, 0, 0],
+    [-1, 1, 0]
+  ],
+  "cib_driver_index": {
+    "drv_rf": 0,
+    "drv_ai": 1,
+    "drv_quantum": 2
+  }
+}

@@ -1,15 +1,194 @@
-"""Scenario Generation pipeline step.
+"""Scenario Generation pipeline step (morphological approach).
 
-Input: data/outputs/merge_state.json + data/outputs/cib_state.json (or fixtures)
+Generates scenarios from CIB-consistent manifestation configurations.
+
+Input: consistency_state.json + morphbox_state.json + cib_state.json + merge_state.json
 Output: data/outputs/scenario_state.json
-
-Owner: Branch 3 (feature/scenario-generation)
 """
+
+from __future__ import annotations
+
+import json
+
+import numpy as np
+
+from src.llm import embed, safe_chat_json
+from src.models.drivers import TechDriver
+from src.models.morphological import DriverManifestation, MorphologicalBox
+from src.models.scenarios import DriverAssumption, Scenario, ScenarioType
+from src.prompts.morphological import SCENARIO_GENERATE_MORPHOLOGICAL
+from src.prompts.scenarios import SCENARIO_NARRATIVE_GUIDE
 
 
 def run(
-    merge_state_path: str = "data/outputs/merge_state.json",
+    consistency_state_path: str = "data/outputs/consistency_state.json",
+    morphbox_state_path: str = "data/outputs/morphbox_state.json",
     cib_state_path: str = "data/outputs/cib_state.json",
+    merge_state_path: str = "data/outputs/merge_state.json",
     output_path: str = "data/outputs/scenario_state.json",
+    collection=None,
+    model: str | None = None,
 ) -> dict:
-    raise NotImplementedError("TODO: Branch 3 — extract from notebooks/06_scenario_generation.ipynb")
+    with open(consistency_state_path) as f:
+        consistency = json.load(f)
+    with open(morphbox_state_path) as f:
+        morphbox_raw = json.load(f)
+    with open(cib_state_path) as f:
+        cib = json.load(f)
+    with open(merge_state_path) as f:
+        merge_state = json.load(f)
+
+    morph_box = MorphologicalBox(
+        drivers=morphbox_raw["drivers"],
+        manifestations=morphbox_raw["manifestations"],
+        all_manifestations=[
+            DriverManifestation(**m) for m in morphbox_raw["all_manifestations"]
+        ],
+    )
+    drivers = [TechDriver(**d) for d in merge_state["unified_drivers"]]
+    driver_by_id = {d.id: d for d in drivers}
+    manif_lookup = {m.id: m for m in morph_box.all_manifestations}
+
+    cib_matrix = np.array(cib["matrix"])
+    cib_id_to_idx = {did: i for i, did in enumerate(cib["driver_ids"])}
+
+    seeds = consistency["configs"]
+    scenarios: list[Scenario] = []
+    generated_titles: list[str] = []
+    used_chunk_ids: set[str] = set()
+
+    for seed in seeds:
+        stype_str = seed.get("scenario_type", "evolutionary")
+        stype = (
+            ScenarioType(stype_str)
+            if stype_str in [e.value for e in ScenarioType]
+            else ScenarioType.EVOLUTIONARY
+        )
+        config = seed["configuration"]
+
+        assumptions = []
+        manif_block_parts = []
+        for d_id, m_id in config.items():
+            driver = driver_by_id.get(d_id)
+            manif = manif_lookup.get(m_id)
+            if not driver or not manif:
+                continue
+            assumptions.append(
+                DriverAssumption(
+                    driver_id=d_id,
+                    manifestation_id=m_id,
+                    state=manif.label,
+                    description=f"{driver.name}: {manif.label} — {manif.description}",
+                )
+            )
+            manif_block_parts.append(
+                f"- {driver.name}: **{manif.label}**\n  {manif.description}"
+            )
+
+        cib_parts = []
+        for did_a in config:
+            idx_a = cib_id_to_idx.get(did_a)
+            if idx_a is None:
+                continue
+            da = driver_by_id.get(did_a)
+            for did_b in config:
+                if did_a == did_b:
+                    continue
+                idx_b = cib_id_to_idx.get(did_b)
+                if idx_b is None:
+                    continue
+                score = int(cib_matrix[idx_a][idx_b])
+                if abs(score) >= 1:
+                    db = driver_by_id.get(did_b)
+                    effect = {
+                        2: "strongly promotes",
+                        1: "mildly promotes",
+                        -1: "mildly inhibits",
+                    }.get(score, "strongly inhibits" if score < -1 else "strongly promotes")
+                    cib_parts.append(
+                        f"- {da.name[:40]} {effect} {db.name[:40]} (score: {score:+d})"
+                    )
+
+        rag_text = ""
+        rag_chunk_ids: list[str] = []
+        if collection is not None:
+            query_parts = [
+                f"{manif_lookup[config[d_id]].label} {driver_by_id[d_id].name[:30]}"
+                for d_id in list(config.keys())[:4]
+                if d_id in driver_by_id and config[d_id] in manif_lookup
+            ]
+            query_text = f"{' '.join(query_parts)} spectrum monitoring 2035"
+            query_emb = embed([query_text[:500]])[0]
+            rag = collection.query(
+                query_embeddings=[query_emb],
+                n_results=8,
+                include=["documents", "metadatas"],
+            )
+            novel = [
+                (rag["ids"][0][j], rag["documents"][0][j], rag["metadatas"][0][j])
+                for j in range(len(rag["ids"][0]))
+                if rag["ids"][0][j] not in used_chunk_ids
+            ]
+            reused = [
+                (rag["ids"][0][j], rag["documents"][0][j], rag["metadatas"][0][j])
+                for j in range(len(rag["ids"][0]))
+                if rag["ids"][0][j] in used_chunk_ids
+            ]
+            ranked = (novel + reused)[:5]
+            rag_text = "\n\n---\n\n".join(
+                [
+                    f"[Chunk ID: {cid}] (Source: {meta['source_title']})\n{doc}"
+                    for cid, doc, meta in ranked
+                ]
+            )
+            rag_chunk_ids = [cid for cid, _, _ in ranked]
+            used_chunk_ids.update(rag_chunk_ids)
+
+        existing_titles_block = ""
+        if generated_titles:
+            existing_titles_block = (
+                "Previously generated titles:\n"
+                + "\n".join(f"- {t}" for t in generated_titles)
+            )
+
+        narrative_guide = SCENARIO_NARRATIVE_GUIDE.get(
+            stype.value, SCENARIO_NARRATIVE_GUIDE["evolutionary"]
+        )
+
+        prompt = SCENARIO_GENERATE_MORPHOLOGICAL.format(
+            driver_manifestations_block="\n".join(manif_block_parts),
+            scenario_type=stype.value,
+            existing_titles_block=existing_titles_block,
+            cib_context="\n".join(cib_parts) if cib_parts else "No notable cross-impacts.",
+            rag_chunks=rag_text,
+            narrative_guide=narrative_guide,
+        )
+
+        result = safe_chat_json(prompt, temperature=0.7, model=model)
+
+        all_source_ids = list(set(rag_chunk_ids + result.get("source_chunk_ids_used", [])))
+        for a in assumptions:
+            m = manif_lookup.get(a.manifestation_id)
+            if m:
+                all_source_ids.extend(m.source_chunk_ids)
+        all_source_ids = list(set(all_source_ids))
+
+        scenario = Scenario(
+            title=result.get("title", "Untitled"),
+            narrative=result.get("narrative", ""),
+            type=stype,
+            perspective=result.get("perspective", ""),
+            key_tensions=result.get("key_tensions", []),
+            assumptions=assumptions,
+            source_chunk_ids=all_source_ids,
+        )
+        scenarios.append(scenario)
+        generated_titles.append(scenario.title)
+
+    scenario_state = {
+        "scenarios": [s.model_dump(mode="json") for s in scenarios],
+    }
+    with open(output_path, "w") as f:
+        json.dump(scenario_state, f, indent=2)
+
+    return scenario_state

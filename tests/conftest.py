@@ -51,3 +51,13 @@ def sample_scenarios(scenario_state):
 def sample_assessments(final_analysis):
     from src.models.evaluation import Assessment
     return [Assessment(**a) for a in final_analysis["assessments"]]
+
+
+@pytest.fixture
+def morphbox_state():
+    return _load("morphbox_state.json")
+
+
+@pytest.fixture
+def consistency_state():
+    return _load("consistency_state.json")
