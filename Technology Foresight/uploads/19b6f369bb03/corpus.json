@@ -1,0 +1,565 @@
+[
+  {
+    "title": "SurVigilance: An Application for Accessing Global Pharmacovigilance Data",
+    "abstract": "Even though several publicly accessible pharmacovigilance databases are available, extracting data from them is a technically challenging process. Existing tools typically focus on a single database. We present SurVigilance, an open-source tool that streamlines the process of retrieving safety data from seven major pharmacovigilance databases. SurVigilance provides a graphical user interface as well as functions for programmatic access, thus enabling integration into existing research workflows. SurVigilance utilizes a modular architecture to provide access to the heterogeneous sources. By reducing the technical barriers to accessing safety data, SurVigilance aims to facilitate pharmacovigilance research.",
+    "authors": [
+      "Raktim Mukhopadhyay",
+      "Marianthi Markatou"
+    ],
+    "published": "2025-10-24",
+    "year": 2025,
+    "arxiv_id": "2510.21572v1",
+    "category": "cs.DB",
+    "source": "arxiv",
+    "text": "SurVigilance: An Application for Accessing Global Pharmacovigilance Data\n\nEven though several publicly accessible pharmacovigilance databases are available, extracting data from them is a technically challenging process. Existing tools typically focus on a single database. We present SurVigilance, an open-source tool that streamlines the process of retrieving safety data from seven major pharmacovigilance databases. SurVigilance provides a graphical user interface as well as functions for programmatic access, thus enabling integration into existing research workflows. SurVigilance utilizes a modular architecture to provide access to the heterogeneous sources. By reducing the technical barriers to accessing safety data, SurVigilance aims to facilitate pharmacovigilance research."
+  },
+  {
+    "title": "Enhancing Pharmacovigilance with Drug Reviews and Social Media",
+    "abstract": "This paper explores whether the use of drug reviews and social media could be leveraged as potential alternative sources for pharmacovigilance of adverse drug reactions (ADRs). We examined the performance of BERT alongside two variants that are trained on biomedical papers, BioBERT7, and clinical notes, Clinical BERT8. A variety of 8 different BERT models were fine-tuned and compared across three different tasks in order to evaluate their relative performance to one another in the ADR tasks. The tasks include sentiment classification of drug reviews, presence of ADR in twitter postings, and named entity recognition of ADRs in twitter postings. BERT demonstrates its flexibility with high performance across all three different pharmacovigilance related tasks.",
+    "authors": [
+      "Brent Biseda",
+      "Katie Mo"
+    ],
+    "published": "2020-04-18",
+    "year": 2020,
+    "arxiv_id": "2004.08731v1",
+    "category": "cs.CL",
+    "source": "arxiv",
+    "text": "Enhancing Pharmacovigilance with Drug Reviews and Social Media\n\nThis paper explores whether the use of drug reviews and social media could be leveraged as potential alternative sources for pharmacovigilance of adverse drug reactions (ADRs). We examined the performance of BERT alongside two variants that are trained on biomedical papers, BioBERT7, and clinical notes, Clinical BERT8. A variety of 8 different BERT models were fine-tuned and compared across three different tasks in order to evaluate their relative performance to one another in the ADR tasks. The tasks include sentiment classification of drug reviews, presence of ADR in twitter postings, and named entity recognition of ADRs in twitter postings. BERT demonstrates its flexibility with high performance across all three different pharmacovigilance related tasks."
+  },
+  {
+    "title": "pvEBayes: An R Package for Empirical Bayes Methods in Pharmacovigilance",
+    "abstract": "Monitoring the safety of medical products is a core concern of contemporary pharmacovigilance. To support drug safety assessment, Spontaneous Reporting Systems (SRS) collect reports of suspected adverse events of approved medical products offering a critical resource for identifying potential safety concerns that may not emerge during clinical trials. Modern nonparametric empirical Bayes methods are flexible statistical approaches that can accurately identify and estimate the strength of the association between an adverse event and a drug from SRS data. However, there is currently no comprehensive and easily accessible implementation of these methods. Here, we introduce the R package pvEBayes, which implements a suite of nonparametric empirical Bayes methods for pharmacovigilance, along with post-processing tools and graphical summaries for streamlining the application of these methods. Detailed examples are provided to demonstrate the application of the package through analyses of two real-world SRS datasets curated from the publicly available FDA FAERS database.",
+    "authors": [
+      "Yihao Tan",
+      "Marianthi Markatou",
+      "Saptarshi Chakraborty"
+    ],
+    "published": "2025-11-30",
+    "year": 2025,
+    "arxiv_id": "2512.01057v1",
+    "category": "stat.AP",
+    "source": "arxiv",
+    "text": "pvEBayes: An R Package for Empirical Bayes Methods in Pharmacovigilance\n\nMonitoring the safety of medical products is a core concern of contemporary pharmacovigilance. To support drug safety assessment, Spontaneous Reporting Systems (SRS) collect reports of suspected adverse events of approved medical products offering a critical resource for identifying potential safety concerns that may not emerge during clinical trials. Modern nonparametric empirical Bayes methods are flexible statistical approaches that can accurately identify and estimate the strength of the association between an adverse event and a drug from SRS data. However, there is currently no comprehensive and easily accessible implementation of these methods. Here, we introduce the R package pvEBayes, which implements a suite of nonparametric empirical Bayes methods for pharmacovigilance, along with post-processing tools and graphical summaries for streamlining the application of these methods. Detailed examples are provided to demonstrate the application of the package through analyses of two real-world SRS datasets curated from the publicly available FDA FAERS database."
+  },
+  {
+    "title": "GASCADE: Grouped Summarization of Adverse Drug Event for Enhanced Cancer Pharmacovigilance",
+    "abstract": "In the realm of cancer treatment, summarizing adverse drug events (ADEs) reported by patients using prescribed drugs is crucial for enhancing pharmacovigilance practices and improving drug-related decision-making. While the volume and complexity of pharmacovigilance data have increased, existing research in this field has predominantly focused on general diseases rather than specifically addressing cancer. This work introduces the task of grouped summarization of adverse drug events reported by multiple patients using the same drug for cancer treatment. To address the challenge of limited resources in cancer pharmacovigilance, we present the MultiLabeled Cancer Adverse Drug Reaction and Summarization (MCADRS) dataset. This dataset includes pharmacovigilance posts detailing patient concerns regarding drug efficacy and adverse effects, along with extracted labels for drug names, adverse drug events, severity, and adversity of reactions, as well as summaries of ADEs for each drug. Additionally, we propose the Grouping and Abstractive Summarization of Cancer Adverse Drug events (GASCADE) framework, a novel pipeline that combines the information extraction capabilities of Large Language Models (LLMs) with the summarization power of the encoder-decoder T5 model. Our work is the first to apply alignment techniques, including advanced algorithms like Direct Preference Optimization, to encoder-decoder models using synthetic datasets for summarization tasks. Through extensive experiments, we demonstrate the superior performance of GASCADE across various metrics, validated through both automated assessments and human evaluations. This multitasking approach enhances drug-related decision-making and fosters a deeper understanding of patient concerns, paving the way for advancements in personalized and responsive cancer care. The code and dataset used in this work are publicly available.",
+    "authors": [
+      "Sofia Jamil",
+      "Aryan Dabad",
+      "Bollampalli Areen Reddy",
+      "Sriparna Saha",
+      "Rajiv Misra",
+      "Adil A. Shakur"
+    ],
+    "published": "2025-05-07",
+    "year": 2025,
+    "arxiv_id": "2505.04284v1",
+    "category": "cs.CL",
+    "source": "arxiv",
+    "text": "GASCADE: Grouped Summarization of Adverse Drug Event for Enhanced Cancer Pharmacovigilance\n\nIn the realm of cancer treatment, summarizing adverse drug events (ADEs) reported by patients using prescribed drugs is crucial for enhancing pharmacovigilance practices and improving drug-related decision-making. While the volume and complexity of pharmacovigilance data have increased, existing research in this field has predominantly focused on general diseases rather than specifically addressing cancer. This work introduces the task of grouped summarization of adverse drug events reported by multiple patients using the same drug for cancer treatment. To address the challenge of limited resources in cancer pharmacovigilance, we present the MultiLabeled Cancer Adverse Drug Reaction and Summarization (MCADRS) dataset. This dataset includes pharmacovigilance posts detailing patient concerns regarding drug efficacy and adverse effects, along with extracted labels for drug names, adverse drug events, severity, and adversity of reactions, as well as summaries of ADEs for each drug. Additionally, we propose the Grouping and Abstractive Summarization of Cancer Adverse Drug events (GASCADE) framework, a novel pipeline that combines the information extraction capabilities of Large Language Models (LLMs) with the summarization power of the encoder-decoder T5 model. Our work is the first to apply alignment techniques, including advanced algorithms like Direct Preference Optimization, to encoder-decoder models using synthetic datasets for summarization tasks. Through extensive experiments, we demonstrate the superior performance of GASCADE across various metrics, validated through both automated assessments and human evaluations. This multitasking approach enhances drug-related decision-making and fosters a deeper understanding of patient concerns, paving the way for advancements in personalized and responsive cancer care. The code and dataset used in this work are publicly available."
+  },
+  {
+    "title": "MDDC: An R and Python Package for Adverse Event Identification in Pharmacovigilance Data",
+    "abstract": "The safety of medical products continues to be a significant health concern worldwide. Spontaneous reporting systems (SRS) and pharmacovigilance databases are essential tools for postmarketing surveillance of medical products. Various SRS are employed globally, such as the Food and Drug Administration Adverse Event Reporting System (FAERS), EudraVigilance, and VigiBase. In the pharmacovigilance literature, numerous methods have been proposed to assess product - adverse event pairs for potential signals. In this paper, we introduce an R and Python package that implements a novel pattern discovery method for postmarketing adverse event identification, named Modified Detecting Deviating Cells (MDDC). The package also includes a data generation function that considers adverse events as groups, as well as additional utility functions. We illustrate the usage of the package through the analysis of real datasets derived from the FAERS database.",
+    "authors": [
+      "Anran Liu",
+      "Raktim Mukhopadhyay",
+      "Marianthi Markatou"
+    ],
+    "published": "2024-10-02",
+    "year": 2024,
+    "arxiv_id": "2410.01168v1",
+    "category": "stat.CO",
+    "source": "arxiv",
+    "text": "MDDC: An R and Python Package for Adverse Event Identification in Pharmacovigilance Data\n\nThe safety of medical products continues to be a significant health concern worldwide. Spontaneous reporting systems (SRS) and pharmacovigilance databases are essential tools for postmarketing surveillance of medical products. Various SRS are employed globally, such as the Food and Drug Administration Adverse Event Reporting System (FAERS), EudraVigilance, and VigiBase. In the pharmacovigilance literature, numerous methods have been proposed to assess product - adverse event pairs for potential signals. In this paper, we introduce an R and Python package that implements a novel pattern discovery method for postmarketing adverse event identification, named Modified Detecting Deviating Cells (MDDC). The package also includes a data generation function that considers adverse events as groups, as well as additional utility functions. We illustrate the usage of the package through the analysis of real datasets derived from the FAERS database."
+  },
+  {
+    "title": "Leveraging ChatGPT in Pharmacovigilance Event Extraction: An Empirical Study",
+    "abstract": "With the advent of large language models (LLMs), there has been growing interest in exploring their potential for medical applications. This research aims to investigate the ability of LLMs, specifically ChatGPT, in the context of pharmacovigilance event extraction, of which the main goal is to identify and extract adverse events or potential therapeutic events from textual medical sources. We conduct extensive experiments to assess the performance of ChatGPT in the pharmacovigilance event extraction task, employing various prompts and demonstration selection strategies. The findings demonstrate that while ChatGPT demonstrates reasonable performance with appropriate demonstration selection strategies, it still falls short compared to fully fine-tuned small models. Additionally, we explore the potential of leveraging ChatGPT for data augmentation. However, our investigation reveals that the inclusion of synthesized data into fine-tuning may lead to a decrease in performance, possibly attributed to noise in the ChatGPT-generated labels. To mitigate this, we explore different filtering strategies and find that, with the proper approach, more stable performance can be achieved, although constant improvement remains elusive.",
+    "authors": [
+      "Zhaoyue Sun",
+      "Gabriele Pergola",
+      "Byron C. Wallace",
+      "Yulan He"
+    ],
+    "published": "2024-02-24",
+    "year": 2024,
+    "arxiv_id": "2402.15663v1",
+    "category": "cs.CL",
+    "source": "arxiv",
+    "text": "Leveraging ChatGPT in Pharmacovigilance Event Extraction: An Empirical Study\n\nWith the advent of large language models (LLMs), there has been growing interest in exploring their potential for medical applications. This research aims to investigate the ability of LLMs, specifically ChatGPT, in the context of pharmacovigilance event extraction, of which the main goal is to identify and extract adverse events or potential therapeutic events from textual medical sources. We conduct extensive experiments to assess the performance of ChatGPT in the pharmacovigilance event extraction task, employing various prompts and demonstration selection strategies. The findings demonstrate that while ChatGPT demonstrates reasonable performance with appropriate demonstration selection strategies, it still falls short compared to fully fine-tuned small models. Additionally, we explore the potential of leveraging ChatGPT for data augmentation. However, our investigation reveals that the inclusion of synthesized data into fine-tuning may lead to a decrease in performance, possibly attributed to noise in the ChatGPT-generated labels. To mitigate this, we explore different filtering strategies and find that, with the proper approach, more stable performance can be achieved, although constant improvement remains elusive."
+  },
+  {
+    "title": "Mining the Web for Pharmacovigilance: the Case Study of Duloxetine and Venlafaxine",
+    "abstract": "Adverse reactions caused by drugs following their release into the market are among the leading causes of death in many countries. The rapid growth of electronically available health related information, and the ability to process large volumes of them automatically, using natural language processing (NLP) and machine learning algorithms, have opened new opportunities for pharmacovigilance. Survey found that more than 70% of US Internet users consult the Internet when they require medical information. In recent years, research in this area has addressed for Adverse Drug Reaction (ADR) pharmacovigilance using social media, mainly Twitter and medical forums and websites. This paper will show the information which can be collected from a variety of Internet data sources and search engines, mainly Google Trends and Google Correlate. While considering the case study of two popular Major depressive Disorder (MDD) drugs, Duloxetine and Venlafaxine, we will provide a comparative analysis for their reactions using publicly-available alternative data sources.",
+    "authors": [
+      "Abbas Chokor",
+      "Abeed Sarker",
+      "Graciela Gonzalez"
+    ],
+    "published": "2016-10-08",
+    "year": 2016,
+    "arxiv_id": "1610.02567v1",
+    "category": "cs.CL",
+    "source": "arxiv",
+    "text": "Mining the Web for Pharmacovigilance: the Case Study of Duloxetine and Venlafaxine\n\nAdverse reactions caused by drugs following their release into the market are among the leading causes of death in many countries. The rapid growth of electronically available health related information, and the ability to process large volumes of them automatically, using natural language processing (NLP) and machine learning algorithms, have opened new opportunities for pharmacovigilance. Survey found that more than 70% of US Internet users consult the Internet when they require medical information. In recent years, research in this area has addressed for Adverse Drug Reaction (ADR) pharmacovigilance using social media, mainly Twitter and medical forums and websites. This paper will show the information which can be collected from a variety of Internet data sources and search engines, mainly Google Trends and Google Correlate. While considering the case study of two popular Major depressive Disorder (MDD) drugs, Duloxetine and Venlafaxine, we will provide a comparative analysis for their reactions using publicly-available alternative data sources."
+  },
+  {
+    "title": "PHEE: A Dataset for Pharmacovigilance Event Extraction from Text",
+    "abstract": "The primary goal of drug safety researchers and regulators is to promptly identify adverse drug reactions. Doing so may in turn prevent or reduce the harm to patients and ultimately improve public health. Evaluating and monitoring drug safety (i.e., pharmacovigilance) involves analyzing an ever growing collection of spontaneous reports from health professionals, physicians, and pharmacists, and information voluntarily submitted by patients. In this scenario, facilitating analysis of such reports via automation has the potential to rapidly identify safety signals. Unfortunately, public resources for developing natural language models for this task are scant. We present PHEE, a novel dataset for pharmacovigilance comprising over 5000 annotated events from medical case reports and biomedical literature, making it the largest such public dataset to date. We describe the hierarchical event schema designed to provide coarse and fine-grained information about patients' demographics, treatments and (side) effects. Along with the discussion of the dataset, we present a thorough experimental evaluation of current state-of-the-art approaches for biomedical event extraction, point out their limitations, and highlight open challenges to foster future research in this area.",
+    "authors": [
+      "Zhaoyue Sun",
+      "Jiazheng Li",
+      "Gabriele Pergola",
+      "Byron C. Wallace",
+      "Bino John",
+      "Nigel Greene",
+      "Joseph Kim",
+      "Yulan He"
+    ],
+    "published": "2022-10-22",
+    "year": 2022,
+    "arxiv_id": "2210.12560v1",
+    "category": "cs.CL",
+    "source": "arxiv",
+    "text": "PHEE: A Dataset for Pharmacovigilance Event Extraction from Text\n\nThe primary goal of drug safety researchers and regulators is to promptly identify adverse drug reactions. Doing so may in turn prevent or reduce the harm to patients and ultimately improve public health. Evaluating and monitoring drug safety (i.e., pharmacovigilance) involves analyzing an ever growing collection of spontaneous reports from health professionals, physicians, and pharmacists, and information voluntarily submitted by patients. In this scenario, facilitating analysis of such reports via automation has the potential to rapidly identify safety signals. Unfortunately, public resources for developing natural language models for this task are scant. We present PHEE, a novel dataset for pharmacovigilance comprising over 5000 annotated events from medical case reports and biomedical literature, making it the largest such public dataset to date. We describe the hierarchical event schema designed to provide coarse and fine-grained information about patients' demographics, treatments and (side) effects. Along with the discussion of the dataset, we present a thorough experimental evaluation of current state-of-the-art approaches for biomedical event extraction, point out their limitations, and highlight open challenges to foster future research in this area."
+  },
+  {
+    "title": "Multi-Task Pharmacovigilance Mining from Social Media Posts",
+    "abstract": "Social media has grown to be a crucial information source for pharmacovigilance studies where an increasing number of people post adverse reactions to medical drugs that are previously unreported. Aiming to effectively monitor various aspects of Adverse Drug Reactions (ADRs) from diversely expressed social medical posts, we propose a multi-task neural network framework that learns several tasks associated with ADR monitoring with different levels of supervisions collectively. Besides being able to correctly classify ADR posts and accurately extract ADR mentions from online posts, the proposed framework is also able to further understand reasons for which the drug is being taken, known as 'indication', from the given social media post. A coverage-based attention mechanism is adopted in our framework to help the model properly identify 'phrasal' ADRs and Indications that are attentive to multiple words in a post. Our framework is applicable in situations where limited parallel data for different pharmacovigilance tasks are available.We evaluate the proposed framework on real-world Twitter datasets, where the proposed model outperforms the state-of-the-art alternatives of each individual task consistently.",
+    "authors": [
+      "Shaika Chowdhury",
+      "Chenwei Zhang",
+      "Philip S. Yu"
+    ],
+    "published": "2018-01-19",
+    "year": 2018,
+    "arxiv_id": "1801.06294v5",
+    "category": "cs.LG",
+    "source": "arxiv",
+    "text": "Multi-Task Pharmacovigilance Mining from Social Media Posts\n\nSocial media has grown to be a crucial information source for pharmacovigilance studies where an increasing number of people post adverse reactions to medical drugs that are previously unreported. Aiming to effectively monitor various aspects of Adverse Drug Reactions (ADRs) from diversely expressed social medical posts, we propose a multi-task neural network framework that learns several tasks associated with ADR monitoring with different levels of supervisions collectively. Besides being able to correctly classify ADR posts and accurately extract ADR mentions from online posts, the proposed framework is also able to further understand reasons for which the drug is being taken, known as 'indication', from the given social media post. A coverage-based attention mechanism is adopted in our framework to help the model properly identify 'phrasal' ADRs and Indications that are attentive to multiple words in a post. Our framework is applicable in situations where limited parallel data for different pharmacovigilance tasks are available.We evaluate the proposed framework on real-world Twitter datasets, where the proposed model outperforms the state-of-the-art alternatives of each individual task consistently."
+  },
+  {
+    "title": "Validation and Transparency in AI systems for pharmacovigilance: a case study applied to the medical literature monitoring of adverse events",
+    "abstract": "Recent advances in artificial intelligence applied to biomedical text are opening exciting opportunities for improving pharmacovigilance activities currently burdened by the ever growing volumes of real world data. To fully realize these opportunities, existing regulatory guidance and industry best practices should be taken into consideration in order to increase the overall trustworthiness of the system and enable broader adoption. In this paper we present a case study on how to operationalize existing guidance for validated AI systems in pharmacovigilance focusing on the specific task of medical literature monitoring (MLM) of adverse events from the scientific literature. We describe an AI system designed with the goal of reducing effort in MLM activities built in close collaboration with subject matter experts and considering guidance for validated systems in pharmacovigilance and AI transparency. In particular we make use of public disclosures as a useful risk control measure to mitigate system misuse and earn user trust. In addition we present experimental results showing the system can significantly remove screening effort while maintaining high levels of recall (filtering 55% of irrelevant articles on average, for a target recall of 0.99 on suspected adverse articles) and provide a robust method for tuning the desired recall to suit a particular risk profile.",
+    "authors": [
+      "Bruno Ohana",
+      "Jack Sullivan",
+      "Nicole Baker"
+    ],
+    "published": "2021-12-21",
+    "year": 2021,
+    "arxiv_id": "2201.00692v1",
+    "category": "cs.IR",
+    "source": "arxiv",
+    "text": "Validation and Transparency in AI systems for pharmacovigilance: a case study applied to the medical literature monitoring of adverse events\n\nRecent advances in artificial intelligence applied to biomedical text are opening exciting opportunities for improving pharmacovigilance activities currently burdened by the ever growing volumes of real world data. To fully realize these opportunities, existing regulatory guidance and industry best practices should be taken into consideration in order to increase the overall trustworthiness of the system and enable broader adoption. In this paper we present a case study on how to operationalize existing guidance for validated AI systems in pharmacovigilance focusing on the specific task of medical literature monitoring (MLM) of adverse events from the scientific literature. We describe an AI system designed with the goal of reducing effort in MLM activities built in close collaboration with subject matter experts and considering guidance for validated systems in pharmacovigilance and AI transparency. In particular we make use of public disclosures as a useful risk control measure to mitigate system misuse and earn user trust. In addition we present experimental results showing the system can significantly remove screening effort while maintaining high levels of recall (filtering 55% of irrelevant articles on average, for a target recall of 0.99 on suspected adverse articles) and provide a robust method for tuning the desired recall to suit a particular risk profile."
+  },
+  {
+    "title": "Retrofitting Vector Representations of Adverse Event Reporting Data to Structured Knowledge to Improve Pharmacovigilance Signal Detection",
+    "abstract": "Adverse drug events (ADE) are prevalent and costly. Clinical trials are constrained in their ability to identify potential ADEs, motivating the development of spontaneous reporting systems for post-market surveillance. Statistical methods provide a convenient way to detect signals from these reports but have limitations in leveraging relationships between drugs and ADEs given their discrete count-based nature. A previously proposed method, aer2vec, generates distributed vector representations of ADE report entities that capture patterns of similarity but cannot utilize lexical knowledge. We address this limitation by retrofitting aer2vec drug embeddings to knowledge from RxNorm and developing a novel retrofitting variant using vector rescaling to preserve magnitude. When evaluated in the context of a pharmacovigilance signal detection task, aer2vec with retrofitting consistently outperforms disproportionality metrics when trained on minimally preprocessed data. Retrofitting with rescaling results in further improvements in the larger and more challenging of two pharmacovigilance reference sets used for evaluation.",
+    "authors": [
+      "Xiruo Ding",
+      "Trevor Cohen"
+    ],
+    "published": "2020-08-07",
+    "year": 2020,
+    "arxiv_id": "2008.03340v1",
+    "category": "cs.CL",
+    "source": "arxiv",
+    "text": "Retrofitting Vector Representations of Adverse Event Reporting Data to Structured Knowledge to Improve Pharmacovigilance Signal Detection\n\nAdverse drug events (ADE) are prevalent and costly. Clinical trials are constrained in their ability to identify potential ADEs, motivating the development of spontaneous reporting systems for post-market surveillance. Statistical methods provide a convenient way to detect signals from these reports but have limitations in leveraging relationships between drugs and ADEs given their discrete count-based nature. A previously proposed method, aer2vec, generates distributed vector representations of ADE report entities that capture patterns of similarity but cannot utilize lexical knowledge. We address this limitation by retrofitting aer2vec drug embeddings to knowledge from RxNorm and developing a novel retrofitting variant using vector rescaling to preserve magnitude. When evaluated in the context of a pharmacovigilance signal detection task, aer2vec with retrofitting consistently outperforms disproportionality metrics when trained on minimally preprocessed data. Retrofitting with rescaling results in further improvements in the larger and more challenging of two pharmacovigilance reference sets used for evaluation."
+  },
+  {
+    "title": "PVLens: Enhancing Pharmacovigilance Through Automated Label Extraction",
+    "abstract": "Reliable drug safety reference databases are essential for pharmacovigilance, yet existing resources like SIDER are outdated and static. We introduce PVLens, an automated system that extracts labeled safety information from FDA Structured Product Labels (SPLs) and maps terms to MedDRA. PVLens integrates automation with expert oversight through a web-based review tool. In validation against 97 drug labels, PVLens achieved an F1 score of 0.882, with high recall (0.983) and moderate precision (0.799). By offering a scalable, more accurate and continuously updated alternative to SIDER, PVLens enhances real-time pharamcovigilance with improved accuracy and contemporaneous insights.",
+    "authors": [
+      "Jeffery L Painter",
+      "Gregory E Powell",
+      "Andrew Bate"
+    ],
+    "published": "2025-03-26",
+    "year": 2025,
+    "arxiv_id": "2503.20639v2",
+    "category": "cs.CL",
+    "source": "arxiv",
+    "text": "PVLens: Enhancing Pharmacovigilance Through Automated Label Extraction\n\nReliable drug safety reference databases are essential for pharmacovigilance, yet existing resources like SIDER are outdated and static. We introduce PVLens, an automated system that extracts labeled safety information from FDA Structured Product Labels (SPLs) and maps terms to MedDRA. PVLens integrates automation with expert oversight through a web-based review tool. In validation against 97 drug labels, PVLens achieved an F1 score of 0.882, with high recall (0.983) and moderate precision (0.799). By offering a scalable, more accurate and continuously updated alternative to SIDER, PVLens enhances real-time pharamcovigilance with improved accuracy and contemporaneous insights."
+  },
+  {
+    "title": "HODDI: A Dataset of High-Order Drug-Drug Interactions for Computational Pharmacovigilance",
+    "abstract": "Drug-side effect research is vital for understanding adverse reactions arising in complex multi-drug therapies. However, the scarcity of higher-order datasets that capture the combinatorial effects of multiple drugs severely limits progress in this field. Existing resources such as TWOSIDES primarily focus on pairwise interactions. To fill this critical gap, we introduce HODDI, the first Higher-Order Drug-Drug Interaction Dataset, constructed from U.S. Food and Drug Administration (FDA) Adverse Event Reporting System (FAERS) records spanning the past decade, to advance computational pharmacovigilance. HODDI contains 109,744 records involving 2,506 unique drugs and 4,569 unique side effects, specifically curated to capture multi-drug interactions and their collective impact on adverse effects. Comprehensive statistical analyses demonstrate HODDI's extensive coverage and robust analytical metrics, making it a valuable resource for studying higher-order drug relationships. Evaluating HODDI with multiple models, we found that simple Multi-Layer Perceptron (MLP) can outperform graph models, while hypergraph models demonstrate superior performance in capturing complex multi-drug interactions, further validating HODDI's effectiveness. Our findings highlight the inherent value of higher-order information in drug-side effect prediction and position HODDI as a benchmark dataset for advancing research in pharmacovigilance, drug safety, and personalized medicine. The dataset and codes are available at https://github.com/TIML-Group/HODDI.",
+    "authors": [
+      "Zhaoying Wang",
+      "Yingdan Shi",
+      "Xiang Liu",
+      "Can Chen",
+      "Jun Wen",
+      "Ren Wang"
+    ],
+    "published": "2025-02-10",
+    "year": 2025,
+    "arxiv_id": "2502.06274v1",
+    "category": "cs.LG",
+    "source": "arxiv",
+    "text": "HODDI: A Dataset of High-Order Drug-Drug Interactions for Computational Pharmacovigilance\n\nDrug-side effect research is vital for understanding adverse reactions arising in complex multi-drug therapies. However, the scarcity of higher-order datasets that capture the combinatorial effects of multiple drugs severely limits progress in this field. Existing resources such as TWOSIDES primarily focus on pairwise interactions. To fill this critical gap, we introduce HODDI, the first Higher-Order Drug-Drug Interaction Dataset, constructed from U.S. Food and Drug Administration (FDA) Adverse Event Reporting System (FAERS) records spanning the past decade, to advance computational pharmacovigilance. HODDI contains 109,744 records involving 2,506 unique drugs and 4,569 unique side effects, specifically curated to capture multi-drug interactions and their collective impact on adverse effects. Comprehensive statistical analyses demonstrate HODDI's extensive coverage and robust analytical metrics, making it a valuable resource for studying higher-order drug relationships. Evaluating HODDI with multiple models, we found that simple Multi-Layer Perceptron (MLP) can outperform graph models, while hypergraph models demonstrate superior performance in capturing complex multi-drug interactions, further validating HODDI's effectiveness. Our findings highlight the inherent value of higher-order information in drug-side effect prediction and position HODDI as a benchmark dataset for advancing research in pharmacovigilance, drug safety, and personalized medicine. The dataset and codes are available at https://github.com/TIML-Group/HODDI."
+  },
+  {
+    "title": "Flexible Empirical Bayesian Approaches to Pharmacovigilance for Simultaneous Signal Detection and Signal Strength Estimation in Spontaneous Reporting Systems Data",
+    "abstract": "Inferring adverse events (AEs) of medical products from Spontaneous Reporting Systems (SRS) databases is a core challenge in contemporary pharmacovigilance. Bayesian methods for pharmacovigilance are attractive for their rigorous ability to simultaneously detect potential AE signals and estimate their strengths/degrees of relevance. However, existing Bayesian and empirical Bayesian methods impose restrictive parametric assumptions and/or demand substantial computational resources, limiting their practical utility. This paper introduces a suite of novel, scalable empirical Bayes methods for pharmacovigilance that utilize flexible non-parametric priors and custom, efficient data-driven estimation techniques to enhance signal detection and signal strength estimation at a low computational cost. Our highly flexible methods accommodate a broader range of data and achieve signal detection performance comparable to or better than existing Bayesian and empirical Bayesian approaches. More importantly, they provide coherent and high-fidelity estimation and uncertainty quantification for potential AE signal strengths, offering deeper insights into the comparative importance and relevance of AEs. Extensive simulation experiments across diverse data-generating scenarios demonstrate the superiority of our methods in terms of accurate signal strength estimation, as measured by replication root mean squared errors. Additionally, our methods maintain or exceed the signal detection performance of state-of-the-art techniques, as evaluated by frequentist false discovery rates and sensitivity metrics. Applications on FDA FAERS data for the statin group of drugs reveal interesting insights through Bayesian posterior probabilities.",
+    "authors": [
+      "Yihao Tan",
+      "Marianthi Markatou",
+      "Saptarshi Chakraborty"
+    ],
+    "published": "2025-02-13",
+    "year": 2025,
+    "arxiv_id": "2502.09816v1",
+    "category": "stat.ME",
+    "source": "arxiv",
+    "text": "Flexible Empirical Bayesian Approaches to Pharmacovigilance for Simultaneous Signal Detection and Signal Strength Estimation in Spontaneous Reporting Systems Data\n\nInferring adverse events (AEs) of medical products from Spontaneous Reporting Systems (SRS) databases is a core challenge in contemporary pharmacovigilance. Bayesian methods for pharmacovigilance are attractive for their rigorous ability to simultaneously detect potential AE signals and estimate their strengths/degrees of relevance. However, existing Bayesian and empirical Bayesian methods impose restrictive parametric assumptions and/or demand substantial computational resources, limiting their practical utility. This paper introduces a suite of novel, scalable empirical Bayes methods for pharmacovigilance that utilize flexible non-parametric priors and custom, efficient data-driven estimation techniques to enhance signal detection and signal strength estimation at a low computational cost. Our highly flexible methods accommodate a broader range of data and achieve signal detection performance comparable to or better than existing Bayesian and empirical Bayesian approaches. More importantly, they provide coherent and high-fidelity estimation and uncertainty quantification for potential AE signal strengths, offering deeper insights into the comparative importance and relevance of AEs. Extensive simulation experiments across diverse data-generating scenarios demonstrate the superiority of our methods in terms of accurate signal strength estimation, as measured by replication root mean squared errors. Additionally, our methods maintain or exceed the signal detection performance of state-of-the-art techniques, as evaluated by frequentist false discovery rates and sensitivity metrics. Applications on FDA FAERS data for the statin group of drugs reveal interesting insights through Bayesian posterior probabilities."
+  },
+  {
+    "title": "Critical appraisal of artificial intelligence for rare-event recognition: principles and pharmacovigilance case studies",
+    "abstract": "Many high-stakes AI applications target low-prevalence events, where apparent accuracy can conceal limited real-world value. Relevant AI models range from expert-defined rules and traditional machine learning to generative LLMs constrained for classification. We outline key considerations for critical appraisal of AI in rare-event recognition, including problem framing and test set design, prevalence-aware statistical evaluation, robustness assessment, and integration into human workflows. In addition, we propose an approach to structured case-level examination (SCLE), to complement statistical performance evaluation, and a comprehensive checklist to guide procurement or development of AI models for rare-event recognition. We instantiate the framework in pharmacovigilance, drawing on three studies: rule-based retrieval of pregnancy-related reports; duplicate detection combining machine learning with probabilistic record linkage; and automated redaction of person names using an LLM. We highlight pitfalls specific to the rare-event setting including optimism from unrealistic class balance and lack of difficult positive controls in test sets - and show how cost-sensitive targets align model performance with operational value. While grounded in pharmacovigilance practice, the principles generalize to domains where positives are scarce and error costs may be asymmetric.",
+    "authors": [
+      "G. Niklas Noren",
+      "Eva-Lisa Meldau",
+      "Johan Ellenius"
+    ],
+    "published": "2025-10-05",
+    "year": 2025,
+    "arxiv_id": "2510.04341v1",
+    "category": "cs.LG",
+    "source": "arxiv",
+    "text": "Critical appraisal of artificial intelligence for rare-event recognition: principles and pharmacovigilance case studies\n\nMany high-stakes AI applications target low-prevalence events, where apparent accuracy can conceal limited real-world value. Relevant AI models range from expert-defined rules and traditional machine learning to generative LLMs constrained for classification. We outline key considerations for critical appraisal of AI in rare-event recognition, including problem framing and test set design, prevalence-aware statistical evaluation, robustness assessment, and integration into human workflows. In addition, we propose an approach to structured case-level examination (SCLE), to complement statistical performance evaluation, and a comprehensive checklist to guide procurement or development of AI models for rare-event recognition. We instantiate the framework in pharmacovigilance, drawing on three studies: rule-based retrieval of pregnancy-related reports; duplicate detection combining machine learning with probabilistic record linkage; and automated redaction of person names using an LLM. We highlight pitfalls specific to the rare-event setting including optimism from unrealistic class balance and lack of difficult positive controls in test sets - and show how cost-sensitive targets align model performance with operational value. While grounded in pharmacovigilance practice, the principles generalize to domains where positives are scarce and error costs may be asymmetric."
+  },
+  {
+    "title": "Sequential FDR and pFDR control under arbitrary dependence, with application to pharmacovigilance database monitoring",
+    "abstract": "We propose sequential multiple testing procedures which control the false discover rate (FDR) or the positive false discovery rate (pFDR) under arbitrary dependence between the data streams. This is accomplished by \"optimizing\" an upper bound on these error metrics for a class of step down sequential testing procedures. Both open-ended and truncated versions of these sequential procedures are given, both being able to control both the type~I multiple testing metric (FDR or pFDR) at specified levels, and the former being able to control both the type I and type II (e.g., FDR and the false nondiscovery rate, FNR). In simulation studies, these procedures provide 45-65% savings in average sample size over their fixed-sample competitors. We illustrate our procedures on drug data from the United Kingdom's Yellow Card Pharmacovigilance Database.",
+    "authors": [
+      "Michael Hankin",
+      "Jay Bartroff"
+    ],
+    "published": "2024-06-03",
+    "year": 2024,
+    "arxiv_id": "2406.01218v2",
+    "category": "stat.ME",
+    "source": "arxiv",
+    "text": "Sequential FDR and pFDR control under arbitrary dependence, with application to pharmacovigilance database monitoring\n\nWe propose sequential multiple testing procedures which control the false discover rate (FDR) or the positive false discovery rate (pFDR) under arbitrary dependence between the data streams. This is accomplished by \"optimizing\" an upper bound on these error metrics for a class of step down sequential testing procedures. Both open-ended and truncated versions of these sequential procedures are given, both being able to control both the type~I multiple testing metric (FDR or pFDR) at specified levels, and the former being able to control both the type I and type II (e.g., FDR and the false nondiscovery rate, FNR). In simulation studies, these procedures provide 45-65% savings in average sample size over their fixed-sample competitors. We illustrate our procedures on drug data from the United Kingdom's Yellow Card Pharmacovigilance Database."
+  },
+  {
+    "title": "The Need for Guardrails with Large Language Models in Medical Safety-Critical Settings: An Artificial Intelligence Application in the Pharmacovigilance Ecosystem",
+    "abstract": "Large language models (LLMs) are useful tools with the capacity for performing specific types of knowledge work at an effective scale. However, LLM deployments in high-risk and safety-critical domains pose unique challenges, notably the issue of ``hallucination,'' where LLMs can generate fabricated information. This is particularly concerning in settings such as drug safety, where inaccuracies could lead to patient harm. To mitigate these risks, we have developed and demonstrated a proof of concept suite of guardrails specifically designed to mitigate certain types of hallucinations and errors for drug safety, and potentially applicable to other medical safety-critical contexts. These guardrails include mechanisms to detect anomalous documents to prevent the ingestion of inappropriate data, identify incorrect drug names or adverse event terms, and convey uncertainty in generated content. We integrated these guardrails with an LLM fine-tuned for a text-to-text task, which involves converting both structured and unstructured data within adverse event reports into natural language. This method was applied to translate individual case safety reports, demonstrating effective application in a pharmacovigilance processing task. Our guardrail framework offers a set of tools with broad applicability across various domains, ensuring LLMs can be safely used in high-risk situations by eliminating the occurrence of key errors, including the generation of incorrect pharmacovigilance-related terms, thus adhering to stringent regulatory and quality standards in medical safety-critical environments.",
+    "authors": [
+      "Joe B Hakim",
+      "Jeffery L Painter",
+      "Darmendra Ramcharran",
+      "Vijay Kara",
+      "Greg Powell",
+      "Paulina Sobczak",
+      "Chiho Sato",
+      "Andrew Bate",
+      "Andrew Beam"
+    ],
+    "published": "2024-07-01",
+    "year": 2024,
+    "arxiv_id": "2407.18322v2",
+    "category": "cs.CL",
+    "source": "arxiv",
+    "text": "The Need for Guardrails with Large Language Models in Medical Safety-Critical Settings: An Artificial Intelligence Application in the Pharmacovigilance Ecosystem\n\nLarge language models (LLMs) are useful tools with the capacity for performing specific types of knowledge work at an effective scale. However, LLM deployments in high-risk and safety-critical domains pose unique challenges, notably the issue of ``hallucination,'' where LLMs can generate fabricated information. This is particularly concerning in settings such as drug safety, where inaccuracies could lead to patient harm. To mitigate these risks, we have developed and demonstrated a proof of concept suite of guardrails specifically designed to mitigate certain types of hallucinations and errors for drug safety, and potentially applicable to other medical safety-critical contexts. These guardrails include mechanisms to detect anomalous documents to prevent the ingestion of inappropriate data, identify incorrect drug names or adverse event terms, and convey uncertainty in generated content. We integrated these guardrails with an LLM fine-tuned for a text-to-text task, which involves converting both structured and unstructured data within adverse event reports into natural language. This method was applied to translate individual case safety reports, demonstrating effective application in a pharmacovigilance processing task. Our guardrail framework offers a set of tools with broad applicability across various domains, ensuring LLMs can be safely used in high-risk situations by eliminating the occurrence of key errors, including the generation of incorrect pharmacovigilance-related terms, thus adhering to stringent regulatory and quality standards in medical safety-critical environments."
+  },
+  {
+    "title": "Explainable Artificial Intelligence for Pharmacovigilance: What Features Are Important When Predicting Adverse Outcomes?",
+    "abstract": "Explainable Artificial Intelligence (XAI) has been identified as a viable method for determining the importance of features when making predictions using Machine Learning (ML) models. In this study, we created models that take an individual's health information (e.g. their drug history and comorbidities) as inputs, and predict the probability that the individual will have an Acute Coronary Syndrome (ACS) adverse outcome. Using XAI, we quantified the contribution that specific drugs had on these ACS predictions, thus creating an XAI-based technique for pharmacovigilance monitoring, using ACS as an example of the adverse outcome to detect. Individuals aged over 65 who were supplied Musculo-skeletal system (anatomical therapeutic chemical (ATC) class M) or Cardiovascular system (ATC class C) drugs between 1993 and 2009 were identified, and their drug histories, comorbidities, and other key features were extracted from linked Western Australian datasets. Multiple ML models were trained to predict if these individuals would have an ACS related adverse outcome (i.e., death or hospitalisation with a discharge diagnosis of ACS), and a variety of ML and XAI techniques were used to calculate which features -- specifically which drugs -- led to these predictions. The drug dispensing features for rofecoxib and celecoxib were found to have a greater than zero contribution to ACS related adverse outcome predictions (on average), and it was found that ACS related adverse outcomes can be predicted with 72% accuracy. Furthermore, the XAI libraries LIME and SHAP were found to successfully identify both important and unimportant features, with SHAP slightly outperforming LIME. ML models trained on linked administrative health datasets in tandem with XAI algorithms can successfully quantify feature importance, and with further development, could potentially be used as pharmacovigilance monitoring techniques.",
+    "authors": [
+      "Isaac Ronald Ward",
+      "Ling Wang",
+      "Juan lu",
+      "Mohammed Bennamoun",
+      "Girish Dwivedi",
+      "Frank M Sanfilippo"
+    ],
+    "published": "2021-12-25",
+    "year": 2021,
+    "arxiv_id": "2112.13210v1",
+    "category": "q-bio.QM",
+    "source": "arxiv",
+    "text": "Explainable Artificial Intelligence for Pharmacovigilance: What Features Are Important When Predicting Adverse Outcomes?\n\nExplainable Artificial Intelligence (XAI) has been identified as a viable method for determining the importance of features when making predictions using Machine Learning (ML) models. In this study, we created models that take an individual's health information (e.g. their drug history and comorbidities) as inputs, and predict the probability that the individual will have an Acute Coronary Syndrome (ACS) adverse outcome. Using XAI, we quantified the contribution that specific drugs had on these ACS predictions, thus creating an XAI-based technique for pharmacovigilance monitoring, using ACS as an example of the adverse outcome to detect. Individuals aged over 65 who were supplied Musculo-skeletal system (anatomical therapeutic chemical (ATC) class M) or Cardiovascular system (ATC class C) drugs between 1993 and 2009 were identified, and their drug histories, comorbidities, and other key features were extracted from linked Western Australian datasets. Multiple ML models were trained to predict if these individuals would have an ACS related adverse outcome (i.e., death or hospitalisation with a discharge diagnosis of ACS), and a variety of ML and XAI techniques were used to calculate which features -- specifically which drugs -- led to these predictions. The drug dispensing features for rofecoxib and celecoxib were found to have a greater than zero contribution to ACS related adverse outcome predictions (on average), and it was found that ACS related adverse outcomes can be predicted with 72% accuracy. Furthermore, the XAI libraries LIME and SHAP were found to successfully identify both important and unimportant features, with SHAP slightly outperforming LIME. ML models trained on linked administrative health datasets in tandem with XAI algorithms can successfully quantify feature importance, and with further development, could potentially be used as pharmacovigilance monitoring techniques."
+  },
+  {
+    "title": "Pharmacovigilance Analysis of Drug-Induced Rhabdomyolysis Based on the FDA Adverse Event Reporting System (FAERS)",
+    "abstract": "This study aimed to systematically identify and quantify risks for drug-induced rhabdomyolysis (DIR) using real-world data and to propose an evidence-based risk mitigation framework. We conducted a retrospective pharmacovigilance study using the FDA Adverse Event Reporting System (FAERS) database from Q1 2005 to Q1 2025. A two-stage analysis involved initial signal detection using the Reporting Odds Ratio (ROR), followed by a LASSO-optimized multivariate logistic regression to calculate adjusted odds ratios (aORs) for 54 target drugs while controlling for confounders. Our analysis confirmed potent DIR risks for known agents, such as gemfibrozil (aOR 173.67) and statins (lovastatin aOR 97.20, simvastatin aOR 85.12). Crucially, we identified strong, novel risk signals for drugs currently lacking warnings, most notably levetiracetam (aOR 11.02) and donepezil (aOR 8.90). A significant \"labeling gap\" was quantified: 61.1% of drugs with a statistically significant DIR risk lack a corresponding warning in U.S. drug labels. We subsequently developed a three-tiered risk stratification model. The proposed framework provides a data-driven foundation for developing tiered clinical decision support systems, enhancing prescribing safety, and guiding future regulatory action to bridge the identified evidence-to-labeling gap.",
+    "authors": [
+      "Enpu Liang"
+    ],
+    "published": "2025-10-30",
+    "year": 2025,
+    "arxiv_id": "2511.00093v1",
+    "category": "q-bio.OT",
+    "source": "arxiv",
+    "text": "Pharmacovigilance Analysis of Drug-Induced Rhabdomyolysis Based on the FDA Adverse Event Reporting System (FAERS)\n\nThis study aimed to systematically identify and quantify risks for drug-induced rhabdomyolysis (DIR) using real-world data and to propose an evidence-based risk mitigation framework. We conducted a retrospective pharmacovigilance study using the FDA Adverse Event Reporting System (FAERS) database from Q1 2005 to Q1 2025. A two-stage analysis involved initial signal detection using the Reporting Odds Ratio (ROR), followed by a LASSO-optimized multivariate logistic regression to calculate adjusted odds ratios (aORs) for 54 target drugs while controlling for confounders. Our analysis confirmed potent DIR risks for known agents, such as gemfibrozil (aOR 173.67) and statins (lovastatin aOR 97.20, simvastatin aOR 85.12). Crucially, we identified strong, novel risk signals for drugs currently lacking warnings, most notably levetiracetam (aOR 11.02) and donepezil (aOR 8.90). A significant \"labeling gap\" was quantified: 61.1% of drugs with a statistically significant DIR risk lack a corresponding warning in U.S. drug labels. We subsequently developed a three-tiered risk stratification model. The proposed framework provides a data-driven foundation for developing tiered clinical decision support systems, enhancing prescribing safety, and guiding future regulatory action to bridge the identified evidence-to-labeling gap."
+  },
+  {
+    "title": "MALADE: Orchestration of LLM-powered Agents with Retrieval Augmented Generation for Pharmacovigilance",
+    "abstract": "In the era of Large Language Models (LLMs), given their remarkable text understanding and generation abilities, there is an unprecedented opportunity to develop new, LLM-based methods for trustworthy medical knowledge synthesis, extraction and summarization. This paper focuses on the problem of Pharmacovigilance (PhV), where the significance and challenges lie in identifying Adverse Drug Events (ADEs) from diverse text sources, such as medical literature, clinical notes, and drug labels. Unfortunately, this task is hindered by factors including variations in the terminologies of drugs and outcomes, and ADE descriptions often being buried in large amounts of narrative text. We present MALADE, the first effective collaborative multi-agent system powered by LLM with Retrieval Augmented Generation for ADE extraction from drug label data. This technique involves augmenting a query to an LLM with relevant information extracted from text resources, and instructing the LLM to compose a response consistent with the augmented data. MALADE is a general LLM-agnostic architecture, and its unique capabilities are: (1) leveraging a variety of external sources, such as medical literature, drug labels, and FDA tools (e.g., OpenFDA drug information API), (2) extracting drug-outcome association in a structured format along with the strength of the association, and (3) providing explanations for established associations. Instantiated with GPT-4 Turbo or GPT-4o, and FDA drug label data, MALADE demonstrates its efficacy with an Area Under ROC Curve of 0.90 against the OMOP Ground Truth table of ADEs. Our implementation leverages the Langroid multi-agent LLM framework and can be found at https://github.com/jihyechoi77/malade.",
+    "authors": [
+      "Jihye Choi",
+      "Nils Palumbo",
+      "Prasad Chalasani",
+      "Matthew M. Engelhard",
+      "Somesh Jha",
+      "Anivarya Kumar",
+      "David Page"
+    ],
+    "published": "2024-08-03",
+    "year": 2024,
+    "arxiv_id": "2408.01869v1",
+    "category": "cs.CL",
+    "source": "arxiv",
+    "text": "MALADE: Orchestration of LLM-powered Agents with Retrieval Augmented Generation for Pharmacovigilance\n\nIn the era of Large Language Models (LLMs), given their remarkable text understanding and generation abilities, there is an unprecedented opportunity to develop new, LLM-based methods for trustworthy medical knowledge synthesis, extraction and summarization. This paper focuses on the problem of Pharmacovigilance (PhV), where the significance and challenges lie in identifying Adverse Drug Events (ADEs) from diverse text sources, such as medical literature, clinical notes, and drug labels. Unfortunately, this task is hindered by factors including variations in the terminologies of drugs and outcomes, and ADE descriptions often being buried in large amounts of narrative text. We present MALADE, the first effective collaborative multi-agent system powered by LLM with Retrieval Augmented Generation for ADE extraction from drug label data. This technique involves augmenting a query to an LLM with relevant information extracted from text resources, and instructing the LLM to compose a response consistent with the augmented data. MALADE is a general LLM-agnostic architecture, and its unique capabilities are: (1) leveraging a variety of external sources, such as medical literature, drug labels, and FDA tools (e.g., OpenFDA drug information API), (2) extracting drug-outcome association in a structured format along with the strength of the association, and (3) providing explanations for established associations. Instantiated with GPT-4 Turbo or GPT-4o, and FDA drug label data, MALADE demonstrates its efficacy with an Area Under ROC Curve of 0.90 against the OMOP Ground Truth table of ADEs. Our implementation leverages the Langroid multi-agent LLM framework and can be found at https://github.com/jihyechoi77/malade."
+  },
+  {
+    "title": "Automating Pharmacovigilance Evidence Generation: Using Large Language Models to Produce Context-Aware SQL",
+    "abstract": "Objective: To enhance the efficiency and accuracy of information retrieval from pharmacovigilance (PV) databases by employing Large Language Models (LLMs) to convert natural language queries (NLQs) into Structured Query Language (SQL) queries, leveraging a business context document.\n  Materials and Methods: We utilized OpenAI's GPT-4 model within a retrieval-augmented generation (RAG) framework, enriched with a business context document, to transform NLQs into syntactically precise SQL queries. Each NLQ was presented to the LLM randomly and independently to prevent memorization. The study was conducted in three phases, varying query complexity, and assessing the LLM's performance both with and without the business context document.\n  Results: Our approach significantly improved NLQ-to-SQL accuracy, increasing from 8.3\\% with the database schema alone to 78.3\\% with the business context document. This enhancement was consistent across low, medium, and high complexity queries, indicating the critical role of contextual knowledge in query generation.\n  Discussion: The integration of a business context document markedly improved the LLM's ability to generate accurate and contextually relevant SQL queries. Performance achieved a maximum of 85\\% when high complexity queries are excluded, suggesting promise for routine deployment.\n  Conclusion: This study presents a novel approach to employing LLMs for safety data retrieval and analysis, demonstrating significant advancements in query generation accuracy. The methodology offers a framework applicable to various data-intensive domains, enhancing the accessibility and efficiency of information retrieval for non-technical users.",
+    "authors": [
+      "Jeffery L. Painter",
+      "Venkateswara Rao Chalamalasetti",
+      "Raymond Kassekert",
+      "Andrew Bate"
+    ],
+    "published": "2024-06-15",
+    "year": 2024,
+    "arxiv_id": "2406.10690v3",
+    "category": "cs.AI",
+    "source": "arxiv",
+    "text": "Automating Pharmacovigilance Evidence Generation: Using Large Language Models to Produce Context-Aware SQL\n\nObjective: To enhance the efficiency and accuracy of information retrieval from pharmacovigilance (PV) databases by employing Large Language Models (LLMs) to convert natural language queries (NLQs) into Structured Query Language (SQL) queries, leveraging a business context document.\n  Materials and Methods: We utilized OpenAI's GPT-4 model within a retrieval-augmented generation (RAG) framework, enriched with a business context document, to transform NLQs into syntactically precise SQL queries. Each NLQ was presented to the LLM randomly and independently to prevent memorization. The study was conducted in three phases, varying query complexity, and assessing the LLM's performance both with and without the business context document.\n  Results: Our approach significantly improved NLQ-to-SQL accuracy, increasing from 8.3\\% with the database schema alone to 78.3\\% with the business context document. This enhancement was consistent across low, medium, and high complexity queries, indicating the critical role of contextual knowledge in query generation.\n  Discussion: The integration of a business context document markedly improved the LLM's ability to generate accurate and contextually relevant SQL queries. Performance achieved a maximum of 85\\% when high complexity queries are excluded, suggesting promise for routine deployment.\n  Conclusion: This study presents a novel approach to employing LLMs for safety data retrieval and analysis, demonstrating significant advancements in query generation accuracy. The methodology offers a framework applicable to various data-intensive domains, enhancing the accessibility and efficiency of information retrieval for non-technical users."
+  },
+  {
+    "title": "BioDEX: Large-Scale Biomedical Adverse Drug Event Extraction for Real-World Pharmacovigilance",
+    "abstract": "Timely and accurate extraction of Adverse Drug Events (ADE) from biomedical literature is paramount for public safety, but involves slow and costly manual labor. We set out to improve drug safety monitoring (pharmacovigilance, PV) through the use of Natural Language Processing (NLP). We introduce BioDEX, a large-scale resource for Biomedical adverse Drug Event Extraction, rooted in the historical output of drug safety reporting in the U.S. BioDEX consists of 65k abstracts and 19k full-text biomedical papers with 256k associated document-level safety reports created by medical experts. The core features of these reports include the reported weight, age, and biological sex of a patient, a set of drugs taken by the patient, the drug dosages, the reactions experienced, and whether the reaction was life threatening. In this work, we consider the task of predicting the core information of the report given its originating paper. We estimate human performance to be 72.0% F1, whereas our best model achieves 62.3% F1, indicating significant headroom on this task. We also begin to explore ways in which these models could help professional PV reviewers. Our code and data are available: https://github.com/KarelDO/BioDEX.",
+    "authors": [
+      "Karel D'Oosterlinck",
+      "Fran\u00e7ois Remy",
+      "Johannes Deleu",
+      "Thomas Demeester",
+      "Chris Develder",
+      "Klim Zaporojets",
+      "Aneiss Ghodsi",
+      "Simon Ellershaw",
+      "Jack Collins",
+      "Christopher Potts"
+    ],
+    "published": "2023-05-22",
+    "year": 2023,
+    "arxiv_id": "2305.13395v2",
+    "category": "cs.CL",
+    "source": "arxiv",
+    "text": "BioDEX: Large-Scale Biomedical Adverse Drug Event Extraction for Real-World Pharmacovigilance\n\nTimely and accurate extraction of Adverse Drug Events (ADE) from biomedical literature is paramount for public safety, but involves slow and costly manual labor. We set out to improve drug safety monitoring (pharmacovigilance, PV) through the use of Natural Language Processing (NLP). We introduce BioDEX, a large-scale resource for Biomedical adverse Drug Event Extraction, rooted in the historical output of drug safety reporting in the U.S. BioDEX consists of 65k abstracts and 19k full-text biomedical papers with 256k associated document-level safety reports created by medical experts. The core features of these reports include the reported weight, age, and biological sex of a patient, a set of drugs taken by the patient, the drug dosages, the reactions experienced, and whether the reaction was life threatening. In this work, we consider the task of predicting the core information of the report given its originating paper. We estimate human performance to be 72.0% F1, whereas our best model achieves 62.3% F1, indicating significant headroom on this task. We also begin to explore ways in which these models could help professional PV reviewers. Our code and data are available: https://github.com/KarelDO/BioDEX."
+  },
+  {
+    "title": "Illuminating the Physics of Cosmic Origin and Evolution: A UK Space Frontiers 2035 White Paper",
+    "abstract": "Understanding the Universe's origins and evolution remains one of the most fundamental challenges in modern cosmology. This white paper explores three key science priorities in this field: unravelling the physics of cosmic inflation, investigating the accelerating expansion of the Universe, and precisely measuring the sum of the neutrino masses. Achieving these goals requires a dedicated survey to map the large-scale structure at high redshift in unprecedented detail. We describe how this can be achieved through a mission concept called SIRMOS, providing a high-throughput, highly multiplexed spectroscopic capability to obtain accurate redshifts for over 100 million galaxies over a wide sky area. Such a survey would leverage the deepest existing wide-area photometric catalogues for targeting, with spectra offering continuous 1.25-2.5~$\u03bc$m wavelength coverage at moderate resolution, allowing precise redshift measurements in the $1<z<4$ range with minimal bias. We outline the scientific opportunities this presents. Recent years have seen significant advances in instrumentation, including digital micromirror devices, complex telescope mirrors, large detector arrays, and data processing pipelines. While these technologies have been demonstrated in terrestrial applications, such a survey is a unique opportunity to apply these proven capabilities in space to address fundamental questions in cosmology. Participation in such a mission will simultaneously deliver a compelling science case, help align UK Space Agency and STFC strategies, demonstrate the UK's growing capability in end-to-end space missions, and strengthen the national space economy through high-value industrial participation.",
+    "authors": [
+      "Florian Beutler",
+      "Eva-Maria Mueller",
+      "Seshadri Nadathur",
+      "Yun Wang",
+      "David Alonso",
+      "Tessa Baker",
+      "Sownak Bose",
+      "Rebecca Canning",
+      "Shaun Cole",
+      "Fergus Cullen",
+      "Willem Elbers",
+      "Pedro Ferreira",
+      "Carlos Frenk",
+      "Oscar Gonzalez",
+      "Or Graur",
+      "Boryana Hadzhiyska",
+      "Alex Hall",
+      "Catherine Heymans",
+      "Sergey Koposov",
+      "Kazuya Koyama",
+      "Ofer Lahav",
+      "Baojiu Li",
+      "Avery Meiksin",
+      "Johannes Noller",
+      "John Peacock",
+      "Alkistis Pourtsidou",
+      "Giorgio Savini",
+      "Andy Taylor",
+      "Rita Tojeiro",
+      "David Wands",
+      "Massimo Robberto",
+      "Gregory Wirth",
+      "Mark Dickinson",
+      "Thomas Greene",
+      "Jeffrey Kruk",
+      "Will Percival",
+      "Andreas Faisst",
+      "Lynne Hillenbrand",
+      "Jeyhan Kartaltepe",
+      "Nikhil Padmanabhan",
+      "Lado Samushia",
+      "Lee Armus",
+      "Andrew Benson",
+      "Micol Bolzonella",
+      "Samuel Brieden",
+      "Jarle Brinchmann",
+      "Robert Content",
+      "Emanuele Daddi",
+      "Kyle Finner",
+      "Andrew Hearin",
+      "Cullan Howlett",
+      "Jon Lawrence",
+      "Gregory Mosby",
+      "Zoran Ninkov",
+      "Ken Osato",
+      "Casey Papovich",
+      "Jack Piotrowski",
+      "Lucia Pozzetti",
+      "Alvise Raccanelli",
+      "Jason Rhodes",
+      "Shun Saito",
+      "Hee-Jong Seo",
+      "Zachary Slepian",
+      "Steve Smee"
+    ],
+    "published": "2026-01-23",
+    "year": 2026,
+    "arxiv_id": "2601.16761v1",
+    "category": "astro-ph.IM",
+    "source": "arxiv",
+    "text": "Illuminating the Physics of Cosmic Origin and Evolution: A UK Space Frontiers 2035 White Paper\n\nUnderstanding the Universe's origins and evolution remains one of the most fundamental challenges in modern cosmology. This white paper explores three key science priorities in this field: unravelling the physics of cosmic inflation, investigating the accelerating expansion of the Universe, and precisely measuring the sum of the neutrino masses. Achieving these goals requires a dedicated survey to map the large-scale structure at high redshift in unprecedented detail. We describe how this can be achieved through a mission concept called SIRMOS, providing a high-throughput, highly multiplexed spectroscopic capability to obtain accurate redshifts for over 100 million galaxies over a wide sky area. Such a survey would leverage the deepest existing wide-area photometric catalogues for targeting, with spectra offering continuous 1.25-2.5~$\u03bc$m wavelength coverage at moderate resolution, allowing precise redshift measurements in the $1<z<4$ range with minimal bias. We outline the scientific opportunities this presents. Recent years have seen significant advances in instrumentation, including digital micromirror devices, complex telescope mirrors, large detector arrays, and data processing pipelines. While these technologies have been demonstrated in terrestrial applications, such a survey is a unique opportunity to apply these proven capabilities in space to address fundamental questions in cosmology. Participation in such a mission will simultaneously deliver a compelling science case, help align UK Space Agency and STFC strategies, demonstrate the UK's growing capability in end-to-end space missions, and strengthen the national space economy through high-value industrial participation."
+  },
+  {
+    "title": "Development of a European Union Time-Indexed Reference Dataset for Assessing the Performance of Signal Detection Methods in Pharmacovigilance using a Large Language Model",
+    "abstract": "Background: The identification of optimal signal detection methods is hindered by the lack of reliable reference datasets. Existing datasets do not capture when adverse events (AEs) are officially recognized by regulatory authorities, preventing restriction of analyses to pre-confirmation periods and limiting evaluation of early detection performance. This study addresses this gap by developing a time-indexed reference dataset for the European Union (EU), incorporating the timing of AE inclusion in product labels along with regulatory metadata. Methods: Current and historical Summaries of Product Characteristics (SmPCs) for all centrally authorized products (n=1,513) were retrieved from the EU Union Register of Medicinal Products (data lock: 15 December 2025). Section 4.8 was extracted and processed using DeepSeek V3 to identify AEs. Regulatory metadata, including labelling changes, were programmatically extracted. Time indexing was based on the date of AE inclusion in the SmPC. Results: The database includes 17,763 SmPC versions spanning 1995-2025, comprising 125,026 drug-AE associations. The time-indexed reference dataset, restricted to active products, included 1,479 medicinal products and 110,823 drug-AE associations. Most AEs were identified pre-marketing (74.5%) versus post-marketing (25.5%). Safety updates peaked around 2012. Gastrointestinal, skin, and nervous system disorders were the most represented System Organ Classes. Drugs had a median of 48 AEs across 14 SOCs. Conclusions: The proposed dataset addresses a critical gap in pharmacovigilance by incorporating temporal information on AE recognition for the EU, supporting more accurate assessment of signal detection performance and facilitating methodological comparisons across analytical approaches.",
+    "authors": [
+      "Maria Kefala",
+      "Jeffery L. Painter",
+      "Syed Tauhid Bukhari",
+      "Maurizio Sessa"
+    ],
+    "published": "2026-03-27",
+    "year": 2026,
+    "arxiv_id": "2603.26544v1",
+    "category": "cs.CL",
+    "source": "arxiv",
+    "text": "Development of a European Union Time-Indexed Reference Dataset for Assessing the Performance of Signal Detection Methods in Pharmacovigilance using a Large Language Model\n\nBackground: The identification of optimal signal detection methods is hindered by the lack of reliable reference datasets. Existing datasets do not capture when adverse events (AEs) are officially recognized by regulatory authorities, preventing restriction of analyses to pre-confirmation periods and limiting evaluation of early detection performance. This study addresses this gap by developing a time-indexed reference dataset for the European Union (EU), incorporating the timing of AE inclusion in product labels along with regulatory metadata. Methods: Current and historical Summaries of Product Characteristics (SmPCs) for all centrally authorized products (n=1,513) were retrieved from the EU Union Register of Medicinal Products (data lock: 15 December 2025). Section 4.8 was extracted and processed using DeepSeek V3 to identify AEs. Regulatory metadata, including labelling changes, were programmatically extracted. Time indexing was based on the date of AE inclusion in the SmPC. Results: The database includes 17,763 SmPC versions spanning 1995-2025, comprising 125,026 drug-AE associations. The time-indexed reference dataset, restricted to active products, included 1,479 medicinal products and 110,823 drug-AE associations. Most AEs were identified pre-marketing (74.5%) versus post-marketing (25.5%). Safety updates peaked around 2012. Gastrointestinal, skin, and nervous system disorders were the most represented System Organ Classes. Drugs had a median of 48 AEs across 14 SOCs. Conclusions: The proposed dataset addresses a critical gap in pharmacovigilance by incorporating temporal information on AE recognition for the EU, supporting more accurate assessment of signal detection performance and facilitating methodological comparisons across analytical approaches."
+  },
+  {
+    "title": "Observing solar vortices with existing and future instrumentation. Solar Physics International Network for Swirls (SPINS) white paper (Helio)",
+    "abstract": "Solar vortices are fundamental components of solar atmospheric dynamics, serving as natural laboratories for magnetic field twisting, energy concentration and transport, wave guidance, and plasma coupling across atmospheric layers. Numerical and observational studies show that solar vortices are intimately connected to key physical processes including magnetic reconnection, atmospheric heating, turbulence, and wave generation. This white paper, prepared for the UK Space Frontiers 2035 call, outline five high-priority scientific questions addressing vortex generation mechanisms, cross-layer coupling, magnetic restructuring, collective wave-guidance structures, and their role in triggering explosive events and modulating the solar wind. Key observations and capabilities required to make significant advancements over the coming decade are identified. The UK solar physics community has established world-leading expertise in vortex dynamics, combining strengths in high-resolution observations, MHD turbulence theory, numerical modelling, and space instrumentation. UK researchers have made foundational contributions to Solar Orbiter, delivered critical systems for DKIST, and maintain active involvement in MUSE and SOLAR-C EUVST missions. Our technical approach centres on developing next-generation instrumentation: a multi-band, space-qualified system employing four tunable Fabry-P\u00e9rot Interferometers providing diffraction-limited, high-cadence spectropolarimetric coverage from the deep photosphere to the low corona. This capability will be validated through a staged mission architecture beginning with balloon-borne demonstrators. Continuing this effort over the coming decade is vital to maintain UK leadership in this field and achieve the goals of roadmap for solar system research.",
+    "authors": [
+      "Suzana S. A. Silva",
+      "Viktor Fedun",
+      "Gary Verth",
+      "Istvan Ballai",
+      "Eamon Scullion",
+      "Malcolm Druett",
+      "Kostas Tziotziou",
+      "Alex Pietrow",
+      "Nitin Yadav",
+      "Ioannis Dakanalis",
+      "Elena Khomenko",
+      "Hidetaka Kuniyoshi",
+      "Shivdev Turkay",
+      "Matias Koll Pistarini",
+      "Robertus Erdelyi",
+      "Luiz Augusto Camargo Aranha Schiavo"
+    ],
+    "published": "2026-02-10",
+    "year": 2026,
+    "arxiv_id": "2602.10170v1",
+    "category": "astro-ph.IM",
+    "source": "arxiv",
+    "text": "Observing solar vortices with existing and future instrumentation. Solar Physics International Network for Swirls (SPINS) white paper (Helio)\n\nSolar vortices are fundamental components of solar atmospheric dynamics, serving as natural laboratories for magnetic field twisting, energy concentration and transport, wave guidance, and plasma coupling across atmospheric layers. Numerical and observational studies show that solar vortices are intimately connected to key physical processes including magnetic reconnection, atmospheric heating, turbulence, and wave generation. This white paper, prepared for the UK Space Frontiers 2035 call, outline five high-priority scientific questions addressing vortex generation mechanisms, cross-layer coupling, magnetic restructuring, collective wave-guidance structures, and their role in triggering explosive events and modulating the solar wind. Key observations and capabilities required to make significant advancements over the coming decade are identified. The UK solar physics community has established world-leading expertise in vortex dynamics, combining strengths in high-resolution observations, MHD turbulence theory, numerical modelling, and space instrumentation. UK researchers have made foundational contributions to Solar Orbiter, delivered critical systems for DKIST, and maintain active involvement in MUSE and SOLAR-C EUVST missions. Our technical approach centres on developing next-generation instrumentation: a multi-band, space-qualified system employing four tunable Fabry-P\u00e9rot Interferometers providing diffraction-limited, high-cadence spectropolarimetric coverage from the deep photosphere to the low corona. This capability will be validated through a staged mission architecture beginning with balloon-borne demonstrators. Continuing this effort over the coming decade is vital to maintain UK leadership in this field and achieve the goals of roadmap for solar system research."
+  },
+  {
+    "title": "Analysis of the current status of tuberculosis transmission in China based on a heterogeneity model",
+    "abstract": "Tuberculosis (TB) is an infectious disease transmitted through the respiratory system. China is one of the countries with a high burden of TB. Since 2004, an average of more than 800,000 cases of active TB have been reported each year in China. Analyzing the case data from 2004-2018, we find significant differences in TB incidence by age group. Therefore, the effect of age heterogeneous structure on TB transmission needs further study. We develop a model of TB to explore the role of age heterogeneity as a factor in TB transmission. The model is fitted numerically using the nonlinear least squares method to obtain the key parameters in the model, and the basic reproduction number Rv 0.8017 is calculated and the sensitivity anal-ysis of Rv to the parameters is given. The simulation results show that reducing the number of new infections in the elderly population and increasing the recovery rate of elderly patients with the disease could significantly reduce the transmission of tuberculosis. Furthermore the feasibility of achieving the goals of the WHO End TB Strategy in China is assessed, and we obtain that with existing TB control measures it will take another 30 years for China to reach the WHO goal to reduce 90% of the number of new cases by year 2049. However, in theoretical it is feasible to reach the WHO strategic goal of ending tuberculosis by 2035 if the group contact rate in the elderly population can be reduced though it is difficulty to reduce the contact rate.",
+    "authors": [
+      "Chuanqing Xu",
+      "Kedeng Cheng",
+      "Yu Wang",
+      "Songbai Guo",
+      "Maoxing Liu",
+      "Xiaojing Wang",
+      "Zhiguo Zhang"
+    ],
+    "published": "2023-03-31",
+    "year": 2023,
+    "arxiv_id": "2303.17791v1",
+    "category": "stat.AP",
+    "source": "arxiv",
+    "text": "Analysis of the current status of tuberculosis transmission in China based on a heterogeneity model\n\nTuberculosis (TB) is an infectious disease transmitted through the respiratory system. China is one of the countries with a high burden of TB. Since 2004, an average of more than 800,000 cases of active TB have been reported each year in China. Analyzing the case data from 2004-2018, we find significant differences in TB incidence by age group. Therefore, the effect of age heterogeneous structure on TB transmission needs further study. We develop a model of TB to explore the role of age heterogeneity as a factor in TB transmission. The model is fitted numerically using the nonlinear least squares method to obtain the key parameters in the model, and the basic reproduction number Rv 0.8017 is calculated and the sensitivity anal-ysis of Rv to the parameters is given. The simulation results show that reducing the number of new infections in the elderly population and increasing the recovery rate of elderly patients with the disease could significantly reduce the transmission of tuberculosis. Furthermore the feasibility of achieving the goals of the WHO End TB Strategy in China is assessed, and we obtain that with existing TB control measures it will take another 30 years for China to reach the WHO goal to reduce 90% of the number of new cases by year 2049. However, in theoretical it is feasible to reach the WHO strategic goal of ending tuberculosis by 2035 if the group contact rate in the elderly population can be reduced though it is difficulty to reduce the contact rate."
+  },
+  {
+    "title": "SceneEval: Evaluating Semantic Coherence in Text-Conditioned 3D Indoor Scene Synthesis",
+    "abstract": "Despite recent advances in text-conditioned 3D indoor scene generation, there remain gaps in the evaluation of these methods. Existing metrics often measure realism by comparing generated scenes to a set of ground-truth scenes, but they overlook how well scenes follow the input text and capture implicit expectations of plausibility. We present SceneEval, an evaluation framework designed to address these limitations. SceneEval introduces fine-grained metrics for explicit user requirements-including object counts, attributes, and spatial relationships-and complementary metrics for implicit expectations such as support, collisions, and navigability. Together, these provide interpretable and comprehensive assessments of scene quality. To ground evaluation, we curate SceneEval-500, a benchmark of 500 text descriptions with detailed annotations of expected scene properties. This dataset establishes a common reference for reproducible and systematic comparison across scene generation methods. We evaluate six recent scene generation approaches using SceneEval and demonstrate its ability to provide detailed assessments of the generated scenes, highlighting strengths and areas for improvement across multiple dimensions. Our results identify significant gaps in current methods, underscoring the need for further research toward practical and controllable scene synthesis.",
+    "authors": [
+      "Hou In Ivan Tam",
+      "Hou In Derek Pun",
+      "Austin T. Wang",
+      "Angel X. Chang",
+      "Manolis Savva"
+    ],
+    "published": "2025-03-18",
+    "year": 2025,
+    "arxiv_id": "2503.14756v3",
+    "category": "cs.GR",
+    "source": "arxiv",
+    "text": "SceneEval: Evaluating Semantic Coherence in Text-Conditioned 3D Indoor Scene Synthesis\n\nDespite recent advances in text-conditioned 3D indoor scene generation, there remain gaps in the evaluation of these methods. Existing metrics often measure realism by comparing generated scenes to a set of ground-truth scenes, but they overlook how well scenes follow the input text and capture implicit expectations of plausibility. We present SceneEval, an evaluation framework designed to address these limitations. SceneEval introduces fine-grained metrics for explicit user requirements-including object counts, attributes, and spatial relationships-and complementary metrics for implicit expectations such as support, collisions, and navigability. Together, these provide interpretable and comprehensive assessments of scene quality. To ground evaluation, we curate SceneEval-500, a benchmark of 500 text descriptions with detailed annotations of expected scene properties. This dataset establishes a common reference for reproducible and systematic comparison across scene generation methods. We evaluate six recent scene generation approaches using SceneEval and demonstrate its ability to provide detailed assessments of the generated scenes, highlighting strengths and areas for improvement across multiple dimensions. Our results identify significant gaps in current methods, underscoring the need for further research toward practical and controllable scene synthesis."
+  },
+  {
+    "title": "SceneMotifCoder: Example-driven Visual Program Learning for Generating 3D Object Arrangements",
+    "abstract": "Despite advances in text-to-3D generation methods, generation of multi-object arrangements remains challenging. Current methods exhibit failures in generating physically plausible arrangements that respect the provided text description. We present SceneMotifCoder (SMC), an example-driven framework for generating 3D object arrangements through visual program learning. SMC leverages large language models (LLMs) and program synthesis to overcome these challenges by learning visual programs from example arrangements. These programs are generalized into compact, editable meta-programs. When combined with 3D object retrieval and geometry-aware optimization, they can be used to create object arrangements varying in arrangement structure and contained objects. Our experiments show that SMC generates high-quality arrangements using meta-programs learned from few examples. Evaluation results demonstrates that object arrangements generated by SMC better conform to user-specified text descriptions and are more physically plausible when compared with state-of-the-art text-to-3D generation and layout methods.",
+    "authors": [
+      "Hou In Ivan Tam",
+      "Hou In Derek Pun",
+      "Austin T. Wang",
+      "Angel X. Chang",
+      "Manolis Savva"
+    ],
+    "published": "2024-08-05",
+    "year": 2024,
+    "arxiv_id": "2408.02211v2",
+    "category": "cs.GR",
+    "source": "arxiv",
+    "text": "SceneMotifCoder: Example-driven Visual Program Learning for Generating 3D Object Arrangements\n\nDespite advances in text-to-3D generation methods, generation of multi-object arrangements remains challenging. Current methods exhibit failures in generating physically plausible arrangements that respect the provided text description. We present SceneMotifCoder (SMC), an example-driven framework for generating 3D object arrangements through visual program learning. SMC leverages large language models (LLMs) and program synthesis to overcome these challenges by learning visual programs from example arrangements. These programs are generalized into compact, editable meta-programs. When combined with 3D object retrieval and geometry-aware optimization, they can be used to create object arrangements varying in arrangement structure and contained objects. Our experiments show that SMC generates high-quality arrangements using meta-programs learned from few examples. Evaluation results demonstrates that object arrangements generated by SMC better conform to user-specified text descriptions and are more physically plausible when compared with state-of-the-art text-to-3D generation and layout methods."
+  },
+  {
+    "title": "Towards an Embodied Composition Framework for Organizing Immersive Computational Notebooks",
+    "abstract": "As immersive technologies evolve, immersive computational notebooks offer new opportunities for interacting with code, data, and outputs. However, scaling these environments remains a challenge, particularly when analysts manually arrange large numbers of cells to maintain both execution logic and visual coherence. To address this, we introduce an embodied composition framework, facilitating organizational processes in the context of immersive computational notebooks. To evaluate the effectiveness of the embodied composition framework, we conducted a controlled user study comparing manual and embodied composition frameworks in an organizational process. The results show that embodied composition frameworks significantly reduced user effort and decreased completion time. However, the design of the triggering mechanism requires further refinement. Our findings highlight the potential of embodied composition frameworks to enhance the scalability of the organizational process in immersive computational notebooks.",
+    "authors": [
+      "Sungwon In",
+      "Eric Krokos",
+      "Kirsten Whitley",
+      "Chris North",
+      "Yalong Yang"
+    ],
+    "published": "2025-09-16",
+    "year": 2025,
+    "arxiv_id": "2509.13291v1",
+    "category": "cs.HC",
+    "source": "arxiv",
+    "text": "Towards an Embodied Composition Framework for Organizing Immersive Computational Notebooks\n\nAs immersive technologies evolve, immersive computational notebooks offer new opportunities for interacting with code, data, and outputs. However, scaling these environments remains a challenge, particularly when analysts manually arrange large numbers of cells to maintain both execution logic and visual coherence. To address this, we introduce an embodied composition framework, facilitating organizational processes in the context of immersive computational notebooks. To evaluate the effectiveness of the embodied composition framework, we conducted a controlled user study comparing manual and embodied composition frameworks in an organizational process. The results show that embodied composition frameworks significantly reduced user effort and decreased completion time. However, the design of the triggering mechanism requires further refinement. Our findings highlight the potential of embodied composition frameworks to enhance the scalability of the organizational process in immersive computational notebooks."
+  },
+  {
+    "title": "Reasoning Structure Matters for Safety Alignment of Reasoning Models",
+    "abstract": "Large reasoning models (LRMs) achieve strong performance on complex reasoning tasks but often generate harmful responses to malicious user queries. This paper investigates the underlying cause of these safety risks and shows that the issue lies in the reasoning structure itself. Based on this insight, we claim that effective safety alignment can be achieved by altering the reasoning structure. We propose AltTrain, a simple yet effective post training method that explicitly alters the reasoning structure of LRMs. AltTrain is both practical and generalizable, requiring no complex reinforcement learning (RL) training or reward design, only supervised finetuning (SFT) with a lightweight 1K training examples. Experiments across LRM backbones and model sizes demonstrate strong safety alignment, along with robust generalization across reasoning, QA, summarization, and multilingual setting.",
+    "authors": [
+      "Yeonjun In",
+      "Wonjoong Kim",
+      "Sangwu Park",
+      "Chanyoung Park"
+    ],
+    "published": "2026-04-21",
+    "year": 2026,
+    "arxiv_id": "2604.18946v1",
+    "category": "cs.AI",
+    "source": "arxiv",
+    "text": "Reasoning Structure Matters for Safety Alignment of Reasoning Models\n\nLarge reasoning models (LRMs) achieve strong performance on complex reasoning tasks but often generate harmful responses to malicious user queries. This paper investigates the underlying cause of these safety risks and shows that the issue lies in the reasoning structure itself. Based on this insight, we claim that effective safety alignment can be achieved by altering the reasoning structure. We propose AltTrain, a simple yet effective post training method that explicitly alters the reasoning structure of LRMs. AltTrain is both practical and generalizable, requiring no complex reinforcement learning (RL) training or reward design, only supervised finetuning (SFT) with a lightweight 1K training examples. Experiments across LRM backbones and model sizes demonstrate strong safety alignment, along with robust generalization across reasoning, QA, summarization, and multilingual setting."
+  }
+]

@@ -1,0 +1,1967 @@
+{
+  "job_id": "c5e0ac82ddfb",
+  "document_count": 30,
+  "documents": [
+    {
+      "title": "Cruise Missile Target Trajectory Movement Prediction based on Optimal 3D Kalman Filter with Firefly Algorithm",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1807.07006v1"
+    },
+    {
+      "title": "Designing AI-Enabled Countermeasures to Cognitive Warfare",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 1,
+      "arxiv_id": "2504.11486v1"
+    },
+    {
+      "title": "Enhanced Performance of Highly Activated Carbon and Surface-Treated Porous Polymers as Physical Adsorbents for Chemical Warfare Agents",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 1,
+      "arxiv_id": "2505.08802v1"
+    },
+    {
+      "title": "The Dragon and the Computer: Why Intellectual Property Theft is Compatible with Chinese Cyber-Warfare Doctrine",
+      "source": "arxiv",
+      "year": 2013,
+      "topic_id": 1,
+      "arxiv_id": "1309.6450v1"
+    },
+    {
+      "title": "Broad Area Search and Detection of Surface-to-Air Missile Sites Using Spatial Fusion of Component Object Detections from Deep Neural Networks",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 0,
+      "arxiv_id": "2003.10566v3"
+    },
+    {
+      "title": "A potential missile guidance law based-on chaos",
+      "source": "arxiv",
+      "year": 2023,
+      "topic_id": 0,
+      "arxiv_id": "2312.10011v1"
+    },
+    {
+      "title": "Future state prediction based on observer for missile system",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2411.08576v1"
+    },
+    {
+      "title": "Missile detection and destruction robot using detection algorithm",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2407.07452v2"
+    },
+    {
+      "title": "A Multi-Layer Electronic and Cyber Interference Model for AI-Driven Cruise Missiles: The Case of Khuzestan Province",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2510.03542v2"
+    },
+    {
+      "title": "Swarm-optimized Adaptive Augmentation of Missile Autopilot",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2509.07748v1"
+    },
+    {
+      "title": "Robust control for uncertain air-to-air missile systems",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2411.07593v1"
+    },
+    {
+      "title": "Turnkey Technology: A Powerful Tool for Cyber Warfare",
+      "source": "arxiv",
+      "year": 2023,
+      "topic_id": 1,
+      "arxiv_id": "2308.14576v1"
+    },
+    {
+      "title": "Energy-Optimal Control of a Submarine-Launched Cruise Missile",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 0,
+      "arxiv_id": "2008.08068v1"
+    },
+    {
+      "title": "Parameter Identification of a PN-Guided Incoming Missile Using an Improved Multiple-Model Mechanism",
+      "source": "arxiv",
+      "year": 2022,
+      "topic_id": 0,
+      "arxiv_id": "2202.09361v1"
+    },
+    {
+      "title": "Cooperative missile guidance design using Distributed Nonlinear Dynamic Inversion",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2509.18022v1"
+    },
+    {
+      "title": "Deep Learning Based Situation Awareness for Multiple Missiles Evasion",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2402.10101v1"
+    },
+    {
+      "title": "Advanced Prediction of Hypersonic Missile Trajectories with CNN-LSTM-GRU Architectures",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2506.15043v1"
+    },
+    {
+      "title": "Automatic planetary defense Deflecting NEOs by missiles shot from L1 and L3 (Earth-Moon)",
+      "source": "arxiv",
+      "year": 2021,
+      "topic_id": 0,
+      "arxiv_id": "2103.13304v1"
+    },
+    {
+      "title": "Learning-Based Multi-Stage Strategy for a Fixed-Wing Aircraft to Evade a Missile Detected at a Short Distance",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2511.05828v1"
+    },
+    {
+      "title": "Cognitive Warfare: Definition, Framework, and Case Study",
+      "source": "arxiv",
+      "year": 2026,
+      "topic_id": 1,
+      "arxiv_id": "2603.05222v1"
+    },
+    {
+      "title": "Cyber Warfare: Terms, Issues, Laws and Controversies",
+      "source": "arxiv",
+      "year": 2019,
+      "topic_id": 1,
+      "arxiv_id": "1905.13532v1"
+    },
+    {
+      "title": "Antifragile Electronic Warfare",
+      "source": "arxiv",
+      "year": 2014,
+      "topic_id": 0,
+      "arxiv_id": "1409.5429v3"
+    },
+    {
+      "title": "Stability of a flexible missile described by asymptotics of the eigenvalues of fourth order boundary value problems",
+      "source": "arxiv",
+      "year": 2021,
+      "topic_id": 0,
+      "arxiv_id": "2110.02306v1"
+    },
+    {
+      "title": "The Singularity Warfare: The metatheoretical Framework",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 1,
+      "arxiv_id": "2511.11674v1"
+    },
+    {
+      "title": "Armoured Fighting Vehicle Team Performance Prediction against Missile Attacks with Directed Energy Weapons",
+      "source": "arxiv",
+      "year": 2021,
+      "topic_id": 0,
+      "arxiv_id": "2106.14381v1"
+    },
+    {
+      "title": "A Generalization of Lanchester's Model of Warfare",
+      "source": "arxiv",
+      "year": 2021,
+      "topic_id": 0,
+      "arxiv_id": "2112.06973v2"
+    },
+    {
+      "title": "The Two Faces of American Power: Military and Political Communication during the Cuban Missile Crisis",
+      "source": "arxiv",
+      "year": 2009,
+      "topic_id": 1,
+      "arxiv_id": "0911.3638v1"
+    },
+    {
+      "title": "Robust Sliding Mode Control for Air-to-Air Missile",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2411.06754v1"
+    },
+    {
+      "title": "Advancing Network Securing Strategies with Network Algorithms for Integrated Air Defense System (IADS) Missile Batteries",
+      "source": "arxiv",
+      "year": 2023,
+      "topic_id": 0,
+      "arxiv_id": "2303.11293v3"
+    },
+    {
+      "title": "An electronic warfare approach for deploying a software-based Wi-Fi jammer",
+      "source": "arxiv",
+      "year": 2022,
+      "topic_id": 1,
+      "arxiv_id": "2212.14470v1"
+    }
+  ],
+  "clusters": [
+    {
+      "topic_id": 0,
+      "count": 15,
+      "keywords": [
+        "missiles",
+        "guidance",
+        "dnn",
+        "prediction",
+        "missile guidance",
+        "evasion",
+        "simulations",
+        "mode",
+        "networks",
+        "air-to-air"
+      ],
+      "label": "missiles, guidance, dnn, prediction",
+      "lifecycle_stage": "growth",
+      "stage_color": "#2563EB",
+      "lifecycle_explanation": "Rapid uptake: yearly counts are rising on the fitted S-curve upswing.",
+      "lifecycle_llm": "Standards might be emerging for integrating DNN into guidance systems, especially in simulations to test evasion tactics. Also, the mode of operation could be shifting towards more autonomous systems, which requires validation through simulations. I should make sure to connect each keyword to the growth",
+      "source_breakdown": {
+        "arxiv": 21,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        0,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        21,
+        22,
+        24,
+        25,
+        27,
+        28
+      ]
+    },
+    {
+      "topic_id": 1,
+      "count": 9,
+      "keywords": [
+        "cyber",
+        "technology",
+        "attacks",
+        "capabilities",
+        "risks",
+        "activated",
+        "laws",
+        "jammer",
+        "artificial intelligence",
+        "conflict"
+      ],
+      "label": "cyber, technology, attacks, capabilities",
+      "lifecycle_stage": "growth",
+      "stage_color": "#2563EB",
+      "lifecycle_explanation": "Rapid uptake: yearly counts are rising on the fitted S-curve upswing.",
+      "lifecycle_llm": "The growth stage for advanced cyber-attack capabilities is characterized by the rapid scaling of offensive tools and the integration of automated, \"activated\" exploit kits into mainstream threat actor arsenals. This expansion is driven by increased funding for state-sponsored capabilities, the proliferation of commercial jammers and signal-disruption tech, and a reactive surge in legislative efforts to establish international laws governing digital warfare. Adoption is accelerating as sophisticated attack vectors migrate from niche research to scalable, operationalized risks.",
+      "source_breakdown": {
+        "arxiv": 9,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        1,
+        2,
+        3,
+        11,
+        19,
+        20,
+        23,
+        26,
+        29
+      ]
+    }
+  ],
+  "scatter": {
+    "points": [
+      {
+        "doc_index": 0,
+        "topic_id": 0,
+        "x": -3.705695390701294,
+        "y": 10.865301132202148,
+        "preview": "Cruise Missile Target Trajectory Movement Prediction based on Optimal 3D Kalman Filter with Firefly Algorithm  It is hop",
+        "title": "Cruise Missile Target Trajectory Movement Prediction based on Optimal 3D Kalman ",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 1,
+        "topic_id": 1,
+        "x": -1.3551815748214722,
+        "y": 8.410355567932129,
+        "preview": "Designing AI-Enabled Countermeasures to Cognitive Warfare  Foreign information operations on social media platforms pose",
+        "title": "Designing AI-Enabled Countermeasures to Cognitive Warfare",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 2,
+        "topic_id": 1,
+        "x": -2.230531692504883,
+        "y": 8.600486755371094,
+        "preview": "Enhanced Performance of Highly Activated Carbon and Surface-Treated Porous Polymers as Physical Adsorbents for Chemical ",
+        "title": "Enhanced Performance of Highly Activated Carbon and Surface-Treated Porous Polym",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 3,
+        "topic_id": 1,
+        "x": -1.8597952127456665,
+        "y": 8.029705047607422,
+        "preview": "The Dragon and the Computer: Why Intellectual Property Theft is Compatible with Chinese Cyber-Warfare Doctrine  Along wi",
+        "title": "The Dragon and the Computer: Why Intellectual Property Theft is Compatible with ",
+        "source": "arxiv",
+        "year": 2013
+      },
+      {
+        "doc_index": 4,
+        "topic_id": 0,
+        "x": -2.1183571815490723,
+        "y": 10.138654708862305,
+        "preview": "Broad Area Search and Detection of Surface-to-Air Missile Sites Using Spatial Fusion of Component Object Detections from",
+        "title": "Broad Area Search and Detection of Surface-to-Air Missile Sites Using Spatial Fu",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 5,
+        "topic_id": 0,
+        "x": -3.521113157272339,
+        "y": 10.488369941711426,
+        "preview": "A potential missile guidance law based-on chaos  An important field of research in defense-related technology is the des",
+        "title": "A potential missile guidance law based-on chaos",
+        "source": "arxiv",
+        "year": 2023
+      },
+      {
+        "doc_index": 6,
+        "topic_id": 0,
+        "x": -3.150341033935547,
+        "y": 10.996427536010742,
+        "preview": "Future state prediction based on observer for missile system  Guided missile accuracy and precision is negatively impact",
+        "title": "Future state prediction based on observer for missile system",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 7,
+        "topic_id": 0,
+        "x": -3.004417657852173,
+        "y": 10.223483085632324,
+        "preview": "Missile detection and destruction robot using detection algorithm  This research is based on the present missile detecti",
+        "title": "Missile detection and destruction robot using detection algorithm",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 8,
+        "topic_id": 0,
+        "x": -2.4114935398101807,
+        "y": 9.72016716003418,
+        "preview": "A Multi-Layer Electronic and Cyber Interference Model for AI-Driven Cruise Missiles: The Case of Khuzestan Province  The",
+        "title": "A Multi-Layer Electronic and Cyber Interference Model for AI-Driven Cruise Missi",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 9,
+        "topic_id": 0,
+        "x": -4.022603988647461,
+        "y": 10.148611068725586,
+        "preview": "Swarm-optimized Adaptive Augmentation of Missile Autopilot  This paper considers the problem of optimizing a missile aut",
+        "title": "Swarm-optimized Adaptive Augmentation of Missile Autopilot",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 10,
+        "topic_id": 0,
+        "x": -4.0101213455200195,
+        "y": 11.479385375976562,
+        "preview": "Robust control for uncertain air-to-air missile systems  Air-to-air missiles are used on many modern military combat air",
+        "title": "Robust control for uncertain air-to-air missile systems",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 11,
+        "topic_id": 1,
+        "x": -1.8747024536132812,
+        "y": 8.503127098083496,
+        "preview": "Turnkey Technology: A Powerful Tool for Cyber Warfare  Turnkey technology has emerged as a game-changing tool in cyber w",
+        "title": "Turnkey Technology: A Powerful Tool for Cyber Warfare",
+        "source": "arxiv",
+        "year": 2023
+      },
+      {
+        "doc_index": 12,
+        "topic_id": 0,
+        "x": -3.6356265544891357,
+        "y": 11.696805953979492,
+        "preview": "Energy-Optimal Control of a Submarine-Launched Cruise Missile  A typical mission profile of submarine-launched cruise mi",
+        "title": "Energy-Optimal Control of a Submarine-Launched Cruise Missile",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 13,
+        "topic_id": 0,
+        "x": -2.772052526473999,
+        "y": 10.739290237426758,
+        "preview": "Parameter Identification of a PN-Guided Incoming Missile Using an Improved Multiple-Model Mechanism  An active defense a",
+        "title": "Parameter Identification of a PN-Guided Incoming Missile Using an Improved Multi",
+        "source": "arxiv",
+        "year": 2022
+      },
+      {
+        "doc_index": 14,
+        "topic_id": 0,
+        "x": -3.6768133640289307,
+        "y": 9.82567024230957,
+        "preview": "Cooperative missile guidance design using Distributed Nonlinear Dynamic Inversion  This paper presents a new cooperative",
+        "title": "Cooperative missile guidance design using Distributed Nonlinear Dynamic Inversio",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 15,
+        "topic_id": 0,
+        "x": -1.7074120044708252,
+        "y": 10.363057136535645,
+        "preview": "Deep Learning Based Situation Awareness for Multiple Missiles Evasion  As the effective range of air-to-air missiles inc",
+        "title": "Deep Learning Based Situation Awareness for Multiple Missiles Evasion",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 16,
+        "topic_id": 0,
+        "x": -2.1276907920837402,
+        "y": 10.763199806213379,
+        "preview": "Advanced Prediction of Hypersonic Missile Trajectories with CNN-LSTM-GRU Architectures  Advancements in the defense indu",
+        "title": "Advanced Prediction of Hypersonic Missile Trajectories with CNN-LSTM-GRU Archite",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 17,
+        "topic_id": 0,
+        "x": -4.255307674407959,
+        "y": 10.616348266601562,
+        "preview": "Automatic planetary defense Deflecting NEOs by missiles shot from L1 and L3 (Earth-Moon)  We develop the mathematical th",
+        "title": "Automatic planetary defense Deflecting NEOs by missiles shot from L1 and L3 (Ear",
+        "source": "arxiv",
+        "year": 2021
+      },
+      {
+        "doc_index": 18,
+        "topic_id": 0,
+        "x": -4.174715042114258,
+        "y": 11.076618194580078,
+        "preview": "Learning-Based Multi-Stage Strategy for a Fixed-Wing Aircraft to Evade a Missile Detected at a Short Distance  Missiles ",
+        "title": "Learning-Based Multi-Stage Strategy for a Fixed-Wing Aircraft to Evade a Missile",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 19,
+        "topic_id": 1,
+        "x": -0.8502610325813293,
+        "y": 8.253159523010254,
+        "preview": "Cognitive Warfare: Definition, Framework, and Case Study  Cognitive warfare has emerged as a central feature of modern c",
+        "title": "Cognitive Warfare: Definition, Framework, and Case Study",
+        "source": "arxiv",
+        "year": 2026
+      },
+      {
+        "doc_index": 20,
+        "topic_id": 1,
+        "x": -2.2876672744750977,
+        "y": 7.878742694854736,
+        "preview": "Cyber Warfare: Terms, Issues, Laws and Controversies  Recent years have shown us the importance of cybersecurity. Especi",
+        "title": "Cyber Warfare: Terms, Issues, Laws and Controversies",
+        "source": "arxiv",
+        "year": 2019
+      },
+      {
+        "doc_index": 21,
+        "topic_id": 0,
+        "x": -2.7535743713378906,
+        "y": 8.353346824645996,
+        "preview": "Antifragile Electronic Warfare  This letter introduces the concept of antifragile electronic warfare (EW), which we defi",
+        "title": "Antifragile Electronic Warfare",
+        "source": "arxiv",
+        "year": 2014
+      },
+      {
+        "doc_index": 22,
+        "topic_id": 0,
+        "x": -3.218163013458252,
+        "y": 11.707731246948242,
+        "preview": "Stability of a flexible missile described by asymptotics of the eigenvalues of fourth order boundary value problems  Fou",
+        "title": "Stability of a flexible missile described by asymptotics of the eigenvalues of f",
+        "source": "arxiv",
+        "year": 2021
+      },
+      {
+        "doc_index": 23,
+        "topic_id": 1,
+        "x": -1.319586992263794,
+        "y": 7.778866291046143,
+        "preview": "The Singularity Warfare: The metatheoretical Framework  This paper introduces the \"Singularity Warfare\" concept, arguing",
+        "title": "The Singularity Warfare: The metatheoretical Framework",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 24,
+        "topic_id": 0,
+        "x": -3.5017249584198,
+        "y": 9.0595064163208,
+        "preview": "Armoured Fighting Vehicle Team Performance Prediction against Missile Attacks with Directed Energy Weapons  A recent stu",
+        "title": "Armoured Fighting Vehicle Team Performance Prediction against Missile Attacks wi",
+        "source": "arxiv",
+        "year": 2021
+      },
+      {
+        "doc_index": 25,
+        "topic_id": 0,
+        "x": -1.3496671915054321,
+        "y": 7.401899814605713,
+        "preview": "A Generalization of Lanchester's Model of Warfare  The classical Lanchester's model is shortly reviewed and analysed, wi",
+        "title": "A Generalization of Lanchester's Model of Warfare",
+        "source": "arxiv",
+        "year": 2021
+      },
+      {
+        "doc_index": 26,
+        "topic_id": 1,
+        "x": -0.8931971192359924,
+        "y": 7.779412269592285,
+        "preview": "The Two Faces of American Power: Military and Political Communication during the Cuban Missile Crisis  Purpose: The mism",
+        "title": "The Two Faces of American Power: Military and Political Communication during the",
+        "source": "arxiv",
+        "year": 2009
+      },
+      {
+        "doc_index": 27,
+        "topic_id": 0,
+        "x": -3.618177890777588,
+        "y": 11.197270393371582,
+        "preview": "Robust Sliding Mode Control for Air-to-Air Missile  Within the missile guidance and control system the autopilot must ov",
+        "title": "Robust Sliding Mode Control for Air-to-Air Missile",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 28,
+        "topic_id": 0,
+        "x": -3.0826914310455322,
+        "y": 9.206089973449707,
+        "preview": "Advancing Network Securing Strategies with Network Algorithms for Integrated Air Defense System (IADS) Missile Batteries",
+        "title": "Advancing Network Securing Strategies with Network Algorithms for Integrated Air",
+        "source": "arxiv",
+        "year": 2023
+      },
+      {
+        "doc_index": 29,
+        "topic_id": 1,
+        "x": -2.0511510372161865,
+        "y": 9.088016510009766,
+        "preview": "An electronic warfare approach for deploying a software-based Wi-Fi jammer  Some prominent instances have been centered ",
+        "title": "An electronic warfare approach for deploying a software-based Wi-Fi jammer",
+        "source": "arxiv",
+        "year": 2022
+      }
+    ],
+    "why": "Documents were embedded with all-MiniLM-L6-v2, projected with UMAP, and grouped by BERTopic (HDBSCAN + c-TF-IDF). Topic labels use an English + academic stop-word list, bigrams, reduced-frequent-word c-TF-IDF, and Maximal Marginal Relevance so keywords highlight technology terms\u2014not function words like \u201cthe\u201d or \u201cof\u201d."
+  },
+  "evolution": {
+    "timeline": {
+      "0": [
+        {
+          "year": 2014,
+          "count": 1
+        },
+        {
+          "year": 2018,
+          "count": 1
+        },
+        {
+          "year": 2020,
+          "count": 2
+        },
+        {
+          "year": 2021,
+          "count": 4
+        },
+        {
+          "year": 2022,
+          "count": 1
+        },
+        {
+          "year": 2023,
+          "count": 2
+        },
+        {
+          "year": 2024,
+          "count": 5
+        },
+        {
+          "year": 2025,
+          "count": 5
+        }
+      ],
+      "1": [
+        {
+          "year": 2009,
+          "count": 1
+        },
+        {
+          "year": 2013,
+          "count": 1
+        },
+        {
+          "year": 2019,
+          "count": 1
+        },
+        {
+          "year": 2022,
+          "count": 1
+        },
+        {
+          "year": 2023,
+          "count": 1
+        },
+        {
+          "year": 2025,
+          "count": 3
+        },
+        {
+          "year": 2026,
+          "count": 1
+        }
+      ]
+    },
+    "lifecycle": {
+      "0": {
+        "stage": "growth",
+        "params": {
+          "L": 49.99999999999396,
+          "k": 0.20854428736821276,
+          "t0": 21.7032809816011
+        },
+        "fitted": [
+          [
+            2014,
+            0.5353487011439563
+          ],
+          [
+            2014,
+            0.6032196702850201
+          ],
+          [
+            2015,
+            0.6795770368539846
+          ],
+          [
+            2015,
+            0.7654501725107398
+          ],
+          [
+            2016,
+            0.8619848144566573
+          ],
+          [
+            2016,
+            0.9704539407362305
+          ],
+          [
+            2017,
+            1.092269032615571
+          ],
+          [
+            2018,
+            1.2289915390484307
+          ],
+          [
+            2018,
+            1.3823442866126292
+          ],
+          [
+            2019,
+            1.5542224905518347
+          ],
+          [
+            2019,
+            1.7467039168975043
+          ],
+          [
+            2020,
+            1.9620576207950875
+          ],
+          [
+            2020,
+            2.2027505417768203
+          ],
+          [
+            2021,
+            2.471451073965908
+          ],
+          [
+            2022,
+            2.7710285514822863
+          ],
+          [
+            2022,
+            3.1045474032133313
+          ],
+          [
+            2023,
+            3.475254547431523
+          ],
+          [
+            2023,
+            3.886558431685233
+          ],
+          [
+            2024,
+            4.3419979996496565
+          ],
+          [
+            2025,
+            4.845199814183271
+          ]
+        ],
+        "explanation": "Rapid uptake: yearly counts are rising on the fitted S-curve upswing."
+      },
+      "1": {
+        "stage": "growth",
+        "params": {
+          "L": 5.680411273813196,
+          "k": 0.05380977337756498,
+          "t0": 33.99999999999735
+        },
+        "fitted": [
+          [
+            2009,
+            0.7855667943875968
+          ],
+          [
+            2009,
+            0.8187289705543778
+          ],
+          [
+            2010,
+            0.8530470954376181
+          ],
+          [
+            2011,
+            0.8885408063033603
+          ],
+          [
+            2012,
+            0.9252282912120572
+          ],
+          [
+            2013,
+            0.9631261228496765
+          ],
+          [
+            2014,
+            1.0022490882298132
+          ],
+          [
+            2015,
+            1.0426100152557911
+          ],
+          [
+            2016,
+            1.0842195972705244
+          ],
+          [
+            2017,
+            1.1270862168605837
+          ],
+          [
+            2017,
+            1.171215770318302
+          ],
+          [
+            2018,
+            1.2166114942978363
+          ],
+          [
+            2019,
+            1.2632737963260872
+          ],
+          [
+            2020,
+            1.3112000909427213
+          ],
+          [
+            2021,
+            1.3603846433433227
+          ],
+          [
+            2022,
+            1.4108184224808675
+          ],
+          [
+            2023,
+            1.4624889656410285
+          ],
+          [
+            2024,
+            1.5153802565413281
+          ],
+          [
+            2025,
+            1.5694726190111878
+          ],
+          [
+            2026,
+            1.6247426282846587
+          ]
+        ],
+        "explanation": "Rapid uptake: yearly counts are rising on the fitted S-curve upswing."
+      }
+    },
+    "events": [
+      {
+        "year": 2009,
+        "topic_id": 1,
+        "type": "emerge",
+        "keywords": [
+          "cyber",
+          "technology",
+          "attacks",
+          "capabilities",
+          "risks",
+          "activated",
+          "laws",
+          "jammer",
+          "artificial intelligence",
+          "conflict"
+        ],
+        "count": 1,
+        "why": "Topic 1 first appears in 2009 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Alternatively, Stuxnet used rootkit technology to hide its presence, which is a specific influencing tech. For the 5-year impact, I need to project forward from 2009. By 2014, we'd see more nations developing cyber capabilities, leading to the growth of cyber warfare doctrines",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2014,
+        "topic_id": 0,
+        "type": "emerge",
+        "keywords": [
+          "missiles",
+          "guidance",
+          "dnn",
+          "prediction",
+          "missile guidance",
+          "evasion",
+          "simulations",
+          "mode",
+          "networks",
+          "air-to-air"
+        ],
+        "count": 1,
+        "why": "Topic 0 first appears in 2014 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Influence context: none listed\n\nThis appears to be about the emergence of research on using Deep Neural Networks (DNN) for missile guidance and prediction systems in 2014. The fact that it has zero keyword overlap with prior windows suggests this was a novel application area. ROOT CAUSE:\nThe emergence of DNN applications in missile guidance systems in 2014 was likely driven by the maturation of deep learning techniques and increased computational power, enabling researchers to explore AI-based approaches for more sophisticated missile guidance and evasion",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2020,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "missiles",
+          "guidance",
+          "dnn",
+          "prediction",
+          "missile guidance",
+          "evasion",
+          "simulations",
+          "mode",
+          "networks",
+          "air-to-air"
+        ],
+        "count": 2,
+        "why": "Publication volume for topic 0 rose 1\u21922 (100% YoY).",
+        "llm_explanation": "*   **Input Data:**\n        *   Event type: grow\n        *   Year: 2020\n        *   Cluster label: missiles, guidance, dnn, prediction\n        *   Topic keywords: missiles, guidance, dnn, prediction, missile guidance, evasion, simulations, mode\n        *   Lifecycle stage: growth\n        *   Corpus signal: Publication volume rose 1\u21922 (100% YoY). *   Influence context: none listed\n\n2. **Drafting - Section by Section:**\n    *   *(1) ROOT CAUSE:* Why did",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2021,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "missiles",
+          "guidance",
+          "dnn",
+          "prediction",
+          "missile guidance",
+          "evasion",
+          "simulations",
+          "mode",
+          "networks",
+          "air-to-air"
+        ],
+        "count": 4,
+        "why": "Publication volume for topic 0 rose 2\u21924 (100% YoY).",
+        "llm_explanation": "**ROOT CAUSE** \u2013 The surge in 2021 publications was driven by defense labs integrating deep neural networks (DNNs) into missile guidance to improve real\u2011time trajectory prediction and evasion modeling.  \n**INFLUENCING TECHNOLOGY** \u2013 Advances in reinforcement\u2011learning\u2011based flight\u2011control simulators and high\u2011fidelity CFD\u2011augmented datasets enabled training of DNN predictors for adaptive guidance modes.  \n**5\u2011YEAR IMPACT** \u2013 By 2026, missile manufacturers will embed on\u2011board DNN inference chips, shortening design cycles and yielding autonomous seekers that can counter emerging counter\u2011measures, while R&D budgets shift toward AI\u2011centric guidance validation platforms.",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2023,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "missiles",
+          "guidance",
+          "dnn",
+          "prediction",
+          "missile guidance",
+          "evasion",
+          "simulations",
+          "mode",
+          "networks",
+          "air-to-air"
+        ],
+        "count": 2,
+        "why": "Publication volume for topic 0 rose 1\u21922 (100% YoY).",
+        "llm_explanation": "The event reflects a surge in research around missile guidance systems, highlighting the growing focus on DNN-based prediction models. This trend underscores the importance of advanced simulations in enhancing missile evasion strategies. Over the next five years, this will likely accelerate innovation in missile defense R&D and simulation technologies.",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2024,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "missiles",
+          "guidance",
+          "dnn",
+          "prediction",
+          "missile guidance",
+          "evasion",
+          "simulations",
+          "mode",
+          "networks",
+          "air-to-air"
+        ],
+        "count": 5,
+        "why": "Publication volume for topic 0 rose 2\u21925 (150% YoY).",
+        "llm_explanation": "Maybe \"Deep Neural Networks\" as the tech. 5-YEAR IMPACT: The 150% increase in publications could lead to more R&D investments or standardization in missile guidance. Check the structure: 1 sentence each?",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2025,
+        "topic_id": 1,
+        "type": "grow",
+        "keywords": [
+          "cyber",
+          "technology",
+          "attacks",
+          "capabilities",
+          "risks",
+          "activated",
+          "laws",
+          "jammer",
+          "artificial intelligence",
+          "conflict"
+        ],
+        "count": 3,
+        "why": "Publication volume for topic 1 rose 1\u21923 (200% YoY).",
+        "llm_explanation": "ROOT CAUSE \u2014 The 2025 surge in publications reflects the rollout of next\u2011generation 5G\u2011enabled jamming devices that can covertly disable IoT networks, prompting researchers to document new attack vectors and legal gaps.  \nINFLUENCING TECHNOLOGY \u2014 Software\u2011defined radio (SDR) platforms combined with AI\u2011driven signal classification are enabling these adaptive jammers to target specific protocol stacks in real time.  \n5\u2011YEAR IMPACT \u2014 By 2029, telecom operators will be forced to embed quantum\u2011resistant authentication and dynamic spectrum\u2011access controls into their core infrastructure, spurring a wave of R&D investment in resilient 6G architectures and prompting tighter international cyber\u2011warfare regulations.",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2026,
+        "topic_id": 0,
+        "type": "die",
+        "keywords": [
+          "missiles",
+          "guidance",
+          "dnn",
+          "prediction",
+          "missile guidance",
+          "evasion",
+          "simulations",
+          "mode",
+          "networks",
+          "air-to-air"
+        ],
+        "why": "Topic 0 had no publications in 2026 after prior activity\u2014treated as decline/die-off.",
+        "llm_explanation": "ROOT CAUSE \u2014 The sudden cessation of publications indicates a transition from academic theoretical modeling of Deep Neural Network (DNN) guidance to classified, proprietary military implementation. INFLUENCING TECHNOLOGY \u2014 High-fidelity Reinforcement Learning (RL) training within synthetic combat environments. 5-YEAR IMPACT \u2014 R&D will shift from public discourse on evasion algorithms to closed-loop hardware-in-the-loop testing for autonomous kinetic interceptors.",
+        "llm_source": "openrouter"
+      }
+    ],
+    "why": "Per-topic yearly counts were fitted to a logistic S-curve to assign lifecycle stages. Change events are detected by diffing topic presence and volume across years and measuring keyword overlap between co-active clusters.",
+    "weak_signals": []
+  },
+  "reasoning": {
+    "influence": [
+      {
+        "from": "missiles",
+        "to": "dnn",
+        "relation": "enables",
+        "reason": "Deep neural networks enhance missile trajectory prediction accuracy through pattern recognition in real-time sensor data.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "guidance",
+        "to": "cyber",
+        "relation": "enables",
+        "reason": "AI-driven guidance systems improve cyber-resilient navigation by detecting and mitigating digital spoofing attacks.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "missiles",
+        "to": "technology",
+        "relation": "displaces",
+        "reason": "Cyber-physical integration reduces reliance on traditional missile mechanics, prioritizing software-defined systems vulnerable to hacking.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "prediction",
+        "to": "technology",
+        "relation": "enables",
+        "reason": "Machine learning models accelerate threat assessment, enabling proactive defense against emerging missile capabilities.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "dnn",
+        "to": "technology",
+        "relation": "displaces",
+        "reason": "Legacy systems struggle to adopt DNNs due to hardware limitations, creating gaps in predictive analytics for missile defense.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "cyber",
+        "to": "attacks",
+        "relation": "enables",
+        "reason": "Adversarial AI techniques exploit vulnerabilities in missile guidance systems, forcing rapid capability upgrades.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "prediction",
+        "to": "capabilities",
+        "relation": "displaces",
+        "reason": "Over-reliance on predictive models risks underestimating unpredictable missile maneuvers, reducing operational flexibility.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "technology",
+        "to": "capabilities",
+        "relation": "enables",
+        "reason": "Quantum computing advancements could revolutionize missile trajectory modeling, outpacing current predictive frameworks.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      }
+    ],
+    "sao": {
+      "0": {
+        "triples": [
+          {
+            "subject": "Prediction",
+            "action": "base",
+            "object": "Filter"
+          },
+          {
+            "subject": "research",
+            "action": "try",
+            "object": "method"
+          },
+          {
+            "subject": "it",
+            "action": "expect",
+            "object": "evaluation"
+          },
+          {
+            "subject": "we",
+            "action": "demonstrate",
+            "object": "object"
+          },
+          {
+            "subject": "score",
+            "action": "compute",
+            "object": "algorithm"
+          },
+          {
+            "subject": "detection",
+            "action": "fuse",
+            "object": "object"
+          },
+          {
+            "subject": "we",
+            "action": "demonstrate",
+            "object": "utility"
+          },
+          {
+            "subject": "result",
+            "action": "demonstrate",
+            "object": "detection"
+          },
+          {
+            "subject": "approach",
+            "action": "demonstrate",
+            "object": "variety"
+          },
+          {
+            "subject": "law",
+            "action": "base",
+            "object": "research"
+          },
+          {
+            "subject": "missile",
+            "action": "guide",
+            "object": ""
+          },
+          {
+            "subject": "we",
+            "action": "discuss",
+            "object": "communication"
+          },
+          {
+            "subject": "type",
+            "action": "guide",
+            "object": "missile"
+          },
+          {
+            "subject": "prediction",
+            "action": "base",
+            "object": "observer"
+          },
+          {
+            "subject": "impact",
+            "action": "meet",
+            "object": "demand"
+          },
+          {
+            "subject": "paper",
+            "action": "present",
+            "object": "design"
+          },
+          {
+            "subject": "design",
+            "action": "base",
+            "object": "differentiator"
+          },
+          {
+            "subject": "signal",
+            "action": "provide",
+            "object": "integration"
+          },
+          {
+            "subject": "simulation",
+            "action": "guide",
+            "object": "performance"
+          },
+          {
+            "subject": "scenario",
+            "action": "manoeuvre",
+            "object": ""
+          },
+          {
+            "subject": "research",
+            "action": "use",
+            "object": "algorithm"
+          },
+          {
+            "subject": "paper",
+            "action": "give",
+            "object": "idea"
+          },
+          {
+            "subject": "system",
+            "action": "make",
+            "object": "missile"
+          },
+          {
+            "subject": "system",
+            "action": "base",
+            "object": "sensor"
+          },
+          {
+            "subject": "it",
+            "action": "have",
+            "object": "transducer"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "base",
+            "count": 7
+          },
+          {
+            "action": "demonstrate",
+            "count": 6
+          },
+          {
+            "action": "use",
+            "count": 5
+          },
+          {
+            "action": "propose",
+            "count": 4
+          },
+          {
+            "action": "guide",
+            "count": 3
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "1": {
+        "triples": [
+          {
+            "subject": "threat",
+            "action": "intensify",
+            "object": "rise"
+          },
+          {
+            "subject": "it",
+            "action": "use",
+            "object": "AI"
+          },
+          {
+            "subject": "operation",
+            "action": "drive",
+            "object": "law"
+          },
+          {
+            "subject": "AI",
+            "action": "have",
+            "object": "field"
+          },
+          {
+            "subject": "paper",
+            "action": "propose",
+            "object": "countermeasure"
+          },
+          {
+            "subject": "Performance",
+            "action": "treat",
+            "object": "Carbon"
+          },
+          {
+            "subject": "countermeasure",
+            "action": "involve",
+            "object": "adsorption"
+          },
+          {
+            "subject": "we",
+            "action": "investigate",
+            "object": "study"
+          },
+          {
+            "subject": "finding",
+            "action": "reveal",
+            "object": "property"
+          },
+          {
+            "subject": "we",
+            "action": "identify",
+            "object": "potential"
+          },
+          {
+            "subject": "we",
+            "action": "demonstrate",
+            "object": "introduction"
+          },
+          {
+            "subject": "carbon",
+            "action": "activate",
+            "object": "area"
+          },
+          {
+            "subject": "research",
+            "action": "pave",
+            "object": "way"
+          },
+          {
+            "subject": "Dragon",
+            "action": "consider",
+            "object": "Doctrine"
+          },
+          {
+            "subject": "we",
+            "action": "explore",
+            "object": "excerpt"
+          },
+          {
+            "subject": "we",
+            "action": "examine",
+            "object": "idea"
+          },
+          {
+            "subject": "we",
+            "action": "look",
+            "object": "study"
+          },
+          {
+            "subject": "Technology",
+            "action": "emerge",
+            "object": "technology"
+          },
+          {
+            "subject": "advantage",
+            "action": "include",
+            "object": "technology"
+          },
+          {
+            "subject": "technology",
+            "action": "introduce",
+            "object": "risk"
+          },
+          {
+            "subject": "paper",
+            "action": "provide",
+            "object": "perspective"
+          },
+          {
+            "subject": "novelty",
+            "action": "lie",
+            "object": "example"
+          },
+          {
+            "subject": "approach",
+            "action": "focus",
+            "object": "measure"
+          },
+          {
+            "subject": "Warfare",
+            "action": "emerge",
+            "object": "feature"
+          },
+          {
+            "subject": "approach",
+            "action": "exist",
+            "object": "operation"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "introduce",
+            "count": 3
+          },
+          {
+            "action": "propose",
+            "count": 2
+          },
+          {
+            "action": "emerge",
+            "count": 2
+          },
+          {
+            "action": "provide",
+            "count": 2
+          },
+          {
+            "action": "focus",
+            "count": 2
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      }
+    },
+    "why_influence": "Edges represent enabling or displacing relationships inferred from cluster themes and LLM foresight reasoning."
+  },
+  "scenarios": {
+    "drivers": [
+      {
+        "axis": "Adoption velocity",
+        "description": "2 emerging topic(s) create uncertainty about which technology will cross the chasm first.",
+        "why": "Derived from emerge events\u2014new clusters increase adoption-path uncertainty."
+      },
+      {
+        "axis": "Technology displacement",
+        "description": "1 declining topic(s) signal potential displacement of incumbent approaches.",
+        "why": "Derived from die events\u2014fading clusters imply replacement risk for legacy tech."
+      }
+    ],
+    "axis_labels": {
+      "x": "Adoption velocity",
+      "y": "Technology displacement"
+    },
+    "scenarios": {
+      "optimistic": {
+        "tone": "optimistic",
+        "title": "Optimistic",
+        "color": "#22C55E",
+        "narrative": "So scenario: rapid adoption of AI-driven missile guidance, widespread deployment, competition spurs breakthroughs, regulation maybe lax leading to proliferation but also safety standards. Let's craft 2-3 sentences. Sentence 1: \"By 2027, autonomous missile systems equipped with deep neural network (DNN) guidance and predictive target\u2011tracking algorithms achieve near\u2011universal adoption across national defense forces.\" Sentence 2: \"Intense competition among defense contractors and rapid regulatory relaxation accelerate breakthroughs in cyber\u2011secure communication and high\u2011capability missile payloads, displacing legacy kinetic interceptors.\" Sentence 3 (optional): \"The resulting proliferation of AI",
+        "why": "Narrative generated for high Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "disruptive": {
+        "tone": "disruptive",
+        "title": "Disruptive",
+        "color": "#EF4444",
+        "narrative": "Rapid adoption of Deep Neural Networks (DNN) within missile guidance systems enables autonomous, real-time prediction of defensive maneuvers, rendering traditional electronic warfare countermeasures obsolete. This breakthrough in algorithmic precision triggers a shift toward hyper-automated cyber-physical attacks, where kinetic missiles utilize predictive modeling to bypass legacy security protocols through high-velocity, self-correcting flight paths.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "constrained": {
+        "tone": "constrained",
+        "title": "Constrained",
+        "color": "#F59E0B",
+        "narrative": "In 2026, rapid displacement of legacy kinetic weapons by autonomous missile\u2011guidance systems\u2014powered by deep\u2011neural\u2011network (DNN) prediction modules\u2014has outpaced the slow adoption of cyber\u2011attack countermeasures, forcing states to reallocate budgets toward defensive cyber\u2011technology. The emergence of integrated cyber\u2011technology platforms and the successive growth of missile\u2011guidance clusters, driven by breakthroughs in sensor fusion and real\u2011time trajectory optimization, has rendered traditional missile deterrence obsolete, compelling a shift to network\u2011centric attack capabilities. Consequently, the high displacement driver accelerates the obsolescence of conventional arsenals while the low adoption velocity of cyber defenses creates a strategic imbalance that reshapes global power dynamics.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "stagnant": {
+        "tone": "stagnant",
+        "title": "Stagnant",
+        "color": "#6B7280",
+        "narrative": "Despite significant growth in missile guidance systems and emerging",
+        "why": "Narrative generated for low Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      }
+    },
+    "why": "Four scenarios span the 2\u00d72 space of the two largest uncertainty drivers extracted from causal events.",
+    "impact_trees": {
+      "optimistic": {
+        "tree": {
+          "name": "missiles, guidance, dnn, prediction",
+          "node_type": "main",
+          "why": "Optimistic forecast for missiles, guidance, dnn, prediction: 3 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 5,
+          "branch_count": 3,
+          "scenario": "optimistic",
+          "children": [
+            {
+              "name": "cyber",
+              "node_type": "evolving",
+              "trend": "accelerating",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 1,
+              "why": "AI-driven guidance systems improve cyber-resilient navigation by detecting and mitigating digital spoofing attacks.",
+              "children": [
+                {
+                  "name": "Capability uplift for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "cyber enabless missiles, guidance, dnn, prediction\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from cyber lower adoption friction for missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via cyber",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (enables).",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "technology",
+              "node_type": "evolving",
+              "trend": "accelerating",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 1,
+              "why": "Machine learning models accelerate threat assessment, enabling proactive defense against emerging missile capabilities.",
+              "children": [
+                {
+                  "name": "Capability uplift for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "technology enabless missiles, guidance, dnn, prediction\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from technology lower adoption friction for missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via technology",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (enables).",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "cyber, technology, attacks, capabilities",
+              "node_type": "evolving",
+              "trend": "accelerating / emerging",
+              "path_sources": [
+                "cluster",
+                "event"
+              ],
+              "path_count": 3,
+              "why": "Separate topic cluster at growth lifecycle. Volume 1\u21921 (2009\u20132026). (+2 corroborating paths from corpus).",
+              "children": [
+                {
+                  "name": "Co-growth with missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "Both areas accelerating\u2014joint pipelines and benchmarks likely.",
+                  "children": []
+                },
+                {
+                  "name": "Supply-chain coupling",
+                  "node_type": "impact",
+                  "why": "Hardware/software for cyber, technology, attacks, capabilities becomes prerequisite for advanced missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "New competitive surface for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "cyber, technology, attacks, capabilities emerged (2009)\u2014early mover advantage may reshape missiles, guidance, dnn, prediction's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle cyber, technology, attacks, capabilities with missiles, guidance, dnn, prediction before the trend consolidates.",
+                  "children": []
+                },
+                {
+                  "name": "Demand pull for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "Rising publications on cyber, technology, attacks, capabilities (2025) signal market pull that lifts adjacent missiles, guidance, dnn, prediction.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "missiles, guidance, dnn, prediction",
+        "paths_discovered": 7,
+        "paths_in_scenario": 5,
+        "branch_count": 3,
+        "why": "This Optimistic tree shows 3 branch(es) from 5 prioritized path(s) out of 7 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "disruptive": {
+        "tree": {
+          "name": "missiles, guidance, dnn, prediction",
+          "node_type": "main",
+          "why": "Disruptive forecast for missiles, guidance, dnn, prediction: 2 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 2,
+          "branch_count": 2,
+          "scenario": "disruptive",
+          "children": [
+            {
+              "name": "technology",
+              "node_type": "evolving",
+              "trend": "disrupting",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 1,
+              "why": "Cyber-physical integration reduces reliance on traditional missile mechanics, prioritizing software-defined systems vulnerable to hacking.",
+              "children": [
+                {
+                  "name": "Substitution risk for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "technology (disrupting) may capture use cases previously served by missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Standards fragmentation",
+                  "node_type": "impact",
+                  "why": "Competing stacks around technology split the ecosystem away from missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via technology",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (displaces).",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "capabilities",
+              "node_type": "evolving",
+              "trend": "disrupting",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 1,
+              "why": "Over-reliance on predictive models risks underestimating unpredictable missile maneuvers, reducing operational flexibility.",
+              "children": [
+                {
+                  "name": "Substitution risk for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "capabilities (disrupting) may capture use cases previously served by missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Standards fragmentation",
+                  "node_type": "impact",
+                  "why": "Competing stacks around capabilities split the ecosystem away from missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via capabilities",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (displaces).",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "missiles, guidance, dnn, prediction",
+        "paths_discovered": 7,
+        "paths_in_scenario": 2,
+        "branch_count": 2,
+        "why": "This Disruptive tree shows 2 branch(es) from 2 prioritized path(s) out of 7 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "constrained": {
+        "tree": {
+          "name": "missiles, guidance, dnn, prediction",
+          "node_type": "main",
+          "why": "Constrained forecast for missiles, guidance, dnn, prediction: 4 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 6,
+          "branch_count": 4,
+          "scenario": "constrained",
+          "children": [
+            {
+              "name": "cyber, technology, attacks, capabilities",
+              "node_type": "evolving",
+              "trend": "accelerating / emerging",
+              "path_sources": [
+                "cluster",
+                "event"
+              ],
+              "path_count": 2,
+              "why": "Separate topic cluster at growth lifecycle. Volume 1\u21921 (2009\u20132026). Topic 1 first appears in 2009 with 1 document(s); keyword overlap vs prior windows was zero.",
+              "children": [
+                {
+                  "name": "Co-growth with missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "Both areas accelerating\u2014joint pipelines and benchmarks likely.",
+                  "children": []
+                },
+                {
+                  "name": "Supply-chain coupling",
+                  "node_type": "impact",
+                  "why": "Hardware/software for cyber, technology, attacks, capabilities becomes prerequisite for advanced missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "New competitive surface for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "cyber, technology, attacks, capabilities emerged (2009)\u2014early mover advantage may reshape missiles, guidance, dnn, prediction's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle cyber, technology, attacks, capabilities with missiles, guidance, dnn, prediction before the trend consolidates.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "cyber",
+              "node_type": "evolving",
+              "trend": "accelerating",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 1,
+              "why": "AI-driven guidance systems improve cyber-resilient navigation by detecting and mitigating digital spoofing attacks.",
+              "children": [
+                {
+                  "name": "Capability uplift for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "cyber enabless missiles, guidance, dnn, prediction\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from cyber lower adoption friction for missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via cyber",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (enables).",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "technology",
+              "node_type": "evolving",
+              "trend": "accelerating / disrupting",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 2,
+              "why": "Machine learning models accelerate threat assessment, enabling proactive defense against emerging missile capabilities. Cyber-physical integration reduces reliance on traditional missile mechanics, prioritizing software-defined systems vulnerable to hacking.",
+              "children": [
+                {
+                  "name": "Capability uplift for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "technology enabless missiles, guidance, dnn, prediction\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from technology lower adoption friction for missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via technology",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (enables).",
+                  "children": []
+                },
+                {
+                  "name": "Substitution risk for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "technology (disrupting) may capture use cases previously served by missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Standards fragmentation",
+                  "node_type": "impact",
+                  "why": "Competing stacks around technology split the ecosystem away from missiles, guidance, dnn, prediction.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "capabilities",
+              "node_type": "evolving",
+              "trend": "disrupting",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 1,
+              "why": "Over-reliance on predictive models risks underestimating unpredictable missile maneuvers, reducing operational flexibility.",
+              "children": [
+                {
+                  "name": "Substitution risk for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "capabilities (disrupting) may capture use cases previously served by missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Standards fragmentation",
+                  "node_type": "impact",
+                  "why": "Competing stacks around capabilities split the ecosystem away from missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via capabilities",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (displaces).",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "missiles, guidance, dnn, prediction",
+        "paths_discovered": 7,
+        "paths_in_scenario": 6,
+        "branch_count": 4,
+        "why": "This Constrained tree shows 4 branch(es) from 6 prioritized path(s) out of 7 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "stagnant": {
+        "tree": {
+          "name": "missiles, guidance, dnn, prediction",
+          "node_type": "main",
+          "why": "Stagnant forecast for missiles, guidance, dnn, prediction: 4 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 7,
+          "branch_count": 4,
+          "scenario": "stagnant",
+          "children": [
+            {
+              "name": "technology",
+              "node_type": "evolving",
+              "trend": "accelerating / disrupting",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 2,
+              "why": "Cyber-physical integration reduces reliance on traditional missile mechanics, prioritizing software-defined systems vulnerable to hacking. Machine learning models accelerate threat assessment, enabling proactive defense against emerging missile capabilities.",
+              "children": [
+                {
+                  "name": "Substitution risk for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "technology (disrupting) may capture use cases previously served by missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Standards fragmentation",
+                  "node_type": "impact",
+                  "why": "Competing stacks around technology split the ecosystem away from missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via technology",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (displaces).",
+                  "children": []
+                },
+                {
+                  "name": "Capability uplift for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "technology enabless missiles, guidance, dnn, prediction\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from technology lower adoption friction for missiles, guidance, dnn, prediction.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "capabilities",
+              "node_type": "evolving",
+              "trend": "disrupting",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 1,
+              "why": "Over-reliance on predictive models risks underestimating unpredictable missile maneuvers, reducing operational flexibility.",
+              "children": [
+                {
+                  "name": "Substitution risk for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "capabilities (disrupting) may capture use cases previously served by missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Standards fragmentation",
+                  "node_type": "impact",
+                  "why": "Competing stacks around capabilities split the ecosystem away from missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via capabilities",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (displaces).",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "cyber, technology, attacks, capabilities",
+              "node_type": "evolving",
+              "trend": "accelerating / emerging",
+              "path_sources": [
+                "cluster",
+                "event"
+              ],
+              "path_count": 3,
+              "why": "Separate topic cluster at growth lifecycle. Volume 1\u21921 (2009\u20132026). (+2 corroborating paths from corpus).",
+              "children": [
+                {
+                  "name": "Co-growth with missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "Both areas accelerating\u2014joint pipelines and benchmarks likely.",
+                  "children": []
+                },
+                {
+                  "name": "Supply-chain coupling",
+                  "node_type": "impact",
+                  "why": "Hardware/software for cyber, technology, attacks, capabilities becomes prerequisite for advanced missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "New competitive surface for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "cyber, technology, attacks, capabilities emerged (2009)\u2014early mover advantage may reshape missiles, guidance, dnn, prediction's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle cyber, technology, attacks, capabilities with missiles, guidance, dnn, prediction before the trend consolidates.",
+                  "children": []
+                },
+                {
+                  "name": "Demand pull for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "Rising publications on cyber, technology, attacks, capabilities (2025) signal market pull that lifts adjacent missiles, guidance, dnn, prediction.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "cyber",
+              "node_type": "evolving",
+              "trend": "accelerating",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 1,
+              "why": "AI-driven guidance systems improve cyber-resilient navigation by detecting and mitigating digital spoofing attacks.",
+              "children": [
+                {
+                  "name": "Capability uplift for missiles, guidance, dnn, prediction",
+                  "node_type": "impact",
+                  "why": "cyber enabless missiles, guidance, dnn, prediction\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from cyber lower adoption friction for missiles, guidance, dnn, prediction.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via cyber",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (enables).",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "missiles, guidance, dnn, prediction",
+        "paths_discovered": 7,
+        "paths_in_scenario": 7,
+        "branch_count": 4,
+        "why": "This Stagnant tree shows 4 branch(es) from 7 prioritized path(s) out of 7 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      }
+    }
+  },
+  "source_breakdown": {
+    "arxiv": 30,
+    "uploaded": 0
+  }
+}

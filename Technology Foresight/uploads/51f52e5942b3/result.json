@@ -1,0 +1,1945 @@
+{
+  "job_id": "51f52e5942b3",
+  "document_count": 20,
+  "documents": [
+    {
+      "title": "Review of: \"(Electrical - Telecommunication Nano-Antennas) Nano-Antennas in Various Applications of Telecommunication and Communication Systems Common With Nano-Scale Systems\"",
+      "source": "scholar",
+      "year": 2025,
+      "topic_id": 1,
+      "paper_id": "54f9bf1fb4a73d73bd6e80d0817a185473253e02"
+    },
+    {
+      "title": "Monitoring of Packet Telecommunication Networks",
+      "source": "scholar",
+      "year": 2025,
+      "topic_id": 2,
+      "paper_id": "3a4a60ebd9792d122a9e92cefdff1133bd25e1ae"
+    },
+    {
+      "title": "Deep Churn Prediction Method for Telecommunication Industry",
+      "source": "scholar",
+      "year": 2023,
+      "topic_id": 0,
+      "paper_id": "c00bc5055bd4a084014132f97542146ce7c98771"
+    },
+    {
+      "title": "An achromatic metafiber for focusing and imaging across the entire telecommunication range",
+      "source": "scholar",
+      "year": 2022,
+      "topic_id": 1,
+      "paper_id": "1d3f58d4e0aa248974b0a0eb6e7aeaa6914991c4"
+    },
+    {
+      "title": "Telemedicine: A Survey of Telecommunication Technologies, Developments, and Challenges",
+      "source": "scholar",
+      "year": 2023,
+      "topic_id": 3,
+      "paper_id": "59c28bdb7b3b9af103b7cb973612b18ffe854c65"
+    },
+    {
+      "title": "Empowering Optimizing Resource Management in 5G Telecommunication Networks: The Power of Machine Learning",
+      "source": "scholar",
+      "year": 2024,
+      "topic_id": 4,
+      "paper_id": "8f6702ee5ce2515a721039b63848add817a62ec4"
+    },
+    {
+      "title": "An optimized hybrid methodology for short\u2010term traffic forecasting in telecommunication networks",
+      "source": "scholar",
+      "year": 2023,
+      "topic_id": 0,
+      "paper_id": "0220cc59cc9419e7e10651c37ba427e3b7a060a5"
+    },
+    {
+      "title": "Business approaches pathways towards strategic market capture in telecommunication industry",
+      "source": "scholar",
+      "year": 2024,
+      "topic_id": 0,
+      "paper_id": "b843960ec5997c85cf3a9b6c6ade563ad665a363"
+    },
+    {
+      "title": "Coping With Stress and Burnout Associated With Telecommunication and Online Learning",
+      "source": "scholar",
+      "year": 2020,
+      "topic_id": 0,
+      "paper_id": "e7126d9982113d35312d196efa144174cc98326c"
+    },
+    {
+      "title": "Robust topologically protected transport in photonic crystals at telecommunication wavelengths",
+      "source": "scholar",
+      "year": 2018,
+      "topic_id": 1,
+      "paper_id": "250f5b7338e72c7e1c217062cb118af7d43e7295"
+    },
+    {
+      "title": "Cooling technologies for data centres and telecommunication base stations \u2013 A comprehensive review",
+      "source": "scholar",
+      "year": 2022,
+      "topic_id": 3,
+      "paper_id": "8ef4f8906c8daef2b22f0db1a5d079d2303af745"
+    },
+    {
+      "title": "Integrated photonic metasystem for image classifications at telecommunication wavelength",
+      "source": "scholar",
+      "year": 2021,
+      "topic_id": 1,
+      "paper_id": "09948d159d76217e61e99cb438fbcc96c5688312"
+    },
+    {
+      "title": "Hybrid Verification of Radio Electronic and Telecommunication Equipment",
+      "source": "scholar",
+      "year": 2023,
+      "topic_id": 2,
+      "paper_id": "7aed77e34192383167b249008ce8316b36097b27"
+    },
+    {
+      "title": "Protection of Information in Telecommunication Medical Systems based on a Risk-Oriented Approach",
+      "source": "scholar",
+      "year": 2023,
+      "topic_id": 0,
+      "paper_id": "82a6335c37d3e8fc4151c412826656ba304ee0b9"
+    },
+    {
+      "title": "Software Demo Versions of Modern Measuring Equipment Using for Telecommunication Disciplines Studying",
+      "source": "scholar",
+      "year": 2023,
+      "topic_id": 0,
+      "paper_id": "706e4483f57680764e8eca02fb79a62541b91157"
+    },
+    {
+      "title": "Impact of Hyperparameters on Deep Learning Model for Customer Churn Prediction in Telecommunication Sector",
+      "source": "scholar",
+      "year": 2022,
+      "topic_id": 0,
+      "paper_id": "e37d421e35c035cdc8d754d68444506a32abc6e2"
+    },
+    {
+      "title": "Analysis of Critical Parameters of Promising Optical Interfaces of High-Speed Telecommunication Systems",
+      "source": "scholar",
+      "year": 2023,
+      "topic_id": 0,
+      "paper_id": "8f1fc3ce55235f2f70cae6fd57d9d7206427609b"
+    },
+    {
+      "title": "Study on Telecommunication Fraud from a Student's Perspective",
+      "source": "scholar",
+      "year": 2023,
+      "topic_id": 4,
+      "paper_id": "2e33620916795dc55d76347ad9a8a5460bdfd166"
+    },
+    {
+      "title": "Churn Prediction in Telecommunication using Logistic Regression and Logit Boost",
+      "source": "scholar",
+      "year": 2020,
+      "topic_id": 0,
+      "paper_id": "33380cc1a79a21d1600dae888a1cd06221949eeb"
+    },
+    {
+      "title": "Financial development and economic growth nexus in SSA economies: The moderating role of telecommunication development",
+      "source": "scholar",
+      "year": 2021,
+      "topic_id": 0,
+      "paper_id": "ecebaf12a3f7f236d9e47dde4cd663138351aaed"
+    }
+  ],
+  "clusters": [
+    {
+      "topic_id": 0,
+      "count": 5,
+      "keywords": [
+        "model",
+        "deep",
+        "traffic",
+        "customer",
+        "sector",
+        "churn prediction",
+        "customer churn",
+        "optimization",
+        "prediction telecommunication",
+        "accuracy"
+      ],
+      "label": "model, deep, traffic, customer",
+      "lifecycle_stage": "introduction",
+      "stage_color": "#22C55E",
+      "lifecycle_explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration.",
+      "lifecycle_llm": "In the **introduction** phase of deep\u2011traffic\u2011model churn\u2011prediction solutions, vendors are just launching pilots and proof\u2011of\u2011concepts to prove model viability and secure early\u2011adopter funding; adoption is driven by rising demand for **customer churn** insights, emerging **sector** standards for AI\u2011enabled retention analytics, and initial **optimization** toolkits that demonstrate measurable ROI.",
+      "source_breakdown": {
+        "scholar": 10,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        2,
+        6,
+        7,
+        8,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19
+      ]
+    },
+    {
+      "topic_id": 1,
+      "count": 4,
+      "keywords": [
+        "face",
+        "ranging",
+        "accuracy",
+        "architectures",
+        "communications",
+        "modulation",
+        "optical",
+        "devices",
+        "machine learning",
+        "deep"
+      ],
+      "label": "face, ranging, accuracy, architectures",
+      "lifecycle_stage": "maturity",
+      "stage_color": "#9333EA",
+      "lifecycle_explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate.",
+      "lifecycle_llm": "\u00abface, ranging, accuracy, architectures, communications, modulation, optical, devices\u00bb is maturing\u2014incremental gains dominate; differentiation moves to integration, regulation, and vertical applications.",
+      "source_breakdown": {
+        "scholar": 4,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        0,
+        3,
+        9,
+        11
+      ]
+    },
+    {
+      "topic_id": 2,
+      "count": 2,
+      "keywords": [
+        "quality",
+        "services",
+        "evaluation",
+        "telecommunication networks",
+        "testing",
+        "line",
+        "measuring",
+        "vector",
+        "ranging",
+        "traffic"
+      ],
+      "label": "quality, services, evaluation, telecommunication networks",
+      "lifecycle_stage": "introduction",
+      "stage_color": "#22C55E",
+      "lifecycle_explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration.",
+      "lifecycle_llm": "In the introduction stage, new methodologies for automated vector-based testing and real-time service evaluation are being integrated into next-generation telecommunication architectures. This phase is driven by the urgent need for standardized performance metrics to support high-bandwidth services and increased capital funding for automated, high-precision measuring equipment. Adoption is currently concentrated in pilot deployments aimed at establishing new quality benchmarks for software-defined network environments.",
+      "source_breakdown": {
+        "scholar": 2,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        1,
+        12
+      ]
+    },
+    {
+      "topic_id": 3,
+      "count": 2,
+      "keywords": [
+        "articles",
+        "pandemic",
+        "covid-19 pandemic",
+        "future directions",
+        "reviews",
+        "quality service",
+        "communications",
+        "architectures",
+        "health",
+        "service"
+      ],
+      "label": "articles, pandemic, covid-19 pandemic, future directions",
+      "lifecycle_stage": "introduction",
+      "stage_color": "#22C55E",
+      "lifecycle_explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration.",
+      "lifecycle_llm": "The **introduction** stage for scholarly and professional literature on the COVID\u201119 pandemic marks the first wave of rapidly published articles, reviews, and architectural frameworks that aim to map the crisis and propose post\u2011pandemic service and communication models. Adoption is driven by urgent demand from health systems, governments, and industry for evidence\u2011based guidance, while massive public\u2011 and private\u2011sector funding (e.g., NIH rapid\u2011response grants, EU Horizon\u202f2020 emergency calls) accelerates peer\u2011review pipelines and open\u2011access mandates. Early standards\u2014such as the WHO\u2019s reporting templates, CONSORT\u2011COVID extensions, and interoperable data\u2011architecture guidelines\u2014are being codified to ensure that the initial flood of publications can be reliably compared, aggregated, and built upon.",
+      "source_breakdown": {
+        "scholar": 2,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        4,
+        10
+      ]
+    },
+    {
+      "topic_id": 4,
+      "count": 2,
+      "keywords": [
+        "algorithms",
+        "telecommunication network",
+        "network",
+        "future directions",
+        "allocation",
+        "network optimization",
+        "promising high-speed",
+        "quality service",
+        "spectrum",
+        "financial"
+      ],
+      "label": "algorithms, telecommunication network, network, future directions",
+      "lifecycle_stage": "introduction",
+      "stage_color": "#22C55E",
+      "lifecycle_explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration.",
+      "lifecycle_llm": "\u00abalgorithms, telecommunication network, network, future directions, allocation, network optimization, promising high-speed, quality service\u00bb is in introduction: few papers but rising novelty\u2014watch for hardware, datasets, or standards that could trigger rapid growth.",
+      "source_breakdown": {
+        "scholar": 2,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        5,
+        17
+      ]
+    }
+  ],
+  "scatter": {
+    "points": [
+      {
+        "doc_index": 0,
+        "topic_id": 1,
+        "x": 0.21353395283222198,
+        "y": -5.395090579986572,
+        "preview": "Review of: \"(Electrical - Telecommunication Nano-Antennas) Nano-Antennas in Various Applications of Telecommunication an",
+        "title": "Review of: \"(Electrical - Telecommunication Nano-Antennas) Nano-Antennas in Vari",
+        "source": "scholar",
+        "year": 2025
+      },
+      {
+        "doc_index": 1,
+        "topic_id": 2,
+        "x": -0.3975897431373596,
+        "y": -6.843584060668945,
+        "preview": "Monitoring of Packet Telecommunication Networks  The article explores of monitoring of packet telecommunication networks",
+        "title": "Monitoring of Packet Telecommunication Networks",
+        "source": "scholar",
+        "year": 2025
+      },
+      {
+        "doc_index": 2,
+        "topic_id": 0,
+        "x": -1.6899194717407227,
+        "y": -7.540277481079102,
+        "preview": "Deep Churn Prediction Method for Telecommunication Industry  Being able to predict the churn rate is the key to success ",
+        "title": "Deep Churn Prediction Method for Telecommunication Industry",
+        "source": "scholar",
+        "year": 2023
+      },
+      {
+        "doc_index": 3,
+        "topic_id": 1,
+        "x": 0.4266768991947174,
+        "y": -4.959439277648926,
+        "preview": "An achromatic metafiber for focusing and imaging across the entire telecommunication range  Dispersion engineering is es",
+        "title": "An achromatic metafiber for focusing and imaging across the entire telecommunica",
+        "source": "scholar",
+        "year": 2022
+      },
+      {
+        "doc_index": 4,
+        "topic_id": 3,
+        "x": -0.7614414691925049,
+        "y": -5.370646953582764,
+        "preview": "Telemedicine: A Survey of Telecommunication Technologies, Developments, and Challenges  The emergence of the COVID-19 pa",
+        "title": "Telemedicine: A Survey of Telecommunication Technologies, Developments, and Chal",
+        "source": "scholar",
+        "year": 2023
+      },
+      {
+        "doc_index": 5,
+        "topic_id": 4,
+        "x": -1.9870599508285522,
+        "y": -6.642142295837402,
+        "preview": "Empowering Optimizing Resource Management in 5G Telecommunication Networks: The Power of Machine Learning  The emergence",
+        "title": "Empowering Optimizing Resource Management in 5G Telecommunication Networks: The ",
+        "source": "scholar",
+        "year": 2024
+      },
+      {
+        "doc_index": 6,
+        "topic_id": 0,
+        "x": -1.8452413082122803,
+        "y": -7.1532301902771,
+        "preview": "An optimized hybrid methodology for short\u2010term traffic forecasting in telecommunication networks  With the rapid develop",
+        "title": "An optimized hybrid methodology for short\u2010term traffic forecasting in telecommun",
+        "source": "scholar",
+        "year": 2023
+      },
+      {
+        "doc_index": 7,
+        "topic_id": 0,
+        "x": -1.005680799484253,
+        "y": -7.453606605529785,
+        "preview": "Business approaches pathways towards strategic market capture in telecommunication industry  : Telecommunication busines",
+        "title": "Business approaches pathways towards strategic market capture in telecommunicati",
+        "source": "scholar",
+        "year": 2024
+      },
+      {
+        "doc_index": 8,
+        "topic_id": 0,
+        "x": -1.6840683221817017,
+        "y": -5.280045509338379,
+        "preview": "Coping With Stress and Burnout Associated With Telecommunication and Online Learning  The COVID-19 pandemic substantiall",
+        "title": "Coping With Stress and Burnout Associated With Telecommunication and Online Lear",
+        "source": "scholar",
+        "year": 2020
+      },
+      {
+        "doc_index": 9,
+        "topic_id": 1,
+        "x": 1.030531644821167,
+        "y": -5.142602443695068,
+        "preview": "Robust topologically protected transport in photonic crystals at telecommunication wavelengths",
+        "title": "Robust topologically protected transport in photonic crystals at telecommunicati",
+        "source": "scholar",
+        "year": 2018
+      },
+      {
+        "doc_index": 10,
+        "topic_id": 3,
+        "x": -1.2341560125350952,
+        "y": -5.4854254722595215,
+        "preview": "Cooling technologies for data centres and telecommunication base stations \u2013 A comprehensive review",
+        "title": "Cooling technologies for data centres and telecommunication base stations \u2013 A co",
+        "source": "scholar",
+        "year": 2022
+      },
+      {
+        "doc_index": 11,
+        "topic_id": 1,
+        "x": 0.8696604371070862,
+        "y": -5.6972336769104,
+        "preview": "Integrated photonic metasystem for image classifications at telecommunication wavelength  Miniaturized image classifiers",
+        "title": "Integrated photonic metasystem for image classifications at telecommunication wa",
+        "source": "scholar",
+        "year": 2021
+      },
+      {
+        "doc_index": 12,
+        "topic_id": 2,
+        "x": 0.16670630872249603,
+        "y": -6.886012554168701,
+        "preview": "Hybrid Verification of Radio Electronic and Telecommunication Equipment  In this paper, we discuss the conformity evalua",
+        "title": "Hybrid Verification of Radio Electronic and Telecommunication Equipment",
+        "source": "scholar",
+        "year": 2023
+      },
+      {
+        "doc_index": 13,
+        "topic_id": 0,
+        "x": -0.5878781080245972,
+        "y": -5.944201469421387,
+        "preview": "Protection of Information in Telecommunication Medical Systems based on a Risk-Oriented Approach",
+        "title": "Protection of Information in Telecommunication Medical Systems based on a Risk-O",
+        "source": "scholar",
+        "year": 2023
+      },
+      {
+        "doc_index": 14,
+        "topic_id": 0,
+        "x": -0.9135587215423584,
+        "y": -6.744311809539795,
+        "preview": "Software Demo Versions of Modern Measuring Equipment Using for Telecommunication Disciplines Studying  Methods of modern",
+        "title": "Software Demo Versions of Modern Measuring Equipment Using for Telecommunication",
+        "source": "scholar",
+        "year": 2023
+      },
+      {
+        "doc_index": 15,
+        "topic_id": 0,
+        "x": -2.3929965496063232,
+        "y": -7.430143356323242,
+        "preview": "Impact of Hyperparameters on Deep Learning Model for Customer Churn Prediction in Telecommunication Sector  In this pape",
+        "title": "Impact of Hyperparameters on Deep Learning Model for Customer Churn Prediction i",
+        "source": "scholar",
+        "year": 2022
+      },
+      {
+        "doc_index": 16,
+        "topic_id": 0,
+        "x": 0.2793821394443512,
+        "y": -6.302387714385986,
+        "preview": "Analysis of Critical Parameters of Promising Optical Interfaces of High-Speed Telecommunication Systems  In this paper w",
+        "title": "Analysis of Critical Parameters of Promising Optical Interfaces of High-Speed Te",
+        "source": "scholar",
+        "year": 2023
+      },
+      {
+        "doc_index": 17,
+        "topic_id": 4,
+        "x": -1.458533763885498,
+        "y": -6.12033224105835,
+        "preview": "Study on Telecommunication Fraud from a Student's Perspective  : With the rapid development of the information society, ",
+        "title": "Study on Telecommunication Fraud from a Student's Perspective",
+        "source": "scholar",
+        "year": 2023
+      },
+      {
+        "doc_index": 18,
+        "topic_id": 0,
+        "x": -1.7805702686309814,
+        "y": -7.939723968505859,
+        "preview": "Churn Prediction in Telecommunication using Logistic Regression and Logit Boost  Abstract Today in every industry weathe",
+        "title": "Churn Prediction in Telecommunication using Logistic Regression and Logit Boost",
+        "source": "scholar",
+        "year": 2020
+      },
+      {
+        "doc_index": 19,
+        "topic_id": 0,
+        "x": -0.43697068095207214,
+        "y": -7.634037971496582,
+        "preview": "Financial development and economic growth nexus in SSA economies: The moderating role of telecommunication development  ",
+        "title": "Financial development and economic growth nexus in SSA economies: The moderating",
+        "source": "scholar",
+        "year": 2021
+      }
+    ],
+    "why": "Documents were embedded with all-MiniLM-L6-v2, projected with UMAP, and grouped by BERTopic (HDBSCAN + c-TF-IDF). Topic labels use an English + academic stop-word list, bigrams, reduced-frequent-word c-TF-IDF, and Maximal Marginal Relevance so keywords highlight technology terms\u2014not function words like \u201cthe\u201d or \u201cof\u201d."
+  },
+  "evolution": {
+    "timeline": {
+      "1": [
+        {
+          "year": 2018,
+          "count": 1
+        },
+        {
+          "year": 2021,
+          "count": 1
+        },
+        {
+          "year": 2022,
+          "count": 1
+        },
+        {
+          "year": 2025,
+          "count": 1
+        }
+      ],
+      "2": [
+        {
+          "year": 2023,
+          "count": 1
+        },
+        {
+          "year": 2025,
+          "count": 1
+        }
+      ],
+      "0": [
+        {
+          "year": 2020,
+          "count": 2
+        },
+        {
+          "year": 2021,
+          "count": 1
+        },
+        {
+          "year": 2022,
+          "count": 1
+        },
+        {
+          "year": 2023,
+          "count": 5
+        },
+        {
+          "year": 2024,
+          "count": 1
+        }
+      ],
+      "3": [
+        {
+          "year": 2022,
+          "count": 1
+        },
+        {
+          "year": 2023,
+          "count": 1
+        }
+      ],
+      "4": [
+        {
+          "year": 2023,
+          "count": 1
+        },
+        {
+          "year": 2024,
+          "count": 1
+        }
+      ]
+    },
+    "lifecycle": {
+      "1": {
+        "stage": "maturity",
+        "params": {
+          "L": 1.9653143253745677,
+          "k": 0.010000000000000002,
+          "t0": 1.7475471998724588e-08
+        },
+        "fitted": [
+          [
+            2018,
+            0.982657162601422
+          ],
+          [
+            2018,
+            0.9844673184851905
+          ],
+          [
+            2018,
+            0.9862774620840368
+          ],
+          [
+            2019,
+            0.9880875811133742
+          ],
+          [
+            2019,
+            0.9898976632892791
+          ],
+          [
+            2019,
+            0.9917076963288326
+          ],
+          [
+            2020,
+            0.9935176679504452
+          ],
+          [
+            2020,
+            0.9953275658741987
+          ],
+          [
+            2020,
+            0.9971373778221722
+          ],
+          [
+            2021,
+            0.9989470915187776
+          ],
+          [
+            2021,
+            1.0007566946910973
+          ],
+          [
+            2022,
+            1.0025661750692079
+          ],
+          [
+            2022,
+            1.004375520386522
+          ],
+          [
+            2022,
+            1.0061847183801127
+          ],
+          [
+            2023,
+            1.007993756791051
+          ],
+          [
+            2023,
+            1.0098026233647386
+          ],
+          [
+            2023,
+            1.0116113058512326
+          ],
+          [
+            2024,
+            1.0134197920055867
+          ],
+          [
+            2024,
+            1.0152280695881728
+          ],
+          [
+            2025,
+            1.017036126365021
+          ]
+        ],
+        "explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate."
+      },
+      "2": {
+        "stage": "introduction",
+        "params": {},
+        "fitted": [
+          [
+            2023,
+            1
+          ],
+          [
+            2025,
+            1
+          ]
+        ],
+        "explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration."
+      },
+      "0": {
+        "stage": "introduction",
+        "params": {
+          "L": 2.734259167443073,
+          "k": 0.5556392578927047,
+          "t0": 4.0056555612828805e-12
+        },
+        "fitted": [
+          [
+            2020,
+            1.367129583720015
+          ],
+          [
+            2020,
+            1.4469996729176753
+          ],
+          [
+            2020,
+            1.52632640748176
+          ],
+          [
+            2020,
+            1.6045811185943226
+          ],
+          [
+            2020,
+            1.6812636735653816
+          ],
+          [
+            2021,
+            1.7559147357328493
+          ],
+          [
+            2021,
+            1.828125828532956
+          ],
+          [
+            2021,
+            1.8975467956527645
+          ],
+          [
+            2021,
+            1.963890468090617
+          ],
+          [
+            2021,
+            2.0269345627212867
+          ],
+          [
+            2022,
+            2.086521022809456
+          ],
+          [
+            2022,
+            2.1425531529412374
+          ],
+          [
+            2022,
+            2.1949909913839316
+          ],
+          [
+            2022,
+            2.2438454020244127
+          ],
+          [
+            2022,
+            2.2891713620383323
+          ],
+          [
+            2023,
+            2.331060880403654
+          ],
+          [
+            2023,
+            2.3696359179742377
+          ],
+          [
+            2023,
+            2.4050416033472892
+          ],
+          [
+            2023,
+            2.4374399597953937
+          ],
+          [
+            2024,
+            2.467004284288474
+          ]
+        ],
+        "explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration."
+      },
+      "3": {
+        "stage": "introduction",
+        "params": {},
+        "fitted": [
+          [
+            2022,
+            1
+          ],
+          [
+            2023,
+            1
+          ]
+        ],
+        "explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration."
+      },
+      "4": {
+        "stage": "introduction",
+        "params": {},
+        "fitted": [
+          [
+            2023,
+            1
+          ],
+          [
+            2024,
+            1
+          ]
+        ],
+        "explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration."
+      }
+    },
+    "events": [
+      {
+        "year": 2018,
+        "topic_id": 1,
+        "type": "emerge",
+        "keywords": [
+          "face",
+          "ranging",
+          "accuracy",
+          "architectures",
+          "communications",
+          "modulation",
+          "optical",
+          "devices",
+          "machine learning",
+          "deep"
+        ],
+        "count": 1,
+        "why": "Topic 1 first appears in 2018 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Influence context: face, ranging, accuracy, architectures \u2014enables\u2192 quality, services, evaluation, telecommunication networks: Shared methods between \u00abface, ranging, accuracy, architectures\u00bb and \u00abquality, se (truncated). So we need to infer that emergence in 2018 of a topic linking face, ranging, accuracy, architectures to telecom networks, communications, modulation, optical devices. Likely about LiDAR or facial",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2020,
+        "topic_id": 0,
+        "type": "emerge",
+        "keywords": [
+          "model",
+          "deep",
+          "traffic",
+          "customer",
+          "sector",
+          "churn prediction",
+          "customer churn",
+          "optimization",
+          "prediction telecommunication",
+          "accuracy"
+        ],
+        "count": 2,
+        "why": "Topic 0 first appears in 2020 with 2 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Or something like federated learning if it's related to traffic data. If it's customer traffic, maybe a new method in customer analytics. The keywords include churn prediction, so maybe a new deep learning model for predicting churn using traffic data.",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2022,
+        "topic_id": 3,
+        "type": "emerge",
+        "keywords": [
+          "articles",
+          "pandemic",
+          "covid-19 pandemic",
+          "future directions",
+          "reviews",
+          "quality service",
+          "communications",
+          "architectures",
+          "health",
+          "service"
+        ],
+        "count": 1,
+        "why": "Topic 3 first appears in 2022 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "We need to output 2-3 sentences only. Structure: (1) ROOT CAUSE \u2014 why this event happened in the research corpus; (2) INFLUENCING TECHNOLOGY \u2014 name a specific adjacent tech or method; (3) 5-YEAR IMPACT \u2014 what this means for industry or R&D.\n\nWe need to be specific to keywords and event type. Event type: emerge. Year: 2022. Cluster label: articles, pandemic, covid-19 pandemic, future directions. Topic keywords: articles, pandemic, covid-19 pandemic, future directions, reviews, quality service, communications, architectures. Lifecycle stage: introduction. Corpus signal: Topic 3 first appears in 2022 with 1 document(s); keyword overlap vs prior windows was zero. Influence context: none listed.\n\nThus root cause: emergence due to early pandemic research surge, need for future directions, reviews, quality service, communications, architectures. Influencing technology: maybe \"AI-driven natural language processing for literature mining\" or \"semantic search and knowledge graph construction\". Or \"digital twin of healthcare communication architectures\". Need to pick a specific adjacent tech or method.\n\n5-year impact: will shape R&D funding, guide",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2023,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "model",
+          "deep",
+          "traffic",
+          "customer",
+          "sector",
+          "churn prediction",
+          "customer churn",
+          "optimization",
+          "prediction telecommunication",
+          "accuracy"
+        ],
+        "count": 5,
+        "why": "Publication volume for topic 0 rose 1\u21925 (400% YoY).",
+        "llm_explanation": "ROOT CAUSE \u2014 The surge in publication volume for the topic \"model, deep, traffic, customer\" (400% YoY) reflects growing interest in leveraging deep learning models to optimize customer traffic analysis and churn prediction in the introduction phase of this research area. INFLUENCING TECHNOLOGY \u2014 The integration of transformer-based architectures with reinforcement learning for dynamic traffic routing and customer behavior modeling. 5-YEAR IMPACT \u2014 This convergence will drive industry adoption of hybrid AI systems that simultaneously enhance traffic optimization and customer churn prediction accuracy, reshaping R&D priorities toward real-time adaptive models in customer-centric sectors.",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2023,
+        "topic_id": 2,
+        "type": "emerge",
+        "keywords": [
+          "quality",
+          "services",
+          "evaluation",
+          "telecommunication networks",
+          "testing",
+          "line",
+          "measuring",
+          "vector",
+          "ranging",
+          "traffic"
+        ],
+        "count": 1,
+        "why": "Topic 2 first appears in 2023 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "The emergence in 2023 reflects a growing focus on rigorous testing and evaluation within telecommunication networks, driven by precise methodologies. The rise of advanced architectures and face-based analytics is reshaping quality assurance standards. Over the next five years, this trend is expected to accelerate innovation and efficiency across the sector.",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2023,
+        "topic_id": 4,
+        "type": "emerge",
+        "keywords": [
+          "algorithms",
+          "telecommunication network",
+          "network",
+          "future directions",
+          "allocation",
+          "network optimization",
+          "promising high-speed",
+          "quality service",
+          "spectrum",
+          "financial"
+        ],
+        "count": 1,
+        "why": "Topic 4 first appears in 2023 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "For the 5-year impact, if this topic is just starting, it might lead to more research into AI-based network management. This could result in smarter, more adaptive telecommunication systems that can dynamically allocate resources, ensuring better quality service as networks become more complex and high-speed. Industries might invest in developing these",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2025,
+        "topic_id": 0,
+        "type": "die",
+        "keywords": [
+          "model",
+          "deep",
+          "traffic",
+          "customer",
+          "sector",
+          "churn prediction",
+          "customer churn",
+          "optimization",
+          "prediction telecommunication",
+          "accuracy"
+        ],
+        "why": "Topic 0 had no publications in 2025 after prior activity\u2014treated as decline/die-off.",
+        "llm_explanation": "The sudden decline in churn prediction research stems from the saturation of standard deep learning architectures applied to static customer traffic datasets. This shift is driven by the migration toward real-time edge computing and computer vision-based behavioral analysis, such as facial expression recognition and spatial ranging. Within five years, R&D will pivot from predictive modeling of historical logs to proactive, sensor-driven engagement optimization in physical retail environments.",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2025,
+        "topic_id": 3,
+        "type": "die",
+        "keywords": [
+          "articles",
+          "pandemic",
+          "covid-19 pandemic",
+          "future directions",
+          "reviews",
+          "quality service",
+          "communications",
+          "architectures",
+          "health",
+          "service"
+        ],
+        "why": "Topic 3 had no publications in 2025 after prior activity\u2014treated as decline/die-off.",
+        "llm_explanation": "Influence context: none listed. So root cause: lack of new publications after prior activity, maybe due to waning interest after pandemic subsides, or funding shifts. Influencing technology: perhaps \"digital health communication platforms\" or \"AI-driven epidemiology modeling\" or \"tele",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2025,
+        "topic_id": 4,
+        "type": "die",
+        "keywords": [
+          "algorithms",
+          "telecommunication network",
+          "network",
+          "future directions",
+          "allocation",
+          "network optimization",
+          "promising high-speed",
+          "quality service",
+          "spectrum",
+          "financial"
+        ],
+        "why": "Topic 4 had no publications in 2025 after prior activity\u2014treated as decline/die-off.",
+        "llm_explanation": "User Safety: safe",
+        "llm_source": "openrouter"
+      }
+    ],
+    "why": "Per-topic yearly counts were fitted to a logistic S-curve to assign lifecycle stages. Change events are detected by diffing topic presence and volume across years and measuring keyword overlap between co-active clusters.",
+    "weak_signals": []
+  },
+  "reasoning": {
+    "influence": [
+      {
+        "from": "model, deep, traffic, customer",
+        "to": "face, ranging, accuracy, architectures",
+        "relation": "enables",
+        "reason": "Shared methods between \u00abmodel, deep, traffic, customer\u00bb and \u00abface, ranging, accuracy, architectures\u00bb in the corpus.",
+        "why": "Heuristic edge when LLM output was sparse."
+      },
+      {
+        "from": "face, ranging, accuracy, architectures",
+        "to": "quality, services, evaluation, telecommunication networks",
+        "relation": "enables",
+        "reason": "Shared methods between \u00abface, ranging, accuracy, architectures\u00bb and \u00abquality, services, evaluation, telecommunication networks\u00bb in the corpus.",
+        "why": "Heuristic edge when LLM output was sparse."
+      }
+    ],
+    "sao": {
+      "2": {
+        "triples": [
+          {
+            "subject": "quality",
+            "action": "increase",
+            "object": "requirement"
+          },
+          {
+            "subject": "method",
+            "action": "solve",
+            "object": "problem"
+          },
+          {
+            "subject": "analysis",
+            "action": "monitor",
+            "object": "method"
+          },
+          {
+            "subject": "we",
+            "action": "discuss",
+            "object": "Equipment"
+          },
+          {
+            "subject": "system",
+            "action": "carry",
+            "object": "basis"
+          },
+          {
+            "subject": "decision",
+            "action": "base",
+            "object": "result"
+          },
+          {
+            "subject": "approach",
+            "action": "propose",
+            "object": "rejection"
+          },
+          {
+            "subject": "model",
+            "action": "give",
+            "object": "system"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "increase",
+            "count": 1
+          },
+          {
+            "action": "solve",
+            "count": 1
+          },
+          {
+            "action": "monitor",
+            "count": 1
+          },
+          {
+            "action": "discuss",
+            "count": 1
+          },
+          {
+            "action": "carry",
+            "count": 1
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "0": {
+        "triples": [
+          {
+            "subject": "Method",
+            "action": "predict",
+            "object": "Industry"
+          },
+          {
+            "subject": "it",
+            "action": "obtain",
+            "object": "profit"
+          },
+          {
+            "subject": "challenge",
+            "action": "predict",
+            "object": "percentage"
+          },
+          {
+            "subject": "type",
+            "action": "learn",
+            "object": "study"
+          },
+          {
+            "subject": "technique",
+            "action": "test",
+            "object": "model"
+          },
+          {
+            "subject": "evaluation",
+            "action": "propose",
+            "object": "model"
+          },
+          {
+            "subject": "CNN",
+            "action": "return",
+            "object": "both"
+          },
+          {
+            "subject": "accuracy",
+            "action": "obtain",
+            "object": "dataset"
+          },
+          {
+            "subject": "methodology",
+            "action": "optimize",
+            "object": "forecasting"
+          },
+          {
+            "subject": "attention",
+            "action": "pay",
+            "object": "year"
+          },
+          {
+            "subject": "problem",
+            "action": "consider",
+            "object": "input"
+          },
+          {
+            "subject": "approach",
+            "action": "categorize",
+            "object": "method"
+          },
+          {
+            "subject": "approach",
+            "action": "forecast",
+            "object": "characteristic"
+          },
+          {
+            "subject": "approach",
+            "action": "model",
+            "object": "characteristic"
+          },
+          {
+            "subject": "approach",
+            "action": "combine",
+            "object": "year"
+          },
+          {
+            "subject": "performance",
+            "action": "depend",
+            "object": "approach"
+          },
+          {
+            "subject": "method",
+            "action": "propose",
+            "object": "selection"
+          },
+          {
+            "subject": "it",
+            "action": "combine",
+            "object": "method"
+          },
+          {
+            "subject": "technique",
+            "action": "modify",
+            "object": "combination"
+          },
+          {
+            "subject": "combination",
+            "action": "move",
+            "object": "average"
+          },
+          {
+            "subject": "algorithm",
+            "action": "compose",
+            "object": "firefly"
+          },
+          {
+            "subject": "method",
+            "action": "propose",
+            "object": "dataset"
+          },
+          {
+            "subject": "result",
+            "action": "demonstrate",
+            "object": "method"
+          },
+          {
+            "subject": "business",
+            "action": "approach",
+            "object": "pathway"
+          },
+          {
+            "subject": "investment",
+            "action": "vary",
+            "object": "term"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "propose",
+            "count": 5
+          },
+          {
+            "action": "see",
+            "count": 5
+          },
+          {
+            "action": "predict",
+            "count": 3
+          },
+          {
+            "action": "use",
+            "count": 3
+          },
+          {
+            "action": "obtain",
+            "count": 2
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "1": {
+        "triples": [
+          {
+            "subject": "metafiber",
+            "action": "focus",
+            "object": "engineering"
+          },
+          {
+            "subject": "dispersion",
+            "action": "use",
+            "object": "fiber"
+          },
+          {
+            "subject": "we",
+            "action": "present",
+            "object": "design"
+          },
+          {
+            "subject": "this",
+            "action": "represent",
+            "object": "domain"
+          },
+          {
+            "subject": "degree",
+            "action": "increase",
+            "object": "freedom"
+          },
+          {
+            "subject": "we",
+            "action": "demonstrate",
+            "object": "use"
+          },
+          {
+            "subject": "result",
+            "action": "unleash",
+            "object": "potential"
+          },
+          {
+            "subject": "author",
+            "action": "fabricate",
+            "object": "metalen"
+          },
+          {
+            "subject": "they",
+            "action": "demonstrate",
+            "object": "insensitive"
+          },
+          {
+            "subject": "metasystem",
+            "action": "miniaturize",
+            "object": "classification"
+          },
+          {
+            "subject": "structure",
+            "action": "enable",
+            "object": "diffraction"
+          },
+          {
+            "subject": "metasystem",
+            "action": "implement",
+            "object": "matrix"
+          },
+          {
+            "subject": "diffraction",
+            "action": "manifest",
+            "object": "capability"
+          },
+          {
+            "subject": "we",
+            "action": "demonstrate",
+            "object": "metasystem"
+          },
+          {
+            "subject": "metasystem",
+            "action": "provide",
+            "object": "architecture"
+          },
+          {
+            "subject": "architecture",
+            "action": "base",
+            "object": "processor"
+          },
+          {
+            "subject": "author",
+            "action": "report",
+            "object": "metasystem"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "demonstrate",
+            "count": 3
+          },
+          {
+            "action": "focus",
+            "count": 1
+          },
+          {
+            "action": "use",
+            "count": 1
+          },
+          {
+            "action": "present",
+            "count": 1
+          },
+          {
+            "action": "represent",
+            "count": 1
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "3": {
+        "triples": [
+          {
+            "subject": "telemedicine",
+            "action": "challenge",
+            "object": "Technologies"
+          },
+          {
+            "subject": "solution",
+            "action": "reveal",
+            "object": "pandemic"
+          },
+          {
+            "subject": "we",
+            "action": "review",
+            "object": "paper"
+          },
+          {
+            "subject": "we",
+            "action": "provide",
+            "object": "addition"
+          },
+          {
+            "subject": "survey",
+            "action": "review",
+            "object": "standard"
+          },
+          {
+            "subject": "survey",
+            "action": "encompass",
+            "object": "development"
+          },
+          {
+            "subject": "mention",
+            "action": "present",
+            "object": "art"
+          },
+          {
+            "subject": "we",
+            "action": "conclude",
+            "object": "paper"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "review",
+            "count": 2
+          },
+          {
+            "action": "challenge",
+            "count": 1
+          },
+          {
+            "action": "reveal",
+            "count": 1
+          },
+          {
+            "action": "provide",
+            "count": 1
+          },
+          {
+            "action": "encompass",
+            "count": 1
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "4": {
+        "triples": [
+          {
+            "subject": "Power",
+            "action": "empower",
+            "object": "Management"
+          },
+          {
+            "subject": "challenge",
+            "action": "lie",
+            "object": "management"
+          },
+          {
+            "subject": "algorithm",
+            "action": "supplement",
+            "object": "datum"
+          },
+          {
+            "subject": "paper",
+            "action": "review",
+            "object": "algorithm"
+          },
+          {
+            "subject": "it",
+            "action": "discuss",
+            "object": "challenge"
+          },
+          {
+            "subject": "study",
+            "action": "undergo",
+            "object": "Fraud"
+          },
+          {
+            "subject": "most",
+            "action": "involve",
+            "object": "perception"
+          },
+          {
+            "subject": "student",
+            "action": "seem",
+            "object": "nothing"
+          },
+          {
+            "subject": "part",
+            "action": "collect",
+            "object": "reason"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "empower",
+            "count": 1
+          },
+          {
+            "action": "lie",
+            "count": 1
+          },
+          {
+            "action": "supplement",
+            "count": 1
+          },
+          {
+            "action": "review",
+            "count": 1
+          },
+          {
+            "action": "discuss",
+            "count": 1
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      }
+    },
+    "why_influence": "Edges represent enabling or displacing relationships inferred from cluster themes and LLM foresight reasoning."
+  },
+  "scenarios": {
+    "drivers": [
+      {
+        "axis": "Adoption velocity",
+        "description": "5 emerging topic(s) create uncertainty about which technology will cross the chasm first.",
+        "why": "Derived from emerge events\u2014new clusters increase adoption-path uncertainty."
+      },
+      {
+        "axis": "Technology displacement",
+        "description": "3 declining topic(s) signal potential displacement of incumbent approaches.",
+        "why": "Derived from die events\u2014fading clusters imply replacement risk for legacy tech."
+      }
+    ],
+    "axis_labels": {
+      "x": "Adoption velocity",
+      "y": "Technology displacement"
+    },
+    "scenarios": {
+      "optimistic": {
+        "tone": "optimistic",
+        "title": "Optimistic",
+        "color": "#22C55E",
+        "narrative": "By 2035, the rapid adoption of deep\u2011learning models and face\u2011ranging algorithms\u2014spurred by stringent privacy regulations that mandate on\u2011device processing\u2014has displaced legacy telecommunication network architectures, enabling ultra\u2011low\u2011latency, high\u2011accuracy customer\u2011centric services. The pandemic\u2011driven surge in remote work accelerated the rollout of modular, quality\u2011oriented network services, while breakthrough algorithms for traffic prediction and evaluation have turned previously congested urban corridors into seamless, self\u2011optimizing data highways, positioning cities as living digital ecosystems.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "disruptive": {
+        "tone": "disruptive",
+        "title": "Disruptive",
+        "color": "#EF4444",
+        "narrative": "In 2028, the rapid adoption of deep\u2011learning\u2011based face\u2011ranging modules (emerging from the \u201cface\u201d and \u201cranging\u201d clusters) will saturate consumer security devices, while the low displacement of legacy telecommunication networks keeps traditional voice services alive. The surge in algorithmic traffic\u2011shaping services\u2014stemming from the \u201calgorithms\u201d and \u201ctelecommunication network\u201d clusters\u2014drives network operators to upgrade their architectures, yet the pandemic\u2011induced shift to remote work (highlighted by the \u201carticles\u201d and \u201cpandemic\u201d clusters) slows the rollout of high\u2011capacity fiber, keeping the displacement driver minimal. This creates a bifurcated market where AI\u2011enhanced edge devices coexist with slowly modernized core networks, forcing vendors to balance rapid model deployment against incremental infrastructure upgrades.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "constrained": {
+        "tone": "constrained",
+        "title": "Constrained",
+        "color": "#F59E0B",
+        "narrative": "This scenario follows the uncertainty drivers and dominant topic trends in your corpus\u2014technologies with rising publication share gain leverage, while constrained or stagnant futures assume slower adoption or regulatory friction.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "stagnant": {
+        "tone": "stagnant",
+        "title": "Stagnant",
+        "color": "#6B7280",
+        "narrative": "This scenario follows the uncertainty drivers and dominant topic trends in your corpus\u2014technologies with rising publication share gain leverage, while constrained or stagnant futures assume slower adoption or regulatory friction.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      }
+    },
+    "why": "Four scenarios span the 2\u00d72 space of the two largest uncertainty drivers extracted from causal events.",
+    "impact_trees": {
+      "optimistic": {
+        "tree": {
+          "name": "model, deep, traffic, customer",
+          "node_type": "main",
+          "why": "Optimistic forecast for model, deep, traffic, customer: 4 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 9,
+          "branch_count": 4,
+          "scenario": "optimistic",
+          "children": [
+            {
+              "name": "face, ranging, accuracy, architectures",
+              "node_type": "evolving",
+              "trend": "accelerating / emerging / maturing",
+              "path_sources": [
+                "cluster",
+                "event",
+                "influence"
+              ],
+              "path_count": 3,
+              "why": "Shared methods between \u00abmodel, deep, traffic, customer\u00bb and \u00abface, ranging, accuracy, architectures\u00bb in the corpus. (+2 corroborating paths from corpus).",
+              "children": [
+                {
+                  "name": "Capability uplift for model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "face, ranging, accuracy, architectures enabless model, deep, traffic, customer\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from face, ranging, accuracy, architectures lower adoption friction for model, deep, traffic, customer.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via face, ranging, accuracy, architectures",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (enables).",
+                  "children": []
+                },
+                {
+                  "name": "Stable complement to model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "face, ranging, accuracy, architectures maturing\u2014incremental improvements rather than disruption for model, deep, traffic, customer.",
+                  "children": []
+                },
+                {
+                  "name": "New competitive surface for model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "face, ranging, accuracy, architectures emerged (2018)\u2014early mover advantage may reshape model, deep, traffic, customer's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle face, ranging, accuracy, architectures with model, deep, traffic, customer before the trend consolidates.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "quality, services, evaluation, telecommunication networks",
+              "node_type": "evolving",
+              "trend": "emerging",
+              "path_sources": [
+                "cluster",
+                "event"
+              ],
+              "path_count": 2,
+              "why": "Separate topic cluster at introduction lifecycle. Volume 1\u21921 (2023\u20132025). Topic 2 first appears in 2023 with 1 document(s); keyword overlap vs prior windows was zero.",
+              "children": [
+                {
+                  "name": "Early entanglement with model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "quality, services, evaluation, telecommunication networks is emerging\u2014model, deep, traffic, customer vendors may co-develop before standards settle.",
+                  "children": []
+                },
+                {
+                  "name": "New competitive surface for model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "quality, services, evaluation, telecommunication networks emerged (2023)\u2014early mover advantage may reshape model, deep, traffic, customer's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle quality, services, evaluation, telecommunication networks with model, deep, traffic, customer before the trend consolidates.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "articles, pandemic, covid-19 pandemic, future directions",
+              "node_type": "evolving",
+              "trend": "emerging",
+              "path_sources": [
+                "cluster",
+                "event"
+              ],
+              "path_count": 2,
+              "why": "Separate topic cluster at introduction lifecycle. Volume 1\u21921 (2022\u20132023). Topic 3 first appears in 2022 with 1 document(s); keyword overlap vs prior windows was zero.",
+              "children": [
+                {
+                  "name": "Early entanglement with model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "articles, pandemic, covid-19 pandemic, future directions is emerging\u2014model, deep, traffic, customer vendors may co-develop before standards settle.",
+                  "children": []
+                },
+                {
+                  "name": "New competitive surface for model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "articles, pandemic, covid-19 pandemic, future directions emerged (2022)\u2014early mover advantage may reshape model, deep, traffic, customer's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle articles, pandemic, covid-19 pandemic, future directions with model, deep, traffic, customer before the trend consolidates.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "algorithms, telecommunication network, network, future directions",
+              "node_type": "evolving",
+              "trend": "emerging",
+              "path_sources": [
+                "cluster",
+                "event"
+              ],
+              "path_count": 2,
+              "why": "Separate topic cluster at introduction lifecycle. Volume 1\u21921 (2023\u20132024). Topic 4 first appears in 2023 with 1 document(s); keyword overlap vs prior windows was zero.",
+              "children": [
+                {
+                  "name": "Early entanglement with model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "algorithms, telecommunication network, network, future directions is emerging\u2014model, deep, traffic, customer vendors may co-develop before standards settle.",
+                  "children": []
+                },
+                {
+                  "name": "New competitive surface for model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "algorithms, telecommunication network, network, future directions emerged (2023)\u2014early mover advantage may reshape model, deep, traffic, customer's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle algorithms, telecommunication network, network, future directions with model, deep, traffic, customer before the trend consolidates.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "model, deep, traffic, customer",
+        "paths_discovered": 11,
+        "paths_in_scenario": 9,
+        "branch_count": 4,
+        "why": "This Optimistic tree shows 4 branch(es) from 9 prioritized path(s) out of 11 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "disruptive": {
+        "tree": {
+          "name": "model, deep, traffic, customer",
+          "node_type": "main",
+          "why": "Disruptive forecast for model, deep, traffic, customer: 2 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 2,
+          "branch_count": 2,
+          "scenario": "disruptive",
+          "children": [
+            {
+              "name": "articles, pandemic, covid-19 pandemic, future directions",
+              "node_type": "evolving",
+              "trend": "declining",
+              "path_sources": [
+                "event"
+              ],
+              "path_count": 1,
+              "why": "Topic 3 had no publications in 2025 after prior activity\u2014treated as decline/die-off.",
+              "children": [
+                {
+                  "name": "Legacy overlap reduction",
+                  "node_type": "impact",
+                  "why": "Decline of articles, pandemic, covid-19 pandemic, future directions frees budget and attention for model, deep, traffic, customer.",
+                  "children": []
+                },
+                {
+                  "name": "Migration path into model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "Users leaving articles, pandemic, covid-19 pandemic, future directions may consolidate onto model, deep, traffic, customer if positioned as successor.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "algorithms, telecommunication network, network, future directions",
+              "node_type": "evolving",
+              "trend": "declining",
+              "path_sources": [
+                "event"
+              ],
+              "path_count": 1,
+              "why": "Topic 4 had no publications in 2025 after prior activity\u2014treated as decline/die-off.",
+              "children": [
+                {
+                  "name": "Legacy overlap reduction",
+                  "node_type": "impact",
+                  "why": "Decline of algorithms, telecommunication network, network, future directions frees budget and attention for model, deep, traffic, customer.",
+                  "children": []
+                },
+                {
+                  "name": "Migration path into model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "Users leaving algorithms, telecommunication network, network, future directions may consolidate onto model, deep, traffic, customer if positioned as successor.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "model, deep, traffic, customer",
+        "paths_discovered": 11,
+        "paths_in_scenario": 2,
+        "branch_count": 2,
+        "why": "This Disruptive tree shows 2 branch(es) from 2 prioritized path(s) out of 11 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "constrained": {
+        "tree": {
+          "name": "model, deep, traffic, customer",
+          "node_type": "main",
+          "why": "Constrained forecast for model, deep, traffic, customer: 4 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 5,
+          "branch_count": 4,
+          "scenario": "constrained",
+          "children": [
+            {
+              "name": "face, ranging, accuracy, architectures",
+              "node_type": "evolving",
+              "trend": "accelerating / maturing",
+              "path_sources": [
+                "cluster",
+                "influence"
+              ],
+              "path_count": 2,
+              "why": "Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2018\u20132025). Shared methods between \u00abmodel, deep, traffic, customer\u00bb and \u00abface, ranging, accuracy, architectures\u00bb in the corpus.",
+              "children": [
+                {
+                  "name": "Stable complement to model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "face, ranging, accuracy, architectures maturing\u2014incremental improvements rather than disruption for model, deep, traffic, customer.",
+                  "children": []
+                },
+                {
+                  "name": "Capability uplift for model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "face, ranging, accuracy, architectures enabless model, deep, traffic, customer\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from face, ranging, accuracy, architectures lower adoption friction for model, deep, traffic, customer.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via face, ranging, accuracy, architectures",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (enables).",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "quality, services, evaluation, telecommunication networks",
+              "node_type": "evolving",
+              "trend": "emerging",
+              "path_sources": [
+                "cluster"
+              ],
+              "path_count": 1,
+              "why": "Separate topic cluster at introduction lifecycle. Volume 1\u21921 (2023\u20132025).",
+              "children": [
+                {
+                  "name": "Early entanglement with model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "quality, services, evaluation, telecommunication networks is emerging\u2014model, deep, traffic, customer vendors may co-develop before standards settle.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "articles, pandemic, covid-19 pandemic, future directions",
+              "node_type": "evolving",
+              "trend": "emerging",
+              "path_sources": [
+                "cluster"
+              ],
+              "path_count": 1,
+              "why": "Separate topic cluster at introduction lifecycle. Volume 1\u21921 (2022\u20132023).",
+              "children": [
+                {
+                  "name": "Early entanglement with model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "articles, pandemic, covid-19 pandemic, future directions is emerging\u2014model, deep, traffic, customer vendors may co-develop before standards settle.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "algorithms, telecommunication network, network, future directions",
+              "node_type": "evolving",
+              "trend": "emerging",
+              "path_sources": [
+                "cluster"
+              ],
+              "path_count": 1,
+              "why": "Separate topic cluster at introduction lifecycle. Volume 1\u21921 (2023\u20132024).",
+              "children": [
+                {
+                  "name": "Early entanglement with model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "algorithms, telecommunication network, network, future directions is emerging\u2014model, deep, traffic, customer vendors may co-develop before standards settle.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "model, deep, traffic, customer",
+        "paths_discovered": 11,
+        "paths_in_scenario": 5,
+        "branch_count": 4,
+        "why": "This Constrained tree shows 4 branch(es) from 5 prioritized path(s) out of 11 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "stagnant": {
+        "tree": {
+          "name": "model, deep, traffic, customer",
+          "node_type": "main",
+          "why": "Stagnant forecast for model, deep, traffic, customer: 2 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 2,
+          "branch_count": 2,
+          "scenario": "stagnant",
+          "children": [
+            {
+              "name": "articles, pandemic, covid-19 pandemic, future directions",
+              "node_type": "evolving",
+              "trend": "declining",
+              "path_sources": [
+                "event"
+              ],
+              "path_count": 1,
+              "why": "Topic 3 had no publications in 2025 after prior activity\u2014treated as decline/die-off.",
+              "children": [
+                {
+                  "name": "Legacy overlap reduction",
+                  "node_type": "impact",
+                  "why": "Decline of articles, pandemic, covid-19 pandemic, future directions frees budget and attention for model, deep, traffic, customer.",
+                  "children": []
+                },
+                {
+                  "name": "Migration path into model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "Users leaving articles, pandemic, covid-19 pandemic, future directions may consolidate onto model, deep, traffic, customer if positioned as successor.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "algorithms, telecommunication network, network, future directions",
+              "node_type": "evolving",
+              "trend": "declining",
+              "path_sources": [
+                "event"
+              ],
+              "path_count": 1,
+              "why": "Topic 4 had no publications in 2025 after prior activity\u2014treated as decline/die-off.",
+              "children": [
+                {
+                  "name": "Legacy overlap reduction",
+                  "node_type": "impact",
+                  "why": "Decline of algorithms, telecommunication network, network, future directions frees budget and attention for model, deep, traffic, customer.",
+                  "children": []
+                },
+                {
+                  "name": "Migration path into model, deep, traffic, customer",
+                  "node_type": "impact",
+                  "why": "Users leaving algorithms, telecommunication network, network, future directions may consolidate onto model, deep, traffic, customer if positioned as successor.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "model, deep, traffic, customer",
+        "paths_discovered": 11,
+        "paths_in_scenario": 2,
+        "branch_count": 2,
+        "why": "This Stagnant tree shows 2 branch(es) from 2 prioritized path(s) out of 11 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      }
+    }
+  },
+  "source_breakdown": {
+    "scholar": 20,
+    "uploaded": 0
+  }
+}

@@ -1,0 +1,1203 @@
+{
+  "job_id": "3f31d6176cdd",
+  "document_count": 20,
+  "documents": [
+    {
+      "title": "A Hybrid Approach to Information Retrieval and Answer Generation for Regulatory Texts",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2502.16767v1"
+    },
+    {
+      "title": "Night-sky brightness monitoring in Hong Kong - a city-wide light pollution assessment",
+      "source": "arxiv",
+      "year": 2011,
+      "topic_id": 0,
+      "arxiv_id": "1106.3842v1"
+    },
+    {
+      "title": "SAILing CAVs: Speed-Adaptive Infrastructure-Linked Connected and Automated Vehicles",
+      "source": "arxiv",
+      "year": 2023,
+      "topic_id": 0,
+      "arxiv_id": "2310.06931v1"
+    },
+    {
+      "title": "Corporate Disruption in the Science of Machine Learning",
+      "source": "arxiv",
+      "year": 2016,
+      "topic_id": 1,
+      "arxiv_id": "1612.04108v1"
+    },
+    {
+      "title": "Using coarse GPS data to quantify city-scale transportation system resilience to extreme events",
+      "source": "arxiv",
+      "year": 2015,
+      "topic_id": 0,
+      "arxiv_id": "1507.06011v1"
+    },
+    {
+      "title": "Reviewing Uses of Regulatory Compliance Monitoring",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2501.10362v5"
+    },
+    {
+      "title": "Gene regulatory network inference: an introductory survey",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 1,
+      "arxiv_id": "1801.04087v2"
+    },
+    {
+      "title": "Scaling the Kalman filter for large-scale traffic estimation",
+      "source": "arxiv",
+      "year": 2016,
+      "topic_id": 0,
+      "arxiv_id": "1608.00917v2"
+    },
+    {
+      "title": "Security in Monitoring Schemes: A Survey",
+      "source": "arxiv",
+      "year": 2014,
+      "topic_id": 0,
+      "arxiv_id": "1411.5213v1"
+    },
+    {
+      "title": "3D Spectrum Awareness for Radio Dynamic Zones Using Kriging and Matrix Completion",
+      "source": "arxiv",
+      "year": 2026,
+      "topic_id": 0,
+      "arxiv_id": "2603.10443v1"
+    },
+    {
+      "title": "VERITAS 2008 - 2009 monitoring of the variable gamma-ray source M87",
+      "source": "arxiv",
+      "year": 2010,
+      "topic_id": 0,
+      "arxiv_id": "1005.0367v1"
+    },
+    {
+      "title": "Gene regulatory networks: a primer in biological processes and statistical modelling",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1805.01098v1"
+    },
+    {
+      "title": "Comment on \"Evidence of Abundant and Purifying Selection in Humans for Recently Acquired Regulatory Functions\"",
+      "source": "arxiv",
+      "year": 2012,
+      "topic_id": 1,
+      "arxiv_id": "1212.3076v1"
+    },
+    {
+      "title": "Nonintrusive Load Monitoring for Machines used in Manufacturing",
+      "source": "arxiv",
+      "year": 2019,
+      "topic_id": 0,
+      "arxiv_id": "1912.01500v1"
+    },
+    {
+      "title": "Impacts of Covid-19 mode shift on road traffic",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 0,
+      "arxiv_id": "2005.01610v2"
+    },
+    {
+      "title": "A Collapsed Generalized Aw-Rascle-Zhang Model and Its Model Accuracy",
+      "source": "arxiv",
+      "year": 2017,
+      "topic_id": 0,
+      "arxiv_id": "1702.03624v1"
+    },
+    {
+      "title": "Generalization of the construction method for multistability-equivalent gene regulatory networks to systems with multi-input multi-output loopbreaking",
+      "source": "arxiv",
+      "year": 2013,
+      "topic_id": 0,
+      "arxiv_id": "1312.7250v2"
+    },
+    {
+      "title": "Monitoring and explainability of models in production",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 0,
+      "arxiv_id": "2007.06299v1"
+    },
+    {
+      "title": "Spontaneous Wireless Networking to Counter Pervasive Monitoring",
+      "source": "arxiv",
+      "year": 2014,
+      "topic_id": 0,
+      "arxiv_id": "1402.2622v1"
+    },
+    {
+      "title": "Parameter monitoring system of the Dubna Gas-Filled Recoil Separator",
+      "source": "arxiv",
+      "year": 2015,
+      "topic_id": 0,
+      "arxiv_id": "1506.02122v1"
+    }
+  ],
+  "clusters": [
+    {
+      "topic_id": 0,
+      "count": 7,
+      "keywords": [
+        "the",
+        "of",
+        "to",
+        "and",
+        "in",
+        "monitoring",
+        "is",
+        "for",
+        "model",
+        "travel"
+      ],
+      "label": "the, of, to, and",
+      "lifecycle_stage": "maturity",
+      "stage_color": "#9333EA",
+      "lifecycle_explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate.",
+      "lifecycle_llm": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+      "source_breakdown": {
+        "arxiv": 17,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "topic_id": 1,
+      "count": 3,
+      "keywords": [
+        "the",
+        "of",
+        "in",
+        "and",
+        "corporate",
+        "researchers",
+        "interest",
+        "dissertation",
+        "this",
+        "regulatory"
+      ],
+      "label": "the, of, in, and",
+      "lifecycle_stage": "maturity",
+      "stage_color": "#9333EA",
+      "lifecycle_explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate.",
+      "lifecycle_llm": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+      "source_breakdown": {
+        "arxiv": 3,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        3,
+        6,
+        12
+      ]
+    }
+  ],
+  "scatter": {
+    "points": [
+      {
+        "doc_index": 0,
+        "topic_id": 0,
+        "x": 7.654352188110352,
+        "y": 14.06923770904541,
+        "preview": "A Hybrid Approach to Information Retrieval and Answer Generation for Regulatory Texts  Regulatory texts are inherently l",
+        "title": "A Hybrid Approach to Information Retrieval and Answer Generation for Regulatory ",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 1,
+        "topic_id": 0,
+        "x": 9.106091499328613,
+        "y": 16.166574478149414,
+        "preview": "Night-sky brightness monitoring in Hong Kong - a city-wide light pollution assessment  Results of the first comprehensiv",
+        "title": "Night-sky brightness monitoring in Hong Kong - a city-wide light pollution asses",
+        "source": "arxiv",
+        "year": 2011
+      },
+      {
+        "doc_index": 2,
+        "topic_id": 0,
+        "x": 6.835736274719238,
+        "y": 16.317062377929688,
+        "preview": "SAILing CAVs: Speed-Adaptive Infrastructure-Linked Connected and Automated Vehicles  This work demonstrates a new capabi",
+        "title": "SAILing CAVs: Speed-Adaptive Infrastructure-Linked Connected and Automated Vehic",
+        "source": "arxiv",
+        "year": 2023
+      },
+      {
+        "doc_index": 3,
+        "topic_id": 1,
+        "x": 7.909721851348877,
+        "y": 15.12814998626709,
+        "preview": "Corporate Disruption in the Science of Machine Learning  This MSc dissertation considers the effects of the current corp",
+        "title": "Corporate Disruption in the Science of Machine Learning",
+        "source": "arxiv",
+        "year": 2016
+      },
+      {
+        "doc_index": 4,
+        "topic_id": 0,
+        "x": 7.681674957275391,
+        "y": 16.125398635864258,
+        "preview": "Using coarse GPS data to quantify city-scale transportation system resilience to extreme events  This article proposes a",
+        "title": "Using coarse GPS data to quantify city-scale transportation system resilience to",
+        "source": "arxiv",
+        "year": 2015
+      },
+      {
+        "doc_index": 5,
+        "topic_id": 0,
+        "x": 8.671636581420898,
+        "y": 14.740926742553711,
+        "preview": "Reviewing Uses of Regulatory Compliance Monitoring  Organizations need to manage numerous business processes for deliver",
+        "title": "Reviewing Uses of Regulatory Compliance Monitoring",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 6,
+        "topic_id": 1,
+        "x": 7.4052510261535645,
+        "y": 14.672883987426758,
+        "preview": "Gene regulatory network inference: an introductory survey  Gene regulatory networks are powerful abstractions of biologi",
+        "title": "Gene regulatory network inference: an introductory survey",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 7,
+        "topic_id": 0,
+        "x": 7.569380283355713,
+        "y": 16.811037063598633,
+        "preview": "Scaling the Kalman filter for large-scale traffic estimation  This work introduces a scalable filtering algorithm for mu",
+        "title": "Scaling the Kalman filter for large-scale traffic estimation",
+        "source": "arxiv",
+        "year": 2016
+      },
+      {
+        "doc_index": 8,
+        "topic_id": 0,
+        "x": 8.298629760742188,
+        "y": 15.617284774780273,
+        "preview": "Security in Monitoring Schemes: A Survey  With our growing reliability on distributed networks, the security aspect of s",
+        "title": "Security in Monitoring Schemes: A Survey",
+        "source": "arxiv",
+        "year": 2014
+      },
+      {
+        "doc_index": 9,
+        "topic_id": 0,
+        "x": 8.327366828918457,
+        "y": 16.91395378112793,
+        "preview": "3D Spectrum Awareness for Radio Dynamic Zones Using Kriging and Matrix Completion  Radio Dynamic Zones (RDZs) are geogra",
+        "title": "3D Spectrum Awareness for Radio Dynamic Zones Using Kriging and Matrix Completio",
+        "source": "arxiv",
+        "year": 2026
+      },
+      {
+        "doc_index": 10,
+        "topic_id": 0,
+        "x": 9.544706344604492,
+        "y": 14.722336769104004,
+        "preview": "VERITAS 2008 - 2009 monitoring of the variable gamma-ray source M87  M87 is a nearby radio galaxy that is detected at en",
+        "title": "VERITAS 2008 - 2009 monitoring of the variable gamma-ray source M87",
+        "source": "arxiv",
+        "year": 2010
+      },
+      {
+        "doc_index": 11,
+        "topic_id": 0,
+        "x": 6.8029093742370605,
+        "y": 15.025708198547363,
+        "preview": "Gene regulatory networks: a primer in biological processes and statistical modelling  Modelling gene regulatory networks",
+        "title": "Gene regulatory networks: a primer in biological processes and statistical model",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 12,
+        "topic_id": 1,
+        "x": 6.865243911743164,
+        "y": 14.538308143615723,
+        "preview": "Comment on \"Evidence of Abundant and Purifying Selection in Humans for Recently Acquired Regulatory Functions\"  Ward and",
+        "title": "Comment on \"Evidence of Abundant and Purifying Selection in Humans for Recently ",
+        "source": "arxiv",
+        "year": 2012
+      },
+      {
+        "doc_index": 13,
+        "topic_id": 0,
+        "x": 8.89856243133545,
+        "y": 15.420893669128418,
+        "preview": "Nonintrusive Load Monitoring for Machines used in Manufacturing  In order to increase the electric energy efficiency of ",
+        "title": "Nonintrusive Load Monitoring for Machines used in Manufacturing",
+        "source": "arxiv",
+        "year": 2019
+      },
+      {
+        "doc_index": 14,
+        "topic_id": 0,
+        "x": 7.158090591430664,
+        "y": 16.06438636779785,
+        "preview": "Impacts of Covid-19 mode shift on road traffic  This work considers the sensitivity of commute travel times in US metro ",
+        "title": "Impacts of Covid-19 mode shift on road traffic",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 15,
+        "topic_id": 0,
+        "x": 7.103833198547363,
+        "y": 16.76946449279785,
+        "preview": "A Collapsed Generalized Aw-Rascle-Zhang Model and Its Model Accuracy  This work presents a collapsed generalized Aw-Rasc",
+        "title": "A Collapsed Generalized Aw-Rascle-Zhang Model and Its Model Accuracy",
+        "source": "arxiv",
+        "year": 2017
+      },
+      {
+        "doc_index": 16,
+        "topic_id": 0,
+        "x": 6.864836692810059,
+        "y": 14.08872127532959,
+        "preview": "Generalization of the construction method for multistability-equivalent gene regulatory networks to systems with multi-i",
+        "title": "Generalization of the construction method for multistability-equivalent gene reg",
+        "source": "arxiv",
+        "year": 2013
+      },
+      {
+        "doc_index": 17,
+        "topic_id": 0,
+        "x": 9.476029396057129,
+        "y": 15.459419250488281,
+        "preview": "Monitoring and explainability of models in production  The machine learning lifecycle extends beyond the deployment stag",
+        "title": "Monitoring and explainability of models in production",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 18,
+        "topic_id": 0,
+        "x": 8.279479026794434,
+        "y": 16.078371047973633,
+        "preview": "Spontaneous Wireless Networking to Counter Pervasive Monitoring  Several approaches can be employed to counter pervasive",
+        "title": "Spontaneous Wireless Networking to Counter Pervasive Monitoring",
+        "source": "arxiv",
+        "year": 2014
+      },
+      {
+        "doc_index": 19,
+        "topic_id": 0,
+        "x": 8.498348236083984,
+        "y": 14.184131622314453,
+        "preview": "Parameter monitoring system of the Dubna Gas-Filled Recoil Separator  PC-based one-crate monitoring and control system o",
+        "title": "Parameter monitoring system of the Dubna Gas-Filled Recoil Separator",
+        "source": "arxiv",
+        "year": 2015
+      }
+    ],
+    "why": "Documents were embedded with all-MiniLM-L6-v2, projected with UMAP, and grouped by BERTopic (HDBSCAN density clustering + c-TF-IDF keyword labeling). Points that sit close together share semantic content in abstracts and titles."
+  },
+  "evolution": {
+    "timeline": {
+      "0": [
+        {
+          "year": 2010,
+          "count": 1
+        },
+        {
+          "year": 2011,
+          "count": 1
+        },
+        {
+          "year": 2013,
+          "count": 1
+        },
+        {
+          "year": 2014,
+          "count": 2
+        },
+        {
+          "year": 2015,
+          "count": 2
+        },
+        {
+          "year": 2016,
+          "count": 1
+        },
+        {
+          "year": 2017,
+          "count": 1
+        },
+        {
+          "year": 2018,
+          "count": 1
+        },
+        {
+          "year": 2019,
+          "count": 1
+        },
+        {
+          "year": 2020,
+          "count": 2
+        },
+        {
+          "year": 2023,
+          "count": 1
+        },
+        {
+          "year": 2024,
+          "count": 1
+        },
+        {
+          "year": 2025,
+          "count": 1
+        },
+        {
+          "year": 2026,
+          "count": 1
+        }
+      ],
+      "1": [
+        {
+          "year": 2012,
+          "count": 1
+        },
+        {
+          "year": 2016,
+          "count": 1
+        },
+        {
+          "year": 2018,
+          "count": 1
+        }
+      ]
+    },
+    "lifecycle": {
+      "0": {
+        "stage": "maturity",
+        "params": {
+          "L": 2.3315877106368093,
+          "k": 0.010000000000000002,
+          "t0": 3.799075333848719e-09
+        },
+        "fitted": [
+          [
+            2010,
+            1.16579385529626
+          ],
+          [
+            2010,
+            1.1707024319956125
+          ],
+          [
+            2011,
+            1.1756108346563914
+          ],
+          [
+            2012,
+            1.1805188892647043
+          ],
+          [
+            2013,
+            1.1854264218560155
+          ],
+          [
+            2014,
+            1.1903332585398043
+          ],
+          [
+            2015,
+            1.1952392255242066
+          ],
+          [
+            2015,
+            1.2001441491406166
+          ],
+          [
+            2016,
+            1.2050478558682616
+          ],
+          [
+            2017,
+            1.2099501723587258
+          ],
+          [
+            2018,
+            1.2148509254604263
+          ],
+          [
+            2019,
+            1.2197499422430274
+          ],
+          [
+            2020,
+            1.2246470500217879
+          ],
+          [
+            2020,
+            1.2295420763818383
+          ],
+          [
+            2021,
+            1.2344348492023725
+          ],
+          [
+            2022,
+            1.2393251966807532
+          ],
+          [
+            2023,
+            1.2442129473565275
+          ],
+          [
+            2024,
+            1.2490979301353267
+          ],
+          [
+            2025,
+            1.2539799743126698
+          ],
+          [
+            2026,
+            1.258858909597645
+          ]
+        ],
+        "explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate."
+      },
+      "1": {
+        "stage": "maturity",
+        "params": {
+          "L": 1.9669247818010926,
+          "k": 0.010000000000000002,
+          "t0": 7.542323792891272e-12
+        },
+        "fitted": [
+          [
+            2012,
+            0.9834623909005092
+          ],
+          [
+            2012,
+            0.9850152249641189
+          ],
+          [
+            2012,
+            0.9865680512850978
+          ],
+          [
+            2012,
+            0.9881208621209706
+          ],
+          [
+            2013,
+            0.9896736497295681
+          ],
+          [
+            2013,
+            0.9912264063691865
+          ],
+          [
+            2013,
+            0.9927791242987395
+          ],
+          [
+            2014,
+            0.9943317957779124
+          ],
+          [
+            2014,
+            0.995884413067318
+          ],
+          [
+            2014,
+            0.9974369684286464
+          ],
+          [
+            2015,
+            0.9989894541248256
+          ],
+          [
+            2015,
+            1.0005418624201718
+          ],
+          [
+            2015,
+            1.0020941855805452
+          ],
+          [
+            2016,
+            1.0036464158735003
+          ],
+          [
+            2016,
+            1.0051985455684458
+          ],
+          [
+            2016,
+            1.0067505669367944
+          ],
+          [
+            2017,
+            1.0083024722521177
+          ],
+          [
+            2017,
+            1.009854253790301
+          ],
+          [
+            2017,
+            1.0114059038296932
+          ],
+          [
+            2018,
+            1.0129574146512652
+          ]
+        ],
+        "explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate."
+      }
+    },
+    "events": [
+      {
+        "year": 2010,
+        "topic_id": 0,
+        "type": "emerge",
+        "keywords": [
+          "the",
+          "of",
+          "to",
+          "and",
+          "in",
+          "monitoring",
+          "is",
+          "for",
+          "model",
+          "travel"
+        ],
+        "count": 1,
+        "why": "Topic 0 first appears in 2010 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2012,
+        "topic_id": 1,
+        "type": "emerge",
+        "keywords": [
+          "the",
+          "of",
+          "in",
+          "and",
+          "corporate",
+          "researchers",
+          "interest",
+          "dissertation",
+          "this",
+          "regulatory"
+        ],
+        "count": 1,
+        "why": "Topic 1 first appears in 2012 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2014,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "the",
+          "of",
+          "to",
+          "and",
+          "in",
+          "monitoring",
+          "is",
+          "for",
+          "model",
+          "travel"
+        ],
+        "count": 2,
+        "why": "Publication volume for topic 0 rose 1\u21922 (100% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2020,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "the",
+          "of",
+          "to",
+          "and",
+          "in",
+          "monitoring",
+          "is",
+          "for",
+          "model",
+          "travel"
+        ],
+        "count": 2,
+        "why": "Publication volume for topic 0 rose 1\u21922 (100% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2026,
+        "topic_id": 1,
+        "type": "die",
+        "keywords": [
+          "the",
+          "of",
+          "in",
+          "and",
+          "corporate",
+          "researchers",
+          "interest",
+          "dissertation",
+          "this",
+          "regulatory"
+        ],
+        "why": "Topic 1 had no publications in 2026 after prior activity\u2014treated as decline/die-off.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      }
+    ],
+    "why": "Per-topic yearly counts were fitted to a logistic S-curve to assign lifecycle stages. Change events are detected by diffing topic presence and volume across years and measuring keyword overlap between co-active clusters.",
+    "weak_signals": []
+  },
+  "reasoning": {
+    "influence": [
+      {
+        "from": "the, of, to, and",
+        "to": "the, of, in, and",
+        "relation": "enables",
+        "reason": "Shared methodological lineage between the, of, to, and and the, of, in, and in the corpus.",
+        "why": "Heuristic edge from cluster ordering when LLM output was sparse."
+      }
+    ],
+    "sao": {
+      "0": {
+        "triples": [
+          {
+            "subject": "Approach",
+            "action": "present",
+            "object": "Retrieval"
+          },
+          {
+            "subject": "paper",
+            "action": "introduce",
+            "object": "system"
+          },
+          {
+            "subject": "system",
+            "action": "integrate",
+            "object": "model"
+          },
+          {
+            "subject": "passage",
+            "action": "generate",
+            "object": "response"
+          },
+          {
+            "subject": "result",
+            "action": "demonstrate",
+            "object": "approach"
+          },
+          {
+            "subject": "we",
+            "action": "share",
+            "object": "model"
+          },
+          {
+            "subject": "monitoring",
+            "action": "present",
+            "object": "Kong"
+          },
+          {
+            "subject": "brightness",
+            "action": "measure",
+            "object": "city"
+          },
+          {
+            "subject": "total",
+            "action": "take",
+            "object": "set"
+          },
+          {
+            "subject": "survey",
+            "action": "show",
+            "object": "Kong"
+          },
+          {
+            "subject": "location",
+            "action": "study",
+            "object": "mag"
+          },
+          {
+            "subject": "brightness",
+            "action": "find",
+            "object": "factor"
+          },
+          {
+            "subject": "sky",
+            "action": "attribute",
+            "object": "time"
+          },
+          {
+            "subject": "relationship",
+            "action": "establish",
+            "object": "hand"
+          },
+          {
+            "subject": "result",
+            "action": "serve",
+            "object": "survey"
+          },
+          {
+            "subject": "cav",
+            "action": "sail",
+            "object": "capability"
+          },
+          {
+            "subject": "we",
+            "action": "develop",
+            "object": "vehicle"
+          },
+          {
+            "subject": "work",
+            "action": "describe",
+            "object": "platform"
+          },
+          {
+            "subject": "vehicle",
+            "action": "deploy",
+            "object": "traffic"
+          },
+          {
+            "subject": "vehicle",
+            "action": "follow",
+            "object": "limit"
+          },
+          {
+            "subject": "article",
+            "action": "use",
+            "object": "datum"
+          },
+          {
+            "subject": "granularity",
+            "action": "require",
+            "object": "datum"
+          },
+          {
+            "subject": "method",
+            "action": "work",
+            "object": "distribution"
+          },
+          {
+            "subject": "method",
+            "action": "apply",
+            "object": "dataset"
+          },
+          {
+            "subject": "analysis",
+            "action": "indicate",
+            "object": "condition"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "show",
+            "count": 5
+          },
+          {
+            "action": "present",
+            "count": 4
+          },
+          {
+            "action": "use",
+            "count": 4
+          },
+          {
+            "action": "describe",
+            "count": 3
+          },
+          {
+            "action": "measure",
+            "count": 2
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "1": {
+        "triples": [
+          {
+            "subject": "Disruption",
+            "action": "consider",
+            "object": "Science"
+          },
+          {
+            "subject": "dissertation",
+            "action": "situate",
+            "object": "history"
+          },
+          {
+            "subject": "research",
+            "action": "consist",
+            "object": "depth"
+          },
+          {
+            "subject": "dissertation",
+            "action": "build",
+            "object": "theory"
+          },
+          {
+            "subject": "problem",
+            "action": "solve",
+            "object": "entirety"
+          },
+          {
+            "subject": "chapter",
+            "action": "aim",
+            "object": "introduction"
+          },
+          {
+            "subject": "chapter",
+            "action": "mean",
+            "object": "background"
+          },
+          {
+            "subject": "comment",
+            "action": "comment",
+            "object": "evidence"
+          },
+          {
+            "subject": "they",
+            "action": "be",
+            "object": "example"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "consider",
+            "count": 1
+          },
+          {
+            "action": "situate",
+            "count": 1
+          },
+          {
+            "action": "consist",
+            "count": 1
+          },
+          {
+            "action": "build",
+            "count": 1
+          },
+          {
+            "action": "solve",
+            "count": 1
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      }
+    },
+    "why_influence": "Edges represent enabling or displacing relationships inferred from cluster themes and LLM foresight reasoning."
+  },
+  "scenarios": {
+    "drivers": [
+      {
+        "axis": "Adoption velocity",
+        "description": "2 emerging topic(s) create uncertainty about which technology will cross the chasm first.",
+        "why": "Derived from emerge events\u2014new clusters increase adoption-path uncertainty."
+      },
+      {
+        "axis": "Technology displacement",
+        "description": "1 declining topic(s) signal potential displacement of incumbent approaches.",
+        "why": "Derived from die events\u2014fading clusters imply replacement risk for legacy tech."
+      }
+    ],
+    "axis_labels": {
+      "x": "Adoption velocity",
+      "y": "Technology displacement"
+    },
+    "scenarios": {
+      "optimistic": {
+        "tone": "optimistic",
+        "title": "Optimistic",
+        "color": "#22C55E",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "disruptive": {
+        "tone": "disruptive",
+        "title": "Disruptive",
+        "color": "#EF4444",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "constrained": {
+        "tone": "constrained",
+        "title": "Constrained",
+        "color": "#F59E0B",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "stagnant": {
+        "tone": "stagnant",
+        "title": "Stagnant",
+        "color": "#6B7280",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      }
+    },
+    "why": "Four scenarios span the 2\u00d72 space of the two largest uncertainty drivers extracted from causal events.",
+    "impact_trees": {
+      "optimistic": {
+        "tree": {
+          "name": "The",
+          "why": "Primary driver in the Optimistic scenario.",
+          "children": [
+            {
+              "name": "Supply chain shift",
+              "why": "Component demand reallocates toward new dominant designs.",
+              "children": [
+                {
+                  "name": "Cost reduction",
+                  "why": "Scale economies as adoption grows.",
+                  "children": []
+                },
+                {
+                  "name": "Skill gap",
+                  "why": "Workforce lags new tooling requirements.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Standards formation",
+              "why": "Interoperability pressure after fragmentation.",
+              "children": []
+            }
+          ]
+        },
+        "why": "D3 impact tree encodes cascading second-order effects implied by the scenario narrative."
+      },
+      "disruptive": {
+        "tree": {
+          "name": "The",
+          "why": "Primary driver in the Disruptive scenario.",
+          "children": [
+            {
+              "name": "Supply chain shift",
+              "why": "Component demand reallocates toward new dominant designs.",
+              "children": [
+                {
+                  "name": "Cost reduction",
+                  "why": "Scale economies as adoption grows.",
+                  "children": []
+                },
+                {
+                  "name": "Skill gap",
+                  "why": "Workforce lags new tooling requirements.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Standards formation",
+              "why": "Interoperability pressure after fragmentation.",
+              "children": []
+            }
+          ]
+        },
+        "why": "D3 impact tree encodes cascading second-order effects implied by the scenario narrative."
+      },
+      "constrained": {
+        "tree": {
+          "name": "The",
+          "why": "Primary driver in the Constrained scenario.",
+          "children": [
+            {
+              "name": "Supply chain shift",
+              "why": "Component demand reallocates toward new dominant designs.",
+              "children": [
+                {
+                  "name": "Cost reduction",
+                  "why": "Scale economies as adoption grows.",
+                  "children": []
+                },
+                {
+                  "name": "Skill gap",
+                  "why": "Workforce lags new tooling requirements.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Standards formation",
+              "why": "Interoperability pressure after fragmentation.",
+              "children": []
+            }
+          ]
+        },
+        "why": "D3 impact tree encodes cascading second-order effects implied by the scenario narrative."
+      },
+      "stagnant": {
+        "tree": {
+          "name": "The",
+          "why": "Primary driver in the Stagnant scenario.",
+          "children": [
+            {
+              "name": "Supply chain shift",
+              "why": "Component demand reallocates toward new dominant designs.",
+              "children": [
+                {
+                  "name": "Cost reduction",
+                  "why": "Scale economies as adoption grows.",
+                  "children": []
+                },
+                {
+                  "name": "Skill gap",
+                  "why": "Workforce lags new tooling requirements.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Standards formation",
+              "why": "Interoperability pressure after fragmentation.",
+              "children": []
+            }
+          ]
+        },
+        "why": "D3 impact tree encodes cascading second-order effects implied by the scenario narrative."
+      }
+    }
+  },
+  "source_breakdown": {
+    "arxiv": 20,
+    "uploaded": 0
+  }
+}

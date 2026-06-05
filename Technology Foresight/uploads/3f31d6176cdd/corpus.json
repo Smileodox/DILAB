@@ -1,0 +1,386 @@
+[
+  {
+    "title": "A Hybrid Approach to Information Retrieval and Answer Generation for Regulatory Texts",
+    "abstract": "Regulatory texts are inherently long and complex, presenting significant challenges for information retrieval systems in supporting regulatory officers with compliance tasks. This paper introduces a hybrid information retrieval system that combines lexical and semantic search techniques to extract relevant information from large regulatory corpora. The system integrates a fine-tuned sentence transformer model with the traditional BM25 algorithm to achieve both semantic precision and lexical coverage. To generate accurate and comprehensive responses, retrieved passages are synthesized using Large Language Models (LLMs) within a Retrieval Augmented Generation (RAG) framework. Experimental results demonstrate that the hybrid system significantly outperforms standalone lexical and semantic approaches, with notable improvements in Recall@10 and MAP@10. By openly sharing our fine-tuned model and methodology, we aim to advance the development of robust natural language processing tools for compliance-driven applications in regulatory domains.",
+    "authors": [
+      "Jhon Rayo",
+      "Raul de la Rosa",
+      "Mario Garrido"
+    ],
+    "published": "2025-02-24",
+    "year": 2025,
+    "arxiv_id": "2502.16767v1",
+    "category": "cs.CL",
+    "source": "arxiv",
+    "text": "A Hybrid Approach to Information Retrieval and Answer Generation for Regulatory Texts\n\nRegulatory texts are inherently long and complex, presenting significant challenges for information retrieval systems in supporting regulatory officers with compliance tasks. This paper introduces a hybrid information retrieval system that combines lexical and semantic search techniques to extract relevant information from large regulatory corpora. The system integrates a fine-tuned sentence transformer model with the traditional BM25 algorithm to achieve both semantic precision and lexical coverage. To generate accurate and comprehensive responses, retrieved passages are synthesized using Large Language Models (LLMs) within a Retrieval Augmented Generation (RAG) framework. Experimental results demonstrate that the hybrid system significantly outperforms standalone lexical and semantic approaches, with notable improvements in Recall@10 and MAP@10. By openly sharing our fine-tuned model and methodology, we aim to advance the development of robust natural language processing tools for compliance-driven applications in regulatory domains."
+  },
+  {
+    "title": "Night-sky brightness monitoring in Hong Kong - a city-wide light pollution assessment",
+    "abstract": "Results of the first comprehensive light pollution survey in Hong Kong are presented. The night-sky brightness was measured and monitored around the city using a portable light sensing device called the Sky Quality Meter over a 15-month period beginning in March 2008. A total of 1,957 data sets were taken at 199 distinct locations, including urban and rural sites covering all 18 Administrative Districts of Hong Kong. The survey shows that the environmental light pollution problem in Hong Kong is severe - the urban night-skies (sky brightness at 15.0 mag per arcsec square) are on average ~100 times brighter than at the darkest rural sites (20.1 mag per arcsec square), indicating that the high lighting densities in the densely populated residential and commercial areas lead to light pollution. In the worst polluted urban location studied, the night-sky at 13.2 mag per arcsec square can be over 500 times brighter than the darkest sites in Hong Kong. The observed night-sky brightness is found to be affected by human factors such as land utilization and population density of the observation sites, together with meteorological and/or environmental factors. Moreover, earlier night-skies (at 9:30pm local time) are generally brighter than later time (at 11:30pm), which can be attributed to some public and commercial lightings being turned off later at night. On the other hand, no concrete relationship between the observed sky brightness and air pollutant concentrations could be established with the limited survey sampling. Results from this survey will serve as an important database for the public to assess whether new rules and regulations are necessary to control the use of outdoor lightings in Hong Kong.",
+    "authors": [
+      "Chun Shing Jason Pun",
+      "Chu Wing So"
+    ],
+    "published": "2011-06-20",
+    "year": 2011,
+    "arxiv_id": "1106.3842v1",
+    "category": "astro-ph.IM",
+    "source": "arxiv",
+    "text": "Night-sky brightness monitoring in Hong Kong - a city-wide light pollution assessment\n\nResults of the first comprehensive light pollution survey in Hong Kong are presented. The night-sky brightness was measured and monitored around the city using a portable light sensing device called the Sky Quality Meter over a 15-month period beginning in March 2008. A total of 1,957 data sets were taken at 199 distinct locations, including urban and rural sites covering all 18 Administrative Districts of Hong Kong. The survey shows that the environmental light pollution problem in Hong Kong is severe - the urban night-skies (sky brightness at 15.0 mag per arcsec square) are on average ~100 times brighter than at the darkest rural sites (20.1 mag per arcsec square), indicating that the high lighting densities in the densely populated residential and commercial areas lead to light pollution. In the worst polluted urban location studied, the night-sky at 13.2 mag per arcsec square can be over 500 times brighter than the darkest sites in Hong Kong. The observed night-sky brightness is found to be affected by human factors such as land utilization and population density of the observation sites, together with meteorological and/or environmental factors. Moreover, earlier night-skies (at 9:30pm local time) are generally brighter than later time (at 11:30pm), which can be attributed to some public and commercial lightings being turned off later at night. On the other hand, no concrete relationship between the observed sky brightness and air pollutant concentrations could be established with the limited survey sampling. Results from this survey will serve as an important database for the public to assess whether new rules and regulations are necessary to control the use of outdoor lightings in Hong Kong."
+  },
+  {
+    "title": "SAILing CAVs: Speed-Adaptive Infrastructure-Linked Connected and Automated Vehicles",
+    "abstract": "This work demonstrates a new capability in roadway control: Speed-adaptive, infrastructure-linked connected and automated vehicles. We develop and deploy a lightly modified vehicle that is able to dynamically adjust the vehicle speed in response to posted variable speed limit messages generated by the infrastructure using LTE connectivity. This work describes the open source hardware and software platform that enables integration between infrastructure-based variable posted speed limits, and existing vehicle platforms for automated control. The vehicle is deployed in heavy morning traffic on I-24 in Nashville, TN. The control vehicle follows the posted variable speed limits, resulting in as much as a 25% reduction in speed variability compared to a human-piloted vehicle in the same traffic stream.",
+    "authors": [
+      "Matthew Nice",
+      "Matthew Bunting",
+      "George Gunter",
+      "William Barbour",
+      "Jonathan Sprinkle",
+      "Dan Work"
+    ],
+    "published": "2023-10-10",
+    "year": 2023,
+    "arxiv_id": "2310.06931v1",
+    "category": "cs.RO",
+    "source": "arxiv",
+    "text": "SAILing CAVs: Speed-Adaptive Infrastructure-Linked Connected and Automated Vehicles\n\nThis work demonstrates a new capability in roadway control: Speed-adaptive, infrastructure-linked connected and automated vehicles. We develop and deploy a lightly modified vehicle that is able to dynamically adjust the vehicle speed in response to posted variable speed limit messages generated by the infrastructure using LTE connectivity. This work describes the open source hardware and software platform that enables integration between infrastructure-based variable posted speed limits, and existing vehicle platforms for automated control. The vehicle is deployed in heavy morning traffic on I-24 in Nashville, TN. The control vehicle follows the posted variable speed limits, resulting in as much as a 25% reduction in speed variability compared to a human-piloted vehicle in the same traffic stream."
+  },
+  {
+    "title": "Corporate Disruption in the Science of Machine Learning",
+    "abstract": "This MSc dissertation considers the effects of the current corporate interest on researchers in the field of machine learning. Situated within the field's cyclical history of academic, public and corporate interest, this dissertation investigates how current researchers view recent developments and negotiate their own research practices within an environment of increased commercial interest and funding. The original research consists of in-depth interviews with 12 machine learning researchers working in both academia and industry. Building on theory from science, technology and society studies, this dissertation problematizes the traditional narratives of the neoliberalization of academic research by allowing the researchers themselves to discuss how their career choices, working environments and interactions with others in the field have been affected by the reinvigorated corporate interest of recent years.",
+    "authors": [
+      "Sam Work"
+    ],
+    "published": "2016-12-13",
+    "year": 2016,
+    "arxiv_id": "1612.04108v1",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "Corporate Disruption in the Science of Machine Learning\n\nThis MSc dissertation considers the effects of the current corporate interest on researchers in the field of machine learning. Situated within the field's cyclical history of academic, public and corporate interest, this dissertation investigates how current researchers view recent developments and negotiate their own research practices within an environment of increased commercial interest and funding. The original research consists of in-depth interviews with 12 machine learning researchers working in both academia and industry. Building on theory from science, technology and society studies, this dissertation problematizes the traditional narratives of the neoliberalization of academic research by allowing the researchers themselves to discuss how their career choices, working environments and interactions with others in the field have been affected by the reinvigorated corporate interest of recent years."
+  },
+  {
+    "title": "Using coarse GPS data to quantify city-scale transportation system resilience to extreme events",
+    "abstract": "This article proposes a method to quantitatively measure the resilience of transportation systems using GPS data from taxis. The granularity of the GPS data necessary for this analysis is relatively coarse; it only requires coordinates for the beginning and end of trips, the metered distance, and the total travel time. The method works by computing the historical distribution of pace (normalized travel times) between various regions of a city and measuring the pace deviations during an unusual event. This method is applied to a dataset of nearly 700 million taxi trips in New York City, which is used to analyze the transportation infrastructure resilience to Hurricane Sandy. The analysis indicates that Hurricane Sandy impacted traffic conditions for more than five days, and caused a peak delay of two minutes per mile. Practically, it identifies that the evacuation caused only minor disruptions, but significant delays were encountered during the post-disaster reentry process. Since the implementation of this method is very efficient, it could potentially be used as an online monitoring tool, representing a first step toward quantifying city scale resilience with coarse GPS data.",
+    "authors": [
+      "Brian Donovan",
+      "Daniel B. Work"
+    ],
+    "published": "2015-07-21",
+    "year": 2015,
+    "arxiv_id": "1507.06011v1",
+    "category": "physics.soc-ph",
+    "source": "arxiv",
+    "text": "Using coarse GPS data to quantify city-scale transportation system resilience to extreme events\n\nThis article proposes a method to quantitatively measure the resilience of transportation systems using GPS data from taxis. The granularity of the GPS data necessary for this analysis is relatively coarse; it only requires coordinates for the beginning and end of trips, the metered distance, and the total travel time. The method works by computing the historical distribution of pace (normalized travel times) between various regions of a city and measuring the pace deviations during an unusual event. This method is applied to a dataset of nearly 700 million taxi trips in New York City, which is used to analyze the transportation infrastructure resilience to Hurricane Sandy. The analysis indicates that Hurricane Sandy impacted traffic conditions for more than five days, and caused a peak delay of two minutes per mile. Practically, it identifies that the evacuation caused only minor disruptions, but significant delays were encountered during the post-disaster reentry process. Since the implementation of this method is very efficient, it could potentially be used as an online monitoring tool, representing a first step toward quantifying city scale resilience with coarse GPS data."
+  },
+  {
+    "title": "Reviewing Uses of Regulatory Compliance Monitoring",
+    "abstract": "Organizations need to manage numerous business processes for delivering their services and products to customers. One important consideration thereby lies in the adherence to regulations such as laws, guidelines, or industry standards. In order to monitor adherence of their business processes to regulations -- in other words, their regulatory compliance -- organizations make use of various techniques that draw on process execution data of IT systems that support these processes. Previous research has investigated conformance checking, an operation of process mining, for the domains in which it is applied, its operationalization of regulations, the techniques being used, and the presentation of results produced. However, other techniques for regulatory compliance monitoring, which we summarize as compliance checking techniques, have not yet been investigated regarding these aspects in a structural manner. To this end, this work presents a systematic literature review on uses of regulatory compliance monitoring of business processes, thereby offering insights into the various techniques being used, their application and the results they generate. We highlight commonalities and differences between the approaches and find that various steps are performed manually; we also provide further impulses for research on compliance monitoring and its use in practice.",
+    "authors": [
+      "Finn Klessascheck",
+      "Luise Pufahl"
+    ],
+    "published": "2024-12-06",
+    "year": 2024,
+    "arxiv_id": "2501.10362v5",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "Reviewing Uses of Regulatory Compliance Monitoring\n\nOrganizations need to manage numerous business processes for delivering their services and products to customers. One important consideration thereby lies in the adherence to regulations such as laws, guidelines, or industry standards. In order to monitor adherence of their business processes to regulations -- in other words, their regulatory compliance -- organizations make use of various techniques that draw on process execution data of IT systems that support these processes. Previous research has investigated conformance checking, an operation of process mining, for the domains in which it is applied, its operationalization of regulations, the techniques being used, and the presentation of results produced. However, other techniques for regulatory compliance monitoring, which we summarize as compliance checking techniques, have not yet been investigated regarding these aspects in a structural manner. To this end, this work presents a systematic literature review on uses of regulatory compliance monitoring of business processes, thereby offering insights into the various techniques being used, their application and the results they generate. We highlight commonalities and differences between the approaches and find that various steps are performed manually; we also provide further impulses for research on compliance monitoring and its use in practice."
+  },
+  {
+    "title": "Gene regulatory network inference: an introductory survey",
+    "abstract": "Gene regulatory networks are powerful abstractions of biological systems. Since the advent of high-throughput measurement technologies in biology in the late 90s, reconstructing the structure of such networks has been a central computational problem in systems biology. While the problem is certainly not solved in its entirety, considerable progress has been made in the last two decades, with mature tools now available. This chapter aims to provide an introduction to the basic concepts underpinning network inference tools, attempting a categorisation which highlights commonalities and relative strengths. While the chapter is meant to be self-contained, the material presented should provide a useful background to the later, more specialised chapters of this book.",
+    "authors": [
+      "V\u00e2n Anh Huynh-Thu",
+      "Guido Sanguinetti"
+    ],
+    "published": "2018-01-12",
+    "year": 2018,
+    "arxiv_id": "1801.04087v2",
+    "category": "q-bio.QM",
+    "source": "arxiv",
+    "text": "Gene regulatory network inference: an introductory survey\n\nGene regulatory networks are powerful abstractions of biological systems. Since the advent of high-throughput measurement technologies in biology in the late 90s, reconstructing the structure of such networks has been a central computational problem in systems biology. While the problem is certainly not solved in its entirety, considerable progress has been made in the last two decades, with mature tools now available. This chapter aims to provide an introduction to the basic concepts underpinning network inference tools, attempting a categorisation which highlights commonalities and relative strengths. While the chapter is meant to be self-contained, the material presented should provide a useful background to the later, more specialised chapters of this book."
+  },
+  {
+    "title": "Scaling the Kalman filter for large-scale traffic estimation",
+    "abstract": "This work introduces a scalable filtering algorithm for multi-agent traffic estimation. Large-scale networks are spatially partitioned into overlapping road sections. The traffic dynamics of each section is given by the switching mode model (SMM) using a conservation principle, and the traffic state in each section is estimated by a local agent. In the proposed filter, a consensus term is applied to promote inter-agent agreement on overlapping sections. The new filter, termed a (spatially) distributed local Kalman consensus filter (DLKCF), is shown to maintain globally asymptotically stable (GAS) mean error dynamics when all sections switch among observable modes. When a section is unobservable, we show that the mean estimate of each state variable in the section is ultimately bounded, which is achieved by exploring the interaction between the properties of the traffic model and the measurement feedback of the filter. Based on the above results, the boundedness of the mean estimation error of the DLKCF under switching sequences with observable and unobservable modes is established to address the overall performance of the filter. Numerical experiments show the ability of the DLKCF to promote consensus, increase estimation accuracy compared to a local filter, and reduce the computational load compared to a centralized approach.",
+    "authors": [
+      "Ye Sun",
+      "Daniel B. Work"
+    ],
+    "published": "2016-08-02",
+    "year": 2016,
+    "arxiv_id": "1608.00917v2",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Scaling the Kalman filter for large-scale traffic estimation\n\nThis work introduces a scalable filtering algorithm for multi-agent traffic estimation. Large-scale networks are spatially partitioned into overlapping road sections. The traffic dynamics of each section is given by the switching mode model (SMM) using a conservation principle, and the traffic state in each section is estimated by a local agent. In the proposed filter, a consensus term is applied to promote inter-agent agreement on overlapping sections. The new filter, termed a (spatially) distributed local Kalman consensus filter (DLKCF), is shown to maintain globally asymptotically stable (GAS) mean error dynamics when all sections switch among observable modes. When a section is unobservable, we show that the mean estimate of each state variable in the section is ultimately bounded, which is achieved by exploring the interaction between the properties of the traffic model and the measurement feedback of the filter. Based on the above results, the boundedness of the mean estimation error of the DLKCF under switching sequences with observable and unobservable modes is established to address the overall performance of the filter. Numerical experiments show the ability of the DLKCF to promote consensus, increase estimation accuracy compared to a local filter, and reduce the computational load compared to a centralized approach."
+  },
+  {
+    "title": "Security in Monitoring Schemes: A Survey",
+    "abstract": "With our growing reliability on distributed networks, the security aspect of such networks becomes of prime importance. In large scale distributed networks it becomes cardinal to have an efficient and effective monitoring scheme. The monitoring schemes supervise the node behaviour in the network and look out for any discrepancy. Monitoring schemes comprise of monitoring components that work together to help schemes in meeting various security requirement parameters for the networks. These security parameters are breached via various attacks by manipulation of monitoring components of particular monitoring schemes to produce faulty results and thereby reducing efficiency of networks, reliability and security. In this paper we have discussed these components of monitoring, multiple monitoring schemes, their security parameters and various types of attacks possible on these monitoring components by manipulating assumptions of monitoring schemes.",
+    "authors": [
+      "Atul Vaibhav"
+    ],
+    "published": "2014-11-19",
+    "year": 2014,
+    "arxiv_id": "1411.5213v1",
+    "category": "cs.DC",
+    "source": "arxiv",
+    "text": "Security in Monitoring Schemes: A Survey\n\nWith our growing reliability on distributed networks, the security aspect of such networks becomes of prime importance. In large scale distributed networks it becomes cardinal to have an efficient and effective monitoring scheme. The monitoring schemes supervise the node behaviour in the network and look out for any discrepancy. Monitoring schemes comprise of monitoring components that work together to help schemes in meeting various security requirement parameters for the networks. These security parameters are breached via various attacks by manipulation of monitoring components of particular monitoring schemes to produce faulty results and thereby reducing efficiency of networks, reliability and security. In this paper we have discussed these components of monitoring, multiple monitoring schemes, their security parameters and various types of attacks possible on these monitoring components by manipulating assumptions of monitoring schemes."
+  },
+  {
+    "title": "3D Spectrum Awareness for Radio Dynamic Zones Using Kriging and Matrix Completion",
+    "abstract": "Radio Dynamic Zones (RDZs) are geographically defined areas specifically allocated for testing new wireless technologies. It is essential to safeguard the regular spectrum users outside the zones from the interference caused by the deployed equipment within this zone. Previous works have utilized sparse reference signal received power (RSRP) measurements collected by unmanned aerial vehicles (UAVs) to construct a dense 3D radio map through ordinary Kriging. In this work, we illustrate that matrix completion can outperform ordinary Kriging. We partitioned a 2D area of interest into small square grids where each grid corresponds to a single entry of a matrix. The matrix completion algorithm learns the global structure of the radio environment map by leveraging the low-rank property of propagation maps. Additionally, we illustrate that the simple Kriging and trans-Gaussian Kriging yield better results when the density of known measurements is lower. Earlier works of RSRP prediction involved a training dataset at a single altitude. In this work, we also show that performance can be improved by utilizing a combined dataset from multiple altitudes.",
+    "authors": [
+      "Mushfiqur Rahman",
+      "Sung Joon Maeng",
+      "Ismail Guvenc",
+      "Chau-Wai Wong"
+    ],
+    "published": "2026-03-11",
+    "year": 2026,
+    "arxiv_id": "2603.10443v1",
+    "category": "eess.SP",
+    "source": "arxiv",
+    "text": "3D Spectrum Awareness for Radio Dynamic Zones Using Kriging and Matrix Completion\n\nRadio Dynamic Zones (RDZs) are geographically defined areas specifically allocated for testing new wireless technologies. It is essential to safeguard the regular spectrum users outside the zones from the interference caused by the deployed equipment within this zone. Previous works have utilized sparse reference signal received power (RSRP) measurements collected by unmanned aerial vehicles (UAVs) to construct a dense 3D radio map through ordinary Kriging. In this work, we illustrate that matrix completion can outperform ordinary Kriging. We partitioned a 2D area of interest into small square grids where each grid corresponds to a single entry of a matrix. The matrix completion algorithm learns the global structure of the radio environment map by leveraging the low-rank property of propagation maps. Additionally, we illustrate that the simple Kriging and trans-Gaussian Kriging yield better results when the density of known measurements is lower. Earlier works of RSRP prediction involved a training dataset at a single altitude. In this work, we also show that performance can be improved by utilizing a combined dataset from multiple altitudes."
+  },
+  {
+    "title": "VERITAS 2008 - 2009 monitoring of the variable gamma-ray source M87",
+    "abstract": "M87 is a nearby radio galaxy that is detected at energies ranging from radio to VHE gamma-rays.  Its proximity and its jet, misaligned from our line-of-sight, enable detailed morphological studies and extensive modeling at radio, optical, and X-ray energies.  Flaring activity was observed at all energies, and multi-wavelength correlations would help clarify the origin of the VHE emission.  In this paper, we describe a detailed temporal and spectral analysis of the VERITAS VHE gamma-ray observations of M87 in 2008 and 2009.  In the 2008 observing season, VERITAS detected an excess with a statistical significance of 7.2 sigma from M87 during a joint multi-wavelength monitoring campaign conducted by three major VHE experiments along with the Chandra X-ray Observatory.  In February 2008, VERITAS observed a VHE flare from M87 occurring over a 4-day timespan.  The peak nightly flux above 250GeV was 7.7% of the Crab Nebula flux.  M87 was marginally detected before this 4-day flare period, and was not detected afterwards.  Spectral analysis of the VERITAS observations showed no significant change in the photon index between the flare and pre-flare states.  Shortly after the VHE flare seen by VERITAS, the Chandra X-ray Observatory detected the flux from the core of M87 at a historical maximum, while the flux from the nearby knot HST-1 remained quiescent.  Acciari et al. (2009) presented the 2008 contemporaneous VHE gamma-ray, Chandra X-ray, and VLBA radio observations which suggest the core as the most likely source of VHE emission, in contrast to the 2005 VHE flare that was simultaneous with an X-ray flare in the HST-1 knot.  In 2009, VERITAS continued its monitoring of M87 and marginally detected a 4.2 sigma excess corresponding to a flux of ~1% of the Crab Nebula. No VHE flaring activity was observed in 2009.",
+    "authors": [
+      "The VERITAS Collaboration",
+      "V. A. Acciari",
+      "E. Aliu",
+      "T. Arlen",
+      "T. Aune",
+      "M. Beilicke",
+      "W. Benbow",
+      "D. Boltuch",
+      "S. M. Bradbury",
+      "J. H. Buckley",
+      "V. Bugaev",
+      "K. Byrum",
+      "A. Cannon",
+      "A. Cesarini",
+      "Y. C. Chow",
+      "L. Ciupik",
+      "P. Cogan",
+      "W. Cui",
+      "R. Dickherber",
+      "C. Duke",
+      "J. P. Finley",
+      "G. Finnegan",
+      "P. Fortin",
+      "L. Fortson",
+      "A. Furniss",
+      "N. Galante",
+      "D. Gall",
+      "G. H. Gillanders",
+      "S. Godambe",
+      "J. Grube",
+      "R. Guenette",
+      "G. Gyuk",
+      "D. Hanna",
+      "J. Holder",
+      "C. M. Hui",
+      "T. B. Humensky",
+      "A. Imran",
+      "P. Kaaret",
+      "N. Karlsson",
+      "M. Kertzman",
+      "D. Kieda",
+      "A. Konopelko",
+      "H. Krawczynski",
+      "F. Krennrich",
+      "M. J. Lang",
+      "S. LeBohec",
+      "G. Maier",
+      "S. McArthur",
+      "A. McCann",
+      "M. McCutcheon",
+      "J. Millis",
+      "P. Moriarty",
+      "R. A. Ong",
+      "A. N. Otte",
+      "D. Pandel",
+      "J. S. Perkins",
+      "A. M. J. Quinn",
+      "K. Ragan",
+      "L. C. Reyes",
+      "P. T. Reynolds",
+      "E. Roache",
+      "H. J. Rose",
+      "A. C. Rovero",
+      "M. Schroedter",
+      "G. H. Sembroski",
+      "G. Demet Senturk",
+      "A. W. Smith",
+      "D. Steele",
+      "S. P. Swordy",
+      "M. Theiling",
+      "S. Thibadeau",
+      "A. Varlotta",
+      "S. Vincent",
+      "R. G. Wagner",
+      "S. P. Wakely",
+      "J. E. Ward",
+      "T. C. Weekes",
+      "A. Weinstein",
+      "T. Weisgarber",
+      "D. A. Williams",
+      "S. Wissel",
+      "M. Wood",
+      "B. Zitzer",
+      "Chandra M87 Monitoring",
+      ":",
+      "D. E. Harris",
+      "F. Massaro"
+    ],
+    "published": "2010-05-03",
+    "year": 2010,
+    "arxiv_id": "1005.0367v1",
+    "category": "astro-ph.CO",
+    "source": "arxiv",
+    "text": "VERITAS 2008 - 2009 monitoring of the variable gamma-ray source M87\n\nM87 is a nearby radio galaxy that is detected at energies ranging from radio to VHE gamma-rays.  Its proximity and its jet, misaligned from our line-of-sight, enable detailed morphological studies and extensive modeling at radio, optical, and X-ray energies.  Flaring activity was observed at all energies, and multi-wavelength correlations would help clarify the origin of the VHE emission.  In this paper, we describe a detailed temporal and spectral analysis of the VERITAS VHE gamma-ray observations of M87 in 2008 and 2009.  In the 2008 observing season, VERITAS detected an excess with a statistical significance of 7.2 sigma from M87 during a joint multi-wavelength monitoring campaign conducted by three major VHE experiments along with the Chandra X-ray Observatory.  In February 2008, VERITAS observed a VHE flare from M87 occurring over a 4-day timespan.  The peak nightly flux above 250GeV was 7.7% of the Crab Nebula flux.  M87 was marginally detected before this 4-day flare period, and was not detected afterwards.  Spectral analysis of the VERITAS observations showed no significant change in the photon index between the flare and pre-flare states.  Shortly after the VHE flare seen by VERITAS, the Chandra X-ray Observatory detected the flux from the core of M87 at a historical maximum, while the flux from the nearby knot HST-1 remained quiescent.  Acciari et al. (2009) presented the 2008 contemporaneous VHE gamma-ray, Chandra X-ray, and VLBA radio observations which suggest the core as the most likely source of VHE emission, in contrast to the 2005 VHE flare that was simultaneous with an X-ray flare in the HST-1 knot.  In 2009, VERITAS continued its monitoring of M87 and marginally detected a 4.2 sigma excess corresponding to a flux of ~1% of the Crab Nebula. No VHE flaring activity was observed in 2009."
+  },
+  {
+    "title": "Gene regulatory networks: a primer in biological processes and statistical modelling",
+    "abstract": "Modelling gene regulatory networks not only requires a thorough understanding of the biological system depicted but also the ability to accurately represent this system from a mathematical perspective. Throughout this chapter, we aim to familiarise the reader with the biological processes and molecular factors at play in the process of gene expression regulation.We first describe the different interactions controlling each step of the expression process, from transcription to mRNA and protein decay. In the second section, we provide statistical tools to accurately represent this biological complexity in the form of mathematical models. Amongst other considerations, we discuss the topological properties of biological networks, the application of deterministic and stochastic frameworks and the quantitative modelling of regulation. We particularly focus on the use of such models for the simulation of expression data that can serve as a benchmark for the testing of network inference algorithms.",
+    "authors": [
+      "Olivia Angelin-Bonnet",
+      "Patrick J. Biggs",
+      "Matthieu Vignes"
+    ],
+    "published": "2018-05-03",
+    "year": 2018,
+    "arxiv_id": "1805.01098v1",
+    "category": "q-bio.QM",
+    "source": "arxiv",
+    "text": "Gene regulatory networks: a primer in biological processes and statistical modelling\n\nModelling gene regulatory networks not only requires a thorough understanding of the biological system depicted but also the ability to accurately represent this system from a mathematical perspective. Throughout this chapter, we aim to familiarise the reader with the biological processes and molecular factors at play in the process of gene expression regulation.We first describe the different interactions controlling each step of the expression process, from transcription to mRNA and protein decay. In the second section, we provide statistical tools to accurately represent this biological complexity in the form of mathematical models. Amongst other considerations, we discuss the topological properties of biological networks, the application of deterministic and stochastic frameworks and the quantitative modelling of regulation. We particularly focus on the use of such models for the simulation of expression data that can serve as a benchmark for the testing of network inference algorithms."
+  },
+  {
+    "title": "Comment on \"Evidence of Abundant and Purifying Selection in Humans for Recently Acquired Regulatory Functions\"",
+    "abstract": "Ward and Kellis (Reports, September 5 2012) identify regulatory regions in the human genome exhibiting lineage-specific constraint and estimate the extent of purifying selection. There is no statistical rationale for the examples they highlight, and their estimates of the fraction of the genome under constraint are biased by arbitrary designations of completely constrained regions.",
+    "authors": [
+      "Nicolas Bray",
+      "Lior Pachter"
+    ],
+    "published": "2012-12-13",
+    "year": 2012,
+    "arxiv_id": "1212.3076v1",
+    "category": "q-bio.GN",
+    "source": "arxiv",
+    "text": "Comment on \"Evidence of Abundant and Purifying Selection in Humans for Recently Acquired Regulatory Functions\"\n\nWard and Kellis (Reports, September 5 2012) identify regulatory regions in the human genome exhibiting lineage-specific constraint and estimate the extent of purifying selection. There is no statistical rationale for the examples they highlight, and their estimates of the fraction of the genome under constraint are biased by arbitrary designations of completely constrained regions."
+  },
+  {
+    "title": "Nonintrusive Load Monitoring for Machines used in Manufacturing",
+    "abstract": "In order to increase the electric energy efficiency of production machines, it is necessary to determine the energy demand of the constituent electric loads. Therefore, a new measurement system based on nonintrusive load monitoring is proposed in this paper. It only measures the voltage and current of the aggregate load and then uses automatic disaggregation methods to estimate the energy demand of the constituent loads. In two case studies, the energy demand of most loads could be determined with an accuracy of 85~\\% or more in this way.",
+    "authors": [
+      "Christian Gebbe"
+    ],
+    "published": "2019-12-01",
+    "year": 2019,
+    "arxiv_id": "1912.01500v1",
+    "category": "cs.OH",
+    "source": "arxiv",
+    "text": "Nonintrusive Load Monitoring for Machines used in Manufacturing\n\nIn order to increase the electric energy efficiency of production machines, it is necessary to determine the energy demand of the constituent electric loads. Therefore, a new measurement system based on nonintrusive load monitoring is proposed in this paper. It only measures the voltage and current of the aggregate load and then uses automatic disaggregation methods to estimate the energy demand of the constituent loads. In two case studies, the energy demand of most loads could be determined with an accuracy of 85~\\% or more in this way."
+  },
+  {
+    "title": "Impacts of Covid-19 mode shift on road traffic",
+    "abstract": "This work considers the sensitivity of commute travel times in US metro areas due to potential changes in commute patterns, for example caused by events such as pandemics. Permanent shifts away from transit and carpooling can add vehicles to congested road networks, increasing travel times. Growth in the number of workers who avoid commuting and work from home instead can offset travel time increases. To estimate these potential impacts, 6-9 years of American Community Survey commute data for 118 metropolitan statistical areas are investigated. For 74 of the metro areas, the average commute travel time is shown to be explainable using only the number of passenger vehicles used for commuting. A universal Bureau of Public Roads model characterizes the sensitivity of each metro area with respect to additional vehicles. The resulting models are then used to determine the change in average travel time for each metro area in scenarios when 25\\% or 50\\% of transit and carpool users switch to single occupancy vehicles. Under a 25\\% mode shift, areas such as San Francisco and New York that are already congested and have high transit ridership may experience round trip travel time increases of 12 minutes (New York) to 20 minutes (San Francisco), costing individual commuters \\$1065 and \\$1601 annually in lost time. The travel time increases and corresponding costs can be avoided with an increase in working from home. The main contribution of this work is to provide a model to quantify the potential increase in commute travel times under various behavior changes, that can aid policy making for more efficient commuting.",
+    "authors": [
+      "Yue Hu",
+      "William Barbour",
+      "Kun Qian",
+      "Christian Claudel",
+      "Samitha Samaranayake",
+      "Daniel B. Work"
+    ],
+    "published": "2020-05-04",
+    "year": 2020,
+    "arxiv_id": "2005.01610v2",
+    "category": "physics.soc-ph",
+    "source": "arxiv",
+    "text": "Impacts of Covid-19 mode shift on road traffic\n\nThis work considers the sensitivity of commute travel times in US metro areas due to potential changes in commute patterns, for example caused by events such as pandemics. Permanent shifts away from transit and carpooling can add vehicles to congested road networks, increasing travel times. Growth in the number of workers who avoid commuting and work from home instead can offset travel time increases. To estimate these potential impacts, 6-9 years of American Community Survey commute data for 118 metropolitan statistical areas are investigated. For 74 of the metro areas, the average commute travel time is shown to be explainable using only the number of passenger vehicles used for commuting. A universal Bureau of Public Roads model characterizes the sensitivity of each metro area with respect to additional vehicles. The resulting models are then used to determine the change in average travel time for each metro area in scenarios when 25\\% or 50\\% of transit and carpool users switch to single occupancy vehicles. Under a 25\\% mode shift, areas such as San Francisco and New York that are already congested and have high transit ridership may experience round trip travel time increases of 12 minutes (New York) to 20 minutes (San Francisco), costing individual commuters \\$1065 and \\$1601 annually in lost time. The travel time increases and corresponding costs can be avoided with an increase in working from home. The main contribution of this work is to provide a model to quantify the potential increase in commute travel times under various behavior changes, that can aid policy making for more efficient commuting."
+  },
+  {
+    "title": "A Collapsed Generalized Aw-Rascle-Zhang Model and Its Model Accuracy",
+    "abstract": "This work presents a collapsed generalized Aw-Rascle-Zhang (CGARZ) model, which fits into a generic second order model (GSOM) framework. GSOMs augment the evolution of the traffic density by a second state variable characterizing a property of vehicles or drivers. A cell transmission model for the numerical solution of GSOMs is derived, which is based on analyzing the sending and receiving functions of the traffic density and total property. The predictive accuracy of the CGARZ model is then compared to the classical first-order LWR and four second-order models. To that end, a systematic approach to calibrate model parameters from sensor flow-density data is introduced and applied to all models studied. The comparative model validation is conducted using two types of field data: vehicle trajectory data, and loop detector data. It is shown that the CGARZ model provides an intriguing combination of simple model dynamics in the free-flow regime and a representation of the spread of flow-density data in the congested regime, while possessing a competitive prediction accuracy.",
+    "authors": [
+      "Shimao Fan",
+      "Ye Sun",
+      "Benedetto Piccoli",
+      "Benjamin Seibold",
+      "Daniel B. Work"
+    ],
+    "published": "2017-02-13",
+    "year": 2017,
+    "arxiv_id": "1702.03624v1",
+    "category": "physics.soc-ph",
+    "source": "arxiv",
+    "text": "A Collapsed Generalized Aw-Rascle-Zhang Model and Its Model Accuracy\n\nThis work presents a collapsed generalized Aw-Rascle-Zhang (CGARZ) model, which fits into a generic second order model (GSOM) framework. GSOMs augment the evolution of the traffic density by a second state variable characterizing a property of vehicles or drivers. A cell transmission model for the numerical solution of GSOMs is derived, which is based on analyzing the sending and receiving functions of the traffic density and total property. The predictive accuracy of the CGARZ model is then compared to the classical first-order LWR and four second-order models. To that end, a systematic approach to calibrate model parameters from sensor flow-density data is introduced and applied to all models studied. The comparative model validation is conducted using two types of field data: vehicle trajectory data, and loop detector data. It is shown that the CGARZ model provides an intriguing combination of simple model dynamics in the free-flow regime and a representation of the spread of flow-density data in the congested regime, while possessing a competitive prediction accuracy."
+  },
+  {
+    "title": "Generalization of the construction method for multistability-equivalent gene regulatory networks to systems with multi-input multi-output loopbreaking",
+    "abstract": "The problem of equivalence in terms of multistability properties between gene regulatory network models of different dimensionality has been recently addressed by Schittler et al. (2013). The authors in that work proposed construction rules for a high-dimensional dynamical system, when given a low-dimensional dynamical system and the high-dimensional network structure. However, the proof therein was restricted to the class of systems for which all internal feedback loops can be broken by a loopbreaking approach yielding a single-input single-output (SISO) system. In this report, we present the generalization of the proof to systems with any number of internal feedback loops, which will be broken by a generalized loopbreaking approach resulting in a multi-input multi-output (MIMO) system. This generalization of the method renders the construction method applicable to a broad class of gene regulatory network models, thus promoting the transfer of results from core motif models to more realistic, high-dimensional models of gene regulation. We demonstrate the potential and value of our method by applying it to an example of a gene regulatory network in mesenchymal stem cell differentiation.",
+    "authors": [
+      "Daniella Schittler",
+      "Taouba Jouini",
+      "Frank Allg\u00f6wer",
+      "Steffen Waldherr"
+    ],
+    "published": "2013-12-27",
+    "year": 2013,
+    "arxiv_id": "1312.7250v2",
+    "category": "math.DS",
+    "source": "arxiv",
+    "text": "Generalization of the construction method for multistability-equivalent gene regulatory networks to systems with multi-input multi-output loopbreaking\n\nThe problem of equivalence in terms of multistability properties between gene regulatory network models of different dimensionality has been recently addressed by Schittler et al. (2013). The authors in that work proposed construction rules for a high-dimensional dynamical system, when given a low-dimensional dynamical system and the high-dimensional network structure. However, the proof therein was restricted to the class of systems for which all internal feedback loops can be broken by a loopbreaking approach yielding a single-input single-output (SISO) system. In this report, we present the generalization of the proof to systems with any number of internal feedback loops, which will be broken by a generalized loopbreaking approach resulting in a multi-input multi-output (MIMO) system. This generalization of the method renders the construction method applicable to a broad class of gene regulatory network models, thus promoting the transfer of results from core motif models to more realistic, high-dimensional models of gene regulation. We demonstrate the potential and value of our method by applying it to an example of a gene regulatory network in mesenchymal stem cell differentiation."
+  },
+  {
+    "title": "Monitoring and explainability of models in production",
+    "abstract": "The machine learning lifecycle extends beyond the deployment stage. Monitoring deployed models is crucial for continued provision of high quality machine learning enabled services. Key areas include model performance and data monitoring, detecting outliers and data drift using statistical techniques, and providing explanations of historic predictions. We discuss the challenges to successful implementation of solutions in each of these areas with some recent examples of production ready solutions using open source tools.",
+    "authors": [
+      "Janis Klaise",
+      "Arnaud Van Looveren",
+      "Clive Cox",
+      "Giovanni Vacanti",
+      "Alexandru Coca"
+    ],
+    "published": "2020-07-13",
+    "year": 2020,
+    "arxiv_id": "2007.06299v1",
+    "category": "stat.ML",
+    "source": "arxiv",
+    "text": "Monitoring and explainability of models in production\n\nThe machine learning lifecycle extends beyond the deployment stage. Monitoring deployed models is crucial for continued provision of high quality machine learning enabled services. Key areas include model performance and data monitoring, detecting outliers and data drift using statistical techniques, and providing explanations of historic predictions. We discuss the challenges to successful implementation of solutions in each of these areas with some recent examples of production ready solutions using open source tools."
+  },
+  {
+    "title": "Spontaneous Wireless Networking to Counter Pervasive Monitoring",
+    "abstract": "Several approaches can be employed to counter pervasive monitoring at large scale on the Internet. One category of approaches aims to harden the current Internet architecture and to increase the security of high profile targets (data centers, exchange points etc.). Another category of approaches aims instead for target dispersal, i.e. disabling systematic mass surveillance via the elimination of existing vantage points, thus forcing surveillance efforts to be more specific and personalized. This paper argues how networking approaches that do not rely on central entities -- but rather on spontaneous interaction, as locally as possible, between autonomous peer entities -- can help realize target dispersal and thus counter pervasive monitoring.",
+    "authors": [
+      "Emmanuel Baccelli",
+      "Oliver Hahm",
+      "Matthias W\u00e4hlisch"
+    ],
+    "published": "2014-02-11",
+    "year": 2014,
+    "arxiv_id": "1402.2622v1",
+    "category": "cs.NI",
+    "source": "arxiv",
+    "text": "Spontaneous Wireless Networking to Counter Pervasive Monitoring\n\nSeveral approaches can be employed to counter pervasive monitoring at large scale on the Internet. One category of approaches aims to harden the current Internet architecture and to increase the security of high profile targets (data centers, exchange points etc.). Another category of approaches aims instead for target dispersal, i.e. disabling systematic mass surveillance via the elimination of existing vantage points, thus forcing surveillance efforts to be more specific and personalized. This paper argues how networking approaches that do not rely on central entities -- but rather on spontaneous interaction, as locally as possible, between autonomous peer entities -- can help realize target dispersal and thus counter pervasive monitoring."
+  },
+  {
+    "title": "Parameter monitoring system of the Dubna Gas-Filled Recoil Separator",
+    "abstract": "PC-based one-crate monitoring and control system of the Dubna Gas Filled Recoil Separator (DGFRS) is considered. It is developed for the long-term experiments at the U400 FLNR cyclotron and is aimed at the synthesis of super heavy nuclei in heavy ion induced complete fusion reactions. Parameters related to:\n  a) beam and cyclotron;\n  b) separator by itself,\n  c) detection system,\n  d) target and entrance window are measured and stored in the protocol file of the experiment. Special attention is paid to generating the alarm signals and implementing further the appropriate procedures",
+    "authors": [
+      "Y. S. Tsyganov",
+      "A. N. Polyakov",
+      "A. M. Sukhov"
+    ],
+    "published": "2015-06-06",
+    "year": 2015,
+    "arxiv_id": "1506.02122v1",
+    "category": "physics.ins-det",
+    "source": "arxiv",
+    "text": "Parameter monitoring system of the Dubna Gas-Filled Recoil Separator\n\nPC-based one-crate monitoring and control system of the Dubna Gas Filled Recoil Separator (DGFRS) is considered. It is developed for the long-term experiments at the U400 FLNR cyclotron and is aimed at the synthesis of super heavy nuclei in heavy ion induced complete fusion reactions. Parameters related to:\n  a) beam and cyclotron;\n  b) separator by itself,\n  c) detection system,\n  d) target and entrance window are measured and stored in the protocol file of the experiment. Special attention is paid to generating the alarm signals and implementing further the appropriate procedures"
+  }
+]

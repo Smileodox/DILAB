@@ -1,0 +1,2350 @@
+{
+  "job_id": "3cd7ec64c3b9",
+  "document_count": 50,
+  "documents": [
+    {
+      "title": "Can Maxwell's fish eye lens really give perfect imaging?",
+      "source": "arxiv",
+      "year": 2010,
+      "topic_id": 2,
+      "arxiv_id": "1009.4751v2"
+    },
+    {
+      "title": "Can Maxwell's Fish Eye Lens Really Give Perfect Imaging? Part II. The case with drains",
+      "source": "arxiv",
+      "year": 2010,
+      "topic_id": 2,
+      "arxiv_id": "1011.1048v2"
+    },
+    {
+      "title": "A Critical Look at Smart Wheelchairs",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1809.00291v1"
+    },
+    {
+      "title": "Relating Eye-Tracking Measures With Changes In Knowledge on Search Tasks",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 1,
+      "arxiv_id": "1805.02399v1"
+    },
+    {
+      "title": "Measurement of the Flux of Ultrahigh Energy Cosmic Rays from Monocular Observations by the High Resolution Fly's Eye Experiment",
+      "source": "arxiv",
+      "year": 2002,
+      "topic_id": 2,
+      "arxiv_id": "0208243v7"
+    },
+    {
+      "title": "Digital Twin based Automatic Reconfiguration of Robotic Systems in Smart Environments",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2511.00094v2"
+    },
+    {
+      "title": "SUSTAINABLE Platform: Seamless Smart Farming Integration Towards Agronomy Automation",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2510.26989v2"
+    },
+    {
+      "title": "A Study of the Composition of Ultra High Energy Cosmic Rays Using the High Resolution Fly's Eye",
+      "source": "arxiv",
+      "year": 2004,
+      "topic_id": 2,
+      "arxiv_id": "0407622v3"
+    },
+    {
+      "title": "Shear-selected clusters from the Deep Lens Survey",
+      "source": "arxiv",
+      "year": 2003,
+      "topic_id": 2,
+      "arxiv_id": "0303381v1"
+    },
+    {
+      "title": "Detection of False Data Injection Attacks in Smart Grid: A Secure Federated Deep Learning Approach",
+      "source": "arxiv",
+      "year": 2022,
+      "topic_id": 0,
+      "arxiv_id": "2209.00778v2"
+    },
+    {
+      "title": "Smart Grid Monitoring Using Power Line Modems: Anomaly Detection and Localization",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1807.05347v2"
+    },
+    {
+      "title": "A Big Data Architecture Design for Smart Grids Based on Random Matrix Theory",
+      "source": "arxiv",
+      "year": 2015,
+      "topic_id": 0,
+      "arxiv_id": "1501.07329v4"
+    },
+    {
+      "title": "Dimensionality Reduction on IoT Monitoring Data of Smart Building for Energy Consumption Forecasting",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2506.22468v1"
+    },
+    {
+      "title": "Photonic crystal waveguide intersection design based on Maxwell's fish-eye lens",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 2,
+      "arxiv_id": "1808.06781v2"
+    },
+    {
+      "title": "How do eyes and brain search a randomly structured uninformative scene? Exploiting a basic interplay of attention and memory",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 1,
+      "arxiv_id": "2004.02873v1"
+    },
+    {
+      "title": "Hierarchical HMM for Eye Movement Classification",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 1,
+      "arxiv_id": "2008.07961v1"
+    },
+    {
+      "title": "Nonlinear modeling and preliminary stabilization results for a class of piezoelectric smart composite beams",
+      "source": "arxiv",
+      "year": 2017,
+      "topic_id": 2,
+      "arxiv_id": "1709.02258v2"
+    },
+    {
+      "title": "The role of open data in the transformation to Society 5.0: a resource or a tool for SDG-compliant Smart Living?",
+      "source": "arxiv",
+      "year": 2022,
+      "topic_id": 0,
+      "arxiv_id": "2206.11784v3"
+    },
+    {
+      "title": "5G-Enabled Smart Manufacturing -- A booklet by 5G-SMART",
+      "source": "arxiv",
+      "year": 2022,
+      "topic_id": 0,
+      "arxiv_id": "2209.10300v1"
+    },
+    {
+      "title": "Semantic Answer Type Prediction using BERT: IAI at the ISWC SMART Task 2020",
+      "source": "arxiv",
+      "year": 2021,
+      "topic_id": 1,
+      "arxiv_id": "2109.06714v1"
+    },
+    {
+      "title": "Getting the Most from Eye-Tracking: User-Interaction Based Reading Region Estimation Dataset and Models",
+      "source": "arxiv",
+      "year": 2023,
+      "topic_id": 1,
+      "arxiv_id": "2306.07455v1"
+    },
+    {
+      "title": "Evolution and the Calcite Eye Lens",
+      "source": "arxiv",
+      "year": 2013,
+      "topic_id": 2,
+      "arxiv_id": "1304.4815v1"
+    },
+    {
+      "title": "Insights from Game Theory into the Impact of Smart Balancing on Power System Stability",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2503.20706v1"
+    },
+    {
+      "title": "Design Principles for Architectures of Technical Smart Service Systems",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2502.09270v1"
+    },
+    {
+      "title": "Algebraic Error Estimates for the Stochastic Homogenization of Uniformly Parabolic Equations",
+      "source": "arxiv",
+      "year": 2015,
+      "topic_id": 1,
+      "arxiv_id": "1501.03718v2"
+    },
+    {
+      "title": "Agent-Based Analysis of the Impact of Near Real-Time Data and Smart Balancing on the Frequency Stability of Power Systems",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2503.20665v1"
+    },
+    {
+      "title": "A blockchain framework for smart mobility",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1809.05785v1"
+    },
+    {
+      "title": "Mutation Testing for Ethereum Smart Contract",
+      "source": "arxiv",
+      "year": 2019,
+      "topic_id": 0,
+      "arxiv_id": "1908.03707v1"
+    },
+    {
+      "title": "A Synthetic Eye Movement Dataset for Script Reading Detection: Real Trajectory Replay on a 3D Simulator",
+      "source": "arxiv",
+      "year": 2026,
+      "topic_id": 1,
+      "arxiv_id": "2604.05475v1"
+    },
+    {
+      "title": "On subwavelength imaging with Maxwell's fish eye lens",
+      "source": "arxiv",
+      "year": 2010,
+      "topic_id": 2,
+      "arxiv_id": "1009.2814v1"
+    },
+    {
+      "title": "MambaPupil: Bidirectional Selective Recurrent model for Event-based Eye tracking",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 1,
+      "arxiv_id": "2404.12083v2"
+    },
+    {
+      "title": "Eye Gaze as a Signal for Conveying User Attention in Contextual AI Systems",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 1,
+      "arxiv_id": "2501.13878v3"
+    },
+    {
+      "title": "Crowdsensing and privacy in smart city applications",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1806.07534v1"
+    },
+    {
+      "title": "RITnet: Real-time Semantic Segmentation of the Eye for Gaze Tracking",
+      "source": "arxiv",
+      "year": 2019,
+      "topic_id": 1,
+      "arxiv_id": "1910.00694v1"
+    },
+    {
+      "title": "Blockchain-based Smart Contracts: A Systematic Mapping Study",
+      "source": "arxiv",
+      "year": 2017,
+      "topic_id": 0,
+      "arxiv_id": "1710.06372v1"
+    },
+    {
+      "title": "pymovements: A Python Package for Eye Movement Data Processing",
+      "source": "arxiv",
+      "year": 2023,
+      "topic_id": 1,
+      "arxiv_id": "2304.09859v1"
+    },
+    {
+      "title": "When Circular Economy Meets the Smart City Ecosystem: Defining the Smart and Circular City",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2410.22012v1"
+    },
+    {
+      "title": "Review of Smart Meter Data Analytics: Applications, Methodologies, and Challenges",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1802.04117v2"
+    },
+    {
+      "title": "Interactive Restriction of a Mobile Robot's Workspace in a Smart Home Environment",
+      "source": "arxiv",
+      "year": 2019,
+      "topic_id": 0,
+      "arxiv_id": "1902.06997v2"
+    },
+    {
+      "title": "PDFS: Practical Data Feed Service for Smart Contracts",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1808.06641v2"
+    },
+    {
+      "title": "Wireless Communications and Networking Technologies for Smart Grid: Paradigms and Challenges",
+      "source": "arxiv",
+      "year": 2011,
+      "topic_id": 0,
+      "arxiv_id": "1112.1158v1"
+    },
+    {
+      "title": "Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models",
+      "source": "arxiv",
+      "year": 2026,
+      "topic_id": 1,
+      "arxiv_id": "2605.21573v1"
+    },
+    {
+      "title": "On subwavelength imaging of Maxwell's fish eye lens",
+      "source": "arxiv",
+      "year": 2010,
+      "topic_id": 2,
+      "arxiv_id": "1005.4119v1"
+    },
+    {
+      "title": "Demand-Side Scheduling Based on Multi-Agent Deep Actor-Critic Learning for Smart Grids",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 0,
+      "arxiv_id": "2005.01979v2"
+    },
+    {
+      "title": "Ray-Singer Torsion and the Rumin Laplacian on Lens Spaces",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 2,
+      "arxiv_id": "2009.03276v6"
+    },
+    {
+      "title": "Advanced statistical methods for eye movement analysis and modeling: a gentle introduction",
+      "source": "arxiv",
+      "year": 2015,
+      "topic_id": 1,
+      "arxiv_id": "1506.07194v4"
+    },
+    {
+      "title": "On Computational Infraestruture Requirements to Smart and Autonomic Cities Framework",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1807.08165v1"
+    },
+    {
+      "title": "Smart Microgrids: Overview and Outlook",
+      "source": "arxiv",
+      "year": 2013,
+      "topic_id": 0,
+      "arxiv_id": "1304.3944v1"
+    },
+    {
+      "title": "Visual Multi-Metric Grouping of Eye-Tracking Data",
+      "source": "arxiv",
+      "year": 2019,
+      "topic_id": 1,
+      "arxiv_id": "1910.04273v1"
+    },
+    {
+      "title": "State of the Art Report for Smart Habitat for Older Persons -- Working Group 3 -- Healthcare",
+      "source": "arxiv",
+      "year": 2026,
+      "topic_id": 0,
+      "arxiv_id": "2604.03255v1"
+    }
+  ],
+  "clusters": [
+    {
+      "topic_id": 0,
+      "count": 25,
+      "keywords": [
+        "interaction",
+        "learning",
+        "challenges",
+        "energy",
+        "network",
+        "control",
+        "dynamic",
+        "virtual",
+        "real-time",
+        "features"
+      ],
+      "label": "interaction, learning, challenges, energy",
+      "lifecycle_stage": "introduction",
+      "stage_color": "#22C55E",
+      "lifecycle_explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration.",
+      "lifecycle_llm": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+      "source_breakdown": {
+        "arxiv": 25,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        2,
+        5,
+        6,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        22,
+        23,
+        25,
+        26,
+        27,
+        32,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        43,
+        46,
+        47,
+        49
+      ]
+    },
+    {
+      "topic_id": 1,
+      "count": 14,
+      "keywords": [
+        "eye",
+        "training",
+        "participants",
+        "attention",
+        "modeling",
+        "knowledge",
+        "hierarchical",
+        "trajectories",
+        "tools",
+        "agents"
+      ],
+      "label": "eye, training, participants, attention",
+      "lifecycle_stage": "maturity",
+      "stage_color": "#9333EA",
+      "lifecycle_explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate.",
+      "lifecycle_llm": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+      "source_breakdown": {
+        "arxiv": 14,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        3,
+        14,
+        15,
+        19,
+        20,
+        24,
+        28,
+        30,
+        31,
+        33,
+        35,
+        41,
+        45,
+        48
+      ]
+    },
+    {
+      "topic_id": 2,
+      "count": 11,
+      "keywords": [
+        "lens",
+        "field",
+        "imaging",
+        "resolution",
+        "intersection",
+        "nonlinear",
+        "analyze",
+        "detector",
+        "interactions",
+        "control systems"
+      ],
+      "label": "lens, field, imaging, resolution",
+      "lifecycle_stage": "introduction",
+      "stage_color": "#22C55E",
+      "lifecycle_explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration.",
+      "lifecycle_llm": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+      "source_breakdown": {
+        "arxiv": 11,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        0,
+        1,
+        4,
+        7,
+        8,
+        13,
+        16,
+        21,
+        29,
+        42,
+        44
+      ]
+    }
+  ],
+  "scatter": {
+    "points": [
+      {
+        "doc_index": 0,
+        "topic_id": 2,
+        "x": 6.160377502441406,
+        "y": 1.5595364570617676,
+        "preview": "Can Maxwell's fish eye lens really give perfect imaging?  Both explicit analysis and FEM numerical simulation are used t",
+        "title": "Can Maxwell's fish eye lens really give perfect imaging?",
+        "source": "arxiv",
+        "year": 2010
+      },
+      {
+        "doc_index": 1,
+        "topic_id": 2,
+        "x": 6.1721882820129395,
+        "y": 1.7993357181549072,
+        "preview": "Can Maxwell's Fish Eye Lens Really Give Perfect Imaging? Part II. The case with drains  We use both FEM (finite element ",
+        "title": "Can Maxwell's Fish Eye Lens Really Give Perfect Imaging? Part II. The case with ",
+        "source": "arxiv",
+        "year": 2010
+      },
+      {
+        "doc_index": 2,
+        "topic_id": 0,
+        "x": 6.64693546295166,
+        "y": 8.183300971984863,
+        "preview": "A Critical Look at Smart Wheelchairs  Research into smart wheelchairs has been conducted for decades, but we have yet to",
+        "title": "A Critical Look at Smart Wheelchairs",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 3,
+        "topic_id": 1,
+        "x": 3.9218053817749023,
+        "y": 4.076249599456787,
+        "preview": "Relating Eye-Tracking Measures With Changes In Knowledge on Search Tasks  We conducted an eye-tracking study where 30 pa",
+        "title": "Relating Eye-Tracking Measures With Changes In Knowledge on Search Tasks",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 4,
+        "topic_id": 2,
+        "x": 5.347266674041748,
+        "y": 1.898644208908081,
+        "preview": "Measurement of the Flux of Ultrahigh Energy Cosmic Rays from Monocular Observations by the High Resolution Fly's Eye Exp",
+        "title": "Measurement of the Flux of Ultrahigh Energy Cosmic Rays from Monocular Observati",
+        "source": "arxiv",
+        "year": 2002
+      },
+      {
+        "doc_index": 5,
+        "topic_id": 0,
+        "x": 6.676679611206055,
+        "y": 7.736851692199707,
+        "preview": "Digital Twin based Automatic Reconfiguration of Robotic Systems in Smart Environments  Robotic systems have become integ",
+        "title": "Digital Twin based Automatic Reconfiguration of Robotic Systems in Smart Environ",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 6,
+        "topic_id": 0,
+        "x": 7.130606651306152,
+        "y": 8.807910919189453,
+        "preview": "SUSTAINABLE Platform: Seamless Smart Farming Integration Towards Agronomy Automation  The global agricultural sector is ",
+        "title": "SUSTAINABLE Platform: Seamless Smart Farming Integration Towards Agronomy Automa",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 7,
+        "topic_id": 2,
+        "x": 5.077554225921631,
+        "y": 2.1362335681915283,
+        "preview": "A Study of the Composition of Ultra High Energy Cosmic Rays Using the High Resolution Fly's Eye  The composition of Ultr",
+        "title": "A Study of the Composition of Ultra High Energy Cosmic Rays Using the High Resol",
+        "source": "arxiv",
+        "year": 2004
+      },
+      {
+        "doc_index": 8,
+        "topic_id": 2,
+        "x": 5.542562484741211,
+        "y": 2.104107141494751,
+        "preview": "Shear-selected clusters from the Deep Lens Survey  Weak gravitational lensing has the potential to select clusters indep",
+        "title": "Shear-selected clusters from the Deep Lens Survey",
+        "source": "arxiv",
+        "year": 2003
+      },
+      {
+        "doc_index": 9,
+        "topic_id": 0,
+        "x": 8.55766487121582,
+        "y": 8.95141315460205,
+        "preview": "Detection of False Data Injection Attacks in Smart Grid: A Secure Federated Deep Learning Approach  As an important cybe",
+        "title": "Detection of False Data Injection Attacks in Smart Grid: A Secure Federated Deep",
+        "source": "arxiv",
+        "year": 2022
+      },
+      {
+        "doc_index": 10,
+        "topic_id": 0,
+        "x": 8.615988731384277,
+        "y": 9.649428367614746,
+        "preview": "Smart Grid Monitoring Using Power Line Modems: Anomaly Detection and Localization  The main subject of this paper is the",
+        "title": "Smart Grid Monitoring Using Power Line Modems: Anomaly Detection and Localizatio",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 11,
+        "topic_id": 0,
+        "x": 8.454794883728027,
+        "y": 9.540834426879883,
+        "preview": "A Big Data Architecture Design for Smart Grids Based on Random Matrix Theory  Model-based analysis tools, built on assum",
+        "title": "A Big Data Architecture Design for Smart Grids Based on Random Matrix Theory",
+        "source": "arxiv",
+        "year": 2015
+      },
+      {
+        "doc_index": 12,
+        "topic_id": 0,
+        "x": 8.024279594421387,
+        "y": 9.13846206665039,
+        "preview": "Dimensionality Reduction on IoT Monitoring Data of Smart Building for Energy Consumption Forecasting  The Internet of Th",
+        "title": "Dimensionality Reduction on IoT Monitoring Data of Smart Building for Energy Con",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 13,
+        "topic_id": 2,
+        "x": 6.506145000457764,
+        "y": 1.6112369298934937,
+        "preview": "Photonic crystal waveguide intersection design based on Maxwell's fish-eye lens  The number of waveguides crossing an in",
+        "title": "Photonic crystal waveguide intersection design based on Maxwell's fish-eye lens",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 14,
+        "topic_id": 1,
+        "x": 4.28139066696167,
+        "y": 3.857759714126587,
+        "preview": "How do eyes and brain search a randomly structured uninformative scene? Exploiting a basic interplay of attention and me",
+        "title": "How do eyes and brain search a randomly structured uninformative scene? Exploiti",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 15,
+        "topic_id": 1,
+        "x": 3.7812094688415527,
+        "y": 3.6225738525390625,
+        "preview": "Hierarchical HMM for Eye Movement Classification  In this work, we tackle the problem of ternary eye movement classifica",
+        "title": "Hierarchical HMM for Eye Movement Classification",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 16,
+        "topic_id": 2,
+        "x": 6.6657633781433105,
+        "y": 2.6743690967559814,
+        "preview": "Nonlinear modeling and preliminary stabilization results for a class of piezoelectric smart composite beams  Existing sm",
+        "title": "Nonlinear modeling and preliminary stabilization results for a class of piezoele",
+        "source": "arxiv",
+        "year": 2017
+      },
+      {
+        "doc_index": 17,
+        "topic_id": 0,
+        "x": 7.35067892074585,
+        "y": 8.391230583190918,
+        "preview": "The role of open data in the transformation to Society 5.0: a resource or a tool for SDG-compliant Smart Living?  Open d",
+        "title": "The role of open data in the transformation to Society 5.0: a resource or a tool",
+        "source": "arxiv",
+        "year": 2022
+      },
+      {
+        "doc_index": 18,
+        "topic_id": 0,
+        "x": 7.458718776702881,
+        "y": 9.308069229125977,
+        "preview": "5G-Enabled Smart Manufacturing -- A booklet by 5G-SMART  In this booklet the most important learnings and key results of",
+        "title": "5G-Enabled Smart Manufacturing -- A booklet by 5G-SMART",
+        "source": "arxiv",
+        "year": 2022
+      },
+      {
+        "doc_index": 19,
+        "topic_id": 1,
+        "x": 4.055295467376709,
+        "y": 4.709064960479736,
+        "preview": "Semantic Answer Type Prediction using BERT: IAI at the ISWC SMART Task 2020  This paper summarizes our participation in ",
+        "title": "Semantic Answer Type Prediction using BERT: IAI at the ISWC SMART Task 2020",
+        "source": "arxiv",
+        "year": 2021
+      },
+      {
+        "doc_index": 20,
+        "topic_id": 1,
+        "x": 3.561063766479492,
+        "y": 4.454594612121582,
+        "preview": "Getting the Most from Eye-Tracking: User-Interaction Based Reading Region Estimation Dataset and Models  A single digita",
+        "title": "Getting the Most from Eye-Tracking: User-Interaction Based Reading Region Estima",
+        "source": "arxiv",
+        "year": 2023
+      },
+      {
+        "doc_index": 21,
+        "topic_id": 2,
+        "x": 5.8353962898254395,
+        "y": 1.7566940784454346,
+        "preview": "Evolution and the Calcite Eye Lens  Calcite is a uniaxial, birefringent crystal, which in its optically transparent form",
+        "title": "Evolution and the Calcite Eye Lens",
+        "source": "arxiv",
+        "year": 2013
+      },
+      {
+        "doc_index": 22,
+        "topic_id": 0,
+        "x": 9.093210220336914,
+        "y": 9.228862762451172,
+        "preview": "Insights from Game Theory into the Impact of Smart Balancing on Power System Stability  Smart balancing, also called pas",
+        "title": "Insights from Game Theory into the Impact of Smart Balancing on Power System Sta",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 23,
+        "topic_id": 0,
+        "x": 7.056667804718018,
+        "y": 8.829977035522461,
+        "preview": "Design Principles for Architectures of Technical Smart Service Systems  Successful smart services require seamless integ",
+        "title": "Design Principles for Architectures of Technical Smart Service Systems",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 24,
+        "topic_id": 1,
+        "x": 5.3451690673828125,
+        "y": 3.2412846088409424,
+        "preview": "Algebraic Error Estimates for the Stochastic Homogenization of Uniformly Parabolic Equations  This article establishes a",
+        "title": "Algebraic Error Estimates for the Stochastic Homogenization of Uniformly Parabol",
+        "source": "arxiv",
+        "year": 2015
+      },
+      {
+        "doc_index": 25,
+        "topic_id": 0,
+        "x": 8.81832218170166,
+        "y": 9.296359062194824,
+        "preview": "Agent-Based Analysis of the Impact of Near Real-Time Data and Smart Balancing on the Frequency Stability of Power System",
+        "title": "Agent-Based Analysis of the Impact of Near Real-Time Data and Smart Balancing on",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 26,
+        "topic_id": 0,
+        "x": 7.76988410949707,
+        "y": 8.145795822143555,
+        "preview": "A blockchain framework for smart mobility  A blockchain framework is presented for addressing the privacy and security c",
+        "title": "A blockchain framework for smart mobility",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 27,
+        "topic_id": 0,
+        "x": 8.250819206237793,
+        "y": 8.157869338989258,
+        "preview": "Mutation Testing for Ethereum Smart Contract  Smart contract is a special program that manages digital assets on blockch",
+        "title": "Mutation Testing for Ethereum Smart Contract",
+        "source": "arxiv",
+        "year": 2019
+      },
+      {
+        "doc_index": 28,
+        "topic_id": 1,
+        "x": 3.666440725326538,
+        "y": 4.5568413734436035,
+        "preview": "A Synthetic Eye Movement Dataset for Script Reading Detection: Real Trajectory Replay on a 3D Simulator  Large vision-la",
+        "title": "A Synthetic Eye Movement Dataset for Script Reading Detection: Real Trajectory R",
+        "source": "arxiv",
+        "year": 2026
+      },
+      {
+        "doc_index": 29,
+        "topic_id": 2,
+        "x": 6.421774864196777,
+        "y": 2.2975666522979736,
+        "preview": "On subwavelength imaging with Maxwell's fish eye lens  Both explicit analysis and FEM numerical simulation are used to a",
+        "title": "On subwavelength imaging with Maxwell's fish eye lens",
+        "source": "arxiv",
+        "year": 2010
+      },
+      {
+        "doc_index": 30,
+        "topic_id": 1,
+        "x": 3.6032068729400635,
+        "y": 3.9953482151031494,
+        "preview": "MambaPupil: Bidirectional Selective Recurrent model for Event-based Eye tracking  Event-based eye tracking has shown gre",
+        "title": "MambaPupil: Bidirectional Selective Recurrent model for Event-based Eye tracking",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 31,
+        "topic_id": 1,
+        "x": 3.1221227645874023,
+        "y": 4.161296844482422,
+        "preview": "Eye Gaze as a Signal for Conveying User Attention in Contextual AI Systems  Advanced multimodal AI agents can now collab",
+        "title": "Eye Gaze as a Signal for Conveying User Attention in Contextual AI Systems",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 32,
+        "topic_id": 0,
+        "x": 7.2823805809021,
+        "y": 8.262746810913086,
+        "preview": "Crowdsensing and privacy in smart city applications  Smartness in smart cities is achieved by sensing phenomena of inter",
+        "title": "Crowdsensing and privacy in smart city applications",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 33,
+        "topic_id": 1,
+        "x": 3.419581413269043,
+        "y": 4.592416286468506,
+        "preview": "RITnet: Real-time Semantic Segmentation of the Eye for Gaze Tracking  Accurate eye segmentation can improve eye-gaze est",
+        "title": "RITnet: Real-time Semantic Segmentation of the Eye for Gaze Tracking",
+        "source": "arxiv",
+        "year": 2019
+      },
+      {
+        "doc_index": 34,
+        "topic_id": 0,
+        "x": 8.035346031188965,
+        "y": 8.471467971801758,
+        "preview": "Blockchain-based Smart Contracts: A Systematic Mapping Study  An appealing feature of blockchain technology is smart con",
+        "title": "Blockchain-based Smart Contracts: A Systematic Mapping Study",
+        "source": "arxiv",
+        "year": 2017
+      },
+      {
+        "doc_index": 35,
+        "topic_id": 1,
+        "x": 3.5533881187438965,
+        "y": 3.394381046295166,
+        "preview": "pymovements: A Python Package for Eye Movement Data Processing  We introduce pymovements: a Python package for analyzing",
+        "title": "pymovements: A Python Package for Eye Movement Data Processing",
+        "source": "arxiv",
+        "year": 2023
+      },
+      {
+        "doc_index": 36,
+        "topic_id": 0,
+        "x": 7.161505699157715,
+        "y": 9.177397727966309,
+        "preview": "When Circular Economy Meets the Smart City Ecosystem: Defining the Smart and Circular City  Smart cities have been a ver",
+        "title": "When Circular Economy Meets the Smart City Ecosystem: Defining the Smart and Cir",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 37,
+        "topic_id": 0,
+        "x": 8.341521263122559,
+        "y": 9.423359870910645,
+        "preview": "Review of Smart Meter Data Analytics: Applications, Methodologies, and Challenges  The widespread popularity of smart me",
+        "title": "Review of Smart Meter Data Analytics: Applications, Methodologies, and Challenge",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 38,
+        "topic_id": 0,
+        "x": 6.342865943908691,
+        "y": 7.506282329559326,
+        "preview": "Interactive Restriction of a Mobile Robot's Workspace in a Smart Home Environment  Virtual borders are employed to allow",
+        "title": "Interactive Restriction of a Mobile Robot's Workspace in a Smart Home Environmen",
+        "source": "arxiv",
+        "year": 2019
+      },
+      {
+        "doc_index": 39,
+        "topic_id": 0,
+        "x": 8.03478717803955,
+        "y": 8.072556495666504,
+        "preview": "PDFS: Practical Data Feed Service for Smart Contracts  Smart contracts are a new paradigm that emerged with the rise of ",
+        "title": "PDFS: Practical Data Feed Service for Smart Contracts",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 40,
+        "topic_id": 0,
+        "x": 7.855157375335693,
+        "y": 9.602341651916504,
+        "preview": "Wireless Communications and Networking Technologies for Smart Grid: Paradigms and Challenges  Smart grid, regarded as th",
+        "title": "Wireless Communications and Networking Technologies for Smart Grid: Paradigms an",
+        "source": "arxiv",
+        "year": 2011
+      },
+      {
+        "doc_index": 41,
+        "topic_id": 1,
+        "x": 3.706005573272705,
+        "y": 5.021933078765869,
+        "preview": "Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models  We introduce Lens, a 3.8B-parameter T2I mode",
+        "title": "Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models",
+        "source": "arxiv",
+        "year": 2026
+      },
+      {
+        "doc_index": 42,
+        "topic_id": 2,
+        "x": 6.487386703491211,
+        "y": 2.0224390029907227,
+        "preview": "On subwavelength imaging of Maxwell's fish eye lens  Both explicit analysis and FEM numerical simulation are used to ana",
+        "title": "On subwavelength imaging of Maxwell's fish eye lens",
+        "source": "arxiv",
+        "year": 2010
+      },
+      {
+        "doc_index": 43,
+        "topic_id": 0,
+        "x": 9.004294395446777,
+        "y": 9.5751953125,
+        "preview": "Demand-Side Scheduling Based on Multi-Agent Deep Actor-Critic Learning for Smart Grids  We consider the problem of deman",
+        "title": "Demand-Side Scheduling Based on Multi-Agent Deep Actor-Critic Learning for Smart",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 44,
+        "topic_id": 2,
+        "x": 5.990088939666748,
+        "y": 1.976226568222046,
+        "preview": "Ray-Singer Torsion and the Rumin Laplacian on Lens Spaces  We express explicitly the analytic torsion functions associat",
+        "title": "Ray-Singer Torsion and the Rumin Laplacian on Lens Spaces",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 45,
+        "topic_id": 1,
+        "x": 4.369454383850098,
+        "y": 3.497011184692383,
+        "preview": "Advanced statistical methods for eye movement analysis and modeling: a gentle introduction  In this Chapter we show that",
+        "title": "Advanced statistical methods for eye movement analysis and modeling: a gentle in",
+        "source": "arxiv",
+        "year": 2015
+      },
+      {
+        "doc_index": 46,
+        "topic_id": 0,
+        "x": 6.847474575042725,
+        "y": 9.038126945495605,
+        "preview": "On Computational Infraestruture Requirements to Smart and Autonomic Cities Framework  Smart cities are an actual trend b",
+        "title": "On Computational Infraestruture Requirements to Smart and Autonomic Cities Frame",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 47,
+        "topic_id": 0,
+        "x": 8.044404029846191,
+        "y": 9.868974685668945,
+        "preview": "Smart Microgrids: Overview and Outlook  The idea of changing our energy system from a hierarchical design into a set of ",
+        "title": "Smart Microgrids: Overview and Outlook",
+        "source": "arxiv",
+        "year": 2013
+      },
+      {
+        "doc_index": 48,
+        "topic_id": 1,
+        "x": 3.2433204650878906,
+        "y": 3.748795509338379,
+        "preview": "Visual Multi-Metric Grouping of Eye-Tracking Data  We present an algorithmic and visual grouping of participants and eye",
+        "title": "Visual Multi-Metric Grouping of Eye-Tracking Data",
+        "source": "arxiv",
+        "year": 2019
+      },
+      {
+        "doc_index": 49,
+        "topic_id": 0,
+        "x": 6.607295513153076,
+        "y": 8.562355041503906,
+        "preview": "State of the Art Report for Smart Habitat for Older Persons -- Working Group 3 -- Healthcare  This document reports the ",
+        "title": "State of the Art Report for Smart Habitat for Older Persons -- Working Group 3 -",
+        "source": "arxiv",
+        "year": 2026
+      }
+    ],
+    "why": "Documents were embedded with all-MiniLM-L6-v2, projected with UMAP, and grouped by BERTopic (HDBSCAN + c-TF-IDF). Topic labels use an English + academic stop-word list, bigrams, reduced-frequent-word c-TF-IDF, and Maximal Marginal Relevance so keywords highlight technology terms\u2014not function words like \u201cthe\u201d or \u201cof\u201d."
+  },
+  "evolution": {
+    "timeline": {
+      "2": [
+        {
+          "year": 2002,
+          "count": 1
+        },
+        {
+          "year": 2003,
+          "count": 1
+        },
+        {
+          "year": 2004,
+          "count": 1
+        },
+        {
+          "year": 2010,
+          "count": 4
+        },
+        {
+          "year": 2013,
+          "count": 1
+        },
+        {
+          "year": 2017,
+          "count": 1
+        },
+        {
+          "year": 2018,
+          "count": 1
+        },
+        {
+          "year": 2020,
+          "count": 1
+        }
+      ],
+      "0": [
+        {
+          "year": 2011,
+          "count": 1
+        },
+        {
+          "year": 2013,
+          "count": 1
+        },
+        {
+          "year": 2015,
+          "count": 1
+        },
+        {
+          "year": 2017,
+          "count": 1
+        },
+        {
+          "year": 2018,
+          "count": 7
+        },
+        {
+          "year": 2019,
+          "count": 2
+        },
+        {
+          "year": 2020,
+          "count": 1
+        },
+        {
+          "year": 2022,
+          "count": 3
+        },
+        {
+          "year": 2024,
+          "count": 1
+        },
+        {
+          "year": 2025,
+          "count": 6
+        },
+        {
+          "year": 2026,
+          "count": 1
+        }
+      ],
+      "1": [
+        {
+          "year": 2015,
+          "count": 2
+        },
+        {
+          "year": 2018,
+          "count": 1
+        },
+        {
+          "year": 2019,
+          "count": 2
+        },
+        {
+          "year": 2020,
+          "count": 2
+        },
+        {
+          "year": 2021,
+          "count": 1
+        },
+        {
+          "year": 2023,
+          "count": 2
+        },
+        {
+          "year": 2024,
+          "count": 1
+        },
+        {
+          "year": 2025,
+          "count": 1
+        },
+        {
+          "year": 2026,
+          "count": 2
+        }
+      ]
+    },
+    "lifecycle": {
+      "2": {
+        "stage": "introduction",
+        "params": {
+          "L": 1.5764840291520938,
+          "k": 0.6631621635038816,
+          "t0": 1.2858154718961526e-05
+        },
+        "fitted": [
+          [
+            2002,
+            0.7882386538897821
+          ],
+          [
+            2002,
+            1.0280136197603362
+          ],
+          [
+            2003,
+            1.2271739662929146
+          ],
+          [
+            2004,
+            1.3686369796940845
+          ],
+          [
+            2005,
+            1.4583266030158053
+          ],
+          [
+            2006,
+            1.5111608161692853
+          ],
+          [
+            2007,
+            1.54094587486722
+          ],
+          [
+            2008,
+            1.5573222163453884
+          ],
+          [
+            2009,
+            1.5662025247957636
+          ],
+          [
+            2010,
+            1.570981902838223
+          ],
+          [
+            2011,
+            1.5735437482289163
+          ],
+          [
+            2012,
+            1.5749139647450634
+          ],
+          [
+            2013,
+            1.575645979191268
+          ],
+          [
+            2014,
+            1.5760368019108957
+          ],
+          [
+            2015,
+            1.5762453929354803
+          ],
+          [
+            2016,
+            1.5763567029888044
+          ],
+          [
+            2017,
+            1.5764160955496322
+          ],
+          [
+            2018,
+            1.5764477844941378
+          ],
+          [
+            2019,
+            1.5764646916980998
+          ],
+          [
+            2020,
+            1.576473712176371
+          ]
+        ],
+        "explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration."
+      },
+      "0": {
+        "stage": "introduction",
+        "params": {
+          "L": 2.796859277673918,
+          "k": 0.6398164629215508,
+          "t0": 3.1667818568508683
+        },
+        "fitted": [
+          [
+            2011,
+            0.3257882940796716
+          ],
+          [
+            2011,
+            0.5015000594947566
+          ],
+          [
+            2012,
+            0.7434677902449697
+          ],
+          [
+            2013,
+            1.0488361508869735
+          ],
+          [
+            2014,
+            1.3944538262018946
+          ],
+          [
+            2014,
+            1.7405578872365857
+          ],
+          [
+            2015,
+            2.047167579180596
+          ],
+          [
+            2016,
+            2.290661580154579
+          ],
+          [
+            2017,
+            2.4677832991631408
+          ],
+          [
+            2018,
+            2.588564634591766
+          ],
+          [
+            2018,
+            2.667341997055024
+          ],
+          [
+            2019,
+            2.7172420113655615
+          ],
+          [
+            2020,
+            2.748266941193887
+          ],
+          [
+            2021,
+            2.767333570615983
+          ],
+          [
+            2022,
+            2.7789675533495073
+          ],
+          [
+            2022,
+            2.7860353403248204
+          ],
+          [
+            2023,
+            2.7903177041007563
+          ],
+          [
+            2024,
+            2.792908203669102
+          ],
+          [
+            2025,
+            2.7944737280210137
+          ],
+          [
+            2026,
+            2.7954192683283168
+          ]
+        ],
+        "explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration."
+      },
+      "1": {
+        "stage": "maturity",
+        "params": {
+          "L": 3.013232168981935,
+          "k": 0.010000000000000002,
+          "t0": 3.8969610343683247e-13
+        },
+        "fitted": [
+          [
+            2015,
+            1.5066160844909644
+          ],
+          [
+            2015,
+            1.5109773293959698
+          ],
+          [
+            2016,
+            1.5153385012118803
+          ],
+          [
+            2016,
+            1.5196995268545008
+          ],
+          [
+            2017,
+            1.5240603332494345
+          ],
+          [
+            2017,
+            1.5284208473369796
+          ],
+          [
+            2018,
+            1.5327809960770256
+          ],
+          [
+            2019,
+            1.5371407064539453
+          ],
+          [
+            2019,
+            1.5414999054814833
+          ],
+          [
+            2020,
+            1.5458585202076418
+          ],
+          [
+            2020,
+            1.5502164777195615
+          ],
+          [
+            2021,
+            1.5545737051483897
+          ],
+          [
+            2021,
+            1.5589301296741578
+          ],
+          [
+            2022,
+            1.5632856785306364
+          ],
+          [
+            2023,
+            1.5676402790101902
+          ],
+          [
+            2023,
+            1.5719938584686235
+          ],
+          [
+            2024,
+            1.5763463443300156
+          ],
+          [
+            2024,
+            1.580697664091548
+          ],
+          [
+            2025,
+            1.585047745328321
+          ],
+          [
+            2026,
+            1.5893965156981567
+          ]
+        ],
+        "explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate."
+      }
+    },
+    "events": [
+      {
+        "year": 2002,
+        "topic_id": 2,
+        "type": "emerge",
+        "keywords": [
+          "lens",
+          "field",
+          "imaging",
+          "resolution",
+          "intersection",
+          "nonlinear",
+          "analyze",
+          "detector",
+          "interactions",
+          "control systems"
+        ],
+        "count": 1,
+        "why": "Topic 2 first appears in 2002 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2010,
+        "topic_id": 2,
+        "type": "grow",
+        "keywords": [
+          "lens",
+          "field",
+          "imaging",
+          "resolution",
+          "intersection",
+          "nonlinear",
+          "analyze",
+          "detector",
+          "interactions",
+          "control systems"
+        ],
+        "count": 4,
+        "why": "Publication volume for topic 2 rose 1\u21924 (300% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2011,
+        "topic_id": 0,
+        "type": "emerge",
+        "keywords": [
+          "interaction",
+          "learning",
+          "challenges",
+          "energy",
+          "network",
+          "control",
+          "dynamic",
+          "virtual",
+          "real-time",
+          "features"
+        ],
+        "count": 1,
+        "why": "Topic 0 first appears in 2011 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2015,
+        "topic_id": 1,
+        "type": "emerge",
+        "keywords": [
+          "eye",
+          "training",
+          "participants",
+          "attention",
+          "modeling",
+          "knowledge",
+          "hierarchical",
+          "trajectories",
+          "tools",
+          "agents"
+        ],
+        "count": 2,
+        "why": "Topic 1 first appears in 2015 with 2 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2018,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "interaction",
+          "learning",
+          "challenges",
+          "energy",
+          "network",
+          "control",
+          "dynamic",
+          "virtual",
+          "real-time",
+          "features"
+        ],
+        "count": 7,
+        "why": "Publication volume for topic 0 rose 1\u21927 (600% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2019,
+        "topic_id": 1,
+        "type": "grow",
+        "keywords": [
+          "eye",
+          "training",
+          "participants",
+          "attention",
+          "modeling",
+          "knowledge",
+          "hierarchical",
+          "trajectories",
+          "tools",
+          "agents"
+        ],
+        "count": 2,
+        "why": "Publication volume for topic 1 rose 1\u21922 (100% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2022,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "interaction",
+          "learning",
+          "challenges",
+          "energy",
+          "network",
+          "control",
+          "dynamic",
+          "virtual",
+          "real-time",
+          "features"
+        ],
+        "count": 3,
+        "why": "Publication volume for topic 0 rose 1\u21923 (200% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2023,
+        "topic_id": 1,
+        "type": "grow",
+        "keywords": [
+          "eye",
+          "training",
+          "participants",
+          "attention",
+          "modeling",
+          "knowledge",
+          "hierarchical",
+          "trajectories",
+          "tools",
+          "agents"
+        ],
+        "count": 2,
+        "why": "Publication volume for topic 1 rose 1\u21922 (100% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2025,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "interaction",
+          "learning",
+          "challenges",
+          "energy",
+          "network",
+          "control",
+          "dynamic",
+          "virtual",
+          "real-time",
+          "features"
+        ],
+        "count": 6,
+        "why": "Publication volume for topic 0 rose 1\u21926 (500% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2026,
+        "topic_id": 1,
+        "type": "grow",
+        "keywords": [
+          "eye",
+          "training",
+          "participants",
+          "attention",
+          "modeling",
+          "knowledge",
+          "hierarchical",
+          "trajectories",
+          "tools",
+          "agents"
+        ],
+        "count": 2,
+        "why": "Publication volume for topic 1 rose 1\u21922 (100% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2026,
+        "topic_id": 2,
+        "type": "die",
+        "keywords": [
+          "lens",
+          "field",
+          "imaging",
+          "resolution",
+          "intersection",
+          "nonlinear",
+          "analyze",
+          "detector",
+          "interactions",
+          "control systems"
+        ],
+        "why": "Topic 2 had no publications in 2026 after prior activity\u2014treated as decline/die-off.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      }
+    ],
+    "why": "Per-topic yearly counts were fitted to a logistic S-curve to assign lifecycle stages. Change events are detected by diffing topic presence and volume across years and measuring keyword overlap between co-active clusters.",
+    "weak_signals": []
+  },
+  "reasoning": {
+    "influence": [
+      {
+        "from": "interaction, learning, challenges, energy",
+        "to": "eye, training, participants, attention",
+        "relation": "enables",
+        "reason": "Shared methodological lineage between interaction, learning, challenges, energy and eye, training, participants, attention in the corpus.",
+        "why": "Heuristic edge from cluster ordering when LLM output was sparse."
+      },
+      {
+        "from": "eye, training, participants, attention",
+        "to": "lens, field, imaging, resolution",
+        "relation": "enables",
+        "reason": "Shared methodological lineage between eye, training, participants, attention and lens, field, imaging, resolution in the corpus.",
+        "why": "Heuristic edge from cluster ordering when LLM output was sparse."
+      }
+    ],
+    "sao": {
+      "2": {
+        "triples": [
+          {
+            "subject": "lens",
+            "action": "give",
+            "object": "imaging"
+          },
+          {
+            "subject": "analysis",
+            "action": "use",
+            "object": "distribution"
+          },
+          {
+            "subject": "we",
+            "action": "show",
+            "object": "imaging"
+          },
+          {
+            "subject": "mode",
+            "action": "achieve",
+            "object": "object"
+          },
+          {
+            "subject": "resolution",
+            "action": "determine",
+            "object": "size"
+          },
+          {
+            "subject": "analysis",
+            "action": "consist",
+            "object": "result"
+          },
+          {
+            "subject": "simulation",
+            "action": "give",
+            "object": "conclusion"
+          },
+          {
+            "subject": "image",
+            "action": "demonstrate",
+            "object": "point"
+          },
+          {
+            "subject": "Lens",
+            "action": "give",
+            "object": "Imaging"
+          },
+          {
+            "subject": "we",
+            "action": "use",
+            "object": "drain"
+          },
+          {
+            "subject": "we",
+            "action": "use",
+            "object": "structure"
+          },
+          {
+            "subject": "result",
+            "action": "indicate",
+            "object": "cable"
+          },
+          {
+            "subject": "we",
+            "action": "find",
+            "object": "drain"
+          },
+          {
+            "subject": "we",
+            "action": "measure",
+            "object": "Flux"
+          },
+          {
+            "subject": "we",
+            "action": "describe",
+            "object": "detector"
+          },
+          {
+            "subject": "we",
+            "action": "fit",
+            "object": "spectrum"
+          },
+          {
+            "subject": "study",
+            "action": "use",
+            "object": "Composition"
+          },
+          {
+            "subject": "datum",
+            "action": "collect",
+            "object": "stereo"
+          },
+          {
+            "subject": "datum",
+            "action": "reconstruct",
+            "object": "geometry"
+          },
+          {
+            "subject": "measurement",
+            "action": "incorporate",
+            "object": "transmission"
+          },
+          {
+            "subject": "resolution",
+            "action": "find",
+            "object": "Xmax"
+          },
+          {
+            "subject": "rate",
+            "action": "measure",
+            "object": "^"
+          },
+          {
+            "subject": "this",
+            "action": "compare",
+            "object": "prediction"
+          },
+          {
+            "subject": "EAS",
+            "action": "generate",
+            "object": "program"
+          },
+          {
+            "subject": "rate",
+            "action": "change",
+            "object": "composition"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "use",
+            "count": 7
+          },
+          {
+            "action": "give",
+            "count": 6
+          },
+          {
+            "action": "determine",
+            "count": 4
+          },
+          {
+            "action": "show",
+            "count": 3
+          },
+          {
+            "action": "achieve",
+            "count": 3
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "0": {
+        "triples": [
+          {
+            "subject": "Look",
+            "action": "conduct",
+            "object": "Research"
+          },
+          {
+            "subject": "we",
+            "action": "argue",
+            "object": "this"
+          },
+          {
+            "subject": "we",
+            "action": "base",
+            "object": "experience"
+          },
+          {
+            "subject": "Twin",
+            "action": "base",
+            "object": "Reconfiguration"
+          },
+          {
+            "subject": "operation",
+            "action": "challenge",
+            "object": "setting"
+          },
+          {
+            "subject": "system",
+            "action": "struggle",
+            "object": "inefficiency"
+          },
+          {
+            "subject": "we",
+            "action": "address",
+            "object": "limitation"
+          },
+          {
+            "subject": "approach",
+            "action": "leverage",
+            "object": "replica"
+          },
+          {
+            "subject": "method",
+            "action": "recalculate",
+            "object": "path"
+          },
+          {
+            "subject": "work",
+            "action": "advance",
+            "object": "integration"
+          },
+          {
+            "subject": "Platform",
+            "action": "SUSTAINABLE",
+            "object": ""
+          },
+          {
+            "subject": "sector",
+            "action": "undergo",
+            "object": "shift"
+          },
+          {
+            "subject": "SUSTAINABLE",
+            "action": "design",
+            "object": "IoT"
+          },
+          {
+            "subject": "paper",
+            "action": "explore",
+            "object": "solution"
+          },
+          {
+            "subject": "attack",
+            "action": "prove",
+            "object": "type"
+          },
+          {
+            "subject": "attention",
+            "action": "pay",
+            "object": "issue"
+          },
+          {
+            "subject": "method",
+            "action": "inspire",
+            "object": "learning"
+          },
+          {
+            "subject": "Transformer",
+            "action": "deploy",
+            "object": "detector"
+          },
+          {
+            "subject": "approach",
+            "action": "use",
+            "object": "framework"
+          },
+          {
+            "subject": "scheme",
+            "action": "improve",
+            "object": "security"
+          },
+          {
+            "subject": "effectiveness",
+            "action": "propose",
+            "object": "experiment"
+          },
+          {
+            "subject": "subject",
+            "action": "use",
+            "object": "paper"
+          },
+          {
+            "subject": "we",
+            "action": "present",
+            "object": "paper"
+          },
+          {
+            "subject": "we",
+            "action": "give",
+            "object": "consider"
+          },
+          {
+            "subject": "we",
+            "action": "discuss",
+            "object": "architecture"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "use",
+            "count": 5
+          },
+          {
+            "action": "base",
+            "count": 4
+          },
+          {
+            "action": "perform",
+            "count": 3
+          },
+          {
+            "action": "find",
+            "count": 3
+          },
+          {
+            "action": "explore",
+            "count": 2
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "1": {
+        "triples": [
+          {
+            "subject": "we",
+            "action": "relate",
+            "object": "Measures"
+          },
+          {
+            "subject": "we",
+            "action": "measure",
+            "object": "knowledge"
+          },
+          {
+            "subject": "fixation",
+            "action": "label",
+            "object": "reading"
+          },
+          {
+            "subject": "series",
+            "action": "read",
+            "object": "fixation"
+          },
+          {
+            "subject": "we",
+            "action": "hypothesize",
+            "object": "change"
+          },
+          {
+            "subject": "result",
+            "action": "show",
+            "object": "change"
+          },
+          {
+            "subject": "eye",
+            "action": "structure",
+            "object": ""
+          },
+          {
+            "subject": "we",
+            "action": "exploit",
+            "object": "interplay"
+          },
+          {
+            "subject": "we",
+            "action": "obtain",
+            "object": "result"
+          },
+          {
+            "subject": "inadequacy",
+            "action": "explain",
+            "object": "study"
+          },
+          {
+            "subject": "monkey",
+            "action": "use",
+            "object": "resource"
+          },
+          {
+            "subject": "we",
+            "action": "find",
+            "object": "difference"
+          },
+          {
+            "subject": "difference",
+            "action": "find",
+            "object": "limitation"
+          },
+          {
+            "subject": "result",
+            "action": "report",
+            "object": "basis"
+          },
+          {
+            "subject": "we",
+            "action": "tackle",
+            "object": "Classification"
+          },
+          {
+            "subject": "classification",
+            "action": "help",
+            "object": "type"
+          },
+          {
+            "subject": "that",
+            "action": "exist",
+            "object": "method"
+          },
+          {
+            "subject": "algorithm",
+            "action": "propose",
+            "object": "feature"
+          },
+          {
+            "subject": "result",
+            "action": "demonstrate",
+            "object": "effectiveness"
+          },
+          {
+            "subject": "Prediction",
+            "action": "use",
+            "object": "BERT"
+          },
+          {
+            "subject": "paper",
+            "action": "summarize",
+            "object": "Task"
+          },
+          {
+            "subject": "question",
+            "action": "perform",
+            "object": "BERT"
+          },
+          {
+            "subject": "finding",
+            "action": "grain",
+            "object": "method"
+          },
+          {
+            "subject": "BERT",
+            "action": "grain",
+            "object": "detection"
+          },
+          {
+            "subject": "Dataset",
+            "action": "get",
+            "object": "Most"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "show",
+            "count": 5
+          },
+          {
+            "action": "use",
+            "count": 3
+          },
+          {
+            "action": "base",
+            "count": 3
+          },
+          {
+            "action": "achieve",
+            "count": 3
+          },
+          {
+            "action": "present",
+            "count": 3
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      }
+    },
+    "why_influence": "Edges represent enabling or displacing relationships inferred from cluster themes and LLM foresight reasoning."
+  },
+  "scenarios": {
+    "drivers": [
+      {
+        "axis": "Adoption velocity",
+        "description": "3 emerging topic(s) create uncertainty about which technology will cross the chasm first.",
+        "why": "Derived from emerge events\u2014new clusters increase adoption-path uncertainty."
+      },
+      {
+        "axis": "Technology displacement",
+        "description": "1 declining topic(s) signal potential displacement of incumbent approaches.",
+        "why": "Derived from die events\u2014fading clusters imply replacement risk for legacy tech."
+      }
+    ],
+    "axis_labels": {
+      "x": "Adoption velocity",
+      "y": "Technology displacement"
+    },
+    "scenarios": {
+      "optimistic": {
+        "tone": "optimistic",
+        "title": "Optimistic",
+        "color": "#22C55E",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "disruptive": {
+        "tone": "disruptive",
+        "title": "Disruptive",
+        "color": "#EF4444",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "constrained": {
+        "tone": "constrained",
+        "title": "Constrained",
+        "color": "#F59E0B",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "stagnant": {
+        "tone": "stagnant",
+        "title": "Stagnant",
+        "color": "#6B7280",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      }
+    },
+    "why": "Four scenarios span the 2\u00d72 space of the two largest uncertainty drivers extracted from causal events.",
+    "impact_trees": {
+      "optimistic": {
+        "tree": {
+          "name": "interaction, learning, challenges, energy",
+          "node_type": "main",
+          "why": "Central technology in the Optimistic scenario (lifecycle: introduction, ranked by corpus volume).",
+          "children": [
+            {
+              "name": "eye, training, participants, attention",
+              "node_type": "evolving",
+              "trend": "maturing",
+              "why": "Corpus trend shows this area as maturing (lifecycle: maturity).",
+              "children": [
+                {
+                  "name": "Capability boost for interaction, learning, challenges, energy",
+                  "node_type": "impact",
+                  "why": "As eye, training, participants, attention (maturing) matures, it supplies components or methods that strengthen interaction, learning, challenges, energy.",
+                  "children": []
+                },
+                {
+                  "name": "Ecosystem expansion",
+                  "node_type": "impact",
+                  "why": "Growing interest in eye, training, participants, attention expands the market surface area for interaction, learning, challenges, energy deployments.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "lens, field, imaging, resolution",
+              "node_type": "evolving",
+              "trend": "emerging",
+              "why": "Corpus trend shows this area as emerging (lifecycle: introduction).",
+              "children": [
+                {
+                  "name": "Capability boost for interaction, learning, challenges, energy",
+                  "node_type": "impact",
+                  "why": "As lens, field, imaging, resolution (emerging) matures, it supplies components or methods that strengthen interaction, learning, challenges, energy.",
+                  "children": []
+                },
+                {
+                  "name": "Ecosystem expansion",
+                  "node_type": "impact",
+                  "why": "Growing interest in lens, field, imaging, resolution expands the market surface area for interaction, learning, challenges, energy deployments.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "interaction, learning, challenges, energy",
+        "why": "The impact tree forecasts second-order effects: when an adjacent technology evolves (per publication trends and lifecycle stages), each branch shows how that change enables, accelerates, or threatens the main technology at the root."
+      },
+      "disruptive": {
+        "tree": {
+          "name": "interaction, learning, challenges, energy",
+          "node_type": "main",
+          "why": "Central technology in the Disruptive scenario (lifecycle: introduction, ranked by corpus volume).",
+          "children": [
+            {
+              "name": "eye, training, participants, attention",
+              "node_type": "evolving",
+              "trend": "maturing",
+              "why": "Corpus trend shows this area as maturing (lifecycle: maturity).",
+              "children": [
+                {
+                  "name": "Capability boost for interaction, learning, challenges, energy",
+                  "node_type": "impact",
+                  "why": "As eye, training, participants, attention (maturing) matures, it supplies components or methods that strengthen interaction, learning, challenges, energy.",
+                  "children": []
+                },
+                {
+                  "name": "Ecosystem expansion",
+                  "node_type": "impact",
+                  "why": "Growing interest in eye, training, participants, attention expands the market surface area for interaction, learning, challenges, energy deployments.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "lens, field, imaging, resolution",
+              "node_type": "evolving",
+              "trend": "emerging",
+              "why": "Corpus trend shows this area as emerging (lifecycle: introduction).",
+              "children": [
+                {
+                  "name": "Capability boost for interaction, learning, challenges, energy",
+                  "node_type": "impact",
+                  "why": "As lens, field, imaging, resolution (emerging) matures, it supplies components or methods that strengthen interaction, learning, challenges, energy.",
+                  "children": []
+                },
+                {
+                  "name": "Ecosystem expansion",
+                  "node_type": "impact",
+                  "why": "Growing interest in lens, field, imaging, resolution expands the market surface area for interaction, learning, challenges, energy deployments.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "interaction, learning, challenges, energy",
+        "why": "The impact tree forecasts second-order effects: when an adjacent technology evolves (per publication trends and lifecycle stages), each branch shows how that change enables, accelerates, or threatens the main technology at the root."
+      },
+      "constrained": {
+        "tree": {
+          "name": "interaction, learning, challenges, energy",
+          "node_type": "main",
+          "why": "Central technology in the Constrained scenario (lifecycle: introduction, ranked by corpus volume).",
+          "children": [
+            {
+              "name": "eye, training, participants, attention",
+              "node_type": "evolving",
+              "trend": "maturing",
+              "why": "Corpus trend shows this area as maturing (lifecycle: maturity).",
+              "children": [
+                {
+                  "name": "Capability boost for interaction, learning, challenges, energy",
+                  "node_type": "impact",
+                  "why": "As eye, training, participants, attention (maturing) matures, it supplies components or methods that strengthen interaction, learning, challenges, energy.",
+                  "children": []
+                },
+                {
+                  "name": "Ecosystem expansion",
+                  "node_type": "impact",
+                  "why": "Growing interest in eye, training, participants, attention expands the market surface area for interaction, learning, challenges, energy deployments.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "lens, field, imaging, resolution",
+              "node_type": "evolving",
+              "trend": "emerging",
+              "why": "Corpus trend shows this area as emerging (lifecycle: introduction).",
+              "children": [
+                {
+                  "name": "Capability boost for interaction, learning, challenges, energy",
+                  "node_type": "impact",
+                  "why": "As lens, field, imaging, resolution (emerging) matures, it supplies components or methods that strengthen interaction, learning, challenges, energy.",
+                  "children": []
+                },
+                {
+                  "name": "Ecosystem expansion",
+                  "node_type": "impact",
+                  "why": "Growing interest in lens, field, imaging, resolution expands the market surface area for interaction, learning, challenges, energy deployments.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "interaction, learning, challenges, energy",
+        "why": "The impact tree forecasts second-order effects: when an adjacent technology evolves (per publication trends and lifecycle stages), each branch shows how that change enables, accelerates, or threatens the main technology at the root."
+      },
+      "stagnant": {
+        "tree": {
+          "name": "interaction, learning, challenges, energy",
+          "node_type": "main",
+          "why": "Central technology in the Stagnant scenario (lifecycle: introduction, ranked by corpus volume).",
+          "children": [
+            {
+              "name": "eye, training, participants, attention",
+              "node_type": "evolving",
+              "trend": "maturing",
+              "why": "Corpus trend shows this area as maturing (lifecycle: maturity).",
+              "children": [
+                {
+                  "name": "Capability boost for interaction, learning, challenges, energy",
+                  "node_type": "impact",
+                  "why": "As eye, training, participants, attention (maturing) matures, it supplies components or methods that strengthen interaction, learning, challenges, energy.",
+                  "children": []
+                },
+                {
+                  "name": "Ecosystem expansion",
+                  "node_type": "impact",
+                  "why": "Growing interest in eye, training, participants, attention expands the market surface area for interaction, learning, challenges, energy deployments.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "lens, field, imaging, resolution",
+              "node_type": "evolving",
+              "trend": "emerging",
+              "why": "Corpus trend shows this area as emerging (lifecycle: introduction).",
+              "children": [
+                {
+                  "name": "Capability boost for interaction, learning, challenges, energy",
+                  "node_type": "impact",
+                  "why": "As lens, field, imaging, resolution (emerging) matures, it supplies components or methods that strengthen interaction, learning, challenges, energy.",
+                  "children": []
+                },
+                {
+                  "name": "Ecosystem expansion",
+                  "node_type": "impact",
+                  "why": "Growing interest in lens, field, imaging, resolution expands the market surface area for interaction, learning, challenges, energy deployments.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "interaction, learning, challenges, energy",
+        "why": "The impact tree forecasts second-order effects: when an adjacent technology evolves (per publication trends and lifecycle stages), each branch shows how that change enables, accelerates, or threatens the main technology at the root."
+      }
+    }
+  },
+  "source_breakdown": {
+    "arxiv": 50,
+    "uploaded": 0
+  }
+}

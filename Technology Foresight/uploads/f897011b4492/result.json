@@ -1,0 +1,2465 @@
+{
+  "job_id": "f897011b4492",
+  "document_count": 50,
+  "documents": [
+    {
+      "title": "A Critical Look at Smart Wheelchairs",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1809.00291v1"
+    },
+    {
+      "title": "Digital Twin based Automatic Reconfiguration of Robotic Systems in Smart Environments",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2511.00094v2"
+    },
+    {
+      "title": "AirDraw: Leveraging Smart Watch Motion Sensors for Mobile Human Computer Interactions",
+      "source": "arxiv",
+      "year": 2017,
+      "topic_id": 0,
+      "arxiv_id": "1705.02689v1"
+    },
+    {
+      "title": "SUSTAINABLE Platform: Seamless Smart Farming Integration Towards Agronomy Automation",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2510.26989v2"
+    },
+    {
+      "title": "Detection of False Data Injection Attacks in Smart Grid: A Secure Federated Deep Learning Approach",
+      "source": "arxiv",
+      "year": 2022,
+      "topic_id": 1,
+      "arxiv_id": "2209.00778v2"
+    },
+    {
+      "title": "Smart Grid Monitoring Using Power Line Modems: Anomaly Detection and Localization",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 1,
+      "arxiv_id": "1807.05347v2"
+    },
+    {
+      "title": "A Big Data Architecture Design for Smart Grids Based on Random Matrix Theory",
+      "source": "arxiv",
+      "year": 2015,
+      "topic_id": 1,
+      "arxiv_id": "1501.07329v4"
+    },
+    {
+      "title": "Dimensionality Reduction on IoT Monitoring Data of Smart Building for Energy Consumption Forecasting",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2506.22468v1"
+    },
+    {
+      "title": "Nonlinear modeling and preliminary stabilization results for a class of piezoelectric smart composite beams",
+      "source": "arxiv",
+      "year": 2017,
+      "topic_id": 0,
+      "arxiv_id": "1709.02258v2"
+    },
+    {
+      "title": "The role of open data in the transformation to Society 5.0: a resource or a tool for SDG-compliant Smart Living?",
+      "source": "arxiv",
+      "year": 2022,
+      "topic_id": 0,
+      "arxiv_id": "2206.11784v3"
+    },
+    {
+      "title": "5G-Enabled Smart Manufacturing -- A booklet by 5G-SMART",
+      "source": "arxiv",
+      "year": 2022,
+      "topic_id": 0,
+      "arxiv_id": "2209.10300v1"
+    },
+    {
+      "title": "Semantic Answer Type Prediction using BERT: IAI at the ISWC SMART Task 2020",
+      "source": "arxiv",
+      "year": 2021,
+      "topic_id": 0,
+      "arxiv_id": "2109.06714v1"
+    },
+    {
+      "title": "Design Principles for Architectures of Technical Smart Service Systems",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2502.09270v1"
+    },
+    {
+      "title": "Algebraic Error Estimates for the Stochastic Homogenization of Uniformly Parabolic Equations",
+      "source": "arxiv",
+      "year": 2015,
+      "topic_id": 0,
+      "arxiv_id": "1501.03718v2"
+    },
+    {
+      "title": "A blockchain framework for smart mobility",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1809.05785v1"
+    },
+    {
+      "title": "Mutation Testing for Ethereum Smart Contract",
+      "source": "arxiv",
+      "year": 2019,
+      "topic_id": 2,
+      "arxiv_id": "1908.03707v1"
+    },
+    {
+      "title": "Crowdsensing and privacy in smart city applications",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1806.07534v1"
+    },
+    {
+      "title": "Blockchain-based Smart Contracts: A Systematic Mapping Study",
+      "source": "arxiv",
+      "year": 2017,
+      "topic_id": 2,
+      "arxiv_id": "1710.06372v1"
+    },
+    {
+      "title": "When Circular Economy Meets the Smart City Ecosystem: Defining the Smart and Circular City",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2410.22012v1"
+    },
+    {
+      "title": "Review of Smart Meter Data Analytics: Applications, Methodologies, and Challenges",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 1,
+      "arxiv_id": "1802.04117v2"
+    },
+    {
+      "title": "Interactive Restriction of a Mobile Robot's Workspace in a Smart Home Environment",
+      "source": "arxiv",
+      "year": 2019,
+      "topic_id": 0,
+      "arxiv_id": "1902.06997v2"
+    },
+    {
+      "title": "PDFS: Practical Data Feed Service for Smart Contracts",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 2,
+      "arxiv_id": "1808.06641v2"
+    },
+    {
+      "title": "Wireless Communications and Networking Technologies for Smart Grid: Paradigms and Challenges",
+      "source": "arxiv",
+      "year": 2011,
+      "topic_id": 1,
+      "arxiv_id": "1112.1158v1"
+    },
+    {
+      "title": "Short range networks of wearables for safer mobility in smart cities",
+      "source": "arxiv",
+      "year": 2016,
+      "topic_id": 0,
+      "arxiv_id": "1606.01479v1"
+    },
+    {
+      "title": "Demand-Side Scheduling Based on Multi-Agent Deep Actor-Critic Learning for Smart Grids",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 0,
+      "arxiv_id": "2005.01979v2"
+    },
+    {
+      "title": "On Computational Infraestruture Requirements to Smart and Autonomic Cities Framework",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1807.08165v1"
+    },
+    {
+      "title": "Smart Microgrids: Overview and Outlook",
+      "source": "arxiv",
+      "year": 2013,
+      "topic_id": 1,
+      "arxiv_id": "1304.3944v1"
+    },
+    {
+      "title": "State of the Art Report for Smart Habitat for Older Persons -- Working Group 3 -- Healthcare",
+      "source": "arxiv",
+      "year": 2026,
+      "topic_id": 0,
+      "arxiv_id": "2604.03255v1"
+    },
+    {
+      "title": "Cyber Security in Smart Manufacturing (Threats, Landscapes Challenges)",
+      "source": "arxiv",
+      "year": 2023,
+      "topic_id": 0,
+      "arxiv_id": "2304.10180v1"
+    },
+    {
+      "title": "Towards Smart Healthcare: Challenges and Opportunities in IoT and ML",
+      "source": "arxiv",
+      "year": 2023,
+      "topic_id": 0,
+      "arxiv_id": "2312.05530v2"
+    },
+    {
+      "title": "Game Theoretic Methods for the Smart Grid",
+      "source": "arxiv",
+      "year": 2012,
+      "topic_id": 1,
+      "arxiv_id": "1202.0452v1"
+    },
+    {
+      "title": "A faster algorithm for efficient longest common substring calculation for non-parametric entropy estimation in sequential data",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2510.13330v1"
+    },
+    {
+      "title": "An Empirical Study into the Success of Listed Smart Contracts in Ethereum",
+      "source": "arxiv",
+      "year": 2019,
+      "topic_id": 2,
+      "arxiv_id": "1908.11597v1"
+    },
+    {
+      "title": "Robust Worst-Case Analysis of Demand-Side Management in Smart Grids",
+      "source": "arxiv",
+      "year": 2016,
+      "topic_id": 1,
+      "arxiv_id": "1604.07576v2"
+    },
+    {
+      "title": "Application of Fuzzy Logic in Design of Smart Washing Machine",
+      "source": "arxiv",
+      "year": 2017,
+      "topic_id": 0,
+      "arxiv_id": "1701.01654v2"
+    },
+    {
+      "title": "A Framework for Detecting and Translating User Behavior from Smart Meter Data",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 1,
+      "arxiv_id": "1807.03111v1"
+    },
+    {
+      "title": "Increasing Smart Meter Privacy Through Energy Harvesting and Storage Devices",
+      "source": "arxiv",
+      "year": 2013,
+      "topic_id": 0,
+      "arxiv_id": "1305.0735v1"
+    },
+    {
+      "title": "Smart Contracts for Multiagent Plan Execution in Untrusted Cyber-physical Systems",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1812.07219v1"
+    },
+    {
+      "title": "Smart Energy Guardian: A Hybrid Deep Learning Model for Detecting Fraudulent PV Generation",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2505.18755v1"
+    },
+    {
+      "title": "Data Driven Reference Architecture for Smart City Ecosystems",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1805.01120v1"
+    },
+    {
+      "title": "A Scenario-Based Mobile Application for Robot-Assisted Smart Digital Homes",
+      "source": "arxiv",
+      "year": 2010,
+      "topic_id": 0,
+      "arxiv_id": "1009.5398v1"
+    },
+    {
+      "title": "A Stackelberg Game Approach for Two-Level Distributed Energy Management in Smart Grids",
+      "source": "arxiv",
+      "year": 2016,
+      "topic_id": 0,
+      "arxiv_id": "1608.08253v2"
+    },
+    {
+      "title": "Towards a Consensual Definition for Smart Tourism and Smart Tourism Tools",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2402.10830v2"
+    },
+    {
+      "title": "A Testbed for a Smart Building: Design and Implementation",
+      "source": "arxiv",
+      "year": 2019,
+      "topic_id": 0,
+      "arxiv_id": "1902.10268v1"
+    },
+    {
+      "title": "Graph-based Model of Smart Grid Architectures",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 1,
+      "arxiv_id": "2009.00273v1"
+    },
+    {
+      "title": "CAN Networks Security in Smart Grids Communication Technologies",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2508.12181v1"
+    },
+    {
+      "title": "GPSPiChain-Blockchain based Self-Contained Family Security System in Smart Home",
+      "source": "arxiv",
+      "year": 2021,
+      "topic_id": 2,
+      "arxiv_id": "2102.06884v1"
+    },
+    {
+      "title": "LearningCity: Knowledge Generation for Smart Cities",
+      "source": "arxiv",
+      "year": 2021,
+      "topic_id": 0,
+      "arxiv_id": "2104.05286v1"
+    },
+    {
+      "title": "Smart Mobility Ontology: Current Trends and Future Directions",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 0,
+      "arxiv_id": "2012.08622v1"
+    },
+    {
+      "title": "Interlinking Heterogeneous Data for Smart Energy Systems",
+      "source": "arxiv",
+      "year": 2019,
+      "topic_id": 1,
+      "arxiv_id": "1907.02790v1"
+    }
+  ],
+  "clusters": [
+    {
+      "topic_id": 0,
+      "count": 14,
+      "keywords": [
+        "smart city",
+        "smart cities",
+        "mobility",
+        "iot",
+        "implementation",
+        "sustainability",
+        "technologies",
+        "services",
+        "robotic",
+        "text"
+      ],
+      "label": "smart city, smart cities, mobility, iot",
+      "lifecycle_stage": "introduction",
+      "stage_color": "#22C55E",
+      "lifecycle_explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration.",
+      "lifecycle_llm": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+      "source_breakdown": {
+        "arxiv": 34,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        18,
+        20,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        45,
+        47,
+        48
+      ]
+    },
+    {
+      "topic_id": 1,
+      "count": 11,
+      "keywords": [
+        "smart grid",
+        "power",
+        "grids",
+        "smart meter",
+        "algorithms",
+        "systems",
+        "smart grids",
+        "networking",
+        "smart energy",
+        "attacks"
+      ],
+      "label": "smart grid, power, grids, smart meter",
+      "lifecycle_stage": "maturity",
+      "stage_color": "#9333EA",
+      "lifecycle_explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate.",
+      "lifecycle_llm": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+      "source_breakdown": {
+        "arxiv": 11,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        4,
+        5,
+        6,
+        19,
+        22,
+        26,
+        30,
+        33,
+        35,
+        44,
+        49
+      ]
+    },
+    {
+      "topic_id": 2,
+      "count": 5,
+      "keywords": [
+        "smart contracts",
+        "blockchain",
+        "success",
+        "testing",
+        "business",
+        "developers",
+        "mapping",
+        "survey",
+        "deploying",
+        "empirical"
+      ],
+      "label": "smart contracts, blockchain, success, testing",
+      "lifecycle_stage": "maturity",
+      "stage_color": "#9333EA",
+      "lifecycle_explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate.",
+      "lifecycle_llm": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+      "source_breakdown": {
+        "arxiv": 5,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        15,
+        17,
+        21,
+        32,
+        46
+      ]
+    }
+  ],
+  "scatter": {
+    "points": [
+      {
+        "doc_index": 0,
+        "topic_id": 0,
+        "x": 7.138042449951172,
+        "y": 8.104663848876953,
+        "preview": "A Critical Look at Smart Wheelchairs  Research into smart wheelchairs has been conducted for decades, but we have yet to",
+        "title": "A Critical Look at Smart Wheelchairs",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 1,
+        "topic_id": 0,
+        "x": 7.6757731437683105,
+        "y": 7.870019912719727,
+        "preview": "Digital Twin based Automatic Reconfiguration of Robotic Systems in Smart Environments  Robotic systems have become integ",
+        "title": "Digital Twin based Automatic Reconfiguration of Robotic Systems in Smart Environ",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 2,
+        "topic_id": 0,
+        "x": 7.346930980682373,
+        "y": 6.405740261077881,
+        "preview": "AirDraw: Leveraging Smart Watch Motion Sensors for Mobile Human Computer Interactions  Wearable computing is one of the ",
+        "title": "AirDraw: Leveraging Smart Watch Motion Sensors for Mobile Human Computer Interac",
+        "source": "arxiv",
+        "year": 2017
+      },
+      {
+        "doc_index": 3,
+        "topic_id": 0,
+        "x": 7.089691162109375,
+        "y": 7.629817008972168,
+        "preview": "SUSTAINABLE Platform: Seamless Smart Farming Integration Towards Agronomy Automation  The global agricultural sector is ",
+        "title": "SUSTAINABLE Platform: Seamless Smart Farming Integration Towards Agronomy Automa",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 4,
+        "topic_id": 1,
+        "x": 7.359439849853516,
+        "y": 5.175954818725586,
+        "preview": "Detection of False Data Injection Attacks in Smart Grid: A Secure Federated Deep Learning Approach  As an important cybe",
+        "title": "Detection of False Data Injection Attacks in Smart Grid: A Secure Federated Deep",
+        "source": "arxiv",
+        "year": 2022
+      },
+      {
+        "doc_index": 5,
+        "topic_id": 1,
+        "x": 7.403044700622559,
+        "y": 4.515605926513672,
+        "preview": "Smart Grid Monitoring Using Power Line Modems: Anomaly Detection and Localization  The main subject of this paper is the",
+        "title": "Smart Grid Monitoring Using Power Line Modems: Anomaly Detection and Localizatio",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 6,
+        "topic_id": 1,
+        "x": 7.071419715881348,
+        "y": 4.506669521331787,
+        "preview": "A Big Data Architecture Design for Smart Grids Based on Random Matrix Theory  Model-based analysis tools, built on assum",
+        "title": "A Big Data Architecture Design for Smart Grids Based on Random Matrix Theory",
+        "source": "arxiv",
+        "year": 2015
+      },
+      {
+        "doc_index": 7,
+        "topic_id": 0,
+        "x": 7.367008209228516,
+        "y": 5.83717155456543,
+        "preview": "Dimensionality Reduction on IoT Monitoring Data of Smart Building for Energy Consumption Forecasting  The Internet of Th",
+        "title": "Dimensionality Reduction on IoT Monitoring Data of Smart Building for Energy Con",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 8,
+        "topic_id": 0,
+        "x": 8.528509140014648,
+        "y": 5.038492679595947,
+        "preview": "Nonlinear modeling and preliminary stabilization results for a class of piezoelectric smart composite beams  Existing sm",
+        "title": "Nonlinear modeling and preliminary stabilization results for a class of piezoele",
+        "source": "arxiv",
+        "year": 2017
+      },
+      {
+        "doc_index": 9,
+        "topic_id": 0,
+        "x": 5.929638862609863,
+        "y": 7.563765048980713,
+        "preview": "The role of open data in the transformation to Society 5.0: a resource or a tool for SDG-compliant Smart Living?  Open d",
+        "title": "The role of open data in the transformation to Society 5.0: a resource or a tool",
+        "source": "arxiv",
+        "year": 2022
+      },
+      {
+        "doc_index": 10,
+        "topic_id": 0,
+        "x": 8.232515335083008,
+        "y": 6.119653701782227,
+        "preview": "5G-Enabled Smart Manufacturing -- A booklet by 5G-SMART  In this booklet the most important learnings and key results of",
+        "title": "5G-Enabled Smart Manufacturing -- A booklet by 5G-SMART",
+        "source": "arxiv",
+        "year": 2022
+      },
+      {
+        "doc_index": 11,
+        "topic_id": 0,
+        "x": 6.590419292449951,
+        "y": 5.911156177520752,
+        "preview": "Semantic Answer Type Prediction using BERT: IAI at the ISWC SMART Task 2020  This paper summarizes our participation in ",
+        "title": "Semantic Answer Type Prediction using BERT: IAI at the ISWC SMART Task 2020",
+        "source": "arxiv",
+        "year": 2021
+      },
+      {
+        "doc_index": 12,
+        "topic_id": 0,
+        "x": 6.596415042877197,
+        "y": 7.097238063812256,
+        "preview": "Design Principles for Architectures of Technical Smart Service Systems  Successful smart services require seamless integ",
+        "title": "Design Principles for Architectures of Technical Smart Service Systems",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 13,
+        "topic_id": 0,
+        "x": 8.416016578674316,
+        "y": 5.427241802215576,
+        "preview": "Algebraic Error Estimates for the Stochastic Homogenization of Uniformly Parabolic Equations  This article establishes a",
+        "title": "Algebraic Error Estimates for the Stochastic Homogenization of Uniformly Parabol",
+        "source": "arxiv",
+        "year": 2015
+      },
+      {
+        "doc_index": 14,
+        "topic_id": 0,
+        "x": 5.794384002685547,
+        "y": 6.735654354095459,
+        "preview": "A blockchain framework for smart mobility  A blockchain framework is presented for addressing the privacy and security c",
+        "title": "A blockchain framework for smart mobility",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 15,
+        "topic_id": 2,
+        "x": 5.225792407989502,
+        "y": 6.344511032104492,
+        "preview": "Mutation Testing for Ethereum Smart Contract  Smart contract is a special program that manages digital assets on blockch",
+        "title": "Mutation Testing for Ethereum Smart Contract",
+        "source": "arxiv",
+        "year": 2019
+      },
+      {
+        "doc_index": 16,
+        "topic_id": 0,
+        "x": 6.770336151123047,
+        "y": 6.800876140594482,
+        "preview": "Crowdsensing and privacy in smart city applications  Smartness in smart cities is achieved by sensing phenomena of inter",
+        "title": "Crowdsensing and privacy in smart city applications",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 17,
+        "topic_id": 2,
+        "x": 5.0116729736328125,
+        "y": 6.560302734375,
+        "preview": "Blockchain-based Smart Contracts: A Systematic Mapping Study  An appealing feature of blockchain technology is smart con",
+        "title": "Blockchain-based Smart Contracts: A Systematic Mapping Study",
+        "source": "arxiv",
+        "year": 2017
+      },
+      {
+        "doc_index": 18,
+        "topic_id": 0,
+        "x": 6.712308406829834,
+        "y": 7.744690895080566,
+        "preview": "When Circular Economy Meets the Smart City Ecosystem: Defining the Smart and Circular City  Smart cities have been a ver",
+        "title": "When Circular Economy Meets the Smart City Ecosystem: Defining the Smart and Cir",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 19,
+        "topic_id": 1,
+        "x": 6.945801734924316,
+        "y": 5.020581245422363,
+        "preview": "Review of Smart Meter Data Analytics: Applications, Methodologies, and Challenges  The widespread popularity of smart me",
+        "title": "Review of Smart Meter Data Analytics: Applications, Methodologies, and Challenge",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 20,
+        "topic_id": 0,
+        "x": 7.831329345703125,
+        "y": 7.7100830078125,
+        "preview": "Interactive Restriction of a Mobile Robot's Workspace in a Smart Home Environment  Virtual borders are employed to allow",
+        "title": "Interactive Restriction of a Mobile Robot's Workspace in a Smart Home Environmen",
+        "source": "arxiv",
+        "year": 2019
+      },
+      {
+        "doc_index": 21,
+        "topic_id": 2,
+        "x": 5.30925178527832,
+        "y": 6.587865352630615,
+        "preview": "PDFS: Practical Data Feed Service for Smart Contracts  Smart contracts are a new paradigm that emerged with the rise of ",
+        "title": "PDFS: Practical Data Feed Service for Smart Contracts",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 22,
+        "topic_id": 1,
+        "x": 7.912931442260742,
+        "y": 3.8741157054901123,
+        "preview": "Wireless Communications and Networking Technologies for Smart Grid: Paradigms and Challenges  Smart grid, regarded as th",
+        "title": "Wireless Communications and Networking Technologies for Smart Grid: Paradigms an",
+        "source": "arxiv",
+        "year": 2011
+      },
+      {
+        "doc_index": 23,
+        "topic_id": 0,
+        "x": 7.372885704040527,
+        "y": 7.361669540405273,
+        "preview": "Short range networks of wearables for safer mobility in smart cities  Ensuring safe and efficient mobility is a critical",
+        "title": "Short range networks of wearables for safer mobility in smart cities",
+        "source": "arxiv",
+        "year": 2016
+      },
+      {
+        "doc_index": 24,
+        "topic_id": 0,
+        "x": 6.710080623626709,
+        "y": 4.126873970031738,
+        "preview": "Demand-Side Scheduling Based on Multi-Agent Deep Actor-Critic Learning for Smart Grids  We consider the problem of deman",
+        "title": "Demand-Side Scheduling Based on Multi-Agent Deep Actor-Critic Learning for Smart",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 25,
+        "topic_id": 0,
+        "x": 7.202249050140381,
+        "y": 7.001407623291016,
+        "preview": "On Computational Infraestruture Requirements to Smart and Autonomic Cities Framework  Smart cities are an actual trend b",
+        "title": "On Computational Infraestruture Requirements to Smart and Autonomic Cities Frame",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 26,
+        "topic_id": 1,
+        "x": 7.220874786376953,
+        "y": 3.9507312774658203,
+        "preview": "Smart Microgrids: Overview and Outlook  The idea of changing our energy system from a hierarchical design into a set of ",
+        "title": "Smart Microgrids: Overview and Outlook",
+        "source": "arxiv",
+        "year": 2013
+      },
+      {
+        "doc_index": 27,
+        "topic_id": 0,
+        "x": 6.739100933074951,
+        "y": 8.219079971313477,
+        "preview": "State of the Art Report for Smart Habitat for Older Persons -- Working Group 3 -- Healthcare  This document reports the ",
+        "title": "State of the Art Report for Smart Habitat for Older Persons -- Working Group 3 -",
+        "source": "arxiv",
+        "year": 2026
+      },
+      {
+        "doc_index": 28,
+        "topic_id": 0,
+        "x": 8.442605018615723,
+        "y": 6.393317699432373,
+        "preview": "Cyber Security in Smart Manufacturing (Threats, Landscapes Challenges)  Industry 4.0 is a blend of the hyper-connected d",
+        "title": "Cyber Security in Smart Manufacturing (Threats, Landscapes Challenges)",
+        "source": "arxiv",
+        "year": 2023
+      },
+      {
+        "doc_index": 29,
+        "topic_id": 0,
+        "x": 7.040900707244873,
+        "y": 6.252753734588623,
+        "preview": "Towards Smart Healthcare: Challenges and Opportunities in IoT and ML  The COVID-19 pandemic and other ongoing health cri",
+        "title": "Towards Smart Healthcare: Challenges and Opportunities in IoT and ML",
+        "source": "arxiv",
+        "year": 2023
+      },
+      {
+        "doc_index": 30,
+        "topic_id": 1,
+        "x": 7.783968925476074,
+        "y": 3.929250955581665,
+        "preview": "Game Theoretic Methods for the Smart Grid  The future smart grid is envisioned as a large-scale cyber-physical system en",
+        "title": "Game Theoretic Methods for the Smart Grid",
+        "source": "arxiv",
+        "year": 2012
+      },
+      {
+        "doc_index": 31,
+        "topic_id": 0,
+        "x": 6.4662275314331055,
+        "y": 5.052767753601074,
+        "preview": "A faster algorithm for efficient longest common substring calculation for non-parametric entropy estimation in sequentia",
+        "title": "A faster algorithm for efficient longest common substring calculation for non-pa",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 32,
+        "topic_id": 2,
+        "x": 5.447932243347168,
+        "y": 6.166844844818115,
+        "preview": "An Empirical Study into the Success of Listed Smart Contracts in Ethereum  Since it takes time and effort to put a new p",
+        "title": "An Empirical Study into the Success of Listed Smart Contracts in Ethereum",
+        "source": "arxiv",
+        "year": 2019
+      },
+      {
+        "doc_index": 33,
+        "topic_id": 1,
+        "x": 7.159328937530518,
+        "y": 3.846541166305542,
+        "preview": "Robust Worst-Case Analysis of Demand-Side Management in Smart Grids  Demand-side management presents significant benefit",
+        "title": "Robust Worst-Case Analysis of Demand-Side Management in Smart Grids",
+        "source": "arxiv",
+        "year": 2016
+      },
+      {
+        "doc_index": 34,
+        "topic_id": 0,
+        "x": 8.373998641967773,
+        "y": 5.856112480163574,
+        "preview": "Application of Fuzzy Logic in Design of Smart Washing Machine  Washing machine is of great domestic necessity as it free",
+        "title": "Application of Fuzzy Logic in Design of Smart Washing Machine",
+        "source": "arxiv",
+        "year": 2017
+      },
+      {
+        "doc_index": 35,
+        "topic_id": 1,
+        "x": 6.995782375335693,
+        "y": 5.528473377227783,
+        "preview": "A Framework for Detecting and Translating User Behavior from Smart Meter Data  The European adoption of smart electricit",
+        "title": "A Framework for Detecting and Translating User Behavior from Smart Meter Data",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 36,
+        "topic_id": 0,
+        "x": 7.717317581176758,
+        "y": 5.01205587387085,
+        "preview": "Increasing Smart Meter Privacy Through Energy Harvesting and Storage Devices  Smart meters are key elements for the oper",
+        "title": "Increasing Smart Meter Privacy Through Energy Harvesting and Storage Devices",
+        "source": "arxiv",
+        "year": 2013
+      },
+      {
+        "doc_index": 37,
+        "topic_id": 0,
+        "x": 5.190086364746094,
+        "y": 5.956129550933838,
+        "preview": "Smart Contracts for Multiagent Plan Execution in Untrusted Cyber-physical Systems  Intelligent Cyber-physical systems ca",
+        "title": "Smart Contracts for Multiagent Plan Execution in Untrusted Cyber-physical System",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 38,
+        "topic_id": 0,
+        "x": 6.599449634552002,
+        "y": 4.898964881896973,
+        "preview": "Smart Energy Guardian: A Hybrid Deep Learning Model for Detecting Fraudulent PV Generation  With the proliferation of sm",
+        "title": "Smart Energy Guardian: A Hybrid Deep Learning Model for Detecting Fraudulent PV ",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 39,
+        "topic_id": 0,
+        "x": 6.337756633758545,
+        "y": 7.311666011810303,
+        "preview": "Data Driven Reference Architecture for Smart City Ecosystems  With the convergence of information and telecommunication ",
+        "title": "Data Driven Reference Architecture for Smart City Ecosystems",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 40,
+        "topic_id": 0,
+        "x": 7.82591438293457,
+        "y": 7.4980082511901855,
+        "preview": "A Scenario-Based Mobile Application for Robot-Assisted Smart Digital Homes  Smart homes are becoming more popular, as ev",
+        "title": "A Scenario-Based Mobile Application for Robot-Assisted Smart Digital Homes",
+        "source": "arxiv",
+        "year": 2010
+      },
+      {
+        "doc_index": 41,
+        "topic_id": 0,
+        "x": 7.37538480758667,
+        "y": 3.4995720386505127,
+        "preview": "A Stackelberg Game Approach for Two-Level Distributed Energy Management in Smart Grids  The pursuit of sustainability mo",
+        "title": "A Stackelberg Game Approach for Two-Level Distributed Energy Management in Smart",
+        "source": "arxiv",
+        "year": 2016
+      },
+      {
+        "doc_index": 42,
+        "topic_id": 0,
+        "x": 6.278276443481445,
+        "y": 7.841437339782715,
+        "preview": "Towards a Consensual Definition for Smart Tourism and Smart Tourism Tools  Smart tourism (ST) stems from the concepts of",
+        "title": "Towards a Consensual Definition for Smart Tourism and Smart Tourism Tools",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 43,
+        "topic_id": 0,
+        "x": 7.703528881072998,
+        "y": 6.997373580932617,
+        "preview": "A Testbed for a Smart Building: Design and Implementation  This paper addresses the design and implementation of a smart",
+        "title": "A Testbed for a Smart Building: Design and Implementation",
+        "source": "arxiv",
+        "year": 2019
+      },
+      {
+        "doc_index": 44,
+        "topic_id": 1,
+        "x": 7.72679328918457,
+        "y": 4.173351287841797,
+        "preview": "Graph-based Model of Smart Grid Architectures  The rising use of information and communication technology in smart grids",
+        "title": "Graph-based Model of Smart Grid Architectures",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 45,
+        "topic_id": 0,
+        "x": 8.093049049377441,
+        "y": 4.3646416664123535,
+        "preview": "CAN Networks Security in Smart Grids Communication Technologies  The rapid evolution of smart grids requires effective c",
+        "title": "CAN Networks Security in Smart Grids Communication Technologies",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 46,
+        "topic_id": 2,
+        "x": 5.550708293914795,
+        "y": 7.007824420928955,
+        "preview": "GPSPiChain-Blockchain based Self-Contained Family Security System in Smart Home  With advancements in technology, person",
+        "title": "GPSPiChain-Blockchain based Self-Contained Family Security System in Smart Home",
+        "source": "arxiv",
+        "year": 2021
+      },
+      {
+        "doc_index": 47,
+        "topic_id": 0,
+        "x": 6.522738456726074,
+        "y": 6.458935260772705,
+        "preview": "LearningCity: Knowledge Generation for Smart Cities  Although we have reached new levels in smart city installations and",
+        "title": "LearningCity: Knowledge Generation for Smart Cities",
+        "source": "arxiv",
+        "year": 2021
+      },
+      {
+        "doc_index": 48,
+        "topic_id": 0,
+        "x": 6.788607120513916,
+        "y": 7.488438129425049,
+        "preview": "Smart Mobility Ontology: Current Trends and Future Directions  Ontology is the explicit and formal representation of the",
+        "title": "Smart Mobility Ontology: Current Trends and Future Directions",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 49,
+        "topic_id": 1,
+        "x": 6.606308937072754,
+        "y": 5.337849140167236,
+        "preview": "Interlinking Heterogeneous Data for Smart Energy Systems  Smart energy systems in general, and solar energy analysis in ",
+        "title": "Interlinking Heterogeneous Data for Smart Energy Systems",
+        "source": "arxiv",
+        "year": 2019
+      }
+    ],
+    "why": "Documents were embedded with all-MiniLM-L6-v2, projected with UMAP, and grouped by BERTopic (HDBSCAN + c-TF-IDF). Topic labels use an English + academic stop-word list, bigrams, reduced-frequent-word c-TF-IDF, and Maximal Marginal Relevance so keywords highlight technology terms\u2014not function words like \u201cthe\u201d or \u201cof\u201d."
+  },
+  "evolution": {
+    "timeline": {
+      "0": [
+        {
+          "year": 2010,
+          "count": 1
+        },
+        {
+          "year": 2013,
+          "count": 1
+        },
+        {
+          "year": 2015,
+          "count": 1
+        },
+        {
+          "year": 2016,
+          "count": 2
+        },
+        {
+          "year": 2017,
+          "count": 3
+        },
+        {
+          "year": 2018,
+          "count": 6
+        },
+        {
+          "year": 2019,
+          "count": 2
+        },
+        {
+          "year": 2020,
+          "count": 2
+        },
+        {
+          "year": 2021,
+          "count": 2
+        },
+        {
+          "year": 2022,
+          "count": 2
+        },
+        {
+          "year": 2023,
+          "count": 2
+        },
+        {
+          "year": 2024,
+          "count": 2
+        },
+        {
+          "year": 2025,
+          "count": 7
+        },
+        {
+          "year": 2026,
+          "count": 1
+        }
+      ],
+      "1": [
+        {
+          "year": 2011,
+          "count": 1
+        },
+        {
+          "year": 2012,
+          "count": 1
+        },
+        {
+          "year": 2013,
+          "count": 1
+        },
+        {
+          "year": 2015,
+          "count": 1
+        },
+        {
+          "year": 2016,
+          "count": 1
+        },
+        {
+          "year": 2018,
+          "count": 3
+        },
+        {
+          "year": 2019,
+          "count": 1
+        },
+        {
+          "year": 2020,
+          "count": 1
+        },
+        {
+          "year": 2022,
+          "count": 1
+        }
+      ],
+      "2": [
+        {
+          "year": 2017,
+          "count": 1
+        },
+        {
+          "year": 2018,
+          "count": 1
+        },
+        {
+          "year": 2019,
+          "count": 2
+        },
+        {
+          "year": 2021,
+          "count": 1
+        }
+      ]
+    },
+    "lifecycle": {
+      "0": {
+        "stage": "introduction",
+        "params": {
+          "L": 2.8928533349729757,
+          "k": 1.9856327226696167,
+          "t0": 5.3629659798122855
+        },
+        "fitted": [
+          [
+            2010,
+            6.863821289806713e-05
+          ],
+          [
+            2010,
+            0.0003653510273557481
+          ],
+          [
+            2011,
+            0.001943847440801287
+          ],
+          [
+            2012,
+            0.010317898494113626
+          ],
+          [
+            2013,
+            0.05409216516048214
+          ],
+          [
+            2014,
+            0.2664166474284836
+          ],
+          [
+            2015,
+            1.014361333759787
+          ],
+          [
+            2015,
+            2.146226871712397
+          ],
+          [
+            2016,
+            2.7154044162015305
+          ],
+          [
+            2017,
+            2.8577718891248325
+          ],
+          [
+            2018,
+            2.886197736817932
+          ],
+          [
+            2019,
+            2.8916007406908264
+          ],
+          [
+            2020,
+            2.8926179524240188
+          ],
+          [
+            2020,
+            2.892809115450507
+          ],
+          [
+            2021,
+            2.8928450282347127
+          ],
+          [
+            2022,
+            2.892851774548959
+          ],
+          [
+            2023,
+            2.892853041847272
+          ],
+          [
+            2024,
+            2.8928532799093225
+          ],
+          [
+            2025,
+            2.8928533246292707
+          ],
+          [
+            2026,
+            2.8928533330299118
+          ]
+        ],
+        "explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration."
+      },
+      "1": {
+        "stage": "maturity",
+        "params": {
+          "L": 2.0642153480195495,
+          "k": 0.07204578676189861,
+          "t0": 9.444986687161822e-16
+        },
+        "fitted": [
+          [
+            2011,
+            1.0321076740097748
+          ],
+          [
+            2011,
+            1.0536295302228023
+          ],
+          [
+            2012,
+            1.0751326783066883
+          ],
+          [
+            2012,
+            1.09659847512485
+          ],
+          [
+            2013,
+            1.1180084070466132
+          ],
+          [
+            2013,
+            1.1393441535082032
+          ],
+          [
+            2014,
+            1.160587649160213
+          ],
+          [
+            2015,
+            1.1817211441580917
+          ],
+          [
+            2015,
+            1.20272726217526
+          ],
+          [
+            2016,
+            1.2235890557464706
+          ],
+          [
+            2016,
+            1.2442900585814545
+          ],
+          [
+            2017,
+            1.2648143345250762
+          ],
+          [
+            2017,
+            1.2851465228797871
+          ],
+          [
+            2018,
+            1.3052718798477632
+          ],
+          [
+            2019,
+            1.325176315894017
+          ],
+          [
+            2019,
+            1.3448464288762616
+          ],
+          [
+            2020,
+            1.3642695328323282
+          ],
+          [
+            2020,
+            1.3834336823605224
+          ],
+          [
+            2021,
+            1.4023276925718533
+          ],
+          [
+            2022,
+            1.4209411546350044
+          ]
+        ],
+        "explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate."
+      },
+      "2": {
+        "stage": "maturity",
+        "params": {
+          "L": 2.396144331572263,
+          "k": 0.04960543756361664,
+          "t0": 2.583702762251106e-13
+        },
+        "fitted": [
+          [
+            2017,
+            1.1980721657861237
+          ],
+          [
+            2017,
+            1.2043279925111146
+          ],
+          [
+            2017,
+            1.2105834781167812
+          ],
+          [
+            2017,
+            1.2168382815581784
+          ],
+          [
+            2017,
+            1.2230920619391497
+          ],
+          [
+            2018,
+            1.2293444785865695
+          ],
+          [
+            2018,
+            1.2355951911245888
+          ],
+          [
+            2018,
+            1.2418438595486354
+          ],
+          [
+            2018,
+            1.2480901442993493
+          ],
+          [
+            2018,
+            1.2543337063362066
+          ],
+          [
+            2019,
+            1.260574207211008
+          ],
+          [
+            2019,
+            1.2668113091409907
+          ],
+          [
+            2019,
+            1.2730446750817352
+          ],
+          [
+            2019,
+            1.2792739687996297
+          ],
+          [
+            2019,
+            1.2854988549440645
+          ],
+          [
+            2020,
+            1.2917189991191165
+          ],
+          [
+            2020,
+            1.2979340679548987
+          ],
+          [
+            2020,
+            1.304143729178337
+          ],
+          [
+            2020,
+            1.310347651683548
+          ],
+          [
+            2021,
+            1.3165455056015771
+          ]
+        ],
+        "explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate."
+      }
+    },
+    "events": [
+      {
+        "year": 2010,
+        "topic_id": 0,
+        "type": "emerge",
+        "keywords": [
+          "smart city",
+          "smart cities",
+          "mobility",
+          "iot",
+          "implementation",
+          "sustainability",
+          "technologies",
+          "services",
+          "robotic",
+          "text"
+        ],
+        "count": 1,
+        "why": "Topic 0 first appears in 2010 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2011,
+        "topic_id": 1,
+        "type": "emerge",
+        "keywords": [
+          "smart grid",
+          "power",
+          "grids",
+          "smart meter",
+          "algorithms",
+          "systems",
+          "smart grids",
+          "networking",
+          "smart energy",
+          "attacks"
+        ],
+        "count": 1,
+        "why": "Topic 1 first appears in 2011 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2016,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "smart city",
+          "smart cities",
+          "mobility",
+          "iot",
+          "implementation",
+          "sustainability",
+          "technologies",
+          "services",
+          "robotic",
+          "text"
+        ],
+        "count": 2,
+        "why": "Publication volume for topic 0 rose 1\u21922 (100% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2017,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "smart city",
+          "smart cities",
+          "mobility",
+          "iot",
+          "implementation",
+          "sustainability",
+          "technologies",
+          "services",
+          "robotic",
+          "text"
+        ],
+        "count": 3,
+        "why": "Publication volume for topic 0 rose 2\u21923 (50% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2017,
+        "topic_id": 2,
+        "type": "emerge",
+        "keywords": [
+          "smart contracts",
+          "blockchain",
+          "success",
+          "testing",
+          "business",
+          "developers",
+          "mapping",
+          "survey",
+          "deploying",
+          "empirical"
+        ],
+        "count": 1,
+        "why": "Topic 2 first appears in 2017 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2018,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "smart city",
+          "smart cities",
+          "mobility",
+          "iot",
+          "implementation",
+          "sustainability",
+          "technologies",
+          "services",
+          "robotic",
+          "text"
+        ],
+        "count": 6,
+        "why": "Publication volume for topic 0 rose 3\u21926 (100% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2018,
+        "topic_id": 1,
+        "type": "grow",
+        "keywords": [
+          "smart grid",
+          "power",
+          "grids",
+          "smart meter",
+          "algorithms",
+          "systems",
+          "smart grids",
+          "networking",
+          "smart energy",
+          "attacks"
+        ],
+        "count": 3,
+        "why": "Publication volume for topic 1 rose 1\u21923 (200% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2019,
+        "topic_id": 2,
+        "type": "grow",
+        "keywords": [
+          "smart contracts",
+          "blockchain",
+          "success",
+          "testing",
+          "business",
+          "developers",
+          "mapping",
+          "survey",
+          "deploying",
+          "empirical"
+        ],
+        "count": 2,
+        "why": "Publication volume for topic 2 rose 1\u21922 (100% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2025,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "smart city",
+          "smart cities",
+          "mobility",
+          "iot",
+          "implementation",
+          "sustainability",
+          "technologies",
+          "services",
+          "robotic",
+          "text"
+        ],
+        "count": 7,
+        "why": "Publication volume for topic 0 rose 2\u21927 (250% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2026,
+        "topic_id": 1,
+        "type": "die",
+        "keywords": [
+          "smart grid",
+          "power",
+          "grids",
+          "smart meter",
+          "algorithms",
+          "systems",
+          "smart grids",
+          "networking",
+          "smart energy",
+          "attacks"
+        ],
+        "why": "Topic 1 had no publications in 2026 after prior activity\u2014treated as decline/die-off.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2026,
+        "topic_id": 2,
+        "type": "die",
+        "keywords": [
+          "smart contracts",
+          "blockchain",
+          "success",
+          "testing",
+          "business",
+          "developers",
+          "mapping",
+          "survey",
+          "deploying",
+          "empirical"
+        ],
+        "why": "Topic 2 had no publications in 2026 after prior activity\u2014treated as decline/die-off.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      }
+    ],
+    "why": "Per-topic yearly counts were fitted to a logistic S-curve to assign lifecycle stages. Change events are detected by diffing topic presence and volume across years and measuring keyword overlap between co-active clusters.",
+    "weak_signals": []
+  },
+  "reasoning": {
+    "influence": [
+      {
+        "from": "smart city, smart cities, mobility, iot",
+        "to": "smart grid, power, grids, smart meter",
+        "relation": "enables",
+        "reason": "Shared methodological lineage between smart city, smart cities, mobility, iot and smart grid, power, grids, smart meter in the corpus.",
+        "why": "Heuristic edge from cluster ordering when LLM output was sparse."
+      },
+      {
+        "from": "smart grid, power, grids, smart meter",
+        "to": "smart contracts, blockchain, success, testing",
+        "relation": "enables",
+        "reason": "Shared methodological lineage between smart grid, power, grids, smart meter and smart contracts, blockchain, success, testing in the corpus.",
+        "why": "Heuristic edge from cluster ordering when LLM output was sparse."
+      }
+    ],
+    "sao": {
+      "0": {
+        "triples": [
+          {
+            "subject": "Look",
+            "action": "conduct",
+            "object": "Research"
+          },
+          {
+            "subject": "we",
+            "action": "argue",
+            "object": "this"
+          },
+          {
+            "subject": "we",
+            "action": "base",
+            "object": "experience"
+          },
+          {
+            "subject": "Twin",
+            "action": "base",
+            "object": "Reconfiguration"
+          },
+          {
+            "subject": "operation",
+            "action": "challenge",
+            "object": "setting"
+          },
+          {
+            "subject": "system",
+            "action": "struggle",
+            "object": "inefficiency"
+          },
+          {
+            "subject": "we",
+            "action": "address",
+            "object": "limitation"
+          },
+          {
+            "subject": "approach",
+            "action": "leverage",
+            "object": "replica"
+          },
+          {
+            "subject": "method",
+            "action": "recalculate",
+            "object": "path"
+          },
+          {
+            "subject": "work",
+            "action": "advance",
+            "object": "integration"
+          },
+          {
+            "subject": "airdraw",
+            "action": "leverage",
+            "object": "Sensors"
+          },
+          {
+            "subject": "watch",
+            "action": "poise",
+            "object": "market"
+          },
+          {
+            "subject": "size",
+            "action": "limit",
+            "object": "growth"
+          },
+          {
+            "subject": "device",
+            "action": "have",
+            "object": "hand"
+          },
+          {
+            "subject": "paper",
+            "action": "propose",
+            "object": "method"
+          },
+          {
+            "subject": "method",
+            "action": "compare",
+            "object": "approach"
+          },
+          {
+            "subject": "it",
+            "action": "affect",
+            "object": "factor"
+          },
+          {
+            "subject": "prototype",
+            "action": "develop",
+            "object": "approach"
+          },
+          {
+            "subject": "result",
+            "action": "present",
+            "object": ""
+          },
+          {
+            "subject": "Platform",
+            "action": "SUSTAINABLE",
+            "object": ""
+          },
+          {
+            "subject": "sector",
+            "action": "undergo",
+            "object": "shift"
+          },
+          {
+            "subject": "SUSTAINABLE",
+            "action": "design",
+            "object": "IoT"
+          },
+          {
+            "subject": "paper",
+            "action": "explore",
+            "object": "solution"
+          },
+          {
+            "subject": "Reduction",
+            "action": "play",
+            "object": "Data"
+          },
+          {
+            "subject": "amount",
+            "action": "generate",
+            "object": "datum"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "argue",
+            "count": 3
+          },
+          {
+            "action": "propose",
+            "count": 3
+          },
+          {
+            "action": "use",
+            "count": 3
+          },
+          {
+            "action": "base",
+            "count": 2
+          },
+          {
+            "action": "leverage",
+            "count": 2
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "1": {
+        "triples": [
+          {
+            "subject": "attack",
+            "action": "prove",
+            "object": "type"
+          },
+          {
+            "subject": "attention",
+            "action": "pay",
+            "object": "issue"
+          },
+          {
+            "subject": "method",
+            "action": "inspire",
+            "object": "learning"
+          },
+          {
+            "subject": "Transformer",
+            "action": "deploy",
+            "object": "detector"
+          },
+          {
+            "subject": "approach",
+            "action": "use",
+            "object": "framework"
+          },
+          {
+            "subject": "scheme",
+            "action": "improve",
+            "object": "security"
+          },
+          {
+            "subject": "effectiveness",
+            "action": "propose",
+            "object": "experiment"
+          },
+          {
+            "subject": "subject",
+            "action": "use",
+            "object": "paper"
+          },
+          {
+            "subject": "we",
+            "action": "present",
+            "object": "paper"
+          },
+          {
+            "subject": "we",
+            "action": "give",
+            "object": "consider"
+          },
+          {
+            "subject": "we",
+            "action": "discuss",
+            "object": "architecture"
+          },
+          {
+            "subject": "result",
+            "action": "present",
+            "object": ""
+          },
+          {
+            "subject": "they",
+            "action": "validate",
+            "object": "concept"
+          },
+          {
+            "subject": "Design",
+            "action": "base",
+            "object": "Grids"
+          },
+          {
+            "subject": "paper",
+            "action": "use",
+            "object": "theory"
+          },
+          {
+            "subject": "architecture",
+            "action": "perform",
+            "object": "perspective"
+          },
+          {
+            "subject": "Radius",
+            "action": "define",
+            "object": "indicator"
+          },
+          {
+            "subject": "mode",
+            "action": "discuss",
+            "object": "perspective"
+          },
+          {
+            "subject": "mode",
+            "action": "break",
+            "object": "limitation"
+          },
+          {
+            "subject": "site",
+            "action": "divide",
+            "object": "system"
+          },
+          {
+            "subject": "system",
+            "action": "interconnect",
+            "object": "way"
+          },
+          {
+            "subject": "analysis",
+            "action": "distribute",
+            "object": "msr"
+          },
+          {
+            "subject": "it",
+            "action": "demonstrate",
+            "object": "database"
+          },
+          {
+            "subject": "study",
+            "action": "validate",
+            "object": "architecture"
+          },
+          {
+            "subject": "study",
+            "action": "apply",
+            "object": "knowledge"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "present",
+            "count": 7
+          },
+          {
+            "action": "use",
+            "count": 4
+          },
+          {
+            "action": "propose",
+            "count": 4
+          },
+          {
+            "action": "discuss",
+            "count": 3
+          },
+          {
+            "action": "validate",
+            "count": 3
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "2": {
+        "triples": [
+          {
+            "subject": "Testing",
+            "action": "manage",
+            "object": "contract"
+          },
+          {
+            "subject": "it",
+            "action": "recover",
+            "object": "loss"
+          },
+          {
+            "subject": "it",
+            "action": "ensure",
+            "object": "correctness"
+          },
+          {
+            "subject": "paper",
+            "action": "propose",
+            "object": "framework"
+          },
+          {
+            "subject": "operator",
+            "action": "design",
+            "object": "Contracts"
+          },
+          {
+            "subject": "study",
+            "action": "conduct",
+            "object": "contract"
+          },
+          {
+            "subject": "result",
+            "action": "show",
+            "object": "approach"
+          },
+          {
+            "subject": "operator",
+            "action": "reveal",
+            "object": "defect"
+          },
+          {
+            "subject": "these",
+            "action": "show",
+            "object": "potential"
+          },
+          {
+            "subject": "Study",
+            "action": "base",
+            "object": "technology"
+          },
+          {
+            "subject": "contract",
+            "action": "run",
+            "object": "top"
+          },
+          {
+            "subject": "we",
+            "action": "conduct",
+            "object": "paper"
+          },
+          {
+            "subject": "aim",
+            "action": "do",
+            "object": "topic"
+          },
+          {
+            "subject": "we",
+            "action": "extract",
+            "object": "paper"
+          },
+          {
+            "subject": "result",
+            "action": "show",
+            "object": "paper"
+          },
+          {
+            "subject": "issue",
+            "action": "identify",
+            "object": ""
+          },
+          {
+            "subject": "rest",
+            "action": "focus",
+            "object": "paper"
+          },
+          {
+            "subject": "gap",
+            "action": "need",
+            "object": "study"
+          },
+          {
+            "subject": "pdf",
+            "action": "emerge",
+            "object": "contract"
+          },
+          {
+            "subject": "they",
+            "action": "allow",
+            "object": "agreement"
+          },
+          {
+            "subject": "agreement",
+            "action": "encode",
+            "object": "code"
+          },
+          {
+            "subject": "contract",
+            "action": "promise",
+            "object": "involvement"
+          },
+          {
+            "subject": "people",
+            "action": "believe",
+            "object": "feature"
+          },
+          {
+            "subject": "it",
+            "action": "release",
+            "object": "potential"
+          },
+          {
+            "subject": "contract",
+            "action": "benefit",
+            "object": "instance"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "show",
+            "count": 4
+          },
+          {
+            "action": "conduct",
+            "count": 3
+          },
+          {
+            "action": "base",
+            "count": 3
+          },
+          {
+            "action": "propose",
+            "count": 2
+          },
+          {
+            "action": "believe",
+            "count": 2
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      }
+    },
+    "why_influence": "Edges represent enabling or displacing relationships inferred from cluster themes and LLM foresight reasoning."
+  },
+  "scenarios": {
+    "drivers": [
+      {
+        "axis": "Adoption velocity",
+        "description": "3 emerging topic(s) create uncertainty about which technology will cross the chasm first.",
+        "why": "Derived from emerge events\u2014new clusters increase adoption-path uncertainty."
+      },
+      {
+        "axis": "Technology displacement",
+        "description": "2 declining topic(s) signal potential displacement of incumbent approaches.",
+        "why": "Derived from die events\u2014fading clusters imply replacement risk for legacy tech."
+      }
+    ],
+    "axis_labels": {
+      "x": "Adoption velocity",
+      "y": "Technology displacement"
+    },
+    "scenarios": {
+      "optimistic": {
+        "tone": "optimistic",
+        "title": "Optimistic",
+        "color": "#22C55E",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "disruptive": {
+        "tone": "disruptive",
+        "title": "Disruptive",
+        "color": "#EF4444",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "constrained": {
+        "tone": "constrained",
+        "title": "Constrained",
+        "color": "#F59E0B",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "stagnant": {
+        "tone": "stagnant",
+        "title": "Stagnant",
+        "color": "#6B7280",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      }
+    },
+    "why": "Four scenarios span the 2\u00d72 space of the two largest uncertainty drivers extracted from causal events.",
+    "impact_trees": {
+      "optimistic": {
+        "tree": {
+          "name": "smart city, smart cities, mobility, iot",
+          "node_type": "main",
+          "why": "Optimistic forecast for smart city, smart cities, mobility, iot: 2 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 7,
+          "branch_count": 2,
+          "scenario": "optimistic",
+          "children": [
+            {
+              "name": "smart grid, power, grids, smart meter",
+              "node_type": "evolving",
+              "trend": "accelerating / emerging / maturing",
+              "path_sources": [
+                "cluster",
+                "event",
+                "influence"
+              ],
+              "path_count": 4,
+              "why": "Shared methodological lineage between smart city, smart cities, mobility, iot and smart grid, power, grids, smart meter in the corpus. (+3 corroborating paths from corpus).",
+              "children": [
+                {
+                  "name": "Capability uplift for smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "smart grid, power, grids, smart meter enabless smart city, smart cities, mobility, iot\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from smart grid, power, grids, smart meter lower adoption friction for smart city, smart cities, mobility, iot.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via smart grid, power, grids, smart meter",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (enables).",
+                  "children": []
+                },
+                {
+                  "name": "Stable complement to smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "smart grid, power, grids, smart meter maturing\u2014incremental improvements rather than disruption for smart city, smart cities, mobility, iot.",
+                  "children": []
+                },
+                {
+                  "name": "New competitive surface for smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "smart grid, power, grids, smart meter emerged (2011)\u2014early mover advantage may reshape smart city, smart cities, mobility, iot's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle smart grid, power, grids, smart meter with smart city, smart cities, mobility, iot before the trend consolidates.",
+                  "children": []
+                },
+                {
+                  "name": "Demand pull for smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "Rising publications on smart grid, power, grids, smart meter (2018) signal market pull that lifts adjacent smart city, smart cities, mobility, iot.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "smart contracts, blockchain, success, testing",
+              "node_type": "evolving",
+              "trend": "accelerating / emerging / maturing",
+              "path_sources": [
+                "cluster",
+                "event"
+              ],
+              "path_count": 3,
+              "why": "Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2017\u20132021). (+2 corroborating paths from corpus).",
+              "children": [
+                {
+                  "name": "Stable complement to smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "smart contracts, blockchain, success, testing maturing\u2014incremental improvements rather than disruption for smart city, smart cities, mobility, iot.",
+                  "children": []
+                },
+                {
+                  "name": "New competitive surface for smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "smart contracts, blockchain, success, testing emerged (2017)\u2014early mover advantage may reshape smart city, smart cities, mobility, iot's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle smart contracts, blockchain, success, testing with smart city, smart cities, mobility, iot before the trend consolidates.",
+                  "children": []
+                },
+                {
+                  "name": "Demand pull for smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "Rising publications on smart contracts, blockchain, success, testing (2019) signal market pull that lifts adjacent smart city, smart cities, mobility, iot.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "smart city, smart cities, mobility, iot",
+        "paths_discovered": 9,
+        "paths_in_scenario": 7,
+        "branch_count": 2,
+        "why": "This Optimistic tree shows 2 branch(es) from 7 prioritized path(s) out of 9 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "disruptive": {
+        "tree": {
+          "name": "smart city, smart cities, mobility, iot",
+          "node_type": "main",
+          "why": "Disruptive forecast for smart city, smart cities, mobility, iot: 2 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 4,
+          "branch_count": 2,
+          "scenario": "disruptive",
+          "children": [
+            {
+              "name": "smart grid, power, grids, smart meter",
+              "node_type": "evolving",
+              "trend": "accelerating / declining",
+              "path_sources": [
+                "event"
+              ],
+              "path_count": 2,
+              "why": "Topic 1 had no publications in 2026 after prior activity\u2014treated as decline/die-off. Publication volume for topic 1 rose 1\u21923 (200% YoY).",
+              "children": [
+                {
+                  "name": "Legacy overlap reduction",
+                  "node_type": "impact",
+                  "why": "Decline of smart grid, power, grids, smart meter frees budget and attention for smart city, smart cities, mobility, iot.",
+                  "children": []
+                },
+                {
+                  "name": "Migration path into smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "Users leaving smart grid, power, grids, smart meter may consolidate onto smart city, smart cities, mobility, iot if positioned as successor.",
+                  "children": []
+                },
+                {
+                  "name": "Demand pull for smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "Rising publications on smart grid, power, grids, smart meter (2018) signal market pull that lifts adjacent smart city, smart cities, mobility, iot.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "smart contracts, blockchain, success, testing",
+              "node_type": "evolving",
+              "trend": "accelerating / declining",
+              "path_sources": [
+                "event"
+              ],
+              "path_count": 2,
+              "why": "Topic 2 had no publications in 2026 after prior activity\u2014treated as decline/die-off. Publication volume for topic 2 rose 1\u21922 (100% YoY).",
+              "children": [
+                {
+                  "name": "Legacy overlap reduction",
+                  "node_type": "impact",
+                  "why": "Decline of smart contracts, blockchain, success, testing frees budget and attention for smart city, smart cities, mobility, iot.",
+                  "children": []
+                },
+                {
+                  "name": "Migration path into smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "Users leaving smart contracts, blockchain, success, testing may consolidate onto smart city, smart cities, mobility, iot if positioned as successor.",
+                  "children": []
+                },
+                {
+                  "name": "Demand pull for smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "Rising publications on smart contracts, blockchain, success, testing (2019) signal market pull that lifts adjacent smart city, smart cities, mobility, iot.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "smart city, smart cities, mobility, iot",
+        "paths_discovered": 9,
+        "paths_in_scenario": 4,
+        "branch_count": 2,
+        "why": "This Disruptive tree shows 2 branch(es) from 4 prioritized path(s) out of 9 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "constrained": {
+        "tree": {
+          "name": "smart city, smart cities, mobility, iot",
+          "node_type": "main",
+          "why": "Constrained forecast for smart city, smart cities, mobility, iot: 2 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 3,
+          "branch_count": 2,
+          "scenario": "constrained",
+          "children": [
+            {
+              "name": "smart grid, power, grids, smart meter",
+              "node_type": "evolving",
+              "trend": "accelerating / maturing",
+              "path_sources": [
+                "cluster",
+                "influence"
+              ],
+              "path_count": 2,
+              "why": "Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2011\u20132022). Shared methodological lineage between smart city, smart cities, mobility, iot and smart grid, power, grids, smart meter in the corpus.",
+              "children": [
+                {
+                  "name": "Stable complement to smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "smart grid, power, grids, smart meter maturing\u2014incremental improvements rather than disruption for smart city, smart cities, mobility, iot.",
+                  "children": []
+                },
+                {
+                  "name": "Capability uplift for smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "smart grid, power, grids, smart meter enabless smart city, smart cities, mobility, iot\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from smart grid, power, grids, smart meter lower adoption friction for smart city, smart cities, mobility, iot.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via smart grid, power, grids, smart meter",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (enables).",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "smart contracts, blockchain, success, testing",
+              "node_type": "evolving",
+              "trend": "maturing",
+              "path_sources": [
+                "cluster"
+              ],
+              "path_count": 1,
+              "why": "Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2017\u20132021).",
+              "children": [
+                {
+                  "name": "Stable complement to smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "smart contracts, blockchain, success, testing maturing\u2014incremental improvements rather than disruption for smart city, smart cities, mobility, iot.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "smart city, smart cities, mobility, iot",
+        "paths_discovered": 9,
+        "paths_in_scenario": 3,
+        "branch_count": 2,
+        "why": "This Constrained tree shows 2 branch(es) from 3 prioritized path(s) out of 9 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "stagnant": {
+        "tree": {
+          "name": "smart city, smart cities, mobility, iot",
+          "node_type": "main",
+          "why": "Stagnant forecast for smart city, smart cities, mobility, iot: 2 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 2,
+          "branch_count": 2,
+          "scenario": "stagnant",
+          "children": [
+            {
+              "name": "smart grid, power, grids, smart meter",
+              "node_type": "evolving",
+              "trend": "declining",
+              "path_sources": [
+                "event"
+              ],
+              "path_count": 1,
+              "why": "Topic 1 had no publications in 2026 after prior activity\u2014treated as decline/die-off.",
+              "children": [
+                {
+                  "name": "Legacy overlap reduction",
+                  "node_type": "impact",
+                  "why": "Decline of smart grid, power, grids, smart meter frees budget and attention for smart city, smart cities, mobility, iot.",
+                  "children": []
+                },
+                {
+                  "name": "Migration path into smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "Users leaving smart grid, power, grids, smart meter may consolidate onto smart city, smart cities, mobility, iot if positioned as successor.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "smart contracts, blockchain, success, testing",
+              "node_type": "evolving",
+              "trend": "declining",
+              "path_sources": [
+                "event"
+              ],
+              "path_count": 1,
+              "why": "Topic 2 had no publications in 2026 after prior activity\u2014treated as decline/die-off.",
+              "children": [
+                {
+                  "name": "Legacy overlap reduction",
+                  "node_type": "impact",
+                  "why": "Decline of smart contracts, blockchain, success, testing frees budget and attention for smart city, smart cities, mobility, iot.",
+                  "children": []
+                },
+                {
+                  "name": "Migration path into smart city, smart cities, mobility, iot",
+                  "node_type": "impact",
+                  "why": "Users leaving smart contracts, blockchain, success, testing may consolidate onto smart city, smart cities, mobility, iot if positioned as successor.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "smart city, smart cities, mobility, iot",
+        "paths_discovered": 9,
+        "paths_in_scenario": 2,
+        "branch_count": 2,
+        "why": "This Stagnant tree shows 2 branch(es) from 2 prioritized path(s) out of 9 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      }
+    }
+  },
+  "source_breakdown": {
+    "arxiv": 50,
+    "uploaded": 0
+  }
+}

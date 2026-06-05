@@ -1,0 +1,1297 @@
+{
+  "job_id": "f9c04acebcc6",
+  "document_count": 20,
+  "documents": [
+    {
+      "title": "Transformer-Based Intrusion Detection for Post-5G and 6G Telecommunication Networks Using Dynamic Semantic Embedding",
+      "source": "scholar",
+      "year": 2025,
+      "topic_id": 0,
+      "paper_id": "945faf69782f19af2a0b3c4c8c191244192cb34c"
+    },
+    {
+      "title": "Ultra wideband Metamaterial graphene supported patch antenna for 4G-6G telecommunication",
+      "source": "scholar",
+      "year": 2025,
+      "topic_id": 1,
+      "paper_id": "e0b71e93777ad5aa7a9b6e4d52b1551ffb84e496"
+    },
+    {
+      "title": "Smart Multi\u2010Objective Unmanned Aerial Vehicles as Base Stations Placement in 6G Cellular Telecommunication Networks Using NSGA\u2010II Optimisation Algorithm",
+      "source": "scholar",
+      "year": 2025,
+      "topic_id": 0,
+      "paper_id": "3487427e04dd613720e586ddbaac5cebb3d066f2"
+    },
+    {
+      "title": "Intelligent DRL-assisted decoding of error-correcting codes for 5G/6G telecommunication channels",
+      "source": "scholar",
+      "year": 2025,
+      "topic_id": 0,
+      "paper_id": "698d137441f53ecb9bd149295f819ea2452e5271"
+    },
+    {
+      "title": "Safe and Explainable AI in 6G Telecommunication Systems: The Way Forward",
+      "source": "scholar",
+      "year": 2025,
+      "topic_id": 0,
+      "paper_id": "b79546d5d6064a8057655214a501c9d7a2e4213d"
+    },
+    {
+      "title": "AI-Enabled Optical Communication Networks for 6G Telecommunication and Beyond",
+      "source": "scholar",
+      "year": 2025,
+      "topic_id": 0,
+      "paper_id": "18499e3f57d4eb2cfd446cc27347b94d3582d5dc"
+    },
+    {
+      "title": "RIS and UAV Aided Spatial Modulation for 6G Telecommunication Systems",
+      "source": "scholar",
+      "year": 2024,
+      "topic_id": 0,
+      "paper_id": "d90115fdaf6657f0b9c398253b9d3f1e83eac210"
+    },
+    {
+      "title": "Signal Propagation and Path- Loss in 6G Mobile Telecommunication System",
+      "source": "scholar",
+      "year": 2024,
+      "topic_id": 1,
+      "paper_id": "b8d38f464a997560faae3543d4528e96ab129a2c"
+    },
+    {
+      "title": "From 5G-Advanced to 6G in 2030: New Services, 3GPP Advances, and Enabling Technologies",
+      "source": "scholar",
+      "year": 2024,
+      "topic_id": 0,
+      "paper_id": "51bc7786199f8dc020665b8182e15cca3d67a2eb"
+    },
+    {
+      "title": "THz and Sub-THz CMOS Electronics for High-Speed Telecommunication - Architectures and Circuits for Future 6G Transceivers, 2",
+      "source": "scholar",
+      "year": 2024,
+      "topic_id": 0,
+      "paper_id": "ef416a24891fee42d87acaf0b61025903dd66b6c"
+    },
+    {
+      "title": "Introducing 6G technology to support metaverse for telecommunication engineering students in Universitas Pendidikan Indonesia",
+      "source": "scholar",
+      "year": 2023,
+      "topic_id": 0,
+      "paper_id": "78873a4bf0d20b5fd733a50eb6bc7c854d8ddff6"
+    },
+    {
+      "title": "Technical capabilities and safe use of mobile communications 6G in railway transport",
+      "source": "scholar",
+      "year": 2024,
+      "topic_id": 0,
+      "paper_id": "4a1aeb509d12483909404500cf6598d10a41ab5e"
+    },
+    {
+      "title": "Large language models for DAMA-aligned data management in telecommunication systems: a review of OSS/BSS and 5G/6G applications",
+      "source": "scholar",
+      "year": 2026,
+      "topic_id": 0,
+      "paper_id": "29717023051c8b4f96f16c471bd1233bed0aebe6"
+    },
+    {
+      "title": "Stacked assemblies of ultraporous nanocellulose foams and hybrid films as frequency-selective surfaces for 6G wireless telecommunication",
+      "source": "scholar",
+      "year": 2026,
+      "topic_id": 1,
+      "paper_id": "53fe8ce92b94e8d87f67b0bada86d356ee9076bb"
+    },
+    {
+      "title": "Optimization of 5G/6G Telecommunication Infrastructure through an NFV-Based Element Management System",
+      "source": "scholar",
+      "year": 2022,
+      "topic_id": 0,
+      "paper_id": "5099df8a8c59b57c179e0bad234777dde729ab22"
+    },
+    {
+      "title": "Corrigendum: Ultra-low permittivity porous silica-cellulose nanocomposite substrates for 6G telecommunication (2020 Nanotechnology 31 435203)",
+      "source": "scholar",
+      "year": 2022,
+      "topic_id": 0,
+      "paper_id": "c981a0c1b04da504c5543ff2444a288f11628dec"
+    },
+    {
+      "title": "Artificial Intelligence in the Telecommunication Sector: Exploratory Analysis of 6G\u2019s Potential for Organizational Agility",
+      "source": "scholar",
+      "year": 2021,
+      "topic_id": 0,
+      "paper_id": "ed7406e92814b5a914a812d57b56a8a33980b735"
+    },
+    {
+      "title": "Ultra-low permittivity porous silica-cellulose nanocomposite substrates for 6G telecommunication",
+      "source": "scholar",
+      "year": 2020,
+      "topic_id": 0,
+      "paper_id": "c7c289f4f2cd46c07b5625544416673134047698"
+    },
+    {
+      "title": "240\u2009GHz meta\u2010surface band pass filter and lens integration in 6G telecommunication systems",
+      "source": "scholar",
+      "year": 2020,
+      "topic_id": 1,
+      "paper_id": "b656426884954c4a98b9960654aa86a75e1041e1"
+    },
+    {
+      "title": "Toward Integrated Sensing and Communications for 6G: Key Enabling Technologies, Standardization, and Challenges",
+      "source": "scholar",
+      "year": 2024,
+      "topic_id": 0,
+      "paper_id": "6944b7c11e8aa00d069265b517f10ea8944ca447"
+    }
+  ],
+  "clusters": [
+    {
+      "topic_id": 0,
+      "count": 6,
+      "keywords": [
+        "ber",
+        "communication systems",
+        "transport",
+        "security",
+        "technology",
+        "propagation",
+        "low-latency communication",
+        "indicators",
+        "uavs",
+        "robustness"
+      ],
+      "label": "ber, communication systems, transport, security",
+      "lifecycle_stage": "introduction",
+      "stage_color": "#22C55E",
+      "lifecycle_explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration.",
+      "lifecycle_llm": "User Safety: safe",
+      "source_breakdown": {
+        "scholar": 16,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        19
+      ]
+    },
+    {
+      "topic_id": 1,
+      "count": 4,
+      "keywords": [
+        "ghz",
+        "bandwidth",
+        "hybrid",
+        "coverage",
+        "filtering",
+        "simulation",
+        "signal propagation",
+        "split-ring",
+        "mobile communication",
+        "antennas"
+      ],
+      "label": "ghz, bandwidth, hybrid, coverage",
+      "lifecycle_stage": "maturity",
+      "stage_color": "#9333EA",
+      "lifecycle_explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate.",
+      "lifecycle_llm": "At the maturity stage, split-ring resonator-based filtering and hybrid beamforming architectures have transitioned from lab validation to standardized 5G/6G FR2/3 deployments, with ETSI and 3GPP specifications locking down GHz-band spectral masks and coverage enhancement protocols. Commercial adoption is driven by operator CAPEX reduction through consolidated multi-band hardware, while funding shifts from core R&D to manufacturing scale-up and digital twin simulation toolchains for signal propagation optimization. The ecosystem now competes on yield rates",
+      "source_breakdown": {
+        "scholar": 4,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        1,
+        7,
+        13,
+        18
+      ]
+    }
+  ],
+  "scatter": {
+    "points": [
+      {
+        "doc_index": 0,
+        "topic_id": 0,
+        "x": 12.530860900878906,
+        "y": 20.94736671447754,
+        "preview": "Transformer-Based Intrusion Detection for Post-5G and 6G Telecommunication Networks Using Dynamic Semantic Embedding  Po",
+        "title": "Transformer-Based Intrusion Detection for Post-5G and 6G Telecommunication Netwo",
+        "source": "scholar",
+        "year": 2025
+      },
+      {
+        "doc_index": 1,
+        "topic_id": 1,
+        "x": 10.995725631713867,
+        "y": 19.130619049072266,
+        "preview": "Ultra wideband Metamaterial graphene supported patch antenna for 4G-6G telecommunication  In this study, the metasurface",
+        "title": "Ultra wideband Metamaterial graphene supported patch antenna for 4G-6G telecommu",
+        "source": "scholar",
+        "year": 2025
+      },
+      {
+        "doc_index": 2,
+        "topic_id": 0,
+        "x": 12.348867416381836,
+        "y": 19.073347091674805,
+        "preview": "Smart Multi\u2010Objective Unmanned Aerial Vehicles as Base Stations Placement in 6G Cellular Telecommunication Networks Usin",
+        "title": "Smart Multi\u2010Objective Unmanned Aerial Vehicles as Base Stations Placement in 6G ",
+        "source": "scholar",
+        "year": 2025
+      },
+      {
+        "doc_index": 3,
+        "topic_id": 0,
+        "x": 12.999168395996094,
+        "y": 19.478540420532227,
+        "preview": "Intelligent DRL-assisted decoding of error-correcting codes for 5G/6G telecommunication channels  Abstract This paper pr",
+        "title": "Intelligent DRL-assisted decoding of error-correcting codes for 5G/6G telecommun",
+        "source": "scholar",
+        "year": 2025
+      },
+      {
+        "doc_index": 4,
+        "topic_id": 0,
+        "x": 12.789610862731934,
+        "y": 20.434656143188477,
+        "preview": "Safe and Explainable AI in 6G Telecommunication Systems: The Way Forward  Artificial Intelligence (AI) is crucial for re",
+        "title": "Safe and Explainable AI in 6G Telecommunication Systems: The Way Forward",
+        "source": "scholar",
+        "year": 2025
+      },
+      {
+        "doc_index": 5,
+        "topic_id": 0,
+        "x": 13.46261978149414,
+        "y": 19.694419860839844,
+        "preview": "AI-Enabled Optical Communication Networks for 6G Telecommunication and Beyond  The development of 5G to 6G wireless netw",
+        "title": "AI-Enabled Optical Communication Networks for 6G Telecommunication and Beyond",
+        "source": "scholar",
+        "year": 2025
+      },
+      {
+        "doc_index": 6,
+        "topic_id": 0,
+        "x": 11.854524612426758,
+        "y": 19.638437271118164,
+        "preview": "RIS and UAV Aided Spatial Modulation for 6G Telecommunication Systems  A paradigm shift in wireless communication is exp",
+        "title": "RIS and UAV Aided Spatial Modulation for 6G Telecommunication Systems",
+        "source": "scholar",
+        "year": 2024
+      },
+      {
+        "doc_index": 7,
+        "topic_id": 1,
+        "x": 11.486852645874023,
+        "y": 19.31525993347168,
+        "preview": "Signal Propagation and Path- Loss in 6G Mobile Telecommunication System  As previous we know about many types of generat",
+        "title": "Signal Propagation and Path- Loss in 6G Mobile Telecommunication System",
+        "source": "scholar",
+        "year": 2024
+      },
+      {
+        "doc_index": 8,
+        "topic_id": 0,
+        "x": 11.653525352478027,
+        "y": 20.78154182434082,
+        "preview": "From 5G-Advanced to 6G in 2030: New Services, 3GPP Advances, and Enabling Technologies  The telecommunications systems a",
+        "title": "From 5G-Advanced to 6G in 2030: New Services, 3GPP Advances, and Enabling Techno",
+        "source": "scholar",
+        "year": 2024
+      },
+      {
+        "doc_index": 9,
+        "topic_id": 0,
+        "x": 10.482880592346191,
+        "y": 19.907838821411133,
+        "preview": "THz and Sub-THz CMOS Electronics for High-Speed Telecommunication - Architectures and Circuits for Future 6G Transceiver",
+        "title": "THz and Sub-THz CMOS Electronics for High-Speed Telecommunication - Architecture",
+        "source": "scholar",
+        "year": 2024
+      },
+      {
+        "doc_index": 10,
+        "topic_id": 0,
+        "x": 12.207002639770508,
+        "y": 20.308181762695312,
+        "preview": "Introducing 6G technology to support metaverse for telecommunication engineering students in Universitas Pendidikan Indo",
+        "title": "Introducing 6G technology to support metaverse for telecommunication engineering",
+        "source": "scholar",
+        "year": 2023
+      },
+      {
+        "doc_index": 11,
+        "topic_id": 0,
+        "x": 11.575911521911621,
+        "y": 20.223583221435547,
+        "preview": "Technical capabilities and safe use of mobile communications 6G in railway transport  The purpose of the study is to des",
+        "title": "Technical capabilities and safe use of mobile communications 6G in railway trans",
+        "source": "scholar",
+        "year": 2024
+      },
+      {
+        "doc_index": 12,
+        "topic_id": 0,
+        "x": 12.580638885498047,
+        "y": 19.848419189453125,
+        "preview": "Large language models for DAMA-aligned data management in telecommunication systems: a review of OSS/BSS and 5G/6G appli",
+        "title": "Large language models for DAMA-aligned data management in telecommunication syst",
+        "source": "scholar",
+        "year": 2026
+      },
+      {
+        "doc_index": 13,
+        "topic_id": 1,
+        "x": 10.946122169494629,
+        "y": 18.52532958984375,
+        "preview": "Stacked assemblies of ultraporous nanocellulose foams and hybrid films as frequency-selective surfaces for 6G wireless t",
+        "title": "Stacked assemblies of ultraporous nanocellulose foams and hybrid films as freque",
+        "source": "scholar",
+        "year": 2026
+      },
+      {
+        "doc_index": 14,
+        "topic_id": 0,
+        "x": 12.662004470825195,
+        "y": 18.5914249420166,
+        "preview": "Optimization of 5G/6G Telecommunication Infrastructure through an NFV-Based Element Management System  Network Function ",
+        "title": "Optimization of 5G/6G Telecommunication Infrastructure through an NFV-Based Elem",
+        "source": "scholar",
+        "year": 2022
+      },
+      {
+        "doc_index": 15,
+        "topic_id": 0,
+        "x": 10.05649185180664,
+        "y": 18.980791091918945,
+        "preview": "Corrigendum: Ultra-low permittivity porous silica-cellulose nanocomposite substrates for 6G telecommunication (2020 Nano",
+        "title": "Corrigendum: Ultra-low permittivity porous silica-cellulose nanocomposite substr",
+        "source": "scholar",
+        "year": 2022
+      },
+      {
+        "doc_index": 16,
+        "topic_id": 0,
+        "x": 13.417570114135742,
+        "y": 20.494400024414062,
+        "preview": "Artificial Intelligence in the Telecommunication Sector: Exploratory Analysis of 6G\u2019s Potential for Organizational Agili",
+        "title": "Artificial Intelligence in the Telecommunication Sector: Exploratory Analysis of",
+        "source": "scholar",
+        "year": 2021
+      },
+      {
+        "doc_index": 17,
+        "topic_id": 0,
+        "x": 10.431907653808594,
+        "y": 18.42670249938965,
+        "preview": "Ultra-low permittivity porous silica-cellulose nanocomposite substrates for 6G telecommunication  The continuously incre",
+        "title": "Ultra-low permittivity porous silica-cellulose nanocomposite substrates for 6G t",
+        "source": "scholar",
+        "year": 2020
+      },
+      {
+        "doc_index": 18,
+        "topic_id": 1,
+        "x": 10.677324295043945,
+        "y": 19.468494415283203,
+        "preview": "240\u2009GHz meta\u2010surface band pass filter and lens integration in 6G telecommunication systems  240\u2009GHz operated meta\u2010surfac",
+        "title": "240\u2009GHz meta\u2010surface band pass filter and lens integration in 6G telecommunicati",
+        "source": "scholar",
+        "year": 2020
+      },
+      {
+        "doc_index": 19,
+        "topic_id": 0,
+        "x": 10.950912475585938,
+        "y": 20.401634216308594,
+        "preview": "Toward Integrated Sensing and Communications for 6G: Key Enabling Technologies, Standardization, and Challenges  The rad",
+        "title": "Toward Integrated Sensing and Communications for 6G: Key Enabling Technologies, ",
+        "source": "scholar",
+        "year": 2024
+      }
+    ],
+    "why": "Documents were embedded with all-MiniLM-L6-v2, projected with UMAP, and grouped by BERTopic (HDBSCAN + c-TF-IDF). Topic labels use an English + academic stop-word list, bigrams, reduced-frequent-word c-TF-IDF, and Maximal Marginal Relevance so keywords highlight technology terms\u2014not function words like \u201cthe\u201d or \u201cof\u201d."
+  },
+  "evolution": {
+    "timeline": {
+      "0": [
+        {
+          "year": 2020,
+          "count": 1
+        },
+        {
+          "year": 2021,
+          "count": 1
+        },
+        {
+          "year": 2022,
+          "count": 2
+        },
+        {
+          "year": 2023,
+          "count": 1
+        },
+        {
+          "year": 2024,
+          "count": 5
+        },
+        {
+          "year": 2025,
+          "count": 5
+        },
+        {
+          "year": 2026,
+          "count": 1
+        }
+      ],
+      "1": [
+        {
+          "year": 2020,
+          "count": 1
+        },
+        {
+          "year": 2024,
+          "count": 1
+        },
+        {
+          "year": 2025,
+          "count": 1
+        },
+        {
+          "year": 2026,
+          "count": 1
+        }
+      ]
+    },
+    "lifecycle": {
+      "0": {
+        "stage": "introduction",
+        "params": {
+          "L": 3.3874432838679267,
+          "k": 1.0094670129300385,
+          "t0": 1.7898284142407679
+        },
+        "fitted": [
+          [
+            2020,
+            0.4777264566308487
+          ],
+          [
+            2020,
+            0.6240451507799568
+          ],
+          [
+            2020,
+            0.8028138045213975
+          ],
+          [
+            2020,
+            1.0140023339965507
+          ],
+          [
+            2021,
+            1.2537964655524754
+          ],
+          [
+            2021,
+            1.5141217912515963
+          ],
+          [
+            2021,
+            1.7833218312689103
+          ],
+          [
+            2022,
+            2.0480575078537613
+          ],
+          [
+            2022,
+            2.295846243654165
+          ],
+          [
+            2022,
+            2.517270566577148
+          ],
+          [
+            2023,
+            2.7070902644190897
+          ],
+          [
+            2023,
+            2.864111088891391
+          ],
+          [
+            2023,
+            2.9902102680614635
+          ],
+          [
+            2024,
+            3.089090399092336
+          ],
+          [
+            2024,
+            3.165186539447968
+          ],
+          [
+            2024,
+            3.2229078137084852
+          ],
+          [
+            2025,
+            3.266212717704011
+          ],
+          [
+            2025,
+            3.298434763495642
+          ],
+          [
+            2025,
+            3.3222633739799616
+          ],
+          [
+            2026,
+            3.339804922712659
+          ]
+        ],
+        "explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration."
+      },
+      "1": {
+        "stage": "maturity",
+        "params": {
+          "L": 1.962953152976198,
+          "k": 0.010000000000000002,
+          "t0": 6.1819023265615195e-09
+        },
+        "fitted": [
+          [
+            2020,
+            0.9814765764577621
+          ],
+          [
+            2020,
+            0.9830262750275368
+          ],
+          [
+            2020,
+            0.9845759658703148
+          ],
+          [
+            2020,
+            0.9861256412592547
+          ],
+          [
+            2021,
+            0.9876752934678199
+          ],
+          [
+            2021,
+            0.989224914769939
+          ],
+          [
+            2021,
+            0.9907744974401566
+          ],
+          [
+            2022,
+            0.9923240337537871
+          ],
+          [
+            2022,
+            0.9938735159870707
+          ],
+          [
+            2022,
+            0.995422936417323
+          ],
+          [
+            2023,
+            0.9969722873230948
+          ],
+          [
+            2023,
+            0.9985215609843219
+          ],
+          [
+            2023,
+            1.0000707496824817
+          ],
+          [
+            2024,
+            1.0016198457007417
+          ],
+          [
+            2024,
+            1.0031688413241207
+          ],
+          [
+            2024,
+            1.0047177288396365
+          ],
+          [
+            2025,
+            1.0062665005364622
+          ],
+          [
+            2025,
+            1.00781514870608
+          ],
+          [
+            2025,
+            1.00936366564243
+          ],
+          [
+            2026,
+            1.0109120436420702
+          ]
+        ],
+        "explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate."
+      }
+    },
+    "events": [
+      {
+        "year": 2020,
+        "topic_id": 0,
+        "type": "emerge",
+        "keywords": [
+          "ber",
+          "communication systems",
+          "transport",
+          "security",
+          "technology",
+          "propagation",
+          "low-latency communication",
+          "indicators",
+          "uavs",
+          "robustness"
+        ],
+        "count": 1,
+        "why": "Topic 0 first appears in 2020 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "ROOT CAUSE \u2014 The emergence of this cluster stems from the urgent requirement to integrate Bit Error Rate (BER) metrics into the mission-critical reliability frameworks of next-generation mobility networks. INFLUENCING TECHNOLOGY \u2014 The development of 5G New Radio (NR) ultra-reliable low-latency communication (URLLC) protocols. 5-YEAR IMPACT \u2014 R&D will shift toward hardware-accelerated error correction and predictive signal propagation modeling to secure autonomous transport infrastructures.",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2020,
+        "topic_id": 1,
+        "type": "emerge",
+        "keywords": [
+          "ghz",
+          "bandwidth",
+          "hybrid",
+          "coverage",
+          "filtering",
+          "simulation",
+          "signal propagation",
+          "split-ring",
+          "mobile communication",
+          "antennas"
+        ],
+        "count": 1,
+        "why": "Topic 1 first appears in 2020 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "The 5-year impact could be that it shifts focus towards hybrid solutions, affecting coverage and signal propagation. Need to be specific without vague phrases. Also, avoid vague terms like \"cor",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2022,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "ber",
+          "communication systems",
+          "transport",
+          "security",
+          "technology",
+          "propagation",
+          "low-latency communication",
+          "indicators",
+          "uavs",
+          "robustness"
+        ],
+        "count": 2,
+        "why": "Publication volume for topic 0 rose 1\u21922 (100% YoY).",
+        "llm_explanation": "The user wants me to analyze a \"grow\" event from 2022 for a cluster labeled \"ber, communication systems, transport, security\" with topic keywords including BER (Bit Error Rate), communication systems, transport, security, technology, propagation, low-latency communication, indicators. The lifecycle stage is \"introduction\" and publication volume rose from 1 to 2 (100% YoY). I need to write 2-3 sentences with specific structure: (1) ROOT CAUSE, (2) INFLUENCING TECHNOLOGY, (3) 5-YEAR IMPACT. Must be specific, no vague phrases.\n\nLet me think about this. BER (Bit Error Rate) in communication systems for transport/security context with low-latency communication. The growth from 1 to 2 publications is tiny but 100% growth. In 2022, what would drive this? Likely the push for ultra-reliable low-latency communications (URLLC) in 5G/6G for transportation (V2X, autonomous vehicles) and security-critical systems. The influencing technology could be 5G NR URLLC or TSN (Time-Sensitive Networking",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2024,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "ber",
+          "communication systems",
+          "transport",
+          "security",
+          "technology",
+          "propagation",
+          "low-latency communication",
+          "indicators",
+          "uavs",
+          "robustness"
+        ],
+        "count": 5,
+        "why": "Publication volume for topic 0 rose 1\u21925 (400% YoY).",
+        "llm_explanation": "The surge in Bit Error Rate (BER) research stems from the critical need to maintain signal integrity within increasingly congested and high-mobility wireless environments. This growth is driven by the integration of Terahertz (THz) frequency bands and advanced channel modeling for ultra-reliable low-latency communications (URLLC). Over the next five years, this will force transport and security sectors to transition from reactive error correction to predictive, AI-driven physical layer security to prevent data corruption in autonomous systems.",
+        "llm_source": "openrouter"
+      }
+    ],
+    "why": "Per-topic yearly counts were fitted to a logistic S-curve to assign lifecycle stages. Change events are detected by diffing topic presence and volume across years and measuring keyword overlap between co-active clusters.",
+    "weak_signals": []
+  },
+  "reasoning": {
+    "influence": [
+      {
+        "from": "GHz\u2011scale RF front\u2011ends",
+        "to": "Hybrid\u2011beamforming antenna arrays",
+        "relation": "enables",
+        "reason": "Higher GHz carriers increase spatial resolution, enabling hybrid analog\u2011digital beamforming to multiplex users and expand coverage without extra RF chains.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Broadband filtering",
+        "to": "High\u2011bandwidth backhaul links",
+        "relation": "enables",
+        "reason": "Advanced tunable filters reduce out\u2011of\u2011band emissions, allowing carriers to pack more GHz of spectrum into transport links and meet regulatory limits, thus expanding usable bandwidth.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Legacy narrowband modulators",
+        "to": "Wide\u2011bandwidth OFDM transceivers",
+        "relation": "displaces",
+        "reason": "OFDM\u2019s flexible sub\u2011carrier allocation leverages the expanded GHz spectrum, rendering fixed\u2011frequency narrowband modulators obsolete in both transport and security telemetry.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Secure communication protocols",
+        "to": "GHz\u2011level carrier aggregation",
+        "relation": "enables",
+        "reason": "Aggregating multiple GHz carriers raises the raw data rate, permitting the embedding of stronger cryptographic handshakes within each packet without exceeding latency budgets, thereby improving security.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Fixed\u2011frequency RF filters",
+        "to": "Software\u2011defined, adaptive filtering",
+        "relation": "displaces",
+        "reason": "Adaptive DSP\u2011controlled filters can re\u2011configure pass\u2011band characteristics in real time, eliminating the need for static hardware filters that were sized for a single GHz band.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Hybrid fiber\u2011RF transport",
+        "to": "High\u2011bandwidth microwave backhaul",
+        "relation": "enables",
+        "reason": "Hybrid transport combines fiber\u2019s low latency with GHz microwave links\u2019 rapid deployment, using bandwidth\u2011efficient coding to meet demand spikes in urban security camera networks.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Analog\u2011only coverage amplifiers",
+        "to": "Digital beam\u2011steering arrays",
+        "relation": "displaces",
+        "reason": "Digital beam\u2011steering exploits the wider GHz bandwidth to form multiple narrow beams, reducing reliance on omnidirectional analog amplifiers for wide coverage.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Security monitoring sensors",
+        "to": "Broadband GHz radar",
+        "relation": "enables",
+        "reason": "Radar sensors operating at multi\u2011GHz frequencies achieve finer range resolution, enabling detection of smaller threats and integration with communication systems for real\u2011time alerts.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      }
+    ],
+    "sao": {
+      "0": {
+        "triples": [
+          {
+            "subject": "Detection",
+            "action": "use",
+            "object": "post-5"
+          },
+          {
+            "subject": "that",
+            "action": "base",
+            "object": "struggle"
+          },
+          {
+            "subject": "paper",
+            "action": "propose",
+            "object": "system"
+          },
+          {
+            "subject": "approach",
+            "action": "integrate",
+            "object": "innovation"
+          },
+          {
+            "subject": "that",
+            "action": "embed",
+            "object": "encoding"
+          },
+          {
+            "subject": "experiment",
+            "action": "demonstrate",
+            "object": "dataset"
+          },
+          {
+            "subject": "testing",
+            "action": "confirm",
+            "object": "capability"
+          },
+          {
+            "subject": "deployment",
+            "action": "present",
+            "object": "vehicle"
+          },
+          {
+            "subject": "placement",
+            "action": "harness",
+            "object": "uav"
+          },
+          {
+            "subject": "paper",
+            "action": "introduce",
+            "object": "model"
+          },
+          {
+            "subject": "II",
+            "action": "address",
+            "object": "issue"
+          },
+          {
+            "subject": "model",
+            "action": "conduct",
+            "object": "simulation"
+          },
+          {
+            "subject": "finding",
+            "action": "reveal",
+            "object": "effectiveness"
+          },
+          {
+            "subject": "method",
+            "action": "achieve",
+            "object": "probability"
+          },
+          {
+            "subject": "result",
+            "action": "underscore",
+            "object": "robustness"
+          },
+          {
+            "subject": "paper",
+            "action": "present",
+            "object": "methodology"
+          },
+          {
+            "subject": "decoder",
+            "action": "propose",
+            "object": "strategy"
+          },
+          {
+            "subject": "evaluation",
+            "action": "formulate",
+            "object": "metric"
+          },
+          {
+            "subject": "result",
+            "action": "show",
+            "object": "reduction"
+          },
+          {
+            "subject": "exhibit",
+            "action": "improve",
+            "object": "robustness"
+          },
+          {
+            "subject": "methodology",
+            "action": "support",
+            "object": "agent"
+          },
+          {
+            "subject": "result",
+            "action": "demonstrate",
+            "object": "novelty"
+          },
+          {
+            "subject": "Intelligence",
+            "action": "realize",
+            "object": "Systems"
+          },
+          {
+            "subject": "trustworthiness",
+            "action": "base",
+            "object": "model"
+          },
+          {
+            "subject": "paper",
+            "action": "focus",
+            "object": "aspect"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "propose",
+            "count": 7
+          },
+          {
+            "action": "base",
+            "count": 4
+          },
+          {
+            "action": "present",
+            "count": 3
+          },
+          {
+            "action": "introduce",
+            "count": 3
+          },
+          {
+            "action": "show",
+            "count": 3
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "1": {
+        "triples": [
+          {
+            "subject": "graphene",
+            "action": "support",
+            "object": "antenna"
+          },
+          {
+            "subject": "antenna",
+            "action": "incorporate",
+            "object": "form"
+          },
+          {
+            "subject": "metasurface",
+            "action": "induce",
+            "object": "behavior"
+          },
+          {
+            "subject": "layer",
+            "action": "apply",
+            "object": "surface"
+          },
+          {
+            "subject": "approach",
+            "action": "enhance",
+            "object": "gain"
+          },
+          {
+            "subject": "result",
+            "action": "show",
+            "object": "GHz"
+          },
+          {
+            "subject": "we",
+            "action": "know",
+            "object": "System"
+          },
+          {
+            "subject": "g",
+            "action": "compare",
+            "object": "g"
+          },
+          {
+            "subject": "that",
+            "action": "commercialize",
+            "object": "g"
+          },
+          {
+            "subject": "g",
+            "action": "cover",
+            "object": "integration"
+          },
+          {
+            "subject": "I",
+            "action": "\u2019",
+            "object": "issue"
+          },
+          {
+            "subject": "band",
+            "action": "operate",
+            "object": "integration"
+          },
+          {
+            "subject": "filter",
+            "action": "integrate",
+            "object": "type"
+          },
+          {
+            "subject": "filter",
+            "action": "recommend",
+            "object": "application"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "support",
+            "count": 1
+          },
+          {
+            "action": "incorporate",
+            "count": 1
+          },
+          {
+            "action": "induce",
+            "count": 1
+          },
+          {
+            "action": "apply",
+            "count": 1
+          },
+          {
+            "action": "enhance",
+            "count": 1
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      }
+    },
+    "why_influence": "Edges represent enabling or displacing relationships inferred from cluster themes and LLM foresight reasoning."
+  },
+  "scenarios": {
+    "drivers": [
+      {
+        "axis": "Adoption velocity",
+        "description": "2 emerging topic(s) create uncertainty about which technology will cross the chasm first.",
+        "why": "Derived from emerge events\u2014new clusters increase adoption-path uncertainty."
+      },
+      {
+        "axis": "Regulatory clarity",
+        "description": "Policy and standards may accelerate or block deployment of key clusters.",
+        "why": "Default driver when causal events were insufficient\u2014common foresight axis."
+      }
+    ],
+    "axis_labels": {
+      "x": "Adoption velocity",
+      "y": "Regulatory clarity"
+    },
+    "scenarios": {
+      "optimistic": {
+        "tone": "optimistic",
+        "title": "Optimistic",
+        "color": "#22C55E",
+        "narrative": "With high adoption velocity and regulatory clarity,",
+        "why": "Narrative generated for high Adoption velocity \u00d7 high Regulatory clarity quadrant using cluster themes and detected evolution events."
+      },
+      "disruptive": {
+        "tone": "disruptive",
+        "title": "Disruptive",
+        "color": "#EF4444",
+        "narrative": "**Disruptive Scenario:** The rapid adoption of **ber** (biological encryption) and **ghz/bandwidth** technologies, driven by breakthroughs in secure communication systems, will destabilize traditional transport networks. Regulatory lag in clarifying standards for **hybrid** data-security infrastructures will enable unregulated **coverage** monopolies, accelerating competition between **ber**-enabled transport systems and legacy networks. This convergence will fragment global communication ecosystems, prioritizing speed and encryption over interoperability.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 low Regulatory clarity quadrant using cluster themes and detected evolution events."
+      },
+      "constrained": {
+        "tone": "constrained",
+        "title": "Constrained",
+        "color": "#F59E0B",
+        "narrative": "This scenario follows the uncertainty drivers and dominant topic trends in your corpus\u2014technologies with rising publication share gain leverage, while constrained or stagnant futures assume slower adoption or regulatory friction.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 high Regulatory clarity quadrant using cluster themes and detected evolution events."
+      },
+      "stagnant": {
+        "tone": "stagnant",
+        "title": "Stagnant",
+        "color": "#6B7280",
+        "narrative": "Hybrid and coverage might refer to hybrid networks or coverage areas not expanding due to the same issues. So, the scenario could be that the lack of adoption and regulatory issues are preventing the growth of these technologies. For example, new communication systems with",
+        "why": "Narrative generated for low Adoption velocity \u00d7 low Regulatory clarity quadrant using cluster themes and detected evolution events."
+      }
+    },
+    "why": "Four scenarios span the 2\u00d72 space of the two largest uncertainty drivers extracted from causal events.",
+    "impact_trees": {
+      "optimistic": {
+        "tree": {
+          "name": "ber, communication systems, transport, security",
+          "node_type": "main",
+          "why": "Optimistic forecast for ber, communication systems, transport, security: 1 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 2,
+          "branch_count": 1,
+          "scenario": "optimistic",
+          "children": [
+            {
+              "name": "ghz, bandwidth, hybrid, coverage",
+              "node_type": "evolving",
+              "trend": "emerging / maturing",
+              "path_sources": [
+                "cluster",
+                "event"
+              ],
+              "path_count": 2,
+              "why": "Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2020\u20132026). Topic 1 first appears in 2020 with 1 document(s); keyword overlap vs prior windows was zero.",
+              "children": [
+                {
+                  "name": "Stable complement to ber, communication systems, transport, security",
+                  "node_type": "impact",
+                  "why": "ghz, bandwidth, hybrid, coverage maturing\u2014incremental improvements rather than disruption for ber, communication systems, transport, security.",
+                  "children": []
+                },
+                {
+                  "name": "New competitive surface for ber, communication systems, transport, security",
+                  "node_type": "impact",
+                  "why": "ghz, bandwidth, hybrid, coverage emerged (2020)\u2014early mover advantage may reshape ber, communication systems, transport, security's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle ghz, bandwidth, hybrid, coverage with ber, communication systems, transport, security before the trend consolidates.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "ber, communication systems, transport, security",
+        "paths_discovered": 2,
+        "paths_in_scenario": 2,
+        "branch_count": 1,
+        "why": "This Optimistic tree shows 1 branch(es) from 2 prioritized path(s) out of 2 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "disruptive": {
+        "tree": {
+          "name": "ber, communication systems, transport, security",
+          "node_type": "main",
+          "why": "Disruptive forecast for ber, communication systems, transport, security: 1 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 2,
+          "branch_count": 1,
+          "scenario": "disruptive",
+          "children": [
+            {
+              "name": "ghz, bandwidth, hybrid, coverage",
+              "node_type": "evolving",
+              "trend": "emerging / maturing",
+              "path_sources": [
+                "cluster",
+                "event"
+              ],
+              "path_count": 2,
+              "why": "Topic 1 first appears in 2020 with 1 document(s); keyword overlap vs prior windows was zero. Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2020\u20132026).",
+              "children": [
+                {
+                  "name": "New competitive surface for ber, communication systems, transport, security",
+                  "node_type": "impact",
+                  "why": "ghz, bandwidth, hybrid, coverage emerged (2020)\u2014early mover advantage may reshape ber, communication systems, transport, security's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle ghz, bandwidth, hybrid, coverage with ber, communication systems, transport, security before the trend consolidates.",
+                  "children": []
+                },
+                {
+                  "name": "Stable complement to ber, communication systems, transport, security",
+                  "node_type": "impact",
+                  "why": "ghz, bandwidth, hybrid, coverage maturing\u2014incremental improvements rather than disruption for ber, communication systems, transport, security.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "ber, communication systems, transport, security",
+        "paths_discovered": 2,
+        "paths_in_scenario": 2,
+        "branch_count": 1,
+        "why": "This Disruptive tree shows 1 branch(es) from 2 prioritized path(s) out of 2 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "constrained": {
+        "tree": {
+          "name": "ber, communication systems, transport, security",
+          "node_type": "main",
+          "why": "Constrained forecast for ber, communication systems, transport, security: 1 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 1,
+          "branch_count": 1,
+          "scenario": "constrained",
+          "children": [
+            {
+              "name": "ghz, bandwidth, hybrid, coverage",
+              "node_type": "evolving",
+              "trend": "maturing",
+              "path_sources": [
+                "cluster"
+              ],
+              "path_count": 1,
+              "why": "Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2020\u20132026).",
+              "children": [
+                {
+                  "name": "Stable complement to ber, communication systems, transport, security",
+                  "node_type": "impact",
+                  "why": "ghz, bandwidth, hybrid, coverage maturing\u2014incremental improvements rather than disruption for ber, communication systems, transport, security.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "ber, communication systems, transport, security",
+        "paths_discovered": 2,
+        "paths_in_scenario": 1,
+        "branch_count": 1,
+        "why": "This Constrained tree shows 1 branch(es) from 1 prioritized path(s) out of 2 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "stagnant": {
+        "tree": {
+          "name": "ber, communication systems, transport, security",
+          "node_type": "main",
+          "why": "Stagnant forecast for ber, communication systems, transport, security: 1 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 2,
+          "branch_count": 1,
+          "scenario": "stagnant",
+          "children": [
+            {
+              "name": "ghz, bandwidth, hybrid, coverage",
+              "node_type": "evolving",
+              "trend": "emerging / maturing",
+              "path_sources": [
+                "cluster",
+                "event"
+              ],
+              "path_count": 2,
+              "why": "Topic 1 first appears in 2020 with 1 document(s); keyword overlap vs prior windows was zero. Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2020\u20132026).",
+              "children": [
+                {
+                  "name": "New competitive surface for ber, communication systems, transport, security",
+                  "node_type": "impact",
+                  "why": "ghz, bandwidth, hybrid, coverage emerged (2020)\u2014early mover advantage may reshape ber, communication systems, transport, security's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle ghz, bandwidth, hybrid, coverage with ber, communication systems, transport, security before the trend consolidates.",
+                  "children": []
+                },
+                {
+                  "name": "Stable complement to ber, communication systems, transport, security",
+                  "node_type": "impact",
+                  "why": "ghz, bandwidth, hybrid, coverage maturing\u2014incremental improvements rather than disruption for ber, communication systems, transport, security.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "ber, communication systems, transport, security",
+        "paths_discovered": 2,
+        "paths_in_scenario": 2,
+        "branch_count": 1,
+        "why": "This Stagnant tree shows 1 branch(es) from 2 prioritized path(s) out of 2 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      }
+    }
+  },
+  "source_breakdown": {
+    "scholar": 20,
+    "uploaded": 0
+  }
+}

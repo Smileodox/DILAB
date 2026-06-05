@@ -1,0 +1,793 @@
+[
+  {
+    "title": "A Critical Look at Smart Wheelchairs",
+    "abstract": "Research into smart wheelchairs has been conducted for decades, but we have yet to see the widespread use of this technology among full-time wheelchair users. We argue that the main reason for this is that there is a mismatch between research and the actualities of using a powered mobility device in the real world. Based on our own research experiences, we enumerate some of these disparities, and offer some suggestions for where work in smart wheelchairs might focus in the coming years.",
+    "authors": [
+      "Benjamin Narin",
+      "Makenzie Brian",
+      "William D. Smart"
+    ],
+    "published": "2018-09-02",
+    "year": 2018,
+    "arxiv_id": "1809.00291v1",
+    "category": "cs.RO",
+    "source": "arxiv",
+    "text": "A Critical Look at Smart Wheelchairs\n\nResearch into smart wheelchairs has been conducted for decades, but we have yet to see the widespread use of this technology among full-time wheelchair users. We argue that the main reason for this is that there is a mismatch between research and the actualities of using a powered mobility device in the real world. Based on our own research experiences, we enumerate some of these disparities, and offer some suggestions for where work in smart wheelchairs might focus in the coming years."
+  },
+  {
+    "title": "Digital Twin based Automatic Reconfiguration of Robotic Systems in Smart Environments",
+    "abstract": "Robotic systems have become integral to smart environments, enabling applications ranging from urban surveillance and automated agriculture to industrial automation. However, their effective operation in dynamic settings - such as smart cities and precision farming - is challenged by continuously evolving topographies and environmental conditions. Traditional control systems often struggle to adapt quickly, leading to inefficiencies or operational failures. To address this limitation, we propose a novel framework for autonomous and dynamic reconfiguration of robotic controllers using Digital Twin technology. Our approach leverages a virtual replica of the robot's operational environment to simulate and optimize movement trajectories in response to real-world changes. By recalculating paths and control parameters in the Digital Twin and deploying the updated code to the physical robot, our method ensures rapid and reliable adaptation without manual intervention. This work advances the integration of Digital Twins in robotics, offering a scalable solution for enhancing autonomy in smart, dynamic environments.",
+    "authors": [
+      "Angelos Alexopoulos",
+      "Agorakis Bompotas",
+      "Nikitas Rigas Kalogeropoulos",
+      "Panagiotis Kechagias",
+      "Athanasios P. Kalogeras",
+      "Christos Alexakos"
+    ],
+    "published": "2025-10-30",
+    "year": 2025,
+    "arxiv_id": "2511.00094v2",
+    "category": "cs.RO",
+    "source": "arxiv",
+    "text": "Digital Twin based Automatic Reconfiguration of Robotic Systems in Smart Environments\n\nRobotic systems have become integral to smart environments, enabling applications ranging from urban surveillance and automated agriculture to industrial automation. However, their effective operation in dynamic settings - such as smart cities and precision farming - is challenged by continuously evolving topographies and environmental conditions. Traditional control systems often struggle to adapt quickly, leading to inefficiencies or operational failures. To address this limitation, we propose a novel framework for autonomous and dynamic reconfiguration of robotic controllers using Digital Twin technology. Our approach leverages a virtual replica of the robot's operational environment to simulate and optimize movement trajectories in response to real-world changes. By recalculating paths and control parameters in the Digital Twin and deploying the updated code to the physical robot, our method ensures rapid and reliable adaptation without manual intervention. This work advances the integration of Digital Twins in robotics, offering a scalable solution for enhancing autonomy in smart, dynamic environments."
+  },
+  {
+    "title": "AirDraw: Leveraging Smart Watch Motion Sensors for Mobile Human Computer Interactions",
+    "abstract": "Wearable computing is one of the fastest growing technologies today. Smart watches are poised to take over at least of half the wearable devices market in the near future. Smart watch screen size, however, is a limiting factor for growth, as it restricts practical text input. On the other hand, wearable devices have some features, such as consistent user interaction and hands-free, heads-up operations, which pave the way for gesture recognition methods of text entry. This paper proposes a new text input method for smart watches, which utilizes motion sensor data and machine learning approaches to detect letters written in the air by a user. This method is less computationally intensive and less expensive when compared to computer vision approaches. It is also not affected by lighting factors, which limit computer vision solutions. The AirDraw system prototype developed to test this approach is presented. Additionally, experimental results close to 71% accuracy are presented.",
+    "authors": [
+      "Seyed A Sajjadi",
+      "Danial Moazen",
+      "Ani Nahapetian"
+    ],
+    "published": "2017-05-07",
+    "year": 2017,
+    "arxiv_id": "1705.02689v1",
+    "category": "cs.CV",
+    "source": "arxiv",
+    "text": "AirDraw: Leveraging Smart Watch Motion Sensors for Mobile Human Computer Interactions\n\nWearable computing is one of the fastest growing technologies today. Smart watches are poised to take over at least of half the wearable devices market in the near future. Smart watch screen size, however, is a limiting factor for growth, as it restricts practical text input. On the other hand, wearable devices have some features, such as consistent user interaction and hands-free, heads-up operations, which pave the way for gesture recognition methods of text entry. This paper proposes a new text input method for smart watches, which utilizes motion sensor data and machine learning approaches to detect letters written in the air by a user. This method is less computationally intensive and less expensive when compared to computer vision approaches. It is also not affected by lighting factors, which limit computer vision solutions. The AirDraw system prototype developed to test this approach is presented. Additionally, experimental results close to 71% accuracy are presented."
+  },
+  {
+    "title": "SUSTAINABLE Platform: Seamless Smart Farming Integration Towards Agronomy Automation",
+    "abstract": "The global agricultural sector is undergoing a transformative shift, driven by increasing food demands, climate variability and the need for sustainable practices. SUSTAINABLE is a smart farming platform designed to integrate IoT, AI, satellite imaging, and role-based task orchestration to enable efficient, traceable, and sustainable agriculture with a pilot usecase in viticulture. This paper explores current smart agriculture solutions, presents a comparative evaluation, and introduces SUSTAINABLE's key features, including satellite index integration, real-time environmental data, and role-aware task management tailored to Mediterranean vineyards.",
+    "authors": [
+      "Agorakis Bompotas",
+      "Konstantinos Koutras",
+      "Nikitas Rigas Kalogeropoulos",
+      "Panagiotis Kechagias",
+      "Dimitra Gariza",
+      "Athanasios P. Kalogeras",
+      "Christos Alexakos"
+    ],
+    "published": "2025-10-30",
+    "year": 2025,
+    "arxiv_id": "2510.26989v2",
+    "category": "cs.AI",
+    "source": "arxiv",
+    "text": "SUSTAINABLE Platform: Seamless Smart Farming Integration Towards Agronomy Automation\n\nThe global agricultural sector is undergoing a transformative shift, driven by increasing food demands, climate variability and the need for sustainable practices. SUSTAINABLE is a smart farming platform designed to integrate IoT, AI, satellite imaging, and role-based task orchestration to enable efficient, traceable, and sustainable agriculture with a pilot usecase in viticulture. This paper explores current smart agriculture solutions, presents a comparative evaluation, and introduces SUSTAINABLE's key features, including satellite index integration, real-time environmental data, and role-aware task management tailored to Mediterranean vineyards."
+  },
+  {
+    "title": "Detection of False Data Injection Attacks in Smart Grid: A Secure Federated Deep Learning Approach",
+    "abstract": "As an important cyber-physical system (CPS), smart grid is highly vulnerable to cyber attacks. Amongst various types of attacks, false data injection attack (FDIA) proves to be one of the top-priority cyber-related issues and has received increasing attention in recent years. However, so far little attention has been paid to privacy preservation issues in the detection of FDIAs in smart grid. Inspired by federated learning, a FDIA detection method based on secure federated deep learning is proposed in this paper by combining Transformer, federated learning and Paillier cryptosystem. The Transformer, as a detector deployed in edge nodes, delves deep into the connection between individual electrical quantities by using its multi-head self-attention mechanism. By using federated learning framework, our approach utilizes the data from all nodes to collaboratively train a detection model while preserving data privacy by keeping the data locally during training. To improve the security of federated learning, a secure federated learning scheme is designed by combing Paillier cryptosystem with federated learning. Through extensive experiments on the IEEE 14-bus and 118-bus test systems, the effectiveness and superiority of the proposed method are verifed.",
+    "authors": [
+      "Yang Li",
+      "Xinhao Wei",
+      "Yuanzheng Li",
+      "Zhaoyang Dong",
+      "Mohammad Shahidehpour"
+    ],
+    "published": "2022-09-02",
+    "year": 2022,
+    "arxiv_id": "2209.00778v2",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "Detection of False Data Injection Attacks in Smart Grid: A Secure Federated Deep Learning Approach\n\nAs an important cyber-physical system (CPS), smart grid is highly vulnerable to cyber attacks. Amongst various types of attacks, false data injection attack (FDIA) proves to be one of the top-priority cyber-related issues and has received increasing attention in recent years. However, so far little attention has been paid to privacy preservation issues in the detection of FDIAs in smart grid. Inspired by federated learning, a FDIA detection method based on secure federated deep learning is proposed in this paper by combining Transformer, federated learning and Paillier cryptosystem. The Transformer, as a detector deployed in edge nodes, delves deep into the connection between individual electrical quantities by using its multi-head self-attention mechanism. By using federated learning framework, our approach utilizes the data from all nodes to collaboratively train a detection model while preserving data privacy by keeping the data locally during training. To improve the security of federated learning, a secure federated learning scheme is designed by combing Paillier cryptosystem with federated learning. Through extensive experiments on the IEEE 14-bus and 118-bus test systems, the effectiveness and superiority of the proposed method are verifed."
+  },
+  {
+    "title": "Smart Grid Monitoring Using Power Line Modems: Anomaly Detection and Localization",
+    "abstract": "The main subject of this paper is the sensing of network anomalies that span from harmless impedance changes at some network termination to more or less pronounced electrical faults, considering also cable degradation over time. In this paper, we present how to harvest information about such anomalies in distribution grids using high frequency signals spanning from few kHz to several MHz. Given the wide bandwidth considered, we rely on power line modems as network sensors. We firstly discuss the front-end architectures needed to perform the measurement and then introduce two algorithms to detect, classify and locate the different kinds of network anomalies listed above. Simulation results are finally presented. They validate the concept of sensing in smart grids using power line modems and show the efficiency of the proposed algorithms.",
+    "authors": [
+      "Federico Passerini",
+      "Andrea M. Tonello"
+    ],
+    "published": "2018-07-14",
+    "year": 2018,
+    "arxiv_id": "1807.05347v2",
+    "category": "eess.SP",
+    "source": "arxiv",
+    "text": "Smart Grid Monitoring Using Power Line Modems: Anomaly Detection and Localization\n\nThe main subject of this paper is the sensing of network anomalies that span from harmless impedance changes at some network termination to more or less pronounced electrical faults, considering also cable degradation over time. In this paper, we present how to harvest information about such anomalies in distribution grids using high frequency signals spanning from few kHz to several MHz. Given the wide bandwidth considered, we rely on power line modems as network sensors. We firstly discuss the front-end architectures needed to perform the measurement and then introduce two algorithms to detect, classify and locate the different kinds of network anomalies listed above. Simulation results are finally presented. They validate the concept of sensing in smart grids using power line modems and show the efficiency of the proposed algorithms."
+  },
+  {
+    "title": "A Big Data Architecture Design for Smart Grids Based on Random Matrix Theory",
+    "abstract": "Model-based analysis tools, built on assumptions and simplifications, are difficult to handle smart grids with data characterized by 4Vs data. This paper, using random matrix theory (RMT), motivates data-driven tools to perceive the complex grids in highdimension; meanwhile, an architecture with detailed procedures is proposed. In algorithm perspective, the architecture performs a high-dimensional analysis, and compares the findings with RMT predictions to conduct anomaly detections. Mean Spectral Radius (MSR), as a statistical indicator, is defined to reflect the correlations of system data in different dimensions. In management mode perspective, a group-work mode is discussed for smart grids operation. This mode breaks through regional limitations for energy flows and data flows, and makes advanced big data analyses possible. For a specific large-scale zone-dividing system with multiple connected utilities, each site, operating under the group-work mode, is able to work out the regional MSR only with its own measured/simulated data. The large-scale interconnected system, in this way, is naturally decoupled from statistical parameters perspective, rather than from engineering models perspective. Furthermore, a comparative analysis of these distributed MSRs, even with imperceptible different raw data, will produce a contour line to detect the event and locate the source. It demonstrates that the architecture is compatible with the block calculation only using the regional small database; beyond that, this architecture, as a data-driven solution, is sensitive to system situation awareness, and practical for real large-scale interconnected systems. Five case studies and their visualizations validate the designed architecture in various fields of power systems. To our best knowledge, this study is the first attempt to apply big data technology into smart grids.",
+    "authors": [
+      "X. He",
+      "Q. Ai",
+      "C. Qiu",
+      "W. Huang",
+      "L. Piao",
+      "H. Liu"
+    ],
+    "published": "2015-01-29",
+    "year": 2015,
+    "arxiv_id": "1501.07329v4",
+    "category": "stat.ME",
+    "source": "arxiv",
+    "text": "A Big Data Architecture Design for Smart Grids Based on Random Matrix Theory\n\nModel-based analysis tools, built on assumptions and simplifications, are difficult to handle smart grids with data characterized by 4Vs data. This paper, using random matrix theory (RMT), motivates data-driven tools to perceive the complex grids in highdimension; meanwhile, an architecture with detailed procedures is proposed. In algorithm perspective, the architecture performs a high-dimensional analysis, and compares the findings with RMT predictions to conduct anomaly detections. Mean Spectral Radius (MSR), as a statistical indicator, is defined to reflect the correlations of system data in different dimensions. In management mode perspective, a group-work mode is discussed for smart grids operation. This mode breaks through regional limitations for energy flows and data flows, and makes advanced big data analyses possible. For a specific large-scale zone-dividing system with multiple connected utilities, each site, operating under the group-work mode, is able to work out the regional MSR only with its own measured/simulated data. The large-scale interconnected system, in this way, is naturally decoupled from statistical parameters perspective, rather than from engineering models perspective. Furthermore, a comparative analysis of these distributed MSRs, even with imperceptible different raw data, will produce a contour line to detect the event and locate the source. It demonstrates that the architecture is compatible with the block calculation only using the regional small database; beyond that, this architecture, as a data-driven solution, is sensitive to system situation awareness, and practical for real large-scale interconnected systems. Five case studies and their visualizations validate the designed architecture in various fields of power systems. To our best knowledge, this study is the first attempt to apply big data technology into smart grids."
+  },
+  {
+    "title": "Dimensionality Reduction on IoT Monitoring Data of Smart Building for Energy Consumption Forecasting",
+    "abstract": "The Internet of Things (IoT) plays a major role today in smart building infrastructures, from simple smart-home applications, to more sophisticated industrial type installations. The vast amounts of data generated from relevant systems can be processed in different ways revealing important information. This is especially true in the era of edge computing, when advanced data analysis and decision-making is gradually moving to the edge of the network where devices are generally characterised by low computing resources. In this context, one of the emerging main challenges is related to maintaining data analysis accuracy even with less data that can be efficiently handled by low resource devices. The present work focuses on correlation analysis of data retrieved from a pilot IoT network installation monitoring a small smart office by means of environmental and energy consumption sensors. The research motivation was to find statistical correlation between the monitoring variables that will allow the use of machine learning (ML) prediction algorithms for energy consumption reducing input parameters. For this to happen, a series of hypothesis tests for the correlation of three different environmental variables with the energy consumption were carried out. A total of ninety tests were performed, thirty for each pair of variables. In these tests, p-values showed the existence of strong or semi-strong correlation with two environmental variables, and of a weak correlation with a third one. Using the proposed methodology, we manage without examining the entire data set to exclude weak correlated variables while keeping the same score of accuracy.",
+    "authors": [
+      "Konstantinos Koutras",
+      "Agorakis Bompotas",
+      "Constantinos Halkiopoulos",
+      "Athanasios Kalogeras",
+      "Christos Alexakos"
+    ],
+    "published": "2025-06-19",
+    "year": 2025,
+    "arxiv_id": "2506.22468v1",
+    "category": "eess.SP",
+    "source": "arxiv",
+    "text": "Dimensionality Reduction on IoT Monitoring Data of Smart Building for Energy Consumption Forecasting\n\nThe Internet of Things (IoT) plays a major role today in smart building infrastructures, from simple smart-home applications, to more sophisticated industrial type installations. The vast amounts of data generated from relevant systems can be processed in different ways revealing important information. This is especially true in the era of edge computing, when advanced data analysis and decision-making is gradually moving to the edge of the network where devices are generally characterised by low computing resources. In this context, one of the emerging main challenges is related to maintaining data analysis accuracy even with less data that can be efficiently handled by low resource devices. The present work focuses on correlation analysis of data retrieved from a pilot IoT network installation monitoring a small smart office by means of environmental and energy consumption sensors. The research motivation was to find statistical correlation between the monitoring variables that will allow the use of machine learning (ML) prediction algorithms for energy consumption reducing input parameters. For this to happen, a series of hypothesis tests for the correlation of three different environmental variables with the energy consumption were carried out. A total of ninety tests were performed, thirty for each pair of variables. In these tests, p-values showed the existence of strong or semi-strong correlation with two environmental variables, and of a weak correlation with a third one. Using the proposed methodology, we manage without examining the entire data set to exclude weak correlated variables while keeping the same score of accuracy."
+  },
+  {
+    "title": "Nonlinear modeling and preliminary stabilization results for a class of piezoelectric smart composite beams",
+    "abstract": "Existing smart composite piezoelectric beam models in the literature mostly ignore the electro-magnetic interactions and adopt the linear elasticity theory. However, these interactions substantially change the controllability and stabilizability at the high frequencies, and linear models fail to represent and predict the governing dynamics since mechanical nonlinearities are pronounced in certain applications such as energy harvesting. In this paper, first, a consistent variational approach is used by considering nonlinear elasticity theory to derive equations of motion for a single-layer piezoelectric beam with and without the electromagnetic interactions (fully dynamic and electrostatic). This modeling strategy is extended for the three-layer piezoelectric smart composites by adopting the two widely-accepted sandwich beam theories. For both single-layer and three-layer models, the resulting infinite dimensional equations of motion can be formulated in the state-space form. It is observed that the fully dynamic nonlinear models are unbounded boundary control systems (same in linear theory) ${\\bf \\dot y}(t)=(\\mathcal A +\\mathcal N) {\\bf y} (t) + \\mathcal B u(t)$, the electrostatic nonlinear models are unbounded bilinear control systems ${\\bf \\dot y}(t)=(\\mathcal A +\\mathcal N){\\bf y} (t) + (\\mathcal B_1+ \\mathcal B_2 {\\bf y}) u(t)$ in sharp contrast to the linear theory. Finally, we propose $\\mathcal B^*-$type feedback controllers to stabilize the single piezoelectric beam models. The filtered semi-discrete Finite Difference approximations is adopted to illustrate the findings.",
+    "authors": [
+      "Ahmet Ozkan Ozer"
+    ],
+    "published": "2017-09-05",
+    "year": 2017,
+    "arxiv_id": "1709.02258v2",
+    "category": "math.OC",
+    "source": "arxiv",
+    "text": "Nonlinear modeling and preliminary stabilization results for a class of piezoelectric smart composite beams\n\nExisting smart composite piezoelectric beam models in the literature mostly ignore the electro-magnetic interactions and adopt the linear elasticity theory. However, these interactions substantially change the controllability and stabilizability at the high frequencies, and linear models fail to represent and predict the governing dynamics since mechanical nonlinearities are pronounced in certain applications such as energy harvesting. In this paper, first, a consistent variational approach is used by considering nonlinear elasticity theory to derive equations of motion for a single-layer piezoelectric beam with and without the electromagnetic interactions (fully dynamic and electrostatic). This modeling strategy is extended for the three-layer piezoelectric smart composites by adopting the two widely-accepted sandwich beam theories. For both single-layer and three-layer models, the resulting infinite dimensional equations of motion can be formulated in the state-space form. It is observed that the fully dynamic nonlinear models are unbounded boundary control systems (same in linear theory) ${\\bf \\dot y}(t)=(\\mathcal A +\\mathcal N) {\\bf y} (t) + \\mathcal B u(t)$, the electrostatic nonlinear models are unbounded bilinear control systems ${\\bf \\dot y}(t)=(\\mathcal A +\\mathcal N){\\bf y} (t) + (\\mathcal B_1+ \\mathcal B_2 {\\bf y}) u(t)$ in sharp contrast to the linear theory. Finally, we propose $\\mathcal B^*-$type feedback controllers to stabilize the single piezoelectric beam models. The filtered semi-discrete Finite Difference approximations is adopted to illustrate the findings."
+  },
+  {
+    "title": "The role of open data in the transformation to Society 5.0: a resource or a tool for SDG-compliant Smart Living?",
+    "abstract": "Open data are characterized by a number of economic, technological, innovative and social benefits. They are seen as a significant contributor to the city's transformation into Smart City. This is all the more so when the society is on the border of Society 5.0, i.e., shift from the information society to a super smart society or society of imagination takes place. However, the question constantly asked by open data experts is, what are the key factors to be met and satisfied in order to achieve promised benefits? The current trend of openness suggests that the principle of openness should be followed not only by data but also research, education, software, standard, hardware etc., it should become a philosophy to be followed at different levels, in different domains. This should ensure greater transparency, eliminating inequalities, promoting, and achieving sustainable development goals. Therefore, many agendas now have openness as a prerequisite. This chapter deals with concepts of open (government) data and Society 5.0 pointing to their common objectives, providing some success stories of open data use in smart cities or transformation of cities towards smart cities, mapping them to the features of the Society 5.0. We believe that this trend develops a new form of society, which we refer to as \"open data-driven society\". It forms a bridge from Society 4.0 to Society 5.0. This Chapter attempts to identify the role of openness in promoting human-centric Smart Society, Smart city, and Smart Living.",
+    "authors": [
+      "Anastasija Nikiforova",
+      "Miguel Angel Alor Flores",
+      "Miltiadis D. Lytras"
+    ],
+    "published": "2022-06-23",
+    "year": 2022,
+    "arxiv_id": "2206.11784v3",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "The role of open data in the transformation to Society 5.0: a resource or a tool for SDG-compliant Smart Living?\n\nOpen data are characterized by a number of economic, technological, innovative and social benefits. They are seen as a significant contributor to the city's transformation into Smart City. This is all the more so when the society is on the border of Society 5.0, i.e., shift from the information society to a super smart society or society of imagination takes place. However, the question constantly asked by open data experts is, what are the key factors to be met and satisfied in order to achieve promised benefits? The current trend of openness suggests that the principle of openness should be followed not only by data but also research, education, software, standard, hardware etc., it should become a philosophy to be followed at different levels, in different domains. This should ensure greater transparency, eliminating inequalities, promoting, and achieving sustainable development goals. Therefore, many agendas now have openness as a prerequisite. This chapter deals with concepts of open (government) data and Society 5.0 pointing to their common objectives, providing some success stories of open data use in smart cities or transformation of cities towards smart cities, mapping them to the features of the Society 5.0. We believe that this trend develops a new form of society, which we refer to as \"open data-driven society\". It forms a bridge from Society 4.0 to Society 5.0. This Chapter attempts to identify the role of openness in promoting human-centric Smart Society, Smart city, and Smart Living."
+  },
+  {
+    "title": "5G-Enabled Smart Manufacturing -- A booklet by 5G-SMART",
+    "abstract": "In this booklet the most important learnings and key results of 5G-SMART in the area of smart manufacturing are summarized.",
+    "authors": [
+      "Leefke Grosjean",
+      "Krister Landern\u00e4s",
+      "Berna Sayrac",
+      "Ognjen Dobrijevic",
+      "Niels K\u00f6nig",
+      "Davit Harutyunyan",
+      "Dhruvin Patel",
+      "Jose F. Monserrat",
+      "Joachim Sachs"
+    ],
+    "published": "2022-09-21",
+    "year": 2022,
+    "arxiv_id": "2209.10300v1",
+    "category": "cs.NI",
+    "source": "arxiv",
+    "text": "5G-Enabled Smart Manufacturing -- A booklet by 5G-SMART\n\nIn this booklet the most important learnings and key results of 5G-SMART in the area of smart manufacturing are summarized."
+  },
+  {
+    "title": "Semantic Answer Type Prediction using BERT: IAI at the ISWC SMART Task 2020",
+    "abstract": "This paper summarizes our participation in the SMART Task of the ISWC 2020 Challenge. A particular question we are interested in answering is how well neural methods, and specifically transformer models, such as BERT, perform on the answer type prediction task compared to traditional approaches. Our main finding is that coarse-grained answer types can be identified effectively with standard text classification methods, with over 95% accuracy, and BERT can bring only marginal improvements. For fine-grained type detection, on the other hand, BERT clearly outperforms previous retrieval-based approaches.",
+    "authors": [
+      "Vinay Setty",
+      "Krisztian Balog"
+    ],
+    "published": "2021-09-14",
+    "year": 2021,
+    "arxiv_id": "2109.06714v1",
+    "category": "cs.CL",
+    "source": "arxiv",
+    "text": "Semantic Answer Type Prediction using BERT: IAI at the ISWC SMART Task 2020\n\nThis paper summarizes our participation in the SMART Task of the ISWC 2020 Challenge. A particular question we are interested in answering is how well neural methods, and specifically transformer models, such as BERT, perform on the answer type prediction task compared to traditional approaches. Our main finding is that coarse-grained answer types can be identified effectively with standard text classification methods, with over 95% accuracy, and BERT can bring only marginal improvements. For fine-grained type detection, on the other hand, BERT clearly outperforms previous retrieval-based approaches."
+  },
+  {
+    "title": "Design Principles for Architectures of Technical Smart Service Systems",
+    "abstract": "Successful smart services require seamless integration into existing corporate systems and an interdisciplinary approach that aligns the development of both business models and technical architectures. Multi-disciplinarity and cocreating with customers add a layer of complexity but are essential collaboration schemes for validating the value proposition of smart services and building longterm customer loyalty. This paper explores these challenges and distills the design principles for the architectures of technical smart service systems, based on empirical data from architecture projects in two manufacturing companies. These principles contribute to the sparse academic literature on this topic and help practitioners navigate several design trade-offs commonly arising in smart service projects.",
+    "authors": [
+      "Nikola Pascher",
+      "Jochen Wulf"
+    ],
+    "published": "2025-02-13",
+    "year": 2025,
+    "arxiv_id": "2502.09270v1",
+    "category": "stat.CO",
+    "source": "arxiv",
+    "text": "Design Principles for Architectures of Technical Smart Service Systems\n\nSuccessful smart services require seamless integration into existing corporate systems and an interdisciplinary approach that aligns the development of both business models and technical architectures. Multi-disciplinarity and cocreating with customers add a layer of complexity but are essential collaboration schemes for validating the value proposition of smart services and building longterm customer loyalty. This paper explores these challenges and distills the design principles for the architectures of technical smart service systems, based on empirical data from architecture projects in two manufacturing companies. These principles contribute to the sparse academic literature on this topic and help practitioners navigate several design trade-offs commonly arising in smart service projects."
+  },
+  {
+    "title": "Algebraic Error Estimates for the Stochastic Homogenization of Uniformly Parabolic Equations",
+    "abstract": "This article establishes an algebraic error estimate for the stochastic homogenization of fully nonlinear uniformly parabolic equations in stationary ergodic spatio-temporal media. The approach is similar to that of Armstrong and Smart in the study of quantitative stochastic homogenization of uniformly elliptic equations.",
+    "authors": [
+      "Jessica Lin",
+      "Charles K. Smart"
+    ],
+    "published": "2015-01-15",
+    "year": 2015,
+    "arxiv_id": "1501.03718v2",
+    "category": "math.AP",
+    "source": "arxiv",
+    "text": "Algebraic Error Estimates for the Stochastic Homogenization of Uniformly Parabolic Equations\n\nThis article establishes an algebraic error estimate for the stochastic homogenization of fully nonlinear uniformly parabolic equations in stationary ergodic spatio-temporal media. The approach is similar to that of Armstrong and Smart in the study of quantitative stochastic homogenization of uniformly elliptic equations."
+  },
+  {
+    "title": "A blockchain framework for smart mobility",
+    "abstract": "A blockchain framework is presented for addressing the privacy and security challenges associated with the Big Data in smart mobility. It is composed of individuals, companies, government and universities where all the participants collect, own, and control their data. Each participant shares their encrypted data to the blockchain network and can make information transactions with other participants as long as both party agrees to the transaction rules (smart contract) issued by the owner of the data. Data ownership, transparency, auditability and access control are the core principles of the proposed blockchain for smart mobility Big Data.",
+    "authors": [
+      "David Lopez",
+      "Bilal Farooq"
+    ],
+    "published": "2018-09-16",
+    "year": 2018,
+    "arxiv_id": "1809.05785v1",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "A blockchain framework for smart mobility\n\nA blockchain framework is presented for addressing the privacy and security challenges associated with the Big Data in smart mobility. It is composed of individuals, companies, government and universities where all the participants collect, own, and control their data. Each participant shares their encrypted data to the blockchain network and can make information transactions with other participants as long as both party agrees to the transaction rules (smart contract) issued by the owner of the data. Data ownership, transparency, auditability and access control are the core principles of the proposed blockchain for smart mobility Big Data."
+  },
+  {
+    "title": "Mutation Testing for Ethereum Smart Contract",
+    "abstract": "Smart contract is a special program that manages digital assets on blockchain. It is difficult to recover the loss if users make transactions through buggy smart contracts, which cannot be directly fixed. Hence, it is important to ensure the correctness of smart contracts before deploying them. This paper proposes a systematic framework to mutation testing for smart contracts on Ethereum, which is currently the most popular open blockchain for deploying and running smart contracts. Fifteen novel mutation operators have been designed for Ethereum Smart Contracts (ESC), in terms of keyword, global variable/function, variable unit, and error handling. An empirical study on 26 smart contracts in four Ethereum DApps has been conducted to evaluate the effectiveness of mutation testing. The experimental results show that our approach can outperform the coverage-based approach on defect detection rate (96.01% vs. 55.68%). The ESC mutation operators are effective to reveal real defects and we found 117 out of 729 real bug reports are related to our operators. These show the great potential of using mutation testing for quality assurance of ESC.",
+    "authors": [
+      "Haoran Wu",
+      "Xingya Wang",
+      "Jiehui Xu",
+      "Weiqin Zou",
+      "Lingming Zhang",
+      "Zhenyu Chen"
+    ],
+    "published": "2019-08-10",
+    "year": 2019,
+    "arxiv_id": "1908.03707v1",
+    "category": "cs.SE",
+    "source": "arxiv",
+    "text": "Mutation Testing for Ethereum Smart Contract\n\nSmart contract is a special program that manages digital assets on blockchain. It is difficult to recover the loss if users make transactions through buggy smart contracts, which cannot be directly fixed. Hence, it is important to ensure the correctness of smart contracts before deploying them. This paper proposes a systematic framework to mutation testing for smart contracts on Ethereum, which is currently the most popular open blockchain for deploying and running smart contracts. Fifteen novel mutation operators have been designed for Ethereum Smart Contracts (ESC), in terms of keyword, global variable/function, variable unit, and error handling. An empirical study on 26 smart contracts in four Ethereum DApps has been conducted to evaluate the effectiveness of mutation testing. The experimental results show that our approach can outperform the coverage-based approach on defect detection rate (96.01% vs. 55.68%). The ESC mutation operators are effective to reveal real defects and we found 117 out of 729 real bug reports are related to our operators. These show the great potential of using mutation testing for quality assurance of ESC."
+  },
+  {
+    "title": "Crowdsensing and privacy in smart city applications",
+    "abstract": "Smartness in smart cities is achieved by sensing phenomena of interest and using them to make smart decisions. Since the decision makers may not own all the necessary sensing infrastructures, crowdsourced sensing, can help collect important information of the city in near real-time. However, involving people brings of the risk of exposing their private information.This chapter explores crowdsensing in smart city applications and its privacy implications.",
+    "authors": [
+      "Raj Gaire",
+      "Ratan K. Ghosh",
+      "Jongkil Kim",
+      "Alexander Krumpholz",
+      "Rajiv Ranjan",
+      "R. K. Shyamasundar",
+      "Surya Nepal"
+    ],
+    "published": "2018-06-20",
+    "year": 2018,
+    "arxiv_id": "1806.07534v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "Crowdsensing and privacy in smart city applications\n\nSmartness in smart cities is achieved by sensing phenomena of interest and using them to make smart decisions. Since the decision makers may not own all the necessary sensing infrastructures, crowdsourced sensing, can help collect important information of the city in near real-time. However, involving people brings of the risk of exposing their private information.This chapter explores crowdsensing in smart city applications and its privacy implications."
+  },
+  {
+    "title": "Blockchain-based Smart Contracts: A Systematic Mapping Study",
+    "abstract": "An appealing feature of blockchain technology is smart contracts. A smart contract is executable code that runs on top of the blockchain to facilitate, execute and enforce an agreement between untrusted parties without the involvement of a trusted third party. In this paper, we conduct a systematic mapping study to collect all research that is relevant to smart contracts from a technical perspective. The aim of doing so is to identify current research topics and open challenges for future studies in smart contract research. We extract 24 papers from different scientific databases. The results show that about two thirds of the papers focus on identifying and tackling smart contract issues. Four key issues are identified, namely, codifying, security, privacy and performance issues. The rest of the papers focuses on smart contract applications or other smart contract related topics. Research gaps that need to be addressed in future studies are provided.",
+    "authors": [
+      "Maher Alharby",
+      "Aad van Moorsel"
+    ],
+    "published": "2017-10-17",
+    "year": 2017,
+    "arxiv_id": "1710.06372v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "Blockchain-based Smart Contracts: A Systematic Mapping Study\n\nAn appealing feature of blockchain technology is smart contracts. A smart contract is executable code that runs on top of the blockchain to facilitate, execute and enforce an agreement between untrusted parties without the involvement of a trusted third party. In this paper, we conduct a systematic mapping study to collect all research that is relevant to smart contracts from a technical perspective. The aim of doing so is to identify current research topics and open challenges for future studies in smart contract research. We extract 24 papers from different scientific databases. The results show that about two thirds of the papers focus on identifying and tackling smart contract issues. Four key issues are identified, namely, codifying, security, privacy and performance issues. The rest of the papers focuses on smart contract applications or other smart contract related topics. Research gaps that need to be addressed in future studies are provided."
+  },
+  {
+    "title": "When Circular Economy Meets the Smart City Ecosystem: Defining the Smart and Circular City",
+    "abstract": "Smart cities have been a very active research area in the past 20 years, while continuously adapting to new technological advancements and keeping up with the times regarding sustainability and climate change. In this context, there have been numerous proposals to expand the scope of smart cities, focusing on resilience and sustainability, among other aspects, resulting in terms like smart sustainable cities. At the same time, there is an ongoing discussion regarding the degree in which smart cities put people at their centre. In this work, we argue toward expanding the current smart city definition by integrating the circular economy as one of its central pillars and adopting the term smart (and) circular city. We discuss the ways a smart and circular city encompasses both sustainability and smartness in an integral manner, while also being well-positioned to foster novel business activity and models and helping to place citizens at the heart of the smart city. In this sense, we also argue that previous research in smart cities and technologies, such as those related to Industry 4.0, can serve as a cornerstone to implement circular economy activities within cities, at a scale that exceeds current activities that are based on more conventional approaches. We also outline current open challenges in this domain and research questions that still need to be addressed.",
+    "authors": [
+      "Georgios Mylonas",
+      "Athanasios Kalogeras",
+      "Sobah Abbas Petersen",
+      "Luis Mu\u00f1oz",
+      "Ioannis Chatzigiannakis"
+    ],
+    "published": "2024-10-29",
+    "year": 2024,
+    "arxiv_id": "2410.22012v1",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "When Circular Economy Meets the Smart City Ecosystem: Defining the Smart and Circular City\n\nSmart cities have been a very active research area in the past 20 years, while continuously adapting to new technological advancements and keeping up with the times regarding sustainability and climate change. In this context, there have been numerous proposals to expand the scope of smart cities, focusing on resilience and sustainability, among other aspects, resulting in terms like smart sustainable cities. At the same time, there is an ongoing discussion regarding the degree in which smart cities put people at their centre. In this work, we argue toward expanding the current smart city definition by integrating the circular economy as one of its central pillars and adopting the term smart (and) circular city. We discuss the ways a smart and circular city encompasses both sustainability and smartness in an integral manner, while also being well-positioned to foster novel business activity and models and helping to place citizens at the heart of the smart city. In this sense, we also argue that previous research in smart cities and technologies, such as those related to Industry 4.0, can serve as a cornerstone to implement circular economy activities within cities, at a scale that exceeds current activities that are based on more conventional approaches. We also outline current open challenges in this domain and research questions that still need to be addressed."
+  },
+  {
+    "title": "Review of Smart Meter Data Analytics: Applications, Methodologies, and Challenges",
+    "abstract": "The widespread popularity of smart meters enables an immense amount of fine-grained electricity consumption data to be collected. Meanwhile, the deregulation of the power industry, particularly on the delivery side, has continuously been moving forward worldwide. How to employ massive smart meter data to promote and enhance the efficiency and sustainability of the power grid is a pressing issue. To date, substantial works have been conducted on smart meter data analytics. To provide a comprehensive overview of the current research and to identify challenges for future research, this paper conducts an application-oriented review of smart meter data analytics. Following the three stages of analytics, namely, descriptive, predictive and prescriptive analytics, we identify the key application areas as load analysis, load forecasting, and load management. We also review the techniques and methodologies adopted or developed to address each application. In addition, we also discuss some research trends, such as big data issues, novel machine learning technologies, new business models, the transition of energy systems, and data privacy and security.",
+    "authors": [
+      "Yi Wang",
+      "Qixin Chen",
+      "Tao Hong",
+      "Chongqing Kang"
+    ],
+    "published": "2018-02-09",
+    "year": 2018,
+    "arxiv_id": "1802.04117v2",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "Review of Smart Meter Data Analytics: Applications, Methodologies, and Challenges\n\nThe widespread popularity of smart meters enables an immense amount of fine-grained electricity consumption data to be collected. Meanwhile, the deregulation of the power industry, particularly on the delivery side, has continuously been moving forward worldwide. How to employ massive smart meter data to promote and enhance the efficiency and sustainability of the power grid is a pressing issue. To date, substantial works have been conducted on smart meter data analytics. To provide a comprehensive overview of the current research and to identify challenges for future research, this paper conducts an application-oriented review of smart meter data analytics. Following the three stages of analytics, namely, descriptive, predictive and prescriptive analytics, we identify the key application areas as load analysis, load forecasting, and load management. We also review the techniques and methodologies adopted or developed to address each application. In addition, we also discuss some research trends, such as big data issues, novel machine learning technologies, new business models, the transition of energy systems, and data privacy and security."
+  },
+  {
+    "title": "Interactive Restriction of a Mobile Robot's Workspace in a Smart Home Environment",
+    "abstract": "Virtual borders are employed to allow humans the interactive and flexible restriction of their mobile robots' workspaces in human-centered environments, e.g. to exclude privacy zones from the workspace or to indicate certain areas for working. They have been successfully specified in interaction processes using methods from human-robot interaction. However, these methods often lack an expressive feedback system, are restricted to robot's on-board interaction capabilities and require a direct line of sight between human and robot. This negatively affects the user experience and interaction time. Therefore, we investigate the effect of a smart environment on the teaching of virtual borders with the objective to enhance the perceptual and interaction capabilities of a robot. For this purpose, we propose a novel interaction method based on a laser pointer, that leverages a smart home environment in the interaction process. This interaction method comprises an architecture for a smart home environment designed to support the interaction process, the cooperation of human, robot and smart environment in the interaction process, a cooperative perception including stationary and mobile cameras to perceive laser spots and an algorithm to extract virtual borders from multiple camera observations. The results of an experimental evaluation support our hypotheses that our novel interaction method features a significantly shorter interaction time and a better user experience compared to an approach without support of a smart environment. Moreover, the interaction method does not negatively affect other user requirements concerning completeness and accuracy.",
+    "authors": [
+      "Dennis Sprute",
+      "Klaus T\u00f6nnies",
+      "Matthias K\u00f6nig"
+    ],
+    "published": "2019-02-19",
+    "year": 2019,
+    "arxiv_id": "1902.06997v2",
+    "category": "cs.RO",
+    "source": "arxiv",
+    "text": "Interactive Restriction of a Mobile Robot's Workspace in a Smart Home Environment\n\nVirtual borders are employed to allow humans the interactive and flexible restriction of their mobile robots' workspaces in human-centered environments, e.g. to exclude privacy zones from the workspace or to indicate certain areas for working. They have been successfully specified in interaction processes using methods from human-robot interaction. However, these methods often lack an expressive feedback system, are restricted to robot's on-board interaction capabilities and require a direct line of sight between human and robot. This negatively affects the user experience and interaction time. Therefore, we investigate the effect of a smart environment on the teaching of virtual borders with the objective to enhance the perceptual and interaction capabilities of a robot. For this purpose, we propose a novel interaction method based on a laser pointer, that leverages a smart home environment in the interaction process. This interaction method comprises an architecture for a smart home environment designed to support the interaction process, the cooperation of human, robot and smart environment in the interaction process, a cooperative perception including stationary and mobile cameras to perceive laser spots and an algorithm to extract virtual borders from multiple camera observations. The results of an experimental evaluation support our hypotheses that our novel interaction method features a significantly shorter interaction time and a better user experience compared to an approach without support of a smart environment. Moreover, the interaction method does not negatively affect other user requirements concerning completeness and accuracy."
+  },
+  {
+    "title": "PDFS: Practical Data Feed Service for Smart Contracts",
+    "abstract": "Smart contracts are a new paradigm that emerged with the rise of the blockchain technology. They allow untrusting parties to arrange agreements. These agreements are encoded as a programming language code and deployed on a blockchain platform, where all participants execute them and maintain their state. Smart contracts are promising since they are automated and decentralized, thus limiting the involvement of third trusted parties, and can contain monetary transfers. Due to these features, many people believe that smart contracts will revolutionize the way we think of distributed applications, information sharing, financial services, and infrastructures.\n  To release the potential of smart contracts, it is necessary to connect the contracts with the outside world, such that they can understand and use information from other infrastructures. For instance, smart contracts would greatly benefit when they have access to web content. However, there are many challenges associated with realizing such a system, and despite the existence of many proposals, no solution is secure, provides easily-parsable data, introduces small overheads, and is easy to deploy.\n  In this paper we propose PDFS, a practical system for data feeds that combines the advantages of the previous schemes and introduces new functionalities. PDFS extends content providers by including new features for data transparency and consistency validations. This combination provides multiple benefits like content which is easy to parse and efficient authenticity verification without breaking natural trust chains. PDFS keeps content providers auditable, mitigates their malicious activities (like data modification or censorship), and allows them to create a new business model. We show how PDFS is integrated with existing web services, report on a PDFS implementation and present results from conducted case studies and experiments.",
+    "authors": [
+      "Juan Guarnizo",
+      "Pawel Szalachowski"
+    ],
+    "published": "2018-08-20",
+    "year": 2018,
+    "arxiv_id": "1808.06641v2",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "PDFS: Practical Data Feed Service for Smart Contracts\n\nSmart contracts are a new paradigm that emerged with the rise of the blockchain technology. They allow untrusting parties to arrange agreements. These agreements are encoded as a programming language code and deployed on a blockchain platform, where all participants execute them and maintain their state. Smart contracts are promising since they are automated and decentralized, thus limiting the involvement of third trusted parties, and can contain monetary transfers. Due to these features, many people believe that smart contracts will revolutionize the way we think of distributed applications, information sharing, financial services, and infrastructures.\n  To release the potential of smart contracts, it is necessary to connect the contracts with the outside world, such that they can understand and use information from other infrastructures. For instance, smart contracts would greatly benefit when they have access to web content. However, there are many challenges associated with realizing such a system, and despite the existence of many proposals, no solution is secure, provides easily-parsable data, introduces small overheads, and is easy to deploy.\n  In this paper we propose PDFS, a practical system for data feeds that combines the advantages of the previous schemes and introduces new functionalities. PDFS extends content providers by including new features for data transparency and consistency validations. This combination provides multiple benefits like content which is easy to parse and efficient authenticity verification without breaking natural trust chains. PDFS keeps content providers auditable, mitigates their malicious activities (like data modification or censorship), and allows them to create a new business model. We show how PDFS is integrated with existing web services, report on a PDFS implementation and present results from conducted case studies and experiments."
+  },
+  {
+    "title": "Wireless Communications and Networking Technologies for Smart Grid: Paradigms and Challenges",
+    "abstract": "Smart grid, regarded as the next generation power grid, uses two-way flows of electricity and information to create a widely distributed automated energy delivery network. In this work we present our vision on smart grid from the perspective of wireless communications and networking technologies. We present wireless communication and networking paradigms for four typical scenarios in the future smart grid and also point out the research challenges of the wireless communication and networking technologies used in smart grid",
+    "authors": [
+      "Xi Fang",
+      "Dejun Yang",
+      "Guoliang Xue"
+    ],
+    "published": "2011-12-06",
+    "year": 2011,
+    "arxiv_id": "1112.1158v1",
+    "category": "cs.NI",
+    "source": "arxiv",
+    "text": "Wireless Communications and Networking Technologies for Smart Grid: Paradigms and Challenges\n\nSmart grid, regarded as the next generation power grid, uses two-way flows of electricity and information to create a widely distributed automated energy delivery network. In this work we present our vision on smart grid from the perspective of wireless communications and networking technologies. We present wireless communication and networking paradigms for four typical scenarios in the future smart grid and also point out the research challenges of the wireless communication and networking technologies used in smart grid"
+  },
+  {
+    "title": "Short range networks of wearables for safer mobility in smart cities",
+    "abstract": "Ensuring safe and efficient mobility is a critical issue for smart city operators. Increasing safety not only reduces the likelihood of road injuries and fatalities, but also reduces traffic congestion and disruptions caused by accidents, increasing efficiency. While new vehicles are increasingly equipped with semi-automation, the added costs will initially limit the penetration rate of these systems. An inexpensive way to replace or augment these systems is to create networks of wearables (smart glasses, watches) that exchange positional and path data at a very fast rate between all users, identify collision risks and feedback collision resolution information to all users in an intuitive way through their smart glasses.",
+    "authors": [
+      "Kapil Sharma",
+      "Christian Claudel"
+    ],
+    "published": "2016-06-05",
+    "year": 2016,
+    "arxiv_id": "1606.01479v1",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "Short range networks of wearables for safer mobility in smart cities\n\nEnsuring safe and efficient mobility is a critical issue for smart city operators. Increasing safety not only reduces the likelihood of road injuries and fatalities, but also reduces traffic congestion and disruptions caused by accidents, increasing efficiency. While new vehicles are increasingly equipped with semi-automation, the added costs will initially limit the penetration rate of these systems. An inexpensive way to replace or augment these systems is to create networks of wearables (smart glasses, watches) that exchange positional and path data at a very fast rate between all users, identify collision risks and feedback collision resolution information to all users in an intuitive way through their smart glasses."
+  },
+  {
+    "title": "Demand-Side Scheduling Based on Multi-Agent Deep Actor-Critic Learning for Smart Grids",
+    "abstract": "We consider the problem of demand-side energy management, where each household is equipped with a smart meter that is able to schedule home appliances online. The goal is to minimize the overall cost under a real-time pricing scheme. While previous works have introduced centralized approaches in which the scheduling algorithm has full observability, we propose the formulation of a smart grid environment as a Markov game. Each household is a decentralized agent with partial observability, which allows scalability and privacy-preservation in a realistic setting. The grid operator produces a price signal that varies with the energy demand. We propose an extension to a multi-agent, deep actor-critic algorithm to address partial observability and the perceived non-stationarity of the environment from the agent's viewpoint. This algorithm learns a centralized critic that coordinates training of decentralized agents. Our approach thus uses centralized learning but decentralized execution. Simulation results show that our online deep reinforcement learning method can reduce both the peak-to-average ratio of total energy consumed and the cost of electricity for all households based purely on instantaneous observations and a price signal.",
+    "authors": [
+      "Joash Lee",
+      "Wenbo Wang",
+      "Dusit Niyato"
+    ],
+    "published": "2020-05-05",
+    "year": 2020,
+    "arxiv_id": "2005.01979v2",
+    "category": "cs.LG",
+    "source": "arxiv",
+    "text": "Demand-Side Scheduling Based on Multi-Agent Deep Actor-Critic Learning for Smart Grids\n\nWe consider the problem of demand-side energy management, where each household is equipped with a smart meter that is able to schedule home appliances online. The goal is to minimize the overall cost under a real-time pricing scheme. While previous works have introduced centralized approaches in which the scheduling algorithm has full observability, we propose the formulation of a smart grid environment as a Markov game. Each household is a decentralized agent with partial observability, which allows scalability and privacy-preservation in a realistic setting. The grid operator produces a price signal that varies with the energy demand. We propose an extension to a multi-agent, deep actor-critic algorithm to address partial observability and the perceived non-stationarity of the environment from the agent's viewpoint. This algorithm learns a centralized critic that coordinates training of decentralized agents. Our approach thus uses centralized learning but decentralized execution. Simulation results show that our online deep reinforcement learning method can reduce both the peak-to-average ratio of total energy consumed and the cost of electricity for all households based purely on instantaneous observations and a price signal."
+  },
+  {
+    "title": "On Computational Infraestruture Requirements to Smart and Autonomic Cities Framework",
+    "abstract": "Smart cities are an actual trend being pursued by research that, fundamentally, tries to improve city's management on behalf of a better human quality of live. This paper proposes a new autonomic complementary approach for smart cities management. It is argued that smart city management systems with autonomic characteristics will improve and facilitate management functionalities in general. A framework is also presented as use case considering specific application scenarios like smart-health, smart-grid, smart-environment and smart-streets.",
+    "authors": [
+      "Romildo Bezerra",
+      "Flavia Nascimento",
+      "Joberto Martins"
+    ],
+    "published": "2018-07-21",
+    "year": 2018,
+    "arxiv_id": "1807.08165v1",
+    "category": "cs.NI",
+    "source": "arxiv",
+    "text": "On Computational Infraestruture Requirements to Smart and Autonomic Cities Framework\n\nSmart cities are an actual trend being pursued by research that, fundamentally, tries to improve city's management on behalf of a better human quality of live. This paper proposes a new autonomic complementary approach for smart cities management. It is argued that smart city management systems with autonomic characteristics will improve and facilitate management functionalities in general. A framework is also presented as use case considering specific application scenarios like smart-health, smart-grid, smart-environment and smart-streets."
+  },
+  {
+    "title": "Smart Microgrids: Overview and Outlook",
+    "abstract": "The idea of changing our energy system from a hierarchical design into a set of nearly independent microgrids becomes feasible with the availability of small renewable energy generators. The smart microgrid concept comes with several challenges in research and engineering targeting load balancing, pricing, consumer integration and home automation. In this paper we first provide an overview on these challenges and present approaches that target the problems identified. While there exist promising algorithms for the particular field, we see a missing integration which specifically targets smart microgrids. Therefore, we propose an architecture that integrates the presented approaches and defines interfaces between the identified components such as generators, storage, smart and \\dq{dumb} devices.",
+    "authors": [
+      "Anita Sobe",
+      "Wilfried Elmenreich"
+    ],
+    "published": "2013-04-14",
+    "year": 2013,
+    "arxiv_id": "1304.3944v1",
+    "category": "cs.ET",
+    "source": "arxiv",
+    "text": "Smart Microgrids: Overview and Outlook\n\nThe idea of changing our energy system from a hierarchical design into a set of nearly independent microgrids becomes feasible with the availability of small renewable energy generators. The smart microgrid concept comes with several challenges in research and engineering targeting load balancing, pricing, consumer integration and home automation. In this paper we first provide an overview on these challenges and present approaches that target the problems identified. While there exist promising algorithms for the particular field, we see a missing integration which specifically targets smart microgrids. Therefore, we propose an architecture that integrates the presented approaches and defines interfaces between the identified components such as generators, storage, smart and \\dq{dumb} devices."
+  },
+  {
+    "title": "State of the Art Report for Smart Habitat for Older Persons -- Working Group 3 -- Healthcare",
+    "abstract": "This document reports the State of the Art of science and practice on three topics related to smart and healthy ageing at home: furniture and habitats, Information and Communication Technologies (ICT), and healthcare. The reports were prepared by the working groups of COST Action CA16226, Sheld-on. Sheld-on is a network of researchers, user representatives, industry members, and other stakeholders. The three domains covered in this report were the areas of interest for three working groups from the COST Action. The aim of each working group was to assess the State of the Art for disciplinary understanding, identification of advances in smart furniture and habitat, products, industries and success stories. The findings on these topics of all working groups are compiled here. Due to the different backgrounds of the members of each of the working groups, the document is divided in three separate parts that can be considered as separate State of the Art reports. The goal of this document is to be used as input in the fourth working group of Sheld-on COST Action: Solutions for Ageing Well at Home, in the Community, and at Work, where experts from the three different domains converge to a single working group in order to achieve the action objectives.",
+    "authors": [
+      "Birgitta Langhammer",
+      "Oscar Martinez Mozos",
+      "Ana Mendes",
+      "Joana Madureira",
+      "Lina Seduikyte",
+      "Martin Weigl",
+      "Heidi Salonen",
+      "Veronika Kotradyova",
+      "Ondrej Krejcar",
+      "Sarmite Mikulioniene",
+      "Willeke van Staalduinen",
+      "Carina Dantas",
+      "Petra Maresova",
+      "Willeke van Staalduinen",
+      "Carina Dantas",
+      "Barakovic Sabina",
+      "Barakovic Husic Jasmina",
+      "Jonathan Gomez-Raja"
+    ],
+    "published": "2026-03-11",
+    "year": 2026,
+    "arxiv_id": "2604.03255v1",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "State of the Art Report for Smart Habitat for Older Persons -- Working Group 3 -- Healthcare\n\nThis document reports the State of the Art of science and practice on three topics related to smart and healthy ageing at home: furniture and habitats, Information and Communication Technologies (ICT), and healthcare. The reports were prepared by the working groups of COST Action CA16226, Sheld-on. Sheld-on is a network of researchers, user representatives, industry members, and other stakeholders. The three domains covered in this report were the areas of interest for three working groups from the COST Action. The aim of each working group was to assess the State of the Art for disciplinary understanding, identification of advances in smart furniture and habitat, products, industries and success stories. The findings on these topics of all working groups are compiled here. Due to the different backgrounds of the members of each of the working groups, the document is divided in three separate parts that can be considered as separate State of the Art reports. The goal of this document is to be used as input in the fourth working group of Sheld-on COST Action: Solutions for Ageing Well at Home, in the Community, and at Work, where experts from the three different domains converge to a single working group in order to achieve the action objectives."
+  },
+  {
+    "title": "Cyber Security in Smart Manufacturing (Threats, Landscapes Challenges)",
+    "abstract": "Industry 4.0 is a blend of the hyper-connected digital industry within two world of Information Technology (IT) and Operational Technology (OT). With this amalgamate opportunity, smart manufacturing involves production assets with the manufacturing equipment having its own intelligence, while the system-wide intelligence is provided by the cyber layer. However Smart manufacturing now becomes one of the prime targets of cyber threats due to vulnerabilities in the existing process of operation. Since smart manufacturing covers a vast area of production industries from cyber physical system to additive manufacturing, to autonomous vehicles, to cloud based IIoT (Industrial IoT), to robotic production, cyber threat stands out with this regard questioning about how to connect manufacturing resources by network, how to integrate a whole process chain for a factory production etc. Cybersecurity confidentiality, integrity and availability expose their essential existence for the proper operational thread model known as digital thread ensuring secure manufacturing. In this work, a literature survey is presented from the existing threat models, attack vectors and future challenges over the digital thread of smart manufacturing.",
+    "authors": [
+      "Rahat Masum"
+    ],
+    "published": "2023-04-20",
+    "year": 2023,
+    "arxiv_id": "2304.10180v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "Cyber Security in Smart Manufacturing (Threats, Landscapes Challenges)\n\nIndustry 4.0 is a blend of the hyper-connected digital industry within two world of Information Technology (IT) and Operational Technology (OT). With this amalgamate opportunity, smart manufacturing involves production assets with the manufacturing equipment having its own intelligence, while the system-wide intelligence is provided by the cyber layer. However Smart manufacturing now becomes one of the prime targets of cyber threats due to vulnerabilities in the existing process of operation. Since smart manufacturing covers a vast area of production industries from cyber physical system to additive manufacturing, to autonomous vehicles, to cloud based IIoT (Industrial IoT), to robotic production, cyber threat stands out with this regard questioning about how to connect manufacturing resources by network, how to integrate a whole process chain for a factory production etc. Cybersecurity confidentiality, integrity and availability expose their essential existence for the proper operational thread model known as digital thread ensuring secure manufacturing. In this work, a literature survey is presented from the existing threat models, attack vectors and future challenges over the digital thread of smart manufacturing."
+  },
+  {
+    "title": "Towards Smart Healthcare: Challenges and Opportunities in IoT and ML",
+    "abstract": "The COVID-19 pandemic and other ongoing health crises have underscored the need for prompt healthcare services worldwide. The traditional healthcare system, centered around hospitals and clinics, has proven inadequate in the face of such challenges. Intelligent wearable devices, a key part of modern healthcare, leverage Internet of Things technology to collect extensive data related to the environment as well as psychological, behavioral, and physical health. However, managing the substantial data generated by these wearables and other IoT devices in healthcare poses a significant challenge, potentially impeding decision-making processes. Recent interest has grown in applying data analytics for extracting information, gaining insights, and making predictions. Additionally, machine learning, known for addressing various big data and networking challenges, has seen increased implementation to enhance IoT systems in healthcare. This chapter focuses exclusively on exploring the hurdles encountered when integrating ML methods into the IoT healthcare sector. It offers a comprehensive summary of current research challenges and potential opportunities, categorized into three scenarios: IoT-based, ML-based, and the implementation of machine learning methodologies in the IoT-based healthcare industry. This compilation will assist future researchers, healthcare professionals, and government agencies by offering valuable insights into recent smart healthcare advancements.",
+    "authors": [
+      "Munshi Saifuzzaman",
+      "Tajkia Nuri Ananna"
+    ],
+    "published": "2023-12-09",
+    "year": 2023,
+    "arxiv_id": "2312.05530v2",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "Towards Smart Healthcare: Challenges and Opportunities in IoT and ML\n\nThe COVID-19 pandemic and other ongoing health crises have underscored the need for prompt healthcare services worldwide. The traditional healthcare system, centered around hospitals and clinics, has proven inadequate in the face of such challenges. Intelligent wearable devices, a key part of modern healthcare, leverage Internet of Things technology to collect extensive data related to the environment as well as psychological, behavioral, and physical health. However, managing the substantial data generated by these wearables and other IoT devices in healthcare poses a significant challenge, potentially impeding decision-making processes. Recent interest has grown in applying data analytics for extracting information, gaining insights, and making predictions. Additionally, machine learning, known for addressing various big data and networking challenges, has seen increased implementation to enhance IoT systems in healthcare. This chapter focuses exclusively on exploring the hurdles encountered when integrating ML methods into the IoT healthcare sector. It offers a comprehensive summary of current research challenges and potential opportunities, categorized into three scenarios: IoT-based, ML-based, and the implementation of machine learning methodologies in the IoT-based healthcare industry. This compilation will assist future researchers, healthcare professionals, and government agencies by offering valuable insights into recent smart healthcare advancements."
+  },
+  {
+    "title": "Game Theoretic Methods for the Smart Grid",
+    "abstract": "The future smart grid is envisioned as a large-scale cyber-physical system encompassing advanced power, communications, control, and computing technologies. In order to accommodate these technologies, it will have to build on solid mathematical tools that can ensure an efficient and robust operation of such heterogeneous and large-scale cyber-physical systems. In this context, this paper is an overview on the potential of applying game theory for addressing relevant and timely open problems in three emerging areas that pertain to the smart grid: micro-grid systems, demand-side management, and communications. In each area, the state-of-the-art contributions are gathered and a systematic treatment, using game theory, of some of the most relevant problems for future power systems is provided. Future opportunities for adopting game theoretic methodologies in the transition from legacy systems toward smart and intelligent grids are also discussed. In a nutshell, this article provides a comprehensive account of the application of game theory in smart grid systems tailored to the interdisciplinary characteristics of these systems that integrate components from power systems, networking, communications, and control.",
+    "authors": [
+      "Walid Saad",
+      "Zhu Han",
+      "H. Vincent Poor",
+      "Tamer Ba\u015far"
+    ],
+    "published": "2012-02-02",
+    "year": 2012,
+    "arxiv_id": "1202.0452v1",
+    "category": "cs.IT",
+    "source": "arxiv",
+    "text": "Game Theoretic Methods for the Smart Grid\n\nThe future smart grid is envisioned as a large-scale cyber-physical system encompassing advanced power, communications, control, and computing technologies. In order to accommodate these technologies, it will have to build on solid mathematical tools that can ensure an efficient and robust operation of such heterogeneous and large-scale cyber-physical systems. In this context, this paper is an overview on the potential of applying game theory for addressing relevant and timely open problems in three emerging areas that pertain to the smart grid: micro-grid systems, demand-side management, and communications. In each area, the state-of-the-art contributions are gathered and a systematic treatment, using game theory, of some of the most relevant problems for future power systems is provided. Future opportunities for adopting game theoretic methodologies in the transition from legacy systems toward smart and intelligent grids are also discussed. In a nutshell, this article provides a comprehensive account of the application of game theory in smart grid systems tailored to the interdisciplinary characteristics of these systems that integrate components from power systems, networking, communications, and control."
+  },
+  {
+    "title": "A faster algorithm for efficient longest common substring calculation for non-parametric entropy estimation in sequential data",
+    "abstract": "Non-parametric entropy estimation on sequential data is a fundamental tool in signal processing, capturing information flow within or between processes to measure predictability, redundancy, or similarity. Methods based on longest common substrings (LCS) provide a non-parametric estimate of typical set size but are often inefficient, limiting use on real-world data. We introduce LCSFinder, a new algorithm that improves the worst-case performance of LCS calculations from cubic to log-linear time. Although built on standard algorithmic constructs - including sorted suffix arrays and persistent binary search trees - the details require care to provide the matches required for entropy estimation on dynamically growing sequences. We demonstrate that LCSFinder achieves dramatic speedups over existing implementations on real and simulated data, enabling entropy estimation at scales previously infeasible in practical signal processing.",
+    "authors": [
+      "Bridget Smart",
+      "Max Ward",
+      "Matthew Roughan"
+    ],
+    "published": "2025-10-15",
+    "year": 2025,
+    "arxiv_id": "2510.13330v1",
+    "category": "cs.DS",
+    "source": "arxiv",
+    "text": "A faster algorithm for efficient longest common substring calculation for non-parametric entropy estimation in sequential data\n\nNon-parametric entropy estimation on sequential data is a fundamental tool in signal processing, capturing information flow within or between processes to measure predictability, redundancy, or similarity. Methods based on longest common substrings (LCS) provide a non-parametric estimate of typical set size but are often inefficient, limiting use on real-world data. We introduce LCSFinder, a new algorithm that improves the worst-case performance of LCS calculations from cubic to log-linear time. Although built on standard algorithmic constructs - including sorted suffix arrays and persistent binary search trees - the details require care to provide the matches required for entropy estimation on dynamically growing sequences. We demonstrate that LCSFinder achieves dramatic speedups over existing implementations on real and simulated data, enabling entropy estimation at scales previously infeasible in practical signal processing."
+  },
+  {
+    "title": "An Empirical Study into the Success of Listed Smart Contracts in Ethereum",
+    "abstract": "Since it takes time and effort to put a new product or service on the market, one would like to predict whether it will be a success. In general this is not possible, but it is possible to follow best practices in order to maximise the chance of success. A smart contract is intended to encode business logic and is therefore at the heart of every new business on the Ethereum blockchain. We have investigated how to measure the success of smart contracts, and whether successful smart contracts have characteristics that less successful smart contracts lack. The appearance of a smart contract on a listing website such as Etherscan or StateoftheDapps is such a characteristic. In this paper, we present a three-pronged analysis of the relative success of listed smart contracts. First, we have used statistical analysis on the publicly visible transaction history of the Ethereum blockchain to determine that listed contracts are significantly more successful than their unlisted counterparts. Next, we have conducted a survey among more than 200 developers via an anonymous online survey about their experience with the listing process. A significant majority of respondents do not believe that listing a contract itself contributes to its success, but they believe that the extra attention that is typically paid in tandem with the listing process does contribute. Finally, based on the respondents' answers, we have drafted 10 recommendations for developers and validated them by submitting them to an international panel of experts.",
+    "authors": [
+      "Pieter Hartel",
+      "Ivan Homoliak",
+      "Dani\u00ebl Reijsbergen"
+    ],
+    "published": "2019-08-30",
+    "year": 2019,
+    "arxiv_id": "1908.11597v1",
+    "category": "cs.SE",
+    "source": "arxiv",
+    "text": "An Empirical Study into the Success of Listed Smart Contracts in Ethereum\n\nSince it takes time and effort to put a new product or service on the market, one would like to predict whether it will be a success. In general this is not possible, but it is possible to follow best practices in order to maximise the chance of success. A smart contract is intended to encode business logic and is therefore at the heart of every new business on the Ethereum blockchain. We have investigated how to measure the success of smart contracts, and whether successful smart contracts have characteristics that less successful smart contracts lack. The appearance of a smart contract on a listing website such as Etherscan or StateoftheDapps is such a characteristic. In this paper, we present a three-pronged analysis of the relative success of listed smart contracts. First, we have used statistical analysis on the publicly visible transaction history of the Ethereum blockchain to determine that listed contracts are significantly more successful than their unlisted counterparts. Next, we have conducted a survey among more than 200 developers via an anonymous online survey about their experience with the listing process. A significant majority of respondents do not believe that listing a contract itself contributes to its success, but they believe that the extra attention that is typically paid in tandem with the listing process does contribute. Finally, based on the respondents' answers, we have drafted 10 recommendations for developers and validated them by submitting them to an international panel of experts."
+  },
+  {
+    "title": "Robust Worst-Case Analysis of Demand-Side Management in Smart Grids",
+    "abstract": "Demand-side management presents significant benefits in reducing the energy load in smart grids by balancing consumption demands or including energy generation and/or storage devices in the user's side. These techniques coordinate the energy load so that users minimize their monetary expenditure. However, these methods require accurate predictions in the energy consumption profiles, which make them inflexible to real demand variations. In this paper we propose a realistic model that accounts for uncertainty in these variations and calculates a robust price for all users in the smart grid. We analyze the existence of solutions for this novel scenario, propose convergent distributed algorithms to find them, and perform simulations considering energy expenditure. We show that this model can effectively reduce the monetary expenses for all users in a real-time market, while at the same time it provides a reliable production cost estimate to the energy supplier.",
+    "authors": [
+      "Javier Zazo",
+      "Santiago Zazo",
+      "Sergio Valcarcel Macua"
+    ],
+    "published": "2016-04-26",
+    "year": 2016,
+    "arxiv_id": "1604.07576v2",
+    "category": "math.OC",
+    "source": "arxiv",
+    "text": "Robust Worst-Case Analysis of Demand-Side Management in Smart Grids\n\nDemand-side management presents significant benefits in reducing the energy load in smart grids by balancing consumption demands or including energy generation and/or storage devices in the user's side. These techniques coordinate the energy load so that users minimize their monetary expenditure. However, these methods require accurate predictions in the energy consumption profiles, which make them inflexible to real demand variations. In this paper we propose a realistic model that accounts for uncertainty in these variations and calculates a robust price for all users in the smart grid. We analyze the existence of solutions for this novel scenario, propose convergent distributed algorithms to find them, and perform simulations considering energy expenditure. We show that this model can effectively reduce the monetary expenses for all users in a real-time market, while at the same time it provides a reliable production cost estimate to the energy supplier."
+  },
+  {
+    "title": "Application of Fuzzy Logic in Design of Smart Washing Machine",
+    "abstract": "Washing machine is of great domestic necessity as it frees us from the burden of washing our clothes and saves ample of our time. This paper will cover the aspect of designing and developing of Fuzzy Logic based, Smart Washing Machine. The regular washing machine (timer based) makes use of multi-turned timer based start-stop mechanism which is mechanical as is prone to breakage. In addition to its starting and stopping issues, the mechanical timers are not efficient with respect of maintenance and electricity usage. Recent developments have shown that merger of digital electronics in optimal functionality of this machine is possible and nowadays in practice. A number of international renowned companies have developed the machine with the introduction of smart artificial intelligence. Such a machine makes use of sensors and smartly calculates the amount of run-time (washing time) for the main machine motor. Realtime calculations and processes are also catered in optimizing the run-time of the machine. The obvious result is smart time management, better economy of electricity and efficiency of work. This paper deals with the indigenization of FLC (Fuzzy Logic Controller) based Washing Machine, which is capable of automating the inputs and getting the desired output (wash-time).",
+    "authors": [
+      "Rao Farhat Masood"
+    ],
+    "published": "2017-01-04",
+    "year": 2017,
+    "arxiv_id": "1701.01654v2",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Application of Fuzzy Logic in Design of Smart Washing Machine\n\nWashing machine is of great domestic necessity as it frees us from the burden of washing our clothes and saves ample of our time. This paper will cover the aspect of designing and developing of Fuzzy Logic based, Smart Washing Machine. The regular washing machine (timer based) makes use of multi-turned timer based start-stop mechanism which is mechanical as is prone to breakage. In addition to its starting and stopping issues, the mechanical timers are not efficient with respect of maintenance and electricity usage. Recent developments have shown that merger of digital electronics in optimal functionality of this machine is possible and nowadays in practice. A number of international renowned companies have developed the machine with the introduction of smart artificial intelligence. Such a machine makes use of sensors and smartly calculates the amount of run-time (washing time) for the main machine motor. Realtime calculations and processes are also catered in optimizing the run-time of the machine. The obvious result is smart time management, better economy of electricity and efficiency of work. This paper deals with the indigenization of FLC (Fuzzy Logic Controller) based Washing Machine, which is capable of automating the inputs and getting the desired output (wash-time)."
+  },
+  {
+    "title": "A Framework for Detecting and Translating User Behavior from Smart Meter Data",
+    "abstract": "The European adoption of smart electricity meters triggers the developments of new value-added service for smart energy and optimal consumption. Recently, several algorithms and tools have been built to analyze smart meter's data. This paper introduces an open framework and prototypes for detecting and presenting user behavior from its smart meter power consumption data. The framework aims at presenting the detected user behavior in natural language reports. In order to validate the proposed framework, an experiment has been performed and the results have been presented.",
+    "authors": [
+      "Egon Kidmose",
+      "Emad Ebeid",
+      "Rune Hylsberg Jacobsen"
+    ],
+    "published": "2018-06-13",
+    "year": 2018,
+    "arxiv_id": "1807.03111v1",
+    "category": "cs.OH",
+    "source": "arxiv",
+    "text": "A Framework for Detecting and Translating User Behavior from Smart Meter Data\n\nThe European adoption of smart electricity meters triggers the developments of new value-added service for smart energy and optimal consumption. Recently, several algorithms and tools have been built to analyze smart meter's data. This paper introduces an open framework and prototypes for detecting and presenting user behavior from its smart meter power consumption data. The framework aims at presenting the detected user behavior in natural language reports. In order to validate the proposed framework, an experiment has been performed and the results have been presented."
+  },
+  {
+    "title": "Increasing Smart Meter Privacy Through Energy Harvesting and Storage Devices",
+    "abstract": "Smart meters are key elements for the operation of smart grids. By providing near realtime information on the energy consumption of individual users, smart meters increase the efficiency in generation, distribution and storage of energy in a smart grid. The ability of the utility provider to track users energy consumption inevitably leads to important threats to privacy. In this paper, privacy in a smart metering system is studied from an information theoretic perspective in the presence of energy harvesting and storage units. It is shown that energy harvesting provides increased privacy by diversifying the energy source, while a storage device can be used to increase both the energy efficiency and the privacy of the user. For given input load and energy harvesting rates, it is shown that there exists a trade-off between the information leakage rate, which is used to measure the privacy of the user, and the wasted energy rate, which is a measure of the energy-efficiency. The impact of the energy harvesting rate and the size of the storage device on this trade-off is also studied.",
+    "authors": [
+      "Onur Tan",
+      "Deniz Gunduz",
+      "H. Vincent Poor"
+    ],
+    "published": "2013-05-03",
+    "year": 2013,
+    "arxiv_id": "1305.0735v1",
+    "category": "cs.IT",
+    "source": "arxiv",
+    "text": "Increasing Smart Meter Privacy Through Energy Harvesting and Storage Devices\n\nSmart meters are key elements for the operation of smart grids. By providing near realtime information on the energy consumption of individual users, smart meters increase the efficiency in generation, distribution and storage of energy in a smart grid. The ability of the utility provider to track users energy consumption inevitably leads to important threats to privacy. In this paper, privacy in a smart metering system is studied from an information theoretic perspective in the presence of energy harvesting and storage units. It is shown that energy harvesting provides increased privacy by diversifying the energy source, while a storage device can be used to increase both the energy efficiency and the privacy of the user. For given input load and energy harvesting rates, it is shown that there exists a trade-off between the information leakage rate, which is used to measure the privacy of the user, and the wasted energy rate, which is a measure of the energy-efficiency. The impact of the energy harvesting rate and the size of the storage device on this trade-off is also studied."
+  },
+  {
+    "title": "Smart Contracts for Multiagent Plan Execution in Untrusted Cyber-physical Systems",
+    "abstract": "Intelligent Cyber-physical systems can be modelled as multi-agent systems with planning capability to impart adaptivity for changing contexts. In such multi-agent systems, the protocol for plan execution must result in the proper completion and ordering of actions in spite of their distributed execution. However, in untrusted scenarios, there is a possibility of agents not respecting the protocol either due to faults or due to malicious reasons thereby resulting in plan failure. In order to prevent such situations, we propose to implement the execution of agents through smart contracts. This points to a generic architecture seamlessly integrating intelligent planning-based CPS and smart-contracts.",
+    "authors": [
+      "Anshu Shukla",
+      "Swarup Kumar Mohalik",
+      "Ramamurthy Badrinath"
+    ],
+    "published": "2018-12-18",
+    "year": 2018,
+    "arxiv_id": "1812.07219v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "Smart Contracts for Multiagent Plan Execution in Untrusted Cyber-physical Systems\n\nIntelligent Cyber-physical systems can be modelled as multi-agent systems with planning capability to impart adaptivity for changing contexts. In such multi-agent systems, the protocol for plan execution must result in the proper completion and ordering of actions in spite of their distributed execution. However, in untrusted scenarios, there is a possibility of agents not respecting the protocol either due to faults or due to malicious reasons thereby resulting in plan failure. In order to prevent such situations, we propose to implement the execution of agents through smart contracts. This points to a generic architecture seamlessly integrating intelligent planning-based CPS and smart-contracts."
+  },
+  {
+    "title": "Smart Energy Guardian: A Hybrid Deep Learning Model for Detecting Fraudulent PV Generation",
+    "abstract": "With the proliferation of smart grids, smart cities face growing challenges due to cyber-attacks and sophisticated electricity theft behaviors, particularly in residential photovoltaic (PV) generation systems. Traditional Electricity Theft Detection (ETD) methods often struggle to capture complex temporal dependencies and integrating multi-source data, limiting their effectiveness. In this work, we propose an efficient ETD method that accurately identifies fraudulent behaviors in residential PV generation, thus ensuring the supply-demand balance in smart cities. Our hybrid deep learning model, combining multi-scale Convolutional Neural Network (CNN), Long Short-Term Memory (LSTM), and Transformer, excels in capturing both short-term and long-term temporal dependencies. Additionally, we introduce a data embedding technique that seamlessly integrates time-series data with discrete temperature variables, enhancing detection robustness. Extensive simulation experiments using real-world data validate the effectiveness of our approach, demonstrating significant improvements in the accuracy of detecting sophisticated energy theft activities, thereby contributing to the stability and fairness of energy systems in smart cities.",
+    "authors": [
+      "Xiaolu Chen",
+      "Chenghao Huang",
+      "Yanru Zhang",
+      "Hao Wang"
+    ],
+    "published": "2025-05-24",
+    "year": 2025,
+    "arxiv_id": "2505.18755v1",
+    "category": "cs.LG",
+    "source": "arxiv",
+    "text": "Smart Energy Guardian: A Hybrid Deep Learning Model for Detecting Fraudulent PV Generation\n\nWith the proliferation of smart grids, smart cities face growing challenges due to cyber-attacks and sophisticated electricity theft behaviors, particularly in residential photovoltaic (PV) generation systems. Traditional Electricity Theft Detection (ETD) methods often struggle to capture complex temporal dependencies and integrating multi-source data, limiting their effectiveness. In this work, we propose an efficient ETD method that accurately identifies fraudulent behaviors in residential PV generation, thus ensuring the supply-demand balance in smart cities. Our hybrid deep learning model, combining multi-scale Convolutional Neural Network (CNN), Long Short-Term Memory (LSTM), and Transformer, excels in capturing both short-term and long-term temporal dependencies. Additionally, we introduce a data embedding technique that seamlessly integrates time-series data with discrete temperature variables, enhancing detection robustness. Extensive simulation experiments using real-world data validate the effectiveness of our approach, demonstrating significant improvements in the accuracy of detecting sophisticated energy theft activities, thereby contributing to the stability and fairness of energy systems in smart cities."
+  },
+  {
+    "title": "Data Driven Reference Architecture for Smart City Ecosystems",
+    "abstract": "With the convergence of information and telecommunication technologies, the vision of the Smart City is fast becoming a reality. City governments in a growing number of countries are capitalizing on these advances to enhance the lives of their citizens and to increase efficiency and sustainability. In this paper, we elaborate on smartCityRA, a reference architecture for Smart City projects, which serves as the design language for creating smart cities blueprints. Such a blueprint caters for diverse stakeholders, devices, platforms, and technologies. We report on our experience in carrying out a proof-of-concept use case with a major telecommunication provider in the UAE. In doing so, we refined our multiple-view model of the initial smartCityRA reference architecture. We show that Data in smart city applications drive the entire development lifecycle and should be considered early in the development cycle. In addition, Data affects all the other views in the smartCityRA and hence the Data View needs to be at the heart of the entire smartCityRA. Realizing the Data view using a component like a Data Hub helped in creating a central integration location for disparate data from different sources, thus reliving developers from dealing with several entities individually. Finally, we show that any smart city reference architecture, like smartCityRA, should be at the right level of abstraction to enable the flexibility of adoption and adaptation by different stakeholders and components.",
+    "authors": [
+      "Mohammad Abu-Matar",
+      "John Davies"
+    ],
+    "published": "2018-05-03",
+    "year": 2018,
+    "arxiv_id": "1805.01120v1",
+    "category": "cs.SE",
+    "source": "arxiv",
+    "text": "Data Driven Reference Architecture for Smart City Ecosystems\n\nWith the convergence of information and telecommunication technologies, the vision of the Smart City is fast becoming a reality. City governments in a growing number of countries are capitalizing on these advances to enhance the lives of their citizens and to increase efficiency and sustainability. In this paper, we elaborate on smartCityRA, a reference architecture for Smart City projects, which serves as the design language for creating smart cities blueprints. Such a blueprint caters for diverse stakeholders, devices, platforms, and technologies. We report on our experience in carrying out a proof-of-concept use case with a major telecommunication provider in the UAE. In doing so, we refined our multiple-view model of the initial smartCityRA reference architecture. We show that Data in smart city applications drive the entire development lifecycle and should be considered early in the development cycle. In addition, Data affects all the other views in the smartCityRA and hence the Data View needs to be at the heart of the entire smartCityRA. Realizing the Data view using a component like a Data Hub helped in creating a central integration location for disparate data from different sources, thus reliving developers from dealing with several entities individually. Finally, we show that any smart city reference architecture, like smartCityRA, should be at the right level of abstraction to enable the flexibility of adoption and adaptation by different stakeholders and components."
+  },
+  {
+    "title": "A Scenario-Based Mobile Application for Robot-Assisted Smart Digital Homes",
+    "abstract": "Smart homes are becoming more popular, as every day a new home appliance can be digitally controlled. Smart Digital Homes are using a server to make interaction with all the possible devices in one place, on a computer or webpage. In this paper we designed and implemented a mobile application using Windows Mobile platform that can connect to the controlling server of a Smart Home and grants the access to the Smart Home devices and robots everywhere possible. UML diagrams are presented to illustrate the application design process. Robots are also considered as devices that are able to interact to other object and devices. Scenarios are defined as a set of sequential actions to help manage different tasks all in one place. The mobile application can connect to the server using GPRS mobile internet and Short Message System (SMS). Interactive home map is also designed for easier status-checking and interacting with the devices using the mobile phones.",
+    "authors": [
+      "Ali Reza Manashty",
+      "Amir Rajabzadeh",
+      "Zahra Forootan Jahromi"
+    ],
+    "published": "2010-09-27",
+    "year": 2010,
+    "arxiv_id": "1009.5398v1",
+    "category": "cs.RO",
+    "source": "arxiv",
+    "text": "A Scenario-Based Mobile Application for Robot-Assisted Smart Digital Homes\n\nSmart homes are becoming more popular, as every day a new home appliance can be digitally controlled. Smart Digital Homes are using a server to make interaction with all the possible devices in one place, on a computer or webpage. In this paper we designed and implemented a mobile application using Windows Mobile platform that can connect to the controlling server of a Smart Home and grants the access to the Smart Home devices and robots everywhere possible. UML diagrams are presented to illustrate the application design process. Robots are also considered as devices that are able to interact to other object and devices. Scenarios are defined as a set of sequential actions to help manage different tasks all in one place. The mobile application can connect to the server using GPRS mobile internet and Short Message System (SMS). Interactive home map is also designed for easier status-checking and interacting with the devices using the mobile phones."
+  },
+  {
+    "title": "A Stackelberg Game Approach for Two-Level Distributed Energy Management in Smart Grids",
+    "abstract": "The pursuit of sustainability motivates microgrids that depend on distributed resources to produce more renewable energies. An efficient operation and planning relies on a holistic framework that takes into account the interdependent decision-making of the generators of the existing power grids and the distributed resources of the microgrid in the integrated system. To this end, we use a Stackelberg game-theoretic framework to study the interactions between generators (leaders) and microgrids (followers). Entities on both sides make strategic decisions on the amount of power generation to maximize their payoffs. Our framework not only takes into account the economic factors but also incorporates the stability and efficiency of the smart grid, such as the power flow constraints and voltage angle regulations. We develop three update schemes for both generators and microgrids, respectively, and among which a fully distributed algorithm enabled by phasor measurement units is presented. The distributed algorithm merely requires the information of voltage angles at local buses for updates, and its convergence to the unique equilibrium is shown. We further develop the implementation architectures of the update schemes in the smart grid. Finally, case studies are used to corroborate the effectiveness of the proposed algorithms.",
+    "authors": [
+      "Juntao Chen",
+      "Quanyan Zhu"
+    ],
+    "published": "2016-08-29",
+    "year": 2016,
+    "arxiv_id": "1608.08253v2",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "A Stackelberg Game Approach for Two-Level Distributed Energy Management in Smart Grids\n\nThe pursuit of sustainability motivates microgrids that depend on distributed resources to produce more renewable energies. An efficient operation and planning relies on a holistic framework that takes into account the interdependent decision-making of the generators of the existing power grids and the distributed resources of the microgrid in the integrated system. To this end, we use a Stackelberg game-theoretic framework to study the interactions between generators (leaders) and microgrids (followers). Entities on both sides make strategic decisions on the amount of power generation to maximize their payoffs. Our framework not only takes into account the economic factors but also incorporates the stability and efficiency of the smart grid, such as the power flow constraints and voltage angle regulations. We develop three update schemes for both generators and microgrids, respectively, and among which a fully distributed algorithm enabled by phasor measurement units is presented. The distributed algorithm merely requires the information of voltage angles at local buses for updates, and its convergence to the unique equilibrium is shown. We further develop the implementation architectures of the update schemes in the smart grid. Finally, case studies are used to corroborate the effectiveness of the proposed algorithms."
+  },
+  {
+    "title": "Towards a Consensual Definition for Smart Tourism and Smart Tourism Tools",
+    "abstract": "Smart tourism (ST) stems from the concepts of e-tourism - focused on the digitalization of processes within the tourism industry, and digital tourism - also considering the digitalization within the tourist experience. The earlier ST references found regard ST Destinations and emerge from the development of Smart Cities.\n  Our initial literature review on the ST concept and Smart Tourism Tools (STT) revealed significant research uncertainties: ST is poorly defined and frequently linked to the concept of Smart Cities; different authors have different, sometimes contradictory, views on the goals of ST; STT claims are often only based on technological aspects, and their \"smartness\" is difficult to evaluate; often the term \"Smart\" describes developments fueled by cutting-edge technologies, which lose that status after a few years.\n  This chapter is part of the ongoing initiative to build an online observatory that provides a comprehensive view of STTs' offerings in Europe, known as the European STT Observatory. To achieve this, the observatory requires methodologies and tools to evaluate \"smartness\" based on a sound definition of ST and STT, while also being able to adapt to technological advancements. In this chapter, we present the results of a participatory approach where we invited ST experts from around the world to help us achieve this level of soundness. Our goal is to make a valuable contribution to the discussion on the definition of ST and STT.",
+    "authors": [
+      "Ant\u00f3nio Galv\u00e3o",
+      "Fernando Brito e Abreu",
+      "Jo\u00e3o Joanaz de Melo"
+    ],
+    "published": "2024-02-16",
+    "year": 2024,
+    "arxiv_id": "2402.10830v2",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "Towards a Consensual Definition for Smart Tourism and Smart Tourism Tools\n\nSmart tourism (ST) stems from the concepts of e-tourism - focused on the digitalization of processes within the tourism industry, and digital tourism - also considering the digitalization within the tourist experience. The earlier ST references found regard ST Destinations and emerge from the development of Smart Cities.\n  Our initial literature review on the ST concept and Smart Tourism Tools (STT) revealed significant research uncertainties: ST is poorly defined and frequently linked to the concept of Smart Cities; different authors have different, sometimes contradictory, views on the goals of ST; STT claims are often only based on technological aspects, and their \"smartness\" is difficult to evaluate; often the term \"Smart\" describes developments fueled by cutting-edge technologies, which lose that status after a few years.\n  This chapter is part of the ongoing initiative to build an online observatory that provides a comprehensive view of STTs' offerings in Europe, known as the European STT Observatory. To achieve this, the observatory requires methodologies and tools to evaluate \"smartness\" based on a sound definition of ST and STT, while also being able to adapt to technological advancements. In this chapter, we present the results of a participatory approach where we invited ST experts from around the world to help us achieve this level of soundness. Our goal is to make a valuable contribution to the discussion on the definition of ST and STT."
+  },
+  {
+    "title": "A Testbed for a Smart Building: Design and Implementation",
+    "abstract": "This paper addresses the design and implementation of a smart building prototype. The implementation utilizes Internet of Things (IoT) solutions to collect, analyze, and manage data from building systems in a smart city environment. The developed smart building prototype is capable of real-time interactions with the residents. The main objective is to adapt the building settings to the residents needs and provide the maximum comfort level with minimum operational costs. For this purpose, building parameters are collected via the sensors and transferred to a database in real-time, which can be accessed or visualized upon the users need. Environment properties such as temperature, light, humidity, audio, video, surveillance, and access status are managed through a model-based controller. The developed testbed and control scheme are generic and modular. The prototype can also be utilized for testing cyber-physical systems features and challenges.",
+    "authors": [
+      "Roja Eini",
+      "Lauren Linkous",
+      "Nasibeh Zohrabi",
+      "Sherif Abdelwahed"
+    ],
+    "published": "2019-02-26",
+    "year": 2019,
+    "arxiv_id": "1902.10268v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "A Testbed for a Smart Building: Design and Implementation\n\nThis paper addresses the design and implementation of a smart building prototype. The implementation utilizes Internet of Things (IoT) solutions to collect, analyze, and manage data from building systems in a smart city environment. The developed smart building prototype is capable of real-time interactions with the residents. The main objective is to adapt the building settings to the residents needs and provide the maximum comfort level with minimum operational costs. For this purpose, building parameters are collected via the sensors and transferred to a database in real-time, which can be accessed or visualized upon the users need. Environment properties such as temperature, light, humidity, audio, video, surveillance, and access status are managed through a model-based controller. The developed testbed and control scheme are generic and modular. The prototype can also be utilized for testing cyber-physical systems features and challenges."
+  },
+  {
+    "title": "Graph-based Model of Smart Grid Architectures",
+    "abstract": "The rising use of information and communication technology in smart grids likewise increases the risk of failures that endanger the security of power supply, e.g., due to errors in the communication configuration, faulty control algorithms, or cyber-attacks. Co-simulations can be used to investigate such effects, but require precise modeling of the energy, communication, and information domain within an integrated smart grid infrastructure model. Given the complexity and lack of detailed publicly available communication network models for smart grid scenarios, there is a need for an automated and systematic approach to creating such coupled models. In this paper, we present an approach to automatically generate smart grid infrastructure models based on an arbitrary electrical distribution grid model using a generic architectural template. We demonstrate the applicability and unique features of our approach alongside examples concerning network planning, co-simulation setup, and specification of domain-specific intrusion detection systems.",
+    "authors": [
+      "Benedikt Klaer",
+      "\u00d6mer Sen",
+      "Dennis van der Velde",
+      "Immanuel Hacker",
+      "Michael Andres",
+      "Martin Henze"
+    ],
+    "published": "2020-09-01",
+    "year": 2020,
+    "arxiv_id": "2009.00273v1",
+    "category": "cs.SE",
+    "source": "arxiv",
+    "text": "Graph-based Model of Smart Grid Architectures\n\nThe rising use of information and communication technology in smart grids likewise increases the risk of failures that endanger the security of power supply, e.g., due to errors in the communication configuration, faulty control algorithms, or cyber-attacks. Co-simulations can be used to investigate such effects, but require precise modeling of the energy, communication, and information domain within an integrated smart grid infrastructure model. Given the complexity and lack of detailed publicly available communication network models for smart grid scenarios, there is a need for an automated and systematic approach to creating such coupled models. In this paper, we present an approach to automatically generate smart grid infrastructure models based on an arbitrary electrical distribution grid model using a generic architectural template. We demonstrate the applicability and unique features of our approach alongside examples concerning network planning, co-simulation setup, and specification of domain-specific intrusion detection systems."
+  },
+  {
+    "title": "CAN Networks Security in Smart Grids Communication Technologies",
+    "abstract": "The rapid evolution of smart grids requires effective communication protocols to transfer data reliably and securely. Controller Area Network (CAN) is one of the most recognized protocols that offer reliable data transmission in smart grids due to its robustness, real-time capabilities, and relatively low initial cost of its required hardware. However, as a smart city becomes more interconnected, it also becomes more vulnerable to cyber-attacks. As there are many mechanisms to secure the CAN nodes from attacks, most of those mechanisms have computational overhead, resulting in more delay in the network. We implemented a solution that requires almost no overhead to any CAN node connected to the network. It depends on a single node responsible for securing the CAN network. This approach seeks to augment network security while reducing security mechanisms overhead to all CAN network nodes. The methodology and comprehensive test results will be presented in detail during a subsequent discussion. The used software for development is Code Composer Studio, and the used microcontroller evaluation boards (EVB) are TM4C 1294.",
+    "authors": [
+      "Ayman W. Baharia",
+      "Khaled T. Naga",
+      "Hesham S. Abdelfattah",
+      "Shady A. Maged",
+      "Sherif A. Hammad"
+    ],
+    "published": "2025-08-16",
+    "year": 2025,
+    "arxiv_id": "2508.12181v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "CAN Networks Security in Smart Grids Communication Technologies\n\nThe rapid evolution of smart grids requires effective communication protocols to transfer data reliably and securely. Controller Area Network (CAN) is one of the most recognized protocols that offer reliable data transmission in smart grids due to its robustness, real-time capabilities, and relatively low initial cost of its required hardware. However, as a smart city becomes more interconnected, it also becomes more vulnerable to cyber-attacks. As there are many mechanisms to secure the CAN nodes from attacks, most of those mechanisms have computational overhead, resulting in more delay in the network. We implemented a solution that requires almost no overhead to any CAN node connected to the network. It depends on a single node responsible for securing the CAN network. This approach seeks to augment network security while reducing security mechanisms overhead to all CAN network nodes. The methodology and comprehensive test results will be presented in detail during a subsequent discussion. The used software for development is Code Composer Studio, and the used microcontroller evaluation boards (EVB) are TM4C 1294."
+  },
+  {
+    "title": "GPSPiChain-Blockchain based Self-Contained Family Security System in Smart Home",
+    "abstract": "With advancements in technology, personal computing devices are better adapted for and further integrated into people's lives and homes. The integration of technology into society also results in an increasing desire to control who and what has access to sensitive information, especially for vulnerable people including children and the elderly. With blockchain coming in to the picture as a technology that can revolutionise the world, it is now possible to have an immutable audit trail of locational data over time. By controlling the process through inexpensive equipment in the home, it is possible to control whom has access to such personal data. This paper presents a blockchain based family security system for tracking the location of consenting family members' smart phones. The locations of the family members' smart phones are logged and stored in a private blockchain which can be accessed through a node installed in the family home on a computer. The data for the whereabouts of family members stays within the family unit and does not go to any third party. The system is implemented in a small scale (one miner and two other nodes) and the technical feasibility is discussed along with the limitations of the system. Further research will cover the integration of the system into a smart home environment, and ethical implementations of tracking, especially of vulnerable people, using the immutability of blockchain.",
+    "authors": [
+      "Ali Raza",
+      "Lachlan Hardy",
+      "Erin Roehrer",
+      "Soonja Yeom",
+      "Byeong ho Kang"
+    ],
+    "published": "2021-02-13",
+    "year": 2021,
+    "arxiv_id": "2102.06884v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "GPSPiChain-Blockchain based Self-Contained Family Security System in Smart Home\n\nWith advancements in technology, personal computing devices are better adapted for and further integrated into people's lives and homes. The integration of technology into society also results in an increasing desire to control who and what has access to sensitive information, especially for vulnerable people including children and the elderly. With blockchain coming in to the picture as a technology that can revolutionise the world, it is now possible to have an immutable audit trail of locational data over time. By controlling the process through inexpensive equipment in the home, it is possible to control whom has access to such personal data. This paper presents a blockchain based family security system for tracking the location of consenting family members' smart phones. The locations of the family members' smart phones are logged and stored in a private blockchain which can be accessed through a node installed in the family home on a computer. The data for the whereabouts of family members stays within the family unit and does not go to any third party. The system is implemented in a small scale (one miner and two other nodes) and the technical feasibility is discussed along with the limitations of the system. Further research will cover the integration of the system into a smart home environment, and ethical implementations of tracking, especially of vulnerable people, using the immutability of blockchain."
+  },
+  {
+    "title": "LearningCity: Knowledge Generation for Smart Cities",
+    "abstract": "Although we have reached new levels in smart city installations and systems, efforts so far have focused on providing diverse sources of data to smart city services consumers while neglecting to provide ways to simplify making good use of them. In this context, one first step that will bring added value to smart cities is knowledge creation in smart cities through anomaly detection and data annotation, supported in both an automated and a crowdsourced manner. We present here LearningCity, our solution that has been validated over an existing smart city deployment in Santander, and the OrganiCity experimentation-as-a-service ecosystem. We discuss key challenges along with characteristic use cases, and report on our design and implementation, together with some preliminary results derived from combining large smart city datasets with machine learning.",
+    "authors": [
+      "Dimitrios Amaxilatis",
+      "Georgios Mylonas",
+      "Evangelos Theodoridis",
+      "Luis Diez",
+      "Katerina Deligiannidou"
+    ],
+    "published": "2021-04-12",
+    "year": 2021,
+    "arxiv_id": "2104.05286v1",
+    "category": "cs.DC",
+    "source": "arxiv",
+    "text": "LearningCity: Knowledge Generation for Smart Cities\n\nAlthough we have reached new levels in smart city installations and systems, efforts so far have focused on providing diverse sources of data to smart city services consumers while neglecting to provide ways to simplify making good use of them. In this context, one first step that will bring added value to smart cities is knowledge creation in smart cities through anomaly detection and data annotation, supported in both an automated and a crowdsourced manner. We present here LearningCity, our solution that has been validated over an existing smart city deployment in Santander, and the OrganiCity experimentation-as-a-service ecosystem. We discuss key challenges along with characteristic use cases, and report on our design and implementation, together with some preliminary results derived from combining large smart city datasets with machine learning."
+  },
+  {
+    "title": "Smart Mobility Ontology: Current Trends and Future Directions",
+    "abstract": "Ontology is the explicit and formal representation of the concepts in a domain and relations among them. Transportation science is a wide domain dealing with mobility over various complex and interconnected transportation systems, such as land, aviation, and maritime transport, and can take considerable advantage from ontology development. While several studies can be found in the recent literature, there exists a large potential to improve and develop a comprehensive smart mobility ontology. The current chapter aims to present different aspects of ontology development in general, such as ontology development methods, languages, tools, and software. Subsequently, it presents the currently available mobility-related ontologies developed across different domains, such as transportation, smart cities, goods mobility, sensors. Current gaps in the available ontologies are identified, and future directions regarding ontology development are proposed that can incorporate the forthcoming autonomous and connected vehicles, mobility as a service (MaaS), and other disruptive transportation technologies and services.",
+    "authors": [
+      "Ali Yazdizadeh",
+      "Bilal Farooq"
+    ],
+    "published": "2020-12-15",
+    "year": 2020,
+    "arxiv_id": "2012.08622v1",
+    "category": "cs.AI",
+    "source": "arxiv",
+    "text": "Smart Mobility Ontology: Current Trends and Future Directions\n\nOntology is the explicit and formal representation of the concepts in a domain and relations among them. Transportation science is a wide domain dealing with mobility over various complex and interconnected transportation systems, such as land, aviation, and maritime transport, and can take considerable advantage from ontology development. While several studies can be found in the recent literature, there exists a large potential to improve and develop a comprehensive smart mobility ontology. The current chapter aims to present different aspects of ontology development in general, such as ontology development methods, languages, tools, and software. Subsequently, it presents the currently available mobility-related ontologies developed across different domains, such as transportation, smart cities, goods mobility, sensors. Current gaps in the available ontologies are identified, and future directions regarding ontology development are proposed that can incorporate the forthcoming autonomous and connected vehicles, mobility as a service (MaaS), and other disruptive transportation technologies and services."
+  },
+  {
+    "title": "Interlinking Heterogeneous Data for Smart Energy Systems",
+    "abstract": "Smart energy systems in general, and solar energy analysis in particular, have recently gained increasing interest. This is mainly due to stronger focus on smart energy saving solutions and recent developments in photovoltaic (PV) cells. Various data-driven and machine-learning frameworks are being proposed by the research community. However, these frameworks perform their analysis - and are designed on - specific, heterogeneous and isolated datasets, distributed across different sites and sources, making it hard to compare results and reproduce the analysis on similar data. We propose an approach based on Web (W3C) standards and Linked Data technologies for representing and converting PV and weather records into an Resource Description Framework (RDF) graph-based data format. This format, and the presented approach, is ideal in a data integration scenario where data needs to be converted into homogeneous form and different datasets could be interlinked for distributed analysis.",
+    "authors": [
+      "Fabrizio Orlandi",
+      "Alan Meehan",
+      "Murhaf Hossari",
+      "Soumyabrata Dev",
+      "Declan O'Sullivan",
+      "Tarek AlSkaif"
+    ],
+    "published": "2019-07-05",
+    "year": 2019,
+    "arxiv_id": "1907.02790v1",
+    "category": "cs.DB",
+    "source": "arxiv",
+    "text": "Interlinking Heterogeneous Data for Smart Energy Systems\n\nSmart energy systems in general, and solar energy analysis in particular, have recently gained increasing interest. This is mainly due to stronger focus on smart energy saving solutions and recent developments in photovoltaic (PV) cells. Various data-driven and machine-learning frameworks are being proposed by the research community. However, these frameworks perform their analysis - and are designed on - specific, heterogeneous and isolated datasets, distributed across different sites and sources, making it hard to compare results and reproduce the analysis on similar data. We propose an approach based on Web (W3C) standards and Linked Data technologies for representing and converting PV and weather records into an Resource Description Framework (RDF) graph-based data format. This format, and the presented approach, is ideal in a data integration scenario where data needs to be converted into homogeneous form and different datasets could be interlinked for distributed analysis."
+  }
+]
