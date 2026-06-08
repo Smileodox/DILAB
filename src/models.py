@@ -1,3 +1,5 @@
+from typing import Literal
+
 from pydantic import BaseModel, Field
 
 
@@ -100,3 +102,48 @@ class DriverAuditReport(BaseModel):
     faithfulness: FaithfulnessResult
     surprise_geometric: float
     surprise_llm: SurpriseAssessment
+
+
+# --- Hypothesis-First Pipeline Models (poc2d) ---
+
+
+class Hypothesis(BaseModel):
+    id: str = Field(description="Unique identifier, e.g. H-01")
+    hypothesis: str = Field(description="The disruption thesis — what could change and why")
+    disruption_framework: Literal[
+        "Christensen Disruption",
+        "Adjacent Possible",
+        "Regulatory Shock",
+        "Platform Shift",
+        "Convergence",
+    ]
+    search_queries: list[str] = Field(
+        min_length=2,
+        max_length=4,
+        description="Concrete search queries to find supporting/contradicting evidence",
+    )
+    expected_evidence_type: str = Field(
+        description="What kind of evidence would support this hypothesis (papers, patents, news, ...)"
+    )
+    relevance_to_rs: str = Field(
+        description="Why this matters for R&S spectrum monitoring specifically"
+    )
+
+
+class HypothesisBatch(BaseModel):
+    hypotheses: list[Hypothesis]
+
+
+class HypothesisVerdict(BaseModel):
+    hypothesis_id: str
+    hypothesis: str
+    verdict: Literal["validated", "speculative", "falsified"]
+    faithfulness_result: FaithfulnessResult | None = Field(
+        default=None, description="Only set when evidence was found"
+    )
+    surprise: SurpriseAssessment | None = Field(
+        default=None, description="Only set for validated/speculative"
+    )
+    evidence_summary: str
+    papers_found: int
+    search_queries_used: list[str]
