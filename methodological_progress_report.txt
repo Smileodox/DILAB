@@ -1,0 +1,156 @@
+METHODOLOGICAL PROGRESS REPORT — TECHNOLOGY FORESIGHT PIPELINE
+DiLab / R&S Regulatory Frequency Monitoring | Status: Post-Midterm Sprint
+================================================================================
+
+
+BACKGROUND
+----------
+
+The project builds a structured technology foresight pipeline to generate
+plausible future scenarios for regulatory spectrum monitoring by 2035. The
+pipeline translates a curated knowledge base of ~45 regulatory, technical, and
+policy documents into a set of internally consistent future scenarios, ranked by
+strategic relevance for Rohde & Schwarz.
+
+The core methodology is morphological analysis (Zwicky/Ritchey), implemented as
+a Weimer-Jehle Cross-Impact Balance (CIB) model. Driver interactions are scored
+by a Multi-Perspective Expert panel of four LLM personas representing distinct
+professional perspectives (RF engineer, regulatory analyst, R&D strategist,
+academic researcher). Monte Carlo sampling over persona disagreement then finds
+all internally consistent configurations — the "fixed points" of the system —
+which become scenario seeds.
+
+
+RECENT METHODOLOGICAL IMPROVEMENTS
+------------------------------------
+
+1. EVIDENCE-WEIGHTED DRIVER SELECTION
+
+Problem: Driver selection previously used a simple confidence tier
+(high/medium/low), which systematically excluded all trend-sourced drivers
+regardless of how much evidence supported them.
+
+Change: Replaced the confidence filter with a composite scoring function:
+
+    score = 0.5 x origin_weight + 0.5 x evidence_depth
+
+where origin_weight reflects validation status (cross-confirmed in both BOM and
+literature = 1.0; trend-only = 0.4; BOM-only = 0.3) and evidence_depth is the
+normalized count of distinct source chunks supporting the driver.
+
+Why it matters: This ensures that well-evidenced environmental drivers (e.g. a
+regulatory policy direction supported by 8 sources) compete on equal footing
+with hardware drivers confirmed in product specs. The morphological box now
+includes both technology-internal and technology-external dimensions, which is a
+prerequisite for generating genuinely divergent scenarios.
+
+
+2. KB COVERAGE-GAP TREND SCANNER (ARCHITECTURAL REPLACEMENT)
+
+Problem: Trend driver extraction previously relied on five hardcoded search
+queries (e.g. "AI machine learning spectrum monitoring", "quantum sensing RF
+detection"). These queries were technology-focused and domain-specific — they
+would produce meaningless results on any different knowledge base, and
+critically, they never surfaced the regulatory and policy content already present
+in the knowledge base (RSPG strategic visions, WRC-23 Final Acts, ITU-R
+SM.2542 proactive monitoring strategy, ECC enforcement benchmarking, etc.).
+
+Change: Replaced hardcoded queries with a bottom-up coverage-gap algorithm:
+
+    1. Embed all BOM driver descriptions to define the "covered" technology space
+    2. Retrieve all trend-pool documents from ChromaDB with stored vector
+       embeddings
+    3. For each document, compute its maximum cosine similarity to any BOM driver
+    4. Documents below the similarity threshold (0.55) are "orphans" — content
+       the BOM does not explain
+    5. K-Means cluster the orphan embeddings (k=12)
+    6. For each cluster, an LLM identifies the underlying driver from the most
+       representative documents
+    7. Post-filter: discard any extracted driver still too similar to a BOM
+       driver (threshold 0.70)
+
+Why it matters: This approach is domain-agnostic — it works on any knowledge
+base by discovering what topics the BOM does not cover, rather than assuming
+which topics matter. Practically, it immediately surfaced the regulatory and
+policy dimensions (international harmonization, spectrum sharing mandates,
+sovereign reservation frameworks, 5G compliance regimes) that were present in
+the knowledge base but invisible to the previous scanner.
+
+Result: The morphological box now contains hardware/technology dimensions (from
+BOM) and regulatory/environmental dimensions (from coverage-gap), enabling
+scenarios to vary across genuinely independent axes.
+
+
+3. CIB MATRIX CALIBRATION
+
+Problem: The Multi-Perspective Expert personas were defaulting to non-inhibiting scores
+too easily, producing a sparse interaction matrix that caused the consistency
+algorithm to converge on a narrow set of fixed points.
+
+Changes:
+- Added a 2035 time horizon anchor to the CIB prompt so all personas evaluate
+  interactions in the same temporal frame
+- Added a DEFAULT RULE requiring explicit justification for any non-inhibiting
+  score between drivers that share customer segment, product line, or R&D budget
+- Strengthened the regulatory analyst persona with a hard ceiling on
+  pro-technology scores without named standards citations
+
+Result: Panel consensus improved from 31 strong / 145 moderate / 6 divergent
+to 64 strong / 113 moderate / 5 divergent — more confident assessments, better
+differentiated interaction matrix.
+
+
+4. SCENARIO POOL EXPANSION VIA NEAR-CONSISTENT NEIGHBORS
+
+Problem: Fixed-point analysis previously found only 5 consistent configurations
+from ~268 million possible combinations — insufficient for 20 structurally
+distinct scenarios.
+
+Change: After finding all fixed points, the pipeline now generates
+near-consistent neighbors by performing single-driver-flip variants of each
+fixed point and scoring their consistency. This explores the local neighborhood
+of each attractor without additional LLM calls.
+
+Result: 129 unique fixed points + ~4,000 near-consistent neighbors. 20 diverse
+scenario seeds selected using typed stratification (disruptive / cautionary /
+wildcard) and minimum Hamming distance (>=4 driver differences between any two
+seeds).
+
+
+5. MCDA EVALUATION FIX
+
+Problem: The TOPSIS ranking treated risk severity as a benefit criterion —
+meaning higher risk ranked better, inverting the intended ranking logic.
+
+Change: Risk severity correctly flagged as a cost criterion in the weighted
+benefit/cost vector. AHP weights (Impact > Probability >= Risk Severity >
+Time Horizon > Actionability) unchanged.
+
+Result: TOPSIS closeness scores now range 0.36-0.68 with meaningful
+differentiation. Top-ranked scenario reflects high impact + high probability +
+low risk, as intended.
+
+
+CURRENT STATE
+-------------
+
+The pipeline runs end-to-end in approximately 35 minutes and produces:
+- 14 morphological drivers drawn from a mixed hardware + regulatory driver pool
+- 106 unique fixed points (consistent system configurations)
+- 20 scenario seeds with typed diversity (disruptive / cautionary / wildcard)
+- Full traceability from scenario narrative to driver assumption to source document
+
+The central tension in current scenarios has shifted from "how advanced is the
+hardware?" to "will the international regulatory environment harmonize or
+fragment?" — which is the genuinely relevant strategic question for a company
+operating across multiple national spectrum authorities.
+
+Open items for next sprint: reduce redundancy among regulatory clusters
+(currently over-fragmented into near-identical sub-topics), prevent the merge
+step from combining hardware and regulatory drivers into single morphological
+dimensions, and improve wildcard scenario coverage (currently only 2/20).
+
+
+--------------------------------------------------------------------------------
+Pipeline branch: feature/morphological-analysis
+Stack: Azure OpenAI (gpt-4.1-mini / gpt-4.1), ChromaDB, scikit-learn, umap-learn

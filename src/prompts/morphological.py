@@ -39,34 +39,35 @@ Return JSON:
 }}"""
 
 
-SCENARIO_GENERATE_MORPHOLOGICAL = """Generate a future scenario for the regulatory frequency monitoring domain
-based on this internally consistent configuration of technology driver manifestations:
+SCENARIO_GENERATE_MORPHOLOGICAL = """Generate a 2035 scenario for the regulatory frequency monitoring domain
+from this CIB-consistent driver configuration:
 
+DRIVER MANIFESTATIONS — these define the scenario, let them lead the narrative:
 {driver_manifestations_block}
 
-This configuration was found to be internally consistent by cross-impact balance analysis.
-The following cross-impact relationships are particularly relevant:
+KEY CROSS-IMPACT DYNAMICS:
 {cib_context}
-
-Scenario type: {scenario_type}
-Time horizon: 2035
-{existing_titles_block}
 
 SOURCE MATERIAL:
 {rag_chunks}
 
-GROUNDING RULE: Base all technical claims on the provided source material.
-If you make a claim not directly supported by the sources, prefix it with "[Extrapolation]".
+GROUNDING RULE: Base all technical claims on the source material and driver manifestations above.
+Mark unsupported claims with [Extrapolation].
 
 {narrative_guide}
 
-The scenario MUST be internally consistent with ALL stated driver manifestations.
-Show how the cross-impact dynamics play out concretely — WHY does this combination
-of states hold together? What reinforcing loops make this configuration stable?
+{existing_titles_block}
+
+Your scenario MUST be internally consistent with ALL driver manifestations above.
+Show WHY this specific combination of states holds together — what reinforcing dynamics
+make it stable, and what would have to change for it to unravel.
+
+Scenario type (for classification only): {scenario_type}
+Time horizon: 2035
 
 Return JSON:
 {{
-  "title": "short descriptive title (must be clearly distinct from any previously generated titles)",
+  "title": "short descriptive title — name the specific dynamic, not the generic outcome type",
   "narrative": "the scenario narrative (400-600 words)",
   "perspective": "3-5 word framing phrase capturing the core narrative angle",
   "key_changes": ["3-5 most important changes from today"],

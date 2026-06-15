@@ -15,6 +15,12 @@ MAX_RAG_CHUNKS = 5
 BOM_MAX_DEPTH = 5
 CIB_SCALE = (-3, 3)
 CIB_MODEL = os.environ.get("AZURE_OPENAI_CIB_MODEL", "gpt-4.1")
+CIB_MC_SAMPLES = int(os.environ.get("CIB_MC_SAMPLES", "2000"))
+CIB_MC_RESTARTS = int(os.environ.get("CIB_MC_RESTARTS", "100"))
+
+EVAL_MODEL = os.environ.get("AZURE_OPENAI_EVAL_MODEL", "gpt-4.1")
+SCENARIO_MODEL = os.environ.get("AZURE_OPENAI_SCENARIO_MODEL", "gpt-4.1")
+SCENARIO_N_SEEDS = int(os.environ.get("SCENARIO_N_SEEDS", "6"))
 
 MCDA_CRITERIA = ["impact", "probability", "actionability", "time_horizon", "risk_severity"]
 
@@ -31,3 +37,30 @@ MCDA_PAIRWISE_DEFAULT: list[list[float]] = [
 ]
 
 MCDA_CR_THRESHOLD = 0.10
+
+# Multi-endpoint pool for rate limit distribution
+AZURE_ENDPOINTS: list[dict] = []
+
+def _build_endpoint_pool():
+    pool = []
+    if AZURE_OPENAI_ENDPOINT and AZURE_OPENAI_API_KEY:
+        pool.append({
+            "endpoint": AZURE_OPENAI_ENDPOINT,
+            "api_key": AZURE_OPENAI_API_KEY,
+            "api_version": AZURE_OPENAI_API_VERSION,
+        })
+    i = 2
+    while True:
+        ep = os.environ.get(f"AZURE_OPENAI_ENDPOINT_{i}", "")
+        key = os.environ.get(f"AZURE_OPENAI_API_KEY_{i}", "")
+        if not ep or not key:
+            break
+        pool.append({
+            "endpoint": ep,
+            "api_key": key,
+            "api_version": os.environ.get(f"AZURE_OPENAI_API_VERSION_{i}", AZURE_OPENAI_API_VERSION),
+        })
+        i += 1
+    return pool
+
+AZURE_ENDPOINTS = _build_endpoint_pool()

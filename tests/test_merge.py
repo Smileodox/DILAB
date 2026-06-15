@@ -52,12 +52,14 @@ class TestBuildUnifiedList:
         assert len(result) == 1
         assert result[0].confidence == DriverConfidence.MEDIUM
 
-    def test_trend_only_gets_low_confidence(self):
+    def test_trend_only_gets_medium_confidence(self):
         trend = [_driver("6G Networks", DriverOrigin.TREND, DriverConfidence.LOW)]
         merge_result = {"matches": [], "bom_only": [], "trend_only": [0]}
         result = build_unified_list(merge_result, [], trend)
         assert len(result) == 1
-        assert result[0].confidence == DriverConfidence.LOW
+        # Trend-only drivers get MEDIUM: external regulatory/environmental forces
+        # deserve equal footing with unvalidated BOM components in consolidation.
+        assert result[0].confidence == DriverConfidence.MEDIUM
 
     def test_source_chunks_merged_on_match(self):
         bom = [_driver("Test BOM", DriverOrigin.BOM, DriverConfidence.MEDIUM, source_chunk_ids=["c1", "c2"])]

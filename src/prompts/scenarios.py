@@ -1,27 +1,42 @@
 SCENARIO_NARRATIVE_GUIDE = {
-    "evolutionary": """Write a pragmatic, grounded narrative (400-600 words) structured as:
-1. SETTING: A typical workday for a spectrum monitoring operator in 2035
-2. CAPABILITIES: Which technologies improved incrementally and how they changed daily operations
-3. PRACTICAL CONSTRAINTS: Budget realities, procurement delays, training gaps, or legacy systems still in use
-4. OUTLOOK: What remains unchanged or underperforms despite steady progress""",
+    "evolutionary": """NARRATIVE APPROACH (400-600 words):
+The following drivers characterise this configuration — let them shape your story:
+{anchor_drivers}
 
-    "disruptive": """Write an ambitious but honest narrative (400-600 words) structured as:
-1. SETTING: The moment a breakthrough technology changes the game for spectrum monitoring
-2. NEW POSSIBILITIES: What becomes possible that was not before — specific operational capabilities
-3. TRANSITION COSTS: Retraining, legacy displacement, integration challenges, institutional resistance
-4. WINNERS AND LOSERS: Who benefits and who is left behind in this transformation""",
+Write from the perspective of practitioners living in this future. Show how incremental progress
+in these specific technologies changed day-to-day operations in real but undramatic ways.
+Avoid grand breakthroughs — the interest is in what actually shipped, what didn't, and what
+daily friction looks like under these exact driver states. Ground every technical claim in the
+manifestations listed above, not in generic progress language.""",
 
-    "cautionary": """Write a critical, clear-eyed narrative (400-600 words) structured as:
-1. SETTING: A regulatory crisis, procurement failure, or operational breakdown in 2035
-2. THE PROMISE: What technologies were expected to deliver by 2035
-3. THE FAILURE: The deployment barrier, cost explosion, skills shortage, or institutional failure that prevented delivery
-4. CONSEQUENCES: Cascading effects of the gap between expectation and reality — for regulators, manufacturers, and citizens""",
+    "disruptive": """NARRATIVE APPROACH (400-600 words):
+These breakthrough drivers are the engine of this configuration — trace their causal chain:
+{anchor_drivers}
 
-    "wildcard": """Write a surprising narrative (400-600 words) structured as:
-1. THE TRIGGER: The geopolitical event, scientific discovery, or regulatory shift that nobody planned for
-2. THE CASCADE: Second-order effects rippling through spectrum monitoring infrastructure and operations
-3. ADAPTATION: Who pivots successfully and who is caught unprepared
-4. THE NEW NORMAL: How the domain reshapes itself after the disruption""",
+Show HOW this specific combination of advances created capabilities that were not possible before.
+What reinforcing dynamics hold this optimistic configuration together? Who had to change their
+practices, infrastructure, or assumptions to realise this? Ground the disruption in the
+specific manifestations — avoid generic "AI revolution" language.""",
+
+    "cautionary": """NARRATIVE APPROACH (400-600 words):
+These are the drivers that stagnated or failed in this configuration — build your causal chain from them:
+{anchor_drivers}
+
+Trace the SPECIFIC failure mode: why did these particular technologies or frameworks not deliver?
+What barriers (cost, institutional, technical, political) explain this exact combination of outcomes?
+Show how one failure cascades into dependent functions — if measurement degrades, what downstream
+function breaks next? Make the failure chain specific to these drivers. Different driver failures
+produce different breakdowns — do not default to a generic "regulatory crisis" narrative.""",
+
+    "wildcard": """NARRATIVE APPROACH (400-600 words):
+This configuration is polarised — some drivers reached optimistic states while others hit pessimistic extremes:
+{anchor_drivers}
+
+The tension between these extremes IS the story. What unexpected event or shift brought this
+unstable combination into being? Show the instability: why does this configuration feel
+surprising, and what second-order effects does it trigger across the monitoring ecosystem?
+Avoid a simple good-vs-bad framing — the interesting question is how these contradictory
+conditions coexist and what they force stakeholders to do.""",
 }
 
 SCENARIO_GENERATE = """Generate a future scenario for the regulatory frequency monitoring domain based on these technology driver assumptions:

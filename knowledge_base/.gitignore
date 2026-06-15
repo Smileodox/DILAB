@@ -1,0 +1,4 @@
+pdfs/
+*.part
+fetch_report.json
+manifest.md

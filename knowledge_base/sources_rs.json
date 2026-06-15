@@ -1,0 +1,181 @@
+{
+  "field_of_interest": "Regulatory Spectrum Monitoring - Rohde & Schwarz vendor perspective",
+  "description": "Supplementary corpus of publicly available Rohde & Schwarz literature describing the technology system of a regulator-grade spectrum monitoring deployment: antennas, receivers, direction finders, transportable/handheld stations, and the system software (R&S ARGUS, CEPTOR, RAMON, GSACSM). Use this WITH sources.json for a full picture, or instead of it if you specifically want to study one vendor's end-to-end view. All PDFs are hosted on rohde-schwarz.com or itu.int and were publicly available at the time of curation.",
+  "curated_on": "2026-05-18",
+  "curated_by": "initial-seed",
+  "license_notice": "All R&S product brochures and white papers remain copyright Rohde & Schwarz. The manifest stores URLs and metadata only; do not redistribute the PDFs without checking the R&S terms of use on each landing page.",
+  "vendor_bias_note": "This corpus is by definition vendor-biased. Use it to learn the *shape* of a complete monitoring system (antenna -> receiver -> DF/locator -> software -> network) and to extract concrete technology-driver candidates, but cross-check claims against the independent sources in sources.json (ITU, CEPT, FCC, NTIA, RSPG, academic surveys).",
+  "categories": {
+    "J_system_overview": "R&S system-level and methodology white papers (hybrid geolocation, DF methodologies, modern monitoring vision)",
+    "K_receivers": "R&S monitoring receivers (ESMW, EM200, PR200) and application flyers",
+    "L_direction_finders": "R&S direction finders and outdoor locators (DDF550, UMS300)",
+    "M_antennas": "R&S antenna portfolio for radiomonitoring",
+    "N_software_systems": "R&S monitoring software (ARGUS, CEPTOR, GSACSM)",
+    "P_application_notes": "R&S application notes on enabling techniques (real-time spectrum analysis, etc.)"
+  },
+  "sources": [
+    {
+      "id": "J01_rs_modern_spectrum_monitoring_itu_rrs25",
+      "category": "J_system_overview",
+      "title": "Modern Spectrum Monitoring (R&S presentation at ITU RRS-25 Africa, Session 1)",
+      "publisher": "Rohde & Schwarz / hosted on ITU",
+      "year": 2025,
+      "url": "https://www.itu.int/en/ITU-R/seminars/rrs/rrs-25-africa/Forum/Session%201_Spectrum%20Management&Monitoring/Rohde%20&%20Schwarz_Modern%20Spectrum%20Monitoring.pdf",
+      "landing_page": "https://www.itu.int/en/ITU-R/seminars/rrs/Pages/default.aspx",
+      "filename": "J01_rs_modern_spectrum_monitoring_itu_rrs25.pdf",
+      "why_relevant": "Concise, system-level R&S view: station types (fixed, mobile, transportable, handheld, aerial), automatic measurements, cloud sharing, AI-based signal detection, and an explicit 'spectrum monitoring in the future' slide (extended frequency range, wider bandwidth, AI). Excellent driver-identification seed in one short document."
+    },
+    {
+      "id": "J02_rs_whitepaper_hybrid_aoa_tdoa_geolocation",
+      "category": "J_system_overview",
+      "title": "Spectrum Monitoring with Hybrid AOA/TDOA Geolocation - White Paper",
+      "publisher": "Rohde & Schwarz",
+      "year": 2014,
+      "url": "https://cdn.rohde-schwarz.com/am/us/campaigns_2/a_d/Spectrum-Monitoring-with-Hybrid-AOA-TDOA-Geolocation.pdf",
+      "filename": "J02_rs_whitepaper_hybrid_aoa_tdoa_geolocation.pdf",
+      "why_relevant": "End-to-end view of locating emitters: antennas, receivers, direction finders, compact systems and the orchestrating software. Good source for the precision-geolocation driver family."
+    },
+    {
+      "id": "J03_rs_whitepaper_intro_direction_finding_methodologies",
+      "category": "J_system_overview",
+      "title": "An Introduction to Direction Finding Methodologies - White Paper",
+      "publisher": "Rohde & Schwarz",
+      "year": 2020,
+      "url": "https://cdn.rohde-schwarz.com/am/us/campaigns_2/a_d/Intro-to-direction-finding-methodologies~1.pdf",
+      "landing_page": "https://www.rohde-schwarz.com/us/campaigns/gov/direction-finding_252649.html",
+      "filename": "J03_rs_whitepaper_intro_direction_finding_methodologies.pdf",
+      "manual_download": true,
+      "manual_reason": "The previously direct CDN URL now returns 404. The whitepaper is still linked from the Direction Finding Resources landing page (see landing_page). Open it there, download the current PDF and save with the target filename in pdfs/.",
+      "why_relevant": "Vendor-neutral methodology primer (Doppler, Watson-Watt, correlative interferometry, TDOA) - useful baseline for the DF/geolocation driver family."
+    },
+    {
+      "id": "J04_rs_bnetza_ddf550_modernisation_flyer",
+      "category": "J_system_overview",
+      "title": "New direction finders cope with next generation signals - Reference Card (BNetzA nationwide DDF550 modernization)",
+      "publisher": "Rohde & Schwarz",
+      "year": 2019,
+      "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/dl_common_library/dl_brochures_and_datasheets/pdf_1/New-direction-finders_fly_en_3609-3842-32_v0100_web.pdf",
+      "filename": "J04_rs_bnetza_ddf550_modernisation_flyer.pdf",
+      "why_relevant": "Concrete worked example of a national regulator (BNetzA) replacing its entire VHF/UHF DF network. Useful for the 'how do regulators actually procure and roll out new monitoring infrastructure' angle."
+    },
+    {
+      "id": "K01_rs_esmw_ultra_wideband_receiver_brochure",
+      "category": "K_receivers",
+      "title": "R&S ESMW Ultra Wideband Monitoring Receiver - Product Brochure",
+      "publisher": "Rohde & Schwarz",
+      "year": 2024,
+      "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/pdm/cl_brochures_and_datasheets/product_brochure/3683_7077_12/ESMW_bro_en_3683-7077-12_v0500.pdf",
+      "landing_page": "https://www.rohde-schwarz.com/brochure-datasheet/esmw/",
+      "filename": "K01_rs_esmw_ultra_wideband_receiver_brochure.pdf",
+      "why_relevant": "State-of-the-art wideband regulator receiver: 8 kHz to 40 GHz, up to 2 GHz real-time bandwidth, 100 GbE I/Q streaming, integrated AoA DF. Direct evidence for the 'software-defined wideband receivers' driver."
+    },
+    {
+      "id": "K02_rs_em200_digital_compact_receiver_brochure",
+      "category": "K_receivers",
+      "title": "R&S EM200 Digital Compact Receiver - Product Brochure",
+      "publisher": "Rohde & Schwarz",
+      "year": 2022,
+      "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/dl_common_library/dl_brochures_and_datasheets/pdf_1/EM200_bro_en_3609-3136-12_v0500.pdf",
+      "landing_page": "https://www.rohde-schwarz.com/brochure-datasheet/em200/",
+      "filename": "K02_rs_em200_digital_compact_receiver_brochure.pdf",
+      "why_relevant": "Compact, cost-efficient receiver for distributed deployments; shows the 'lower-cost networked sensor' trend that competes with crowdsourced/Electrosense-style approaches."
+    },
+    {
+      "id": "K03_rs_pr200_portable_monitoring_receiver_brochure",
+      "category": "K_receivers",
+      "title": "R&S PR200 Portable Monitoring Receiver - Product Brochure",
+      "publisher": "Rohde & Schwarz",
+      "year": 2024,
+      "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/pdm/cl_brochures_and_datasheets/product_brochure/5216_4540_12/PR200_bro_en_5216-4540-12_v1100.pdf",
+      "landing_page": "https://www.rohde-schwarz.com/brochure-datasheet/pr200/",
+      "filename": "K03_rs_pr200_portable_monitoring_receiver_brochure.pdf",
+      "why_relevant": "Handheld receiver with AoA DF - demonstrates the personal/portable end of the monitoring continuum and the 'every inspector is a sensor' trend."
+    },
+    {
+      "id": "K04_rs_pr200_em200_5g_3d_measurements_flyer",
+      "category": "K_receivers",
+      "title": "5G measurements in 3D - Product Flyer (PR200 + EM200)",
+      "publisher": "Rohde & Schwarz",
+      "year": 2021,
+      "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/dl_common_library/dl_brochures_and_datasheets/pdf_1/5G-measurements-in-3D_fly_en_3683-5551-32_v0100.pdf",
+      "filename": "K04_rs_pr200_em200_5g_3d_measurements_flyer.pdf",
+      "why_relevant": "Worked example of monitoring 5G beam-steered emissions in 3D using a portable+compact receiver pair - touches the 'monitoring of beamforming/mMIMO signals' driver."
+    },
+    {
+      "id": "L01_rs_ddf550_wideband_direction_finder_brochure",
+      "category": "L_direction_finders",
+      "title": "R&S DDF550 Wideband Direction Finder - Product Brochure",
+      "publisher": "Rohde & Schwarz",
+      "year": 2024,
+      "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/pdm/cl_brochures_and_datasheets/product_brochure/5214_5310_12/DDF550_bro_en_5214-5310-12_v1300.pdf",
+      "landing_page": "https://www.rohde-schwarz.com/us/brochure-datasheet/ddf550/",
+      "filename": "L01_rs_ddf550_wideband_direction_finder_brochure.pdf",
+      "why_relevant": "Reference high-end wideband DF used by national regulators (e.g. BNetzA). Concrete benchmark for the precision-geolocation driver."
+    },
+    {
+      "id": "L02_rs_ums300_compact_monitoring_location_brochure",
+      "category": "L_direction_finders",
+      "title": "R&S UMS300 Compact Monitoring and Radiolocation System - Product Brochure",
+      "publisher": "Rohde & Schwarz",
+      "year": 2023,
+      "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/dl_common_library/dl_brochures_and_datasheets/pdf_1/UMS300_bro_en_3606-9104-12_v0701.pdf",
+      "landing_page": "https://www.rohde-schwarz.com/us/brochure-datasheet/ums300/",
+      "filename": "L02_rs_ums300_compact_monitoring_location_brochure.pdf",
+      "why_relevant": "Outdoor, all-in-one sensor combining monitoring + AoA + TDOA + GNSS time-sync - representative of the distributed-sensor-network driver family."
+    },
+    {
+      "id": "M01_rs_active_antennas_signal_interception_brochure",
+      "category": "M_antennas",
+      "title": "Active Antennas - Experts for Signal Interception and Monitoring - Product Brochure",
+      "publisher": "Rohde & Schwarz",
+      "year": 2026,
+      "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/pdm/cl_brochures_and_datasheets/product_brochure/3673_0028_12/Active-antennas_bro_en_3673-0028-12_v0200.pdf",
+      "landing_page": "https://www.rohde-schwarz.com/brochure-datasheet/he600/",
+      "filename": "M01_rs_active_antennas_signal_interception_brochure.pdf",
+      "why_relevant": "Antenna-portfolio overview spanning HF to microwave for stationary, mobile, and tactical monitoring. Defines the 'antenna sub-system' of the technology stack and the design trade-offs (active vs. passive, omni vs. directional)."
+    },
+    {
+      "id": "N01_rs_argus_6_3_software_brochure",
+      "category": "N_software_systems",
+      "title": "R&S ARGUS 6.3 Spectrum Monitoring Software - Product Brochure",
+      "publisher": "Rohde & Schwarz",
+      "year": 2023,
+      "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/pdm/cl_brochures_and_datasheets/product_brochure/3684_1020_12/ARGUS-6.3_bro_en_3684-1020-12_v0300.pdf",
+      "landing_page": "https://www.rohde-schwarz.com/brochure-datasheet/argus/",
+      "filename": "N01_rs_argus_6_3_software_brochure.pdf",
+      "why_relevant": "The canonical regulator-grade software stack (deployed in 100+ countries). Defines the typical workflows (ITU-compliant measurements, geolocation via AoA/TDOA/hybrid, map-based ops, statistics) - i.e. the 'software systems' axis of the technology stack."
+    },
+    {
+      "id": "N02_rs_ceptor_radiomonitoring_software_brochure",
+      "category": "N_software_systems",
+      "title": "R&S CEPTOR Software for Radiomonitoring Systems - Product Brochure",
+      "publisher": "Rohde & Schwarz",
+      "year": 2023,
+      "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/pdm/cl_brochures_and_datasheets/product_brochure/3608_5512_12/CEPTOR_bro_en_3608-5512-12_v0300.pdf",
+      "landing_page": "https://www.rohde-schwarz.com/brochure-datasheet/ceptor/",
+      "filename": "N02_rs_ceptor_radiomonitoring_software_brochure.pdf",
+      "why_relevant": "Alternative R&S monitoring-software offering (signal collection, DF, geolocation, reporting); useful counterpoint to ARGUS for understanding the SW design space."
+    },
+    {
+      "id": "N03_rs_gsacsm_communications_system_monitoring_brochure",
+      "category": "N_software_systems",
+      "title": "R&S GSACSM Communications System Monitoring - Product Brochure",
+      "publisher": "Rohde & Schwarz",
+      "year": 2023,
+      "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/pdm/cl_brochures_and_datasheets/product_brochure/3683_4532_12/GSACSM_bro_en_3683-4532-12_v0500.pdf",
+      "landing_page": "https://www.rohde-schwarz.com/brochure-datasheet/gsacsm/",
+      "filename": "N03_rs_gsacsm_communications_system_monitoring_brochure.pdf",
+      "why_relevant": "Satellite / communications-system monitoring software with autonomous detection and classification of terrestrial+satellite signals - exemplar of the 'autonomous classifier' technology driver."
+    },
+    {
+      "id": "P01_rs_appnote_1ef77_realtime_spectrum_analysis",
+      "category": "P_application_notes",
+      "title": "Implementation of Real-Time Spectrum Analysis - Application Note 1EF77",
+      "publisher": "Rohde & Schwarz",
+      "year": 2015,
+      "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/dl_application/application_notes/1ef77/1EF77_3e_Real-time_Spectrum_Analysis.pdf",
+      "filename": "P01_rs_appnote_1ef77_realtime_spectrum_analysis.pdf",
+      "why_relevant": "Technical primer on the enabling DSP techniques (FFT update rates, POI, frequency-mask triggering, persistence) underlying every modern monitoring receiver - useful when reasoning about the 'wideband real-time processing' driver."
+    }
+  ]
+}

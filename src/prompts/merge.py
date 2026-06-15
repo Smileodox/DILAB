@@ -11,6 +11,11 @@ Map these lists onto each other:
 2. Identify BOM-only drivers: present in products but not flagged as trends
 3. Identify trend-only drivers: emerging trends not yet in current products
 
+CRITICAL RULE: Only match drivers of the SAME dimension type (shown in brackets).
+Do NOT merge a hardware driver with a regulatory driver — those are independent
+morphological dimensions, not duplicates. Cross-type relationships will be captured
+in the CIB cross-impact matrix instead.
+
 Return JSON:
 {{
   "matches": [

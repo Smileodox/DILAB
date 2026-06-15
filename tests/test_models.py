@@ -1,6 +1,10 @@
+import pytest
+from pydantic import ValidationError
+
 from src.models.evaluation import Assessment, MCDAResult, AHPWeights
 from src.models.scenarios import Scenario, ScenarioType
-from src.models.drivers import TechDriver, DriverOrigin, DriverConfidence
+from src.models.drivers import TechDriver, DriverOrigin, DriverConfidence, DimensionType
+from src.models.llm_responses import CIBResponse, ManifestationResponse, ScenarioResponse
 
 
 def test_assessment_all_criteria():
@@ -74,3 +78,60 @@ def test_driver_enums():
         assert DriverOrigin(o)
     for c in ["high", "medium", "low"]:
         assert DriverConfidence(c)
+
+
+def test_dimension_type_enum():
+    for t in ["hardware", "software", "regulatory", "market", "geopolitical", "unclassified"]:
+        assert DimensionType(t)
+
+
+def test_driver_dimension_type_default():
+    d = TechDriver(name="test", description="desc", origin=DriverOrigin.BOM, confidence=DriverConfidence.HIGH)
+    assert d.dimension_type == DimensionType.UNCLASSIFIED
+
+
+class TestCIBResponse:
+    def test_valid_response(self):
+        r = CIBResponse(
+            relationship_analysis="test",
+            inhibiting_score=2, inhibiting_reasoning="conflict",
+            promoting_score=1, promoting_reasoning="synergy",
+        )
+        assert r.inhibiting_score == 2
+        assert r.promoting_score == 1
+
+    def test_clamping(self):
+        r = CIBResponse(inhibiting_score=5, promoting_score=-1)
+        assert r.inhibiting_score == 3
+        assert r.promoting_score == 0
+
+    def test_from_dict(self):
+        raw = {
+            "relationship_analysis": "test",
+            "inhibiting_score": 2,
+            "inhibiting_reasoning": "conflict",
+            "promoting_score": 1,
+            "promoting_reasoning": "synergy",
+            "source_chunk_ids_used": ["c1"],
+        }
+        r = CIBResponse.model_validate(raw)
+        assert r.source_chunk_ids_used == ["c1"]
+
+
+class TestManifestationResponse:
+    def test_valid(self):
+        r = ManifestationResponse(manifestations=[
+            {"label": "test", "description": "desc"},
+        ])
+        assert len(r.manifestations) == 1
+
+    def test_empty_fails(self):
+        with pytest.raises(ValidationError):
+            ManifestationResponse(manifestations=[])
+
+
+class TestScenarioResponse:
+    def test_valid(self):
+        r = ScenarioResponse(title="Test", narrative="A long narrative")
+        assert r.title == "Test"
+        assert r.key_tensions == []

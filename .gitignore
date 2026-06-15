@@ -12,3 +12,6 @@ dist/
 build/
 .chroma/
 *_executed.ipynb
+node_modules/
+knowledge_base/pdfs/
+.claude/

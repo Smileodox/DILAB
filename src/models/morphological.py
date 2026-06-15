@@ -24,3 +24,8 @@ class ConsistencyResult(BaseModel):
     configuration: dict[str, str]
     consistency_score: float
     is_consistent: bool
+    scenario_type: str = "evolutionary"
+    frequency: int = 1
+    is_fixed_point: bool = True
+    parent_fixed_point_id: str = ""
+    flipped_driver_id: str = ""

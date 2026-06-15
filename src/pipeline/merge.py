@@ -11,11 +11,48 @@ import re
 import numpy as np
 
 from src.llm import embed, safe_chat_json
-from src.models.drivers import TechDriver, DriverOrigin, DriverConfidence
+from src.models.drivers import TechDriver, DriverOrigin, DriverConfidence, DimensionType
 from src.models.common import stable_id
 from src.prompts.merge import MERGE_DRIVERS
 
 SIMILARITY_THRESHOLD = 0.85
+
+_CLASSIFY_PROMPT = """Classify this technology driver into exactly ONE dimension type.
+
+DRIVER: {name}
+DESCRIPTION: {description}
+ORIGIN: {origin}
+
+DIMENSION TYPES:
+- hardware: Physical components, RF subsystems, antennas, ADCs, mixers, board-level tech
+- software: Algorithms, AI/ML, signal processing software, data pipelines, automation
+- regulatory: Standards, ITU regulations, compliance, certification, spectrum policy
+- market: Customer demand, competitive dynamics, pricing, adoption trends
+- geopolitical: National sovereignty, international cooperation, trade restrictions
+
+Return JSON:
+{{"dimension_type": "hardware" or "software" or "regulatory" or "market" or "geopolitical"}}"""
+
+
+def classify_drivers(drivers: list[TechDriver]) -> list[TechDriver]:
+    """Classify each driver by ontological dimension type via LLM."""
+    for d in drivers:
+        if d.dimension_type != DimensionType.UNCLASSIFIED:
+            continue
+        result = safe_chat_json(
+            _CLASSIFY_PROMPT.format(
+                name=d.name,
+                description=d.description[:300],
+                origin=d.origin.value,
+            ),
+            system="Classify the technology driver into exactly one dimension type.",
+        )
+        dim = result.get("dimension_type", "unclassified")
+        try:
+            d.dimension_type = DimensionType(dim)
+        except ValueError:
+            d.dimension_type = DimensionType.UNCLASSIFIED
+    return drivers
 
 CONF_RANK = {"high": 3, "medium": 2, "low": 1}
 
@@ -29,10 +66,10 @@ def normalize_name(name: str) -> str:
 def llm_match(bom_drivers: list[TechDriver], trend_drivers: list[TechDriver]) -> dict:
     """LLM-based matching of BOM and Trend driver lists. Returns merge_result dict."""
     bom_list = "\n".join(
-        [f"- Index: {i} | Name: {d.name} | Desc: {d.description[:150]}" for i, d in enumerate(bom_drivers)]
+        [f"- Index: {i} | [{d.dimension_type.value}] Name: {d.name} | Desc: {d.description[:150]}" for i, d in enumerate(bom_drivers)]
     )
     trend_list = "\n".join(
-        [f"- Index: {i} | Name: {d.name} | Desc: {d.description[:150]}" for i, d in enumerate(trend_drivers)]
+        [f"- Index: {i} | [{d.dimension_type.value}] Name: {d.name} | Desc: {d.description[:150]}" for i, d in enumerate(trend_drivers)]
     )
 
     merge_prompt = MERGE_DRIVERS.format(bom_drivers=bom_list, trend_drivers=trend_list)
@@ -49,11 +86,20 @@ def llm_match(bom_drivers: list[TechDriver], trend_drivers: list[TechDriver]) ->
     valid_matches = []
 
     for m in merge_result.get("matches", []):
-        bi = m.get("bom_driver_index")
-        ti = m.get("trend_driver_index")
-        if not isinstance(bi, int) or bi < 0 or bi >= len(bom_drivers):
+        try:
+            bi = int(m.get("bom_driver_index"))
+            ti = int(m.get("trend_driver_index"))
+        except (TypeError, ValueError):
             continue
-        if not isinstance(ti, int) or ti < 0 or ti >= len(trend_drivers):
+        if bi < 0 or bi >= len(bom_drivers):
+            continue
+        if ti < 0 or ti >= len(trend_drivers):
+            continue
+        # Reject cross-type matches — different dimension types are independent morphological axes
+        bom_type = bom_drivers[bi].dimension_type
+        trend_type = trend_drivers[ti].dimension_type
+        if bom_type != DimensionType.UNCLASSIFIED and trend_type != DimensionType.UNCLASSIFIED and bom_type != trend_type:
+            print(f"  Rejected cross-type match: [{bom_type.value}] {bom_drivers[bi].name} <-> [{trend_type.value}] {trend_drivers[ti].name}", flush=True)
             continue
         valid_matches.append(m)
         matched_bom_indices.add(bi)
@@ -85,12 +131,14 @@ def build_unified_list(
         bom_d = bom_drivers[bi]
         trend_d = trend_drivers[ti]
         merged_sources = list(set(bom_d.source_chunk_ids + trend_d.source_chunk_ids))
+        dim_type = bom_d.dimension_type if bom_d.dimension_type != DimensionType.UNCLASSIFIED else trend_d.dimension_type
         driver = TechDriver(
             id=stable_id(m["unified_name"], "both"),
             name=m["unified_name"],
             description=f"BOM: {bom_d.description[:200]} | Trend: {trend_d.description[:200]}",
             origin=DriverOrigin.BOTH,
             confidence=DriverConfidence.HIGH,
+            dimension_type=dim_type,
             bom_node_id=bom_d.bom_node_id,
             source_chunk_ids=merged_sources,
             merge_reasoning=m.get("reasoning", ""),
@@ -104,7 +152,9 @@ def build_unified_list(
 
     for ti in merge_result.get("trend_only", []):
         d = trend_drivers[ti]
-        d.confidence = DriverConfidence.LOW
+        # MEDIUM (not LOW): external regulatory/environmental forces are core foresight
+        # inputs and deserve equal footing with unvalidated BOM components in consolidation.
+        d.confidence = DriverConfidence.MEDIUM
         unified.append(d)
 
     return unified
@@ -224,6 +274,14 @@ def run(
     with open(trend_state_path) as f:
         trend_drivers = [TechDriver(**d) for d in json.load(f)["trend_drivers"]]
 
+    print(f"  Classifying {len(bom_drivers)} BOM + {len(trend_drivers)} trend drivers by dimension type...")
+    classify_drivers(bom_drivers)
+    classify_drivers(trend_drivers)
+    for d in bom_drivers:
+        print(f"    [{d.dimension_type.value:12s}] {d.name[:50]}")
+    for d in trend_drivers:
+        print(f"    [{d.dimension_type.value:12s}] {d.name[:50]}")
+
     merge_result = llm_match(bom_drivers, trend_drivers)
     unified = build_unified_list(merge_result, bom_drivers, trend_drivers)
     unified = consolidate(unified)
@@ -232,7 +290,8 @@ def run(
         "unified_drivers": [d.model_dump(mode="json") for d in unified],
         "merge_result": merge_result,
     }
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    out_dir = os.path.dirname(os.path.abspath(output_path))
+    os.makedirs(out_dir, exist_ok=True)
     with open(output_path, "w") as f:
         json.dump(state, f, indent=2)
     return state
