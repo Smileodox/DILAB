@@ -1,0 +1,120 @@
+"""Functional morphological (Zwicky) scenario pipeline — coexists with the BOM/CIB path.
+
+functional.run (extract functions + competing directions, CCA, sample consistent configs)
+-> short narratives -> config-space clustering -> UMAP landscape -> MCDA on representatives.
+All outputs carry a *_zwicky suffix.
+
+Usage:
+  uv run python run_morphological.py                       # full (Azure + KB)
+  uv run python run_morphological.py --n-samples 12        # cheap test
+  uv run python run_morphological.py --extract-only        # extraction + CCA + sampling, no narratives
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import logging
+import os
+
+from src import config
+from src.pipeline import functional, landscape, scenario_gen
+from src.pipeline.clustering import cluster_and_select, config_matrix
+
+DATA = "data/outputs"
+
+
+def _p(name):
+    return os.path.join(DATA, name)
+
+
+def run(n_samples=None, reject_threshold=0.25, n_clusters=None, model="gpt-5.4",
+        max_workers=6, narrative_mode="short", extract_only=False, skip_eval=False,
+        skip_extract=False):
+    n_clusters = config.COMBI_N_CLUSTERS if n_clusters is None else n_clusters
+
+    # 1. functional extraction + CCA + CCA-consistent sampling (reuse if requested)
+    if skip_extract:
+        print("--skip-extract: reusing existing *_zwicky extraction + configs")
+    else:
+        functional.run(output_dir=DATA, n_samples=n_samples, reject_threshold=reject_threshold,
+                       model=model, max_workers=max_workers)
+
+    seed_path, morph_path = _p("combinatorial_state_zwicky.json"), _p("morphbox_zwicky_state.json")
+    cib_path, merge_path = _p("cib_state_zwicky.json"), _p("functional_merge_state.json")
+    scen_path = _p("scenario_state_zwicky.json")
+    reps_path = _p("scenario_state_zwicky_representatives.json")
+    land_path, final_path = _p("landscape_state_zwicky.json"), _p("final_analysis_zwicky.json")
+
+    if extract_only:
+        print("--extract-only: stopped after sampling.")
+        return {"seed": seed_path}
+
+    # 2. short narratives (geometry comes from configs, so length/style is free)
+    try:
+        from src.rag import get_collection
+        coll = get_collection()
+    except Exception as e:  # noqa: BLE001
+        print(f"  no KB collection ({e}) — narratives without RAG")
+        coll = None
+    print("\n[narratives] generating ...", flush=True)
+    scenario_gen.run(consistency_state_path=seed_path, morphbox_state_path=morph_path,
+                     cib_state_path=cib_path, merge_state_path=merge_path, output_path=scen_path,
+                     narrative_mode=narrative_mode, max_workers=max_workers, collection=coll, model=model)
+
+    # 3. config-space clustering (the honest geometry)
+    scenarios = json.load(open(scen_path))["scenarios"]
+    ids = [s["id"] for s in scenarios]
+    vocab = [m["id"] for m in json.load(open(morph_path))["all_manifestations"]]
+    geom = config_matrix(scenarios, vocab)
+    cl = cluster_and_select(geom, ids, k=(n_clusters if n_clusters and n_clusters > 0 else None),
+                            k_range=config.COMBI_CLUSTER_K_RANGE, seed=config.COMBI_SEED)
+    cby, reps = dict(zip(ids, cl["labels"])), set(cl["representative_ids"])
+    print(f"  config-space: k={cl['k']} silhouette={cl['silhouette']} representatives={len(reps)}")
+
+    # 4. UMAP landscape on the config geometry
+    ls = landscape.run(scenario_state_path=scen_path, output_path=land_path,
+                       consistency_state_path=seed_path, embeddings=geom)
+    for pt in ls.get("points", []):
+        pt["cluster"] = int(cby.get(pt["scenario_id"], -1))
+        pt["is_representative"] = pt["scenario_id"] in reps
+    ls.setdefault("metadata", {}).update(
+        {"method": "functional_zwicky", "geometry": "config", "n_clusters": cl["k"], "silhouette": cl["silhouette"]})
+    json.dump(ls, open(land_path, "w"), indent=2)
+
+    # 5. representatives + MCDA
+    json.dump({"scenarios": [s for s in scenarios if s["id"] in reps]}, open(reps_path, "w"), indent=2)
+    if not skip_eval:
+        try:
+            from src.pipeline import evaluation
+            print(f"\n[MCDA] on {len(reps)} representatives ...", flush=True)
+            evaluation.run(scenario_state_path=reps_path, merge_state_path=merge_path,
+                           kb_state_path=_p("kb_state.json"), output_path=final_path)
+        except Exception as e:  # noqa: BLE001
+            print(f"  MCDA failed ({e}); other *_zwicky outputs still written.")
+
+    print("\nDone (Zwicky path). Outputs:")
+    for path in (morph_path, _p("cca_state.json"), seed_path, scen_path, land_path, final_path):
+        print(f"  {'✓' if os.path.exists(path) else '·'} {path}")
+    return {"morphbox": morph_path, "scenarios": scen_path, "landscape": land_path}
+
+
+def main():
+    logging.basicConfig(level=logging.INFO, format="%(message)s")
+    ap = argparse.ArgumentParser(description="Functional morphological (Zwicky) scenario pipeline")
+    ap.add_argument("--n-samples", type=int, default=None)
+    ap.add_argument("--reject-threshold", type=float, default=0.25)
+    ap.add_argument("--n-clusters", type=int, default=None, help="0/omit = auto by silhouette")
+    ap.add_argument("--model", default="gpt-5.4", help="chat model (gpt-5.4 = pooled across endpoints)")
+    ap.add_argument("--max-workers", type=int, default=6)
+    ap.add_argument("--narrative-mode", choices=["full", "short", "neutral"], default="short")
+    ap.add_argument("--extract-only", action="store_true", help="extraction + CCA + sampling only")
+    ap.add_argument("--skip-extract", action="store_true", help="reuse existing *_zwicky extraction + configs")
+    ap.add_argument("--skip-eval", action="store_true")
+    args = ap.parse_args()
+    run(n_samples=args.n_samples, reject_threshold=args.reject_threshold, n_clusters=args.n_clusters,
+        model=args.model, max_workers=args.max_workers, narrative_mode=args.narrative_mode,
+        extract_only=args.extract_only, skip_eval=args.skip_eval, skip_extract=args.skip_extract)
+
+
+if __name__ == "__main__":
+    main()
