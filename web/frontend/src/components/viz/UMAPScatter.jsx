@@ -39,9 +39,11 @@ export default function UMAPScatter({ points, onPointClick }) {
         customdata: pts.map(p => p.scenario_id),
         marker: {
           color: colors.dot,
-          size: pts.map(p => 10 + p.consistency_score / 10),
+          // Cluster representatives (combinatorial method) are enlarged and ringed.
+          // Baseline points have no is_representative flag → unchanged rendering.
+          size: pts.map(p => (10 + p.consistency_score / 10) * (p.is_representative ? 1.8 : 1)),
           symbol: pts.map(p => (p.is_fixed_point ? 'circle' : 'diamond')),
-          line: { color: colors.border, width: 1 },
+          line: { color: colors.border, width: pts.map(p => (p.is_representative ? 3 : 1)) },
         },
       }
     })

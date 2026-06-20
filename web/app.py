@@ -379,6 +379,42 @@ async def landscape():
         return {"points": [], "similarity_matrix": [], "metadata": {}}
 
 
+@app.get("/api/landscape_combi")
+async def landscape_combi():
+    """Combinatorial-method landscape (many soft-CIB scenarios + clusters)."""
+    try:
+        return load("landscape_state_combi")
+    except FileNotFoundError:
+        return {"points": [], "similarity_matrix": [], "metadata": {}}
+
+
+@app.get("/api/scenarios_combi")
+async def scenarios_combi():
+    """All combinatorial scenarios (with narratives); MCDA rank/topsis for representatives."""
+    try:
+        combi = load("scenario_state_combi")
+    except FileNotFoundError:
+        return []
+    rankings_by_id = {}
+    try:
+        final = load("final_analysis_combi")
+        rankings_by_id = {
+            r["scenario_id"]: r
+            for r in final.get("mcda", {}).get("rankings", [])
+        }
+    except FileNotFoundError:
+        pass
+    merged = []
+    for s in combi.get("scenarios", []):
+        ranking = rankings_by_id.get(s["id"], {})
+        merged.append({
+            **s,
+            "topsis_closeness": ranking.get("topsis_closeness", 0),
+            "rank": ranking.get("rank", 0),
+        })
+    return merged
+
+
 @app.get("/api/strategic_framing")
 async def strategic_framing():
     try:
