@@ -15,12 +15,20 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import numpy as np
 
+from src import config
 from src.llm import embed, safe_chat_json
 from src.models.drivers import TechDriver
 from src.models.morphological import DriverManifestation, MorphologicalBox
 from src.models.scenarios import DriverAssumption, Scenario, ScenarioType
-from src.prompts.morphological import SCENARIO_GENERATE_MORPHOLOGICAL
-from src.prompts.scenarios import SCENARIO_NARRATIVE_GUIDE
+from src.prompts.morphological import (
+    SCENARIO_GENERATE_MORPHOLOGICAL,
+    SCENARIO_GENERATE_MORPHOLOGICAL_NEUTRAL,
+    SCENARIO_GENERATE_MORPHOLOGICAL_SHORT,
+)
+from src.prompts.scenarios import (
+    SCENARIO_NARRATIVE_GUIDE,
+    SCENARIO_NARRATIVE_GUIDE_SHORT,
+)
 
 log = logging.getLogger(__name__)
 
@@ -103,9 +111,15 @@ def run(
     cib_state_path: str = "data/outputs/cib_state.json",
     merge_state_path: str = "data/outputs/merge_state.json",
     output_path: str = "data/outputs/scenario_state.json",
+    narrative_mode: str = "full",
+    max_workers: int | None = None,
     collection=None,
     model: str | None = None,
 ) -> dict:
+    # Read module config here: inside _generate_one the name `config` is the local
+    # seed configuration dict, so the module attr must be captured in run() scope.
+    combi_words = config.COMBI_NARRATIVE_WORDS
+
     with open(consistency_state_path) as f:
         consistency = json.load(f)
     with open(morphbox_state_path) as f:
@@ -227,24 +241,54 @@ def run(
             rag_chunk_ids = [cid for cid, _, _ in ranked]
 
         anchors = _anchor_drivers(config, morph_box, manif_lookup, driver_by_id, stype)
-        narrative_guide = SCENARIO_NARRATIVE_GUIDE.get(
-            stype.value, SCENARIO_NARRATIVE_GUIDE["evolutionary"]
-        ).format(anchor_drivers=anchors)
 
         with titles_lock:
             existing = ", ".join(f'"{t}"' for t in completed_titles) if completed_titles else ""
         titles_block = f"Previously generated titles (yours MUST differ): {existing}" if existing else ""
 
-        prompt = SCENARIO_GENERATE_MORPHOLOGICAL.format(
-            driver_manifestations_block="\n".join(manif_block_parts),
-            scenario_type=stype.value,
-            existing_titles_block=titles_block,
-            cib_context="\n".join(cib_parts) if cib_parts else "No notable cross-impacts.",
-            rag_chunks=rag_text,
-            narrative_guide=narrative_guide,
-        )
+        cib_context = "\n".join(cib_parts) if cib_parts else "No notable cross-impacts."
 
-        result = safe_chat_json(prompt, temperature=0.75, model=model)
+        if narrative_mode == "short":
+            # Bottom-up / combinatorial path: one neutral, less-speculative guide,
+            # shorter target, lower temperature. Anchors still use the inferred type's
+            # rule so the snapshot highlights this combination's characterising drivers.
+            narrative_guide = SCENARIO_NARRATIVE_GUIDE_SHORT.format(
+                anchor_drivers=anchors, word_count=combi_words
+            )
+            prompt = SCENARIO_GENERATE_MORPHOLOGICAL_SHORT.format(
+                driver_manifestations_block="\n".join(manif_block_parts),
+                existing_titles_block=titles_block,
+                cib_context=cib_context,
+                rag_chunks=rag_text,
+                narrative_guide=narrative_guide,
+                word_count=combi_words,
+            )
+            temperature = 0.5
+        elif narrative_mode == "neutral":
+            # Non-leading prompt: no length squeeze, no "don't speculate", no
+            # "make it distinct" — let the model render the configuration as it sees fit.
+            prompt = SCENARIO_GENERATE_MORPHOLOGICAL_NEUTRAL.format(
+                driver_manifestations_block="\n".join(manif_block_parts),
+                existing_titles_block=titles_block,
+                cib_context=cib_context,
+                rag_chunks=rag_text,
+            )
+            temperature = 0.7
+        else:
+            narrative_guide = SCENARIO_NARRATIVE_GUIDE.get(
+                stype.value, SCENARIO_NARRATIVE_GUIDE["evolutionary"]
+            ).format(anchor_drivers=anchors)
+            prompt = SCENARIO_GENERATE_MORPHOLOGICAL.format(
+                driver_manifestations_block="\n".join(manif_block_parts),
+                scenario_type=stype.value,
+                existing_titles_block=titles_block,
+                cib_context=cib_context,
+                rag_chunks=rag_text,
+                narrative_guide=narrative_guide,
+            )
+            temperature = 0.75
+
+        result = safe_chat_json(prompt, temperature=temperature, model=model)
 
         all_source_ids = list(set(rag_chunk_ids + result.get("source_chunk_ids_used", [])))
         for a in assumptions:
@@ -273,7 +317,7 @@ def run(
         print(f"  Scenario {seed_idx + 1}/{len(seeds)} done: {scenario.title[:50]} (coverage: {scenario.coverage_ratio:.0%})")
         return scenario
 
-    with ThreadPoolExecutor(max_workers=min(8, len(seeds))) as pool:
+    with ThreadPoolExecutor(max_workers=max_workers or min(8, len(seeds))) as pool:
         futures = {
             pool.submit(_generate_one, i, seed): i for i, seed in enumerate(seeds)
         }

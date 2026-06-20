@@ -23,6 +23,8 @@ DATA_DIR = "data/outputs"
 def run(
     scenario_state_path: str = os.path.join(DATA_DIR, "scenario_state.json"),
     output_path: str = os.path.join(DATA_DIR, "landscape_state.json"),
+    consistency_state_path: str = os.path.join(DATA_DIR, "consistency_state.json"),
+    embeddings=None,
 ) -> dict:
     with open(scenario_state_path) as f:
         scenarios = json.load(f)["scenarios"]
@@ -32,9 +34,14 @@ def run(
         log.warning("Too few scenarios (%d) for meaningful UMAP projection", n)
         return {"points": [], "similarity_matrix": [], "metadata": {}}
 
-    narratives = [s["narrative"][:8000] for s in scenarios]
-    log.info("Embedding %d scenario narratives", n)
-    embeddings = np.array(embed(narratives))
+    # Caller may pass precomputed embeddings (aligned to scenario order) to avoid
+    # re-embedding — the combinatorial path reuses the embeddings it clustered on.
+    if embeddings is not None:
+        embeddings = np.asarray(embeddings)
+    else:
+        narratives = [s["narrative"][:8000] for s in scenarios]
+        log.info("Embedding %d scenario narratives", n)
+        embeddings = np.array(embed(narratives))
 
     n_neighbors = min(15, n - 1)
     log.info("Running UMAP (n_neighbors=%d)", n_neighbors)
@@ -69,8 +76,9 @@ def run(
             "y": round(float(coords[i, 1]), 4),
         })
 
-    # Enrich with consistency scores from consistency_state if available
-    consistency_path = os.path.join(DATA_DIR, "consistency_state.json")
+    # Enrich with consistency scores from the seed state if available (the
+    # combinatorial path passes combinatorial_state.json here instead).
+    consistency_path = consistency_state_path
     if os.path.exists(consistency_path):
         with open(consistency_path) as f:
             configs = json.load(f).get("configs", [])

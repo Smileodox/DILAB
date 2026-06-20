@@ -1,3 +1,14 @@
+SCENARIO_NARRATIVE_GUIDE_SHORT = """NARRATIVE APPROACH ({word_count} words):
+These drivers most characterise this configuration — let them lead:
+{anchor_drivers}
+
+Write a compact, factual snapshot from the perspective of practitioners living in this
+2035. Cover what actually changed in day-to-day frequency monitoring under these exact
+driver states, and what stayed the same. Ground every technical claim in the
+manifestations above; avoid grand narratives, long causal chains, and any speculation
+beyond the listed states."""
+
+
 SCENARIO_NARRATIVE_GUIDE = {
     "evolutionary": """NARRATIVE APPROACH (400-600 words):
 The following drivers characterise this configuration — let them shape your story:

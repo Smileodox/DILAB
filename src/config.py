@@ -22,6 +22,24 @@ EVAL_MODEL = os.environ.get("AZURE_OPENAI_EVAL_MODEL", "gpt-4.1")
 SCENARIO_MODEL = os.environ.get("AZURE_OPENAI_SCENARIO_MODEL", "gpt-4.1")
 SCENARIO_N_SEEDS = int(os.environ.get("SCENARIO_N_SEEDS", "6"))
 
+# --- Combinatorial scenario method (Soft-CIB + embedding clustering) ---
+# Alternative to the CIB fixed-point path: sample the morphological field broadly,
+# use the CIB matrix only as a soft consistency filter (reject only strongly
+# contradictory combinations), generate short narratives, cluster them in embedding
+# space and pick one representative per cluster. Coexists with the baseline path.
+COMBI_N_SAMPLES = int(os.environ.get("COMBI_N_SAMPLES", "120"))          # target kept combinations
+COMBI_OVERSAMPLE_FACTOR = float(os.environ.get("COMBI_OVERSAMPLE_FACTOR", "4.0"))  # draw N x this before rejection
+# Calibrated on the real 14-driver CIB: random configs have a contradiction_ratio of
+# ~0.19..0.60 (median ~0.42). 0.40 keeps the more-consistent ~38% (rejects the
+# contradictory majority) and reaches the N target with the oversample factor above.
+COMBI_REJECT_THRESHOLD = float(os.environ.get("COMBI_REJECT_THRESHOLD", "0.40"))   # max contradiction_ratio to keep
+COMBI_N_CLUSTERS = int(os.environ.get("COMBI_N_CLUSTERS", "0"))          # 0 = auto-select k by silhouette
+COMBI_CLUSTER_K_MIN = int(os.environ.get("COMBI_CLUSTER_K_MIN", "4"))
+COMBI_CLUSTER_K_MAX = int(os.environ.get("COMBI_CLUSTER_K_MAX", "10"))
+COMBI_CLUSTER_K_RANGE = (COMBI_CLUSTER_K_MIN, COMBI_CLUSTER_K_MAX)
+COMBI_NARRATIVE_WORDS = os.environ.get("COMBI_NARRATIVE_WORDS", "250-300")
+COMBI_SEED = int(os.environ.get("COMBI_SEED", "42"))
+
 MCDA_CRITERIA = ["impact", "probability", "actionability", "time_horizon", "risk_severity"]
 
 # AHP pairwise comparison matrix (5x5).

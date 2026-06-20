@@ -74,3 +74,68 @@ Return JSON:
   "key_tensions": ["1-3 unresolved tensions"],
   "source_chunk_ids_used": ["chunk_id_1", "chunk_id_2"]
 }}"""
+
+
+SCENARIO_GENERATE_MORPHOLOGICAL_SHORT = """Generate a concise 2035 scenario for the regulatory frequency monitoring domain
+from this driver configuration.
+
+DRIVER MANIFESTATIONS — these define the scenario, let them lead:
+{driver_manifestations_block}
+
+KEY CROSS-IMPACT DYNAMICS (context only):
+{cib_context}
+
+SOURCE MATERIAL:
+{rag_chunks}
+
+GROUNDING RULE: Base all technical claims on the source material and the driver
+manifestations above. Mark any unsupported claim with [Extrapolation]. Prefer fewer,
+well-grounded statements over broad speculation.
+
+{narrative_guide}
+
+{existing_titles_block}
+
+Keep the narrative internally consistent with the driver manifestations. Describe the
+state of the world under this configuration — do NOT spin out long causal chains,
+second-order effects, or how the configuration might eventually unravel.
+
+Time horizon: 2035
+
+Return JSON:
+{{
+  "title": "short descriptive title — name the specific dynamic, not a generic outcome",
+  "narrative": "the scenario narrative ({word_count} words)",
+  "perspective": "3-5 word framing phrase capturing the core narrative angle",
+  "key_tensions": ["1-2 unresolved tensions — omit if none are natural"],
+  "source_chunk_ids_used": ["chunk_id_1", "chunk_id_2"]
+}}"""
+
+
+SCENARIO_GENERATE_MORPHOLOGICAL_NEUTRAL = """Generate a 2035 scenario for the regulatory frequency monitoring domain that is consistent
+with the following driver configuration.
+
+DRIVER MANIFESTATIONS — these define the scenario:
+{driver_manifestations_block}
+
+CROSS-IMPACT CONTEXT:
+{cib_context}
+
+SOURCE MATERIAL:
+{rag_chunks}
+
+Write a coherent account of how regulatory frequency monitoring looks in 2035 under this
+specific combination of driver states. Stay consistent with the manifestations above and
+ground technical claims in the source material where possible. Beyond that, write the
+scenario however you judge best — there is no prescribed length, structure, tone, or framing.
+
+{existing_titles_block}
+
+Return JSON:
+{{
+  "title": "a short, specific title for this scenario",
+  "narrative": "the scenario narrative",
+  "perspective": "a 3-5 word framing phrase",
+  "key_tensions": ["unresolved tensions, if any are natural — otherwise omit"],
+  "source_chunk_ids_used": ["chunk_id_1", "chunk_id_2"]
+}}"""

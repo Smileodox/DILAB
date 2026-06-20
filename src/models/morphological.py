@@ -24,6 +24,7 @@ class ConsistencyResult(BaseModel):
     configuration: dict[str, str]
     consistency_score: float
     is_consistent: bool
+    contradiction_ratio: float = 0.0  # 0 = fully mutually supportive; used by the combinatorial soft-CIB filter
     scenario_type: str = "evolutionary"
     frequency: int = 1
     is_fixed_point: bool = True
