@@ -1,0 +1,149 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+% --- styling ---------------------------------------------------------------
+\definecolor{accent}{RGB}{20,86,140}
+\definecolor{muted}{RGB}{90,90,90}
+
+\titleformat{\section}{\large\bfseries\color{accent}}{\thesection.}{0.5em}{}
+\titlespacing*{\section}{0pt}{1.4ex plus .2ex}{0.6ex}
+
+\setlist[enumerate]{itemsep=1pt,topsep=2pt,parsep=0pt}
+\setlist[itemize]{itemsep=1pt,topsep=2pt,parsep=0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{muted}Strategic Technology Foresight --- Sprint Report}
+\fancyfoot[R]{\footnotesize\color{muted}\thepage}
+
+\hypersetup{pdftitle={Sprint Report --- Strategic Technology Foresight},
+            pdfauthor={Paul Keck}}
+
+\begin{document}
+
+% --- title block -----------------------------------------------------------
+\begin{center}
+  {\LARGE\bfseries\color{accent} Sprint Report}\\[3pt]
+  {\large Strategic Technology Foresight}
+\end{center}
+\vspace{2pt}
+
+\noindent\textbf{Project:} AI-Driven Scaling of Strategic Technology Foresight
+(Digital Innovation Lab, partner: Rohde \& Schwarz)\\[2pt]
+\textbf{Author:} Paul Keck \quad\textbullet\quad \textbf{Period:} 20--23 June 2026
+\quad\textbullet\quad \textbf{Audience:} Scrum Master (non-technical summary)
+
+\vspace{-1ex}
+\noindent\textcolor{accent}{\rule{\linewidth}{0.7pt}}
+
+% --- body ------------------------------------------------------------------
+\section{In a nutshell}
+This sprint had two big outcomes. First, we found and fixed a hidden quality problem: the
+futures our AI was generating \emph{looked} varied but were, on closer inspection, close to
+random noise --- and we can now prove, with a measurable test, that the fix produces real
+substance. Second --- and more important --- we clarified with the product owner what the
+project is \emph{really} supposed to deliver and rebuilt the tool to match it: a
+\textbf{reusable engine that works for any topic}, not just the one demo topic. We proved this
+works by plugging in a completely different subject area and getting sensible results with
+\textbf{zero reprogramming}. Everything is covered by 109 automated tests.
+
+\section{What the project is about}
+Companies like our partner Rohde \& Schwarz need to anticipate how technology in their field
+will evolve over the next decade, so they can decide where to invest. Doing this by hand
+(``scenario planning'') is slow and only explores a handful of futures. Our project uses AI to
+do it automatically and at much larger scale: read a body of documents, and produce a
+structured map of possible futures.
+
+\section{Where we started this sprint}
+A working prototype existed for one test topic (radio-spectrum monitoring). A note from the
+previous sprint flagged an open concern: the generated futures didn't seem to fall into clear,
+distinct groups. The task was simply: \textbf{make it better.}
+
+\section{What we discovered}
+When we looked closely, the ``futures'' the AI produced were essentially
+\textbf{indistinguishable from random} --- like shuffling the same deck of cards and calling
+each shuffle a new strategy.
+
+The root cause is a known weakness of AI language models: they are \textbf{relentlessly
+positive}. When asked ``can technology A and technology B work together?'', the AI almost always
+says ``yes'', because with enough effort almost anything \emph{can} be combined. But real
+strategy is about \textbf{trade-offs} --- what genuinely conflicts. By never flagging conflicts,
+the AI produced futures with no real backbone.
+
+To make this concrete and measurable (rather than a matter of opinion), we built a small
+\textbf{litmus test} that compares the AI's output against pure randomness. This turned a vague
+worry into a hard, repeatable number --- and gave us an objective way to tell whether any later
+improvement actually worked.
+
+\section{What we did}
+\textbf{(a) Quality fix --- getting honest judgments out of the AI.}
+We changed \emph{how} we ask the AI to weigh technology combinations: instead of ``\emph{can}
+these coexist?'' (almost always ``yes''), we now ask ``\emph{would a single, coherent design
+really commit to both} --- or do they pull in opposite directions?'' That reframing makes the AI
+surface the real trade-offs it was glossing over. The litmus test confirmed the improvement: the
+output went from ``indistinguishable from random'' to carrying \textbf{real, measurable
+structure}, and the result held up across repeated runs.
+
+\textbf{(b) The bigger shift --- from one-off prototype to a reusable tool.}
+Mid-sprint we confirmed with the product owner what actually matters to him: he is \textbf{not}
+interested in the spectrum-monitoring results themselves --- that was only a test case. What he
+wants is a \textbf{scalable framework}: feed it any collection of documents (any industry, any
+topic) and get strategic foresight out, \textbf{without anyone having to reprogram it}. This was
+effectively a scope clarification, and it reshaped our priorities for the rest of the sprint.
+
+The problem: the tool had the demo topic (``spectrum monitoring'', specific company names, a
+fixed time horizon) \textbf{baked into roughly 15 places} in its instructions. Plug in a
+different topic and you'd get nonsense. So we rebuilt it the right way round. The tool now
+\textbf{reads the documents first, figures out what the topic is on its own}, and feeds that
+understanding into every downstream step --- like turning a single-recipe machine into one that
+can read and follow \emph{any} recipe. We also added an automatic safeguard that stops anyone
+from accidentally hard-coding a topic back in.
+
+\section{The proof}
+We docked a brand-new, unrelated body of documents --- \textbf{autonomous farming / agriculture
+robots} --- and ran the tool. With \textbf{no code or wording changes at all}, it correctly
+recognised the new field and produced a sensible analysis (sensing crops, navigating fields,
+deciding where to spray, and so on). That is the core promise of the project --- ``scaling''
+foresight across topics --- demonstrated end to end.
+
+\section{Status \& quality}
+\begin{itemize}
+  \item \textbf{Done and working:} the topic-detection engine, the quality fix, the full
+        rebuild, and the cross-topic proof.
+  \item \textbf{Quality:} 109 automated tests pass, including the safeguard test above.
+  \item \textbf{Not yet finalised:} the work is complete but \textbf{not yet merged} into the
+        shared codebase --- a small, deliberate next step pending a quick review.
+  \item \textbf{Honest scope note:} we proved the \emph{analysis core} on the second topic end to
+        end. The final ``write-up'' steps (polished narrative text and scoring) use the exact same
+        mechanism and are tested, but were not separately re-run on the farming example --- and
+        that polished text is the part the product owner has said matters least.
+\end{itemize}
+
+\section{Next steps / open decisions}
+\begin{enumerate}
+  \item \textbf{Merge the work} into the shared codebase (small review, then done).
+  \item \textbf{Optional:} update the dashboard/UI, which still shows labels from the old demo topic.
+  \item \textbf{Optional:} run the full end-to-end output on a second topic for a complete showcase.
+\end{enumerate}
+
+\section{Mini-glossary}
+\begin{itemize}
+  \item \textbf{Scenario / future:} one plausible way the technology landscape could look in about a decade.
+  \item \textbf{Framework:} a reusable tool that works for many topics, not a one-off built for a single one.
+  \item \textbf{Knowledge base (KB):} the collection of documents we feed in as the tool's source material.
+  \item \textbf{Trade-off:} a real conflict where choosing one option costs you another --- the
+        substance that makes a strategy meaningful.
+\end{itemize}
+
+\end{document}
