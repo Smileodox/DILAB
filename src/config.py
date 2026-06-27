@@ -22,6 +22,16 @@ EVAL_MODEL = os.environ.get("AZURE_OPENAI_EVAL_MODEL", "gpt-4.1")
 SCENARIO_MODEL = os.environ.get("AZURE_OPENAI_SCENARIO_MODEL", "gpt-4.1")
 SCENARIO_N_SEEDS = int(os.environ.get("SCENARIO_N_SEEDS", "6"))
 
+# --- Domain abstraction (KB-agnostic foresight) ---
+# The pipeline derives a DomainProfile from the docked KB and injects it into neutral
+# prompt templates (no hardwired domain). These optionally OVERRIDE the derived framing
+# (hybrid: derive first, then let the user pin values per domain). "" = derive from KB.
+DOMAIN_PROFILE_PATH = os.path.join("data", "outputs", "domain_profile.json")
+DOMAIN_LABEL = os.environ.get("DOMAIN_LABEL", "")          # force the domain label
+DOMAIN_HORIZON = os.environ.get("DOMAIN_HORIZON", "")      # e.g. "2035"
+DOMAIN_ACTOR = os.environ.get("DOMAIN_ACTOR", "")          # e.g. "Rohde & Schwarz"
+DOMAIN_MODEL = os.environ.get("AZURE_OPENAI_DOMAIN_MODEL", "gpt-5.4")  # profiling model
+
 # --- Combinatorial scenario method (Soft-CIB + embedding clustering) ---
 # Alternative to the CIB fixed-point path: sample the morphological field broadly,
 # use the CIB matrix only as a soft consistency filter (reject only strongly

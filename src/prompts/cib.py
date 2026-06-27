@@ -1,9 +1,9 @@
-CIB_EVALUATE = """You are evaluating the cross-impact between two technology drivers in the regulatory frequency monitoring domain, looking ahead to 2035.
+CIB_EVALUATE = """You are evaluating the cross-impact between two technology drivers in the {domain} domain, looking ahead to {horizon}.
 
 Driver A: {driver_a_name} — {driver_a_description}
 Driver B: {driver_b_name} — {driver_b_description}
 
-CONTEXT: Evaluate these interactions looking ahead to 2035. The ITU SM.2542 (2024) next-generation monitoring framework — which mandates autonomous, proactive, data-driven spectrum monitoring — is the key regulatory forcing function. Where either driver relates to autonomy, AI/ML, real-time processing, or standardisation, explicitly consider whether SM.2542 requirements enable or constrain that driver.
+CONTEXT: Evaluate these interactions looking ahead to {horizon}. {forcing_context}
 
 STEP 1 — ANALYZE THE RELATIONSHIP:
 Think carefully about the SPECIFIC relationship between A and B from your professional perspective:
@@ -29,15 +29,7 @@ DEFAULT RULE: If A and B are both in scope for the same product line, serve the 
 TEST: "Does A's success make B less needed, less funded, or harder to integrate?" If ANY of the three applies → inhibiting is at least 1.
 
 EXAMPLES OF INHIBITING RELATIONSHIPS (for calibration):
-- Wideband Direct RF Sampling INHIBITS Analog Superheterodyne Channelizer (score: 2-3)
-  → Functional overlap: both solve the same front-end problem. Investing in direct sampling
-    reduces the need for analog downconversion. Same R&D budget, same board space.
-- Regulatory Fragmentation INHIBITS AI-Based Autonomous Monitoring (score: 2)
-  → Certification barriers multiply per jurisdiction. AI models trained on one regime's
-    rules don't transfer to another. Development cost scales with regulatory diversity.
-- Photonic ADC Development INHIBITS GaAs Mixer Investment (score: 2-3)
-  → Architectural conflict: photonic front-ends bypass the analog mixing stage entirely.
-    Success in photonic ADCs makes GaAs mixer improvements strategically irrelevant.
+{cib_inhibit_examples}
 
 STEP 3 — SCORE THE PROMOTING EFFECT (0-3):
 Apply these gates strictly — each level requires a harder test:

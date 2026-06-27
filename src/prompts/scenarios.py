@@ -3,7 +3,7 @@ These drivers most characterise this configuration — let them lead:
 {anchor_drivers}
 
 Write a compact, factual snapshot from the perspective of practitioners living in this
-2035. Cover what actually changed in day-to-day frequency monitoring under these exact
+{horizon}. Cover what actually changed in day-to-day {domain} under these exact
 driver states, and what stayed the same. Ground every technical claim in the
 manifestations above; avoid grand narratives, long causal chains, and any speculation
 beyond the listed states."""
@@ -37,7 +37,7 @@ Trace the SPECIFIC failure mode: why did these particular technologies or framew
 What barriers (cost, institutional, technical, political) explain this exact combination of outcomes?
 Show how one failure cascades into dependent functions — if measurement degrades, what downstream
 function breaks next? Make the failure chain specific to these drivers. Different driver failures
-produce different breakdowns — do not default to a generic "regulatory crisis" narrative.""",
+produce different breakdowns — do not default to a generic "systemic crisis" narrative.""",
 
     "wildcard": """NARRATIVE APPROACH (400-600 words):
 This configuration is polarised — some drivers reached optimistic states while others hit pessimistic extremes:
@@ -45,18 +45,18 @@ This configuration is polarised — some drivers reached optimistic states while
 
 The tension between these extremes IS the story. What unexpected event or shift brought this
 unstable combination into being? Show the instability: why does this configuration feel
-surprising, and what second-order effects does it trigger across the monitoring ecosystem?
+surprising, and what second-order effects does it trigger across the {domain} ecosystem?
 Avoid a simple good-vs-bad framing — the interesting question is how these contradictory
 conditions coexist and what they force stakeholders to do.""",
 }
 
-SCENARIO_GENERATE = """Generate a future scenario for the regulatory frequency monitoring domain based on these technology driver assumptions:
+SCENARIO_GENERATE = """Generate a future scenario for the {domain} domain based on these technology driver assumptions:
 
 {driver_assumptions}
 
 Scenario type: {scenario_type}
 Scenario perspective: {perspective}
-Time horizon: 2035
+Time horizon: {horizon}
 {existing_titles_block}
 
 CIB CONTEXT (key cross-impacts shaping this scenario):

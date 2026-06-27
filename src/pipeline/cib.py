@@ -22,6 +22,7 @@ from src.llm import safe_chat_json, validated_chat_json
 from src.models.drivers import TechDriver
 from src.models.llm_responses import CIBResponse
 from src.models.scenarios import CIBEntry, PersonaScore
+from src.models.domain import DomainProfile
 from src.prompts.cib import CIB_EVALUATE
 from src.prompts.personas import PERSONAS
 from src.rag import format_rag_chunks, retrieve
@@ -140,7 +141,12 @@ def run(
     panel_mode: bool = True,
     driver_ids: list[str] | None = None,
     delphi_rounds: int = 2,
+    profile: DomainProfile | None = None,
 ) -> dict:
+    if profile is None:
+        from src.pipeline.domain import load_profile
+        profile = load_profile()
+    pkw = profile.prompt_kwargs()
     with open(merge_state_path) as f:
         merge_state = json.load(f)
 
@@ -178,12 +184,13 @@ def run(
             driver_b_name=drivers[j].name,
             driver_b_description=drivers[j].description[:150],
             rag_chunks=rag_text,
+            **pkw,
         )
 
     results: dict[tuple[int, int], list[PersonaScore]] = {p: [] for p in pairs}
 
     if panel_mode:
-        personas = PERSONAS
+        personas = [p.model_dump() for p in profile.personas] if profile.personas else PERSONAS
         total_tasks = len(pairs) * len(personas)
         print(f"  Round 1: {len(personas)} personas x {len(pairs)} pairs = {total_tasks} evaluations", flush=True)
 

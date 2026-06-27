@@ -13,6 +13,7 @@ import numpy as np
 from src.llm import embed, safe_chat_json
 from src.models.drivers import TechDriver, DriverOrigin, DriverConfidence, DimensionType
 from src.models.common import stable_id
+from src.models.domain import DomainProfile
 from src.prompts.merge import MERGE_DRIVERS
 
 SIMILARITY_THRESHOLD = 0.85
@@ -24,9 +25,9 @@ DESCRIPTION: {description}
 ORIGIN: {origin}
 
 DIMENSION TYPES:
-- hardware: Physical components, RF subsystems, antennas, ADCs, mixers, board-level tech
-- software: Algorithms, AI/ML, signal processing software, data pipelines, automation
-- regulatory: Standards, ITU regulations, compliance, certification, spectrum policy
+- hardware: Physical components, subsystems, devices, board-level technology
+- software: Algorithms, AI/ML, software, data pipelines, automation
+- regulatory: Standards, regulations, compliance, certification, policy
 - market: Customer demand, competitive dynamics, pricing, adoption trends
 - geopolitical: National sovereignty, international cooperation, trade restrictions
 
@@ -63,8 +64,10 @@ def normalize_name(name: str) -> str:
     return re.sub(r'\s+', ' ', name).strip()
 
 
-def llm_match(bom_drivers: list[TechDriver], trend_drivers: list[TechDriver]) -> dict:
+def llm_match(bom_drivers: list[TechDriver], trend_drivers: list[TechDriver],
+              profile: DomainProfile | None = None) -> dict:
     """LLM-based matching of BOM and Trend driver lists. Returns merge_result dict."""
+    pkw = (profile or DomainProfile(domain="this technology domain")).prompt_kwargs()
     bom_list = "\n".join(
         [f"- Index: {i} | [{d.dimension_type.value}] Name: {d.name} | Desc: {d.description[:150]}" for i, d in enumerate(bom_drivers)]
     )
@@ -72,13 +75,13 @@ def llm_match(bom_drivers: list[TechDriver], trend_drivers: list[TechDriver]) ->
         [f"- Index: {i} | [{d.dimension_type.value}] Name: {d.name} | Desc: {d.description[:150]}" for i, d in enumerate(trend_drivers)]
     )
 
-    merge_prompt = MERGE_DRIVERS.format(bom_drivers=bom_list, trend_drivers=trend_list)
+    merge_prompt = MERGE_DRIVERS.format(bom_drivers=bom_list, trend_drivers=trend_list, **pkw)
     merge_prompt = merge_prompt.replace("bom_driver_id", "bom_driver_index").replace("trend_driver_id", "trend_driver_index")
     merge_prompt = merge_prompt.replace("bom driver ids", "bom driver indices").replace("trend driver ids", "trend driver indices")
 
     merge_result = safe_chat_json(
         merge_prompt,
-        system="You are merging two technology driver lists for regulatory frequency monitoring. Use the INDEX numbers provided, not names or made-up IDs.",
+        system=f"You are merging two technology driver lists for {pkw['domain']}. Use the INDEX numbers provided, not names or made-up IDs.",
     )
 
     matched_bom_indices: set[int] = set()
@@ -267,8 +270,12 @@ def run(
     bom_state_path: str = "data/outputs/bom_state.json",
     trend_state_path: str = "data/outputs/trend_state.json",
     output_path: str = "data/outputs/merge_state.json",
+    profile: DomainProfile | None = None,
 ) -> dict:
     """Run full merge pipeline: LLM match → build unified list → 3-stage consolidation."""
+    if profile is None:
+        from src.pipeline.domain import load_profile
+        profile = load_profile()
     with open(bom_state_path) as f:
         bom_drivers = [TechDriver(**d) for d in json.load(f)["bom_drivers"]]
     with open(trend_state_path) as f:
@@ -282,7 +289,7 @@ def run(
     for d in trend_drivers:
         print(f"    [{d.dimension_type.value:12s}] {d.name[:50]}")
 
-    merge_result = llm_match(bom_drivers, trend_drivers)
+    merge_result = llm_match(bom_drivers, trend_drivers, profile)
     unified = build_unified_list(merge_result, bom_drivers, trend_drivers)
     unified = consolidate(unified)
 

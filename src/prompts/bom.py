@@ -1,4 +1,4 @@
-BOM_DECOMPOSE = """You are analyzing a component from a regulatory frequency monitoring system.
+BOM_DECOMPOSE = """You are analyzing a component from {system}.
 
 Parent context: {parent_context}
 Component to decompose: {component_name}
@@ -24,7 +24,7 @@ Return JSON with this structure:
 Only include components you can support with the provided source material. If the source material doesn't contain enough information, return fewer components rather than guessing."""
 
 
-BOM_CLASSIFY_DRIVER = """Given this technology component from a regulatory frequency monitoring product BOM:
+BOM_CLASSIFY_DRIVER = """Given this technology component from a {domain} product BOM:
 
 Name: {name}
 Description: {description}

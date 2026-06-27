@@ -13,6 +13,7 @@ from src.config import (
 from src.llm import embed, safe_chat_json
 from src.models.scenarios import Scenario
 from src.models.evaluation import Assessment, AHPWeights, MCDAResult
+from src.models.domain import DomainProfile
 from src.models.drivers import TechDriver, DriverConfidence
 from src.rag import get_collection
 from src.prompts.evaluation import SCENARIO_ASSESS
@@ -90,7 +91,9 @@ def _collect_source_chunks(scenarios: list[Scenario], collection) -> str:
         return ""
 
 
-def assess_scenarios(scenarios: list[Scenario], scenario_confidences: list[float], collection) -> list[Assessment]:
+def assess_scenarios(scenarios: list[Scenario], scenario_confidences: list[float], collection,
+                     profile: DomainProfile | None = None) -> list[Assessment]:
+    pkw = (profile or DomainProfile(domain="this technology domain")).prompt_kwargs()
     scenarios_block = build_scenarios_block(scenarios)
 
     rag_text = _collect_source_chunks(scenarios, collection)
@@ -103,10 +106,11 @@ def assess_scenarios(scenarios: list[Scenario], scenario_confidences: list[float
             for i in range(len(rag["ids"][0]))
         ])
 
-    prompt = SCENARIO_ASSESS.format(n=len(scenarios), scenarios_block=scenarios_block, rag_chunks=rag_text)
+    prompt = SCENARIO_ASSESS.format(n=len(scenarios), scenarios_block=scenarios_block,
+                                    rag_chunks=rag_text, **pkw)
     result = safe_chat_json(
         prompt,
-        system="You are a strategic technology analyst at Rohde & Schwarz evaluating future scenarios for spectrum monitoring.",
+        system=f"You are a strategic technology analyst at {pkw['actor']} evaluating future scenarios for {pkw['domain']}.",
         model=EVAL_MODEL,
     )
 
@@ -143,17 +147,18 @@ def assess_scenarios_batched(
     scenario_confidences: list[float],
     collection,
     batch_size: int = 8,
+    profile: DomainProfile | None = None,
 ) -> list[Assessment]:
     """Assess scenarios in batches to stay within prompt length limits."""
     if len(scenarios) <= batch_size:
-        return assess_scenarios(scenarios, scenario_confidences, collection)
+        return assess_scenarios(scenarios, scenario_confidences, collection, profile)
 
     all_assessments: list[Assessment] = []
     for start in range(0, len(scenarios), batch_size):
         end = min(start + batch_size, len(scenarios))
         batch_scenarios = scenarios[start:end]
         batch_confidences = scenario_confidences[start:end]
-        batch_assessments = assess_scenarios(batch_scenarios, batch_confidences, collection)
+        batch_assessments = assess_scenarios(batch_scenarios, batch_confidences, collection, profile)
         all_assessments.extend(batch_assessments)
     return all_assessments
 
@@ -319,7 +324,11 @@ def run(
     output_path: str = "data/outputs/final_analysis.json",
     pairwise_matrix: list[list[float]] | None = None,
     consistency_scores: list[float] | None = None,
+    profile: DomainProfile | None = None,
 ) -> dict:
+    if profile is None:
+        from src.pipeline.domain import load_profile
+        profile = load_profile()
     collection = get_collection()
 
     with open(scenario_state_path) as f:

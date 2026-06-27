@@ -14,6 +14,7 @@ import os
 
 from src.config import EVAL_MODEL
 from src.llm import safe_chat_json
+from src.models.domain import DomainProfile
 from src.prompts.strategic_framing import STRATEGIC_FRAMING
 
 
@@ -61,22 +62,27 @@ def run(
     final_analysis_path: str = "data/outputs/final_analysis.json",
     output_path: str = "data/outputs/strategic_framing.json",
     model: str | None = None,
+    profile: DomainProfile | None = None,
 ) -> dict:
+    if profile is None:
+        from src.pipeline.domain import load_profile
+        profile = load_profile()
+    pkw = profile.prompt_kwargs()
+
     with open(final_analysis_path) as f:
         final = json.load(f)
 
     n = len(final["scenarios"])
     scenarios_block = _build_scenarios_block(final)
 
-    prompt = STRATEGIC_FRAMING.format(n=n, scenarios_block=scenarios_block)
+    prompt = STRATEGIC_FRAMING.format(n=n, scenarios_block=scenarios_block, **pkw)
 
     result = safe_chat_json(
         prompt,
         system=(
-            "You are a senior strategy consultant with deep expertise in defence-grade "
-            "telecommunications and spectrum management markets. You are briefing "
-            "Rohde & Schwarz leadership on strategic implications of a morphological "
-            "foresight analysis. Be concrete, opinionated, and specific — name gaps, "
+            f"You are a senior strategy consultant with deep expertise in the {pkw['domain']} "
+            f"market. You are briefing {pkw['actor']} leadership on strategic implications of a "
+            "morphological foresight analysis. Be concrete, opinionated, and specific — name gaps, "
             "name competitors, name decision timelines."
         ),
         model=model or EVAL_MODEL,

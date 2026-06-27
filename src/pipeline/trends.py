@@ -25,6 +25,7 @@ from sklearn.cluster import KMeans
 from src.llm import embed, safe_chat_json
 from src.models.common import stable_id
 from src.models.drivers import DriverConfidence, DriverOrigin, TechDriver
+from src.models.domain import DomainProfile
 from src.prompts.trends import CLUSTER_DRIVER_EXTRACT
 from src.rag import get_collection
 
@@ -51,7 +52,12 @@ def run(
     bom_overlap_threshold: float = BOM_OVERLAP_THRESHOLD,
     n_clusters: int = N_CLUSTERS,
     min_cluster_size: int = MIN_CLUSTER_SIZE,
+    profile: DomainProfile | None = None,
 ) -> dict:
+    if profile is None:
+        from src.pipeline.domain import load_profile
+        profile = load_profile()
+    pkw = profile.prompt_kwargs()
     # --- 1. Load BOM tech drivers (coverage reference) ---
     with open(bom_state_path) as f:
         bom_state = json.load(f)
@@ -148,8 +154,8 @@ def run(
         )
 
         llm_result = safe_chat_json(
-            CLUSTER_DRIVER_EXTRACT.format(chunks_text=chunks_text),
-            system="You are identifying external environmental drivers for a technology foresight study on regulatory spectrum monitoring.",
+            CLUSTER_DRIVER_EXTRACT.format(chunks_text=chunks_text, **pkw),
+            system=f"You are identifying external environmental drivers for a technology foresight study on {pkw['domain']}.",
         )
 
         name = llm_result.get("name", "").strip()

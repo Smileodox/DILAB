@@ -1,5 +1,5 @@
 MANIFESTATION_DETERMINE = """Determine 2-4 possible future manifestations for this technology driver
-in the regulatory frequency monitoring domain, looking ahead to 2035.
+in the {domain} domain, looking ahead to {horizon}.
 
 TECHNOLOGY DRIVER: {driver_name}
 DESCRIPTION: {driver_description}
@@ -8,7 +8,7 @@ ORIGIN: {driver_origin} (confidence: {driver_confidence})
 SOURCE MATERIAL:
 {rag_chunks}
 
-A "manifestation" is a specific, domain-grounded state this technology could reach by 2035.
+A "manifestation" is a specific, domain-grounded state this technology could reach by {horizon}.
 Do NOT use generic labels like "breakthrough" or "stagnation". Instead, describe WHAT
 specifically happens in this technology area.
 
@@ -20,17 +20,15 @@ RULES:
 - Each manifestation needs a concrete description grounded in the source material
 - Order from most optimistic to most pessimistic
 
-EXAMPLE (for a hypothetical "Wideband RF Frontend" driver):
-  1. "Sub-THz coverage achieved" — single platform covers 8 kHz to 300 GHz
-  2. "Millimeter-wave extension" — coverage extends to 110 GHz, sub-THz via external module
-  3. "Current range maintained" — 8 kHz to 40 GHz with incremental sensitivity gains only
+EXAMPLE of specific, distinct manifestations (not generic progress labels):
+{manifestation_example}
 
 Return JSON:
 {{
   "manifestations": [
     {{
       "label": "short specific label (max 10 words)",
-      "description": "2-3 sentences describing what this state means concretely for spectrum monitoring",
+      "description": "2-3 sentences describing what this state means concretely for {domain}",
       "plausibility": "high" or "medium" or "low",
       "grounding": "which source evidence supports this possibility"
     }}
@@ -39,7 +37,7 @@ Return JSON:
 }}"""
 
 
-SCENARIO_GENERATE_MORPHOLOGICAL = """Generate a 2035 scenario for the regulatory frequency monitoring domain
+SCENARIO_GENERATE_MORPHOLOGICAL = """Generate a {horizon} scenario for the {domain} domain
 from this CIB-consistent driver configuration:
 
 DRIVER MANIFESTATIONS — these define the scenario, let them lead the narrative:
@@ -63,7 +61,7 @@ Show WHY this specific combination of states holds together — what reinforcing
 make it stable, and what would have to change for it to unravel.
 
 Scenario type (for classification only): {scenario_type}
-Time horizon: 2035
+Time horizon: {horizon}
 
 Return JSON:
 {{
@@ -76,7 +74,7 @@ Return JSON:
 }}"""
 
 
-SCENARIO_GENERATE_MORPHOLOGICAL_SHORT = """Generate a concise 2035 scenario for the regulatory frequency monitoring domain
+SCENARIO_GENERATE_MORPHOLOGICAL_SHORT = """Generate a concise {horizon} scenario for the {domain} domain
 from this driver configuration.
 
 DRIVER MANIFESTATIONS — these define the scenario, let them lead:
@@ -100,7 +98,7 @@ Keep the narrative internally consistent with the driver manifestations. Describ
 state of the world under this configuration — do NOT spin out long causal chains,
 second-order effects, or how the configuration might eventually unravel.
 
-Time horizon: 2035
+Time horizon: {horizon}
 
 Return JSON:
 {{
@@ -112,7 +110,7 @@ Return JSON:
 }}"""
 
 
-SCENARIO_GENERATE_MORPHOLOGICAL_NEUTRAL = """Generate a 2035 scenario for the regulatory frequency monitoring domain that is consistent
+SCENARIO_GENERATE_MORPHOLOGICAL_NEUTRAL = """Generate a {horizon} scenario for the {domain} domain that is consistent
 with the following driver configuration.
 
 DRIVER MANIFESTATIONS — these define the scenario:
@@ -124,7 +122,7 @@ CROSS-IMPACT CONTEXT:
 SOURCE MATERIAL:
 {rag_chunks}
 
-Write a coherent account of how regulatory frequency monitoring looks in 2035 under this
+Write a coherent account of how {domain} looks in {horizon} under this
 specific combination of driver states. Stay consistent with the manifestations above and
 ground technical claims in the source material where possible. Beyond that, write the
 scenario however you judge best — there is no prescribed length, structure, tone, or framing.

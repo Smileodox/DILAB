@@ -20,6 +20,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from src import config
 from src.llm import safe_chat_json
 from src.models.common import _id
+from src.models.domain import DomainProfile
 from src.models.drivers import DriverConfidence, DriverOrigin, TechDriver
 from src.models.morphological import (
     ConsistencyResult,
@@ -28,11 +29,15 @@ from src.models.morphological import (
 )
 from src.prompts.functional import (
     CCA_FUNCTION_PAIR,
+    CCA_FUNCTION_PAIR_CONTRASTIVE,
     DIRECTIONS_EXTRACT,
     FUNCTION_EXTRACT,
 )
 
 log = logging.getLogger(__name__)
+
+# Used when a step is called without a profile (e.g. unit tests) — generic fallbacks only.
+_NEUTRAL = DomainProfile(domain="this technology domain")
 
 
 def _rag_text(collection, query: str, n: int = 5) -> str:
@@ -49,14 +54,17 @@ def _rag_text(collection, query: str, n: int = 5) -> str:
 
 # --- extraction ----------------------------------------------------------------------
 
-def extract_functions(collection=None, model: str | None = None) -> list[dict]:
+def extract_functions(collection=None, model: str | None = None,
+                      profile: DomainProfile | None = None) -> list[dict]:
+    profile = profile or _NEUTRAL
     rag = _rag_text(
         collection,
-        "spectrum monitoring technical functions sense digitize detect classify locate "
-        "emitters process route data intelligence hardware integration",
+        profile.query("functions",
+                      f"{profile.domain} technical functions core capabilities building blocks"),
         n=6,
     )
-    res = safe_chat_json(FUNCTION_EXTRACT.format(rag_chunks=rag), temperature=0.4, model=model)
+    res = safe_chat_json(FUNCTION_EXTRACT.format(rag_chunks=rag, **profile.prompt_kwargs()),
+                         temperature=0.4, model=model)
     out = []
     for f in res.get("functions", []):
         if f.get("name"):
@@ -64,11 +72,14 @@ def extract_functions(collection=None, model: str | None = None) -> list[dict]:
     return out
 
 
-def extract_directions(function: dict, collection=None, model: str | None = None) -> list[DriverManifestation]:
+def extract_directions(function: dict, collection=None, model: str | None = None,
+                       profile: DomainProfile | None = None) -> list[DriverManifestation]:
+    profile = profile or _NEUTRAL
     rag = _rag_text(
         collection,
-        f"{function['name']} {function['description']} competing approaches paradigms "
-        f"architectures alternatives 2035",
+        profile.query("directions",
+                      f"{function['name']} {function['description']} competing approaches "
+                      f"paradigms architectures alternatives"),
         n=5,
     )
     res = safe_chat_json(
@@ -76,6 +87,7 @@ def extract_directions(function: dict, collection=None, model: str | None = None
             function_name=function["name"],
             function_description=function["description"],
             rag_chunks=rag,
+            **profile.prompt_kwargs(),
         ),
         temperature=0.5, model=model,
     )
@@ -94,12 +106,14 @@ def extract_directions(function: dict, collection=None, model: str | None = None
     return manifs
 
 
-def build_morphbox(collection=None, model: str | None = None, max_workers: int = 6):
-    functions = extract_functions(collection, model)
+def build_morphbox(collection=None, model: str | None = None, max_workers: int = 6,
+                   profile: DomainProfile | None = None):
+    profile = profile or _NEUTRAL
+    functions = extract_functions(collection, model, profile)
     log.info("Extracted %d candidate functions", len(functions))
 
     with ThreadPoolExecutor(max_workers=max_workers) as pool:
-        futs = {pool.submit(extract_directions, f, collection, model): f for f in functions}
+        futs = {pool.submit(extract_directions, f, collection, model, profile): f for f in functions}
         directions = {futs[fut]["id"]: fut.result() for fut in as_completed(futs)}
 
     # A function is only a real morphological dimension if it has >=2 competing directions.
@@ -124,9 +138,21 @@ def build_morphbox(collection=None, model: str | None = None, max_workers: int =
 
 # --- Cross-Consistency Assessment ----------------------------------------------------
 
+CCA_PROMPTS = {"absolute": CCA_FUNCTION_PAIR, "contrastive": CCA_FUNCTION_PAIR_CONTRASTIVE}
+
+
 def assess_cca(morph: MorphologicalBox, manif_by_id: dict, name_by_fid: dict,
-               model: str | None = None, max_workers: int = 6) -> dict:
-    """Score every cross-function direction pair for technical compatibility (-2..+2)."""
+               model: str | None = None, max_workers: int = 6,
+               mode: str = "absolute", profile: DomainProfile | None = None) -> dict:
+    """Score every cross-function direction pair for technical compatibility (-2..+2).
+
+    ``mode="absolute"`` (default) uses the plain compatibility prompt. ``mode="contrastive"``
+    flips the prior toward architectural tension and forces the per-pair scores to spread —
+    the fix for the LLM positivity bias that leaves the absolute CCA matrix nearly all-positive
+    (and the sampled field statistically indistinguishable from uniform random).
+    """
+    prompt_template = CCA_PROMPTS.get(mode, CCA_FUNCTION_PAIR)
+    pkw = (profile or _NEUTRAL).prompt_kwargs()
     fids = morph.drivers
     cca: dict[str, dict[str, int]] = {}
 
@@ -140,9 +166,9 @@ def assess_cca(morph: MorphologicalBox, manif_by_id: dict, name_by_fid: dict,
         mb = [manif_by_id[m] for m in morph.manifestations[fb]]
         block = lambda ms: "\n".join(f"  {k}. {m.label}: {m.description[:140]}" for k, m in enumerate(ms))
         res = safe_chat_json(
-            CCA_FUNCTION_PAIR.format(
+            prompt_template.format(
                 function_a_name=name_by_fid[fa], function_b_name=name_by_fid[fb],
-                directions_a=block(ma), directions_b=block(mb),
+                directions_a=block(ma), directions_b=block(mb), **pkw,
             ),
             temperature=0.2, model=model,
         )
@@ -216,9 +242,13 @@ def sample_consistent(morph: MorphologicalBox, cca: dict, n_samples: int,
 
 def run(output_dir: str = "data/outputs", n_samples: int | None = None,
         reject_threshold: float = 0.25, model: str | None = None, collection="auto",
-        max_workers: int = 6, seed: int | None = None) -> dict:
+        max_workers: int = 6, seed: int | None = None, cca_mode: str = "contrastive",
+        profile: DomainProfile | None = None) -> dict:
     n_samples = config.COMBI_N_SAMPLES if n_samples is None else n_samples
     seed = config.COMBI_SEED if seed is None else seed
+    if profile is None:
+        from src.pipeline.domain import load_profile
+        profile = load_profile()
     if collection == "auto":
         try:
             from src.rag import get_collection
@@ -230,8 +260,8 @@ def run(output_dir: str = "data/outputs", n_samples: int | None = None,
     def p(name):
         return os.path.join(output_dir, name)
 
-    print("[1/4] Extracting functions + competing directions ...", flush=True)
-    morph, tech_drivers = build_morphbox(collection, model, max_workers)
+    print(f"[1/4] Extracting functions + competing directions (domain: {profile.domain!r}) ...", flush=True)
+    morph, tech_drivers = build_morphbox(collection, model, max_workers, profile)
     name_by_fid = {d.id: d.name for d in tech_drivers}
     manif_by_id = {m.id: m for m in morph.all_manifestations}
     print(f"  {len(morph.drivers)} functions, {len(morph.all_manifestations)} directions", flush=True)
@@ -244,9 +274,10 @@ def run(output_dir: str = "data/outputs", n_samples: int | None = None,
     json.dump({"unified_drivers": [d.model_dump(mode="json") for d in tech_drivers]},
               open(p("functional_merge_state.json"), "w"), indent=2)
 
-    print("[2/4] Cross-Consistency Assessment (CCA) ...", flush=True)
-    cca = assess_cca(morph, manif_by_id, name_by_fid, model, max_workers)
-    json.dump({"cca": cca, "n_functions": len(morph.drivers)}, open(p("cca_state.json"), "w"), indent=2)
+    print(f"[2/4] Cross-Consistency Assessment (CCA, mode={cca_mode}) ...", flush=True)
+    cca = assess_cca(morph, manif_by_id, name_by_fid, model, max_workers, mode=cca_mode, profile=profile)
+    json.dump({"cca": cca, "n_functions": len(morph.drivers), "cca_mode": cca_mode},
+              open(p("cca_state.json"), "w"), indent=2)
     scores = [s for d in cca.values() for s in d.values()]
     if scores:
         nneg = sum(1 for s in scores if s < 0) // 2

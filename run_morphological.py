@@ -17,7 +17,7 @@ import logging
 import os
 
 from src import config
-from src.pipeline import functional, landscape, scenario_gen
+from src.pipeline import domain, functional, landscape, scenario_gen
 from src.pipeline.clustering import cluster_and_select, config_matrix
 
 DATA = "data/outputs"
@@ -29,15 +29,24 @@ def _p(name):
 
 def run(n_samples=None, reject_threshold=0.25, n_clusters=None, model="gpt-5.4",
         max_workers=6, narrative_mode="short", extract_only=False, skip_eval=False,
-        skip_extract=False):
+        skip_extract=False, cca_mode="contrastive"):
     n_clusters = config.COMBI_N_CLUSTERS if n_clusters is None else n_clusters
+
+    # 0. Ensure a DomainProfile (derive from the docked KB on first run). This is what makes
+    #    the pipeline domain-agnostic — no domain term is hardwired in any downstream prompt.
+    try:
+        profile = domain.load_profile()
+    except FileNotFoundError:
+        print("No domain profile yet — deriving from the docked KB ...")
+        profile = domain.run(model=model)
+    print(f"  domain: {profile.domain!r} (horizon {profile.horizon}, actor {profile.actor!r})")
 
     # 1. functional extraction + CCA + CCA-consistent sampling (reuse if requested)
     if skip_extract:
         print("--skip-extract: reusing existing *_zwicky extraction + configs")
     else:
         functional.run(output_dir=DATA, n_samples=n_samples, reject_threshold=reject_threshold,
-                       model=model, max_workers=max_workers)
+                       model=model, max_workers=max_workers, cca_mode=cca_mode, profile=profile)
 
     seed_path, morph_path = _p("combinatorial_state_zwicky.json"), _p("morphbox_zwicky_state.json")
     cib_path, merge_path = _p("cib_state_zwicky.json"), _p("functional_merge_state.json")
@@ -59,7 +68,8 @@ def run(n_samples=None, reject_threshold=0.25, n_clusters=None, model="gpt-5.4",
     print("\n[narratives] generating ...", flush=True)
     scenario_gen.run(consistency_state_path=seed_path, morphbox_state_path=morph_path,
                      cib_state_path=cib_path, merge_state_path=merge_path, output_path=scen_path,
-                     narrative_mode=narrative_mode, max_workers=max_workers, collection=coll, model=model)
+                     narrative_mode=narrative_mode, max_workers=max_workers, collection=coll,
+                     model=model, profile=profile)
 
     # 3. config-space clustering (the honest geometry)
     scenarios = json.load(open(scen_path))["scenarios"]
@@ -88,7 +98,7 @@ def run(n_samples=None, reject_threshold=0.25, n_clusters=None, model="gpt-5.4",
             from src.pipeline import evaluation
             print(f"\n[MCDA] on {len(reps)} representatives ...", flush=True)
             evaluation.run(scenario_state_path=reps_path, merge_state_path=merge_path,
-                           kb_state_path=_p("kb_state.json"), output_path=final_path)
+                           kb_state_path=_p("kb_state.json"), output_path=final_path, profile=profile)
         except Exception as e:  # noqa: BLE001
             print(f"  MCDA failed ({e}); other *_zwicky outputs still written.")
 
@@ -107,13 +117,17 @@ def main():
     ap.add_argument("--model", default="gpt-5.4", help="chat model (gpt-5.4 = pooled across endpoints)")
     ap.add_argument("--max-workers", type=int, default=6)
     ap.add_argument("--narrative-mode", choices=["full", "short", "neutral"], default="short")
+    ap.add_argument("--cca-mode", choices=["absolute", "contrastive"], default="contrastive",
+                    help="CCA elicitation: contrastive flips the prior toward tension and forces "
+                         "the scores to spread (breaks the LLM positivity bias; default)")
     ap.add_argument("--extract-only", action="store_true", help="extraction + CCA + sampling only")
     ap.add_argument("--skip-extract", action="store_true", help="reuse existing *_zwicky extraction + configs")
     ap.add_argument("--skip-eval", action="store_true")
     args = ap.parse_args()
     run(n_samples=args.n_samples, reject_threshold=args.reject_threshold, n_clusters=args.n_clusters,
         model=args.model, max_workers=args.max_workers, narrative_mode=args.narrative_mode,
-        extract_only=args.extract_only, skip_eval=args.skip_eval, skip_extract=args.skip_extract)
+        extract_only=args.extract_only, skip_eval=args.skip_eval, skip_extract=args.skip_extract,
+        cca_mode=args.cca_mode)
 
 
 if __name__ == "__main__":

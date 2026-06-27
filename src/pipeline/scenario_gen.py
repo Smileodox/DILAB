@@ -17,6 +17,7 @@ import numpy as np
 
 from src import config
 from src.llm import embed, safe_chat_json
+from src.models.domain import DomainProfile
 from src.models.drivers import TechDriver
 from src.models.morphological import DriverManifestation, MorphologicalBox
 from src.models.scenarios import DriverAssumption, Scenario, ScenarioType
@@ -115,10 +116,15 @@ def run(
     max_workers: int | None = None,
     collection=None,
     model: str | None = None,
+    profile: DomainProfile | None = None,
 ) -> dict:
     # Read module config here: inside _generate_one the name `config` is the local
     # seed configuration dict, so the module attr must be captured in run() scope.
     combi_words = config.COMBI_NARRATIVE_WORDS
+    if profile is None:
+        from src.pipeline.domain import load_profile
+        profile = load_profile()
+    pkw = profile.prompt_kwargs()
 
     with open(consistency_state_path) as f:
         consistency = json.load(f)
@@ -212,7 +218,7 @@ def run(
                 for d_id in config
                 if d_id in driver_by_id and config[d_id] in manif_lookup
             ]
-            query_text = f"{' '.join(query_parts)} spectrum monitoring 2035"
+            query_text = f"{' '.join(query_parts)} {profile.domain} {profile.horizon}"
             query_emb = embed([query_text[:500]])[0]
             rag = collection.query(
                 query_embeddings=[query_emb],
@@ -253,7 +259,7 @@ def run(
             # shorter target, lower temperature. Anchors still use the inferred type's
             # rule so the snapshot highlights this combination's characterising drivers.
             narrative_guide = SCENARIO_NARRATIVE_GUIDE_SHORT.format(
-                anchor_drivers=anchors, word_count=combi_words
+                anchor_drivers=anchors, word_count=combi_words, **pkw
             )
             prompt = SCENARIO_GENERATE_MORPHOLOGICAL_SHORT.format(
                 driver_manifestations_block="\n".join(manif_block_parts),
@@ -262,6 +268,7 @@ def run(
                 rag_chunks=rag_text,
                 narrative_guide=narrative_guide,
                 word_count=combi_words,
+                **pkw,
             )
             temperature = 0.5
         elif narrative_mode == "neutral":
@@ -272,12 +279,13 @@ def run(
                 existing_titles_block=titles_block,
                 cib_context=cib_context,
                 rag_chunks=rag_text,
+                **pkw,
             )
             temperature = 0.7
         else:
             narrative_guide = SCENARIO_NARRATIVE_GUIDE.get(
                 stype.value, SCENARIO_NARRATIVE_GUIDE["evolutionary"]
-            ).format(anchor_drivers=anchors)
+            ).format(anchor_drivers=anchors, **pkw)
             prompt = SCENARIO_GENERATE_MORPHOLOGICAL.format(
                 driver_manifestations_block="\n".join(manif_block_parts),
                 scenario_type=stype.value,
@@ -285,6 +293,7 @@ def run(
                 cib_context=cib_context,
                 rag_chunks=rag_text,
                 narrative_guide=narrative_guide,
+                **pkw,
             )
             temperature = 0.75
 

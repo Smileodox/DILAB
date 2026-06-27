@@ -1,4 +1,4 @@
-MERGE_DRIVERS = """You have two lists of technology drivers identified through different methods for the regulatory frequency monitoring domain.
+MERGE_DRIVERS = """You have two lists of technology drivers identified through different methods for the {domain} domain.
 
 BOTTOM-UP DRIVERS (from product BOM decomposition):
 {bom_drivers}
