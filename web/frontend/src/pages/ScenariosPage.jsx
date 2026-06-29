@@ -1,14 +1,15 @@
 import { useState, useEffect, useCallback } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import axios from 'axios'
-import { useApi } from '@/hooks/useApi'
+import { useKbApi, useKb } from '@/context/KbContext'
 import ScenarioList from '@/components/scenarios/ScenarioList'
 import ScenarioDetail from '@/components/scenarios/ScenarioDetail'
 import NarrativeView from '@/components/scenarios/NarrativeView'
 import EvidencePanel from '@/components/scenarios/EvidencePanel'
 
 export default function ScenariosPage() {
-  const { data: scenarios, loading } = useApi('/api/scenarios')
+  const { data: scenarios, loading } = useKbApi('/api/scenarios')
+  const { kb } = useKb()
   const [selectedId, setSelectedId] = useState(null)
   const [showNarrative, setShowNarrative] = useState(false)
   const [showEvidence, setShowEvidence] = useState(false)
@@ -43,11 +44,11 @@ export default function ScenariosPage() {
 
     setTraceLoading(true)
     axios
-      .get(`/api/traceability/${selectedId}`)
+      .get(`/api/traceability/${selectedId}?kb=${kb}`)
       .then((res) => setTraceData(res.data))
       .catch(() => setTraceData(null))
       .finally(() => setTraceLoading(false))
-  }, [selectedId])
+  }, [selectedId, kb])
 
   const handleClosePanel = useCallback(() => {
     setShowNarrative(false)

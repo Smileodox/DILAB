@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown, FileText } from 'lucide-react'
-import { useApi } from '@/hooks/useApi'
+import { useKbApi } from '@/context/KbContext'
 import Card from '@/components/ui/Card'
 import { OriginBadge } from '@/components/ui/Badge'
 import { staggerContainer, fadeUp } from '@/utils/animation'
@@ -13,7 +13,7 @@ const FILTERS = [
 ]
 
 export default function DriversPage() {
-  const { data, loading } = useApi('/api/drivers')
+  const { data, loading } = useKbApi('/api/drivers')
   const [filter, setFilter] = useState('all')
   const [expandedId, setExpandedId] = useState(null)
 

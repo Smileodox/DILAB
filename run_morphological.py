@@ -29,42 +29,58 @@ def _p(name):
 
 def run(n_samples=None, reject_threshold=0.25, n_clusters=None, model="gpt-5.4",
         max_workers=6, narrative_mode="short", extract_only=False, skip_eval=False,
-        skip_extract=False, cca_mode="contrastive"):
+        skip_extract=False, cca_mode="contrastive", profile=None, collection=None,
+        output_dir=None):
     n_clusters = config.COMBI_N_CLUSTERS if n_clusters is None else n_clusters
+    # Docking knobs: a different KB is docked by passing its collection + a separate output
+    # dir (and optionally a pre-derived profile). Defaults reproduce the primary-KB run.
+    data_dir = output_dir or DATA
+    os.makedirs(data_dir, exist_ok=True)
+
+    def p(name):
+        return os.path.join(data_dir, name)
+
+    explicit_coll = collection is not None
+    coll_arg = collection if explicit_coll else "auto"
 
     # 0. Ensure a DomainProfile (derive from the docked KB on first run). This is what makes
     #    the pipeline domain-agnostic — no domain term is hardwired in any downstream prompt.
-    try:
-        profile = domain.load_profile()
-    except FileNotFoundError:
-        print("No domain profile yet — deriving from the docked KB ...")
-        profile = domain.run(model=model)
+    if profile is None:
+        try:
+            profile = domain.load_profile()
+        except FileNotFoundError:
+            print("No domain profile yet — deriving from the docked KB ...")
+            profile = domain.run(model=model, output_dir=data_dir, collection=coll_arg)
     print(f"  domain: {profile.domain!r} (horizon {profile.horizon}, actor {profile.actor!r})")
 
     # 1. functional extraction + CCA + CCA-consistent sampling (reuse if requested)
     if skip_extract:
         print("--skip-extract: reusing existing *_zwicky extraction + configs")
     else:
-        functional.run(output_dir=DATA, n_samples=n_samples, reject_threshold=reject_threshold,
-                       model=model, max_workers=max_workers, cca_mode=cca_mode, profile=profile)
+        functional.run(output_dir=data_dir, n_samples=n_samples, reject_threshold=reject_threshold,
+                       model=model, max_workers=max_workers, cca_mode=cca_mode, profile=profile,
+                       collection=coll_arg)
 
-    seed_path, morph_path = _p("combinatorial_state_zwicky.json"), _p("morphbox_zwicky_state.json")
-    cib_path, merge_path = _p("cib_state_zwicky.json"), _p("functional_merge_state.json")
-    scen_path = _p("scenario_state_zwicky.json")
-    reps_path = _p("scenario_state_zwicky_representatives.json")
-    land_path, final_path = _p("landscape_state_zwicky.json"), _p("final_analysis_zwicky.json")
+    seed_path, morph_path = p("combinatorial_state_zwicky.json"), p("morphbox_zwicky_state.json")
+    cib_path, merge_path = p("cib_state_zwicky.json"), p("functional_merge_state.json")
+    scen_path = p("scenario_state_zwicky.json")
+    reps_path = p("scenario_state_zwicky_representatives.json")
+    land_path, final_path = p("landscape_state_zwicky.json"), p("final_analysis_zwicky.json")
 
     if extract_only:
         print("--extract-only: stopped after sampling.")
         return {"seed": seed_path}
 
     # 2. short narratives (geometry comes from configs, so length/style is free)
-    try:
-        from src.rag import get_collection
-        coll = get_collection()
-    except Exception as e:  # noqa: BLE001
-        print(f"  no KB collection ({e}) — narratives without RAG")
-        coll = None
+    if explicit_coll:
+        coll = collection
+    else:
+        try:
+            from src.rag import get_collection
+            coll = get_collection()
+        except Exception as e:  # noqa: BLE001
+            print(f"  no KB collection ({e}) — narratives without RAG")
+            coll = None
     print("\n[narratives] generating ...", flush=True)
     scenario_gen.run(consistency_state_path=seed_path, morphbox_state_path=morph_path,
                      cib_state_path=cib_path, merge_state_path=merge_path, output_path=scen_path,
@@ -89,6 +105,28 @@ def run(n_samples=None, reject_threshold=0.25, n_clusters=None, model="gpt-5.4",
         pt["is_representative"] = pt["scenario_id"] in reps
     ls.setdefault("metadata", {}).update(
         {"method": "functional_zwicky", "geometry": "config", "n_clusters": cl["k"], "silhouette": cl["silhouette"]})
+
+    # 4b. interpretable PCA projection + parallel-coords + honest structure verdict.
+    #     Replaces the meaningless UMAP axes for navigation (UMAP x,y stay as a baseline).
+    try:
+        from src.pipeline import projection
+        morph = json.load(open(morph_path))
+        try:
+            merge = json.load(open(merge_path))
+            dnames = {d["id"]: d.get("name", d["id"]) for d in merge.get("unified_drivers", [])}
+        except Exception:  # noqa: BLE001
+            dnames = None
+        proj = projection.project_config(scenarios, morph, driver_names=dnames, seed=config.COMBI_SEED)
+        for pt in ls.get("points", []):
+            xy = proj["coords"].get(pt["scenario_id"])
+            if xy:
+                pt["cx"], pt["cy"] = xy
+        ls["axes"], ls["structure"], ls["parcoords"] = proj["axes"], proj["structure"], proj["parcoords"]
+        print(f"  projection: {ls['structure']['verdict']} "
+              f"(PC1 {ls['axes']['pc1']['share']:.0%}, silhouette {ls['structure']['best_silhouette']})")
+    except Exception as e:  # noqa: BLE001
+        print(f"  projection failed ({e}); landscape written without PCA axes.")
+
     json.dump(ls, open(land_path, "w"), indent=2)
 
     # 5. representatives + MCDA
@@ -98,12 +136,13 @@ def run(n_samples=None, reject_threshold=0.25, n_clusters=None, model="gpt-5.4",
             from src.pipeline import evaluation
             print(f"\n[MCDA] on {len(reps)} representatives ...", flush=True)
             evaluation.run(scenario_state_path=reps_path, merge_state_path=merge_path,
-                           kb_state_path=_p("kb_state.json"), output_path=final_path, profile=profile)
+                           kb_state_path=p("kb_state.json"), output_path=final_path,
+                           profile=profile, collection=coll_arg)
         except Exception as e:  # noqa: BLE001
             print(f"  MCDA failed ({e}); other *_zwicky outputs still written.")
 
     print("\nDone (Zwicky path). Outputs:")
-    for path in (morph_path, _p("cca_state.json"), seed_path, scen_path, land_path, final_path):
+    for path in (morph_path, p("cca_state.json"), seed_path, scen_path, land_path, final_path):
         print(f"  {'✓' if os.path.exists(path) else '·'} {path}")
     return {"morphbox": morph_path, "scenarios": scen_path, "landscape": land_path}
 

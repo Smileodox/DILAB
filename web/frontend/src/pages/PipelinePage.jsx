@@ -6,7 +6,7 @@ import {
   ArrowLeftRight, CheckCircle, FileText, BarChart3,
   ChevronRight, ExternalLink, ArrowRight,
 } from 'lucide-react'
-import { useApi } from '@/hooks/useApi'
+import { useKbApi } from '@/context/KbContext'
 import Card from '@/components/ui/Card'
 import { staggerContainer, fadeUp } from '@/utils/animation'
 import { PIPELINE_COLORS } from '@/utils/colors'
@@ -628,7 +628,7 @@ function StepCard({ step, metrics, index, isExpanded, onToggle, onNavigate, over
 }
 
 export default function PipelinePage() {
-  const { data, loading } = useApi('/api/overview')
+  const { data, loading } = useKbApi('/api/overview')
   const [expandedStep, setExpandedStep] = useState(null)
   const navigate = useNavigate()
 

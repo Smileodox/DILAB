@@ -4,6 +4,7 @@ import {
   Globe, Map, Atom, Target, ChevronLeft, ChevronRight,
 } from 'lucide-react'
 import { useState } from 'react'
+import { useKb } from '@/context/KbContext'
 
 const NAV_ITEMS = [
   { path: '/', label: 'Overview', icon: LayoutDashboard },
@@ -21,6 +22,8 @@ const NAV_ITEMS = [
 export default function SideNav() {
   const [expanded, setExpanded] = useState(false)
   const location = useLocation()
+  const { kb, kbs } = useKb()
+  const views = kbs.find((k) => k.id === kb)?.views
 
   return (
     <nav
@@ -45,12 +48,15 @@ export default function SideNav() {
       <div className="flex-1 py-3 flex flex-col gap-0.5 px-2">
         {NAV_ITEMS.map(({ path, label, icon: Icon }) => {
           const isActive = location.pathname === path
+          const disabled = views && !views.includes(path)
           return (
             <NavLink
               key={path}
               to={path}
+              title={disabled ? 'Not available for this knowledge base' : undefined}
               className={`
                 flex items-center h-10 rounded-lg px-3 transition-all duration-200 group relative
+                ${disabled ? 'opacity-30 pointer-events-none' : ''}
                 ${isActive
                   ? 'bg-blue-500/10 text-blue-400'
                   : 'text-zinc-500 hover:text-zinc-300 hover:bg-white/[0.04]'

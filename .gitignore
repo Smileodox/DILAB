@@ -6,6 +6,7 @@ __pycache__/
 .ipynb_checkpoints/
 data/sources/
 data/outputs/
+data/outputs_ag/
 .DS_Store
 *.egg-info/
 dist/

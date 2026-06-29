@@ -1,13 +1,13 @@
 import { useState, useMemo } from 'react'
 import { motion } from 'framer-motion'
-import { useApi } from '@/hooks/useApi'
+import { useKbApi } from '@/context/KbContext'
 import ForceNetwork3D from '@/components/viz/ForceNetwork3D'
 import ConnectionPanel from '@/components/viz/ConnectionPanel'
 import NetworkStats from '@/components/viz/NetworkStats'
 import { staggerContainer, fadeUp, fadeIn } from '@/utils/animation'
 
 export default function EmbeddingsLabPage() {
-  const { data, loading } = useApi('/api/cib/3d')
+  const { data, loading } = useKbApi('/api/cib/3d')
   const [selectedId, setSelectedId] = useState(null)
 
   const selectedNode = useMemo(() => {

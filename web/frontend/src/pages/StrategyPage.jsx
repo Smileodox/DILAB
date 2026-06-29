@@ -4,7 +4,7 @@ import {
   Target, Shield, AlertTriangle, ChevronDown, Trophy, Crosshair,
   Eye, Zap, Clock, TrendingUp, ArrowRight,
 } from 'lucide-react'
-import { useApi } from '@/hooks/useApi'
+import { useKbApi } from '@/context/KbContext'
 import Card from '@/components/ui/Card'
 import { TypeBadge } from '@/components/ui/Badge'
 import { SCENARIO_TYPE_COLORS } from '@/utils/colors'
@@ -19,8 +19,8 @@ const RANK_BORDER = ['border-amber-500/30', 'border-zinc-400/20', 'border-amber-
 const RANK_GLOW = ['shadow-amber-500/10', 'shadow-zinc-400/5', '']
 
 export default function StrategyPage() {
-  const { data: framing, loading: fLoading } = useApi('/api/strategic_framing')
-  const { data: scenarios, loading: sLoading } = useApi('/api/scenarios')
+  const { data: framing, loading: fLoading } = useKbApi('/api/strategic_framing')
+  const { data: scenarios, loading: sLoading } = useKbApi('/api/scenarios')
   const [expandedStrategy, setExpandedStrategy] = useState(null)
 
   const loading = fLoading || sLoading

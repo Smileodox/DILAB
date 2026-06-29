@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion'
 import { Boxes, GitBranch } from 'lucide-react'
-import { useApi } from '@/hooks/useApi'
+import { useKbApi } from '@/context/KbContext'
 import MetricCard from '@/components/ui/MetricCard'
 import BOMTree from '@/components/viz/BOMTree'
 import { staggerContainer, fadeUp, fadeIn } from '@/utils/animation'
 
 export default function BOMPage() {
-  const { data, loading } = useApi('/api/bom')
+  const { data, loading } = useKbApi('/api/bom')
 
   if (loading) {
     return (

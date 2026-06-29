@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
-import { useApi } from '@/hooks/useApi'
+import { useKbApi } from '@/context/KbContext'
 import MorphGrid from '@/components/viz/MorphGrid'
 import { staggerContainer, fadeUp, fadeIn } from '@/utils/animation'
 
 export default function MorphBoxPage() {
-  const { data: morphData, loading: morphLoading } = useApi('/api/morphbox')
-  const { data: scenarios, loading: scenariosLoading } = useApi('/api/scenarios')
+  const { data: morphData, loading: morphLoading } = useKbApi('/api/morphbox')
+  const { data: scenarios, loading: scenariosLoading } = useKbApi('/api/scenarios')
 
   const loading = morphLoading || scenariosLoading
 

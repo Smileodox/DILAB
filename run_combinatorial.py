@@ -156,6 +156,32 @@ def run(
         "n_clusters": clustering["k"],
         "silhouette": clustering["silhouette"],
     })
+
+    # Interpretable PCA projection + parallel-coords + honest structure verdict (replaces
+    # the meaningless UMAP axes for navigation; UMAP x,y stay as a baseline).
+    try:
+        from src.pipeline import projection
+        with open(_p("morphbox_state.json")) as f:
+            morph = json.load(f)
+        try:
+            with open(_p("merge_state.json")) as f:
+                merge = json.load(f)
+            dnames = {d["id"]: d.get("name", d["id"]) for d in merge.get("unified_drivers", [])}
+        except Exception:  # noqa: BLE001
+            dnames = None
+        proj = projection.project_config(scenarios, morph, driver_names=dnames, seed=seed)
+        for pt in landscape_state.get("points", []):
+            xy = proj["coords"].get(pt["scenario_id"])
+            if xy:
+                pt["cx"], pt["cy"] = xy
+        landscape_state["axes"] = proj["axes"]
+        landscape_state["structure"] = proj["structure"]
+        landscape_state["parcoords"] = proj["parcoords"]
+        print(f"  projection: {proj['structure']['verdict']} "
+              f"(PC1 {proj['axes']['pc1']['share']:.0%}, silhouette {proj['structure']['best_silhouette']})")
+    except Exception as e:  # noqa: BLE001
+        print(f"  projection failed ({e}); landscape written without PCA axes.")
+
     with open(landscape_path, "w") as f:
         json.dump(landscape_state, f, indent=2)
 

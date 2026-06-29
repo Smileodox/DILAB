@@ -5,8 +5,15 @@ import { DARK_LAYOUT, PLOTLY_CONFIG } from '@/utils/plotly'
 
 const TYPES = ['evolutionary', 'disruptive', 'cautionary', 'wildcard']
 
-export default function UMAPScatter({ points, onPointClick }) {
+// Sampled methods carry interpretable PCA coords (cx/cy) + axis labels; the CIB
+// fixed-point path has only the legacy UMAP x/y. Prefer the PCA coords when present.
+const DEFAULT_AXES = ['UMAP Dimension 1', 'UMAP Dimension 2']
+
+export default function UMAPScatter({ points, onPointClick, axisTitles = DEFAULT_AXES }) {
   const ref = useRef(null)
+  const hasPca = points?.some((p) => p.cx !== undefined)
+  const X = (p) => (hasPca ? p.cx : p.x)
+  const Y = (p) => (hasPca ? p.cy : p.y)
 
   useEffect(() => {
     if (!ref.current || !points?.length) return
@@ -25,8 +32,8 @@ export default function UMAPScatter({ points, onPointClick }) {
         type: 'scatter',
         mode: 'markers',
         name: type,
-        x: pts.map(p => p.x),
-        y: pts.map(p => p.y),
+        x: pts.map(X),
+        y: pts.map(Y),
         text: pts.map(
           p =>
             p.title +
@@ -53,11 +60,11 @@ export default function UMAPScatter({ points, onPointClick }) {
       height: 500,
       xaxis: {
         ...DARK_LAYOUT.xaxis,
-        title: { text: 'UMAP Dimension 1', font: { size: 12, color: '#a1a1aa' } },
+        title: { text: axisTitles[0], font: { size: 12, color: '#a1a1aa' } },
       },
       yaxis: {
         ...DARK_LAYOUT.yaxis,
-        title: { text: 'UMAP Dimension 2', font: { size: 12, color: '#a1a1aa' } },
+        title: { text: axisTitles[1], font: { size: 12, color: '#a1a1aa' } },
       },
       legend: {
         font: { color: '#d4d4d8', size: 11 },
@@ -81,7 +88,7 @@ export default function UMAPScatter({ points, onPointClick }) {
         Plotly.purge(ref.current)
       }
     }
-  }, [points, onPointClick])
+  }, [points, onPointClick, axisTitles])
 
   return <div ref={ref} />
 }

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { Database, Zap, Grid3X3, Globe, Maximize2, X } from 'lucide-react'
-import { useApi } from '@/hooks/useApi'
+import { useKbApi } from '@/context/KbContext'
 import MetricCard from '@/components/ui/MetricCard'
 import Card from '@/components/ui/Card'
 import PipelineFlow from '@/components/viz/PipelineFlow'
@@ -27,7 +27,7 @@ const METHOD_CARDS = [
 ]
 
 export default function OverviewPage() {
-  const { data, loading } = useApi('/api/overview')
+  const { data, loading } = useKbApi('/api/overview')
   const navigate = useNavigate()
   const [pipelineExpanded, setPipelineExpanded] = useState(false)
 

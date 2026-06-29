@@ -1,7 +1,7 @@
 import { useState, useMemo, useCallback, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import Plotly from 'plotly.js-dist-min'
-import { useApi } from '@/hooks/useApi'
+import { useKbApi } from '@/context/KbContext'
 import ForceNetwork from '@/components/viz/ForceNetwork'
 import { DARK_LAYOUT, PLOTLY_CONFIG } from '@/utils/plotly'
 import { CIB_QUADRANT_COLORS } from '@/utils/colors'
@@ -230,7 +230,7 @@ function InfluenceTab({ matrix, panelMetadata }) {
 
 /* ── Main page ── */
 export default function CIBPage() {
-  const { data, loading } = useApi('/api/cib')
+  const { data, loading } = useKbApi('/api/cib')
   const [tab, setTab] = useState('network')
 
   if (loading) {

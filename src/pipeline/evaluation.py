@@ -325,11 +325,13 @@ def run(
     pairwise_matrix: list[list[float]] | None = None,
     consistency_scores: list[float] | None = None,
     profile: DomainProfile | None = None,
+    collection="auto",
 ) -> dict:
     if profile is None:
         from src.pipeline.domain import load_profile
         profile = load_profile()
-    collection = get_collection()
+    if collection == "auto":
+        collection = get_collection()
 
     with open(scenario_state_path) as f:
         scenarios = [Scenario(**s) for s in json.load(f)["scenarios"]]

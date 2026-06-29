@@ -5,7 +5,7 @@ from pathlib import Path
 
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse, Response
+from fastapi.responses import FileResponse, JSONResponse, Response
 
 app = FastAPI(title="DiLab Foresight Dashboard")
 
@@ -34,10 +34,63 @@ async def basic_auth(request: Request, call_next):
 DATA_DIR = Path(__file__).parent.parent / "data" / "outputs"
 STATIC_DIR = Path(__file__).parent / "static"
 
+# Knowledge bases the Landscape page can switch between. Each maps to the output dir its
+# pipeline run wrote to. "spectrum" = the primary KB; "agriculture" = the domain-agnostic
+# proof run (data/outputs_ag), present only if that proof has been run locally.
+KB_DIRS = {
+    "spectrum": DATA_DIR,
+    "agriculture": DATA_DIR.parent / "outputs_ag",
+}
 
-def load(name: str) -> dict:
-    with open(DATA_DIR / f"{name}.json") as f:
+# Scenario method -> (output-file suffix, landscape shape). "fixedpoint" = the small CIB
+# fixed-point set (pairwise similarity heatmap); "sampled" = many configs with clusters +
+# representatives (combinatorial soft-CIB and functional/CCA).
+METHODS = {
+    "cib": ("", "fixedpoint"),
+    "combi": ("_combi", "sampled"),
+    "zwicky": ("_zwicky", "sampled"),
+}
+
+# Per-KB file aliases: a KB that ran a different pipeline path stores schema-compatible
+# artifacts under different names. Resolving centrally in load() keeps the endpoints generic.
+FILE_ALIASES = {
+    "agriculture": {  # ran the functional/Zwicky path → substitute its variants
+        "merge_state": "functional_merge_state",
+        "morphbox_state": "morphbox_zwicky_state",
+    },
+}
+
+# Which output files a page needs (for the selected KB, after aliasing). Drives nav grey-out:
+# a KB only offers a view if all of the view's files exist for it.
+VIEW_REQUIREMENTS = {
+    "/": ["kb_state", "merge_state", "cib_state", "final_analysis"],
+    "/pipeline": ["kb_state", "merge_state", "cib_state", "final_analysis"],
+    "/sources": ["kb_state"],
+    "/drivers": ["merge_state"],
+    "/bom": ["bom_state"],
+    "/morphbox": ["morphbox_state", "merge_state"],
+    "/cib": ["cib_state"],
+    "/scenarios": ["final_analysis"],
+    "/strategy": ["strategic_framing"],
+    "/embeddings": ["cib_state"],
+}
+
+
+def _resolve(name: str, kb: str) -> Path:
+    actual = FILE_ALIASES.get(kb, {}).get(name, name)
+    return KB_DIRS.get(kb, DATA_DIR) / f"{actual}.json"
+
+
+def load(name: str, kb: str = "spectrum") -> dict:
+    with open(_resolve(name, kb)) as f:
         return json.load(f)
+
+
+@app.exception_handler(FileNotFoundError)
+async def _missing_file(request: Request, exc: FileNotFoundError):
+    # A data file the endpoint needs does not exist for the selected KB → graceful sentinel
+    # (the frontend greys such views out via /api/kbs `views`, this is the safety net).
+    return JSONResponse({"unavailable": True}, status_code=200)
 
 
 @app.get("/")
@@ -46,11 +99,11 @@ async def index():
 
 
 @app.get("/api/overview")
-async def overview():
-    kb = load("kb_state")
-    merge = load("merge_state")
-    cib = load("cib_state")
-    final = load("final_analysis")
+async def overview(kb: str = "spectrum"):
+    kb_data = load("kb_state", kb)
+    merge = load("merge_state", kb)
+    cib = load("cib_state", kb)
+    final = load("final_analysis", kb)
     drivers = merge["unified_drivers"]
     origins = {}
     for d in drivers:
@@ -59,12 +112,12 @@ async def overview():
     morph_manifs = 0
     consistency_seeds = 0
     try:
-        morph = load("morphbox_state")
+        morph = load("morphbox_state", kb)
         morph_manifs = len(morph.get("all_manifestations", []))
     except FileNotFoundError:
         pass
     try:
-        cons = load("consistency_state")
+        cons = load("consistency_state", kb)
         consistency_seeds = len(cons.get("configs", []))
     except FileNotFoundError:
         cons = {}
@@ -74,8 +127,8 @@ async def overview():
     mc_samples = cons.get("n_mc_samples", 0)
 
     return {
-        "sources": len(kb["sources"]),
-        "chunks": len(kb.get("chunks", {})),
+        "sources": len(kb_data["sources"]),
+        "chunks": len(kb_data.get("chunks", {})),
         "drivers_total": len(drivers),
         "drivers_by_origin": origins,
         "cib_drivers": len(cib["driver_names"]),
@@ -91,27 +144,27 @@ async def overview():
 
 
 @app.get("/api/sources")
-async def sources():
-    kb = load("kb_state")
+async def sources(kb: str = "spectrum"):
+    kb_data = load("kb_state", kb)
     chunk_counts = {}
-    for chunk in kb["chunks"].values():
+    for chunk in kb_data["chunks"].values():
         sid = chunk["source_id"]
         chunk_counts[sid] = chunk_counts.get(sid, 0) + 1
     result = []
-    for src in kb["sources"].values():
+    for src in kb_data["sources"].values():
         result.append({**src, "chunk_count": chunk_counts.get(src["id"], 0)})
     return result
 
 
 @app.get("/api/drivers")
-async def drivers():
-    merge = load("merge_state")
+async def drivers(kb: str = "spectrum"):
+    merge = load("merge_state", kb)
     return merge["unified_drivers"]
 
 
 @app.get("/api/bom")
-async def bom():
-    bom_data = load("bom_state")
+async def bom(kb: str = "spectrum"):
+    bom_data = load("bom_state", kb)
     nodes = bom_data["bom_nodes"]
     root_id = bom_data["root_id"]
     driver_ids = {d["id"] for d in bom_data["bom_drivers"]}
@@ -141,18 +194,16 @@ async def bom():
 
 
 @app.get("/api/morphbox")
-async def morphbox():
-    morph = load("morphbox_state")
-    merge = load("merge_state")
-    cib = load("cib_state")
+async def morphbox(kb: str = "spectrum"):
+    morph = load("morphbox_state", kb)
+    merge = load("merge_state", kb)
     driver_by_id = {d["id"]: d for d in merge["unified_drivers"]}
-    cib_name_by_id = dict(zip(cib["driver_ids"], cib["driver_names"]))
     drivers_out = []
     for did in morph["drivers"]:
         d = driver_by_id.get(did, {})
         manif_ids = morph["manifestations"].get(did, [])
         manifs = [m for m in morph["all_manifestations"] if m["id"] in manif_ids]
-        name = d.get("name") or cib_name_by_id.get(did) or did
+        name = d.get("name") or did
         drivers_out.append({
             "id": did,
             "name": name,
@@ -167,13 +218,13 @@ async def morphbox():
 
 
 @app.get("/api/consistency")
-async def consistency():
+async def consistency(kb: str = "spectrum"):
     try:
-        cons = load("consistency_state")
+        cons = load("consistency_state", kb)
     except FileNotFoundError:
         return {"configs": [], "total_fixed_points": 0}
-    merge = load("merge_state")
-    morph = load("morphbox_state")
+    merge = load("merge_state", kb)
+    morph = load("morphbox_state", kb)
     driver_by_id = {d["id"]: d for d in merge["unified_drivers"]}
     manif_by_id = {m["id"]: m for m in morph["all_manifestations"]}
 
@@ -203,8 +254,8 @@ async def consistency():
 
 
 @app.get("/api/cib")
-async def cib():
-    data = load("cib_state")
+async def cib(kb: str = "spectrum"):
+    data = load("cib_state", kb)
     n = len(data["driver_names"])
     std_matrix = [[0.0] * n for _ in range(n)]
     for entry in data.get("entries", []):
@@ -217,30 +268,60 @@ async def cib():
 
 
 @app.get("/api/scenarios")
-async def scenarios():
-    final = load("final_analysis")
-    rankings_by_id = {
-        r["scenario_id"]: r
-        for r in final.get("mcda", {}).get("rankings", [])
-    }
+async def scenarios(kb: str = "spectrum", method: str = "cib"):
+    suffix, shape = METHODS.get(method, ("", "fixedpoint"))
+    if shape == "fixedpoint":
+        try:
+            final = load(f"final_analysis{suffix}", kb)
+        except FileNotFoundError:
+            return []
+        rankings_by_id = {
+            r["scenario_id"]: r
+            for r in final.get("mcda", {}).get("rankings", [])
+        }
+        merged = []
+        for s, a in zip(final["scenarios"], final["assessments"]):
+            ranking = rankings_by_id.get(s["id"], {})
+            merged.append({
+                **s,
+                "assessment": a,
+                "topsis_closeness": ranking.get("topsis_closeness", 0),
+                "rank": ranking.get("rank", 0),
+            })
+        merged.sort(key=lambda x: x["rank"])
+        return merged
+
+    # "sampled" shape (combinatorial / functional-CCA): all scenarios carry narratives;
+    # MCDA rank/topsis exist only for the representatives.
+    try:
+        state = load(f"scenario_state{suffix}", kb)
+    except FileNotFoundError:
+        return []
+    rankings_by_id = {}
+    try:
+        final = load(f"final_analysis{suffix}", kb)
+        rankings_by_id = {
+            r["scenario_id"]: r
+            for r in final.get("mcda", {}).get("rankings", [])
+        }
+    except FileNotFoundError:
+        pass
     merged = []
-    for s, a in zip(final["scenarios"], final["assessments"]):
+    for s in state.get("scenarios", []):
         ranking = rankings_by_id.get(s["id"], {})
         merged.append({
             **s,
-            "assessment": a,
             "topsis_closeness": ranking.get("topsis_closeness", 0),
             "rank": ranking.get("rank", 0),
         })
-    merged.sort(key=lambda x: x["rank"])
     return merged
 
 
 @app.get("/api/traceability/{scenario_id}")
-async def traceability(scenario_id: str):
-    final = load("final_analysis")
-    kb = load("kb_state")
-    merge = load("merge_state")
+async def traceability(scenario_id: str, kb: str = "spectrum"):
+    final = load("final_analysis", kb)
+    kb_data = load("kb_state", kb)
+    merge = load("merge_state", kb)
 
     scenario = next((s for s in final["scenarios"] if s["id"] == scenario_id), None)
     assessment = next((a for a in final["assessments"] if a["scenario_id"] == scenario_id), None)
@@ -261,9 +342,9 @@ async def traceability(scenario_id: str):
     source_chain = []
     seen_sources = set()
     for chunk_id in scenario["source_chunk_ids"]:
-        chunk = kb["chunks"].get(chunk_id)
+        chunk = kb_data["chunks"].get(chunk_id)
         if chunk:
-            src = kb["sources"].get(chunk["source_id"])
+            src = kb_data["sources"].get(chunk["source_id"])
             if src and src["id"] not in seen_sources:
                 seen_sources.add(src["id"])
                 source_chain.append({
@@ -284,14 +365,14 @@ _cib_3d_cache = {"mtime": 0, "data": None}
 
 
 @app.get("/api/cib/3d")
-async def cib_3d():
+async def cib_3d(kb: str = "spectrum"):
     # Pre-computed file (used in Azure deploy where umap isn't available)
     try:
-        return load("cib_3d")
+        return load("cib_3d", kb)
     except FileNotFoundError:
         pass
 
-    cib_path = DATA_DIR / "cib_state.json"
+    cib_path = _resolve("cib_state", kb)
     try:
         mtime = cib_path.stat().st_mtime
     except FileNotFoundError:
@@ -303,7 +384,7 @@ async def cib_3d():
     import numpy as np
     from umap import UMAP
 
-    data = load("cib_state")
+    data = load("cib_state", kb)
     matrix = data["matrix"]
     n = len(matrix)
     names = data["driver_names"]
@@ -371,10 +452,40 @@ async def cib_3d():
     return result
 
 
+@app.get("/api/kbs")
+async def kbs():
+    """KBs the dashboard can switch between: per-KB available scenario methods AND which
+    page-views have data (after aliasing) so the nav can grey out the rest. Robust to a
+    missing KB dir (e.g. agriculture only exists after the proof is run)."""
+    out = []
+    for kb_id, d in KB_DIRS.items():
+        if not d.exists():
+            continue
+        methods = [m for m, (suffix, _) in METHODS.items()
+                   if (d / f"landscape_state{suffix}.json").exists()]
+        if not methods:
+            continue
+        views = [path for path, reqs in VIEW_REQUIREMENTS.items()
+                 if all(_resolve(r, kb_id).exists() for r in reqs)]
+        views.append("/landscape")  # has at least one method (checked above)
+        label = kb_id
+        prof = d / "domain_profile.json"
+        if prof.exists():
+            try:
+                with open(prof) as f:
+                    label = json.load(f).get("domain") or kb_id
+            except Exception:
+                pass
+        out.append({"id": kb_id, "label": label, "methods": methods,
+                    "views": sorted(set(views))})
+    return out
+
+
 @app.get("/api/landscape")
-async def landscape():
+async def landscape(kb: str = "spectrum", method: str = "cib"):
+    suffix, _ = METHODS.get(method, ("", "fixedpoint"))
     try:
-        return load("landscape_state")
+        return load(f"landscape_state{suffix}", kb)
     except FileNotFoundError:
         return {"points": [], "similarity_matrix": [], "metadata": {}}
 
@@ -416,9 +527,9 @@ async def scenarios_combi():
 
 
 @app.get("/api/strategic_framing")
-async def strategic_framing():
+async def strategic_framing(kb: str = "spectrum"):
     try:
-        return load("strategic_framing")
+        return load("strategic_framing", kb)
     except FileNotFoundError:
         return {"critical_uncertainties": [], "no_regret_moves": [], "scenario_strategy": [], "recommended_priority": {}}
 
