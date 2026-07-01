@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tech-fore-ai.local/schema/technology_drivers_identification/v1",
+  "title": "TechnologyDriversIdentificationOutput",
+  "description": "RAG-ready JSON from Technology Drivers Identification (pipeline step 1)",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "pipeline",
+    "generated_at",
+    "input",
+    "technology_industry_classification",
+    "research_evidence",
+    "signal_classification",
+    "knowledge_graph",
+    "impact_tree",
+    "processing_summary",
+    "rag_context"
+  ],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "pipeline": { "type": "string", "const": "technology_drivers_identification" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "input": {
+      "type": "object",
+      "required": ["query", "target_year"],
+      "properties": {
+        "query": { "type": "string" },
+        "target_year": { "type": "integer", "minimum": 2025, "maximum": 2050 }
+      }
+    },
+    "technology_industry_classification": {
+      "type": "object",
+      "description": "LLM TOD taxonomy and industry mapping",
+      "properties": {
+        "regulatory_domain": { "type": "string" },
+        "primary_technology": { "type": "string" },
+        "main_industry": { "type": "string" },
+        "technology_categories": { "type": "array" },
+        "affected_industries": { "type": "array" },
+        "llm_classification_raw": { "type": "object" }
+      }
+    },
+    "research_evidence": {
+      "type": "object",
+      "properties": {
+        "papers": { "type": "array" },
+        "entities": { "type": "array" },
+        "keywords": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "signal_classification": {
+      "type": "object",
+      "properties": {
+        "framework": { "type": "string" },
+        "signals": { "type": "array" },
+        "by_signal_type": { "type": "object" },
+        "summary": { "type": "object" }
+      }
+    },
+    "knowledge_graph": {
+      "type": "object",
+      "properties": {
+        "nodes": { "type": "array" },
+        "edges": { "type": "array" },
+        "propagation_paths": { "type": "array" },
+        "main_technology_id": { "type": "string" },
+        "main_technology_label": { "type": "string" }
+      }
+    },
+    "impact_tree": {
+      "type": "object",
+      "properties": {
+        "tree": { "type": "object" },
+        "evolution_paths": { "type": "array" },
+        "scenario_seeds": { "type": "array" },
+        "statistics": { "type": "object" }
+      }
+    },
+    "processing_summary": { "type": "object" },
+    "rag_context": {
+      "type": "object",
+      "description": "Pre-chunked text for vector DB / LLM retrieval",
+      "properties": {
+        "documents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "section", "title", "content"],
+            "properties": {
+              "id": { "type": "string" },
+              "section": { "type": "string" },
+              "title": { "type": "string" },
+              "content": { "type": "string" },
+              "metadata": { "type": "object" }
+            }
+          }
+        },
+        "consolidated_narrative": { "type": "string" }
+      }
+    }
+  }
+}

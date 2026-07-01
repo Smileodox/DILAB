@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "pipeline": "technology_drivers_identification",
+  "generated_at": "2026-06-26T12:00:00+00:00",
+  "input": {
+    "query": "Regulatory Spectrum Monitoring",
+    "target_year": 2035
+  },
+  "technology_industry_classification": {
+    "regulatory_domain": "spectrum regulation",
+    "primary_technology": "dynamic spectrum sharing",
+    "primary_category": "Spectrum & RF Systems",
+    "main_industry": "telecommunications",
+    "query_intent": "Monitor emerging technologies affecting spectrum regulation",
+    "related_technologies": ["cognitive radio", "AI-native 6G"],
+    "related_industries": ["defense", "broadcasting"],
+    "technology_categories": [],
+    "affected_industries": [],
+    "main_industry_technologies": [],
+    "llm_classification_raw": {}
+  },
+  "research_evidence": {
+    "papers": [],
+    "entities": [],
+    "keywords": []
+  },
+  "signal_classification": {
+    "framework": "Wang & Zhu (2026) MLWS-TF DVI",
+    "signals": [],
+    "by_signal_type": {
+      "weak_signal": [],
+      "strong_signal": [],
+      "well_established": [],
+      "latent_signal": []
+    },
+    "summary": {}
+  },
+  "knowledge_graph": {
+    "nodes": [],
+    "edges": [],
+    "propagation_paths": [],
+    "main_technology_id": "",
+    "main_technology_label": "",
+    "main_industry_id": "",
+    "main_industry_label": "",
+    "statistics": {}
+  },
+  "impact_tree": {
+    "tree": {},
+    "evolution_paths": [],
+    "scenario_seeds": [],
+    "statistics": {}
+  },
+  "processing_summary": {},
+  "rag_context": {
+    "documents": [
+      {
+        "id": "tech_industry_classification",
+        "section": "technology_industry_classification",
+        "title": "Technology–Industry Classification",
+        "content": "...",
+        "metadata": {}
+      }
+    ],
+    "consolidated_narrative": "## Technology–Industry Classification\n..."
+  }
+}
