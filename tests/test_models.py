@@ -3,7 +3,9 @@ from pydantic import ValidationError
 
 from src.models.evaluation import Assessment, MCDAResult, AHPWeights
 from src.models.scenarios import Scenario, ScenarioType
-from src.models.drivers import TechDriver, DriverOrigin, DriverConfidence, DimensionType
+from src.models.drivers import (
+    TechDriver, DriverOrigin, DriverConfidence, DimensionType, AxisRole, derive_axis_role,
+)
 from src.models.llm_responses import CIBResponse, ManifestationResponse, ScenarioResponse
 
 
@@ -88,6 +90,51 @@ def test_dimension_type_enum():
 def test_driver_dimension_type_default():
     d = TechDriver(name="test", description="desc", origin=DriverOrigin.BOM, confidence=DriverConfidence.HIGH)
     assert d.dimension_type == DimensionType.UNCLASSIFIED
+
+
+def test_axis_role_enum():
+    for r in ["driving", "response"]:
+        assert AxisRole(r)
+
+
+def test_derive_axis_role_by_dimension():
+    # Endogenous system capabilities → response.
+    assert derive_axis_role(DimensionType.HARDWARE, DriverOrigin.BOM) == AxisRole.RESPONSE
+    assert derive_axis_role(DimensionType.SOFTWARE, DriverOrigin.TREND) == AxisRole.RESPONSE
+    # Exogenous world uncertainties → driving.
+    assert derive_axis_role(DimensionType.REGULATORY, DriverOrigin.TREND) == AxisRole.DRIVING
+    assert derive_axis_role(DimensionType.MARKET, DriverOrigin.TREND) == AxisRole.DRIVING
+    assert derive_axis_role(DimensionType.GEOPOLITICAL, DriverOrigin.TREND) == AxisRole.DRIVING
+
+
+def test_derive_axis_role_unclassified_falls_back_on_origin():
+    assert derive_axis_role(DimensionType.UNCLASSIFIED, DriverOrigin.BOM) == AxisRole.RESPONSE
+    assert derive_axis_role(DimensionType.UNCLASSIFIED, DriverOrigin.TREND) == AxisRole.DRIVING
+    assert derive_axis_role(DimensionType.UNCLASSIFIED, DriverOrigin.BOTH) == AxisRole.DRIVING
+
+
+def test_driver_axis_role_auto_derived():
+    hw = TechDriver(name="ADC", description="d", origin=DriverOrigin.BOM,
+                    confidence=DriverConfidence.MEDIUM, dimension_type=DimensionType.HARDWARE)
+    reg = TechDriver(name="IMT harmonization", description="d", origin=DriverOrigin.TREND,
+                     confidence=DriverConfidence.MEDIUM, dimension_type=DimensionType.REGULATORY)
+    assert hw.axis_role == AxisRole.RESPONSE
+    assert reg.axis_role == AxisRole.DRIVING
+
+
+def test_driver_axis_role_explicit_preserved():
+    d = TechDriver(name="x", description="d", origin=DriverOrigin.BOM,
+                   confidence=DriverConfidence.LOW, dimension_type=DimensionType.HARDWARE,
+                   axis_role=AxisRole.DRIVING)
+    assert d.axis_role == AxisRole.DRIVING
+
+
+def test_driver_axis_role_backfilled_from_dict():
+    # Existing state files (merge_state.json) have no axis_role — it must backfill on load.
+    raw = {"name": "IMT", "description": "d", "origin": "trend",
+           "confidence": "medium", "dimension_type": "regulatory"}
+    d = TechDriver.model_validate(raw)
+    assert d.axis_role == AxisRole.DRIVING
 
 
 class TestCIBResponse:
