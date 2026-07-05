@@ -88,6 +88,40 @@ def _axis_label(key: str, share: float, drivers: list[dict]) -> str:
     return f"{key} ({share:.0%} var.): " + " · ".join(seg)
 
 
+def representatives_along_axis(coords_by_id: dict, k: int = 5, axis: int = 0) -> list[str]:
+    """Pick ``k`` scenarios evenly spaced along the dominant PCA axis — continuum-native reps.
+
+    When the field is a continuum (no usable clusters, per ``structure.analyze``), KMeans-centroid
+    "archetypes" are meaningless — there are no dense clumps to be typical of. This instead samples
+    ``k`` scenarios spanning the top PC at even percentiles. CAVEAT (honesty): if the field is
+    near-isotropic (pc1 ≈ pc2), PC1's *direction* is not stable across reseeds/elicitations (check
+    ``structure.axis_direction_stability``), so these are best read as "diverse samples spanning the
+    field's dominant variance", NOT as points on a robust, named axis. ``axis`` 0 = PC1.
+
+    Returns distinct scenario ids ordered along the axis; falls back to all ids when there are
+    fewer than ``k``.
+    """
+    items = sorted(((sid, xy[axis]) for sid, xy in coords_by_id.items() if xy and len(xy) > axis),
+                   key=lambda t: t[1])
+    if len(items) <= k:
+        return [sid for sid, _ in items]
+    vals = [v for _, v in items]
+    targets = np.percentile(vals, np.linspace(0.0, 100.0, k))
+    reps, used = [], set()
+    for t in targets:
+        best = None
+        for sid, v in items:
+            if sid in used:
+                continue
+            d = abs(v - t)
+            if best is None or d < best[1]:
+                best = (sid, d)
+        if best is not None:
+            reps.append(best[0])
+            used.add(best[0])
+    return reps
+
+
 def project_config(scenarios, morphbox: dict, driver_names: dict | None = None,
                    k_range=(4, 10), null_trials: int = 20, seed: int = 42) -> dict:
     """PCA projection of the config field + interpretable axes + structure verdict + parcoords.

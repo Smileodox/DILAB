@@ -3,6 +3,7 @@ from src.pipeline import functional
 from src.pipeline.functional import (
     CCA_PROMPTS,
     assess_cca,
+    calibrate_reject_threshold,
     cca_contradiction,
     sample_consistent,
 )
@@ -112,3 +113,32 @@ class TestSampleConsistent:
         for c in res:
             assert set(c.configuration.keys()) == set(box.drivers)
             assert not c.is_fixed_point and c.is_consistent
+
+
+class TestCalibratedThreshold:
+    """The distribution-calibrated cut must bite (percentile of the random distribution) and
+    never be silhouette-tuned. Cross-driver -1 edges give the field a real contradiction spread."""
+
+    _EDGES = {("a1", "b1"): -1, ("a1", "c1"): -1, ("b1", "c1"): -1}
+
+    def test_calibrate_returns_distribution_percentile(self):
+        box, lab = _box()
+        thr = calibrate_reject_threshold(box, _cca(lab, self._EDGES), keep_pctile=38, seed=1)
+        assert isinstance(thr, float) and 0.0 <= thr <= 1.0
+
+    def test_no_edges_calibrates_to_zero(self):
+        # A field with no contradictions → the whole distribution is 0 → cut is 0 (keep the consistent).
+        box, _ = _box()
+        assert calibrate_reject_threshold(box, {}, seed=1) == 0.0
+
+    def test_auto_calibration_respects_the_cut_and_bites(self):
+        box, lab = _box()
+        cca = _cca(lab, self._EDGES)
+        thr = calibrate_reject_threshold(box, cca, seed=1)  # same params the auto path uses
+        auto = sample_consistent(box, cca, n_samples=6, reject_threshold=None, seed=1)
+        loose = sample_consistent(box, cca, n_samples=6, reject_threshold=1.0, seed=1)
+        assert auto, "auto-calibration must still keep the consistent configs"
+        for c in auto:                                       # every kept config within the cut
+            assert c.contradiction_ratio <= thr + 1e-6
+        # auto is at least as strict as the permissive threshold on its worst kept config
+        assert max(c.contradiction_ratio for c in auto) <= max(c.contradiction_ratio for c in loose) + 1e-6

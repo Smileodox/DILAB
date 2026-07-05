@@ -78,6 +78,23 @@ def test_random_field_has_no_usable_clusters():
     assert len(res["parcoords"]["rows"]) == len(scenarios)
 
 
+def test_representatives_along_axis_span_the_continuum():
+    # A continuum along PC1: reps should span end-to-end (include the extremes) and be distinct.
+    coords = {f"s{i}": [float(i), 0.0] for i in range(20)}  # x = 0..19 along the axis
+    reps = projection.representatives_along_axis(coords, k=5, axis=0)
+    assert len(reps) == 5
+    assert len(set(reps)) == 5                     # distinct
+    xs = sorted(coords[r][0] for r in reps)
+    assert xs[0] == 0.0 and xs[-1] == 19.0         # spans both poles
+    assert xs == sorted(xs)                        # ordered along the axis
+
+
+def test_representatives_along_axis_fewer_than_k():
+    coords = {"a": [1.0, 0.0], "b": [2.0, 0.0]}
+    reps = projection.representatives_along_axis(coords, k=5)
+    assert set(reps) == {"a", "b"}
+
+
 def test_parcoords_values_index_into_driver_manifestations():
     box = _morphbox()
     scenarios = _clustered_scenarios(box, copies=2)

@@ -17,6 +17,8 @@ import os
 import random
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+import numpy as np
+
 from src import config
 from src.llm import safe_chat_json
 from src.models.common import _id
@@ -207,11 +209,41 @@ def cca_contradiction(config_map: dict, morph: MorphologicalBox, cca: dict):
     return ratio, hard, net
 
 
-def sample_consistent(morph: MorphologicalBox, cca: dict, n_samples: int,
-                      oversample_factor: float = 5.0, reject_threshold: float = 0.25,
-                      seed: int | None = None) -> list[ConsistencyResult]:
-    """Sample configs, dropping hard-incompatible ones and those above the tension threshold."""
+def calibrate_reject_threshold(morph: MorphologicalBox, cca: dict, keep_pctile: int = 38,
+                               n_probe: int = 8000, seed: int = 42) -> float:
+    """Distribution-calibrated consistency cut — a principled percentile of the RANDOM
+    contradiction distribution, NEVER tuned to silhouette (the null test is the referee, not the
+    target). Keeps the most-consistent ``keep_pctile``% of hard-free configs, mirroring the
+    combinatorial path's ~38% keep-rate, so the CCA constraint actually BITES instead of passing a
+    near-uniform sample. Returns the ratio cut; hard(-2) configs are always rejected on top of it.
+    """
     rng = random.Random(seed)
+    nonhard = []
+    for _ in range(n_probe):
+        cfg = {d: rng.choice(morph.manifestations[d]) for d in morph.drivers}
+        ratio, hard, _ = cca_contradiction(cfg, morph, cca)
+        if not hard:
+            nonhard.append(ratio)
+    if not nonhard:
+        return 0.25  # every config hard-incompatible — fall back to the legacy permissive cut
+    return round(float(np.percentile(nonhard, keep_pctile)), 4)
+
+
+def sample_consistent(morph: MorphologicalBox, cca: dict, n_samples: int,
+                      oversample_factor: float = 5.0, reject_threshold: float | None = None,
+                      seed: int | None = None, keep_pctile: int = 38) -> list[ConsistencyResult]:
+    """Sample configs, dropping hard-incompatible ones and those above the tension threshold.
+
+    ``reject_threshold=None`` (default) auto-calibrates the cut to the contradiction distribution
+    (see :func:`calibrate_reject_threshold`) so the filter bites; pass an explicit float to pin it.
+    """
+    rng = random.Random(seed)
+    if reject_threshold is None:
+        reject_threshold = calibrate_reject_threshold(
+            morph, cca, keep_pctile, seed=seed if seed is not None else 42)
+        oversample_factor = max(oversample_factor, 120.0)  # a biting cut needs more draws to fill n
+        log.info("CCA sampling: auto-calibrated reject_threshold=%.4f (keep ~%d%% most-consistent)",
+                 reject_threshold, keep_pctile)
     n_draw = max(n_samples, int(n_samples * oversample_factor))
     seen, kept = set(), []
     drawn = rejected = 0
@@ -241,7 +273,7 @@ def sample_consistent(morph: MorphologicalBox, cca: dict, n_samples: int,
 # --- orchestration -------------------------------------------------------------------
 
 def run(output_dir: str = "data/outputs", n_samples: int | None = None,
-        reject_threshold: float = 0.25, model: str | None = None, collection="auto",
+        reject_threshold: float | None = None, model: str | None = None, collection="auto",
         max_workers: int = 6, seed: int | None = None, cca_mode: str = "contrastive",
         profile: DomainProfile | None = None) -> dict:
     n_samples = config.COMBI_N_SAMPLES if n_samples is None else n_samples

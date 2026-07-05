@@ -27,7 +27,7 @@ def _p(name):
     return os.path.join(DATA, name)
 
 
-def run(n_samples=None, reject_threshold=0.25, n_clusters=None, model="gpt-5.4",
+def run(n_samples=None, reject_threshold=None, n_clusters=None, model="gpt-5.4",
         max_workers=6, narrative_mode="short", extract_only=False, skip_eval=False,
         skip_extract=False, cca_mode="contrastive", profile=None, collection=None,
         output_dir=None):
@@ -124,8 +124,18 @@ def run(n_samples=None, reject_threshold=0.25, n_clusters=None, model="gpt-5.4",
         ls["axes"], ls["structure"], ls["parcoords"] = proj["axes"], proj["structure"], proj["parcoords"]
         print(f"  projection: {ls['structure']['verdict']} "
               f"(PC1 {ls['axes']['pc1']['share']:.0%}, silhouette {ls['structure']['best_silhouette']})")
+        # Continuum-native representatives: when the field is a continuum (the honest verdict for
+        # this domain), sample scenarios evenly ALONG the labelled PC1 axis instead of taking
+        # KMeans "archetype" centroids that don't exist. KMeans labels stay as a diagnostic only.
+        axis_reps = projection.representatives_along_axis(proj["coords"], k=min(6, len(scenarios)))
+        if axis_reps:
+            reps = set(axis_reps)
+            for pt in ls.get("points", []):
+                pt["is_representative"] = pt["scenario_id"] in reps
+            ls["metadata"]["representative_mode"] = "continuum_axis_pc1"
+            print(f"  representatives: {len(reps)} sampled along PC1 (continuum-native; KMeans retired)")
     except Exception as e:  # noqa: BLE001
-        print(f"  projection failed ({e}); landscape written without PCA axes.")
+        print(f"  projection failed ({e}); landscape written without PCA axes (KMeans reps kept).")
 
     json.dump(ls, open(land_path, "w"), indent=2)
 
@@ -151,7 +161,9 @@ def main():
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     ap = argparse.ArgumentParser(description="Functional morphological (Zwicky) scenario pipeline")
     ap.add_argument("--n-samples", type=int, default=None)
-    ap.add_argument("--reject-threshold", type=float, default=0.25)
+    ap.add_argument("--reject-threshold", type=float, default=None,
+                    help="max contradiction_ratio to keep; omit = auto-calibrate to the "
+                         "contradiction distribution so the CCA filter actually bites")
     ap.add_argument("--n-clusters", type=int, default=None, help="0/omit = auto by silhouette")
     ap.add_argument("--model", default="gpt-5.4", help="chat model (gpt-5.4 = pooled across endpoints)")
     ap.add_argument("--max-workers", type=int, default=6)
