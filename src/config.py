@@ -17,6 +17,11 @@ CIB_SCALE = (-3, 3)
 CIB_MODEL = os.environ.get("AZURE_OPENAI_CIB_MODEL", "gpt-4.1")
 CIB_MC_SAMPLES = int(os.environ.get("CIB_MC_SAMPLES", "2000"))
 CIB_MC_RESTARTS = int(os.environ.get("CIB_MC_RESTARTS", "100"))
+# Elicitation mode for the CIB matrix. "absolute" is the legacy prompt (mildly positive-biased).
+# "contrastive" is a de-biased, SYMMETRIC prompt that weighs competition and enablement equally.
+# Default stays "absolute" until the de-biased variant is validated downstream on the null-model
+# structure verdict (an earlier tension-primed draft over-corrected to ~71% negative).
+CIB_MODE = os.environ.get("CIB_MODE", "absolute")
 
 EVAL_MODEL = os.environ.get("AZURE_OPENAI_EVAL_MODEL", "gpt-4.1")
 SCENARIO_MODEL = os.environ.get("AZURE_OPENAI_SCENARIO_MODEL", "gpt-4.1")

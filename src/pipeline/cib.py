@@ -23,11 +23,17 @@ from src.models.drivers import TechDriver
 from src.models.llm_responses import CIBResponse
 from src.models.scenarios import CIBEntry, PersonaScore
 from src.models.domain import DomainProfile
-from src.prompts.cib import CIB_EVALUATE
+from src.prompts.cib import CIB_EVALUATE, CIB_EVALUATE_CONTRASTIVE
 from src.prompts.personas import PERSONAS
 from src.rag import format_rag_chunks, retrieve
 
 log = logging.getLogger(__name__)
+
+# Elicitation modes, mirroring functional.CCA_PROMPTS. "contrastive" is a de-biased, SYMMETRIC
+# variant that weighs competition and enablement with equal rigor — it counters the LLM positivity
+# bias that leaves the absolute matrix nearly all-positive WITHOUT installing a negativity bias.
+# We measure the resulting negative-share; we do not prescribe it (the null test adjudicates).
+CIB_PROMPTS = {"absolute": CIB_EVALUATE, "contrastive": CIB_EVALUATE_CONTRASTIVE}
 
 
 def _evaluate_single(
@@ -142,11 +148,16 @@ def run(
     driver_ids: list[str] | None = None,
     delphi_rounds: int = 2,
     profile: DomainProfile | None = None,
+    cib_mode: str | None = None,
 ) -> dict:
     if profile is None:
         from src.pipeline.domain import load_profile
         profile = load_profile()
+    from src import config
+    cib_mode = cib_mode or config.CIB_MODE
     pkw = profile.prompt_kwargs()
+    prompt_template = CIB_PROMPTS.get(cib_mode, CIB_EVALUATE)
+    print(f"  CIB elicitation mode: {cib_mode}", flush=True)
     with open(merge_state_path) as f:
         merge_state = json.load(f)
 
@@ -178,7 +189,7 @@ def run(
             )
             chunks = retrieve(collection, query, pool="trend", n=3)
             rag_text = format_rag_chunks(chunks)
-        pair_prompts[(i, j)] = CIB_EVALUATE.format(
+        pair_prompts[(i, j)] = prompt_template.format(
             driver_a_name=drivers[i].name,
             driver_a_description=drivers[i].description[:150],
             driver_b_name=drivers[j].name,
@@ -321,6 +332,7 @@ def run(
         "persona_scores_map": persona_scores_map,
         "panel_metadata": {
             "mode": "multi_perspective_panel" if panel_mode else "single",
+            "cib_mode": cib_mode,
             "delphi_rounds": delphi_rounds if panel_mode else 1,
             "personas": [
                 {"id": p["id"], "name": p["name"], "model": p["model"]}
