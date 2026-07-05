@@ -82,3 +82,44 @@ class TestNullComparison:
         for key in ("effective_dim", "pc1", "best_silhouette"):
             assert agg[key]["std"] >= 0.0
             assert np.isfinite(agg[key]["mean"])
+
+
+def _clustered_scens(mb, n_cols=2, copies=8):
+    """Well-separated archetypes (all-index-c) → a well-defined dominant axis direction."""
+    out = []
+    for c in range(n_cols):
+        for _ in range(copies):
+            out.append({"assumptions": [{"manifestation_id": mb["manifestations"][d][c]}
+                                        for d in mb["drivers"]]})
+    return out
+
+
+class TestAxisDirectionStability:
+    def test_pc_loadings_are_unit_rows(self):
+        from src.pipeline.structure import pc_loadings
+        mb = _field()
+        vocab = [m["id"] for m in mb["all_manifestations"]]
+        L = pc_loadings(_clustered_scens(mb), vocab, k=3)
+        assert L.shape[1] == len(vocab)
+        for row in L:
+            assert abs(float((row * row).sum()) - 1.0) < 1e-6
+
+    def test_identical_field_is_maximally_stable(self):
+        from src.pipeline.structure import axis_direction_stability
+        mb = _field()
+        vocab = [m["id"] for m in mb["all_manifestations"]]
+        f = _clustered_scens(mb)
+        r = axis_direction_stability(f, f, vocab, k=3)
+        assert all(c > 0.99 for c in r["abs_cos"])   # a field's axes match themselves exactly
+        assert r["stable_axes"] == len(r["abs_cos"])
+
+    def test_random_fields_are_direction_unstable(self):
+        import random
+        from src.pipeline.structure import axis_direction_stability, random_field_scenarios
+        mb = _field()
+        vocab = [m["id"] for m in mb["all_manifestations"]]
+        a = random_field_scenarios(mb["drivers"], mb["manifestations"], 80, random.Random(1))
+        b = random_field_scenarios(mb["drivers"], mb["manifestations"], 80, random.Random(2))
+        r = axis_direction_stability(a, b, vocab, k=3)
+        # near-isotropic random fields share no stable axis direction (the honest signature)
+        assert r["stable_axes"] <= 1

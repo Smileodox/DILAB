@@ -191,3 +191,40 @@ def analyze(
         "usable_structure": bool(usable_structure),
         "verdict": verdict,
     }
+
+
+# --- axis-DIRECTION stability referee -------------------------------------------------
+# The null test asks "is the signal bigger than random?" (magnitude). This asks the second,
+# easily-forgotten question: "does the axis MEAN the same thing twice?" (direction). A
+# near-isotropic field (pc1 ≈ pc2) has degenerate leading PCs whose *direction* is ill-defined,
+# so the top PC's loading vector rotates across elicitations/reseeds — and any "the axis is X"
+# interpretation is then a labelling artifact, not a robust finding. Magnitude-robust ≠
+# meaning-robust; conflating the two is the trap that bit both the reviewer and this author.
+DIRECTION_STABILITY_BAR = 0.7
+
+
+def pc_loadings(scenarios: list[dict], vocab: list[str], k: int = 3) -> np.ndarray:
+    """Top-``k`` PC loading vectors (unit rows) of the one-hot config field — the axis DIRECTIONS.
+
+    These are the right-singular vectors of the centred config matrix, i.e. which manifestations
+    define each principal axis. Compare them across elicitations to test direction stability.
+    """
+    x = config_matrix(scenarios, vocab).astype(float)
+    xc = x - x.mean(axis=0, keepdims=True)
+    _, _, vt = np.linalg.svd(xc, full_matrices=False)
+    return vt[: min(k, vt.shape[0])]
+
+
+def axis_direction_stability(field_a: list[dict], field_b: list[dict], vocab: list[str],
+                             k: int = 3, bar: float = DIRECTION_STABILITY_BAR) -> dict:
+    """|cos| of matched PC loadings across two config fields (sign-invariant) + #stable axes.
+
+    ``field_a``/``field_b`` are scenario lists from two elicitations (or reseeds) over the SAME
+    manifestation ``vocab``. Returns per-axis absolute cosine of the loading vectors and how many
+    clear the ``bar`` (an a-priori "same axis" threshold, NOT tuned to any downstream metric).
+    Low |cos| even between reseeds ⇒ the field is near-isotropic and its "axes" are not real.
+    """
+    La, Lb = pc_loadings(field_a, vocab, k), pc_loadings(field_b, vocab, k)
+    m = min(La.shape[0], Lb.shape[0])
+    cosines = [round(abs(float(La[i] @ Lb[i])), 4) for i in range(m)]
+    return {"abs_cos": cosines, "stable_axes": sum(1 for c in cosines if c >= bar), "bar": bar}
