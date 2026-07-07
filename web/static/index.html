@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiLab Foresight Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen">
+    <header class="bg-gray-900 border-b border-gray-800 px-6 py-3">
+        <div class="max-w-[1400px] mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-xs font-black text-white">RS</div>
+                <div>
+                    <h1 class="text-base font-bold text-white tracking-tight">AI-Driven Technology Foresight</h1>
+                    <p class="text-[11px] text-gray-500">Rohde & Schwarz — Regulatory Frequency Monitoring — Horizon 2035</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="flex gap-1.5" id="stats-badges"></div>
+                <button id="export-btn" class="text-xs px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-400 hover:text-gray-200 border border-gray-700 rounded-lg transition flex items-center gap-1.5">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    Export
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="bg-gray-900 border-b border-gray-800 px-6">
+        <div class="max-w-[1400px] mx-auto flex gap-0.5">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="sources">Sources</button>
+            <button class="tab-btn" data-tab="bom">BOM Tree</button>
+            <button class="tab-btn" data-tab="drivers">Drivers</button>
+            <button class="tab-btn" data-tab="cib">CIB Matrix</button>
+            <button class="tab-btn" data-tab="scenarios">Scenarios</button>
+        </div>
+    </nav>
+
+    <main class="max-w-[1400px] mx-auto px-6 py-5">
+        <!-- Overview -->
+        <section id="tab-overview" class="tab-content">
+            <div class="grid grid-cols-4 gap-3 mb-5" id="overview-cards"></div>
+            <div class="grid grid-cols-5 gap-4">
+                <div class="card col-span-3">
+                    <h3 class="card-title">Pipeline Architecture</h3>
+                    <div class="pipeline-flow">
+                        <div class="pipeline-step">KB<br><span class="text-[10px] text-gray-400" id="pipe-sources">—</span></div>
+                        <div class="pipeline-arrow"></div>
+                        <div class="pipeline-step">BOM<br><span class="text-[10px] text-gray-400">Bottom-Up</span></div>
+                        <div class="pipeline-step">Trends<br><span class="text-[10px] text-gray-400">Top-Down</span></div>
+                        <div class="pipeline-arrow"></div>
+                        <div class="pipeline-step">Merge<br><span class="text-[10px] text-gray-400" id="pipe-drivers">—</span></div>
+                        <div class="pipeline-arrow"></div>
+                        <div class="pipeline-step">CIB<br><span class="text-[10px] text-gray-400" id="pipe-cib">—</span></div>
+                        <div class="pipeline-arrow"></div>
+                        <div class="pipeline-step">Scenarios<br><span class="text-[10px] text-gray-400" id="pipe-scenarios">—</span></div>
+                        <div class="pipeline-arrow"></div>
+                        <div class="pipeline-step">Analysis<br><span class="text-[10px] text-gray-400">Assessment</span></div>
+                    </div>
+                </div>
+                <div class="card col-span-2">
+                    <h3 class="card-title">Driver Distribution</h3>
+                    <div id="driver-pie" class="chart-container" style="height: 240px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sources -->
+        <section id="tab-sources" class="tab-content hidden">
+            <div class="card">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="card-title mb-0">Knowledge Base Sources</h3>
+                    <span class="text-xs text-gray-500" id="source-count"></span>
+                </div>
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="text-gray-500 text-xs uppercase tracking-wider border-b border-gray-700">
+                            <th class="text-left py-2.5 px-3 font-semibold">Title</th>
+                            <th class="text-left py-2.5 px-3 font-semibold">Type</th>
+                            <th class="text-left py-2.5 px-3 font-semibold">Pool</th>
+                            <th class="text-left py-2.5 px-3 font-semibold">Origin</th>
+                            <th class="text-left py-2.5 px-3 font-semibold">URL</th>
+                        </tr>
+                    </thead>
+                    <tbody id="source-table"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- BOM Tree -->
+        <section id="tab-bom" class="tab-content hidden">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="card col-span-2">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="card-title mb-0">Product BOM Decomposition</h3>
+                        <span class="text-xs text-gray-500" id="bom-stats"></span>
+                    </div>
+                    <div id="bom-tree" class="text-sm overflow-auto max-h-[600px]"></div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">BOM Sunburst</h3>
+                    <div id="bom-sunburst" class="chart-container" style="height: 500px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Drivers -->
+        <section id="tab-drivers" class="tab-content hidden">
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex gap-2">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="both">Validated</button>
+                    <button class="filter-btn" data-filter="bom">Incremental</button>
+                    <button class="filter-btn" data-filter="trend">Speculative</button>
+                </div>
+                <span class="text-xs text-gray-500" id="driver-count"></span>
+            </div>
+            <div class="card">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="text-gray-500 text-xs uppercase tracking-wider border-b border-gray-700">
+                            <th class="text-left py-2.5 px-3 font-semibold">Name</th>
+                            <th class="text-left py-2.5 px-3 font-semibold">Origin</th>
+                            <th class="text-left py-2.5 px-3 font-semibold">Confidence</th>
+                            <th class="text-left py-2.5 px-3 font-semibold">Sources</th>
+                        </tr>
+                    </thead>
+                    <tbody id="driver-table"></tbody>
+                </table>
+            </div>
+            <div id="driver-detail" class="card mt-4 hidden"></div>
+        </section>
+
+        <!-- CIB Matrix -->
+        <section id="tab-cib" class="tab-content hidden">
+            <div class="card mb-4">
+                <h3 class="card-title">Cross-Impact Balance Matrix</h3>
+                <p class="text-xs text-gray-600 -mt-2 mb-2">If Driver A makes breakthrough progress, how does it affect Driver B? Scale: -3 (inhibits) to +3 (promotes)</p>
+                <div id="cib-heatmap" class="chart-container"></div>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Influence vs Dependence</h3>
+                <p class="text-xs text-gray-600 -mt-2 mb-2">Enablers (top-left) drive the system. Critical nodes (top-right) are influential but also dependent.</p>
+                <div id="cib-scatter" class="chart-container" style="height: 400px;"></div>
+            </div>
+        </section>
+
+        <!-- Scenarios -->
+        <section id="tab-scenarios" class="tab-content hidden">
+            <div class="card mb-5">
+                <h3 class="card-title">Scenario Portfolio</h3>
+                <p class="text-xs text-gray-600 -mt-2 mb-2">Bubble size = confidence | Blue = evolutionary | Orange = disruptive</p>
+                <div id="scenario-scatter" class="chart-container" style="height: 380px;"></div>
+            </div>
+            <div class="grid grid-cols-2 gap-3" id="scenario-cards"></div>
+            <div id="traceability-panel" class="card mt-5 hidden"></div>
+        </section>
+    </main>
+
+    <div class="footer-link">DiLab Technology Foresight — LMU Digital Innovation Lab & Rohde & Schwarz</div>
+    <script src="/static/app.js"></script>
+</body>
+</html>

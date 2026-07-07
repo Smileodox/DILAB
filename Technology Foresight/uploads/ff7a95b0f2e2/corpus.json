@@ -1,0 +1,152 @@
+[
+  {
+    "title": "Cruise Missile Target Trajectory Movement Prediction based on Optimal 3D Kalman Filter with Firefly Algorithm",
+    "abstract": "It is hoped that there will never be a war in the world, but one of the defensive requirements of any country during the war is the missiles used for destruction and defense. Todays, missiles movement from origin to destination is an important problem due to abundant application of missiles in wars. This is important because of the range of some missiles is low and other are very high. Parametric indeterminacy are several factors in missile movement prediction and trajectory such as speed, movement angle, accuracy, movement time, and situation and direct control. So this research trying to provide a method based on LQR controller with 3d Kalman filter and then set motion and specify path without deviations based on Firefly Algorithm. It is expected that the results of an appropriate evaluation can be obtained by simulating the MATLAB environment and graphic display of a cruise missile.",
+    "authors": [
+      "Mahdi Mir"
+    ],
+    "published": "2018-07-18",
+    "year": 2018,
+    "arxiv_id": "1807.07006v1",
+    "category": "eess.SP",
+    "source": "arxiv",
+    "text": "Cruise Missile Target Trajectory Movement Prediction based on Optimal 3D Kalman Filter with Firefly Algorithm\n\nIt is hoped that there will never be a war in the world, but one of the defensive requirements of any country during the war is the missiles used for destruction and defense. Todays, missiles movement from origin to destination is an important problem due to abundant application of missiles in wars. This is important because of the range of some missiles is low and other are very high. Parametric indeterminacy are several factors in missile movement prediction and trajectory such as speed, movement angle, accuracy, movement time, and situation and direct control. So this research trying to provide a method based on LQR controller with 3d Kalman filter and then set motion and specify path without deviations based on Firefly Algorithm. It is expected that the results of an appropriate evaluation can be obtained by simulating the MATLAB environment and graphic display of a cruise missile."
+  },
+  {
+    "title": "Designing AI-Enabled Countermeasures to Cognitive Warfare",
+    "abstract": "Foreign information operations on social media platforms pose significant risks to democratic societies. With the rise of Artificial Intelligence (AI), this threat is likely to intensify, potentially overwhelming human defenders. To achieve the necessary scale and tempo to defend against these threats, utilizing AI as part of the solution seems inevitable. Although there has been a significant debate on AI in Lethal Autonomous Weapon Systems (LAWS), it is equally likely that AI will be widely used in information operations for defensive and offensive objectives. Similar to LAWS, AI-driven information operations occupy a highly sensitive moral domain where removing human involvement in the tactical decision making process raises ethical concerns. Although AI has yet to revolutionize the field, a solid ethical stance is urgently needed on how AI can be responsibly used to defend against information operations on social media platforms. This paper proposes possible AI-enabled countermeasures against cognitive warfare and argues how they can be developed in a responsible way, such that meaningful human control is preserved.",
+    "authors": [
+      "Jurriaan van Diggelen",
+      "Eugene Aidman",
+      "Jazz Rowa",
+      "Julian Vince"
+    ],
+    "published": "2025-04-14",
+    "year": 2025,
+    "arxiv_id": "2504.11486v1",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "Designing AI-Enabled Countermeasures to Cognitive Warfare\n\nForeign information operations on social media platforms pose significant risks to democratic societies. With the rise of Artificial Intelligence (AI), this threat is likely to intensify, potentially overwhelming human defenders. To achieve the necessary scale and tempo to defend against these threats, utilizing AI as part of the solution seems inevitable. Although there has been a significant debate on AI in Lethal Autonomous Weapon Systems (LAWS), it is equally likely that AI will be widely used in information operations for defensive and offensive objectives. Similar to LAWS, AI-driven information operations occupy a highly sensitive moral domain where removing human involvement in the tactical decision making process raises ethical concerns. Although AI has yet to revolutionize the field, a solid ethical stance is urgently needed on how AI can be responsibly used to defend against information operations on social media platforms. This paper proposes possible AI-enabled countermeasures against cognitive warfare and argues how they can be developed in a responsible way, such that meaningful human control is preserved."
+  },
+  {
+    "title": "Enhanced Performance of Highly Activated Carbon and Surface-Treated Porous Polymers as Physical Adsorbents for Chemical Warfare Agents",
+    "abstract": "The use of chemical warfare agents (CWAs) in modern warfare cannot be disregarded due to their ease of use and potential for large-scale incapacitation. An effective countermeasure involves the physical adsorption of these agents, preventing their entry through the respiratory tract by non-specific adsorption. In this study, we investigate the physical interaction between potential adsorbents and model gases mimicking CWAs, thereby identifying sufficient conditions for higher physical adsorption performance. Our findings reveal that the physical adsorption capacity is highly sensitive to the surface properties of the adsorbents, with uniform development of micropores, rather than solely high surface area, emerging as a critical factor. Additionally, we identified the potential of porous organic polymers as promising alternatives to conventional activated carbon-based adsorbents. Through a facile introduction of polar sulfone functional groups on the polymer surface, we demonstrated that these polar surface polymers exhibit physical adsorption capabilities for formaldehyde under ambient conditions comparable to high-performance activated carbons. Notably, the superior activated carbon possessed a high BET surface area of 2400 m^2/g and an exceptionally uniform micropore structure with an average pore size of approximately 11 Angstroms. This research paves the way for designing adsorbents with high physical adsorption capacities tailored for CWAs protection, offering a significant advancement in developing next-generation protective materials.",
+    "authors": [
+      "Sanghyeon Park",
+      "Yuseung Hong",
+      "Hyunseo Choi"
+    ],
+    "published": "2025-05-10",
+    "year": 2025,
+    "arxiv_id": "2505.08802v1",
+    "category": "physics.chem-ph",
+    "source": "arxiv",
+    "text": "Enhanced Performance of Highly Activated Carbon and Surface-Treated Porous Polymers as Physical Adsorbents for Chemical Warfare Agents\n\nThe use of chemical warfare agents (CWAs) in modern warfare cannot be disregarded due to their ease of use and potential for large-scale incapacitation. An effective countermeasure involves the physical adsorption of these agents, preventing their entry through the respiratory tract by non-specific adsorption. In this study, we investigate the physical interaction between potential adsorbents and model gases mimicking CWAs, thereby identifying sufficient conditions for higher physical adsorption performance. Our findings reveal that the physical adsorption capacity is highly sensitive to the surface properties of the adsorbents, with uniform development of micropores, rather than solely high surface area, emerging as a critical factor. Additionally, we identified the potential of porous organic polymers as promising alternatives to conventional activated carbon-based adsorbents. Through a facile introduction of polar sulfone functional groups on the polymer surface, we demonstrated that these polar surface polymers exhibit physical adsorption capabilities for formaldehyde under ambient conditions comparable to high-performance activated carbons. Notably, the superior activated carbon possessed a high BET surface area of 2400 m^2/g and an exceptionally uniform micropore structure with an average pore size of approximately 11 Angstroms. This research paves the way for designing adsorbents with high physical adsorption capacities tailored for CWAs protection, offering a significant advancement in developing next-generation protective materials."
+  },
+  {
+    "title": "Broad Area Search and Detection of Surface-to-Air Missile Sites Using Spatial Fusion of Component Object Detections from Deep Neural Networks",
+    "abstract": "Here we demonstrate how Deep Neural Network (DNN) detections of multiple constitutive or component objects that are part of a larger, more complex, and encompassing feature can be spatially fused to improve the search, detection, and retrieval (ranking) of the larger complex feature. First, scores computed from a spatial clustering algorithm are normalized to a reference space so that they are independent of image resolution and DNN input chip size. Then, multi-scale DNN detections from various component objects are fused to improve the detection and retrieval of DNN detections of a larger complex feature. We demonstrate the utility of this approach for broad area search and detection of Surface-to-Air Missile (SAM) sites that have a very low occurrence rate (only 16 sites) over a ~90,000 km^2 study area in SE China. The results demonstrate that spatial fusion of multi-scale component-object DNN detections can reduce the detection error rate of SAM Sites by $>$85% while still maintaining a 100% recall. The novel spatial fusion approach demonstrated here can be easily extended to a wide variety of other challenging object search and detection problems in large-scale remote sensing image datasets.",
+    "authors": [
+      "Alan B. Cannaday",
+      "Curt H. Davis",
+      "Grant J. Scott",
+      "Blake Ruprecht",
+      "Derek T. Anderson"
+    ],
+    "published": "2020-03-23",
+    "year": 2020,
+    "arxiv_id": "2003.10566v3",
+    "category": "cs.CV",
+    "source": "arxiv",
+    "text": "Broad Area Search and Detection of Surface-to-Air Missile Sites Using Spatial Fusion of Component Object Detections from Deep Neural Networks\n\nHere we demonstrate how Deep Neural Network (DNN) detections of multiple constitutive or component objects that are part of a larger, more complex, and encompassing feature can be spatially fused to improve the search, detection, and retrieval (ranking) of the larger complex feature. First, scores computed from a spatial clustering algorithm are normalized to a reference space so that they are independent of image resolution and DNN input chip size. Then, multi-scale DNN detections from various component objects are fused to improve the detection and retrieval of DNN detections of a larger complex feature. We demonstrate the utility of this approach for broad area search and detection of Surface-to-Air Missile (SAM) sites that have a very low occurrence rate (only 16 sites) over a ~90,000 km^2 study area in SE China. The results demonstrate that spatial fusion of multi-scale component-object DNN detections can reduce the detection error rate of SAM Sites by $>$85% while still maintaining a 100% recall. The novel spatial fusion approach demonstrated here can be easily extended to a wide variety of other challenging object search and detection problems in large-scale remote sensing image datasets."
+  },
+  {
+    "title": "The Dragon and the Computer: Why Intellectual Property Theft is Compatible with Chinese Cyber-Warfare Doctrine",
+    "abstract": "Along with the USA and Russia, China is often considered one of the leading cyber-powers in the world. In this excerpt, we explore how Chinese military thought, developed in the 1990s, influenced their cyber-operations in the early 2000s. In particular, we examine the ideas of \"Unrestricted Warfare\" and \"Active Offense\" and discuss how they can permit for the theft of intellectual property. We then specifically look at how the case study of Operation Aurora, a cyber-operation directed against many major U.S. technology and defense firms, reflects some of these ideas.",
+    "authors": [
+      "Paulo Shakarian",
+      "Jana Shakarian",
+      "Andrew Ruef"
+    ],
+    "published": "2013-09-25",
+    "year": 2013,
+    "arxiv_id": "1309.6450v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "The Dragon and the Computer: Why Intellectual Property Theft is Compatible with Chinese Cyber-Warfare Doctrine\n\nAlong with the USA and Russia, China is often considered one of the leading cyber-powers in the world. In this excerpt, we explore how Chinese military thought, developed in the 1990s, influenced their cyber-operations in the early 2000s. In particular, we examine the ideas of \"Unrestricted Warfare\" and \"Active Offense\" and discuss how they can permit for the theft of intellectual property. We then specifically look at how the case study of Operation Aurora, a cyber-operation directed against many major U.S. technology and defense firms, reflects some of these ideas."
+  },
+  {
+    "title": "A potential missile guidance law based-on chaos",
+    "abstract": "An important field of research in defense-related technology is the design of guidance laws. A guided missile is generally challenging to intercept if its trajectory becomes unpredictable. In this short communication, we have discussed a possible application of the chaos theory in developing an advanced guided missile, where the guidance law is based upon a robust chaotic map. This type of guided missile may be almost impossible to intercept by existing missile defense systems due to its unpredictable trajectory.",
+    "authors": [
+      "Dhrubajyoti Mandal"
+    ],
+    "published": "2023-12-15",
+    "year": 2023,
+    "arxiv_id": "2312.10011v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "A potential missile guidance law based-on chaos\n\nAn important field of research in defense-related technology is the design of guidance laws. A guided missile is generally challenging to intercept if its trajectory becomes unpredictable. In this short communication, we have discussed a possible application of the chaos theory in developing an advanced guided missile, where the guidance law is based upon a robust chaotic map. This type of guided missile may be almost impossible to intercept by existing missile defense systems due to its unpredictable trajectory."
+  },
+  {
+    "title": "A Multi-Layer Electronic and Cyber Interference Model for AI-Driven Cruise Missiles: The Case of Khuzestan Province",
+    "abstract": "The rapid advancement of Artificial Intelligence has enabled the development of cruise missiles endowed with high levels of autonomy, adaptability, and precision. These AI driven missiles integrating deep learning algorithms, real time data processing, and advanced guidance systems pose critical threats to strategic infrastructures, especially under complex geographic and climatic conditions such as those found in Irans Khuzestan Province. In this paper, we propose a multi layer interference model, encompassing electronic warfare, cyberattacks, and deception strategies, to degrade the performance of AI guided cruise missiles significantly. Our experimental results, derived from 400 simulation runs across four distinct scenarios, demonstrate notable improvements when employing the integrated multi layer approach compared to single layer or no interference baselines. Specifically, the average missile deviation from its intended target increases from 0.25 to 8.65 under multi layer interference a more than 3300 increase in angular deviation. Furthermore, the target acquisition success rate is reduced from 92.7 in the baseline scenario to 31.5, indicating a 66 decrease in successful strikes. While resource consumption for multi layer strategies rises by approximately 25 compared to single layer methods, the significant drop in missile accuracy and reliability justifies the more intensive deployment of jamming power, cyber resources, and decoy measures. Beyond these quantitative improvements, the proposed framework uses a deep reinforcement learning based defense coordinator to adaptively select the optimal configuration of EW, cyber, and deception tactics in real time.",
+    "authors": [
+      "Pouriya Alimoradi",
+      "Ali Barati",
+      "Hamid Barati"
+    ],
+    "published": "2025-10-03",
+    "year": 2025,
+    "arxiv_id": "2510.03542v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "A Multi-Layer Electronic and Cyber Interference Model for AI-Driven Cruise Missiles: The Case of Khuzestan Province\n\nThe rapid advancement of Artificial Intelligence has enabled the development of cruise missiles endowed with high levels of autonomy, adaptability, and precision. These AI driven missiles integrating deep learning algorithms, real time data processing, and advanced guidance systems pose critical threats to strategic infrastructures, especially under complex geographic and climatic conditions such as those found in Irans Khuzestan Province. In this paper, we propose a multi layer interference model, encompassing electronic warfare, cyberattacks, and deception strategies, to degrade the performance of AI guided cruise missiles significantly. Our experimental results, derived from 400 simulation runs across four distinct scenarios, demonstrate notable improvements when employing the integrated multi layer approach compared to single layer or no interference baselines. Specifically, the average missile deviation from its intended target increases from 0.25 to 8.65 under multi layer interference a more than 3300 increase in angular deviation. Furthermore, the target acquisition success rate is reduced from 92.7 in the baseline scenario to 31.5, indicating a 66 decrease in successful strikes. While resource consumption for multi layer strategies rises by approximately 25 compared to single layer methods, the significant drop in missile accuracy and reliability justifies the more intensive deployment of jamming power, cyber resources, and decoy measures. Beyond these quantitative improvements, the proposed framework uses a deep reinforcement learning based defense coordinator to adaptively select the optimal configuration of EW, cyber, and deception tactics in real time."
+  },
+  {
+    "title": "Missile detection and destruction robot using detection algorithm",
+    "abstract": "This research is based on the present missile detection technologies in the world and the analysis of these technologies to find a cost effective solution to implement the system in Bangladesh. The paper will give an idea of the missile detection technologies using the electro-optical sensor and the pulse doppler radar. The system is made to detect the target missile. Automatic detection and destruction with the help of ultrasonic sonar, a metal detector sensor, and a smoke detector sensor. The system is mainly based on an ultrasonic sonar sensor. It has a transducer, a transmitter, and a receiver. Transducer is connected with the connected with controller. When it detects an object by following the algorithm, it finds its distance and angle. It can also assure whether the system can destroy the object or not by using another algorithm's simulation.",
+    "authors": [
+      "Md Kamrul Siam",
+      "Shafayet Ahmed",
+      "Md Habibur Rahman",
+      "Amir Hossain Mollah"
+    ],
+    "published": "2024-07-10",
+    "year": 2024,
+    "arxiv_id": "2407.07452v2",
+    "category": "cs.RO",
+    "source": "arxiv",
+    "text": "Missile detection and destruction robot using detection algorithm\n\nThis research is based on the present missile detection technologies in the world and the analysis of these technologies to find a cost effective solution to implement the system in Bangladesh. The paper will give an idea of the missile detection technologies using the electro-optical sensor and the pulse doppler radar. The system is made to detect the target missile. Automatic detection and destruction with the help of ultrasonic sonar, a metal detector sensor, and a smoke detector sensor. The system is mainly based on an ultrasonic sonar sensor. It has a transducer, a transmitter, and a receiver. Transducer is connected with the connected with controller. When it detects an object by following the algorithm, it finds its distance and angle. It can also assure whether the system can destroy the object or not by using another algorithm's simulation."
+  },
+  {
+    "title": "Future state prediction based on observer for missile system",
+    "abstract": "Guided missile accuracy and precision is negatively impacted by seeker delay, more specifically by the delay introduced by a mechanical seeker gimbal and the computational time taken to process the raw data. To meet the demands and expectations of modern missiles systems, the impact of this hardware limitation must be reduced. This paper presents a new observer design that predicts the future state of a seeker signal, augmenting the guidance system to mitigate the effects of this delay. The design is based on a novel two-step differentiator, which produces the estimated future time derivatives of the signal. The input signal can be nonlinear and provides for simple integration into existing systems. A bespoke numerical guided missile simulation is used to demonstrate the performance of the observer within a missile guidance system. Both non-manoeuvring and randomly manoeuvring target engagement scenarios are considered.",
+    "authors": [
+      "W. K. Smithson",
+      "Xinhua Wang"
+    ],
+    "published": "2024-11-13",
+    "year": 2024,
+    "arxiv_id": "2411.08576v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Future state prediction based on observer for missile system\n\nGuided missile accuracy and precision is negatively impacted by seeker delay, more specifically by the delay introduced by a mechanical seeker gimbal and the computational time taken to process the raw data. To meet the demands and expectations of modern missiles systems, the impact of this hardware limitation must be reduced. This paper presents a new observer design that predicts the future state of a seeker signal, augmenting the guidance system to mitigate the effects of this delay. The design is based on a novel two-step differentiator, which produces the estimated future time derivatives of the signal. The input signal can be nonlinear and provides for simple integration into existing systems. A bespoke numerical guided missile simulation is used to demonstrate the performance of the observer within a missile guidance system. Both non-manoeuvring and randomly manoeuvring target engagement scenarios are considered."
+  },
+  {
+    "title": "Swarm-optimized Adaptive Augmentation of Missile Autopilot",
+    "abstract": "This paper considers the problem of optimizing a missile autopilot. In particular, the paper investigates the application of an online learning technique to learn and optimize the gains of a three-loop topology autopilot for a planar missile modeled with nonlinear dynamics and nonlinear aerodynamics forces and moments. The classical autopilot for a missile is based on a three-loop topology, where each loop consists of tunable proportional gains. An adaptive three-loop autopilot is constructed by augmenting the classical autopilot's fixed-gain controllers with a learning-based controller, which is recursively optimized using retrospective cost optimization. Numerical simulations show that online learning improves the tracking performance of the classical autopilot in both nominal and off-nominal interception scenarios.",
+    "authors": [
+      "Alexander Dorsey",
+      "Parham Oveissi",
+      "Jeffrey D. Barton",
+      "Ankit Goel"
+    ],
+    "published": "2025-09-09",
+    "year": 2025,
+    "arxiv_id": "2509.07748v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Swarm-optimized Adaptive Augmentation of Missile Autopilot\n\nThis paper considers the problem of optimizing a missile autopilot. In particular, the paper investigates the application of an online learning technique to learn and optimize the gains of a three-loop topology autopilot for a planar missile modeled with nonlinear dynamics and nonlinear aerodynamics forces and moments. The classical autopilot for a missile is based on a three-loop topology, where each loop consists of tunable proportional gains. An adaptive three-loop autopilot is constructed by augmenting the classical autopilot's fixed-gain controllers with a learning-based controller, which is recursively optimized using retrospective cost optimization. Numerical simulations show that online learning improves the tracking performance of the classical autopilot in both nominal and off-nominal interception scenarios."
+  }
+]

@@ -1,0 +1,2196 @@
+{
+  "matrix": [
+    [
+      0,
+      -1,
+      1,
+      0,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      -1,
+      0,
+      -1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      -1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      0,
+      -1,
+      0,
+      1,
+      -1,
+      1,
+      0,
+      -1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      -1,
+      0,
+      -1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      -1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      -1,
+      1,
+      0,
+      0,
+      -1,
+      1,
+      1,
+      1,
+      0,
+      -1,
+      1,
+      1,
+      0
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0,
+      -1,
+      0,
+      -1,
+      0,
+      -1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ]
+  ],
+  "driver_ids": [
+    "ca9ace6bafb0",
+    "48a044afb0c0",
+    "4842454330e8",
+    "9a3bc0fdb612",
+    "908595a5a7a6",
+    "0c6f77459f97",
+    "748495722079",
+    "b9c3a7851f44",
+    "ecbcd4440682",
+    "949506c3c6e4",
+    "9da500c3abd4",
+    "28f017831151",
+    "f73e1de8ec1e",
+    "9150c7269776"
+  ],
+  "driver_names": [
+    "Ultra Wideband RF Frontend and Millimeter-Wave/Sub-THz Spectrum Monitoring",
+    "High Sensitivity Receiver and Quantum RF Sensing with Rydberg Atoms",
+    "Real-Time Digitizer and Photonic Signal Processing for Ultra-Wideband Monitoring",
+    "Panorama Scan Engine and Shift to Continuous, Automated, Real-Time Spectrum Monitoring",
+    "I/Q Data Streaming Interface and Edge Computing for Distributed Spectrum Monitoring",
+    "Direction Finding Module and Space-Based Spectrum Monitoring via LEO Satellite Constellations",
+    "AI-Driven Spectrum Sensing, Prediction, and Dynamic Spectrum Access in Cognitive Radio Networks",
+    "Federated Learning and Energy-Efficient AI Architectures for Secure and Decentralized Spectrum Monitoring",
+    "AI-Enabled Software-Defined Radio (SDR) and Open Radio Access Networks (ORAN) Modular Architectures",
+    "Dynamic Spectrum Sharing and Real-Time Automated Environmental Sensing Capability (ESC) Networks",
+    "AI-Native 6G Networks with Embedded Spectrum Sensing",
+    "Cross-Border and Harmonized Spectrum Monitoring Coordination",
+    "Increasing Cybersecurity Requirements for Monitoring Infrastructure",
+    "Digital Twin Networks for Spectrum Monitoring"
+  ],
+  "entries": [
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "48a044afb0c0",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in A (ultra-wideband frontends) may help B by establishing the importance of wideband coverage and high sensitivity in regulatory monitoring, creating a market expectation that quantum sensing (B) can exceed. Additionally, integration challenges solved by A (e.g., compact design, wideband digitization) may inform or accelerate system-level integration for B. | Inh(2): Significant inhibition: A's progress could divert funding/talent from B, partially reduce the need for B in regulatory monitoring, and delay regulatory or market adoption of quantum sensing. Unless B offers clear, unique advantages (e.g., quantum-limited sensitivity, traceability, operation above 40 GHz), A's entrenched position may slow B's development and deployment.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "fa3fdb690ed9",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "4842454330e8",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Progress in Driver A (ultra wideband RF frontend) directly enables and increases the value of Driver B (real-time digitizer and photonic signal processing), since a frontend capable of capturing signals from 8 kHz to 40 GHz is only fully useful if the backend digitizer and processing chain can handle the resulting wide instantaneous bandwidth and dynamic range. Driver B's technologies are needed to realize the full potential of Driver A's wideband capture, especially for real-time analysis and advanced regulatory applications. | Inh(1): There is minor resource competition and potential for partial obsolescence pressure if Driver A's advancements are seen as sufficient for regulatory needs, possibly reducing the urgency or funding for Driver B. However, A does not fully replace or block B, as B's advanced digitization and photonic processing are still required to exploit A's full capabilities.",
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "982cd1166f26",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "9a3bc0fdb612",
+      "impact_score": 0,
+      "reasoning": "Pro(2): A significant advance in ultra wideband RF frontends (A) enables B to scan a much broader spectrum in real time, as the scan engine (B) is limited by the frontend's frequency coverage and instantaneous bandwidth. Improved hardware (A) is a strong enabler for more effective and comprehensive real-time scanning (B), especially for new mmWave and sub-THz regulatory requirements. | Inh(2): There is significant resource competition (funding, engineering) between hardware (A) and software/scan engine (B) development. Additionally, if A's capabilities allow for direct wideband capture, some use cases for B (such as detecting transient signals) may be addressed by A alone, partially reducing the need for B's ultra-fast scanning.",
+      "source_chunk_ids": [
+        "982cd1166f26",
+        "c2519cd9e984",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "908595a5a7a6",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in ultra wideband RF frontends directly increases the volume and diversity of spectrum data that can be captured, making high-speed I/Q data streaming and distributed edge processing more valuable and necessary to handle, analyze, and act on this data. The ability to monitor a broader frequency range (including mmWave and sub-THz) creates new requirements for scalable data transport and edge analytics, thus enabling and motivating further development of Driver B. | Inh(1): Minor resource competition and partial obsolescence: While there is some competition for R&D resources and a possibility that advanced frontends with integrated processing could reduce the need for external I/Q streaming, these effects are secondary. The primary trend is complementary, but minor inhibition exists due to overlapping budgets and potential architectural lock-in.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "982cd1166f26",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "0c6f77459f97",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Ultra wideband RF frontends (A) significantly enable direction finding and space-based monitoring (B) by providing the necessary hardware to receive and process signals across the full frequency range of interest, including mmWave and sub-THz bands. This broad coverage is essential for modern AoA/TDOA techniques and for monitoring new spectrum allocations used by LEO satellites. In hybrid ground-space architectures, A's capabilities directly enhance B's effectiveness. | Inh(1): There is minor resource competition and some potential for partial obsolescence in non-remote areas, as ground-based ultra wideband systems (A) may reduce the unique value proposition of space-based monitoring (B) where ground coverage is feasible. However, B retains unique advantages for global/remote coverage and geolocation, so the inhibition is limited.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "f09a877ff82e",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "748495722079",
+      "impact_score": 2,
+      "reasoning": "Pro(3): Ultra wideband RF frontends (A) are a critical prerequisite for advanced AI-driven spectrum sensing (B) in the regulatory domain. AI/ML models require high-fidelity, wideband, and high-resolution I/Q data across a broad frequency range to function effectively. Without hardware capable of capturing the full spectrum (including mmWave and sub-THz bands), AI-driven sensing and prediction cannot operate at their full potential. The hardware enables the software. | Inh(1): There is minor resource competition and potential for regulatory or market attention to shift toward hardware-centric solutions, but these effects are secondary. The main value of A is as an enabler for B, not as a replacement.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "b346caa67981",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "b9c3a7851f44",
+      "impact_score": 1,
+      "reasoning": "Pro(2): A breakthrough in ultra wideband RF frontends (Driver A) significantly enables Driver B by providing richer, broader, and higher-quality spectrum data across a wider frequency range (including mmWave/sub-THz). This data is essential for training and deploying advanced AI models, including federated learning approaches, and for supporting decentralized spectrum monitoring across diverse environments. Driver B's AI models can leverage the improved hardware to achieve better accuracy, scalability, and robustness. | Inh(1): There is minor resource competition and potential partial obsolescence: Driver A's breakthrough may divert funding, talent, and regulatory attention away from Driver B, and could reduce perceived urgency for decentralized AI solutions if centralized hardware monitoring becomes dominant. However, Driver B is not fully obsolete and retains relevance for privacy, scalability, and distributed monitoring use cases.",
+      "source_chunk_ids": [
+        "b346caa67981",
+        "8e50d93cb7ee",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "ecbcd4440682",
+      "impact_score": 2,
+      "reasoning": "Pro(3): Ultra wideband RF frontends (A) are a critical prerequisite for AI-enabled SDR/ORAN (B) because B's advanced AI/ML algorithms for real-time spectrum analysis, modulation recognition, and signal classification require access to high-fidelity, wideband I/Q data streams across the full frequency range. Without A's hardware, B's software cannot operate at the necessary scale or performance for modern spectrum monitoring. | Inh(1): There is minor resource competition and potential for reduced urgency: A's hardware breakthrough could temporarily divert funding or focus away from B, or lead some organizations to delay B's adoption if A's capabilities are seen as sufficient. However, A does not make B obsolete, nor does it fundamentally block B's development.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "229c6a558520",
+        "982cd1166f26"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "949506c3c6e4",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Ultra wideband RF frontends are a significant enabler for ESC networks, as they allow sensors to monitor a much broader range of frequencies, including new mmWave and sub-THz bands. This directly supports the expansion of dynamic spectrum sharing frameworks to higher frequencies and improves the effectiveness of real-time automated sensing. ESC networks with wideband frontends can provide more comprehensive coverage and enforcement. | Inh(1): There is minor resource competition and potential partial obsolescence: progress in ultra wideband hardware may divert funding and talent from ESC network development, and may reduce the need for dense ESC deployments if centralized wideband monitoring becomes more attractive. However, ESC networks still provide unique distributed sensing and real-time enforcement capabilities, so the inhibition is not severe.",
+      "source_chunk_ids": [
+        "b346caa67981",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "9da500c3abd4",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Ultra wideband RF frontends (A) provide critical hardware capability for spectrum monitoring at mmWave and sub-THz frequencies, which can be leveraged by AI-native 6G networks (B) for training, validation, and hybrid monitoring architectures. Progress in A enables B by supplying high-fidelity reference data and facilitating coexistence of external and embedded sensing. | Inh(2): A's progress could significantly divert resources (funding, talent) and regulatory focus away from B, and partially reduce the perceived need for embedded spectrum sensing in 6G networks if external monitors are seen as sufficient. Standards lock-in may also inhibit B's development.",
+      "source_chunk_ids": [
+        "982cd1166f26",
+        "a6a655193dbe"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "28f017831151",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in ultra wideband RF frontends (A) provides the technical foundation necessary for effective cross-border and harmonized spectrum monitoring (B). Harmonization initiatives (ETSI EN 303 420, CEPT ECC) require equipment that can cover the full range of frequencies in use across Europe, including new mmWave and sub-THz bands. Without A's technical capabilities, B's goals are not fully achievable. Advanced hardware enables standardized, future-proof monitoring platforms that can be deployed across borders. | Inh(1): Minor resource competition and potential for fragmented approaches: While A and B are complementary in the long term, there is a risk that rapid technical progress in A could temporarily divert resources or attention from harmonization efforts, or lead to premature deployments that are not fully aligned with B's standards.",
+      "source_chunk_ids": [
+        "b346caa67981",
+        "a6a655193dbe",
+        "982cd1166f26"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "f73e1de8ec1e",
+      "impact_score": 1,
+      "reasoning": "Pro(2): A breakthrough in ultra wideband RF frontends (A) enables broader, more networked, and more complex monitoring infrastructure, which increases the attack surface and operational criticality. This drives demand for advanced cybersecurity (B) to protect these high-value, networked assets from sophisticated threats, especially as monitoring shifts to continuous, automated, and remote operation. | Inh(1): There is minor resource competition and potential regulatory distraction: major investments in A could temporarily divert funding, talent, or attention from B, and slow the pace of cybersecurity upgrades if procurement cycles are dominated by hardware refreshes.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "982cd1166f26"
+      ]
+    },
+    {
+      "driver_a_id": "ca9ace6bafb0",
+      "driver_b_id": "9150c7269776",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Ultra wideband RF frontends (A) significantly enable digital twin networks (B) by providing richer, broader, and higher-quality real-time and historical spectrum data across a much wider frequency range, which is essential for accurate modeling, simulation, and cognitive evolution of digital twins. B's effectiveness depends on the quality and breadth of input data, which A directly improves. | Inh(1): There is minor resource competition and potential for partial obsolescence, as progress in A may divert funding and talent from B, and some stakeholders may see less need for digital twin solutions if hardware monitoring is perceived as sufficient for certain regulatory tasks.",
+      "source_chunk_ids": [
+        "982cd1166f26",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "48a044afb0c0",
+      "driver_b_id": "ca9ace6bafb0",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Progress in Driver A (quantum sensing) significantly enables Driver B by demonstrating the feasibility of ultra-sensitive, wideband detection. Quantum sensing breakthroughs may inspire improvements in conventional frontends (e.g., new materials, calibration methods) and could be integrated as a hybrid solution, where quantum sensors set the sensitivity benchmark and conventional frontends expand coverage or provide redundancy. Additionally, quantum sensing's all-optical readout and integration potential may drive new architectures for wideband frontends. | Inh(2): Quantum sensing with Rydberg atoms threatens to partially obsolete traditional ultra-wideband frontends by offering both high sensitivity and wide frequency coverage in a single device. This could divert funding, talent, and regulatory focus away from Driver B, and reduce market demand for conventional solutions, especially in high-end regulatory monitoring applications.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "fa3fdb690ed9",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "48a044afb0c0",
+      "driver_b_id": "4842454330e8",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Quantum RF sensing with Rydberg atoms provides ultra-high sensitivity and wideband coverage, but the readout and processing of quantum sensor outputs often require high-speed digitizers and advanced photonic signal processing to extract, analyze, and interpret the quantum measurement data in real time. Thus, breakthroughs in quantum sensing increase the demand for advanced digitizers capable of handling the unique output formats and bandwidths of quantum sensors, significantly enabling Driver B. | Inh(2): Quantum sensing's superior sensitivity, bandwidth, and SI-traceability may partially obsolete traditional wideband digitizers for certain applications, divert R&D resources, and shift regulatory and market focus toward quantum solutions. This creates significant competition and reduces the need for Driver B in some contexts, especially where quantum sensors can directly provide digital outputs.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "fa3fdb690ed9",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "48a044afb0c0",
+      "driver_b_id": "9a3bc0fdb612",
+      "impact_score": 0,
+      "reasoning": "Pro(2): High sensitivity receivers (including quantum RF sensors) can directly enable or enhance the performance of panorama scan engines by improving the minimum detectable signal during ultra-fast scans. Quantum sensors' broad bandwidth and sensitivity could allow scan engines to operate more effectively, especially for detecting weak, transient, or frequency-hopping signals. Integration of quantum sensors could push scan engine architectures to new performance levels, making Driver A a significant enabler for Driver B. | Inh(2): Breakthroughs in Driver A could divert funding and talent, and in some scenarios, quantum sensors' ultra-wide bandwidth and sensitivity could partially obviate the need for ultra-fast scanning architectures, especially if a single quantum sensor can cover the spectrum range that would otherwise require rapid scanning. There is also a risk of regulatory and market focus shifting away from scan engines toward quantum solutions.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "fa3fdb690ed9",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "48a044afb0c0",
+      "driver_b_id": "908595a5a7a6",
+      "impact_score": 0,
+      "reasoning": "Pro(2): High sensitivity receivers (including quantum sensors) generate richer, more detailed I/Q data, which increases the value and necessity of high-throughput streaming interfaces and distributed edge processing to handle, analyze, and act on this data in real time. The improved front-end performance of A directly enables B to extract more actionable intelligence from weak or complex signals. | Inh(2): If quantum RF sensors can perform more advanced local signal analysis (potentially even at the sensor element), the traditional model of streaming all raw I/Q data to edge or central nodes for processing (B) may become less necessary. Additionally, resource competition for funding and talent is likely, as both are cutting-edge approaches in the same regulatory monitoring domain.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "2791b93d374d",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "48a044afb0c0",
+      "driver_b_id": "0c6f77459f97",
+      "impact_score": 0,
+      "reasoning": "Pro(2): High sensitivity receivers and quantum RF sensing (A) can significantly enhance the performance of direction finding modules (B) by improving signal detection in noisy or weak-signal environments, enabling more accurate geolocation (AoA/TDOA) from both ground and space platforms. Quantum sensors' wide frequency coverage and low noise floor can feed superior data to direction finding algorithms, especially in dense or contested spectrum environments. | Inh(2): Quantum RF sensing breakthroughs (A) may divert R&D resources and regulatory focus away from space-based monitoring (B), and could partially obsolete some use cases for B by enabling ground-based solutions with superior sensitivity and coverage. This creates significant competition for funding, talent, and market adoption, especially if quantum receivers can be deployed widely and cost-effectively.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "48a044afb0c0",
+      "driver_b_id": "748495722079",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Quantum RF sensing (Driver A) provides ultra-sensitive, wideband, and SI-traceable data, which significantly enhances the quality and granularity of input data for AI-driven spectrum sensing and prediction (Driver B). This enables AI models to detect weaker signals, operate across broader frequency ranges, and improve compliance with regulatory standards. The synergy is substantial, as AI can leverage quantum sensor data to optimize dynamic spectrum access and spectrum prediction in cognitive radio networks. | Inh(1): There is minor resource competition and partial obsolescence risk: quantum sensing breakthroughs may divert R&D funding and talent from AI-driven spectrum sensing, and some calibration/compliance tasks traditionally handled by AI may be replaced by quantum hardware solutions. However, AI remains essential for higher-level spectrum management, prediction, and dynamic access, so the inhibition is not severe.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "fa3fdb690ed9",
+        "8e50d93cb7ee"
+      ]
+    },
+    {
+      "driver_a_id": "48a044afb0c0",
+      "driver_b_id": "b9c3a7851f44",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Quantum/high-sensitivity receivers (A) generate richer, more sensitive, and higher-fidelity RF data, which can be leveraged by federated learning and AI models (B) to improve detection, classification, and anomaly detection performance across distributed networks. The improved data quality from A directly enhances the effectiveness of B, especially in challenging RF environments with weak or stealthy signals. | Inh(1): Minor inhibition: While there is some competition for resources and potential for partial obsolescence of large distributed sensor networks, the fundamental need for decentralized, privacy-preserving, and energy-efficient AI (B) remains, especially as quantum sensors are likely to be deployed in distributed arrays (e.g., satellites, remote nodes). The inhibition is real but not dominant.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "fa3fdb690ed9"
+      ]
+    },
+    {
+      "driver_a_id": "48a044afb0c0",
+      "driver_b_id": "ecbcd4440682",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Quantum RF sensors (Driver A) provide unprecedented sensitivity and dynamic range, enabling detection of weak and complex signals. This creates richer data inputs for AI-enabled SDRs (Driver B), enhancing machine learning-based signal classification and modulation recognition. Quantum sensors could be integrated as front-ends for SDRs, allowing AI algorithms to operate on higher quality data and expanding the range of detectable signals. Thus, progress in A significantly enables B by improving the quality and scope of input data. | Inh(2): Breakthroughs in quantum RF sensing may divert funding, talent, and regulatory attention away from SDR/ORAN architectures, and could partially obsolete some SDR hardware functions. If quantum sensors become the preferred front-end, some SDR innovations may be deprioritized or rendered less relevant, especially in applications where sensitivity is paramount.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "48a044afb0c0",
+      "driver_b_id": "949506c3c6e4",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Quantum RF sensing and high sensitivity receivers (Driver A) significantly enable ESC networks (Driver B) by improving detection capability, reducing false negatives, and allowing ESC networks to operate effectively in dense or weak signal environments. Advanced sensors can be integrated into ESC networks, enhancing their overall performance and reliability. | Inh(2): Breakthroughs in Driver A may divert funding, talent, and regulatory focus from ESC network development, and could partially obsolete traditional ESC architectures by enabling fewer, more capable sensors to replace dense networks. This creates significant competition and possible obsolescence pressure.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "02b971bf51d7",
+        "1e8a7e2f7123"
+      ]
+    },
+    {
+      "driver_a_id": "48a044afb0c0",
+      "driver_b_id": "9da500c3abd4",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Quantum RF sensors (A) could serve as a high-fidelity data source for training and validating AI models in 6G networks (B). Their exceptional sensitivity and bandwidth would enhance the quality of spectrum data available to AI algorithms, enabling more robust and accurate spectrum awareness and management. Additionally, if quantum sensors are integrated into network infrastructure, they could directly feed data to AI-native systems, creating a synergistic effect. | Inh(2): Breakthroughs in quantum RF sensing could partially reduce the need for AI-native embedded spectrum sensing by offering a hardware-centric alternative with superior performance. This could divert funding, regulatory attention, and market demand away from AI-native approaches, especially if quantum sensors become cost-effective and easily deployable.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "fa3fdb690ed9"
+      ]
+    },
+    {
+      "driver_a_id": "48a044afb0c0",
+      "driver_b_id": "28f017831151",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Breakthroughs in high sensitivity and quantum RF sensing provide technical capabilities (e.g., ultra-wideband, traceable, SI-linked measurements) that can significantly enable harmonized spectrum monitoring. These advances make it easier to standardize measurement protocols, improve interoperability, and support coordinated monitoring across borders, especially as European initiatives (ETSI, CEPT) seek to future-proof standards. | Inh(1): There is minor resource competition and obsolescence pressure. Driver A's rapid progress could divert funding and talent from harmonization efforts, and may make some legacy harmonization standards less relevant if quantum sensing hardware is not immediately compatible or standardized. However, Driver B's coordination efforts can adapt, and the domains are not fully competitive.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "fa3fdb690ed9",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "48a044afb0c0",
+      "driver_b_id": "f73e1de8ec1e",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Breakthroughs in Driver A (quantum RF sensing) will likely require new, highly networked infrastructure for data collection, aggregation, and remote control. The increased value and sensitivity of the data, and the need to protect quantum sensor control systems, will drive demand for advanced cybersecurity (Driver B). Quantum sensors may also introduce new attack surfaces (e.g., quantum control lasers, calibration routines) that require novel cybersecurity approaches. | Inh(1): There is minor but non-negligible resource competition: quantum sensing breakthroughs may divert funding and talent from cybersecurity efforts. Additionally, some quantum sensor architectures may be less susceptible to traditional cyber threats, reducing the perceived urgency for certain cybersecurity solutions. However, these effects are not strong enough to make B obsolete or block its development.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "fa3fdb690ed9"
+      ]
+    },
+    {
+      "driver_a_id": "48a044afb0c0",
+      "driver_b_id": "9150c7269776",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Breakthroughs in Driver A (quantum RF sensing) provide richer, more accurate, and higher-resolution data streams for digital twin networks (Driver B), enabling more precise modeling, simulation, and optimization. Digital twins can leverage quantum-sensed data to improve their cognitive and self-optimizing functions, especially in dense or complex RF environments. | Inh(1): There is minor but real resource competition and partial obsolescence pressure: quantum sensing may reduce the need for some digital twin functions and divert funding/talent, but does not fully replace or block digital twin networks. Both technologies can coexist and synergize, but the breakthrough in A could slow B's development in certain aspects.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "fa3fdb690ed9",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "4842454330e8",
+      "driver_b_id": "ca9ace6bafb0",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in real-time digitizers and photonic signal processing (A) allows the full exploitation of ultra wideband RF frontends (B). Without high-bandwidth digitizers, the wide frequency coverage of B cannot be fully utilized for real-time monitoring and analysis. Thus, A\u2019s progress directly increases the value and feasibility of B\u2019s development. | Inh(1): Minor resource competition and slight obsolescence: While A and B are complementary, a major breakthrough in A could attract more R&D resources and potentially reduce the perceived need for further advances in B, especially if digitizer bandwidth exceeds what current frontends can deliver. However, the core functions remain distinct, so the inhibiting effect is limited.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "4842454330e8",
+      "driver_b_id": "48a044afb0c0",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Advances in real-time digitizers and photonic signal processing could provide enabling components (e.g., high-speed optical readout, advanced ADCs) that may be leveraged in the development of quantum RF sensing systems, especially for signal acquisition and processing. However, the core sensing mechanism in B is fundamentally different (atom-based vs. electronic/photonic), so the synergy is limited. | Inh(2): Significant funding/talent diversion and partial obsolescence: If A progresses rapidly, it could divert resources and attention from B, and in some cases, reduce the urgency or perceived need for quantum RF sensing in regulatory monitoring, especially if A's performance envelope expands to cover most practical needs.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "fa3fdb690ed9",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "4842454330e8",
+      "driver_b_id": "9a3bc0fdb612",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in Driver A (real-time, ultra-wideband digitization) provides the raw data and bandwidth necessary for Driver B's scan engine to operate at higher speeds and with greater fidelity. The ability to digitize larger swaths of spectrum in real time allows scan engines to process more data, detect more transient events, and improve overall monitoring effectiveness. Many advanced scanning and AI/ML-based spectrum analysis techniques (see DeepSense, DeepSweep, Wideband Signal Stitching) rely on high-quality, wideband I/Q data, which Driver A directly enables. | Inh(1): Minor resource competition and slight obsolescence pressure: While Driver A enables new capabilities for Driver B, it also introduces some overlap\u2014certain monitoring tasks that previously required fast scanning may now be handled directly by wideband digitization and analysis. Additionally, R&D resources may be partially diverted to Driver A if it is seen as more transformative.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "4842454330e8",
+      "driver_b_id": "908595a5a7a6",
+      "impact_score": 0,
+      "reasoning": "Pro(2): A's breakthrough in real-time digitization and photonic signal processing directly enables B by providing higher-fidelity, wider-bandwidth I/Q data for streaming and edge computing. B depends on advanced digitizers to capture and transmit rich spectrum data, so improvements in A significantly enhance B's capabilities. | Inh(2): A's progress may shift the architecture toward more local, real-time processing, reducing the need for distributed I/Q streaming and offline analysis. This could divert resources and regulatory focus away from B, and partially obsolete B's approach if ultra-wideband analysis is performed at the sensor.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "02b971bf51d7"
+      ]
+    },
+    {
+      "driver_a_id": "4842454330e8",
+      "driver_b_id": "0c6f77459f97",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Real-time digitizers and photonic signal processing (A) are critical enablers for advanced direction finding and space-based spectrum monitoring (B). High-bandwidth, high-fidelity digitization is essential for accurate AoA/TDOA geolocation, especially when processing wideband signals from multiple sources. Progress in A directly improves the performance and capabilities of B, enabling more precise and reliable geolocation from both ground and space platforms. | Inh(1): Minor resource competition and slight obsolescence pressure: While A and B are largely complementary (as noted in the source material), there is some competition for R&D resources and a risk that A\u2019s advances could reduce the perceived need for B in well-covered terrestrial areas. However, B retains unique value for remote/maritime/space applications, so the inhibiting effect is limited.",
+      "source_chunk_ids": [
+        "f09a877ff82e",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "4842454330e8",
+      "driver_b_id": "748495722079",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in Driver A (ultra-wideband digitizers and photonic signal processing) provides the high-fidelity, high-bandwidth raw data (e.g., multi-GHz I/Q samples) that is essential for advanced AI/ML models in Driver B. AI-driven spectrum sensing and prediction (B) require large, diverse, and high-quality datasets to train and operate effectively, especially for wideband and dynamic environments. The breakthroughs in A directly expand the operational envelope and effectiveness of B, as seen in frameworks like DeepSense and DeepSweep, which rely on raw I/Q data from advanced digitizers. | Inh(1): Minor resource competition and slight obsolescence pressure: While A and B are complementary, there is some risk that hardware breakthroughs in A could temporarily shift funding, talent, or regulatory focus away from AI/ML-driven approaches (B), or make basic AI solutions less urgent for certain monitoring tasks. However, A does not make B obsolete, and the main effect is a minor delay or resource diversion rather than a fundamental block.",
+      "source_chunk_ids": [
+        "229c6a558520",
+        "2791b93d374d",
+        "8e50d93cb7ee"
+      ]
+    },
+    {
+      "driver_a_id": "4842454330e8",
+      "driver_b_id": "b9c3a7851f44",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant progress in real-time digitizers and photonic signal processing (A) directly enables B by providing high-fidelity, wideband I/Q data at the edge, which is essential for effective AI model training and inference in federated learning scenarios. Advanced digitizers allow distributed nodes to capture richer datasets, improving the accuracy and robustness of decentralized AI models. This synergy is highlighted in the literature where AI/ML frameworks (e.g., DeepSense, DeepSweep) rely on high-quality raw I/Q data for effective spectrum analysis, and edge computing trends emphasize the need for capable front-end hardware. | Inh(1): There is minor resource competition and a potential for reduced perceived need for decentralized AI if centralized ultra-wideband monitoring becomes dominant. However, these effects are not strong enough to make B obsolete, as privacy, resilience, and scalability concerns still motivate federated learning approaches.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "229c6a558520",
+        "8e50d93cb7ee"
+      ]
+    },
+    {
+      "driver_a_id": "4842454330e8",
+      "driver_b_id": "ecbcd4440682",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Driver A's breakthrough in real-time digitization and photonic signal processing significantly enables Driver B by providing high-quality, ultra-wideband raw data streams. AI-enabled SDRs and ORAN architectures rely on rich, high-fidelity input data for effective machine learning-based modulation recognition and signal classification. The synergy is substantial: advanced digitizers expand the scope and accuracy of AI-driven spectrum analysis, allowing Driver B to operate on wider bandwidths and more complex signal environments. | Inh(1): There is minor resource competition and partial obsolescence pressure. While Driver A's hardware advances do not fully replace the need for AI-enabled SDR/ORAN architectures, they could divert funding and talent, and reduce the perceived necessity for software-defined and AI-driven approaches in some regulatory monitoring scenarios. However, the domains remain complementary, so the inhibition is not severe.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "4842454330e8",
+      "driver_b_id": "949506c3c6e4",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Breakthroughs in real-time digitizer and photonic signal processing (A) significantly enable B by allowing ESC networks to monitor much wider bandwidths in real time, improving detection of incumbent signals and supporting more dynamic, fine-grained spectrum sharing. High-bandwidth digitizers are a key enabler for advanced ESC network performance. | Inh(1): There is minor inhibition due to resource competition and the potential for partial obsolescence of distributed ESC networks if centralized, ultra-wideband monitoring becomes feasible and preferred. However, the core functions of B (distributed sensing, dynamic enforcement) remain relevant, so the inhibition is not strong.",
+      "source_chunk_ids": [
+        "02b971bf51d7",
+        "2791b93d374d",
+        "1e8a7e2f7123"
+      ]
+    },
+    {
+      "driver_a_id": "4842454330e8",
+      "driver_b_id": "9da500c3abd4",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in high-bandwidth, real-time digitizers and photonic signal processing (A) directly benefits AI-native 6G spectrum sensing (B) by providing richer, higher-fidelity I/Q data streams for training and inference. Many AI/ML spectrum sensing frameworks (e.g., DeepSense, DeepSweep) rely on access to wideband, high-quality raw data, which A enables. Furthermore, photonic ADCs and ultra-wideband capture reduce the analog bottleneck, allowing embedded AI systems to operate on more complete and timely spectrum information, thus improving the performance and reliability of B. | Inh(1): Minor resource competition and slight obsolescence pressure: While A and B are complementary in many scenarios, there is some overlap in their intended regulatory and operational roles. If A is perceived as a sufficient or superior solution for regulatory spectrum monitoring, it could slow investment in B or reduce the urgency for embedding spectrum sensing natively in 6G infrastructure. However, the two approaches are not mutually exclusive, and the main effect is likely to be minor diversion of resources rather than direct replacement.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "229c6a558520",
+        "8e50d93cb7ee"
+      ]
+    },
+    {
+      "driver_a_id": "4842454330e8",
+      "driver_b_id": "28f017831151",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Progress in A (real-time digitizer and photonic signal processing) significantly enables B by providing the technical foundation for harmonized spectrum monitoring equipment. Ultra-wideband, high-performance digitizers allow for standardized monitoring across borders, supporting European initiatives (ETSI EN 303 420, CEPT ECC) and dynamic spectrum management. Without advanced digitizers, harmonized monitoring would be limited in capability and interoperability. | Inh(1): There is minor resource competition and some obsolescence pressure. Breakthroughs in A may divert R&D resources and regulatory attention away from harmonization efforts (B), and rapid adoption of A's technology could outpace B's standardization processes, causing temporary misalignment.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "4842454330e8",
+      "driver_b_id": "f73e1de8ec1e",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Breakthroughs in ultra-wideband digitization and photonic processing (A) enable much higher data rates, wider frequency coverage, and more networked/distributed monitoring architectures. This increases the attack surface and complexity of monitoring infrastructure, making robust cybersecurity (B) more critical. Additionally, the integration of advanced digitizers into networked systems directly raises the stakes for cybersecurity, as more valuable and sensitive data is exposed to potential threats. | Inh(1): There is some minor resource competition and potential for regulatory attention to shift toward A at the expense of B. However, A does not make B obsolete, nor does it directly block B\u2019s development\u2014cybersecurity remains necessary, but may be deprioritized or under-resourced if A is seen as more urgent or transformative.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "116b040f244d",
+        "bbcd106cb48c"
+      ]
+    },
+    {
+      "driver_a_id": "4842454330e8",
+      "driver_b_id": "9150c7269776",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant progress in real-time digitizer and photonic signal processing (A) enables digital twins (B) to ingest richer, higher-bandwidth, and more accurate real-time data streams. This enhances the fidelity, timeliness, and utility of digital twin models, allowing them to better simulate, predict, and optimize spectrum usage. Advanced hardware (A) is not strictly a prerequisite for digital twins (B), but it provides substantial enablement by improving the quality and scope of data available for modeling and analytics. | Inh(1): There is minor resource competition and potential for partial obsolescence pressure. Breakthroughs in A could temporarily divert funding, talent, and regulatory focus away from B, and in some cases, reduce perceived need for digital twins if hardware-based solutions are seen as sufficient for certain monitoring tasks. However, these effects are not dominant, as the two drivers ultimately address complementary layers of the spectrum monitoring stack.",
+      "source_chunk_ids": [
+        "2791b93d374c",
+        "bbcd106cb48c"
+      ]
+    },
+    {
+      "driver_a_id": "9a3bc0fdb612",
+      "driver_b_id": "ca9ace6bafb0",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Driver A's breakthrough in real-time, automated scanning creates demand for hardware (Driver B) capable of covering broader frequency ranges, especially as regulatory requirements expand into mmWave and sub-THz bands. The synergy is significant: fast, automated monitoring is only fully realized when paired with ultra-wideband frontends, enabling comprehensive coverage and detection of transient signals across all relevant bands. | Inh(1): There is minor resource competition and some risk of reduced urgency for Driver B if Driver A's capabilities are seen as sufficient for current regulatory needs. However, Driver A does not directly replace or block Driver B; both are needed for full-spectrum monitoring, especially as new bands are allocated.",
+      "source_chunk_ids": [
+        "982cd1166f26",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "9a3bc0fdb612",
+      "driver_b_id": "48a044afb0c0",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in Driver A could highlight the limitations of conventional receivers (e.g., missing ultra-weak or exotic signals), thereby motivating interest in even higher sensitivity solutions like quantum RF sensing (Driver B). Additionally, the data infrastructure and continuous monitoring frameworks developed for A could be leveraged by B when it matures. | Inh(2): Significant funding/talent diversion and partial obsolescence: If Driver A's advances are sufficient for most regulatory needs, Driver B's development may be deprioritized, especially given its current technical challenges and longer timeline to field readiness. A's success could also shape standards and expectations in ways that make B's integration more difficult.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "c2519cd9e984",
+        "982cd1166f26"
+      ]
+    },
+    {
+      "driver_a_id": "9a3bc0fdb612",
+      "driver_b_id": "4842454330e8",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Driver A's breakthrough in ultra-fast scanning could highlight the limitations of current digitizer bandwidth, creating niche requirements for Driver B (e.g., capturing signals that A detects but cannot fully analyze). Additionally, A's ability to rapidly scan and flag suspicious activity may drive demand for B as a follow-on analysis tool for flagged events. | Inh(2): Significant funding/talent diversion and partial obsolescence: A breakthrough in Driver A could shift R&D and regulatory focus away from Driver B, especially for applications where scanning speed and automation are prioritized over ultra-wideband real-time digitization. Some monitoring use cases may no longer require B's advanced capabilities if A meets operational needs.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "982cd1166f26",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "9a3bc0fdb612",
+      "driver_b_id": "908595a5a7a6",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in A may drive demand for higher-throughput data interfaces and edge compute (B) to support real-time analytics, especially for distributed monitoring and for cases where raw data must be offloaded for advanced analysis or regulatory evidence. However, the main benefit is incremental, not foundational. | Inh(2): Significant partial obsolescence and resource competition: If A delivers on real-time, automated, high-speed monitoring, it reduces the need for bulk I/Q streaming and offline analysis (B) in many scenarios. This could divert funding, regulatory focus, and market demand away from B, though B remains relevant for deep forensic analysis and edge cases.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "a6a655193dbe",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "9a3bc0fdb612",
+      "driver_b_id": "0c6f77459f97",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Driver A's ultra-fast, continuous scanning can provide high-quality detection and characterization of signals, which can cue or trigger Driver B's direction finding and space-based geolocation for follow-up, especially in hybrid architectures. The combination enables more effective and efficient spectrum monitoring by leveraging the strengths of both ground and space assets. | Inh(2): Significant progress in Driver A could divert resources (funding, talent, regulatory attention) from Driver B and partially reduce the need for space-based monitoring in areas where ground-based solutions are now sufficient, leading to slower development or reduced market for Driver B.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "f09a877ff82e",
+        "889bf958a74e"
+      ]
+    },
+    {
+      "driver_a_id": "9a3bc0fdb612",
+      "driver_b_id": "748495722079",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Driver A's breakthrough in ultra-fast, continuous, and automated spectrum scanning provides high-fidelity, real-time spectrum data (including transient and frequency-hopping signals) that can serve as rich input for AI-driven spectrum sensing, prediction, and dynamic access algorithms (Driver B). This enables AI models to be trained on more comprehensive datasets, improving their accuracy and robustness. Additionally, the ability to scan at up to 2.6 THz/s supports the scalability and responsiveness required for advanced AI/ML applications in cognitive radio networks. | Inh(1): There is minor resource competition and a slight risk of partial obsolescence for Driver B, as Driver A's breakthrough could attract regulatory and market attention, diverting some R&D funding and slowing the perceived urgency for AI-driven approaches. However, Driver A does not fully replace the need for AI-driven spectrum prediction and dynamic access, as these capabilities go beyond raw scanning and are essential for cognitive radio and advanced spectrum management.",
+      "source_chunk_ids": [
+        "229c6a558520",
+        "8e50d93cb7ee"
+      ]
+    },
+    {
+      "driver_a_id": "9a3bc0fdb612",
+      "driver_b_id": "b9c3a7851f44",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in Driver A (ultra-fast, continuous, real-time scanning) generates massive, high-quality, and diverse spectrum datasets at unprecedented speed and scale. This data is a critical enabler for training, validating, and federating AI models in Driver B. Furthermore, the ability to detect transient and frequency-hopping signals improves the quality of local data available to distributed nodes, making federated learning more effective. The high-throughput data streams from Driver A can be used to bootstrap, synchronize, or validate federated models, and may also provide ground truth for decentralized AI training. | Inh(1): Minor resource competition and slight obsolescence pressure: While Driver A's progress may attract more funding and regulatory focus, and could reduce the perceived need for decentralized/federated approaches in some scenarios, it does not fully replace or block Driver B. Many use cases (e.g., privacy-sensitive, edge, or rural deployments) still require Driver B's capabilities. The main inhibition is competition for resources and attention, not direct obsolescence.",
+      "source_chunk_ids": [
+        "229c6a558520",
+        "8e50d93cb7ee"
+      ]
+    },
+    {
+      "driver_a_id": "9a3bc0fdb612",
+      "driver_b_id": "ecbcd4440682",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Driver A's ultra-fast, continuous scanning generates massive volumes of spectrum data, including transient and frequency-hopping signals, which can serve as high-quality training datasets for Driver B's AI/ML models. The real-time detection capabilities of Driver A can feed directly into Driver B's software-defined radio platforms, enabling more advanced signal classification, automatic modulation recognition, and adaptive response. Furthermore, the combination of high-speed scanning (A) and intelligent, modular processing (B) can create synergistic architectures for regulatory monitoring, where A provides raw data and B delivers actionable intelligence. | Inh(1): There is minor resource competition and potential for partial obsolescence if Driver A's hardware-centric approach dominates regulatory deployments, but Driver B's AI/SDR/ORAN architectures remain relevant for deeper analytics, flexible reconfiguration, and integration with open network architectures. The inhibiting effects are limited because the domains are complementary, but some funding and attention could shift.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "9a3bc0fdb612",
+      "driver_b_id": "949506c3c6e4",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Driver A's breakthrough in ultra-fast, automated, real-time scanning directly enables more effective and reliable detection of transient and frequency-hopping signals, which are critical for the success of dynamic spectrum sharing frameworks (B). High-performance scanning engines can be integrated into ESC networks, improving their detection accuracy and responsiveness, and supporting regulatory requirements for real-time enforcement. | Inh(2): Significant progress in Driver A could partially obsolete or reduce the need for distributed ESC networks (B) in certain scenarios, especially if centralized, high-speed monitoring is seen as sufficient for regulatory enforcement. There is also likely to be competition for funding, talent, and regulatory focus between the two approaches.",
+      "source_chunk_ids": [
+        "02b971bf51d7",
+        "b346caa67981",
+        "a6a655193dbe"
+      ]
+    },
+    {
+      "driver_a_id": "9a3bc0fdb612",
+      "driver_b_id": "9da500c3abd4",
+      "impact_score": 0,
+      "reasoning": "Pro(2): A's ultra-fast scanning and real-time detection capabilities could provide high-quality training data, benchmarks, and validation for AI models embedded in 6G networks (B). The external monitors may also help bootstrap or calibrate embedded sensing algorithms, and regulatory experience with A could inform requirements for B. Thus, A significantly enables B, but is not a strict prerequisite. | Inh(2): A's progress could partially make B obsolete for regulatory purposes, divert funding and attention, and delay the adoption of embedded spectrum sensing in 6G networks. If regulators are satisfied with external monitoring, they may deprioritize embedded approaches, creating significant but not total inhibition.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "9a3bc0fdb612",
+      "driver_b_id": "28f017831151",
+      "impact_score": 1,
+      "reasoning": "Pro(2): A breakthrough in ultra-fast, automated, real-time spectrum monitoring (A) provides the technical foundation and capability needed for effective cross-border and harmonized spectrum monitoring (B). Harmonization efforts (B) require advanced equipment that can meet new regulatory and technical requirements across multiple jurisdictions. A's progress enables B by making such equipment available, supporting dynamic spectrum management, and facilitating real-time data sharing and coordination. | Inh(1): There is minor inhibition: rapid progress in A could outpace or partially sideline harmonization efforts in B, especially if A's technology is not standardized or if it diverts attention and resources from B's coordination processes. However, the inhibition is not severe because harmonization still provides value and is likely to adapt to leverage A's capabilities.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "b346caa67981",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "9a3bc0fdb612",
+      "driver_b_id": "f73e1de8ec1e",
+      "impact_score": 1,
+      "reasoning": "Pro(2): A breakthrough in Driver A (real-time, automated, ultra-fast monitoring) will dramatically increase the attack surface and criticality of monitoring infrastructure, making cybersecurity (Driver B) much more urgent and visible. The shift to networked, automated systems creates new vectors for cyber threats, and regulatory/market demand for secure solutions will rise in parallel with adoption of Driver A. | Inh(1): There is minor resource competition: rapid progress and investment in Driver A could temporarily divert funding, engineering, and regulatory focus away from cybersecurity (Driver B), especially if security is not prioritized from the outset. However, Driver A does not make B obsolete, nor does it directly block B's development.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "9a3bc0fdb612",
+      "driver_b_id": "9150c7269776",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in Driver A provides the high-fidelity, real-time data streams that are essential for building accurate and dynamic digital twins (Driver B). The digital twin's value is maximized when it can ingest and model real-world spectrum activity at fine temporal and frequency resolution, which is only possible with advanced, continuous monitoring engines like A. Thus, A's breakthroughs directly enable the sophistication and utility of B. | Inh(1): Minor resource competition and partial obsolescence: While A and B are complementary in many respects, there is some competition for R&D resources and regulatory attention. Additionally, if A's real-time monitoring is seen as 'good enough' for many regulatory needs, it could reduce the perceived necessity or urgency for digital twin development in some use cases.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "908595a5a7a6",
+      "driver_b_id": "ca9ace6bafb0",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in high-speed I/Q streaming and edge computing (A) provides the necessary data transport and processing infrastructure to handle the massive data rates generated by ultra-wideband RF frontends (B). Without A, the practical deployment of B at scale would be severely limited by data bottlenecks and lack of distributed processing capability. | Inh(1): Minor resource competition and slight obsolescence pressure: While A and B are complementary, there is some competition for R&D resources, and rapid progress in A could temporarily reduce the perceived urgency for B, especially if advanced processing can extract more value from existing narrower-band hardware.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "02b971bf51d7"
+      ]
+    },
+    {
+      "driver_a_id": "908595a5a7a6",
+      "driver_b_id": "48a044afb0c0",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Driver A's progress in high-speed I/Q streaming and edge computing could provide infrastructure and data pipelines that quantum RF sensors (Driver B) might leverage for integration, distributed deployment, and real-time analytics. Minor synergy exists, as quantum sensors could benefit from the same edge compute and networking frameworks. | Inh(2): Significant progress in Driver A could divert funding, talent, and regulatory focus away from quantum sensing (Driver B), and may set technical standards that are not immediately compatible with quantum RF sensors. Additionally, if Driver A achieves sufficient sensitivity and performance, it could reduce the perceived need for Driver B, creating partial obsolescence pressure.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "908595a5a7a6",
+      "driver_b_id": "4842454330e8",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in Driver A (high-speed I/Q streaming and edge computing) could provide infrastructure and data pipelines that benefit Driver B, such as facilitating integration of ultra-wideband digitizers into distributed networks or enabling hybrid architectures where real-time digitizers feed into edge nodes for advanced processing. | Inh(2): Significant funding/talent diversion and partial obsolescence: Driver A's advances in scalable, cost-effective edge computing and I/Q streaming may shift industry and regulatory focus away from expensive, specialized real-time digitizers and photonic processing, reducing demand and investment in Driver B.",
+      "source_chunk_ids": [
+        "02b971bf51d7",
+        "7c14f22697d9"
+      ]
+    },
+    {
+      "driver_a_id": "908595a5a7a6",
+      "driver_b_id": "9a3bc0fdb612",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Progress in A (high-speed I/Q streaming and edge computing) significantly enables B by providing the data transport and distributed processing infrastructure needed to handle the massive data rates generated by ultra-fast panoramic scanning. B's scan engine can produce huge volumes of data, which A's interfaces and edge compute nodes can efficiently transport, preprocess, and analyze in real time or near-real time. This synergy is especially important as spectrum monitoring moves toward continuous, automated, and distributed models. | Inh(1): There is minor resource competition and some potential for partial obsolescence: if distributed edge-based monitoring (A) becomes highly effective and cost-efficient, it could reduce the unique need for ultra-fast panoramic scan engines (B) in some scenarios. However, the two approaches are more complementary than directly competitive, so the inhibiting effect is limited.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "a6a655193dbe"
+      ]
+    },
+    {
+      "driver_a_id": "908595a5a7a6",
+      "driver_b_id": "0c6f77459f97",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: High-speed I/Q streaming and edge computing (A) can provide complementary ground truth data, calibration, and validation for space-based AoA/TDOA geolocation (B). Hybrid architectures are emerging, where ground and space assets work together\u2014progress in A makes B more effective and accurate, especially for follow-up and high-fidelity analysis. | Inh(1): Minor resource competition and partial obsolescence: While A and B are complementary, there is some competition for funding and attention, and in areas with dense ground infrastructure, A's advances could reduce the urgency or scope for deploying B.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "f09a877ff82e",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "908595a5a7a6",
+      "driver_b_id": "748495722079",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Driver A (I/Q Data Streaming Interface and Edge Computing) significantly enables Driver B (AI-driven spectrum sensing and DSA) by providing high-fidelity, real-time I/Q data and distributed compute resources at the edge. This is foundational for training, deploying, and scaling advanced AI/ML models (e.g., CNNs, LSTMs) for spectrum analysis, as these models require large, diverse datasets and low-latency processing. Edge computing also allows AI models to operate closer to the data source, reducing latency and bandwidth costs, and supporting real-time applications such as autonomous vehicles and industrial automation. | Inh(1): There is minor inhibition due to resource competition (funding, talent, regulatory attention) and the possibility that rapid progress in A could temporarily reduce the perceived urgency or market pull for B, especially if A's improvements are seen as 'good enough' for some regulatory or commercial use cases. However, A does not make B obsolete nor does it directly block B's development.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "229c6a558520",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "908595a5a7a6",
+      "driver_b_id": "b9c3a7851f44",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Progress in I/Q data streaming and edge computing (A) provides the high-quality, high-volume data and distributed compute infrastructure that federated learning (B) can leverage. Edge nodes capable of streaming and processing I/Q data are natural hosts for federated learning, and the availability of rich datasets from A can improve the training and generalization of B's AI models. Furthermore, the distributed edge compute infrastructure developed for A can be reused or extended for B's decentralized AI training. | Inh(2): A breakthrough in centralized I/Q streaming and offline analysis could divert resources, regulatory focus, and market demand away from decentralized, federated learning approaches. If A's approach is standardized or seen as sufficient, it could partially obsolete B, especially in regulatory environments prioritizing centralized control and data aggregation.",
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "908595a5a7a6",
+      "driver_b_id": "ecbcd4440682",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Progress in Driver A (high-speed I/Q streaming and edge computing) significantly enables Driver B by providing the high-fidelity, high-throughput data and distributed compute resources that AI-enabled SDR and ORAN architectures require. AI/ML models for spectrum sensing and classification (as in DeepSense, DeepSweep) operate directly on raw I/Q data, and edge compute nodes can host these models for real-time, scalable deployment. Thus, A provides a robust data and compute foundation for B's advanced analytics and modularity. | Inh(1): There is minor but real resource competition and potential for partial obsolescence or market distraction. If A's approach is seen as 'good enough' for many regulatory applications, it could slow investment in the more ambitious, modular, and AI-centric architectures of B, especially in the short term or in resource-constrained settings.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "908595a5a7a6",
+      "driver_b_id": "949506c3c6e4",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in A (high-speed I/Q streaming and edge computing) provides the technical foundation for real-time, distributed sensing and analytics, which are critical for the effective operation of dynamic spectrum sharing and ESC networks (B). Edge processing reduces latency and bandwidth requirements, directly supporting the scalability and responsiveness needed for B. | Inh(1): Minor resource competition and partial obsolescence: While A and B are synergistic, there is some overlap in their capabilities and competition for resources. Advanced edge-enabled monitoring could reduce the distinct need for separate ESC networks, but is unlikely to fully replace B in the near term.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "7c14f22697d9"
+      ]
+    },
+    {
+      "driver_a_id": "908595a5a7a6",
+      "driver_b_id": "9da500c3abd4",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Driver A provides foundational capabilities for capturing and processing raw I/Q data at scale and at the edge, which can supply high-quality training data, real-time analytics, and architectural lessons for Driver B's AI-native embedded spectrum sensing. The distributed edge computing paradigm and high-speed interfaces pioneered by A can be leveraged by B for efficient, scalable, and low-latency embedded sensing in 6G networks. | Inh(2): Driver A's progress could significantly divert resources (funding, talent, regulatory focus) from Driver B, and may partially reduce the perceived need for embedded spectrum sensing if distributed edge solutions prove highly effective. There is also a risk of standards lock-in and market inertia favoring A's approach, making B's adoption slower or less urgent.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "8e50d93cb7ee",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "908595a5a7a6",
+      "driver_b_id": "28f017831151",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Progress in A (I/Q streaming and edge computing) provides the technical foundation for real-time, high-resolution, and distributed spectrum monitoring, which is essential for effective cross-border coordination (B). Harmonized spectrum monitoring (B) depends on the availability of advanced, interoperable monitoring infrastructure, which A directly enables. For example, standardized high-speed data interfaces and edge analytics facilitate data sharing and coordinated enforcement across borders. | Inh(1): There is minor but real resource competition and a risk of standards divergence. Progress in A could divert funding and attention from harmonization efforts (B), and if A develops in a fragmented or proprietary way, it could complicate cross-border standardization.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "2791b93d374d",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "908595a5a7a6",
+      "driver_b_id": "f73e1de8ec1e",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant progress in A (networked, high-speed, distributed spectrum monitoring) directly increases the need for advanced cybersecurity (B), as the attack surface and criticality of the infrastructure grow. The deployment of A exposes new vulnerabilities and regulatory requirements, driving demand for B's solutions and accelerating its development. | Inh(1): There is minor resource competition: rapid progress in A may temporarily divert R&D and regulatory attention, and could lock in insecure architectures if cybersecurity (B) is not prioritized in parallel. However, A does not make B obsolete or directly block it.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "bbcd106cb48c",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "908595a5a7a6",
+      "driver_b_id": "9150c7269776",
+      "impact_score": 1,
+      "reasoning": "Pro(2): High-speed I/Q data streaming and edge computing provide the foundational data and real-time analytics needed for digital twin networks to accurately model, simulate, and optimize spectrum monitoring systems. Digital twins rely on rich, timely data from the physical network, which is enabled by Driver A's breakthroughs. | Inh(1): There is minor resource competition and potential partial obsolescence pressure. Progress in edge computing and I/Q streaming may divert funding and talent, and could reduce the perceived need for digital twin networks if edge solutions are seen as sufficient for regulatory monitoring.",
+      "source_chunk_ids": [
+        "bbcd106cb48c",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "0c6f77459f97",
+      "driver_b_id": "ca9ace6bafb0",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in Driver A (space-based DF) may highlight new monitoring requirements in previously unused bands (e.g., mmWave/sub-THz), indirectly encouraging development of ultra wideband RF frontends to support hybrid ground-space architectures and follow-up investigations. | Inh(2): Significant funding/talent diversion and partial obsolescence: Space-based DF breakthroughs could shift regulatory and market focus toward geolocation and satellite-based solutions, diverting resources from ultra wideband frontend development and reducing demand for ground-based monitoring in certain domains.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "f09a877ff82e"
+      ]
+    },
+    {
+      "driver_a_id": "0c6f77459f97",
+      "driver_b_id": "48a044afb0c0",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in A (space-based DF) could highlight the limitations of current receiver sensitivity and dynamic range, creating niche opportunities for B (quantum RF sensing) to provide high-fidelity follow-up or to address detection of ultra-weak signals missed by conventional DF payloads. Hybrid architectures may emerge, but A is not a prerequisite for B. | Inh(2): Significant funding/talent diversion and partial obsolescence: A's breakthrough could shift regulatory and commercial focus toward DF-based space monitoring, diverting resources from quantum RF sensing R&D and reducing the perceived need for B in certain applications. However, B is not fully blocked or replaced, as its unique capabilities remain valuable for high-fidelity, ground-based, or specialized monitoring.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "f09a877ff82e"
+      ]
+    },
+    {
+      "driver_a_id": "0c6f77459f97",
+      "driver_b_id": "4842454330e8",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in space-based direction finding can create new requirements for ground-based follow-up analysis, where real-time digitizers and photonic signal processing are needed for high-fidelity signal characterization after satellite detection. Hybrid architectures are emerging, so some demand for B is sustained or even enhanced for detailed analysis. | Inh(2): Significant funding/talent diversion and partial obsolescence: Space-based AoA/TDOA geolocation disrupts the value proposition of ground-based ultra-wideband digitizers in remote/maritime monitoring, and may shift R&D and regulatory focus away from B. However, ground systems remain necessary for high-fidelity analysis and persistent monitoring, so B is not fully obsolete.",
+      "source_chunk_ids": [
+        "f09a877ff82e",
+        "6e45de155278"
+      ]
+    },
+    {
+      "driver_a_id": "0c6f77459f97",
+      "driver_b_id": "9a3bc0fdb612",
+      "impact_score": 0,
+      "reasoning": "Pro(1): Progress in Driver A can create synergy by providing initial detection and coarse geolocation from space, which may trigger the need for high-fidelity, real-time follow-up using Driver B's ultra-fast scanning capabilities. Hybrid architectures combining space and ground monitoring are emerging, so Driver A can help justify and enable investment in Driver B for detailed analysis after satellite-based detection. | Inh(1): There is minor resource competition and potential obsolescence pressure, as regulatory and market focus may shift toward space-based geolocation and away from ground-based real-time scanning in certain domains. However, space-based monitoring cannot fully replace ground-based capabilities due to limitations in revisit time, accuracy, and signal analysis.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "f09a877ff82e",
+        "6e45de155278"
+      ]
+    },
+    {
+      "driver_a_id": "0c6f77459f97",
+      "driver_b_id": "908595a5a7a6",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in Driver A (space-based DF) can help Driver B by providing initial detection and geolocation, which ground-based I/Q streaming and edge computing systems can use for high-fidelity follow-up analysis. Hybrid architectures are emerging, where space-based monitoring triggers ground-based edge processing. | Inh(2): Significant inhibition: Driver A's progress diverts resources and regulatory focus, and partially reduces the need for Driver B in domains where satellites are more practical. There is also partial obsolescence pressure for ground-based distributed systems in remote/maritime monitoring.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "f09a877ff82e"
+      ]
+    },
+    {
+      "driver_a_id": "0c6f77459f97",
+      "driver_b_id": "748495722079",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant progress in space-based DF (A) can generate large, diverse, and high-quality RF datasets (e.g., wide-area I/Q samples, geolocated emissions) that are ideal for training and validating AI/ML models for spectrum sensing and prediction (B). Additionally, hybrid architectures are emerging where satellite-based detection triggers ground-based AI-driven analysis, creating direct synergy. Improved geolocation from A can enhance the context and accuracy of AI-driven compliance engines in B. | Inh(1): There is minor but real resource competition (funding, talent, regulatory focus) and some risk of partial obsolescence for B in applications where A's capabilities are sufficient (e.g., remote maritime monitoring). However, A does not fully replace B, and hybrid approaches are likely.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "229c6a558520",
+        "f09a877ff82e"
+      ]
+    },
+    {
+      "driver_a_id": "0c6f77459f97",
+      "driver_b_id": "b9c3a7851f44",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in A (space-based DF) generates large, diverse RF datasets and highlights the need for secure, scalable, and decentralized analysis. This could create opportunities for B (federated learning/energy-efficient AI) to process, fuse, and analyze data from distributed sources, especially in hybrid architectures combining space and ground assets. | Inh(2): Significant funding/talent diversion and partial obsolescence: A's breakthroughs could shift regulatory and market focus toward space-based solutions, reducing the perceived need for decentralized AI-driven ground monitoring (B) in some domains, and diverting resources and attention away from B.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "116b040f244d",
+        "f09a877ff82e"
+      ]
+    },
+    {
+      "driver_a_id": "0c6f77459f97",
+      "driver_b_id": "ecbcd4440682",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Space-based direction finding breakthroughs (A) create new data streams and detection events that require ground-based follow-up, signal classification, and deeper analysis. AI-enabled SDRs (B) are well-suited to provide high-fidelity signal classification and modulation recognition after initial satellite detection. Hybrid architectures combining A and B are emerging as the industry direction, with B complementing A's capabilities. | Inh(1): A's progress may divert some funding and regulatory attention away from B, and partially reduce demand for B in remote/maritime monitoring scenarios where space-based solutions are superior. However, A does not fully replace B, and ground-based SDRs remain critical for high-fidelity follow-up and real-time bandwidth.",
+      "source_chunk_ids": [
+        "f09a877ff82e",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "0c6f77459f97",
+      "driver_b_id": "949506c3c6e4",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Space-based direction finding (A) can significantly enable dynamic spectrum sharing and ESC networks (B) by providing wide-area, initial detection and geolocation of interference or unauthorized use, which can then be validated and enforced by ground-based ESC networks. Hybrid architectures that combine satellite and terrestrial monitoring are emerging as the industry direction, with each complementing the other's strengths. | Inh(2): Progress in A could divert resources (funding, talent, regulatory attention) from B, and in some domains (maritime, remote, or high-altitude bands), space-based monitoring could partially substitute for ground-based ESC networks, reducing their deployment or market need.",
+      "source_chunk_ids": [
+        "f09a877ff82e",
+        "b346caa67981",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "0c6f77459f97",
+      "driver_b_id": "9da500c3abd4",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in A (e.g., improved geolocation accuracy, global coverage) could provide high-quality labeled data and detection triggers that enhance AI training and validation for B, or enable hybrid architectures where B leverages A's detections for local follow-up. However, this is a secondary effect. | Inh(2): Significant funding/talent diversion and partial obsolescence: A's breakthroughs could divert resources and regulatory attention away from B, and partially reduce the perceived need for embedded spectrum sensing in 6G networks, especially for wide-area or remote monitoring use cases.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "f09a877ff82e",
+        "8e50d93cb7ee"
+      ]
+    },
+    {
+      "driver_a_id": "0c6f77459f97",
+      "driver_b_id": "28f017831151",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Breakthroughs in space-based direction finding (Driver A) significantly enable Driver B by providing new data sources and geolocation capabilities that can be integrated into cross-border harmonized monitoring frameworks. Space-based monitoring fills gaps where ground stations are impractical, supporting coordinated spectrum management across borders and maritime domains. | Inh(1): There is minor resource competition and potential partial obsolescence: progress in Driver A may divert funding and regulatory attention from harmonization efforts (Driver B), and could reduce demand for standardized ground-based equipment in some scenarios. However, space-based monitoring is generally complementary and does not fully replace harmonized ground systems.",
+      "source_chunk_ids": [
+        "f09a877ff82e",
+        "6e45de155278"
+      ]
+    },
+    {
+      "driver_a_id": "0c6f77459f97",
+      "driver_b_id": "f73e1de8ec1e",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Breakthroughs in Direction Finding/LEO-based monitoring (A) increase the attack surface and complexity of monitoring infrastructure, especially as systems become more networked and distributed. This directly raises the importance and urgency of cybersecurity (B) to protect sensitive geolocation data, satellite-ground links, and command/control systems. Regulatory and procurement requirements will increasingly mandate advanced cybersecurity as a prerequisite for deploying these new capabilities. | Inh(1): There is minor to moderate resource competition: rapid progress in A could temporarily divert funding, engineering talent, and regulatory focus away from cybersecurity (B), especially if A is seen as the main innovation driver. However, A does not make B obsolete, and the two are ultimately complementary.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "f09a877ff82e"
+      ]
+    },
+    {
+      "driver_a_id": "0c6f77459f97",
+      "driver_b_id": "9150c7269776",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Breakthroughs in Driver A (DF modules and LEO-based monitoring) generate richer, more accurate, and more diverse real-time and historical data streams. This high-quality data is a critical enabler for Digital Twin Networks (Driver B), which rely on accurate, timely, and comprehensive input to create effective cognitive replicas and simulations. Improved geolocation and detection from A directly enhance the fidelity and utility of B's digital models, supporting better self-optimization and predictive analytics. | Inh(1): There is minor resource competition and some risk of reduced urgency for B if A's advances are perceived as solving key monitoring challenges directly. However, the two drivers are largely complementary, with B building on the data and capabilities provided by A, rather than being directly replaced or blocked.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "6e45de155278",
+        "f09a877ff82e"
+      ]
+    },
+    {
+      "driver_a_id": "748495722079",
+      "driver_b_id": "ca9ace6bafb0",
+      "impact_score": 1,
+      "reasoning": "Pro(2): AI-driven spectrum sensing (A) requires high-fidelity, wideband RF data inputs to operate effectively, especially for training and real-time inference across diverse bands. Progress in A increases demand for advanced RF frontends (B) capable of capturing broad frequency ranges, including mmWave/sub-THz, to feed AI models. AI advances also drive new use cases (e.g., real-time wideband monitoring, semantic segmentation) that require B's hardware capabilities. | Inh(1): There is minor resource competition and partial obsolescence pressure: as AI-driven solutions become more capable, some regulatory and market focus may shift from hardware innovation (B) to software-centric approaches (A), potentially slowing investment in ultra wideband RF frontend development.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "b346caa67981",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "748495722079",
+      "driver_b_id": "48a044afb0c0",
+      "impact_score": -1,
+      "reasoning": "Pro(1): AI-driven spectrum sensing (A) could create new requirements for ultra-sensitive, high-fidelity data inputs, highlighting the limitations of conventional receivers and motivating investment in quantum RF sensing (B) as a next-generation hardware platform. Additionally, AI algorithms may be used to process and interpret the complex outputs of quantum sensors. | Inh(2): Significant progress in AI-driven spectrum sensing (A) could divert funding, talent, and regulatory focus away from quantum RF sensing (B), especially if A is seen as 'good enough' for most regulatory needs. This could slow B's development and reduce its near-term perceived necessity.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "8e50d93cb7ee",
+        "fa3fdb690ed9"
+      ]
+    },
+    {
+      "driver_a_id": "748495722079",
+      "driver_b_id": "4842454330e8",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in AI-driven spectrum sensing (A) increases the need for high-quality, wideband, real-time data as input, which directly benefits the development and deployment of advanced digitizers and photonic signal processors (B). AI/ML models (A) are data-hungry and perform better with richer, wider, and higher-fidelity signal inputs, driving demand for B's capabilities. | Inh(1): Minor resource competition and slight obsolescence pressure: While A and B are complementary in many scenarios, a breakthrough in A could shift some R&D funding, regulatory focus, or market demand away from B, especially if AI models can deliver acceptable performance with less advanced hardware. However, the core need for high-quality data persists, so the inhibiting effect is minor.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "229c6a558520",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "748495722079",
+      "driver_b_id": "9a3bc0fdb612",
+      "impact_score": 0,
+      "reasoning": "Pro(2): AI-driven spectrum sensing (A) can significantly enable B by improving the efficiency and accuracy of real-time scanning. For example, AI models can guide the panorama scan engine (B) to focus on relevant frequencies, optimize scan schedules, and enhance detection of transient or frequency-hopping signals. AI can also help interpret scan results, reduce false positives, and integrate predictive analytics, making B's operation more effective and adaptive. | Inh(2): Progress in AI-driven sensing (A) can significantly reduce the need for continuous, ultra-fast scanning (B) by providing predictive capabilities and adaptive sensing that may partially replace brute-force scanning. If AI models can reliably detect and predict spectrum events, regulatory and market demand for hardware-centric scan engines (B) may decrease, and funding/talent may shift toward AI-centric solutions.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "229c6a558520",
+        "25e1fb29cca9"
+      ]
+    },
+    {
+      "driver_a_id": "748495722079",
+      "driver_b_id": "908595a5a7a6",
+      "impact_score": 0,
+      "reasoning": "Pro(2): AI-driven spectrum sensing (A) often requires large, diverse, and high-quality I/Q datasets for training, validation, and ongoing improvement. Driver B\u2019s high-throughput I/Q streaming interfaces enable the collection and aggregation of such datasets from distributed sensors, which are critical for developing, benchmarking, and updating AI models. Additionally, edge computing resources (B) can host and accelerate AI inference workloads, supporting real-time deployment of A\u2019s algorithms. | Inh(2): If A achieves real-time, on-device spectrum analysis and compliance, the need for centralized, offline I/Q data streaming and processing (B) is reduced. This could lead to partial obsolescence of B\u2019s value proposition and a shift in R&D and regulatory focus away from B. However, B is not fully obsolete, as offline analysis and data aggregation may still be needed for model training, auditing, or exceptional cases.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "229c6a558520",
+        "25e1fb29cca9"
+      ]
+    },
+    {
+      "driver_a_id": "748495722079",
+      "driver_b_id": "0c6f77459f97",
+      "impact_score": 0,
+      "reasoning": "Pro(2): AI-driven spectrum sensing (A) can significantly enable direction finding and space-based monitoring (B) by providing high-quality signal detection, classification, and prediction data that can cue or optimize the operation of LEO satellite constellations. For example, AI can pre-filter or prioritize signals for geolocation, reduce false positives, and help orchestrate hybrid ground-space monitoring architectures. AI can also enhance the onboard processing capabilities of satellites, improving the accuracy and efficiency of AoA/TDOA geolocation. | Inh(2): There is significant resource competition and potential partial obsolescence: as AI-driven spectrum sensing matures, it may reduce the unique value proposition of space-based direction finding in some regulatory scenarios, especially where ground-based AI can achieve similar outcomes at lower cost. Additionally, regulatory and market attention may shift toward AI-centric solutions, slowing investment in B.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "229c6a558520",
+        "f09a877ff82e"
+      ]
+    },
+    {
+      "driver_a_id": "748495722079",
+      "driver_b_id": "b9c3a7851f44",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in AI-driven spectrum sensing (A) advances the state-of-the-art in signal processing, model architectures, and compliance with regulatory standards. These advances can be leveraged by federated learning approaches (B), which often use similar AI/ML models but deploy them in a decentralized fashion. Improved models, datasets, and compliance mechanisms from A can be adapted for federated learning, accelerating B\u2019s development. Additionally, as A matures, the need for privacy-preserving, decentralized, and energy-efficient deployment (B) becomes more apparent, especially in large-scale or sensitive environments. | Inh(1): Minor resource competition and slight obsolescence pressure: While A and B share some R&D and regulatory attention, their core value propositions are distinct (centralized/compliance-focused vs. decentralized/privacy/efficiency-focused). Progress in A may slightly reduce the urgency or funding for B, but does not directly block or replace it. B remains relevant for scenarios where decentralization, privacy, or energy efficiency are critical.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "a45f2f413b77",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "748495722079",
+      "driver_b_id": "ecbcd4440682",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in AI-driven spectrum sensing (A) directly benefits B by providing advanced AI/ML models, datasets, and algorithms (e.g., CNNs for modulation recognition, semantic segmentation for signal classification) that can be integrated into SDR/ORAN platforms. The modularity and flexibility of B are best leveraged when paired with state-of-the-art AI-driven sensing and prediction, enabling real-time, adaptive, and scalable spectrum monitoring solutions. A\u2019s breakthroughs set the performance bar and technical requirements that B\u2019s architectures must support, driving innovation and adoption in B. | Inh(1): Minor resource competition and slight obsolescence pressure: While A and B are synergistic in many respects, there is some competition for R&D resources and a risk that highly advanced AI-driven sensing (A) could reduce the perceived need for full SDR/ORAN modularity (B) in certain regulatory monitoring applications. However, the overall domain trend is toward integration, not replacement.",
+      "source_chunk_ids": [
+        "229c6a558520",
+        "8e50d93cb7ee",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "748495722079",
+      "driver_b_id": "949506c3c6e4",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant enablement: AI-driven spectrum sensing (A) can provide more accurate, lower-latency, and scalable detection capabilities, which can be integrated into or enhance ESC networks (B). For example, AI-powered sensing can improve the performance, adaptability, and cost-effectiveness of ESC deployments, and may be required for real-time dynamic spectrum sharing frameworks. | Inh(2): Significant funding/talent diversion and partial obsolescence: If AI-driven spectrum sensing (A) is highly successful, it could shift investment and regulatory focus away from traditional ESC networks (B), and may reduce the need for separate, hardware-based ESC deployments by providing similar or superior functionality through software.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "229c6a558520",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "748495722079",
+      "driver_b_id": "9da500c3abd4",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in A (AI-driven spectrum sensing and prediction) provides mature algorithms, datasets, and operational experience that can be directly leveraged when embedding spectrum sensing natively into 6G networks (B). The iterative improvements and real-world validation of AI/ML models in A (e.g., DeepSense, DeepSweep, Wideband Signal Stitching) lower technical risk and accelerate B's development. Furthermore, regulatory compliance engines and standards established in A can inform and streamline B's integration into the 6G ecosystem. | Inh(1): Minor resource competition and slight obsolescence pressure: While A and B are closely related and synergistic, there is some risk that A's success could temporarily divert resources or reduce the perceived urgency for B, especially if A's solutions are seen as 'good enough' for regulatory needs. However, the long-term trajectory of 6G and the need for deeply embedded, scalable, and self-optimizing networks means that B will remain relevant.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "229c6a558520",
+        "a45f2f413b77"
+      ]
+    },
+    {
+      "driver_a_id": "748495722079",
+      "driver_b_id": "28f017831151",
+      "impact_score": 0,
+      "reasoning": "Pro(2): AI-driven spectrum sensing (A) can significantly enable cross-border and harmonized spectrum monitoring (B) by providing advanced, automated, and standardized data collection and analysis capabilities. If adopted in a harmonized way, AI can facilitate real-time, coordinated monitoring across borders, supporting European initiatives for dynamic spectrum management. | Inh(2): Breakthroughs in AI-driven spectrum sensing (A) could divert resources and regulatory focus from harmonized equipment-based approaches (B), and may partially obsolete traditional cross-border monitoring methods if AI-native, embedded sensing becomes dominant. There is also a risk of standards fragmentation if AI solutions are not harmonized.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "a6a655193dbe"
+      ]
+    },
+    {
+      "driver_a_id": "748495722079",
+      "driver_b_id": "f73e1de8ec1e",
+      "impact_score": 1,
+      "reasoning": "Pro(2): AI-driven spectrum sensing and prediction increases system complexity and connectivity, expanding the attack surface and making cybersecurity requirements more critical. AI can also be leveraged for advanced threat detection and automated response, directly enabling new cybersecurity capabilities in monitoring infrastructure. | Inh(1): There is minor resource competition for R&D budget and engineering talent, and some risk that regulatory and market focus shifts toward AI-driven compliance and automation at the expense of cybersecurity, but AI does not directly replace or block cybersecurity requirements.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "748495722079",
+      "driver_b_id": "9150c7269776",
+      "impact_score": 1,
+      "reasoning": "Pro(2): AI-driven spectrum sensing (A) generates high-fidelity, real-time, and historical data, which are essential inputs for digital twin networks (B). Advanced AI models can improve the accuracy and granularity of the digital twin's cognitive replica, enabling better self-optimization and predictive intelligence. Furthermore, breakthroughs in AI signal processing can be integrated into digital twin architectures, enhancing their simulation and modeling capabilities. | Inh(1): There is minor resource competition: progress in A could divert funding and talent from B, and if A solves key regulatory monitoring challenges, B may be seen as less urgent or partially obsolete for some use cases. However, B still offers unique value for network-wide simulation, optimization, and scenario analysis, so the inhibition is not strong.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "b9c3a7851f44",
+      "driver_b_id": "ca9ace6bafb0",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Federated learning and energy-efficient AI architectures (A) require high-quality, diverse, and wideband spectrum data to train and operate effectively. Progress in A will drive demand for advanced RF frontends (B) that can capture a broader frequency range (including mmWave and sub-THz bands), enabling richer datasets and more robust AI models. Thus, A significantly enables and motivates the development and deployment of B. | Inh(1): There is minor inhibition due to potential competition for R&D resources and the possibility that highly capable AI/FL solutions could reduce the immediate need for new hardware in some scenarios. However, A does not make B obsolete or directly block its development; the inhibition is limited to resource competition and shifting priorities.",
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "8e50d93cb7ee",
+        "982660918092"
+      ]
+    },
+    {
+      "driver_a_id": "b9c3a7851f44",
+      "driver_b_id": "48a044afb0c0",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in Driver A could help Driver B by providing advanced AI tools for processing quantum sensor data, enabling decentralized deployment and secure aggregation of quantum sensing results across distributed networks. Federated learning could facilitate collaborative calibration and anomaly detection in quantum RF sensing arrays. | Inh(2): Significant funding/talent diversion and partial obsolescence: AI-driven spectrum monitoring (Driver A) may divert resources and regulatory focus from quantum RF sensing (Driver B), and could reduce the perceived need for quantum hardware in some applications if AI achieves high sensitivity and efficiency with conventional receivers.",
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "fa3fdb690ed9"
+      ]
+    },
+    {
+      "driver_a_id": "b9c3a7851f44",
+      "driver_b_id": "4842454330e8",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in federated learning and energy-efficient AI architectures could drive demand for real-time digitizers in edge devices, as distributed AI models still require high-fidelity, wideband signal capture for training and inference. AI advances may also improve the efficiency of digitizer usage, enabling smarter allocation of bandwidth and processing resources. | Inh(2): Significant inhibition: AI-driven, decentralized spectrum monitoring reduces the need for centralized, ultra-wideband digitizers by enabling distributed sensing and processing. Resource competition and partial obsolescence are likely, as regulatory and market focus shifts toward scalable, energy-efficient, federated AI solutions.",
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "b9c3a7851f44",
+      "driver_b_id": "9a3bc0fdb612",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Federated learning and energy-efficient AI architectures (A) can significantly enable B by providing advanced, distributed analytics that can process and interpret the massive data streams generated by ultra-fast scan engines. AI-driven approaches can enhance the utility of B by improving anomaly detection, reducing false positives, and enabling real-time, adaptive monitoring. Additionally, federated learning can allow scan engines deployed at the edge to collaboratively improve detection models without centralizing sensitive data. | Inh(2): There is significant potential for resource competition and partial obsolescence. If A delivers on its promise of decentralized, energy-efficient, and privacy-preserving spectrum monitoring, some use cases for centralized, ultra-fast scanning (B) may diminish. Funding, talent, and regulatory attention could shift toward AI-native, federated approaches, slowing the development or deployment of hardware-centric scan engines.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "a45f2f413b77",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "b9c3a7851f44",
+      "driver_b_id": "908595a5a7a6",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Federated learning architectures (A) still require some raw data for initial model training, validation, or troubleshooting. High-speed I/Q data streaming (B) can support these needs, especially during early deployment, model updates, or for edge cases where local processing is insufficient. Additionally, the existence of robust I/Q streaming infrastructure can provide a fallback or complementary path for data collection and analysis. | Inh(2): Significant partial obsolescence: If federated learning and energy-efficient AI architectures (A) are highly successful, much of the spectrum analysis can be performed locally, reducing the need for continuous, high-volume I/Q data streaming to central servers (B). This could shift investment and regulatory focus away from B, making it less central to future spectrum monitoring architectures.",
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "982660918092"
+      ]
+    },
+    {
+      "driver_a_id": "b9c3a7851f44",
+      "driver_b_id": "0c6f77459f97",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Federated learning and energy-efficient AI architectures (Driver A) can significantly enable Driver B by providing advanced distributed data fusion, privacy-preserving model aggregation, and efficient edge processing. For space-based spectrum monitoring, federated learning can improve geolocation accuracy by aggregating data from multiple satellites or ground stations without sharing raw data, and energy-efficient AI is critical for onboard processing in LEO satellites. These advances make direction finding modules more scalable, robust, and adaptive in dynamic environments. | Inh(1): There is minor resource competition and slight obsolescence pressure. Progress in Driver A may divert some funding and talent from Driver B, and in certain scenarios, decentralized federated learning-based geolocation may reduce the need for space-based AoA/TDOA modules. However, the core capabilities of Driver B (global coverage, high-precision geolocation) remain valuable, so inhibition is limited.",
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "982660918092"
+      ]
+    },
+    {
+      "driver_a_id": "b9c3a7851f44",
+      "driver_b_id": "748495722079",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Federated learning and energy-efficient AI architectures (A) directly enable more scalable, privacy-preserving, and distributed deployment of AI-driven spectrum sensing, prediction, and DSA (B). Progress in A addresses key barriers (privacy, communication overhead, energy use) that currently limit B\u2019s deployment in real-world, distributed cognitive radio networks. Thus, A significantly enables B, especially for regulatory-compliant, large-scale, and real-time applications. | Inh(1): There is minor resource competition and potential partial obsolescence: as A matures, some traditional, centralized, or less energy-efficient approaches in B may lose relevance or funding. However, most AI-driven spectrum sensing and DSA solutions will likely adapt to leverage federated learning and energy-efficient architectures, so the inhibiting effect is present but not dominant.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "a45f2f413b77",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "b9c3a7851f44",
+      "driver_b_id": "ecbcd4440682",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in Driver A (federated learning and energy-efficient AI) can provide foundational AI models, distributed training techniques, and privacy-preserving mechanisms that can be integrated into SDR/ORAN architectures. For example, federated learning can be used to train AI models across distributed SDR nodes, and energy-efficient AI can lower the operational costs of SDR/ORAN deployments, especially at the edge. These advances can make SDR/ORAN-based spectrum monitoring more scalable, secure, and adaptable. | Inh(1): Minor resource competition and slight obsolescence pressure: While Driver A may attract some resources and regulatory attention, and could reduce the need for centralized SDR/ORAN in certain privacy-sensitive or energy-constrained applications, the core functionalities and architectural benefits of SDR/ORAN (e.g., modularity, real-time control, integration with network slicing and digital twins) remain relevant and complementary. Thus, the inhibiting effect is present but not dominant.",
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "b9c3a7851f44",
+      "driver_b_id": "949506c3c6e4",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Federated learning and energy-efficient AI architectures (Driver A) significantly enable Driver B by providing scalable, secure, and decentralized spectrum monitoring capabilities. These can be integrated into ESC networks to improve real-time sensing, reduce communication overhead, and enhance privacy, making dynamic spectrum sharing more robust and adaptive. AI-driven distributed sensing is a foundational enabler for real-time environmental sensing and enforcement. | Inh(2): There is significant competition for resources (funding, talent) and potential partial obsolescence. If Driver A's decentralized, federated approach becomes dominant, it may reduce the need for centralized ESC networks and shift regulatory and market focus away from Driver B. Standards and market adoption could lock out traditional ESC approaches.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "a45f2f413b77",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "b9c3a7851f44",
+      "driver_b_id": "9da500c3abd4",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant enablement: Advances in federated learning and energy-efficient AI architectures (A) can provide foundational techniques, models, and best practices that are directly applicable to AI-native 6G networks (B). For example, federated learning can be used within 6G infrastructure to train embedded spectrum sensing models across distributed base stations without sharing raw data, addressing privacy and communication overhead concerns. Energy-efficient AI architectures developed for A can be adopted in B to meet the stringent power and latency requirements of embedded spectrum sensing in 6G. | Inh(2): Significant inhibition: If Driver A's decentralized, federated approach becomes highly successful and is favored by regulators or industry, it could divert resources and attention from the development of embedded, infrastructure-centric spectrum sensing (B). There is also a risk of partial obsolescence if A's approach is seen as sufficient for most monitoring needs, reducing the unique value proposition of B.",
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "8e50d93cb7ee",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "b9c3a7851f44",
+      "driver_b_id": "28f017831151",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Breakthroughs in federated learning and energy-efficient AI architectures (A) can significantly enable cross-border and harmonized spectrum monitoring (B) by providing scalable, privacy-preserving, and energy-efficient tools that are well-suited for distributed, multinational deployments. These advances can facilitate the technical implementation of harmonized standards, lower operational costs, and address privacy concerns that are critical for cross-border data sharing and coordination. | Inh(1): There is minor resource competition and a risk of partial obsolescence: rapid progress in A could divert funding, talent, and regulatory attention from B, and in some cases, decentralized approaches may reduce the perceived need for centralized harmonization. However, these effects are not dominant, as the two drivers are largely complementary.",
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "8e50d93cb7ee"
+      ]
+    },
+    {
+      "driver_a_id": "b9c3a7851f44",
+      "driver_b_id": "f73e1de8ec1e",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Federated learning and energy-efficient AI architectures (A) directly support the implementation of stronger cybersecurity (B) by reducing the attack surface (no raw data transmission), enhancing privacy, and enabling decentralized trust models. These features align with and enable compliance with increasing cybersecurity requirements, especially in distributed monitoring environments. | Inh(1): There is minor resource competition (funding, talent, regulatory focus) and a risk that the privacy guarantees of federated learning could lead to complacency regarding other cybersecurity needs. However, A does not make B obsolete or directly block its development.",
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "982660918092"
+      ]
+    },
+    {
+      "driver_a_id": "b9c3a7851f44",
+      "driver_b_id": "9150c7269776",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Federated learning and energy-efficient AI architectures (Driver A) can significantly enable Digital Twin Networks (Driver B) by providing secure, privacy-preserving, and scalable mechanisms for collecting and aggregating real-world spectrum data. This data is essential for building, updating, and validating accurate digital twins. Furthermore, energy-efficient AI models can be deployed within digital twins to simulate, predict, and optimize network behavior with lower computational costs, making digital twins more practical and scalable. | Inh(1): There is minor resource competition (funding, talent, regulatory focus) and a small risk of partial obsolescence if federated learning architectures address enough spectrum monitoring challenges to reduce the perceived need for digital twins. However, the two approaches are largely complementary, with federated learning enhancing the data and intelligence available to digital twins rather than fully replacing their role.",
+      "source_chunk_ids": [
+        "a45f2f413b77",
+        "8e50d93cb7ee"
+      ]
+    },
+    {
+      "driver_a_id": "ecbcd4440682",
+      "driver_b_id": "ca9ace6bafb0",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in AI-enabled SDRs (A) directly increases the value of ultra wideband RF frontends (B) by providing the advanced digital signal processing and machine learning needed to exploit the full potential of wideband/millimeter-wave data. AI/SDR platforms can process, classify, and analyze the massive data streams generated by B, making B's hardware more useful and actionable for regulatory monitoring. | Inh(1): Minor resource competition and slight obsolescence pressure: While A and B are complementary, they draw from overlapping pools of RF and software engineering talent and funding. In some cases, highly flexible SDRs with AI may reduce the need for specialized ultra wideband hardware, but not eliminate it. The main effect is modest competition for resources and a slight risk of B being deprioritized if A's software capabilities are seen as sufficient for some use cases.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "982cd1166f26",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "ecbcd4440682",
+      "driver_b_id": "48a044afb0c0",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Progress in AI-enabled SDR/ORAN architectures could provide a flexible, software-centric ecosystem that quantum RF sensors could eventually integrate with, especially for data fusion and advanced signal classification. However, this is a minor synergy as B's core value (quantum sensitivity) is largely independent of A's software stack. | Inh(2): Significant progress in A could divert funding, talent, and regulatory focus away from B, and may partially reduce the perceived need for quantum RF sensitivity in mainstream spectrum monitoring. There is also a risk of standards and architectures becoming entrenched around A, making later integration of B more difficult.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "ecbcd4440682",
+      "driver_b_id": "4842454330e8",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: AI/SDR advancements may drive demand for higher bandwidth digitizers to feed more data to machine learning algorithms, and could highlight the need for ultra-wideband capture in some advanced regulatory scenarios. Additionally, AI-driven workflows may benefit from photonic digitizers' ability to provide high-fidelity, wideband data for training and inference. | Inh(2): Significant funding/talent diversion and partial obsolescence: Progress in AI-enabled SDR and ORAN architectures could shift industry and regulatory focus toward software-centric solutions, reducing investment in photonic digitizer hardware and making some aspects of Driver B less relevant for mainstream regulatory monitoring. The flexibility and scalability of AI/SDR may partially replace the need for specialized photonic hardware except in extreme bandwidth cases.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "ecbcd4440682",
+      "driver_b_id": "9a3bc0fdb612",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant enablement: AI-enabled SDRs and ORAN architectures (A) provide the software flexibility, direct RF sampling, and ML-driven classification needed to process and interpret the massive data volumes generated by ultra-fast scan engines (B). Progress in A enables B to scale, automate, and intelligently filter scan results, making continuous real-time monitoring feasible and actionable. | Inh(2): Significant inhibition: As AI-enabled SDRs with ML integration advance, they may absorb or replace the need for dedicated panorama scan engines (B), especially for real-time, wideband, and transient signal detection. Resource competition and shifting industry standards could further reduce investment in B, making it partially obsolete.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "ecbcd4440682",
+      "driver_b_id": "908595a5a7a6",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant enablement: AI-enabled SDRs (A) can generate richer, more meaningful metadata and pre-processed features at the edge, which can be selectively streamed via B's high-speed interfaces for advanced analytics, training, or regulatory audit. Furthermore, A's advances in ML for I/Q data can improve the utility and efficiency of B's distributed edge computing, as B can leverage A's models for local inference before streaming. | Inh(2): Significant partial obsolescence: If A's local AI/ML processing is highly effective, the need to stream raw I/Q data (B) is reduced, as only events, features, or compressed summaries may need to be transmitted. This could shift B's role from bulk data transport to selective, event-driven reporting, reducing the scope and market for B's original high-throughput streaming approach.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "229c6a558520",
+        "7c14f22697d9"
+      ]
+    },
+    {
+      "driver_a_id": "ecbcd4440682",
+      "driver_b_id": "0c6f77459f97",
+      "impact_score": 1,
+      "reasoning": "Pro(2): AI-enabled SDRs and modular ORAN architectures can significantly enable B by providing advanced signal processing, automatic modulation recognition, and flexible reconfiguration, which are directly beneficial for both ground and space-based direction finding modules. The same SDR and AI/ML technologies can be embedded in satellite payloads, enhancing their geolocation and classification capabilities. Furthermore, hybrid architectures combining ground and space assets are emerging as the industry direction, with SDR/AI as a common technological foundation. | Inh(1): There is minor resource competition and potential for partial obsolescence in some use cases (e.g., dense terrestrial environments), but space-based monitoring remains essential for remote/maritime/denied areas where ground SDRs cannot operate. Thus, the inhibiting effect is present but not dominant.",
+      "source_chunk_ids": [
+        "f09a877ff82e",
+        "2791b93d374d",
+        "889bf958a74e"
+      ]
+    },
+    {
+      "driver_a_id": "ecbcd4440682",
+      "driver_b_id": "748495722079",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant enablement: Progress in AI-enabled SDR and ORAN architectures (A) provides a flexible, high-performance, and open platform that B can leverage for more advanced, scalable, and real-time AI-driven spectrum sensing, prediction, and DSA. The modularity and AI integration in A lower the barrier for B's deployment and experimentation, and advances in direct RF sampling, edge computing, and ML-based signal classification directly benefit B's capabilities. | Inh(2): Significant inhibition: A and B compete for overlapping pools of R&D funding, engineering talent, and regulatory attention. If A's approach becomes dominant or sets the architectural standard (e.g., via ORAN), it may partially obsolete or constrain the development of alternative spectrum sensing and DSA approaches (B), or force B to adapt to A's platform, reducing innovation diversity.",
+      "source_chunk_ids": [
+        "229c6a558520",
+        "2791b93d374d",
+        "8e50d93cb7ee"
+      ]
+    },
+    {
+      "driver_a_id": "ecbcd4440682",
+      "driver_b_id": "b9c3a7851f44",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Progress in A (AI-enabled SDR and ORAN) provides the underlying hardware, modularity, and AI/ML integration that can serve as a foundation for deploying federated learning and energy-efficient AI architectures. The open, modular, and software-defined nature of ORAN makes it easier to implement decentralized AI approaches (like federated learning) across distributed radio nodes. Furthermore, improvements in real-time spectrum sensing, data processing, and network slicing can facilitate the deployment and orchestration of federated learning across the network. | Inh(1): There is minor but real resource competition: major breakthroughs in A could shift funding, talent, and regulatory attention away from B, and in some centralized deployments, A's solutions could reduce the perceived need for decentralized/federated approaches. However, A does not fully obsolete B, as privacy, security, and energy efficiency remain important drivers for federated learning in many scenarios.",
+      "source_chunk_ids": [
+        "229c6a558520",
+        "a45f2f413b77"
+      ]
+    },
+    {
+      "driver_a_id": "ecbcd4440682",
+      "driver_b_id": "949506c3c6e4",
+      "impact_score": 1,
+      "reasoning": "Pro(2): AI-enabled SDR and ORAN architectures (A) provide the foundational technology for advanced, distributed, and automated spectrum sensing, which is a critical enabler for dynamic spectrum sharing and real-time ESC networks (B). The improved accuracy, scalability, and adaptability of AI/ML-driven SDRs directly enhance the effectiveness and feasibility of dynamic sharing frameworks and automated enforcement. | Inh(1): There is minor but real competition for R&D resources, and as AI-enabled SDRs become more capable, they may partially reduce the need for separate ESC networks or shift the architecture away from traditional centralized ESC models. However, A does not fully replace or block B; instead, it may change B's implementation or reduce its scope.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "ecbcd4440682",
+      "driver_b_id": "9da500c3abd4",
+      "impact_score": 1,
+      "reasoning": "Pro(2): AI-enabled SDR/ORAN architectures (A) provide foundational technologies\u2014such as direct RF sampling, real-time AI-driven signal classification, and modular, open architectures\u2014that are likely to be reused or further evolved in the development of AI-native 6G networks with embedded spectrum sensing (B). The experience, datasets, and software frameworks developed for A will significantly enable and accelerate B, but B is not strictly dependent on A (i.e., not a critical prerequisite). | Inh(1): There is minor but non-negligible inhibition: resource competition (funding, talent, regulatory attention) and the risk of partial obsolescence or standards lock-in, but A does not directly replace or block B. Both can coexist, and B represents a next-generation architectural step rather than a direct competitor.",
+      "source_chunk_ids": [
+        "229c6a558520",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "ecbcd4440682",
+      "driver_b_id": "28f017831151",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant enablement: Progress in AI-enabled SDR and ORAN architectures provides the technical foundation for more effective, scalable, and interoperable spectrum monitoring solutions. These advances make it technically feasible to implement harmonized, cross-border monitoring systems (B) that can adapt to diverse regulatory requirements and rapidly changing spectrum environments. AI/SDR/ORAN can serve as the common platform upon which harmonized standards and coordination protocols are built. | Inh(2): Significant inhibition: The rapid evolution and deployment of AI/SDR/ORAN-based monitoring could partially obsolete or sideline traditional harmonization efforts, especially if these new architectures become de facto standards before formal harmonization is achieved. There is also a real risk of resource and regulatory focus being diverted from B to A, and standards divergence if A's technical trajectory moves faster than B's regulatory processes.",
+      "source_chunk_ids": [
+        "2791b93d374d",
+        "229c6a558520",
+        "a6a655193dbe"
+      ]
+    },
+    {
+      "driver_a_id": "ecbcd4440682",
+      "driver_b_id": "f73e1de8ec1e",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Breakthroughs in AI-enabled SDR and ORAN architectures drive the need for advanced cybersecurity by increasing system complexity, network connectivity, and exposure to cyber threats. As monitoring infrastructure becomes more software-defined and networked, the urgency and market demand for robust cybersecurity solutions (B) increases. Additionally, the programmable nature of SDR/ORAN allows for more rapid deployment of security patches and adaptive defenses. | Inh(1): There is minor resource competition: rapid progress in SDR/ORAN may temporarily divert R&D and regulatory attention away from cybersecurity, and increased system complexity can make cybersecurity implementation more difficult, potentially slowing progress in B.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "ecbcd4440682",
+      "driver_b_id": "9150c7269776",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant progress in AI-enabled SDR and ORAN architectures provides foundational real-time data, advanced signal classification, and modular, open interfaces that digital twin networks can leverage. Digital twins require high-fidelity, real-time, and historical data to accurately simulate and optimize network behavior. The improved data quality, adaptability, and openness of A directly enable richer, more accurate, and more actionable digital twins for spectrum monitoring. Furthermore, ORAN's modularity facilitates integration of digital twin engines as xApps/rApps. | Inh(1): There is minor but real resource competition (funding, talent, regulatory attention) and a risk that some digital twin use cases become less compelling if AI-enabled SDR/ORAN architectures deliver sufficient real-time intelligence and self-optimization. However, A does not fully replace or block B, as digital twins offer unique predictive and planning capabilities not addressed by A.",
+      "source_chunk_ids": [
+        "229c6a558520",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "949506c3c6e4",
+      "driver_b_id": "ca9ace6bafb0",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant enablement: The expansion of dynamic spectrum sharing and ESC networks (A) creates new monitoring requirements across a broader range of frequencies, including mmWave and sub-THz bands. This drives demand for ultra wideband RF frontends (B) capable of covering these new allocations and supporting the sensing infrastructure needed for real-time, automated monitoring. | Inh(2): Significant funding/talent diversion and partial obsolescence: As regulatory and industry focus shifts toward automated, networked, and software-defined monitoring (A), there is a substantial risk that investment and attention will move away from traditional ultra wideband hardware solutions (B), especially if ESC networks are seen as sufficient for most regulatory needs.",
+      "source_chunk_ids": [
+        "b346caa67981",
+        "a6a655193dbe"
+      ]
+    },
+    {
+      "driver_a_id": "949506c3c6e4",
+      "driver_b_id": "48a044afb0c0",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: The expansion of dynamic spectrum sharing and ESC networks (A) could highlight the limitations of current sensor sensitivity and dynamic range, creating opportunities for quantum RF sensing (B) to address challenging scenarios (e.g., detecting ultra-weak or covert signals in dense environments). B could be piloted as an upgrade path within the A framework. | Inh(2): Significant funding/talent diversion and partial obsolescence: If A's approach is widely adopted and standards are built around its capabilities, it could divert resources from B and reduce the urgency for quantum sensor development, except for specialized use cases.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "02b971bf51d7",
+        "1e8a7e2f7123"
+      ]
+    },
+    {
+      "driver_a_id": "949506c3c6e4",
+      "driver_b_id": "4842454330e8",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Progress in Driver A (dynamic spectrum sharing with real-time ESC networks) increases the complexity and density of spectrum environments, creating new requirements for monitoring across wider bandwidths and more dynamic scenarios. This drives demand for advanced digitizer and photonic signal processing technologies (Driver B) to capture, analyze, and enforce in real time, especially as spectrum sharing expands to higher frequencies and more bands. | Inh(1): There is minor resource competition and potential standards lock-in: ESC network expansion may divert funding and talent, and regulatory standards may be tailored to ESC sensor capabilities (often limited in bandwidth), reducing immediate demand for ultra-wideband digitizer solutions. However, ESC networks do not fully replace the need for wideband monitoring, so inhibition is limited.",
+      "source_chunk_ids": [
+        "02b971bf51d7",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "949506c3c6e4",
+      "driver_b_id": "9a3bc0fdb612",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Progress in Driver A (dynamic spectrum sharing and ESC networks) increases the complexity and dynamism of the spectrum environment, creating a greater need for advanced, automated, and ultra-fast scanning engines (Driver B) to detect transient, frequency-hopping, or unauthorized signals that ESC networks may miss. ESC networks also set a precedent for real-time, automated monitoring, which aligns with and enables the adoption of continuous, automated scanning technologies. | Inh(2): Significant progress in Driver A could divert resources (funding, talent, regulatory focus) away from Driver B and, if ESC networks are highly effective, partially reduce the need for separate ultra-fast scanning solutions for some regulatory use cases. There is also a risk of partial obsolescence if ESC networks become the de facto standard for spectrum monitoring in shared bands.",
+      "source_chunk_ids": [
+        "b346caa67981",
+        "a6a655193dbe"
+      ]
+    },
+    {
+      "driver_a_id": "949506c3c6e4",
+      "driver_b_id": "908595a5a7a6",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Progress in A drives the need for more distributed, automated, and high-fidelity sensing, which can increase demand for advanced sensor nodes capable of streaming I/Q data for both real-time and offline analysis. B's technology (I/Q streaming and edge computing) can be a key enabler for the dense, flexible sensor networks required by A, especially as spectrum sharing expands to more complex and higher-frequency bands. | Inh(2): A's success could shift the industry toward real-time, in-network processing and automated enforcement, reducing the need for centralized, high-bandwidth I/Q data streaming and offline analysis. This could divert resources and market demand away from B, or make B's approach partially obsolete in some regulatory contexts.",
+      "source_chunk_ids": [
+        "b346caa67981",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "949506c3c6e4",
+      "driver_b_id": "0c6f77459f97",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: The expansion of dynamic spectrum sharing and ESC networks (A) increases the overall complexity and volume of spectrum monitoring data, which could highlight gaps (e.g., in remote or maritime areas) that only space-based direction finding (B) can fill. This could drive hybrid architectures and create some incremental demand for B as a complementary solution. | Inh(2): Significant funding/talent diversion and partial obsolescence: Progress in A could divert regulatory, R&D, and procurement resources away from B, especially for terrestrial use cases. In areas where ESC networks are deployed, the need for space-based direction finding may be seen as less critical, reducing market pull and slowing B's development for those environments.",
+      "source_chunk_ids": [
+        "f09a877ff82e",
+        "b346caa67981",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "949506c3c6e4",
+      "driver_b_id": "748495722079",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant progress in Driver A (dynamic sharing and ESC networks) will increase the complexity and dynamism of the spectrum environment, creating new challenges that AI-driven spectrum sensing (Driver B) is well-suited to address. ESC networks generate large volumes of real-time data and require adaptive, scalable monitoring\u2014areas where AI/ML excels. The expansion of dynamic sharing frameworks will likely drive demand for more advanced, automated, and predictive spectrum sensing and compliance engines, enabling B to address gaps and enhance the effectiveness of A. | Inh(1): There is minor but real resource competition and potential for partial obsolescence. ESC networks may attract regulatory and industry attention, diverting some funding and talent from AI-driven spectrum sensing R&D. If ESC approaches become the regulatory default, some AI-driven innovations may face higher barriers to adoption or reduced urgency, but they are unlikely to be fully locked out or made obsolete.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "b346caa67981",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "949506c3c6e4",
+      "driver_b_id": "b9c3a7851f44",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in Driver A will expand the scale, complexity, and dynamism of spectrum sharing environments, creating new challenges (e.g., privacy, distributed data, energy efficiency) that Driver B is well-suited to address. The proliferation of ESC networks and dynamic sharing will generate large, distributed datasets and operational requirements that federated learning and energy-efficient AI can help solve, especially as monitoring moves closer to the edge and privacy concerns grow. | Inh(1): Minor resource competition and partial obsolescence: While Driver A may attract more immediate funding and regulatory focus, and could set standards that favor centralized approaches, it does not fully replace or block Driver B. There is some risk of reduced investment or slower adoption of decentralized/federated approaches if centralized ESC networks are seen as 'good enough,' but the domains remain complementary in the medium term.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "949506c3c6e4",
+      "driver_b_id": "ecbcd4440682",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: The expansion of dynamic spectrum sharing and real-time ESC networks (Driver A) creates a highly dynamic, complex spectrum environment that increases the need for advanced, adaptive, and automated monitoring solutions. This directly drives demand for AI-enabled SDR and ORAN architectures (Driver B), which are uniquely capable of handling rapid reconfiguration, real-time signal classification, and scalable, distributed monitoring required in such environments. | Inh(1): Minor resource competition and regulatory focus shift: While Driver A and B are synergistic in many respects, there is likely to be some competition for funding, talent, and regulatory attention, especially in the early stages of deployment. However, A does not make B obsolete or directly block its development, so the inhibiting effect is minor.",
+      "source_chunk_ids": [
+        "229c6a558520",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "949506c3c6e4",
+      "driver_b_id": "9da500c3abd4",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Progress in Driver A could provide valuable operational experience, datasets, and regulatory frameworks for real-time spectrum monitoring, which may inform and accelerate the development of embedded AI-native sensing in 6G networks. There is minor synergy in terms of shared knowledge and possibly infrastructure. | Inh(2): Significant progress in Driver A could divert resources, lock in standards, and reduce market/regulatory demand for Driver B, creating partial obsolescence and slowing adoption of embedded AI-native spectrum sensing in 6G networks.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "a6a655193dbe"
+      ]
+    },
+    {
+      "driver_a_id": "949506c3c6e4",
+      "driver_b_id": "28f017831151",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in dynamic spectrum sharing and real-time ESC networks (A) creates technical and operational requirements that can drive the need for harmonized, cross-border monitoring (B). As spectrum sharing expands, interference and compliance issues increasingly cross national borders, making coordination and standardization (B) more valuable. A's advancements also provide a technical foundation and best practices that B can leverage for harmonized solutions. | Inh(1): Minor resource competition and slight obsolescence pressure: While A and B are complementary in many respects, A's rapid progress could draw some resources and attention away from B, and in some cases, make certain harmonization efforts less urgent if A's approach is widely adopted. However, A does not directly replace or block B.",
+      "source_chunk_ids": [
+        "b346caa67981",
+        "a6a655193dbe"
+      ]
+    },
+    {
+      "driver_a_id": "949506c3c6e4",
+      "driver_b_id": "f73e1de8ec1e",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Dynamic spectrum sharing and real-time ESC networks (A) greatly increase the attack surface and operational complexity of monitoring infrastructure, making robust cybersecurity (B) more critical. As these systems become more networked and automated, the need for advanced cybersecurity to protect against sophisticated threats is significantly enabled and highlighted. Regulatory and market awareness of cyber risks will rise in parallel with A's deployment. | Inh(1): There is minor but real competition for resources (funding, talent, regulatory attention) between rapid deployment of dynamic sharing/ESC systems and dedicated cybersecurity upgrades. In some cases, A's progress could delay or reduce the perceived urgency for B, but it does not make B obsolete or directly block its development.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "949506c3c6e4",
+      "driver_b_id": "9150c7269776",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Progress in dynamic spectrum sharing and ESC networks (Driver A) generates large volumes of real-time and historical sensing data, which are critical inputs for digital twin networks (Driver B). ESC networks provide the foundational sensing infrastructure and operational context that digital twins can leverage to build accurate, cognitive models, enabling self-optimizing and predictive spectrum management. The expansion of dynamic sharing frameworks also increases the complexity and dynamism of spectrum environments, making digital twin approaches more valuable for simulation, anomaly detection, and optimization. | Inh(2): There is significant resource competition and partial obsolescence pressure. As ESC networks and dynamic sharing frameworks become more established, they may divert funding, talent, and regulatory focus away from digital twin network R&D. Additionally, if ESC networks are perceived as sufficiently robust for real-time monitoring and enforcement, the urgency for digital twin solutions may decrease, especially for basic spectrum management tasks. Standards and operational practices established by Driver A may also make it harder for Driver B to differentiate or integrate unless it adapts.",
+      "source_chunk_ids": [
+        "b346caa67981",
+        "bbcd106cb48c"
+      ]
+    },
+    {
+      "driver_a_id": "9da500c3abd4",
+      "driver_b_id": "ca9ace6bafb0",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Progress in A could drive demand for ultra wideband RF frontends (B) as components within embedded monitoring subsystems, or for validation/calibration of embedded sensors, but this is a minor synergy compared to the overall substitution effect. | Inh(2): Significant progress in A could lead to partial obsolescence of B for many regulatory monitoring use cases, and divert funding/talent toward embedded solutions, but B may still be needed for legacy systems, independent verification, or as reference monitors.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "9da500c3abd4",
+      "driver_b_id": "48a044afb0c0",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in A could highlight the limitations of conventional embedded sensing, creating niche demand for quantum RF sensors (B) in scenarios where A's sensitivity or selectivity is insufficient (e.g., ultra-weak signal detection, interference analysis, or calibration/validation of AI-driven systems). Additionally, integration efforts for embedded sensing may create technical pathways or interfaces that quantum sensors could later exploit. | Inh(2): Significant funding/talent diversion and partial obsolescence: If A delivers high performance at scale, it will likely attract the majority of regulatory and commercial investment, making it harder for B to secure resources. Furthermore, if A's embedded sensing is 'good enough' for most use cases, B may be relegated to only the most demanding or specialized applications, slowing its development and deployment.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "fa3fdb690ed9",
+        "1e8a7e2f7123"
+      ]
+    },
+    {
+      "driver_a_id": "9da500c3abd4",
+      "driver_b_id": "4842454330e8",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in A could drive demand for advanced digitizers and photonic processing (B) as enabling hardware for embedded spectrum sensing in 6G infrastructure, especially for initial deployments or hybrid architectures. AI-native sensing may still require high-performance digitization at the edge. | Inh(2): Significant obsolescence and resource diversion: If A succeeds, the market and regulatory need for standalone, external ultra-wideband digitizer-based monitoring (B) is reduced. Funding, talent, and regulatory focus may shift toward AI-native embedded solutions, making B less relevant except for niche or legacy use cases.",
+      "source_chunk_ids": [
+        "229c6a558520",
+        "a6a655193dbe",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "9da500c3abd4",
+      "driver_b_id": "9a3bc0fdb612",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in AI-native 6G networks may drive demand for advanced scanning engines to validate, calibrate, or supplement embedded sensing during transition phases, or for legacy/non-6G environments. Additionally, AI techniques developed for embedded sensing could be adapted to enhance Panorama Scan Engine's analytics and automation. | Inh(2): Significant partial obsolescence and resource diversion: Embedded AI-native spectrum sensing directly reduces the need for external, ultra-fast scan engines for regulatory monitoring, and shifts R&D, standards, and regulatory focus toward integrated solutions, making standalone scan engines less relevant for future 6G deployments.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "8e50d93cb7ee"
+      ]
+    },
+    {
+      "driver_a_id": "9da500c3abd4",
+      "driver_b_id": "908595a5a7a6",
+      "impact_score": -1,
+      "reasoning": "Pro(1): There is minor synergy: advances in AI-native spectrum sensing (A) could drive demand for high-quality, labeled I/Q datasets for training and validation, which B's infrastructure could help provide, especially during early deployment and for edge cases or forensic analysis. | Inh(2): Significant obsolescence pressure: If spectrum monitoring becomes natively embedded and automated within 6G infrastructure, the need for external, distributed I/Q data streaming and offline analysis (B) is reduced, and regulatory/industry focus may shift away from B's approach.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "8e50d93cb7ee",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "9da500c3abd4",
+      "driver_b_id": "0c6f77459f97",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Embedded spectrum sensing in 6G networks (A) could generate high-quality ground truth data that enhances calibration and validation of space-based geolocation (B), and hybrid architectures combining both are emerging as industry direction. | Inh(2): Significant funding/talent diversion and partial obsolescence: As AI-native 6G networks (A) become capable of real-time, embedded spectrum monitoring, regulatory and market demand for space-based solutions (B) may decrease in terrestrial domains, and resources may shift toward A.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "116b040f244d",
+        "f09a877ff82e"
+      ]
+    },
+    {
+      "driver_a_id": "9da500c3abd4",
+      "driver_b_id": "748495722079",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Progress in A (AI-native 6G with embedded spectrum sensing) will drive advancements in AI/ML models, data pipelines, and real-time processing that can be leveraged by B (AI-driven spectrum sensing and DSA in cognitive radio networks). Shared innovations in deep learning, federated learning, and scalable architectures (e.g., CNNs, semantic segmentation, parallel processing) will benefit both domains. Additionally, regulatory requirements and best practices established for A may inform or accelerate development in B, especially in hybrid or legacy environments. | Inh(2): Significant progress in A could partially obsolete or reduce the need for B, especially in environments where 6G is widely deployed and its embedded spectrum sensing is sufficient for regulatory compliance and dynamic access. There will also be competition for R&D resources, and possible standards lock-in, making it harder for B to gain traction unless it offers unique value beyond what is natively provided by 6G.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "229c6a558520",
+        "a45f2f413b77"
+      ]
+    },
+    {
+      "driver_a_id": "9da500c3abd4",
+      "driver_b_id": "b9c3a7851f44",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in A (AI-native 6G with embedded spectrum sensing) could provide advanced AI models, datasets, and infrastructure that federated learning approaches (B) can leverage, especially at the network edge. For example, the AI/ML advancements and open architectures (e.g., ORAN) developed for A could be adapted for decentralized training and deployment in B. However, this is a minor synergy as the architectural focus and deployment models differ. | Inh(2): Significant funding/talent diversion and partial obsolescence: If A makes a breakthrough, it will likely attract the majority of R&D, regulatory, and market attention, reducing resources for B. Additionally, if embedded spectrum sensing is highly effective, the perceived need for decentralized/federated approaches is diminished, making B partially obsolete in mainstream deployments, though niche or privacy-sensitive use cases may remain.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "a45f2f413b77",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "9da500c3abd4",
+      "driver_b_id": "ecbcd4440682",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant enablement: Progress in AI-native 6G with embedded spectrum sensing will drive advancements in AI/ML algorithms, real-time spectrum analysis, and edge computing. These foundational technologies and best practices will directly benefit the development of AI-enabled SDR and ORAN architectures, as both domains share core technical challenges (e.g., processing raw I/Q data, low-latency inference, and dynamic spectrum adaptation). Cross-pollination of AI models, data pipelines, and integration strategies will accelerate B's evolution. | Inh(2): Significant funding/talent diversion and partial obsolescence: As embedded spectrum sensing in 6G networks matures, it will attract a larger share of R&D investment and regulatory focus, potentially at the expense of modular SDR/ORAN-based monitoring solutions. Some use cases for B may become redundant or less attractive, especially where embedded solutions are mandated or preferred.",
+      "source_chunk_ids": [
+        "229c6a558520",
+        "2791b93d374d",
+        "8e50d93cb7ee"
+      ]
+    },
+    {
+      "driver_a_id": "9da500c3abd4",
+      "driver_b_id": "949506c3c6e4",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Progress in A could provide technical synergies, such as improved AI models and sensing algorithms that B could leverage for ESC networks. Additionally, the regulatory push for more advanced sensing may raise overall standards, indirectly benefiting B's development. | Inh(2): A's breakthrough would significantly reduce the need for B by making external ESC networks partially obsolete, diverting resources and regulatory focus. The embedded sensing in 6G networks could become the preferred method for spectrum monitoring and enforcement, undermining the rationale for separate ESC deployments.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "9da500c3abd4",
+      "driver_b_id": "28f017831151",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Progress in A could provide technical foundations (e.g., data, APIs, real-time monitoring capabilities) that harmonized cross-border coordination (B) could leverage, especially if regulatory frameworks evolve to require interoperability between embedded and external monitoring systems. However, this synergy is minor compared to the inhibiting effects. | Inh(2): Significant progress in A would likely divert resources and regulatory focus away from B, and could partially obsolete the need for harmonized external monitoring equipment, as embedded sensing becomes the dominant paradigm. However, legacy systems and transitional requirements mean B is not fully blocked.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "b346caa67981",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "9da500c3abd4",
+      "driver_b_id": "f73e1de8ec1e",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Progress in AI-native 6G networks with embedded spectrum sensing (A) increases the attack surface and complexity of monitoring infrastructure, making robust cybersecurity (B) even more critical. Embedded sensing requires advanced cybersecurity to protect against sophisticated threats, including nation-state attacks, thus significantly enabling the development and deployment of new cybersecurity solutions. | Inh(2): A's integration of spectrum sensing into network infrastructure may partially obsolete traditional monitoring systems and shift regulatory and market focus away from standalone monitoring infrastructure, reducing demand for cybersecurity solutions specifically designed for legacy systems. Additionally, resource competition for R&D and talent may slow progress in B.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "a6a655193dbe",
+        "bbcd106cb48c"
+      ]
+    },
+    {
+      "driver_a_id": "9da500c3abd4",
+      "driver_b_id": "9150c7269776",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant enablement: The data richness, real-time analytics, and AI-driven insights generated by embedded spectrum sensing in 6G networks (A) can feed directly into digital twin models (B), making them more accurate, dynamic, and valuable. The integration of AI/ML and open architectures (e.g., ORAN) highlighted in the sources shows that digital twins can leverage the embedded intelligence and data streams from A to enhance simulation, prediction, and optimization capabilities. | Inh(2): Significant partial obsolescence and resource competition: As A matures, some spectrum monitoring functions traditionally performed by digital twins (B) may be absorbed into the network itself, reducing the distinct need for B and diverting resources and regulatory focus toward A.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "8e50d93cb7ee",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "28f017831151",
+      "driver_b_id": "ca9ace6bafb0",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in A creates a harmonized, cross-border market with unified requirements, which increases the business case and regulatory demand for advanced, wideband monitoring equipment like B. Harmonized standards reduce fragmentation, making it easier for B's technology to be adopted at scale across multiple countries. | Inh(1): Minor inhibition: A may slow B's adoption if harmonized standards lag behind B's technical capabilities, or if regulatory/procurement focus is on compliance with current standards rather than pushing the technology frontier. Some resource competition for regulatory attention and procurement budgets is possible.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "28f017831151",
+      "driver_b_id": "48a044afb0c0",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant enablement: Progress in Driver A creates a harmonized regulatory and technical environment, which can lower barriers for new technologies like quantum RF sensing to be adopted across borders once they are mature. Harmonized standards can provide clear performance benchmarks and certification pathways, which can guide the development of quantum receivers to meet regulatory needs. Coordinated procurement and deployment frameworks can also accelerate market entry for quantum technologies if/when they are included in the standards. | Inh(2): Significant inhibition: If harmonization efforts are slow to adapt to disruptive technologies, or if standards are written around legacy architectures, this can delay or partially block the adoption of quantum RF sensing. Regulatory and market focus on standardized, proven solutions may reduce short-term demand and funding for quantum approaches, especially if they are not yet mature or explicitly recognized in the harmonized frameworks.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "fa3fdb690ed9",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "28f017831151",
+      "driver_b_id": "4842454330e8",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Progress in A creates a unified regulatory environment and market, which increases demand for advanced spectrum monitoring solutions. Harmonized standards and cross-border coordination incentivize development of high-performance, wideband monitoring equipment (B) to meet new requirements, and facilitate easier deployment and scaling across multiple countries. | Inh(2): A's harmonization efforts may impose rigid standards that lag behind technological advances, potentially locking out or slowing adoption of novel digitizer and photonic approaches (B). Resource competition and regulatory focus on compliance may divert funding and talent away from disruptive innovations.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "28f017831151",
+      "driver_b_id": "9a3bc0fdb612",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Harmonized, cross-border standards (Driver A) create a larger, unified market with clear requirements, which incentivizes investment in advanced monitoring technologies like the Panorama Scan Engine (Driver B). Standardization also reduces market fragmentation, making it easier for innovative solutions to scale across multiple countries. Harmonized requirements for dynamic spectrum management and real-time monitoring directly increase demand for continuous, automated, high-speed monitoring solutions. | Inh(1): Minor inhibition: If harmonization leads to rigid standards or focuses on legacy approaches, it could slow the adoption of disruptive technologies like the Panorama Scan Engine, especially if those technologies do not immediately comply with new standards. There may also be temporary diversion of regulatory and industry attention/resources toward harmonization efforts.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "28f017831151",
+      "driver_b_id": "908595a5a7a6",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in Driver A (harmonized, cross-border spectrum monitoring) creates a strong need for interoperable, scalable, and high-performance monitoring solutions. This environment incentivizes the adoption of advanced architectures like B, especially if harmonized standards recognize or require high-throughput, distributed data collection and analysis. Harmonization also lowers market fragmentation, making it easier for B's solutions to scale across multiple countries. | Inh(1): Minor inhibition: While harmonization could create some prescriptive requirements that slow the adoption of novel architectures (if not included in the standards), and could divert some resources, these effects are likely to be minor unless the standards are explicitly exclusionary. Most harmonization efforts aim to accommodate advanced monitoring needs, so B is more likely to be enabled than blocked.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "28f017831151",
+      "driver_b_id": "0c6f77459f97",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Progress in A creates a harmonized regulatory and technical framework that can enable and accelerate the deployment of advanced direction finding and space-based monitoring solutions (B) by providing clear requirements, interoperability standards, and cross-border data sharing protocols. This makes it easier for B to be adopted at scale and integrated into national and regional monitoring architectures. | Inh(1): There is minor risk that harmonization efforts (A) could slow or partially lock out innovative approaches (B) if standards are too rigid or if procurement cycles prioritize standardized ground-based solutions over newer space-based/DF technologies. Some resource competition for regulatory attention and funding is possible.",
+      "source_chunk_ids": [
+        "f09a877ff82e",
+        "116b040f244d",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "28f017831151",
+      "driver_b_id": "748495722079",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Progress in Driver A creates a harmonized regulatory and technical environment, which facilitates cross-border data sharing, standardized interfaces, and common compliance requirements. This lowers barriers for AI-driven spectrum sensing and prediction (Driver B) to scale across regions, enables richer datasets for training AI models, and provides a clear regulatory framework for deployment. Harmonized standards also make it easier for AI solutions to be certified and adopted in multiple jurisdictions. | Inh(1): Minor inhibition: While harmonization under Driver A may slow the adoption of disruptive AI techniques due to conservative standards and resource competition, it does not directly block or replace AI-driven approaches. The main risk is slower innovation and reduced flexibility, but AI-driven methods can still be integrated within the harmonized framework if standards evolve.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "229c6a558520",
+        "25e1fb29cca9"
+      ]
+    },
+    {
+      "driver_a_id": "28f017831151",
+      "driver_b_id": "b9c3a7851f44",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Progress in Driver A creates a harmonized regulatory environment and interoperable infrastructure across borders, which can significantly enable Driver B by providing standardized interfaces, data formats, and operational requirements. This makes it easier to deploy federated learning and energy-efficient AI architectures at scale, as they can leverage the common regulatory framework and cross-border data sharing mechanisms. | Inh(1): There is minor inhibition due to potential resource competition and risk that harmonized standards may initially favor legacy or centralized monitoring approaches, slowing adoption of decentralized AI solutions. However, this effect is not strong unless standards explicitly exclude federated learning architectures.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "8e50d93cb7ee"
+      ]
+    },
+    {
+      "driver_a_id": "28f017831151",
+      "driver_b_id": "ecbcd4440682",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Harmonized cross-border standards (Driver A) create a unified market and technical baseline, making it easier for AI-enabled SDR/ORAN solutions (Driver B) to scale across Europe. Standardized interfaces and requirements reduce fragmentation, allowing AI/SDR/ORAN developers to target a single set of specifications, accelerating adoption and interoperability. Regulatory clarity also encourages investment in advanced solutions. | Inh(1): Minor inhibition: While harmonization may introduce some inertia and resource competition, and could lock in legacy approaches if not forward-looking, these effects are limited if standards remain open to innovation. The main risk is slowing the pace of AI/SDR/ORAN adoption due to regulatory or procurement conservatism, but not outright blocking it.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "28f017831151",
+      "driver_b_id": "949506c3c6e4",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Progress in A creates a regulatory and technical foundation (harmonized standards, cross-border coordination) that enables ESC networks (B) to scale across multiple countries and bands. Harmonization reduces fragmentation, making it easier for ESC solutions to be adopted and integrated into broader spectrum management frameworks. | Inh(1): There is minor inhibition due to potential resource competition and risk that harmonized standards may constrain or delay adoption of innovative ESC approaches if they do not fit the standardized model. However, the inhibition is not strong because harmonization generally supports dynamic spectrum sharing in the long term.",
+      "source_chunk_ids": [
+        "b346caa67981",
+        "a6a655193dbe"
+      ]
+    },
+    {
+      "driver_a_id": "28f017831151",
+      "driver_b_id": "9da500c3abd4",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Minor synergy: Progress in A may help B by clarifying regulatory requirements and creating a harmonized baseline for spectrum monitoring, which could make it easier for AI-native embedded sensing to interoperate with external systems and comply with cross-border regulations. | Inh(2): Significant inhibition: A's harmonized standards and regulatory focus on external monitoring equipment could divert resources and attention away from embedded AI-native sensing, partially locking out B's approach and slowing its adoption in the regulatory domain.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "28f017831151",
+      "driver_b_id": "f73e1de8ec1e",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Harmonized, cross-border spectrum monitoring coordination (A) creates larger, more integrated monitoring networks, which increases the attack surface and the criticality of robust cybersecurity (B). Harmonization also makes it easier to set and enforce common cybersecurity baselines across jurisdictions, and shared infrastructure can justify investment in stronger security. | Inh(1): Minor resource competition and possible standards lock-in: Progress in harmonization may temporarily divert resources and regulatory focus away from cybersecurity, and if cybersecurity is not prioritized in harmonized standards, it could slow or complicate later cybersecurity upgrades.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "28f017831151",
+      "driver_b_id": "9150c7269776",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Harmonized standards and cross-border coordination (Driver A) create a unified regulatory and technical environment, which lowers barriers for deploying advanced, networked solutions like digital twins (Driver B) at scale. Shared data formats, interfaces, and operational procedures make it easier to integrate digital twin systems across jurisdictions, and regulatory buy-in increases trust and accelerates adoption. | Inh(1): Minor inhibition: There is some risk that rigid standards or procurement cycles focused on harmonized legacy approaches could slow the adoption of digital twins, and resource competition may slightly divert attention or funding. However, these effects are not dominant, as harmonization generally facilitates rather than blocks innovation.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "f73e1de8ec1e",
+      "driver_b_id": "ca9ace6bafb0",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Breakthroughs in cybersecurity (A) significantly enable the deployment of ultra wideband RF frontends (B) by making it feasible to network and remotely manage these advanced monitoring systems without exposing them to unacceptable risk. Secure infrastructure is increasingly a prerequisite for regulatory acceptance and operational deployment, especially as monitoring moves toward real-time, automated, and networked models. | Inh(2): Cybersecurity requirements (A) can significantly divert resources and regulatory attention away from RF frontend innovation (B), and may impose architectural constraints that slow or complicate the integration of new wideband hardware. The need to meet stringent security standards can delay or reduce the adoption of new monitoring technologies.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "f73e1de8ec1e",
+      "driver_b_id": "48a044afb0c0",
+      "impact_score": -1,
+      "reasoning": "Pro(1): Progress in cybersecurity (A) can provide a more secure foundation for deploying advanced, networked quantum RF sensors (B), which are likely to be high-value targets for cyberattack. Enhanced cybersecurity may also be a prerequisite for regulatory approval of new, sensitive receiver technologies, creating minor synergy. | Inh(2): Cybersecurity requirements (A) will likely divert resources (funding, talent, procurement cycles) and impose additional integration/certification burdens on the development and deployment of quantum RF sensing (B), significantly slowing its adoption in regulated environments.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "f73e1de8ec1e",
+      "driver_b_id": "4842454330e8",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant enablement: As monitoring systems become more networked and exposed to sophisticated threats, the need for real-time, ultra-wideband monitoring (B) increases to detect, analyze, and respond to anomalous or malicious signals. Cybersecurity requirements (A) drive demand for advanced signal capture and analysis capabilities, making B more valuable and necessary. | Inh(2): Significant funding/talent diversion and integration complexity: Meeting stringent cybersecurity requirements (A) can divert resources from B and slow its adoption, as new digitizer technologies must be validated for compliance, and procurement cycles may prioritize A over B.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "f73e1de8ec1e",
+      "driver_b_id": "9a3bc0fdb612",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Breakthroughs in cybersecurity (A) significantly enable the deployment of real-time, automated spectrum monitoring (B) by making networked monitoring infrastructure resilient to nation-state level threats. This is increasingly a prerequisite for regulatory adoption, especially as monitoring systems become more networked and embedded in critical infrastructure. | Inh(2): Significant progress in cybersecurity (A) can divert resources and regulatory attention away from scan engine development (B), impose compliance-driven architectural constraints, and slow market adoption of new scanning technologies until they are proven secure. This creates partial obsolescence pressure and significant funding/talent diversion.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "f73e1de8ec1e",
+      "driver_b_id": "908595a5a7a6",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Robust cybersecurity is a significant enabler for distributed spectrum monitoring architectures that rely on high-speed I/Q data streaming over networks. Without strong cybersecurity, such distributed systems would be too risky to deploy, especially in regulatory or critical infrastructure contexts. Therefore, progress in A helps B by making its deployment feasible and acceptable to regulators and operators. | Inh(2): At the same time, increased cybersecurity requirements can significantly slow or complicate the development and deployment of B by increasing compliance burdens, diverting resources, and potentially restricting certain architectures or interfaces due to perceived security risks.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "bbcd106cb48c"
+      ]
+    },
+    {
+      "driver_a_id": "f73e1de8ec1e",
+      "driver_b_id": "0c6f77459f97",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant progress in cybersecurity (A) enables the safe networking and operation of space-based and distributed direction finding systems (B), which are inherently exposed to cyber threats due to their reliance on networked communications and remote operations. Strong cybersecurity is a significant enabler for regulatory acceptance and operational deployment of B. | Inh(2): Cybersecurity requirements (A) can significantly slow or complicate the development and deployment of space-based monitoring (B) by increasing integration complexity, diverting resources, and extending procurement cycles. There is also potential for partial obsolescence if ground-based systems become much more secure and capable.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "f09a877ff82e"
+      ]
+    },
+    {
+      "driver_a_id": "f73e1de8ec1e",
+      "driver_b_id": "748495722079",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant progress in cybersecurity (A) enables the safe deployment of AI-driven spectrum sensing (B) in networked, mission-critical regulatory environments. Robust cybersecurity is a prerequisite for deploying AI/ML in sensitive infrastructure, as AI systems can introduce new attack surfaces. Thus, A significantly enables B by reducing operational risk and regulatory barriers. | Inh(2): A breakthrough in cybersecurity can significantly slow B by diverting resources, increasing compliance burdens, and requiring additional integration work for AI/ML systems to meet new security standards. This can delay R&D, increase costs, and slow regulatory approval for AI-driven spectrum monitoring.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "f73e1de8ec1e",
+      "driver_b_id": "b9c3a7851f44",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Progress in cybersecurity (A) significantly enables B by providing the robust security foundation required for federated learning and decentralized AI architectures to be trusted and deployed in sensitive regulatory environments. Strong cybersecurity is a key enabler for distributed systems handling sensitive spectrum data. | Inh(2): Progress in A can significantly inhibit B by diverting resources and imposing restrictive standards that may slow or complicate the adoption of federated learning and decentralized AI approaches. If cybersecurity requirements are not designed with B in mind, they could create compliance barriers or architectural incompatibilities.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "a45f2f413b77"
+      ]
+    },
+    {
+      "driver_a_id": "f73e1de8ec1e",
+      "driver_b_id": "ecbcd4440682",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant progress in cybersecurity (A) enables the safe deployment of networked, modular, and open AI-enabled SDR/ORAN architectures (B), which are otherwise vulnerable to cyber threats. Robust cybersecurity is a strong enabler for B\u2019s adoption in critical regulatory monitoring environments, as it addresses a key barrier to trust and regulatory acceptance. | Inh(2): At the same time, progress in A can significantly slow B by diverting resources, increasing integration/testing burden, and delaying procurement cycles as compliance becomes a gating factor. The need to meet advanced cybersecurity requirements can slow the rollout and increase the cost of AI/SDR/ORAN systems.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "f73e1de8ec1e",
+      "driver_b_id": "949506c3c6e4",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Robust cybersecurity is a significant enabler for ESC networks and dynamic spectrum sharing, as these systems are highly networked and exposed to cyber threats. Progress in A directly addresses a critical risk for B, making regulators and operators more willing to deploy and trust automated, real-time spectrum sharing systems. | Inh(1): There is minor to moderate resource competition and potential for regulatory distraction: if cybersecurity upgrades consume limited budgets or attention, they could slow or complicate the rollout of ESC networks. However, A does not make B obsolete or directly block its development.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "f73e1de8ec1e",
+      "driver_b_id": "9da500c3abd4",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Advances in cybersecurity for monitoring infrastructure (A) provide critical frameworks, best practices, and technical solutions that can be leveraged when embedding spectrum sensing in AI-native 6G networks (B). Regulatory acceptance of B will depend on demonstrating robust cybersecurity, so progress in A significantly enables B, though A is not a strict prerequisite. | Inh(2): Significant progress in A could divert resources and regulatory attention toward legacy systems, slow innovation in AI-native approaches, and create compliance hurdles for B. Prescriptive cybersecurity standards may delay or partially block B's adoption, and market demand may shift toward proven secure solutions.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "a6a655193dbe"
+      ]
+    },
+    {
+      "driver_a_id": "f73e1de8ec1e",
+      "driver_b_id": "28f017831151",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant enablement: Robust cybersecurity is a key enabler for cross-border and harmonized spectrum monitoring. Without strong cybersecurity, cross-border data sharing and coordination are too risky, especially given nation-state threat actors. Progress in A makes B more feasible and trusted by all parties. | Inh(2): Significant funding/talent diversion and potential standardization friction: Major progress in cybersecurity can divert resources and regulatory focus away from harmonization, and incompatible national cybersecurity requirements can slow or complicate cross-border standardization.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "a6a655193dbe"
+      ]
+    },
+    {
+      "driver_a_id": "f73e1de8ec1e",
+      "driver_b_id": "9150c7269776",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant enablement: Progress in cybersecurity is likely to be a necessary enabler for deploying digital twin networks in spectrum monitoring, as digital twins require secure, reliable access to real-time and historical data and may themselves become high-value targets for cyber attacks. Strong cybersecurity foundations allow digital twins to operate safely and gain regulatory acceptance. | Inh(2): Significant funding/talent diversion and regulatory focus: Increased cybersecurity requirements can divert resources (funding, engineering talent) and regulatory attention away from digital twin development, and may introduce additional integration hurdles or compliance delays for digital twin deployment.",
+      "source_chunk_ids": [
+        "116b040f244d",
+        "bbcd106cb48c"
+      ]
+    },
+    {
+      "driver_a_id": "9150c7269776",
+      "driver_b_id": "ca9ace6bafb0",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Digital Twin Networks (A) require high-fidelity, real-time data from the physical world to function optimally. Progress in A will drive demand for more comprehensive, higher-quality data sources, directly incentivizing the deployment of Ultra Wideband RF Frontends (B) to feed the digital twin with wideband, high-resolution spectrum data, especially as regulatory monitoring expands to mmWave and sub-THz bands. | Inh(1): There is some minor resource competition and potential for partial obsolescence: if A delivers significant value with existing hardware, it could slow or reduce the perceived need for rapid deployment of new ultra-wideband frontends (B), and may divert some R&D and regulatory attention.",
+      "source_chunk_ids": [
+        "b346caa67981",
+        "c2519cd9e984",
+        "982cd1166f26"
+      ]
+    },
+    {
+      "driver_a_id": "9150c7269776",
+      "driver_b_id": "48a044afb0c0",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Digital Twin Networks (A) require high-fidelity, real-time data inputs to accurately model and optimize spectrum environments. Progress in A increases demand for advanced sensing hardware (B) to feed richer, more granular data into the digital twin. Quantum RF sensors and high sensitivity receivers (B) provide the necessary signal quality and coverage, enabling A's self-optimizing and cognitive functions to operate at their full potential. Additionally, digital twins can accelerate the validation and integration of novel sensing technologies (B) by simulating their impact and optimizing deployment strategies. | Inh(1): There is minor resource competition and potential for partial obsolescence: as digital twin networks (A) become more capable, some regulatory monitoring tasks may be handled through software and analytics rather than hardware upgrades, slightly reducing the immediate need for quantum sensing (B). However, A does not directly replace B, and the two are likely to be complementary in most regulatory monitoring scenarios.",
+      "source_chunk_ids": [
+        "28d8ca4efd25",
+        "fa3fdb690ed9",
+        "c2519cd9e984"
+      ]
+    },
+    {
+      "driver_a_id": "9150c7269776",
+      "driver_b_id": "4842454330e8",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Digital Twin Networks (A) require high-fidelity, real-time data to accurately model and optimize physical networks. Progress in A will drive demand for better, faster, and wider-bandwidth data sources, directly incentivizing the development and deployment of advanced real-time digitizers and photonic signal processing (B) to feed the digital twins with richer data. | Inh(1): There is minor resource competition and potential for partial obsolescence if Digital Twin Networks (A) can extract more value from existing hardware, reducing the urgency for new digitizer deployments (B). However, A does not make B obsolete or directly block its development.",
+      "source_chunk_ids": [
+        "bbcd106cb48c",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "9150c7269776",
+      "driver_b_id": "9a3bc0fdb612",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Significant enablement: Digital Twin Networks (A) require high-fidelity, real-time data inputs to function optimally. The ultra-fast, automated scanning capabilities of B can serve as a critical data source for A, improving the accuracy and responsiveness of the digital twin models. Additionally, integration of B's data streams into A's cognitive framework can enhance anomaly detection and network optimization. | Inh(2): Significant funding/talent diversion and partial obsolescence: As A matures, it may absorb monitoring functions that B provides, leading to reduced independent demand for B's standalone scan engines. R&D and regulatory focus may also shift toward digital twin-based solutions, slowing further development or deployment of B.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "bbcd106cb48c",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "9150c7269776",
+      "driver_b_id": "908595a5a7a6",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Digital Twin Networks (A) require high-fidelity, real-time data inputs to accurately model and optimize physical networks. Distributed I/Q data streaming and edge computing (B) can provide these rich data sources, enabling digital twins to function more effectively. Progress in A may drive demand for improved B capabilities to feed the twins, creating significant enablement. | Inh(2): If Digital Twin Networks (A) achieve breakthroughs in real-time, cognitive spectrum monitoring, they may partially replace or reduce the need for distributed I/Q streaming and edge computing (B), especially for offline analysis. This could divert resources and regulatory focus away from B, leading to partial obsolescence and significant competition.",
+      "source_chunk_ids": [
+        "bbcd106cb48c",
+        "2791b93d374d",
+        "a6a655193dbe"
+      ]
+    },
+    {
+      "driver_a_id": "9150c7269776",
+      "driver_b_id": "0c6f77459f97",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Digital Twin Networks (A) can significantly enable B by providing high-fidelity, real-time ground truth data and predictive analytics that can be fused with space-based geolocation outputs. This hybrid approach (noted in Chunk f09a877ff82e) is emerging as the industry direction, where digital twins optimize tasking, validation, and follow-up for satellite-based detections, improving overall accuracy and operational efficiency. | Inh(2): There is significant potential for resource competition and partial obsolescence, especially in regulatory and government markets with limited budgets and slow procurement cycles (Chunk 116b040f244d). If digital twins are prioritized, they could divert funding, talent, and regulatory focus away from space-based direction finding, and in some domains, reduce the need for B.",
+      "source_chunk_ids": [
+        "f09a877ff82e",
+        "116b040f244d"
+      ]
+    },
+    {
+      "driver_a_id": "9150c7269776",
+      "driver_b_id": "748495722079",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Significant enablement: Digital Twin Networks (A) provide a dynamic, high-fidelity simulation and test environment that can accelerate the development, validation, and deployment of AI-driven spectrum sensing and DSA (B). Digital twins can supply rich, labeled data, enable safe testing of new AI models, and facilitate rapid iteration, thereby directly supporting and enhancing B's R&D pipeline. | Inh(1): Minor resource competition and partial obsolescence: While A and B are synergistic, there is some competition for funding and talent, and if A subsumes B's functionality, standalone B solutions may see reduced demand. However, B is not fully replaced or blocked by A, and most inhibiting effects are moderate.",
+      "source_chunk_ids": [
+        "8e50d93cb7ee",
+        "bbcd106cb48c",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "9150c7269776",
+      "driver_b_id": "b9c3a7851f44",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Digital Twin Networks (A) can provide rich, high-quality historical and real-time data, as well as simulation environments, which can significantly enhance the training, validation, and deployment of federated learning models (B). The digital twin infrastructure could facilitate secure, distributed data sharing and model testing, enabling federated learning to operate more efficiently and robustly. | Inh(2): A breakthrough in Digital Twin Networks (A) could divert funding, talent, and regulatory attention away from federated learning (B), and may partially absorb B\u2019s functionality by offering centralized or highly automated spectrum monitoring solutions. This could reduce the perceived need for decentralized federated learning approaches, especially if digital twins prove more effective or easier to integrate with regulatory frameworks.",
+      "source_chunk_ids": [
+        "bbcd106cb48c",
+        "a45f2f413b77"
+      ]
+    },
+    {
+      "driver_a_id": "9150c7269776",
+      "driver_b_id": "ecbcd4440682",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Digital Twin Networks (A) require accurate, real-time data and flexible radio architectures to create and update their models. AI-enabled SDR/ORAN (B) provides the modular, software-driven, and ML-integrated radio platforms needed to supply rich data streams and enable dynamic interaction with digital twins. Progress in A drives demand for B's capabilities, as digital twins depend on real-world SDR/ORAN deployments for validation, feedback, and operational integration. | Inh(1): There is minor resource competition and possible partial obsolescence pressure. Digital Twin Networks may attract regulatory and R&D focus, diverting some funding and talent from SDR/ORAN development. In some cases, digital twins could reduce the need for certain SDR/ORAN upgrades by providing simulation and optimization, but they do not fully replace the need for real-world, modular, AI-enabled radio platforms.",
+      "source_chunk_ids": [
+        "bbcd106cb48c",
+        "229c6a558520",
+        "2791b93d374d"
+      ]
+    },
+    {
+      "driver_a_id": "9150c7269776",
+      "driver_b_id": "949506c3c6e4",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Digital Twin Networks can significantly enable Dynamic Spectrum Sharing and ESC networks by providing advanced simulation, predictive analytics, and optimization tools. These capabilities can improve the design, deployment, and real-time operation of ESC networks, making spectrum sharing more efficient and adaptive. | Inh(2): Significant progress in Digital Twin Networks could divert resources and regulatory attention away from ESC networks, and may partially replace the need for physical, distributed sensing if digital twins can deliver equivalent or superior monitoring and enforcement capabilities.",
+      "source_chunk_ids": [
+        "bbcd106cb48c",
+        "b346caa67981"
+      ]
+    },
+    {
+      "driver_a_id": "9150c7269776",
+      "driver_b_id": "9da500c3abd4",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Digital Twin Networks (A) provide a rich source of historical and real-time data, simulation environments, and cognitive intelligence that can be leveraged by AI-native 6G networks (B) to train, validate, and optimize embedded spectrum sensing algorithms. Digital twins can accelerate development, testing, and deployment of AI-driven spectrum sensing by providing synthetic data, anomaly detection, and feedback loops. | Inh(1): There is minor resource competition and potential for partial obsolescence: progress in digital twins may divert funding and talent from embedded spectrum sensing, and if digital twins are sufficiently advanced, they may reduce the perceived need for direct embedding of spectrum sensing in 6G infrastructure. However, the two approaches are likely to be complementary rather than fully substitutive.",
+      "source_chunk_ids": [
+        "bbcd106cb48c",
+        "229c6a558520"
+      ]
+    },
+    {
+      "driver_a_id": "9150c7269776",
+      "driver_b_id": "28f017831151",
+      "impact_score": 0,
+      "reasoning": "Pro(2): Digital Twin Networks can significantly enable harmonized spectrum monitoring coordination by providing advanced, real-time intelligence and data sharing capabilities. Their cognitive and self-optimizing features could facilitate cross-border coordination, support dynamic spectrum management, and enhance compliance verification, aligning with European regulatory trends for more dynamic and automated monitoring. | Inh(2): Progress in Digital Twin Networks could significantly divert resources (funding, talent) from harmonized spectrum monitoring initiatives, and their embedded, automated monitoring may partially obsolete traditional harmonized equipment and approaches. There is also a risk of standards misalignment, which could hinder B's development.",
+      "source_chunk_ids": [
+        "a6a655193dbe",
+        "bbcd106cb48c"
+      ]
+    },
+    {
+      "driver_a_id": "9150c7269776",
+      "driver_b_id": "f73e1de8ec1e",
+      "impact_score": 1,
+      "reasoning": "Pro(2): Digital Twin Networks provide real-time, comprehensive visibility and intelligence about network state, which can significantly enable advanced cybersecurity monitoring and anomaly detection. They allow for simulation and testing of cybersecurity measures in a virtual environment before deployment, and their cognitive capabilities can help identify and respond to novel threats more quickly. | Inh(1): There is minor resource competition and potential partial obsolescence: as Digital Twin Networks absorb monitoring and anomaly detection functions, some traditional cybersecurity approaches may be sidelined or lose funding. However, cybersecurity requirements remain critical and are likely to evolve alongside Digital Twin Networks rather than being fully replaced.",
+      "source_chunk_ids": [
+        "bbcd106cb48c",
+        "116b040f244d"
+      ]
+    }
+  ],
+  "influence": {
+    "ca9ace6bafb0": 11,
+    "48a044afb0c0": 5,
+    "4842454330e8": 10,
+    "9a3bc0fdb612": 4,
+    "908595a5a7a6": 7,
+    "0c6f77459f97": -1,
+    "748495722079": 6,
+    "b9c3a7851f44": 4,
+    "ecbcd4440682": 5,
+    "949506c3c6e4": 3,
+    "9da500c3abd4": -9,
+    "28f017831151": 9,
+    "f73e1de8ec1e": 0,
+    "9150c7269776": 7
+  },
+  "dependence": {
+    "ca9ace6bafb0": 6,
+    "48a044afb0c0": -10,
+    "4842454330e8": -2,
+    "9a3bc0fdb612": 2,
+    "908595a5a7a6": -2,
+    "0c6f77459f97": 4,
+    "748495722079": 11,
+    "b9c3a7851f44": 6,
+    "ecbcd4440682": 11,
+    "949506c3c6e4": 5,
+    "9da500c3abd4": 1,
+    "28f017831151": 7,
+    "f73e1de8ec1e": 12,
+    "9150c7269776": 10
+  }
+}

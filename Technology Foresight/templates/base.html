@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Technology Foresight{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="{{ url_for('index') }}" class="logo">
+        <span class="logo-mark">TF</span>
+        <span class="logo-text">Technology Foresight</span>
+      </a>
+      <p class="tagline">BERTopic clustering · evolution signals · scenario planning</p>
+    </div>
+  </header>
+  <main class="main-content">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="site-footer">
+    <p>DI Lab — corpus-driven technology intelligence</p>
+  </footer>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

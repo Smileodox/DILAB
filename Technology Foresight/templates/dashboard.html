@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — Technology Foresight{% endblock %}
+
+{% block head %}
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="dashboard-header">
+  <div>
+    <h1>Analysis dashboard</h1>
+    <p class="lead">Job <code class="mono">{{ job_id }}</code></p>
+    <p id="foresight-context" class="foresight-context muted"></p>
+  </div>
+  <a href="{{ url_for('index') }}" class="btn btn-secondary">New analysis</a>
+</section>
+
+<nav class="tab-nav" role="tablist">
+  <button class="tab-btn active" data-tab="clusters" role="tab">Topic Clusters</button>
+  <button class="tab-btn" data-tab="evolution" role="tab">Evolution</button>
+  <button class="tab-btn" data-tab="reasoning" role="tab">Causal Reasoning</button>
+  <button class="tab-btn" data-tab="scenarios" role="tab">Scenarios</button>
+</nav>
+
+<div class="tab-panels">
+  <div id="tab-clusters" class="tab-panel active" role="tabpanel">
+    {% include "partials/clusters_panel.html" %}
+  </div>
+  <div id="tab-evolution" class="tab-panel" role="tabpanel">
+    {% include "partials/evolution_panel.html" %}
+  </div>
+  <div id="tab-reasoning" class="tab-panel" role="tabpanel">
+    {% include "partials/reasoning_panel.html" %}
+  </div>
+  <div id="tab-scenarios" class="tab-panel" role="tabpanel">
+    {% include "partials/scenarios_panel.html" %}
+  </div>
+</div>
+
+<script id="result-data" type="application/json">{{ result_json | safe }}</script>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/cluster_map.js') }}"></script>
+<script src="{{ url_for('static', filename='js/timeline.js') }}"></script>
+<script src="{{ url_for('static', filename='js/impact_tree.js') }}"></script>
+<script>
+  const RESULT = JSON.parse(document.getElementById('result-data').textContent);
+  const foresightEl = document.getElementById('foresight-context');
+  if (foresightEl) {
+    const f = RESULT.foresight || {};
+    const parts = [];
+    if (f.topic_label) parts.push(`Focus: ${f.topic_label}`);
+    if (f.horizon_year) parts.push(`Horizon: ${f.horizon_year}`);
+    if (RESULT.scholar_query && !f.topic_label) parts.push(`Query: ${RESULT.scholar_query}`);
+    foresightEl.textContent = parts.length ? parts.join(' · ') : '';
+  }
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      window.dispatchEvent(new CustomEvent('tabshown', { detail: { tab: btn.dataset.tab } }));
+    });
+  });
+  initClusterMap(RESULT);
+  initTimeline(RESULT);
+  initReasoning(RESULT);
+  initScenarios(RESULT);
+</script>
+{% endblock %}

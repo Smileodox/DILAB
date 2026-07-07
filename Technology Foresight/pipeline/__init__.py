@@ -1,0 +1,1 @@
+"""Technology foresight analysis pipeline."""

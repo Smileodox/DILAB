@@ -1,0 +1,1902 @@
+{
+  "job_id": "e670bc9152e6",
+  "document_count": 20,
+  "documents": [
+    {
+      "title": "Deep Learning Based Situation Awareness for Multiple Missiles Evasion",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 2,
+      "arxiv_id": "2402.10101v1"
+    },
+    {
+      "title": "Cruise Missile Target Trajectory Movement Prediction based on Optimal 3D Kalman Filter with Firefly Algorithm",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1807.07006v1"
+    },
+    {
+      "title": "Robust control for uncertain air-to-air missile systems",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2411.07593v1"
+    },
+    {
+      "title": "Advanced Prediction of Hypersonic Missile Trajectories with CNN-LSTM-GRU Architectures",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2506.15043v1"
+    },
+    {
+      "title": "Automatic planetary defense Deflecting NEOs by missiles shot from L1 and L3 (Earth-Moon)",
+      "source": "arxiv",
+      "year": 2021,
+      "topic_id": 0,
+      "arxiv_id": "2103.13304v1"
+    },
+    {
+      "title": "Advancing Network Securing Strategies with Network Algorithms for Integrated Air Defense System (IADS) Missile Batteries",
+      "source": "arxiv",
+      "year": 2023,
+      "topic_id": 1,
+      "arxiv_id": "2303.11293v3"
+    },
+    {
+      "title": "Future state prediction based on observer for missile system",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2411.08576v1"
+    },
+    {
+      "title": "Learning-Based Multi-Stage Strategy for a Fixed-Wing Aircraft to Evade a Missile Detected at a Short Distance",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2511.05828v1"
+    },
+    {
+      "title": "A Multi-Layer Electronic and Cyber Interference Model for AI-Driven Cruise Missiles: The Case of Khuzestan Province",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 2,
+      "arxiv_id": "2510.03542v1"
+    },
+    {
+      "title": "Energy-Optimal Control of a Submarine-Launched Cruise Missile",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 0,
+      "arxiv_id": "2008.08068v1"
+    },
+    {
+      "title": "Homing missile guidance law with imperfect measurements and imperfect information about the system",
+      "source": "arxiv",
+      "year": 2012,
+      "topic_id": 0,
+      "arxiv_id": "1210.2933v1"
+    },
+    {
+      "title": "Cooperative guidance of multiple missiles: a hybrid co-evolutionary approach",
+      "source": "arxiv",
+      "year": 2022,
+      "topic_id": 1,
+      "arxiv_id": "2208.07156v2"
+    },
+    {
+      "title": "Adaptive Scale Factor Compensation for Missiles with Strapdown Seekers via Predictive Coding",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 0,
+      "arxiv_id": "2009.00975v2"
+    },
+    {
+      "title": "A potential missile guidance law based-on chaos",
+      "source": "arxiv",
+      "year": 2023,
+      "topic_id": 0,
+      "arxiv_id": "2312.10011v1"
+    },
+    {
+      "title": "Armoured Fighting Vehicle Team Performance Prediction against Missile Attacks with Directed Energy Weapons",
+      "source": "arxiv",
+      "year": 2021,
+      "topic_id": 1,
+      "arxiv_id": "2106.14381v1"
+    },
+    {
+      "title": "Modelling and Control of Subsonic Missile for Air-to-Air Interception",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2411.07594v3"
+    },
+    {
+      "title": "Formation control with connectivity assurance for missile swarm: a natural co-evolutionary strategy approach",
+      "source": "arxiv",
+      "year": 2022,
+      "topic_id": 1,
+      "arxiv_id": "2208.11347v1"
+    },
+    {
+      "title": "Real-Time Surface-to-Air Missile Engagement Zone Prediction Using Simulation and Machine Learning",
+      "source": "arxiv",
+      "year": 2023,
+      "topic_id": 2,
+      "arxiv_id": "2311.11905v2"
+    },
+    {
+      "title": "Integrated and Adaptive Guidance and Control for Endoatmospheric Missiles via Reinforcement Learning",
+      "source": "arxiv",
+      "year": 2021,
+      "topic_id": 0,
+      "arxiv_id": "2109.03880v6"
+    },
+    {
+      "title": "Missile detection and destruction robot using detection algorithm",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2407.07452v2"
+    }
+  ],
+  "clusters": [
+    {
+      "topic_id": 0,
+      "count": 9,
+      "keywords": [
+        "cruise",
+        "trajectory",
+        "seeker",
+        "air-to-air",
+        "strapdown",
+        "autopilot",
+        "missile guidance",
+        "range",
+        "guidance control",
+        "requirements"
+      ],
+      "label": "cruise, trajectory, seeker, air-to-air",
+      "lifecycle_stage": "growth",
+      "stage_color": "#2563EB",
+      "lifecycle_explanation": "Rapid uptake: yearly counts are rising on the fitted S-curve upswing.",
+      "lifecycle_llm": "In the growth stage, cruise\u2011trajectory seeker systems for air\u2011to\u2011air missiles are seeing accelerated adoption as defense programs integrate strapdown inertial navigation and advanced autopilot algorithms to extend engagement range and improve hit probability. Funding is rising from both government modernization budgets and private\u2011sector R&D, driven by emerging standards such as NATO\u2019s STANAG\u202f4671 for seeker interfaces and open\u2011architecture missile guidance frameworks. These drivers are expanding the supplier",
+      "source_breakdown": {
+        "arxiv": 13,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13,
+        15,
+        18,
+        19
+      ]
+    },
+    {
+      "topic_id": 1,
+      "count": 4,
+      "keywords": [
+        "strategy",
+        "air defense",
+        "multiple missiles",
+        "protection",
+        "survivability",
+        "attack",
+        "optimal",
+        "control",
+        "adaptive",
+        "guidance law"
+      ],
+      "label": "strategy, air defense, multiple missiles, protection",
+      "lifecycle_stage": "maturity",
+      "stage_color": "#9333EA",
+      "lifecycle_explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate.",
+      "lifecycle_llm": "Survivability and optimal control are part of the maturity aspects. At maturity, these aspects are more refined. So the first sentence should state that the maturity stage indicates a well-established system with optimized features",
+      "source_breakdown": {
+        "arxiv": 4,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        5,
+        11,
+        14,
+        16
+      ]
+    },
+    {
+      "topic_id": 2,
+      "count": 3,
+      "keywords": [
+        "sam",
+        "cruise missiles",
+        "simulations",
+        "range",
+        "deep learning",
+        "real time",
+        "air defense",
+        "missile threats",
+        "missile accuracy",
+        "capabilities"
+      ],
+      "label": "sam, cruise missiles, simulations, range",
+      "lifecycle_stage": "maturity",
+      "stage_color": "#9333EA",
+      "lifecycle_explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate.",
+      "lifecycle_llm": "In the maturity stage, SAM and cruise missile defense systems are transitioning from experimental integration to standardized, high-reliability operational deployment. The lifecycle is driven by the widespread adoption of deep learning for real-time threat detection and the scaling of high-fidelity simulations to extend engagement ranges against complex missile threats. Increased defense funding and the establishment of interoperability standards for automated air defense networks are cementing these technologies as foundational components of modern integrated combat systems.",
+      "source_breakdown": {
+        "arxiv": 3,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        0,
+        8,
+        17
+      ]
+    }
+  ],
+  "scatter": {
+    "points": [
+      {
+        "doc_index": 0,
+        "topic_id": 2,
+        "x": 5.244899272918701,
+        "y": 5.595848083496094,
+        "preview": "Deep Learning Based Situation Awareness for Multiple Missiles Evasion  As the effective range of air-to-air missiles inc",
+        "title": "Deep Learning Based Situation Awareness for Multiple Missiles Evasion",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 1,
+        "topic_id": 0,
+        "x": 4.097133636474609,
+        "y": 3.80289626121521,
+        "preview": "Cruise Missile Target Trajectory Movement Prediction based on Optimal 3D Kalman Filter with Firefly Algorithm  It is hop",
+        "title": "Cruise Missile Target Trajectory Movement Prediction based on Optimal 3D Kalman ",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 2,
+        "topic_id": 0,
+        "x": 3.0562562942504883,
+        "y": 3.56563663482666,
+        "preview": "Robust control for uncertain air-to-air missile systems  Air-to-air missiles are used on many modern military combat air",
+        "title": "Robust control for uncertain air-to-air missile systems",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 3,
+        "topic_id": 0,
+        "x": 4.895768165588379,
+        "y": 5.3044753074646,
+        "preview": "Advanced Prediction of Hypersonic Missile Trajectories with CNN-LSTM-GRU Architectures  Advancements in the defense indu",
+        "title": "Advanced Prediction of Hypersonic Missile Trajectories with CNN-LSTM-GRU Archite",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 4,
+        "topic_id": 0,
+        "x": 4.746808052062988,
+        "y": 2.8963773250579834,
+        "preview": "Automatic planetary defense Deflecting NEOs by missiles shot from L1 and L3 (Earth-Moon)  We develop the mathematical th",
+        "title": "Automatic planetary defense Deflecting NEOs by missiles shot from L1 and L3 (Ear",
+        "source": "arxiv",
+        "year": 2021
+      },
+      {
+        "doc_index": 5,
+        "topic_id": 1,
+        "x": 5.838604927062988,
+        "y": 4.314900875091553,
+        "preview": "Advancing Network Securing Strategies with Network Algorithms for Integrated Air Defense System (IADS) Missile Batteries",
+        "title": "Advancing Network Securing Strategies with Network Algorithms for Integrated Air",
+        "source": "arxiv",
+        "year": 2023
+      },
+      {
+        "doc_index": 6,
+        "topic_id": 0,
+        "x": 3.5753495693206787,
+        "y": 3.667177200317383,
+        "preview": "Future state prediction based on observer for missile system  Guided missile accuracy and precision is negatively impact",
+        "title": "Future state prediction based on observer for missile system",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 7,
+        "topic_id": 0,
+        "x": 4.747079372406006,
+        "y": 4.508333683013916,
+        "preview": "Learning-Based Multi-Stage Strategy for a Fixed-Wing Aircraft to Evade a Missile Detected at a Short Distance  Missiles ",
+        "title": "Learning-Based Multi-Stage Strategy for a Fixed-Wing Aircraft to Evade a Missile",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 8,
+        "topic_id": 2,
+        "x": 5.649615287780762,
+        "y": 5.0152435302734375,
+        "preview": "A Multi-Layer Electronic and Cyber Interference Model for AI-Driven Cruise Missiles: The Case of Khuzestan Province  The",
+        "title": "A Multi-Layer Electronic and Cyber Interference Model for AI-Driven Cruise Missi",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 9,
+        "topic_id": 0,
+        "x": 3.080695152282715,
+        "y": 4.212435722351074,
+        "preview": "Energy-Optimal Control of a Submarine-Launched Cruise Missile  A typical mission profile of submarine-launched cruise mi",
+        "title": "Energy-Optimal Control of a Submarine-Launched Cruise Missile",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 10,
+        "topic_id": 0,
+        "x": 3.18249249458313,
+        "y": 2.81408953666687,
+        "preview": "Homing missile guidance law with imperfect measurements and imperfect information about the system  In this study, the g",
+        "title": "Homing missile guidance law with imperfect measurements and imperfect informatio",
+        "source": "arxiv",
+        "year": 2012
+      },
+      {
+        "doc_index": 11,
+        "topic_id": 1,
+        "x": 5.239362716674805,
+        "y": 3.469092845916748,
+        "preview": "Cooperative guidance of multiple missiles: a hybrid co-evolutionary approach  Cooperative guidance of multiple missiles ",
+        "title": "Cooperative guidance of multiple missiles: a hybrid co-evolutionary approach",
+        "source": "arxiv",
+        "year": 2022
+      },
+      {
+        "doc_index": 12,
+        "topic_id": 0,
+        "x": 3.7114195823669434,
+        "y": 4.479556083679199,
+        "preview": "Adaptive Scale Factor Compensation for Missiles with Strapdown Seekers via Predictive Coding  In this work we present a ",
+        "title": "Adaptive Scale Factor Compensation for Missiles with Strapdown Seekers via Predi",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 13,
+        "topic_id": 0,
+        "x": 3.776888608932495,
+        "y": 2.930475950241089,
+        "preview": "A potential missile guidance law based-on chaos  An important field of research in defense-related technology is the des",
+        "title": "A potential missile guidance law based-on chaos",
+        "source": "arxiv",
+        "year": 2023
+      },
+      {
+        "doc_index": 14,
+        "topic_id": 1,
+        "x": 5.362452030181885,
+        "y": 4.1533203125,
+        "preview": "Armoured Fighting Vehicle Team Performance Prediction against Missile Attacks with Directed Energy Weapons  A recent stu",
+        "title": "Armoured Fighting Vehicle Team Performance Prediction against Missile Attacks wi",
+        "source": "arxiv",
+        "year": 2021
+      },
+      {
+        "doc_index": 15,
+        "topic_id": 0,
+        "x": 2.4658727645874023,
+        "y": 3.812260389328003,
+        "preview": "Modelling and Control of Subsonic Missile for Air-to-Air Interception  Subsonic missiles play an important role in moder",
+        "title": "Modelling and Control of Subsonic Missile for Air-to-Air Interception",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 16,
+        "topic_id": 1,
+        "x": 5.852206230163574,
+        "y": 3.65634822845459,
+        "preview": "Formation control with connectivity assurance for missile swarm: a natural co-evolutionary strategy approach  Formation ",
+        "title": "Formation control with connectivity assurance for missile swarm: a natural co-ev",
+        "source": "arxiv",
+        "year": 2022
+      },
+      {
+        "doc_index": 17,
+        "topic_id": 2,
+        "x": 5.75502872467041,
+        "y": 5.5917744636535645,
+        "preview": "Real-Time Surface-to-Air Missile Engagement Zone Prediction Using Simulation and Machine Learning  Surface-to-Air Missil",
+        "title": "Real-Time Surface-to-Air Missile Engagement Zone Prediction Using Simulation and",
+        "source": "arxiv",
+        "year": 2023
+      },
+      {
+        "doc_index": 18,
+        "topic_id": 0,
+        "x": 3.8246281147003174,
+        "y": 5.02708625793457,
+        "preview": "Integrated and Adaptive Guidance and Control for Endoatmospheric Missiles via Reinforcement Learning  We apply a reinfor",
+        "title": "Integrated and Adaptive Guidance and Control for Endoatmospheric Missiles via Re",
+        "source": "arxiv",
+        "year": 2021
+      },
+      {
+        "doc_index": 19,
+        "topic_id": 0,
+        "x": 4.243622779846191,
+        "y": 3.2430543899536133,
+        "preview": "Missile detection and destruction robot using detection algorithm  This research is based on the present missile detecti",
+        "title": "Missile detection and destruction robot using detection algorithm",
+        "source": "arxiv",
+        "year": 2024
+      }
+    ],
+    "why": "Documents were embedded with all-MiniLM-L6-v2, projected with UMAP, and grouped by BERTopic (HDBSCAN + c-TF-IDF). Topic labels use an English + academic stop-word list, bigrams, reduced-frequent-word c-TF-IDF, and Maximal Marginal Relevance so keywords highlight technology terms\u2014not function words like \u201cthe\u201d or \u201cof\u201d."
+  },
+  "evolution": {
+    "timeline": {
+      "2": [
+        {
+          "year": 2023,
+          "count": 1
+        },
+        {
+          "year": 2024,
+          "count": 1
+        },
+        {
+          "year": 2025,
+          "count": 1
+        }
+      ],
+      "0": [
+        {
+          "year": 2012,
+          "count": 1
+        },
+        {
+          "year": 2018,
+          "count": 1
+        },
+        {
+          "year": 2020,
+          "count": 2
+        },
+        {
+          "year": 2021,
+          "count": 2
+        },
+        {
+          "year": 2023,
+          "count": 1
+        },
+        {
+          "year": 2024,
+          "count": 4
+        },
+        {
+          "year": 2025,
+          "count": 2
+        }
+      ],
+      "1": [
+        {
+          "year": 2021,
+          "count": 1
+        },
+        {
+          "year": 2022,
+          "count": 2
+        },
+        {
+          "year": 2023,
+          "count": 1
+        }
+      ]
+    },
+    "lifecycle": {
+      "2": {
+        "stage": "maturity",
+        "params": {
+          "L": 1.9900171677515814,
+          "k": 0.010000000000000002,
+          "t0": 4.814427653958373e-07
+        },
+        "fitted": [
+          [
+            2023,
+            0.9950085814805921
+          ],
+          [
+            2023,
+            0.9955322701605935
+          ],
+          [
+            2023,
+            0.9960559585504629
+          ],
+          [
+            2023,
+            0.9965796463600712
+          ],
+          [
+            2023,
+            0.997103333299287
+          ],
+          [
+            2023,
+            0.9976270190779823
+          ],
+          [
+            2023,
+            0.9981507034060302
+          ],
+          [
+            2023,
+            0.9986743859933103
+          ],
+          [
+            2023,
+            0.999198066549703
+          ],
+          [
+            2023,
+            0.9997217447850945
+          ],
+          [
+            2024,
+            1.0002454204093743
+          ],
+          [
+            2024,
+            1.0007690931324416
+          ],
+          [
+            2024,
+            1.0012927626641988
+          ],
+          [
+            2024,
+            1.001816428714556
+          ],
+          [
+            2024,
+            1.0023400909934297
+          ],
+          [
+            2024,
+            1.0028637492107493
+          ],
+          [
+            2024,
+            1.003387403076449
+          ],
+          [
+            2024,
+            1.0039110523004733
+          ],
+          [
+            2024,
+            1.0044346965927768
+          ],
+          [
+            2025,
+            1.004958335663328
+          ]
+        ],
+        "explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate."
+      },
+      "0": {
+        "stage": "growth",
+        "params": {
+          "L": 12.389061819135295,
+          "k": 0.10218550075301189,
+          "t0": 25.999999996555406
+        },
+        "fitted": [
+          [
+            2012,
+            0.8123473100827457
+          ],
+          [
+            2012,
+            0.8670591014239157
+          ],
+          [
+            2013,
+            0.9251612677984544
+          ],
+          [
+            2014,
+            0.986823433429513
+          ],
+          [
+            2014,
+            1.052218174596674
+          ],
+          [
+            2015,
+            1.1215202407336633
+          ],
+          [
+            2016,
+            1.1949056451555422
+          ],
+          [
+            2016,
+            1.2725506170729148
+          ],
+          [
+            2017,
+            1.35463040766089
+          ],
+          [
+            2018,
+            1.4413179444767592
+          ],
+          [
+            2018,
+            1.5327823305111608
+          ],
+          [
+            2019,
+            1.6291871866582917
+          ],
+          [
+            2020,
+            1.7306888394314244
+          ],
+          [
+            2020,
+            1.8374343593537654
+          ],
+          [
+            2021,
+            1.9495594596185457
+          ],
+          [
+            2022,
+            2.0671862693162693
+          ],
+          [
+            2022,
+            2.190421000713826
+          ],
+          [
+            2023,
+            2.3193515356565184
+          ],
+          [
+            2024,
+            2.454044962022035
+          ],
+          [
+            2025,
+            2.594545097117912
+          ]
+        ],
+        "explanation": "Rapid uptake: yearly counts are rising on the fitted S-curve upswing."
+      },
+      "1": {
+        "stage": "maturity",
+        "params": {
+          "L": 2.653356551825123,
+          "k": 0.010000000000000002,
+          "t0": 2.1102934176812135e-05
+        },
+        "fitted": [
+          [
+            2021,
+            1.32667813592854
+          ],
+          [
+            2021,
+            1.3273763875882696
+          ],
+          [
+            2021,
+            1.3280746388612328
+          ],
+          [
+            2021,
+            1.3287728893605901
+          ],
+          [
+            2021,
+            1.3294711386994997
+          ],
+          [
+            2021,
+            1.3301693864911242
+          ],
+          [
+            2021,
+            1.3308676323486275
+          ],
+          [
+            2021,
+            1.331565875885183
+          ],
+          [
+            2021,
+            1.332264116713964
+          ],
+          [
+            2021,
+            1.3329623544481517
+          ],
+          [
+            2022,
+            1.333660588700933
+          ],
+          [
+            2022,
+            1.334358819085506
+          ],
+          [
+            2022,
+            1.335057045215074
+          ],
+          [
+            2022,
+            1.3357552667028505
+          ],
+          [
+            2022,
+            1.336453483162058
+          ],
+          [
+            2022,
+            1.337151694205935
+          ],
+          [
+            2022,
+            1.3378498994477266
+          ],
+          [
+            2022,
+            1.3385480985006932
+          ],
+          [
+            2022,
+            1.339246290978107
+          ],
+          [
+            2023,
+            1.339944476493259
+          ]
+        ],
+        "explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate."
+      }
+    },
+    "events": [
+      {
+        "year": 2012,
+        "topic_id": 0,
+        "type": "emerge",
+        "keywords": [
+          "cruise",
+          "trajectory",
+          "seeker",
+          "air-to-air",
+          "strapdown",
+          "autopilot",
+          "missile guidance",
+          "range",
+          "guidance control",
+          "requirements"
+        ],
+        "count": 1,
+        "why": "Topic 0 first appears in 2012 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "MEMS technology was advancing, allowing smaller, more precise sensors. For the 5-year impact, from 2012 to 2017, these technologies would have been integrated into military systems, leading to more accurate missiles. Also, the growth stage implies increasing research and development, so more",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2020,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "cruise",
+          "trajectory",
+          "seeker",
+          "air-to-air",
+          "strapdown",
+          "autopilot",
+          "missile guidance",
+          "range",
+          "guidance control",
+          "requirements"
+        ],
+        "count": 2,
+        "why": "Publication volume for topic 0 rose 1\u21922 (100% YoY).",
+        "llm_explanation": "The event was driven by evolving cruise and trajectory modeling in autonomous systems. The influence of autopilot and missile guidance technologies is evident, highlighting their growing role in advanced cruise applications. Over the next five years, this trend could significantly accelerate industry adoption of integrated air-to-air and strapdown navigation solutions.",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2021,
+        "topic_id": 1,
+        "type": "emerge",
+        "keywords": [
+          "strategy",
+          "air defense",
+          "multiple missiles",
+          "protection",
+          "survivability",
+          "attack",
+          "optimal",
+          "control",
+          "adaptive",
+          "guidance law"
+        ],
+        "count": 1,
+        "why": "Topic 1 first appears in 2021 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "The event was driven by a shift in strategic priorities emphasizing optimal air defense systems with enhanced protection and survivability. The influence of advanced simulation tools significantly shaped this emerging trend. Over the next five years, this will push industry to prioritize adaptive control solutions and next-gen missile defense technologies.",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2022,
+        "topic_id": 1,
+        "type": "grow",
+        "keywords": [
+          "strategy",
+          "air defense",
+          "multiple missiles",
+          "protection",
+          "survivability",
+          "attack",
+          "optimal",
+          "control",
+          "adaptive",
+          "guidance law"
+        ],
+        "count": 2,
+        "why": "Publication volume for topic 1 rose 1\u21922 (100% YoY).",
+        "llm_explanation": "The surge in research stems from the increasing vulnerability of traditional defense assets to saturation attacks involving coordinated multi-missile volleys. This trend is driven by the integration of Reinforcement Learning (RL) for real-time optimal control and trajectory interception optimization. Over the next five years, R&D will shift from reactive hardware deployment to autonomous, software-defined defensive swarms capable of dynamic resource allocation during high-density missile saturation.",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2023,
+        "topic_id": 2,
+        "type": "emerge",
+        "keywords": [
+          "sam",
+          "cruise missiles",
+          "simulations",
+          "range",
+          "deep learning",
+          "real time",
+          "air defense",
+          "missile threats",
+          "missile accuracy",
+          "capabilities"
+        ],
+        "count": 1,
+        "why": "Topic 2 first appears in 2023 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "ROOT CAUSE \u2014 The emergence of cruise missile simulations in 2023 reflects heightened geopolitical tensions and increased focus on asymmetric threats, particularly in air defense strategies. INFLUENCING TECHNOLOGY \u2014 Deep learning-driven real-time simulation platforms enabled more accurate modeling of missile trajectories and countermeasure effectiveness. 5-YEAR IMPACT \u2014 This will drive R&D investment in adaptive air defense systems, accelerating the development of AI-integrated missile detection and interception technologies for military and defense industries.",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2024,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "cruise",
+          "trajectory",
+          "seeker",
+          "air-to-air",
+          "strapdown",
+          "autopilot",
+          "missile guidance",
+          "range",
+          "guidance control",
+          "requirements"
+        ],
+        "count": 4,
+        "why": "Publication volume for topic 0 rose 1\u21924 (300% YoY).",
+        "llm_explanation": "The 300% YoY surge in 2024 publications traces to accelerated near-peer modernization of air-to-air and cruise-missile kill chains, where strapdown fiber-optic gyro inertial measurement units are being fused with imaging infrared seekers to stabilize beyond-visual-range trajectories. Within five years, this convergence will push the defense industry toward modular, open-architecture autopilot firmware and AI-enhanced terminal guidance, compressing R&D timelines for low-cost, long-range precision munitions.",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2025,
+        "topic_id": 1,
+        "type": "die",
+        "keywords": [
+          "strategy",
+          "air defense",
+          "multiple missiles",
+          "protection",
+          "survivability",
+          "attack",
+          "optimal",
+          "control",
+          "adaptive",
+          "guidance law"
+        ],
+        "why": "Topic 1 had no publications in 2025 after prior activity\u2014treated as decline/die-off.",
+        "llm_explanation": "Since it's about air defense, maybe something like AI-driven systems or hypersonic weapons. Or perhaps machine learning for better prediction and interception. For the 5-year impact, if the topic is declining, what does that mean?",
+        "llm_source": "openrouter"
+      }
+    ],
+    "why": "Per-topic yearly counts were fitted to a logistic S-curve to assign lifecycle stages. Change events are detected by diffing topic presence and volume across years and measuring keyword overlap between co-active clusters.",
+    "weak_signals": []
+  },
+  "reasoning": {
+    "influence": [
+      {
+        "from": "Trajectory",
+        "to": "Sam",
+        "relation": "enables",
+        "reason": "simulations",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Trajectory",
+        "to": "Air Defense",
+        "relation": "enables",
+        "reason": "multiple missiles",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Seeker",
+        "to": "Strapdown",
+        "relation": "enables",
+        "reason": "specific reason; improves targeting precision under dynamic flight conditions.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Trajectory",
+        "to": "Cruise",
+        "relation": "enables",
+        "reason": "seeker",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Air Defense",
+        "to": "Protection",
+        "relation": "enables",
+        "reason": "survivability",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Sam",
+        "to": "Cruise Missiles",
+        "relation": "displaces",
+        "reason": "specific reason; leverages advanced simulation tools for optimization.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Trajectory",
+        "to": "Air-to-Air",
+        "relation": "displaces",
+        "reason": "seeker",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Strapdown",
+        "to": "Multiple Missiles",
+        "relation": "displaces",
+        "reason": "specific reason; increases effectiveness through distributed engagement.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Protection",
+        "to": "Survivability",
+        "relation": "displaces",
+        "reason": "specific reason; integrates AI-driven threat assessment for better outcomes.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      }
+    ],
+    "sao": {
+      "2": {
+        "triples": [
+          {
+            "subject": "it",
+            "action": "become",
+            "object": "range"
+          },
+          {
+            "subject": "we",
+            "action": "propose",
+            "object": "work"
+          },
+          {
+            "subject": "work",
+            "action": "focus",
+            "object": "threat"
+          },
+          {
+            "subject": "method",
+            "action": "propose",
+            "object": "Networks"
+          },
+          {
+            "subject": "result",
+            "action": "demonstrate",
+            "object": "missile"
+          },
+          {
+            "subject": "Model",
+            "action": "drive",
+            "object": "missile"
+          },
+          {
+            "subject": "missile",
+            "action": "drive",
+            "object": "algorithm"
+          },
+          {
+            "subject": "we",
+            "action": "propose",
+            "object": "paper"
+          },
+          {
+            "subject": "result",
+            "action": "derive",
+            "object": "run"
+          },
+          {
+            "subject": "deviation",
+            "action": "interference",
+            "object": "increase"
+          },
+          {
+            "subject": "rate",
+            "action": "reduce",
+            "object": "92.7"
+          },
+          {
+            "subject": "consumption",
+            "action": "rise",
+            "object": "strategy"
+          },
+          {
+            "subject": "framework",
+            "action": "propose",
+            "object": "improvement"
+          },
+          {
+            "subject": "Prediction",
+            "action": "use",
+            "object": "Missile"
+          },
+          {
+            "subject": "aspect",
+            "action": "engage",
+            "object": "effectiveness"
+          },
+          {
+            "subject": "EZ",
+            "action": "relate",
+            "object": "range"
+          },
+          {
+            "subject": "computation",
+            "action": "involve",
+            "object": "EZ"
+          },
+          {
+            "subject": "study",
+            "action": "investigate",
+            "object": "light"
+          },
+          {
+            "subject": "we",
+            "action": "leverage",
+            "object": "dataset"
+          },
+          {
+            "subject": "it",
+            "action": "accelerate",
+            "object": "simulation"
+          },
+          {
+            "subject": "study",
+            "action": "include",
+            "object": "analysis"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "propose",
+            "count": 4
+          },
+          {
+            "action": "drive",
+            "count": 2
+          },
+          {
+            "action": "become",
+            "count": 1
+          },
+          {
+            "action": "focus",
+            "count": 1
+          },
+          {
+            "action": "demonstrate",
+            "count": 1
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "0": {
+        "triples": [
+          {
+            "subject": "Prediction",
+            "action": "base",
+            "object": "Filter"
+          },
+          {
+            "subject": "research",
+            "action": "try",
+            "object": "method"
+          },
+          {
+            "subject": "it",
+            "action": "expect",
+            "object": "evaluation"
+          },
+          {
+            "subject": "control",
+            "action": "use",
+            "object": "air"
+          },
+          {
+            "subject": "it",
+            "action": "use",
+            "object": "pilot"
+          },
+          {
+            "subject": "goal",
+            "action": "achieve",
+            "object": "system"
+          },
+          {
+            "subject": "combination",
+            "action": "vary",
+            "object": "angle"
+          },
+          {
+            "subject": "system",
+            "action": "base",
+            "object": "control"
+          },
+          {
+            "subject": "compensator",
+            "action": "design",
+            "object": "delay"
+          },
+          {
+            "subject": "filter",
+            "action": "select",
+            "object": "noise"
+          },
+          {
+            "subject": "solution",
+            "action": "combine",
+            "object": "existence"
+          },
+          {
+            "subject": "system",
+            "action": "evaluate",
+            "object": "angle"
+          },
+          {
+            "subject": "time",
+            "action": "stay",
+            "object": "system"
+          },
+          {
+            "subject": "Prediction",
+            "action": "ensure",
+            "object": "Trajectories"
+          },
+          {
+            "subject": "missile",
+            "action": "pose",
+            "object": "threat"
+          },
+          {
+            "subject": "paper",
+            "action": "address",
+            "object": "challenge"
+          },
+          {
+            "subject": "method",
+            "action": "leverage",
+            "object": "strength"
+          },
+          {
+            "subject": "research",
+            "action": "demonstrate",
+            "object": "potential"
+          },
+          {
+            "subject": "we",
+            "action": "develop",
+            "object": "theory"
+          },
+          {
+            "subject": "application",
+            "action": "file",
+            "object": "code"
+          },
+          {
+            "subject": "code",
+            "action": "implement",
+            "object": "it"
+          },
+          {
+            "subject": "author",
+            "action": "publish",
+            "object": "paper"
+          },
+          {
+            "subject": "missile",
+            "action": "hit",
+            "object": "consequence"
+          },
+          {
+            "subject": "author",
+            "action": "show",
+            "object": "paper"
+          },
+          {
+            "subject": "theory",
+            "action": "apply",
+            "object": "orbit"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "base",
+            "count": 6
+          },
+          {
+            "action": "demonstrate",
+            "count": 3
+          },
+          {
+            "action": "present",
+            "count": 3
+          },
+          {
+            "action": "guide",
+            "count": 3
+          },
+          {
+            "action": "use",
+            "count": 2
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "1": {
+        "triples": [
+          {
+            "subject": "System",
+            "action": "advance",
+            "object": "Strategies"
+          },
+          {
+            "subject": "solution",
+            "action": "place",
+            "object": "battery"
+          },
+          {
+            "subject": "procedure",
+            "action": "use",
+            "object": "research"
+          },
+          {
+            "subject": "network",
+            "action": "implement",
+            "object": "strategy"
+          },
+          {
+            "subject": "guidance",
+            "action": "attack",
+            "object": "missile"
+          },
+          {
+            "subject": "task",
+            "action": "describe",
+            "object": "paper"
+          },
+          {
+            "subject": "strategy",
+            "action": "address",
+            "object": "issue"
+          },
+          {
+            "subject": "gradient",
+            "action": "rescale",
+            "object": "strategy"
+          },
+          {
+            "subject": "law",
+            "action": "propose",
+            "object": "mechanism"
+          },
+          {
+            "subject": "simulation",
+            "action": "demonstrate",
+            "object": "condition"
+          },
+          {
+            "subject": "approach",
+            "action": "have",
+            "object": "prospect"
+          },
+          {
+            "subject": "Prediction",
+            "action": "introduce",
+            "object": "Attacks"
+          },
+          {
+            "subject": "study",
+            "action": "investigate",
+            "object": "concept"
+          },
+          {
+            "subject": "purpose",
+            "action": "demonstrate",
+            "object": "paper"
+          },
+          {
+            "subject": "this",
+            "action": "achieve",
+            "object": "process"
+          },
+          {
+            "subject": "analysis",
+            "action": "proceed",
+            "object": "consideration"
+          },
+          {
+            "subject": "probability",
+            "action": "relate",
+            "object": "probability"
+          },
+          {
+            "subject": "sum",
+            "action": "use",
+            "object": "time"
+          },
+          {
+            "subject": "example",
+            "action": "be",
+            "object": "fact"
+          },
+          {
+            "subject": "problem",
+            "action": "control",
+            "object": "assurance"
+          },
+          {
+            "subject": "we",
+            "action": "present",
+            "object": "paper"
+          },
+          {
+            "subject": "swarm",
+            "action": "model",
+            "object": "system"
+          },
+          {
+            "subject": "we",
+            "action": "focus",
+            "object": "issue"
+          },
+          {
+            "subject": "we",
+            "action": "develop",
+            "object": "application"
+          },
+          {
+            "subject": "result",
+            "action": "valid",
+            "object": "effectiveness"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "use",
+            "count": 2
+          },
+          {
+            "action": "demonstrate",
+            "count": 2
+          },
+          {
+            "action": "advance",
+            "count": 1
+          },
+          {
+            "action": "place",
+            "count": 1
+          },
+          {
+            "action": "implement",
+            "count": 1
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      }
+    },
+    "why_influence": "Edges represent enabling or displacing relationships inferred from cluster themes and LLM foresight reasoning."
+  },
+  "scenarios": {
+    "drivers": [
+      {
+        "axis": "Adoption velocity",
+        "description": "3 emerging topic(s) create uncertainty about which technology will cross the chasm first.",
+        "why": "Derived from emerge events\u2014new clusters increase adoption-path uncertainty."
+      },
+      {
+        "axis": "Technology displacement",
+        "description": "1 declining topic(s) signal potential displacement of incumbent approaches.",
+        "why": "Derived from die events\u2014fading clusters imply replacement risk for legacy tech."
+      }
+    ],
+    "axis_labels": {
+      "x": "Adoption velocity",
+      "y": "Technology displacement"
+    },
+    "scenarios": {
+      "optimistic": {
+        "tone": "optimistic",
+        "title": "Optimistic",
+        "color": "#22C55E",
+        "narrative": "Rapid adoption of high-velocity cruise missile systems and advanced SAM (Surface-to-Air Missile) networks, driven by intense geopolitical competition, triggers a breakthrough in automated air defense strategies. This technological displacement enables real-time trajectory simulations and precision seeker integration, allowing multi-missile protection layers to neutralize threats with unprecedented accuracy.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "disruptive": {
+        "tone": "disruptive",
+        "title": "Disruptive",
+        "color": "#EF4444",
+        "narrative": "Recent evolution events: emerge:cruise,trajectory; grow:cruise,trajectory; emerge:strategy,air defense; grow:strategy,air defense; emerge:sam,cruise missiles; grow:cruise,trajectory. We need to incorporate specific technologies: e.g., \"cruise missiles\", \"trajectory prediction algorithms\", \"seeker guidance\", \"SAM (surface-to-air missile) systems\", \"air defense networks\", \"multiple missile salvo\", \"range extension\", \"simulation-driven design\". Also need causal drivers: high adoption velocity (so rapid uptake), low displacement (so existing tech not being replaced), regulation maybe influencing air defense, competition among defense firms, breakthroughs in AI for trajectory prediction, etc.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "constrained": {
+        "tone": "constrained",
+        "title": "Constrained",
+        "color": "#F59E0B",
+        "narrative": "This could be due to various factors like high costs, regulatory barriers, or lack of confidence in the new technologies. The recent evolution events show that cruise and trajectory technologies are emerging and growing, as are strategy and air defense technologies. SAM and cruise missiles are emerging, while cruise and trajectory continue to grow.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "stagnant": {
+        "tone": "stagnant",
+        "title": "Stagnant",
+        "color": "#6B7280",
+        "narrative": "With adoption rates languishing and few incumbent systems being displaced, the latest long\u2011range cruise missiles, hypersonic trajectory\u2011guidance kits, and integrated SAM\u2011based air\u2011defence networks remain confined to niche test beds, while AI\u2011driven mission\u2011simulation platforms see only incremental upgrades. Tight export controls and the absence of a compelling cost\u2011benefit case prevent operators from fielding the emerging cruise\u2011missile\u2011seeker combos or the new strategy\u2011level command\u2011and\u2011control software, leaving the broader missile\u2011range and protection clusters essentially static. Consequently, the weapons ecosystem drifts toward incremental reliability fixes rather than the disruptive fielding of next\u2011generation strike or air\u2011to\u2011air systems.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      }
+    },
+    "why": "Four scenarios span the 2\u00d72 space of the two largest uncertainty drivers extracted from causal events.",
+    "impact_trees": {
+      "optimistic": {
+        "tree": {
+          "name": "cruise, trajectory, seeker, air-to-air",
+          "node_type": "main",
+          "why": "Optimistic forecast for cruise, trajectory, seeker, air-to-air: 5 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 8,
+          "branch_count": 5,
+          "scenario": "optimistic",
+          "children": [
+            {
+              "name": "Sam",
+              "node_type": "evolving",
+              "trend": "accelerating",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 1,
+              "why": "simulations",
+              "children": [
+                {
+                  "name": "Capability uplift for cruise, trajectory, seeker, air-to-air",
+                  "node_type": "impact",
+                  "why": "Sam enabless cruise, trajectory, seeker, air-to-air\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from Sam lower adoption friction for cruise, trajectory, seeker, air-to-air.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via Sam",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (enables).",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Air Defense",
+              "node_type": "evolving",
+              "trend": "accelerating",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 1,
+              "why": "multiple missiles",
+              "children": [
+                {
+                  "name": "Capability uplift for cruise, trajectory, seeker, air-to-air",
+                  "node_type": "impact",
+                  "why": "Air Defense enabless cruise, trajectory, seeker, air-to-air\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from Air Defense lower adoption friction for cruise, trajectory, seeker, air-to-air.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via Air Defense",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (enables).",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Strapdown",
+              "node_type": "evolving",
+              "trend": "accelerating",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 1,
+              "why": "specific reason; improves targeting precision under dynamic flight conditions.",
+              "children": [
+                {
+                  "name": "Capability uplift for cruise, trajectory, seeker, air-to-air",
+                  "node_type": "impact",
+                  "why": "Strapdown enabless cruise, trajectory, seeker, air-to-air\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from Strapdown lower adoption friction for cruise, trajectory, seeker, air-to-air.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via Strapdown",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (enables).",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "strategy, air defense, multiple missiles, protection",
+              "node_type": "evolving",
+              "trend": "accelerating / emerging / maturing",
+              "path_sources": [
+                "cluster",
+                "event"
+              ],
+              "path_count": 3,
+              "why": "Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2021\u20132023). (+2 corroborating paths from corpus).",
+              "children": [
+                {
+                  "name": "Stable complement to cruise, trajectory, seeker, air-to-air",
+                  "node_type": "impact",
+                  "why": "strategy, air defense, multiple missiles, protection maturing\u2014incremental improvements rather than disruption for cruise, trajectory, seeker, air-to-air.",
+                  "children": []
+                },
+                {
+                  "name": "New competitive surface for cruise, trajectory, seeker, air-to-air",
+                  "node_type": "impact",
+                  "why": "strategy, air defense, multiple missiles, protection emerged (2021)\u2014early mover advantage may reshape cruise, trajectory, seeker, air-to-air's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle strategy, air defense, multiple missiles, protection with cruise, trajectory, seeker, air-to-air before the trend consolidates.",
+                  "children": []
+                },
+                {
+                  "name": "Demand pull for cruise, trajectory, seeker, air-to-air",
+                  "node_type": "impact",
+                  "why": "Rising publications on strategy, air defense, multiple missiles, protection (2022) signal market pull that lifts adjacent cruise, trajectory, seeker, air-to-air.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "sam, cruise missiles, simulations, range",
+              "node_type": "evolving",
+              "trend": "emerging / maturing",
+              "path_sources": [
+                "cluster",
+                "event"
+              ],
+              "path_count": 2,
+              "why": "Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2023\u20132025). Topic 2 first appears in 2023 with 1 document(s); keyword overlap vs prior windows was zero.",
+              "children": [
+                {
+                  "name": "Stable complement to cruise, trajectory, seeker, air-to-air",
+                  "node_type": "impact",
+                  "why": "sam, cruise missiles, simulations, range maturing\u2014incremental improvements rather than disruption for cruise, trajectory, seeker, air-to-air.",
+                  "children": []
+                },
+                {
+                  "name": "New competitive surface for cruise, trajectory, seeker, air-to-air",
+                  "node_type": "impact",
+                  "why": "sam, cruise missiles, simulations, range emerged (2023)\u2014early mover advantage may reshape cruise, trajectory, seeker, air-to-air's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle sam, cruise missiles, simulations, range with cruise, trajectory, seeker, air-to-air before the trend consolidates.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "cruise, trajectory, seeker, air-to-air",
+        "paths_discovered": 9,
+        "paths_in_scenario": 8,
+        "branch_count": 5,
+        "why": "This Optimistic tree shows 5 branch(es) from 8 prioritized path(s) out of 9 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "disruptive": {
+        "tree": {
+          "name": "cruise, trajectory, seeker, air-to-air",
+          "node_type": "main",
+          "why": "Disruptive forecast for cruise, trajectory, seeker, air-to-air: 1 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 1,
+          "branch_count": 1,
+          "scenario": "disruptive",
+          "children": [
+            {
+              "name": "strategy, air defense, multiple missiles, protection",
+              "node_type": "evolving",
+              "trend": "declining",
+              "path_sources": [
+                "event"
+              ],
+              "path_count": 1,
+              "why": "Topic 1 had no publications in 2025 after prior activity\u2014treated as decline/die-off.",
+              "children": [
+                {
+                  "name": "Legacy overlap reduction",
+                  "node_type": "impact",
+                  "why": "Decline of strategy, air defense, multiple missiles, protection frees budget and attention for cruise, trajectory, seeker, air-to-air.",
+                  "children": []
+                },
+                {
+                  "name": "Migration path into cruise, trajectory, seeker, air-to-air",
+                  "node_type": "impact",
+                  "why": "Users leaving strategy, air defense, multiple missiles, protection may consolidate onto cruise, trajectory, seeker, air-to-air if positioned as successor.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "cruise, trajectory, seeker, air-to-air",
+        "paths_discovered": 9,
+        "paths_in_scenario": 1,
+        "branch_count": 1,
+        "why": "This Disruptive tree shows 1 branch(es) from 1 prioritized path(s) out of 9 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "constrained": {
+        "tree": {
+          "name": "cruise, trajectory, seeker, air-to-air",
+          "node_type": "main",
+          "why": "Constrained forecast for cruise, trajectory, seeker, air-to-air: 5 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 5,
+          "branch_count": 5,
+          "scenario": "constrained",
+          "children": [
+            {
+              "name": "strategy, air defense, multiple missiles, protection",
+              "node_type": "evolving",
+              "trend": "maturing",
+              "path_sources": [
+                "cluster"
+              ],
+              "path_count": 1,
+              "why": "Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2021\u20132023).",
+              "children": [
+                {
+                  "name": "Stable complement to cruise, trajectory, seeker, air-to-air",
+                  "node_type": "impact",
+                  "why": "strategy, air defense, multiple missiles, protection maturing\u2014incremental improvements rather than disruption for cruise, trajectory, seeker, air-to-air.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "sam, cruise missiles, simulations, range",
+              "node_type": "evolving",
+              "trend": "maturing",
+              "path_sources": [
+                "cluster"
+              ],
+              "path_count": 1,
+              "why": "Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2023\u20132025).",
+              "children": [
+                {
+                  "name": "Stable complement to cruise, trajectory, seeker, air-to-air",
+                  "node_type": "impact",
+                  "why": "sam, cruise missiles, simulations, range maturing\u2014incremental improvements rather than disruption for cruise, trajectory, seeker, air-to-air.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Sam",
+              "node_type": "evolving",
+              "trend": "accelerating",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 1,
+              "why": "simulations",
+              "children": [
+                {
+                  "name": "Capability uplift for cruise, trajectory, seeker, air-to-air",
+                  "node_type": "impact",
+                  "why": "Sam enabless cruise, trajectory, seeker, air-to-air\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from Sam lower adoption friction for cruise, trajectory, seeker, air-to-air.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via Sam",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (enables).",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Air Defense",
+              "node_type": "evolving",
+              "trend": "accelerating",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 1,
+              "why": "multiple missiles",
+              "children": [
+                {
+                  "name": "Capability uplift for cruise, trajectory, seeker, air-to-air",
+                  "node_type": "impact",
+                  "why": "Air Defense enabless cruise, trajectory, seeker, air-to-air\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from Air Defense lower adoption friction for cruise, trajectory, seeker, air-to-air.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via Air Defense",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (enables).",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Strapdown",
+              "node_type": "evolving",
+              "trend": "accelerating",
+              "path_sources": [
+                "influence"
+              ],
+              "path_count": 1,
+              "why": "specific reason; improves targeting precision under dynamic flight conditions.",
+              "children": [
+                {
+                  "name": "Capability uplift for cruise, trajectory, seeker, air-to-air",
+                  "node_type": "impact",
+                  "why": "Strapdown enabless cruise, trajectory, seeker, air-to-air\u2014shared tooling and pretrained components accelerate delivery.",
+                  "children": []
+                },
+                {
+                  "name": "Talent & vendor spillover",
+                  "node_type": "impact",
+                  "why": "Skills and suppliers from Strapdown lower adoption friction for cruise, trajectory, seeker, air-to-air.",
+                  "children": []
+                },
+                {
+                  "name": "Integration pathway via Strapdown",
+                  "node_type": "impact",
+                  "why": "Direct influence link in corpus reasoning graph (enables).",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "cruise, trajectory, seeker, air-to-air",
+        "paths_discovered": 9,
+        "paths_in_scenario": 5,
+        "branch_count": 5,
+        "why": "This Constrained tree shows 5 branch(es) from 5 prioritized path(s) out of 9 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "stagnant": {
+        "tree": {
+          "name": "cruise, trajectory, seeker, air-to-air",
+          "node_type": "main",
+          "why": "Stagnant forecast for cruise, trajectory, seeker, air-to-air: 1 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 1,
+          "branch_count": 1,
+          "scenario": "stagnant",
+          "children": [
+            {
+              "name": "strategy, air defense, multiple missiles, protection",
+              "node_type": "evolving",
+              "trend": "declining",
+              "path_sources": [
+                "event"
+              ],
+              "path_count": 1,
+              "why": "Topic 1 had no publications in 2025 after prior activity\u2014treated as decline/die-off.",
+              "children": [
+                {
+                  "name": "Legacy overlap reduction",
+                  "node_type": "impact",
+                  "why": "Decline of strategy, air defense, multiple missiles, protection frees budget and attention for cruise, trajectory, seeker, air-to-air.",
+                  "children": []
+                },
+                {
+                  "name": "Migration path into cruise, trajectory, seeker, air-to-air",
+                  "node_type": "impact",
+                  "why": "Users leaving strategy, air defense, multiple missiles, protection may consolidate onto cruise, trajectory, seeker, air-to-air if positioned as successor.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "cruise, trajectory, seeker, air-to-air",
+        "paths_discovered": 9,
+        "paths_in_scenario": 1,
+        "branch_count": 1,
+        "why": "This Stagnant tree shows 1 branch(es) from 1 prioritized path(s) out of 9 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      }
+    }
+  },
+  "source_breakdown": {
+    "arxiv": 20,
+    "uploaded": 0
+  }
+}

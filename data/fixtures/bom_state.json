@@ -1,0 +1,207 @@
+{
+  "bom_nodes": {
+    "b03b55dda54d": {
+      "id": "b03b55dda54d",
+      "name": "R&S ESMW Ultra Wideband Monitoring Receiver",
+      "description": "Next generation ultra wideband monitoring receiver for spectrum monitoring and direction finding. Frequency range 8 kHz to 40 GHz, up to 2 GHz real-time bandwidth, panorama scan at 2.6 THz/s, 75ns minimum signal duration for 100% POI, I/Q streaming via 100GE, AoA direction finding, TDOA localization, ITU-compliant.",
+      "level": 0,
+      "parent_id": null,
+      "children_ids": [
+        "a823f9622d08",
+        "8ef051ea7d93",
+        "e4ca380ed953",
+        "7a81ad62742d",
+        "3d612229b37c",
+        "bb4b484dae4c",
+        "4cfd620424eb"
+      ],
+      "source_chunk_ids": [],
+      "is_tech_driver": false
+    },
+    "a823f9622d08": {
+      "id": "a823f9622d08",
+      "name": "Ultra Wideband RF Frontend",
+      "description": "Covers frequency range from 8 kHz to 40 GHz enabling reception of a broad spectrum including mmWave bands",
+      "level": 1,
+      "parent_id": "b03b55dda54d",
+      "children_ids": [],
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "1e8a7e2f7123"
+      ],
+      "is_tech_driver": true
+    },
+    "8ef051ea7d93": {
+      "id": "8ef051ea7d93",
+      "name": "High Sensitivity Receiver",
+      "description": "Provides exceptional RF sensitivity (e.g., -164 dBm DANL) and high dynamic range for detecting weak signals in dense signal environments",
+      "level": 1,
+      "parent_id": "b03b55dda54d",
+      "children_ids": [],
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "1e8a7e2f7123"
+      ],
+      "is_tech_driver": true
+    },
+    "e4ca380ed953": {
+      "id": "e4ca380ed953",
+      "name": "Real-Time Digitizer",
+      "description": "Digitizes incoming RF signals with up to 2 GHz instantaneous bandwidth for wideband signal capture and analysis",
+      "level": 1,
+      "parent_id": "b03b55dda54d",
+      "children_ids": [],
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "1e8a7e2f7123"
+      ],
+      "is_tech_driver": true
+    },
+    "7a81ad62742d": {
+      "id": "7a81ad62742d",
+      "name": "Panorama Scan Engine",
+      "description": "Performs ultra-fast spectrum scanning at rates up to 2.6 THz/s to detect transient and frequency-hopping signals",
+      "level": 1,
+      "parent_id": "b03b55dda54d",
+      "children_ids": [],
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "1e8a7e2f7123"
+      ],
+      "is_tech_driver": true
+    },
+    "3d612229b37c": {
+      "id": "3d612229b37c",
+      "name": "I/Q Data Streaming Interface",
+      "description": "Streams digitized I/Q data via 100 Gigabit Ethernet for offline processing and analysis",
+      "level": 1,
+      "parent_id": "b03b55dda54d",
+      "children_ids": [],
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "1e8a7e2f7123"
+      ],
+      "is_tech_driver": true
+    },
+    "bb4b484dae4c": {
+      "id": "bb4b484dae4c",
+      "name": "Direction Finding Module",
+      "description": "Implements Angle of Arrival (AoA) and Time Difference of Arrival (TDOA) techniques for geolocation of signal sources",
+      "level": 1,
+      "parent_id": "b03b55dda54d",
+      "children_ids": [],
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "1e8a7e2f7123"
+      ],
+      "is_tech_driver": true
+    },
+    "4cfd620424eb": {
+      "id": "4cfd620424eb",
+      "name": "Signal Processing and Compliance Engine",
+      "description": "Processes received signals and ensures measurements comply with ITU regulatory standards",
+      "level": 1,
+      "parent_id": "b03b55dda54d",
+      "children_ids": [],
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "1e8a7e2f7123"
+      ],
+      "is_tech_driver": true
+    }
+  },
+  "bom_drivers": [
+    {
+      "id": "9a8f62a8b91c",
+      "name": "Ultra Wideband RF Frontend",
+      "description": "Covers frequency range from 8 kHz to 40 GHz enabling reception of a broad spectrum including mmWave bands. Ultra Wideband RF Frontends covering an extremely broad frequency range from 8 kHz to 40 GHz, including mmWave bands, represent a significant technological challenge and opportunity. Active R&D is ongoing to improve sensitivity, noise figure, linearity, integration, and power consumption in these frontends. Additionally, advancements in semiconductor technologies, antenna design, and signal processing continue to push performance boundaries. Given the increasing demand for wideband spectrum monitoring, 5G/6G communications, radar, and sensing applications, this component is expected to see substantial innovation and potential disruption over the next 5-15 years.",
+      "origin": "bom",
+      "confidence": "medium",
+      "bom_node_id": "a823f9622d08",
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "1e8a7e2f7123"
+      ],
+      "merge_reasoning": ""
+    },
+    {
+      "id": "ae4205dc63d5",
+      "name": "High Sensitivity Receiver",
+      "description": "Provides exceptional RF sensitivity (e.g., -164 dBm DANL) and high dynamic range for detecting weak signals in dense signal environments. High sensitivity receivers are critical components in regulatory frequency monitoring, and ongoing R&D focuses on improving sensitivity, dynamic range, noise figure, and integration with advanced signal processing. Given the continuous advancements in semiconductor technology, RF front-end design, and digital signal processing, these receivers are expected to see performance improvements and potential disruptive innovations (e.g., AI-assisted detection, software-defined radio enhancements) over the next 5-15 years.",
+      "origin": "bom",
+      "confidence": "medium",
+      "bom_node_id": "8ef051ea7d93",
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "1e8a7e2f7123"
+      ],
+      "merge_reasoning": ""
+    },
+    {
+      "id": "a94ab6ad2f7d",
+      "name": "Real-Time Digitizer",
+      "description": "Digitizes incoming RF signals with up to 2 GHz instantaneous bandwidth for wideband signal capture and analysis. Real-time digitizers with multi-GHz instantaneous bandwidth are critical components in advanced RF monitoring and signal analysis systems. There is ongoing active R&D aimed at increasing bandwidth, sampling rates, dynamic range, and integration with AI-based signal processing. These improvements enable more precise, faster, and more comprehensive spectrum monitoring, which is essential given the increasing complexity and density of wireless signals. Therefore, real-time digitizers represent a technology with expected performance improvements and potential for disruption in the next 5-15 years.",
+      "origin": "bom",
+      "confidence": "medium",
+      "bom_node_id": "e4ca380ed953",
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "1e8a7e2f7123"
+      ],
+      "merge_reasoning": ""
+    },
+    {
+      "id": "cba1743b196e",
+      "name": "Panorama Scan Engine",
+      "description": "Performs ultra-fast spectrum scanning at rates up to 2.6 THz/s to detect transient and frequency-hopping signals. The Panorama Scan Engine performs ultra-fast spectrum scanning at extremely high rates (up to 2.6 THz/s), which is critical for detecting transient and frequency-hopping signals in regulatory frequency monitoring. Given the rapid evolution of wireless communication technologies, increasing spectrum congestion, and the need for more sophisticated signal detection capabilities, this technology likely involves active R&D to improve scanning speed, sensitivity, and signal processing algorithms. These improvements can significantly impact spectrum monitoring effectiveness and have potential disruptive effects on regulatory and security applications over the next 5-15 years.",
+      "origin": "bom",
+      "confidence": "medium",
+      "bom_node_id": "7a81ad62742d",
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "1e8a7e2f7123"
+      ],
+      "merge_reasoning": ""
+    },
+    {
+      "id": "d6d7c069b4d1",
+      "name": "I/Q Data Streaming Interface",
+      "description": "Streams digitized I/Q data via 100 Gigabit Ethernet for offline processing and analysis. The I/Q Data Streaming Interface, which streams digitized I/Q data via 100 Gigabit Ethernet for offline processing and analysis, represents an active technology area with ongoing R&D. High-speed data interfaces and digitized signal processing are critical for advanced frequency monitoring and signal intelligence systems. Given the continuous demand for higher bandwidth, lower latency, and more efficient data handling, this component is likely to see performance improvements and potential disruptive innovations in the next 5-15 years.",
+      "origin": "bom",
+      "confidence": "medium",
+      "bom_node_id": "3d612229b37c",
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "1e8a7e2f7123"
+      ],
+      "merge_reasoning": ""
+    },
+    {
+      "id": "cfa5d75f36b6",
+      "name": "Direction Finding Module",
+      "description": "Implements Angle of Arrival (AoA) and Time Difference of Arrival (TDOA) techniques for geolocation of signal sources. Direction Finding technologies such as Angle of Arrival (AoA) and Time Difference of Arrival (TDOA) are actively researched and developed to improve accuracy, integration with AI/ML for signal classification, miniaturization, and multi-sensor fusion. Advances in antenna design, signal processing algorithms, and real-time data analytics continue to drive performance improvements. Given the increasing demand for precise geolocation in regulatory monitoring, security, and spectrum management, these technologies have significant potential for disruption and enhancement over the next 5-15 years.",
+      "origin": "bom",
+      "confidence": "medium",
+      "bom_node_id": "bb4b484dae4c",
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "1e8a7e2f7123"
+      ],
+      "merge_reasoning": ""
+    },
+    {
+      "id": "d589912a2c8e",
+      "name": "Signal Processing and Compliance Engine",
+      "description": "Processes received signals and ensures measurements comply with ITU regulatory standards. Signal processing and compliance engines in regulatory frequency monitoring are subject to ongoing R&D to handle increasingly complex signal environments, improve measurement accuracy, and adapt to evolving ITU standards. Advances in algorithms, machine learning integration, and real-time processing capabilities are expected to drive performance improvements and potential disruption over the next 5-15 years.",
+      "origin": "bom",
+      "confidence": "medium",
+      "bom_node_id": "4cfd620424eb",
+      "source_chunk_ids": [
+        "c2519cd9e984",
+        "1e8a7e2f7123"
+      ],
+      "merge_reasoning": ""
+    }
+  ],
+  "root_id": "b03b55dda54d"
+}

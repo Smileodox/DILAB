@@ -1,0 +1,342 @@
+[
+  {
+    "title": "Review of: \"(Electrical - Telecommunication Nano-Antennas) Nano-Antennas in Various Applications of Telecommunication and Communication Systems Common With Nano-Scale Systems\"",
+    "abstract": "<jats:p/>",
+    "authors": [
+      "Afshin Rashid"
+    ],
+    "published": "2025-03-28",
+    "year": 2025,
+    "paper_id": "54f9bf1fb4a73d73bd6e80d0817a185473253e02",
+    "doi": "10.32388/51ijw6",
+    "category": "",
+    "source": "scholar",
+    "text": "Review of: \"(Electrical - Telecommunication Nano-Antennas) Nano-Antennas in Various Applications of Telecommunication and Communication Systems Common With Nano-Scale Systems\"\n\n<jats:p/>"
+  },
+  {
+    "title": "Monitoring of Packet Telecommunication Networks",
+    "abstract": "The article explores of monitoring of packet telecommunication networks. With requirements increasing for ensuring the quality of communication services provided, it is necessary to increase the efficiency of monitoring the performance indicators of transmission systems and processing of packet traffic when providing communication services. To solve this problem, various methods of monitoring and testing the operability of these systems at each level of the OSI model are used, taking into account the features of the functioning of the systems when providing specific communication services or a set of them. An analysis of various methods for monitoring both the quality of communication networks and the quality of communication services shows that the measuring complex VECTOR-2019 can be used to solve the above problems.",
+    "authors": [
+      "Vladimir Babkin",
+      "E. Stroganova"
+    ],
+    "published": "2025-03-12",
+    "year": 2025,
+    "paper_id": "3a4a60ebd9792d122a9e92cefdff1133bd25e1ae",
+    "doi": "10.1109/IEEECONF64229.2025.10948087",
+    "category": "",
+    "source": "scholar",
+    "text": "Monitoring of Packet Telecommunication Networks\n\nThe article explores of monitoring of packet telecommunication networks. With requirements increasing for ensuring the quality of communication services provided, it is necessary to increase the efficiency of monitoring the performance indicators of transmission systems and processing of packet traffic when providing communication services. To solve this problem, various methods of monitoring and testing the operability of these systems at each level of the OSI model are used, taking into account the features of the functioning of the systems when providing specific communication services or a set of them. An analysis of various methods for monitoring both the quality of communication networks and the quality of communication services shows that the measuring complex VECTOR-2019 can be used to solve the above problems."
+  },
+  {
+    "title": "Deep Churn Prediction Method for Telecommunication Industry",
+    "abstract": "Being able to predict the churn rate is the key to success for the telecommunication industry. It is also important for the telecommunication industry to obtain a high profit. Thus, the challenge is to predict the churn percentage of customers with higher accuracy without comprising the profit. In this study, various types of learning strategies are investigated to address this challenge and build a churn predication model. Ensemble learning techniques (Adaboost, random forest (RF), extreme randomized tree (ERT), xgboost (XGB), gradient boosting (GBM), and bagging and stacking), traditional classification techniques (logistic regression (LR), decision tree (DT), and k-nearest neighbor (kNN), and artificial neural network (ANN)), and the deep learning convolutional neural network (CNN) technique have been tested to select the best model for building a customer churn prediction model. The evaluation of the proposed models was conducted using two pubic datasets: Southeast Asian telecom industry, and American telecom market. On both of the datasets, CNN and ANN returned better results than the other techniques. The accuracy obtained on the first dataset using CNN was 99% and using ANN was 98%, and on the second dataset it was 98% and 99%, respectively.",
+    "authors": [
+      "Lewlisa Saha",
+      "Hrudaya Kumar Tripathy",
+      "T. Gaber",
+      "H. El-Gohary",
+      "El-sayed M. El-kenawy"
+    ],
+    "published": "2023-03-03",
+    "year": 2023,
+    "paper_id": "c00bc5055bd4a084014132f97542146ce7c98771",
+    "doi": "10.3390/su15054543",
+    "category": "",
+    "source": "scholar",
+    "text": "Deep Churn Prediction Method for Telecommunication Industry\n\nBeing able to predict the churn rate is the key to success for the telecommunication industry. It is also important for the telecommunication industry to obtain a high profit. Thus, the challenge is to predict the churn percentage of customers with higher accuracy without comprising the profit. In this study, various types of learning strategies are investigated to address this challenge and build a churn predication model. Ensemble learning techniques (Adaboost, random forest (RF), extreme randomized tree (ERT), xgboost (XGB), gradient boosting (GBM), and bagging and stacking), traditional classification techniques (logistic regression (LR), decision tree (DT), and k-nearest neighbor (kNN), and artificial neural network (ANN)), and the deep learning convolutional neural network (CNN) technique have been tested to select the best model for building a customer churn prediction model. The evaluation of the proposed models was conducted using two pubic datasets: Southeast Asian telecom industry, and American telecom market. On both of the datasets, CNN and ANN returned better results than the other techniques. The accuracy obtained on the first dataset using CNN was 99% and using ANN was 98%, and on the second dataset it was 98% and 99%, respectively."
+  },
+  {
+    "title": "An achromatic metafiber for focusing and imaging across the entire telecommunication range",
+    "abstract": "Dispersion engineering is essential to the performance of most modern optical systems including fiber-optic devices. Even though the chromatic dispersion of a meter-scale single-mode fiber used for endoscopic applications is negligible, optical lenses located on the fiber end face for optical focusing and imaging suffer from strong chromatic aberration. Here we present the design and nanoprinting of a 3D achromatic diffractive metalens on the end face of a single-mode fiber, capable of performing achromatic and polarization-insensitive focusing across the entire near-infrared telecommunication wavelength band ranging from 1.25 to 1.65\u2009\u00b5m. This represents the whole single-mode domain of commercially used fibers. The unlocked height degree of freedom in a 3D nanopillar meta-atom largely increases the upper bound of the time-bandwidth product of an achromatic metalens up to 21.34, leading to a wide group delay modulation range spanning from \u22128 to 14\u2009fs. Furthermore, we demonstrate the use of our compact and flexible achromatic metafiber for fiber-optic confocal imaging, capable of creating in-focus sharp images under broadband light illumination. These results may unleash the full potential of fiber meta-optics for widespread applications including hyperspectral endoscopic imaging, femtosecond laser-assisted treatment, deep tissue imaging, wavelength-multiplexing fiber-optic communications, fiber sensing, and fiber lasers. The authors fabricate a 3D achromatic diffractive metalens on the end face of a single-mode fiber, useful for endoscopic applications. They demonstrate achromatic and polarization insensitive focusing across the entire near-infrared telecommunication wavelength band ranging from 1.25 to 1.65\u2009\u00b5m.",
+    "authors": [
+      "H. Ren",
+      "J. Jang",
+      "Chenhao Li",
+      "Andreas Aigner",
+      "Malte Plidschun",
+      "Jisoo Kim",
+      "J. Rho",
+      "M. Schmidt",
+      "S. A. Maier"
+    ],
+    "published": "2022-01-18",
+    "year": 2022,
+    "paper_id": "1d3f58d4e0aa248974b0a0eb6e7aeaa6914991c4",
+    "doi": "10.1038/s41467-022-31902-3",
+    "category": "Medicine, Physics",
+    "source": "scholar",
+    "text": "An achromatic metafiber for focusing and imaging across the entire telecommunication range\n\nDispersion engineering is essential to the performance of most modern optical systems including fiber-optic devices. Even though the chromatic dispersion of a meter-scale single-mode fiber used for endoscopic applications is negligible, optical lenses located on the fiber end face for optical focusing and imaging suffer from strong chromatic aberration. Here we present the design and nanoprinting of a 3D achromatic diffractive metalens on the end face of a single-mode fiber, capable of performing achromatic and polarization-insensitive focusing across the entire near-infrared telecommunication wavelength band ranging from 1.25 to 1.65\u2009\u00b5m. This represents the whole single-mode domain of commercially used fibers. The unlocked height degree of freedom in a 3D nanopillar meta-atom largely increases the upper bound of the time-bandwidth product of an achromatic metalens up to 21.34, leading to a wide group delay modulation range spanning from \u22128 to 14\u2009fs. Furthermore, we demonstrate the use of our compact and flexible achromatic metafiber for fiber-optic confocal imaging, capable of creating in-focus sharp images under broadband light illumination. These results may unleash the full potential of fiber meta-optics for widespread applications including hyperspectral endoscopic imaging, femtosecond laser-assisted treatment, deep tissue imaging, wavelength-multiplexing fiber-optic communications, fiber sensing, and fiber lasers. The authors fabricate a 3D achromatic diffractive metalens on the end face of a single-mode fiber, useful for endoscopic applications. They demonstrate achromatic and polarization insensitive focusing across the entire near-infrared telecommunication wavelength band ranging from 1.25 to 1.65\u2009\u00b5m."
+  },
+  {
+    "title": "Telemedicine: A Survey of Telecommunication Technologies, Developments, and Challenges",
+    "abstract": "The emergence of the COVID-19 pandemic has increased research outputs in telemedicine over the last couple of years. One solution to the COVID-19 pandemic as revealed in literature is to leverage telemedicine for accessing health care remotely. In this survey paper, we review several articles on eHealth and Telemedicine with emphasis on the articles\u2019 focus area, including wireless technologies and architectures in eHealth, communications protocols, Quality of Service, and Experience Standards, among other considerations. In addition, we provide an overview of telemedicine for new readers. This survey reviews several telecommunications technologies currently being proposed along with their standards and challenges. In general, an encompassing survey on the developments in telemedicine technology, standards, and protocols is presented while acquainting researchers with several open issues. Special mention of the state-of-the-art specialist application areas are presented. We conclude the survey paper by presenting important research challenges and potential future directions as they pertain to telemedicine technology.",
+    "authors": [
+      "C. Alenoghena",
+      "H. Ohize",
+      "A. Adejo",
+      "A. Onumanyi",
+      "Emmanuel Esebanme Ohihoin",
+      "Aliyu Idris Balarabe",
+      "S. Okoh",
+      "Ezra Kolo",
+      "Benjamin Alenoghena"
+    ],
+    "published": "2023-03-02",
+    "year": 2023,
+    "paper_id": "59c28bdb7b3b9af103b7cb973612b18ffe854c65",
+    "doi": "10.3390/jsan12020020",
+    "category": "Medicine",
+    "source": "scholar",
+    "text": "Telemedicine: A Survey of Telecommunication Technologies, Developments, and Challenges\n\nThe emergence of the COVID-19 pandemic has increased research outputs in telemedicine over the last couple of years. One solution to the COVID-19 pandemic as revealed in literature is to leverage telemedicine for accessing health care remotely. In this survey paper, we review several articles on eHealth and Telemedicine with emphasis on the articles\u2019 focus area, including wireless technologies and architectures in eHealth, communications protocols, Quality of Service, and Experience Standards, among other considerations. In addition, we provide an overview of telemedicine for new readers. This survey reviews several telecommunications technologies currently being proposed along with their standards and challenges. In general, an encompassing survey on the developments in telemedicine technology, standards, and protocols is presented while acquainting researchers with several open issues. Special mention of the state-of-the-art specialist application areas are presented. We conclude the survey paper by presenting important research challenges and potential future directions as they pertain to telemedicine technology."
+  },
+  {
+    "title": "Empowering Optimizing Resource Management in 5G Telecommunication Networks: The Power of Machine Learning",
+    "abstract": "The emergence of 5G telecommunication technology has changed communication, promising high-speed data transfer, low latency, and extensive device connectivity. A key challenge lies in optimizing the performance and resource management of 5G networks, with supervised learning algorithms presenting a viable solution. These algorithms, supplemented by labeled training data, can accurately predict, and improve network behaviors, such as spectrum allocation, energy efficiency, quality of service (QoS) provisioning, and network optimization. This paper reviews these algorithms, delving into their applications and various strengths and limitations. It also discusses the challenges and future research directions in applying these algorithms to 5G networks, emphasizing the need to balance accuracy with complexity and ensuring fairness and security.",
+    "authors": [
+      "W. A. Al-Hamami",
+      "M. J. J. Ghrabat",
+      "Mohammad Al-Hamami"
+    ],
+    "published": "2024-01-28",
+    "year": 2024,
+    "paper_id": "8f6702ee5ce2515a721039b63848add817a62ec4",
+    "doi": "10.1109/ICETSIS61505.2024.10459366",
+    "category": "",
+    "source": "scholar",
+    "text": "Empowering Optimizing Resource Management in 5G Telecommunication Networks: The Power of Machine Learning\n\nThe emergence of 5G telecommunication technology has changed communication, promising high-speed data transfer, low latency, and extensive device connectivity. A key challenge lies in optimizing the performance and resource management of 5G networks, with supervised learning algorithms presenting a viable solution. These algorithms, supplemented by labeled training data, can accurately predict, and improve network behaviors, such as spectrum allocation, energy efficiency, quality of service (QoS) provisioning, and network optimization. This paper reviews these algorithms, delving into their applications and various strengths and limitations. It also discusses the challenges and future research directions in applying these algorithms to 5G networks, emphasizing the need to balance accuracy with complexity and ensuring fairness and security."
+  },
+  {
+    "title": "An optimized hybrid methodology for short\u2010term traffic forecasting in telecommunication networks",
+    "abstract": "With the rapid development of telecommunication networks, the predictability of network traffic is of significant interest in network analysis and optimization, bandwidth allocation, and load balancing adjustment. Consequently, in recent years, significant research attention has been paid to forecasting telecommunication network traffic. Telecommunication traffic forecasting problems can be considered a time\u2010series problem, wherein periodic historical data is fed as the input to a model. Time\u2010series forecasting approaches are broadly categorized as statistical machine learning (ML) methods and their combinations. Statistical approaches forecast linear characteristics of time\u2010series data, unable to capture nonlinear and complex patterns. ML\u2010based approaches can model nonlinear characteristics of data. In recent years, hybrid approaches combining statistical and ML\u2010based approaches have been widely used to model linear and nonlinear data characteristics. However, the performance of these approaches highly depends on feature selection techniques and hyper\u2010parameter tuning of ML methods. A novel hybrid method is proposed for short\u2010term traffic forecasting based on feature selection and hyperparameter optimization to address this problem. It combines statistical and ML methods to model linear and nonlinear components of data. First, a novel feature selection technique, modified mutual information based on a linear combination of targets, is proposed to find the candidate input variables. Next, a combination of vector auto regressive moving average (VARMA), long short\u2010term memory (LSTM), and multilayer perceptron (MLP), called VARMA\u2010LSTM\u2010MLP forecaster, is suggested to forecast short\u2010term traffic. A hybrid metaheuristic algorithm, composed of firefly and BAT, is employed to find the optimal set of hyper\u2010parameter values. The proposed method is assessed by a real\u2010world dataset containing Tehran city's daily telecommunication data in IRAN. The evaluation results demonstrate that the proposed method outperforms the existing methods in terms of mean squared error and mean absolute error.",
+    "authors": [
+      "Mousa Alizadeh",
+      "Mohammad T. H. Beheshti",
+      "Amin Ramezani",
+      "S. Bolouki"
+    ],
+    "published": "2023-09-14",
+    "year": 2023,
+    "paper_id": "0220cc59cc9419e7e10651c37ba427e3b7a060a5",
+    "doi": "10.1002/ett.4860",
+    "category": "Computer Science",
+    "source": "scholar",
+    "text": "An optimized hybrid methodology for short\u2010term traffic forecasting in telecommunication networks\n\nWith the rapid development of telecommunication networks, the predictability of network traffic is of significant interest in network analysis and optimization, bandwidth allocation, and load balancing adjustment. Consequently, in recent years, significant research attention has been paid to forecasting telecommunication network traffic. Telecommunication traffic forecasting problems can be considered a time\u2010series problem, wherein periodic historical data is fed as the input to a model. Time\u2010series forecasting approaches are broadly categorized as statistical machine learning (ML) methods and their combinations. Statistical approaches forecast linear characteristics of time\u2010series data, unable to capture nonlinear and complex patterns. ML\u2010based approaches can model nonlinear characteristics of data. In recent years, hybrid approaches combining statistical and ML\u2010based approaches have been widely used to model linear and nonlinear data characteristics. However, the performance of these approaches highly depends on feature selection techniques and hyper\u2010parameter tuning of ML methods. A novel hybrid method is proposed for short\u2010term traffic forecasting based on feature selection and hyperparameter optimization to address this problem. It combines statistical and ML methods to model linear and nonlinear components of data. First, a novel feature selection technique, modified mutual information based on a linear combination of targets, is proposed to find the candidate input variables. Next, a combination of vector auto regressive moving average (VARMA), long short\u2010term memory (LSTM), and multilayer perceptron (MLP), called VARMA\u2010LSTM\u2010MLP forecaster, is suggested to forecast short\u2010term traffic. A hybrid metaheuristic algorithm, composed of firefly and BAT, is employed to find the optimal set of hyper\u2010parameter values. The proposed method is assessed by a real\u2010world dataset containing Tehran city's daily telecommunication data in IRAN. The evaluation results demonstrate that the proposed method outperforms the existing methods in terms of mean squared error and mean absolute error."
+  },
+  {
+    "title": "Business approaches pathways towards strategic market capture in telecommunication industry",
+    "abstract": ": Telecommunication business companies face many sustainability challenges that range from rapidly evolving technological and infrastructural changes to increase in the demands of potential customers or clients . While telecommunication business companies\u2019 investment varies in terms of products and services, their focus on market also varies accordingly. However, the rapidly changing market due to technology evolution and customer demands bring in a lot more challenges than the ones which can be anticipated. Business sustainability in Telecommunication company\u2019s business strategies vary according to the business model they use which influences on their focus on various business opportunities. Each competitor has different tactics to use when it comes to gaining the sustainable market share and generation of good revenue. Due to rapidly evolving nature of telecommunication industry, the telecommunication companies require regular assessment and improvement of their business focus. A thorough investigation and analysis of selected telecommunication business companies have been presented that focuses on highlighting the strengths and weaknesses of telecommunication companies with respect to conducting successful business and sustainable market capture strategies while carefully outlining the business model components that play crucial part in achieving it. Detailed evaluation of their focus on various business model canvas components and individual entities have also been presented to outline the importance of incorporating certain entities within the business model to target success. Impact of these strategies, 5G technology, its demands and promises have also been discussed to provide an insight into the need for improvement of business models for sustainable growth within telecommunication business sector.",
+    "authors": [
+      "M. M. K. Arisar",
+      "L. Ning",
+      "Sana Hoor Jokhio"
+    ],
+    "published": "2024-02-20",
+    "year": 2024,
+    "paper_id": "b843960ec5997c85cf3a9b6c6ade563ad665a363",
+    "doi": "10.46656/access.2024.5.2(3)",
+    "category": "",
+    "source": "scholar",
+    "text": "Business approaches pathways towards strategic market capture in telecommunication industry\n\n: Telecommunication business companies face many sustainability challenges that range from rapidly evolving technological and infrastructural changes to increase in the demands of potential customers or clients . While telecommunication business companies\u2019 investment varies in terms of products and services, their focus on market also varies accordingly. However, the rapidly changing market due to technology evolution and customer demands bring in a lot more challenges than the ones which can be anticipated. Business sustainability in Telecommunication company\u2019s business strategies vary according to the business model they use which influences on their focus on various business opportunities. Each competitor has different tactics to use when it comes to gaining the sustainable market share and generation of good revenue. Due to rapidly evolving nature of telecommunication industry, the telecommunication companies require regular assessment and improvement of their business focus. A thorough investigation and analysis of selected telecommunication business companies have been presented that focuses on highlighting the strengths and weaknesses of telecommunication companies with respect to conducting successful business and sustainable market capture strategies while carefully outlining the business model components that play crucial part in achieving it. Detailed evaluation of their focus on various business model canvas components and individual entities have also been presented to outline the importance of incorporating certain entities within the business model to target success. Impact of these strategies, 5G technology, its demands and promises have also been discussed to provide an insight into the need for improvement of business models for sustainable growth within telecommunication business sector."
+  },
+  {
+    "title": "Coping With Stress and Burnout Associated With Telecommunication and Online Learning",
+    "abstract": "The COVID-19 pandemic substantially impacted the field of telecommunication. It increased the use of media applications that enable teleconferencing, telecommuting, online learning, and social relations. Prolonged time facing screens, tablets, and smart devices increases stress and anxiety. Mental health stressors associated with telecommunication can add to other stressors related to quarantine time and lockdown to eventually lead to exhaustion and burnout. In this review, the effects of the COVID-19 pandemic on communication and education are explored. In addition, the relationship between prolonged exposure to digital devices and mental health is studied. Finally, coping strategies are offered to help relieve the tele-burdens of pandemics.",
+    "authors": [
+      "Nour Mheidly",
+      "M. Fares",
+      "Jawad Fares"
+    ],
+    "published": "2020-11-11",
+    "year": 2020,
+    "paper_id": "e7126d9982113d35312d196efa144174cc98326c",
+    "doi": "10.3389/fpubh.2020.574969",
+    "category": "Medicine, Psychology",
+    "source": "scholar",
+    "text": "Coping With Stress and Burnout Associated With Telecommunication and Online Learning\n\nThe COVID-19 pandemic substantially impacted the field of telecommunication. It increased the use of media applications that enable teleconferencing, telecommuting, online learning, and social relations. Prolonged time facing screens, tablets, and smart devices increases stress and anxiety. Mental health stressors associated with telecommunication can add to other stressors related to quarantine time and lockdown to eventually lead to exhaustion and burnout. In this review, the effects of the COVID-19 pandemic on communication and education are explored. In addition, the relationship between prolonged exposure to digital devices and mental health is studied. Finally, coping strategies are offered to help relieve the tele-burdens of pandemics."
+  },
+  {
+    "title": "Robust topologically protected transport in photonic crystals at telecommunication wavelengths",
+    "abstract": "",
+    "authors": [
+      "M. Shalaev",
+      "W. Walasik",
+      "A. Tsukernik",
+      "Yun Xu",
+      "N. Litchinitser"
+    ],
+    "published": "2018-11-12",
+    "year": 2018,
+    "paper_id": "250f5b7338e72c7e1c217062cb118af7d43e7295",
+    "doi": "10.1038/s41565-018-0297-6",
+    "category": "Physics, Medicine",
+    "source": "scholar",
+    "text": "Robust topologically protected transport in photonic crystals at telecommunication wavelengths"
+  },
+  {
+    "title": "Cooling technologies for data centres and telecommunication base stations \u2013 A comprehensive review",
+    "abstract": "",
+    "authors": [
+      "Yelong Zhang",
+      "Yanqi Zhao",
+      "Siyuan Dai",
+      "Binjian Nie",
+      "Hongkun Ma",
+      "Jianming Li",
+      "Qi Miao",
+      "Yi Jin",
+      "Linghua Tan",
+      "Yulong Ding"
+    ],
+    "published": "2022-02-01",
+    "year": 2022,
+    "paper_id": "8ef4f8906c8daef2b22f0db1a5d079d2303af745",
+    "doi": "10.1016/j.jclepro.2021.130280",
+    "category": "",
+    "source": "scholar",
+    "text": "Cooling technologies for data centres and telecommunication base stations \u2013 A comprehensive review"
+  },
+  {
+    "title": "Integrated photonic metasystem for image classifications at telecommunication wavelength",
+    "abstract": "Miniaturized image classifiers are potential for revolutionizing their applications in optical communication, autonomous vehicles, and healthcare. With subwavelength structure enabled directional diffraction and dispersion engineering, the light propagation through multi-layer metasurfaces achieves wavelength-selective image recognitions on a silicon photonic platform at telecommunication wavelength. The metasystems implement high-throughput vector-by-matrix multiplications, enabled by near 103 nanoscale phase shifters as weight elements within 0.135 mm2 footprints. The diffraction manifested computing capability incorporates the fabrication and measurement related phase fluctuations, and thus the pre-trained metasystem can handle uncertainties in inputs without post-tuning. Here we demonstrate three functional metasystems: a 15-pixel spatial pattern classifier that reaches near 90% accuracy with femtosecond inputs, a multi-channel wavelength demultiplexer, and a hyperspectral image classifier. The diffractive metasystem provides an alternative machine learning architecture for photonic integrated circuits, with densely integrated phase shifters, spatially multiplexed throughput, and data processing capabilities. Metasystem architectures are attractive alternatives to waveguide-based integrated photonic processors due to the subwavelength structures. Here, the authors report a 1D passive silicon photonic metasystem with near 90% spatial pattern classification accuracy at telecommunication wavelength.",
+    "authors": [
+      "Zi Wang",
+      "Lorry Chang",
+      "Feifan Wang",
+      "Tiantian Li",
+      "Tingyi Gu"
+    ],
+    "published": "2021-05-20",
+    "year": 2021,
+    "paper_id": "09948d159d76217e61e99cb438fbcc96c5688312",
+    "doi": "10.1038/s41467-022-29856-7",
+    "category": "Medicine, Computer Science",
+    "source": "scholar",
+    "text": "Integrated photonic metasystem for image classifications at telecommunication wavelength\n\nMiniaturized image classifiers are potential for revolutionizing their applications in optical communication, autonomous vehicles, and healthcare. With subwavelength structure enabled directional diffraction and dispersion engineering, the light propagation through multi-layer metasurfaces achieves wavelength-selective image recognitions on a silicon photonic platform at telecommunication wavelength. The metasystems implement high-throughput vector-by-matrix multiplications, enabled by near 103 nanoscale phase shifters as weight elements within 0.135 mm2 footprints. The diffraction manifested computing capability incorporates the fabrication and measurement related phase fluctuations, and thus the pre-trained metasystem can handle uncertainties in inputs without post-tuning. Here we demonstrate three functional metasystems: a 15-pixel spatial pattern classifier that reaches near 90% accuracy with femtosecond inputs, a multi-channel wavelength demultiplexer, and a hyperspectral image classifier. The diffractive metasystem provides an alternative machine learning architecture for photonic integrated circuits, with densely integrated phase shifters, spatially multiplexed throughput, and data processing capabilities. Metasystem architectures are attractive alternatives to waveguide-based integrated photonic processors due to the subwavelength structures. Here, the authors report a 1D passive silicon photonic metasystem with near 90% spatial pattern classification accuracy at telecommunication wavelength."
+  },
+  {
+    "title": "Hybrid Verification of Radio Electronic and Telecommunication Equipment",
+    "abstract": "In this paper, we discuss the conformity evaluation system as a hybrid hierarchical system and the verification in that system. As a hybrid system conformity evaluation system can be carried out on the basis of fuzzy set theory for radio electronic and telecommunication equipment designed for different operating conditions, produced on the same production line. Based on the results of the simulation, a decision can be made on the suitability of samples of equipment for specific purposes based on the acceptability of a certain level of quality of equipment operation. The proposed approach allows minimizing rejection and manufacturer costs by ranging the quality level depending on the operating conditions. The fuzzy model of conformity evaluation system is given.",
+    "authors": [
+      "E. Stroganova"
+    ],
+    "published": "2023-06-28",
+    "year": 2023,
+    "paper_id": "7aed77e34192383167b249008ce8316b36097b27",
+    "doi": "10.1109/SYNCHROINFO57872.2023.10178456",
+    "category": "",
+    "source": "scholar",
+    "text": "Hybrid Verification of Radio Electronic and Telecommunication Equipment\n\nIn this paper, we discuss the conformity evaluation system as a hybrid hierarchical system and the verification in that system. As a hybrid system conformity evaluation system can be carried out on the basis of fuzzy set theory for radio electronic and telecommunication equipment designed for different operating conditions, produced on the same production line. Based on the results of the simulation, a decision can be made on the suitability of samples of equipment for specific purposes based on the acceptability of a certain level of quality of equipment operation. The proposed approach allows minimizing rejection and manufacturer costs by ranging the quality level depending on the operating conditions. The fuzzy model of conformity evaluation system is given."
+  },
+  {
+    "title": "Protection of Information in Telecommunication Medical Systems based on a Risk-Oriented Approach",
+    "abstract": "",
+    "authors": [
+      "Svitlana Shevchenko",
+      "Y. Zhdanova",
+      "Yurii Dreis",
+      "R. Kyrychok",
+      "Diana Tsyrkaniuk"
+    ],
+    "published": "",
+    "year": 2023,
+    "paper_id": "82a6335c37d3e8fc4151c412826656ba304ee0b9",
+    "doi": "",
+    "category": "Computer Science",
+    "source": "scholar",
+    "text": "Protection of Information in Telecommunication Medical Systems based on a Risk-Oriented Approach"
+  },
+  {
+    "title": "Software Demo Versions of Modern Measuring Equipment Using for Telecommunication Disciplines Studying",
+    "abstract": "Methods of modern measuring equipment software trials usage for the telecommunication studying process are analyzed in the paper. Vector Spectrum Analyzer Signal Hound SM200C was chosen as an example. The computer analysis technique of signals recorded with the help of Signal Hound SM200C is described. The special program named \"Spike\" is used for the analysis execution. A conjugation algorithm of the Spike program is proposed. It allows conducting the study of signals generated in other software products.",
+    "authors": [
+      "A. E. Mikenin",
+      "G. A. Prokurat",
+      "A. Pestryakov"
+    ],
+    "published": "2023-03-14",
+    "year": 2023,
+    "paper_id": "706e4483f57680764e8eca02fb79a62541b91157",
+    "doi": "10.1109/IEEECONF56737.2023.10092130",
+    "category": "",
+    "source": "scholar",
+    "text": "Software Demo Versions of Modern Measuring Equipment Using for Telecommunication Disciplines Studying\n\nMethods of modern measuring equipment software trials usage for the telecommunication studying process are analyzed in the paper. Vector Spectrum Analyzer Signal Hound SM200C was chosen as an example. The computer analysis technique of signals recorded with the help of Signal Hound SM200C is described. The special program named \"Spike\" is used for the analysis execution. A conjugation algorithm of the Spike program is proposed. It allows conducting the study of signals generated in other software products."
+  },
+  {
+    "title": "Impact of Hyperparameters on Deep Learning Model for Customer Churn Prediction in Telecommunication Sector",
+    "abstract": "In this paper, in order to predict a customer churn in the telecommunication sector, we have analysed several published articles that had used machine learning (ML) techniques. Significant predictive performance had been seen by utilising deep learning techniques. However, we have seen a tremendous lack of empirically derived heuristic information where we had to influence the hyperparameters consequently. Here, we had demonstrated three experimental findings, where a Relu activation function was embedded and utilised successfully in the hidden layers of the deep network. We can also see that the output layer had the service ability of a sigmoid function, in which we had seen a significant performance of the neural network model and obviously it was improved. Furthermore, we had also seen that the model's performance was noticed to be even better, but it was only considered better though when the batch size in the model was taken less than the test dataset\u2019s size, respectively. In terms of accuracy, the RemsProp optimizer beat out the other algorithms such as stochastic gradient descent (SGD). RemsProp was seen even better from the Adadelta algorithm, the Adam algorithm, the AdaGrad algorithm, and AdaMax algorithm as well.",
+    "authors": [
+      "Anouar Dalli"
+    ],
+    "published": "2022-02-09",
+    "year": 2022,
+    "paper_id": "e37d421e35c035cdc8d754d68444506a32abc6e2",
+    "doi": "10.1155/2022/4720539",
+    "category": "",
+    "source": "scholar",
+    "text": "Impact of Hyperparameters on Deep Learning Model for Customer Churn Prediction in Telecommunication Sector\n\nIn this paper, in order to predict a customer churn in the telecommunication sector, we have analysed several published articles that had used machine learning (ML) techniques. Significant predictive performance had been seen by utilising deep learning techniques. However, we have seen a tremendous lack of empirically derived heuristic information where we had to influence the hyperparameters consequently. Here, we had demonstrated three experimental findings, where a Relu activation function was embedded and utilised successfully in the hidden layers of the deep network. We can also see that the output layer had the service ability of a sigmoid function, in which we had seen a significant performance of the neural network model and obviously it was improved. Furthermore, we had also seen that the model's performance was noticed to be even better, but it was only considered better though when the batch size in the model was taken less than the test dataset\u2019s size, respectively. In terms of accuracy, the RemsProp optimizer beat out the other algorithms such as stochastic gradient descent (SGD). RemsProp was seen even better from the Adadelta algorithm, the Adam algorithm, the AdaGrad algorithm, and AdaMax algorithm as well."
+  },
+  {
+    "title": "Analysis of Critical Parameters of Promising Optical Interfaces of High-Speed Telecommunication Systems",
+    "abstract": "In this paper we discuss the critical parameters of optical interfaces to transmitting promising high-speed service traffic at rates of 100 Gbps and higher. The parameters of optical network line are identified and investigated: modulation, baud rate, bandwidth of optical channel, optical power of the line signal at the input of the optical transport section of the network (output optical power of the equipment), optical signal/noise ratio for the signal at the output of optical transport section of the network, mainly affecting the achievement of rates at the required distance without intermediate regeneration units. Examples of standardization of high-speed optical interfaces are given. The issues of testing the parameters of optical interfaces of high-speed telecommunication systems are considered.",
+    "authors": [
+      "L. N. Isaeva",
+      "A. V. Lobzov",
+      "S. Kogan"
+    ],
+    "published": "2023-05-29",
+    "year": 2023,
+    "paper_id": "8f1fc3ce55235f2f70cae6fd57d9d7206427609b",
+    "doi": "10.1109/WECONF57201.2023.10147990",
+    "category": "",
+    "source": "scholar",
+    "text": "Analysis of Critical Parameters of Promising Optical Interfaces of High-Speed Telecommunication Systems\n\nIn this paper we discuss the critical parameters of optical interfaces to transmitting promising high-speed service traffic at rates of 100 Gbps and higher. The parameters of optical network line are identified and investigated: modulation, baud rate, bandwidth of optical channel, optical power of the line signal at the input of the optical transport section of the network (output optical power of the equipment), optical signal/noise ratio for the signal at the output of optical transport section of the network, mainly affecting the achievement of rates at the required distance without intermediate regeneration units. Examples of standardization of high-speed optical interfaces are given. The issues of testing the parameters of optical interfaces of high-speed telecommunication systems are considered."
+  },
+  {
+    "title": "Study on Telecommunication Fraud from a Student's Perspective",
+    "abstract": ": With the rapid development of the information society, the structure of crime has undergone significant changes, and traditional crime has continued to decline, in contrast to which the new type of cybercrime represented by telecommunication network fraud has become the current major form of crime. In the public's perception, most of the victims of telecommunication network fraud are elderly people who are not familiar with the network, middle-aged people who are frequently involved in financial investment and the financial market, or young people who have just entered the workplace and are in urgent need of stability. However, students, who seem to have nothing to do with money, are becoming a new target for fraudsters. Part of the reason is because of the students a large number of personal information has been improperly collected, use, another part of the reason is that the students just because there is no source of money, but in the face of temptation has no resistance, especially for the students who have been addicted to online games, excessive consumption, almost unable to resist a variety of deception.",
+    "authors": [
+      "Shiyang Shen"
+    ],
+    "published": "",
+    "year": 2023,
+    "paper_id": "2e33620916795dc55d76347ad9a8a5460bdfd166",
+    "doi": "10.25236/ijfs.2023.051621",
+    "category": "",
+    "source": "scholar",
+    "text": "Study on Telecommunication Fraud from a Student's Perspective\n\n: With the rapid development of the information society, the structure of crime has undergone significant changes, and traditional crime has continued to decline, in contrast to which the new type of cybercrime represented by telecommunication network fraud has become the current major form of crime. In the public's perception, most of the victims of telecommunication network fraud are elderly people who are not familiar with the network, middle-aged people who are frequently involved in financial investment and the financial market, or young people who have just entered the workplace and are in urgent need of stability. However, students, who seem to have nothing to do with money, are becoming a new target for fraudsters. Part of the reason is because of the students a large number of personal information has been improperly collected, use, another part of the reason is that the students just because there is no source of money, but in the face of temptation has no resistance, especially for the students who have been addicted to online games, excessive consumption, almost unable to resist a variety of deception."
+  },
+  {
+    "title": "Churn Prediction in Telecommunication using Logistic Regression and Logit Boost",
+    "abstract": "Abstract Today in every industry weather, it is ISP, IT products, social network or mobile services there is the problem of customer churn (Customers changing their services from one service provider to another). However, in telecommunication the customers churning very frequently. As the market in telecom is fiercely competitive, in that case, companies proactively have to determine the customers churn by analyzing their behavior and try to put effort and money in retaining the customers. In this proposed model, two machine-learning techniques were used for predicting customer churn Logistic regression and Logit Boost. Experiment was carried out in the WEKA Machine-learning tool, along with a real database from an American company Orange. The result were shown in different evaluation measures.",
+    "authors": [
+      "Hemlata Jain",
+      "A. Khunteta",
+      "S. Srivastava"
+    ],
+    "published": "",
+    "year": 2020,
+    "paper_id": "33380cc1a79a21d1600dae888a1cd06221949eeb",
+    "doi": "10.1016/j.procs.2020.03.187",
+    "category": "Computer Science",
+    "source": "scholar",
+    "text": "Churn Prediction in Telecommunication using Logistic Regression and Logit Boost\n\nAbstract Today in every industry weather, it is ISP, IT products, social network or mobile services there is the problem of customer churn (Customers changing their services from one service provider to another). However, in telecommunication the customers churning very frequently. As the market in telecom is fiercely competitive, in that case, companies proactively have to determine the customers churn by analyzing their behavior and try to put effort and money in retaining the customers. In this proposed model, two machine-learning techniques were used for predicting customer churn Logistic regression and Logit Boost. Experiment was carried out in the WEKA Machine-learning tool, along with a real database from an American company Orange. The result were shown in different evaluation measures."
+  },
+  {
+    "title": "Financial development and economic growth nexus in SSA economies: The moderating role of telecommunication development",
+    "abstract": "Abstract The economic growth of most sub-Saharan African countries in the past years has not been able to equalize with other regions. Even though financial development has been highlighted in several empirical literature as a factor that could spur up economic growth, the level of financial development in sub-Saharan Africa is not effectively channeled into desired levels of economic growth. However, there is an indication in the literature that financial development will be more relevant to the economic growth of sub-Saharan African economies that have strong telecommunication infrastructure. Using the system General Method of Moment estimation technique, the paper found that telecommunication infrastructure enhances the effect of financial development on the economic growth of sub-Saharan African economies. It is therefore recommended that sub-Saharan African economies should apply appropriate measures to boost their telecommunication infrastructure so that gains from the financial sector can effectively be channeled into economic growth.",
+    "authors": [
+      "Mac Junior Abeka",
+      "Eric Andoh",
+      "J. Gatsi",
+      "Seyram Kawor"
+    ],
+    "published": "2021-01-01",
+    "year": 2021,
+    "paper_id": "ecebaf12a3f7f236d9e47dde4cd663138351aaed",
+    "doi": "10.1080/23322039.2020.1862395",
+    "category": "Business",
+    "source": "scholar",
+    "text": "Financial development and economic growth nexus in SSA economies: The moderating role of telecommunication development\n\nAbstract The economic growth of most sub-Saharan African countries in the past years has not been able to equalize with other regions. Even though financial development has been highlighted in several empirical literature as a factor that could spur up economic growth, the level of financial development in sub-Saharan Africa is not effectively channeled into desired levels of economic growth. However, there is an indication in the literature that financial development will be more relevant to the economic growth of sub-Saharan African economies that have strong telecommunication infrastructure. Using the system General Method of Moment estimation technique, the paper found that telecommunication infrastructure enhances the effect of financial development on the economic growth of sub-Saharan African economies. It is therefore recommended that sub-Saharan African economies should apply appropriate measures to boost their telecommunication infrastructure so that gains from the financial sector can effectively be channeled into economic growth."
+  }
+]

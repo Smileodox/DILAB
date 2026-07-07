@@ -1,0 +1,434 @@
+[
+  {
+    "title": "Cruise Missile Target Trajectory Movement Prediction based on Optimal 3D Kalman Filter with Firefly Algorithm",
+    "abstract": "It is hoped that there will never be a war in the world, but one of the defensive requirements of any country during the war is the missiles used for destruction and defense. Todays, missiles movement from origin to destination is an important problem due to abundant application of missiles in wars. This is important because of the range of some missiles is low and other are very high. Parametric indeterminacy are several factors in missile movement prediction and trajectory such as speed, movement angle, accuracy, movement time, and situation and direct control. So this research trying to provide a method based on LQR controller with 3d Kalman filter and then set motion and specify path without deviations based on Firefly Algorithm. It is expected that the results of an appropriate evaluation can be obtained by simulating the MATLAB environment and graphic display of a cruise missile.",
+    "authors": [
+      "Mahdi Mir"
+    ],
+    "published": "2018-07-18",
+    "year": 2018,
+    "arxiv_id": "1807.07006v1",
+    "category": "eess.SP",
+    "source": "arxiv",
+    "text": "Cruise Missile Target Trajectory Movement Prediction based on Optimal 3D Kalman Filter with Firefly Algorithm\n\nIt is hoped that there will never be a war in the world, but one of the defensive requirements of any country during the war is the missiles used for destruction and defense. Todays, missiles movement from origin to destination is an important problem due to abundant application of missiles in wars. This is important because of the range of some missiles is low and other are very high. Parametric indeterminacy are several factors in missile movement prediction and trajectory such as speed, movement angle, accuracy, movement time, and situation and direct control. So this research trying to provide a method based on LQR controller with 3d Kalman filter and then set motion and specify path without deviations based on Firefly Algorithm. It is expected that the results of an appropriate evaluation can be obtained by simulating the MATLAB environment and graphic display of a cruise missile."
+  },
+  {
+    "title": "Designing AI-Enabled Countermeasures to Cognitive Warfare",
+    "abstract": "Foreign information operations on social media platforms pose significant risks to democratic societies. With the rise of Artificial Intelligence (AI), this threat is likely to intensify, potentially overwhelming human defenders. To achieve the necessary scale and tempo to defend against these threats, utilizing AI as part of the solution seems inevitable. Although there has been a significant debate on AI in Lethal Autonomous Weapon Systems (LAWS), it is equally likely that AI will be widely used in information operations for defensive and offensive objectives. Similar to LAWS, AI-driven information operations occupy a highly sensitive moral domain where removing human involvement in the tactical decision making process raises ethical concerns. Although AI has yet to revolutionize the field, a solid ethical stance is urgently needed on how AI can be responsibly used to defend against information operations on social media platforms. This paper proposes possible AI-enabled countermeasures against cognitive warfare and argues how they can be developed in a responsible way, such that meaningful human control is preserved.",
+    "authors": [
+      "Jurriaan van Diggelen",
+      "Eugene Aidman",
+      "Jazz Rowa",
+      "Julian Vince"
+    ],
+    "published": "2025-04-14",
+    "year": 2025,
+    "arxiv_id": "2504.11486v1",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "Designing AI-Enabled Countermeasures to Cognitive Warfare\n\nForeign information operations on social media platforms pose significant risks to democratic societies. With the rise of Artificial Intelligence (AI), this threat is likely to intensify, potentially overwhelming human defenders. To achieve the necessary scale and tempo to defend against these threats, utilizing AI as part of the solution seems inevitable. Although there has been a significant debate on AI in Lethal Autonomous Weapon Systems (LAWS), it is equally likely that AI will be widely used in information operations for defensive and offensive objectives. Similar to LAWS, AI-driven information operations occupy a highly sensitive moral domain where removing human involvement in the tactical decision making process raises ethical concerns. Although AI has yet to revolutionize the field, a solid ethical stance is urgently needed on how AI can be responsibly used to defend against information operations on social media platforms. This paper proposes possible AI-enabled countermeasures against cognitive warfare and argues how they can be developed in a responsible way, such that meaningful human control is preserved."
+  },
+  {
+    "title": "Enhanced Performance of Highly Activated Carbon and Surface-Treated Porous Polymers as Physical Adsorbents for Chemical Warfare Agents",
+    "abstract": "The use of chemical warfare agents (CWAs) in modern warfare cannot be disregarded due to their ease of use and potential for large-scale incapacitation. An effective countermeasure involves the physical adsorption of these agents, preventing their entry through the respiratory tract by non-specific adsorption. In this study, we investigate the physical interaction between potential adsorbents and model gases mimicking CWAs, thereby identifying sufficient conditions for higher physical adsorption performance. Our findings reveal that the physical adsorption capacity is highly sensitive to the surface properties of the adsorbents, with uniform development of micropores, rather than solely high surface area, emerging as a critical factor. Additionally, we identified the potential of porous organic polymers as promising alternatives to conventional activated carbon-based adsorbents. Through a facile introduction of polar sulfone functional groups on the polymer surface, we demonstrated that these polar surface polymers exhibit physical adsorption capabilities for formaldehyde under ambient conditions comparable to high-performance activated carbons. Notably, the superior activated carbon possessed a high BET surface area of 2400 m^2/g and an exceptionally uniform micropore structure with an average pore size of approximately 11 Angstroms. This research paves the way for designing adsorbents with high physical adsorption capacities tailored for CWAs protection, offering a significant advancement in developing next-generation protective materials.",
+    "authors": [
+      "Sanghyeon Park",
+      "Yuseung Hong",
+      "Hyunseo Choi"
+    ],
+    "published": "2025-05-10",
+    "year": 2025,
+    "arxiv_id": "2505.08802v1",
+    "category": "physics.chem-ph",
+    "source": "arxiv",
+    "text": "Enhanced Performance of Highly Activated Carbon and Surface-Treated Porous Polymers as Physical Adsorbents for Chemical Warfare Agents\n\nThe use of chemical warfare agents (CWAs) in modern warfare cannot be disregarded due to their ease of use and potential for large-scale incapacitation. An effective countermeasure involves the physical adsorption of these agents, preventing their entry through the respiratory tract by non-specific adsorption. In this study, we investigate the physical interaction between potential adsorbents and model gases mimicking CWAs, thereby identifying sufficient conditions for higher physical adsorption performance. Our findings reveal that the physical adsorption capacity is highly sensitive to the surface properties of the adsorbents, with uniform development of micropores, rather than solely high surface area, emerging as a critical factor. Additionally, we identified the potential of porous organic polymers as promising alternatives to conventional activated carbon-based adsorbents. Through a facile introduction of polar sulfone functional groups on the polymer surface, we demonstrated that these polar surface polymers exhibit physical adsorption capabilities for formaldehyde under ambient conditions comparable to high-performance activated carbons. Notably, the superior activated carbon possessed a high BET surface area of 2400 m^2/g and an exceptionally uniform micropore structure with an average pore size of approximately 11 Angstroms. This research paves the way for designing adsorbents with high physical adsorption capacities tailored for CWAs protection, offering a significant advancement in developing next-generation protective materials."
+  },
+  {
+    "title": "The Dragon and the Computer: Why Intellectual Property Theft is Compatible with Chinese Cyber-Warfare Doctrine",
+    "abstract": "Along with the USA and Russia, China is often considered one of the leading cyber-powers in the world. In this excerpt, we explore how Chinese military thought, developed in the 1990s, influenced their cyber-operations in the early 2000s. In particular, we examine the ideas of \"Unrestricted Warfare\" and \"Active Offense\" and discuss how they can permit for the theft of intellectual property. We then specifically look at how the case study of Operation Aurora, a cyber-operation directed against many major U.S. technology and defense firms, reflects some of these ideas.",
+    "authors": [
+      "Paulo Shakarian",
+      "Jana Shakarian",
+      "Andrew Ruef"
+    ],
+    "published": "2013-09-25",
+    "year": 2013,
+    "arxiv_id": "1309.6450v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "The Dragon and the Computer: Why Intellectual Property Theft is Compatible with Chinese Cyber-Warfare Doctrine\n\nAlong with the USA and Russia, China is often considered one of the leading cyber-powers in the world. In this excerpt, we explore how Chinese military thought, developed in the 1990s, influenced their cyber-operations in the early 2000s. In particular, we examine the ideas of \"Unrestricted Warfare\" and \"Active Offense\" and discuss how they can permit for the theft of intellectual property. We then specifically look at how the case study of Operation Aurora, a cyber-operation directed against many major U.S. technology and defense firms, reflects some of these ideas."
+  },
+  {
+    "title": "Broad Area Search and Detection of Surface-to-Air Missile Sites Using Spatial Fusion of Component Object Detections from Deep Neural Networks",
+    "abstract": "Here we demonstrate how Deep Neural Network (DNN) detections of multiple constitutive or component objects that are part of a larger, more complex, and encompassing feature can be spatially fused to improve the search, detection, and retrieval (ranking) of the larger complex feature. First, scores computed from a spatial clustering algorithm are normalized to a reference space so that they are independent of image resolution and DNN input chip size. Then, multi-scale DNN detections from various component objects are fused to improve the detection and retrieval of DNN detections of a larger complex feature. We demonstrate the utility of this approach for broad area search and detection of Surface-to-Air Missile (SAM) sites that have a very low occurrence rate (only 16 sites) over a ~90,000 km^2 study area in SE China. The results demonstrate that spatial fusion of multi-scale component-object DNN detections can reduce the detection error rate of SAM Sites by $>$85% while still maintaining a 100% recall. The novel spatial fusion approach demonstrated here can be easily extended to a wide variety of other challenging object search and detection problems in large-scale remote sensing image datasets.",
+    "authors": [
+      "Alan B. Cannaday",
+      "Curt H. Davis",
+      "Grant J. Scott",
+      "Blake Ruprecht",
+      "Derek T. Anderson"
+    ],
+    "published": "2020-03-23",
+    "year": 2020,
+    "arxiv_id": "2003.10566v3",
+    "category": "cs.CV",
+    "source": "arxiv",
+    "text": "Broad Area Search and Detection of Surface-to-Air Missile Sites Using Spatial Fusion of Component Object Detections from Deep Neural Networks\n\nHere we demonstrate how Deep Neural Network (DNN) detections of multiple constitutive or component objects that are part of a larger, more complex, and encompassing feature can be spatially fused to improve the search, detection, and retrieval (ranking) of the larger complex feature. First, scores computed from a spatial clustering algorithm are normalized to a reference space so that they are independent of image resolution and DNN input chip size. Then, multi-scale DNN detections from various component objects are fused to improve the detection and retrieval of DNN detections of a larger complex feature. We demonstrate the utility of this approach for broad area search and detection of Surface-to-Air Missile (SAM) sites that have a very low occurrence rate (only 16 sites) over a ~90,000 km^2 study area in SE China. The results demonstrate that spatial fusion of multi-scale component-object DNN detections can reduce the detection error rate of SAM Sites by $>$85% while still maintaining a 100% recall. The novel spatial fusion approach demonstrated here can be easily extended to a wide variety of other challenging object search and detection problems in large-scale remote sensing image datasets."
+  },
+  {
+    "title": "A potential missile guidance law based-on chaos",
+    "abstract": "An important field of research in defense-related technology is the design of guidance laws. A guided missile is generally challenging to intercept if its trajectory becomes unpredictable. In this short communication, we have discussed a possible application of the chaos theory in developing an advanced guided missile, where the guidance law is based upon a robust chaotic map. This type of guided missile may be almost impossible to intercept by existing missile defense systems due to its unpredictable trajectory.",
+    "authors": [
+      "Dhrubajyoti Mandal"
+    ],
+    "published": "2023-12-15",
+    "year": 2023,
+    "arxiv_id": "2312.10011v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "A potential missile guidance law based-on chaos\n\nAn important field of research in defense-related technology is the design of guidance laws. A guided missile is generally challenging to intercept if its trajectory becomes unpredictable. In this short communication, we have discussed a possible application of the chaos theory in developing an advanced guided missile, where the guidance law is based upon a robust chaotic map. This type of guided missile may be almost impossible to intercept by existing missile defense systems due to its unpredictable trajectory."
+  },
+  {
+    "title": "Future state prediction based on observer for missile system",
+    "abstract": "Guided missile accuracy and precision is negatively impacted by seeker delay, more specifically by the delay introduced by a mechanical seeker gimbal and the computational time taken to process the raw data. To meet the demands and expectations of modern missiles systems, the impact of this hardware limitation must be reduced. This paper presents a new observer design that predicts the future state of a seeker signal, augmenting the guidance system to mitigate the effects of this delay. The design is based on a novel two-step differentiator, which produces the estimated future time derivatives of the signal. The input signal can be nonlinear and provides for simple integration into existing systems. A bespoke numerical guided missile simulation is used to demonstrate the performance of the observer within a missile guidance system. Both non-manoeuvring and randomly manoeuvring target engagement scenarios are considered.",
+    "authors": [
+      "W. K. Smithson",
+      "Xinhua Wang"
+    ],
+    "published": "2024-11-13",
+    "year": 2024,
+    "arxiv_id": "2411.08576v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Future state prediction based on observer for missile system\n\nGuided missile accuracy and precision is negatively impacted by seeker delay, more specifically by the delay introduced by a mechanical seeker gimbal and the computational time taken to process the raw data. To meet the demands and expectations of modern missiles systems, the impact of this hardware limitation must be reduced. This paper presents a new observer design that predicts the future state of a seeker signal, augmenting the guidance system to mitigate the effects of this delay. The design is based on a novel two-step differentiator, which produces the estimated future time derivatives of the signal. The input signal can be nonlinear and provides for simple integration into existing systems. A bespoke numerical guided missile simulation is used to demonstrate the performance of the observer within a missile guidance system. Both non-manoeuvring and randomly manoeuvring target engagement scenarios are considered."
+  },
+  {
+    "title": "Missile detection and destruction robot using detection algorithm",
+    "abstract": "This research is based on the present missile detection technologies in the world and the analysis of these technologies to find a cost effective solution to implement the system in Bangladesh. The paper will give an idea of the missile detection technologies using the electro-optical sensor and the pulse doppler radar. The system is made to detect the target missile. Automatic detection and destruction with the help of ultrasonic sonar, a metal detector sensor, and a smoke detector sensor. The system is mainly based on an ultrasonic sonar sensor. It has a transducer, a transmitter, and a receiver. Transducer is connected with the connected with controller. When it detects an object by following the algorithm, it finds its distance and angle. It can also assure whether the system can destroy the object or not by using another algorithm's simulation.",
+    "authors": [
+      "Md Kamrul Siam",
+      "Shafayet Ahmed",
+      "Md Habibur Rahman",
+      "Amir Hossain Mollah"
+    ],
+    "published": "2024-07-10",
+    "year": 2024,
+    "arxiv_id": "2407.07452v2",
+    "category": "cs.RO",
+    "source": "arxiv",
+    "text": "Missile detection and destruction robot using detection algorithm\n\nThis research is based on the present missile detection technologies in the world and the analysis of these technologies to find a cost effective solution to implement the system in Bangladesh. The paper will give an idea of the missile detection technologies using the electro-optical sensor and the pulse doppler radar. The system is made to detect the target missile. Automatic detection and destruction with the help of ultrasonic sonar, a metal detector sensor, and a smoke detector sensor. The system is mainly based on an ultrasonic sonar sensor. It has a transducer, a transmitter, and a receiver. Transducer is connected with the connected with controller. When it detects an object by following the algorithm, it finds its distance and angle. It can also assure whether the system can destroy the object or not by using another algorithm's simulation."
+  },
+  {
+    "title": "A Multi-Layer Electronic and Cyber Interference Model for AI-Driven Cruise Missiles: The Case of Khuzestan Province",
+    "abstract": "The rapid advancement of Artificial Intelligence has enabled the development of cruise missiles endowed with high levels of autonomy, adaptability, and precision. These AI driven missiles integrating deep learning algorithms, real time data processing, and advanced guidance systems pose critical threats to strategic infrastructures, especially under complex geographic and climatic conditions such as those found in Irans Khuzestan Province. In this paper, we propose a multi layer interference model, encompassing electronic warfare, cyberattacks, and deception strategies, to degrade the performance of AI guided cruise missiles significantly. Our experimental results, derived from 400 simulation runs across four distinct scenarios, demonstrate notable improvements when employing the integrated multi layer approach compared to single layer or no interference baselines. Specifically, the average missile deviation from its intended target increases from 0.25 to 8.65 under multi layer interference a more than 3300 increase in angular deviation. Furthermore, the target acquisition success rate is reduced from 92.7 in the baseline scenario to 31.5, indicating a 66 decrease in successful strikes. While resource consumption for multi layer strategies rises by approximately 25 compared to single layer methods, the significant drop in missile accuracy and reliability justifies the more intensive deployment of jamming power, cyber resources, and decoy measures. Beyond these quantitative improvements, the proposed framework uses a deep reinforcement learning based defense coordinator to adaptively select the optimal configuration of EW, cyber, and deception tactics in real time.",
+    "authors": [
+      "Pouriya Alimoradi",
+      "Ali Barati",
+      "Hamid Barati"
+    ],
+    "published": "2025-10-03",
+    "year": 2025,
+    "arxiv_id": "2510.03542v2",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "A Multi-Layer Electronic and Cyber Interference Model for AI-Driven Cruise Missiles: The Case of Khuzestan Province\n\nThe rapid advancement of Artificial Intelligence has enabled the development of cruise missiles endowed with high levels of autonomy, adaptability, and precision. These AI driven missiles integrating deep learning algorithms, real time data processing, and advanced guidance systems pose critical threats to strategic infrastructures, especially under complex geographic and climatic conditions such as those found in Irans Khuzestan Province. In this paper, we propose a multi layer interference model, encompassing electronic warfare, cyberattacks, and deception strategies, to degrade the performance of AI guided cruise missiles significantly. Our experimental results, derived from 400 simulation runs across four distinct scenarios, demonstrate notable improvements when employing the integrated multi layer approach compared to single layer or no interference baselines. Specifically, the average missile deviation from its intended target increases from 0.25 to 8.65 under multi layer interference a more than 3300 increase in angular deviation. Furthermore, the target acquisition success rate is reduced from 92.7 in the baseline scenario to 31.5, indicating a 66 decrease in successful strikes. While resource consumption for multi layer strategies rises by approximately 25 compared to single layer methods, the significant drop in missile accuracy and reliability justifies the more intensive deployment of jamming power, cyber resources, and decoy measures. Beyond these quantitative improvements, the proposed framework uses a deep reinforcement learning based defense coordinator to adaptively select the optimal configuration of EW, cyber, and deception tactics in real time."
+  },
+  {
+    "title": "Swarm-optimized Adaptive Augmentation of Missile Autopilot",
+    "abstract": "This paper considers the problem of optimizing a missile autopilot. In particular, the paper investigates the application of an online learning technique to learn and optimize the gains of a three-loop topology autopilot for a planar missile modeled with nonlinear dynamics and nonlinear aerodynamics forces and moments. The classical autopilot for a missile is based on a three-loop topology, where each loop consists of tunable proportional gains. An adaptive three-loop autopilot is constructed by augmenting the classical autopilot's fixed-gain controllers with a learning-based controller, which is recursively optimized using retrospective cost optimization. Numerical simulations show that online learning improves the tracking performance of the classical autopilot in both nominal and off-nominal interception scenarios.",
+    "authors": [
+      "Alexander Dorsey",
+      "Parham Oveissi",
+      "Jeffrey D. Barton",
+      "Ankit Goel"
+    ],
+    "published": "2025-09-09",
+    "year": 2025,
+    "arxiv_id": "2509.07748v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Swarm-optimized Adaptive Augmentation of Missile Autopilot\n\nThis paper considers the problem of optimizing a missile autopilot. In particular, the paper investigates the application of an online learning technique to learn and optimize the gains of a three-loop topology autopilot for a planar missile modeled with nonlinear dynamics and nonlinear aerodynamics forces and moments. The classical autopilot for a missile is based on a three-loop topology, where each loop consists of tunable proportional gains. An adaptive three-loop autopilot is constructed by augmenting the classical autopilot's fixed-gain controllers with a learning-based controller, which is recursively optimized using retrospective cost optimization. Numerical simulations show that online learning improves the tracking performance of the classical autopilot in both nominal and off-nominal interception scenarios."
+  },
+  {
+    "title": "Robust control for uncertain air-to-air missile systems",
+    "abstract": "Air-to-air missiles are used on many modern military combat aircraft for self-defence. It is imperative for the pilots using the weapons that the missiles hit their target first time. The important goals for a missile control system to achieve are minimising the time constant, overshoot, and settling time of the missile dynamics. The combination of high angles of attack, time-varying mass, thrust, and centre of gravity, actuator delay, and signal noise create a highly non-linear dynamic system with many uncertainties that is extremely challenging to control. A robust control system based on saturated sliding mode control is proposed to overcome the time-varying parameters and non-linearities. A lag compensator is designed to overcome actuator delay. A second-order filter is selected to reduce high-frequency measurement noise. When combined, the proposed solutions can make the system stable despite the existence of changing mass, centre of gravity, thrust, and sensor noise. The system was evaluated for desired pitch angles of 0\u00b0 to 90\u00b0. The time constant for the system stayed below 0.27s for all conditions, with satisfactory performance for both settling time and overshoot.",
+    "authors": [
+      "Joshua Farrington",
+      "Xinhua Wang"
+    ],
+    "published": "2024-11-12",
+    "year": 2024,
+    "arxiv_id": "2411.07593v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Robust control for uncertain air-to-air missile systems\n\nAir-to-air missiles are used on many modern military combat aircraft for self-defence. It is imperative for the pilots using the weapons that the missiles hit their target first time. The important goals for a missile control system to achieve are minimising the time constant, overshoot, and settling time of the missile dynamics. The combination of high angles of attack, time-varying mass, thrust, and centre of gravity, actuator delay, and signal noise create a highly non-linear dynamic system with many uncertainties that is extremely challenging to control. A robust control system based on saturated sliding mode control is proposed to overcome the time-varying parameters and non-linearities. A lag compensator is designed to overcome actuator delay. A second-order filter is selected to reduce high-frequency measurement noise. When combined, the proposed solutions can make the system stable despite the existence of changing mass, centre of gravity, thrust, and sensor noise. The system was evaluated for desired pitch angles of 0\u00b0 to 90\u00b0. The time constant for the system stayed below 0.27s for all conditions, with satisfactory performance for both settling time and overshoot."
+  },
+  {
+    "title": "Turnkey Technology: A Powerful Tool for Cyber Warfare",
+    "abstract": "Turnkey technology has emerged as a game-changing tool in cyber warfare, offering state and non-state actors unprecedented access to advanced cyber capabilities. The advantages of turnkey technology include rapid deployment and adaptability, lower costs and resource requirements, the democratization of cyber warfare capabilities, and enhanced offensive and defensive strategies. However, turnkey technology also introduces significant risks, such as the proliferation of cyber weapons, ethical considerations, potential collateral damage, escalation of conflicts, and legal ramifications. This paper provides a unique perspective on the implications of turnkey technology in cyber warfare, highlighting its advantages, risks, and challenges, as well as the potential strategies for mitigating these concerns. The research's novelty lies in examining real-world examples and proposing a multifaceted approach to address the challenges associated with turnkey technology in cyber warfare. This approach focuses on developing effective cybersecurity measures, establishing international norms and regulations, promoting responsible use and development of turnkey technology, and enhancing global cooperation on cyber warfare issues. By adopting this accountable and balanced approach, governments, organizations, and the international community can work together to create a more secure and stable digital environment, leveraging the benefits of turnkey technology while minimizing the associated risks and challenges.",
+    "authors": [
+      "MA. Bouke",
+      "A. Abdullah"
+    ],
+    "published": "2023-08-28",
+    "year": 2023,
+    "arxiv_id": "2308.14576v1",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "Turnkey Technology: A Powerful Tool for Cyber Warfare\n\nTurnkey technology has emerged as a game-changing tool in cyber warfare, offering state and non-state actors unprecedented access to advanced cyber capabilities. The advantages of turnkey technology include rapid deployment and adaptability, lower costs and resource requirements, the democratization of cyber warfare capabilities, and enhanced offensive and defensive strategies. However, turnkey technology also introduces significant risks, such as the proliferation of cyber weapons, ethical considerations, potential collateral damage, escalation of conflicts, and legal ramifications. This paper provides a unique perspective on the implications of turnkey technology in cyber warfare, highlighting its advantages, risks, and challenges, as well as the potential strategies for mitigating these concerns. The research's novelty lies in examining real-world examples and proposing a multifaceted approach to address the challenges associated with turnkey technology in cyber warfare. This approach focuses on developing effective cybersecurity measures, establishing international norms and regulations, promoting responsible use and development of turnkey technology, and enhancing global cooperation on cyber warfare issues. By adopting this accountable and balanced approach, governments, organizations, and the international community can work together to create a more secure and stable digital environment, leveraging the benefits of turnkey technology while minimizing the associated risks and challenges."
+  },
+  {
+    "title": "Energy-Optimal Control of a Submarine-Launched Cruise Missile",
+    "abstract": "A typical mission profile of submarine-launched cruise missiles begins with the launch phase which covers the motion of the missile from the launch to the water-exit and continues with the boost phase which lasts from the water-exit to the beginning of the cruise phase. In order to achieve the desired range of the launch and boost phases, efficient utilization of available energy which carries the missile to the beginning of the cruise phase is necessary. For this purpose, this study presents a new approach for energy-optimal control of the underwater and air motion of a submarine-launched cruise missile. In this approach, the aforementioned problem is modeled and solved as a minimum-effort optimal control problem. Then, the effects of initial and final conditions on energy need are investigated, and the optimal conditions that result with the minimum energy need are determined. Prior to the guidance and control design steps, six degrees of freedom (6 DOF) motion equations are derived and the hydrodynamic and aerodynamic parameters are retrieved. The nonlinear 6 DOF motion model is simplified and linearized before minimum-effort optimal control design part. Results of the designed guidance and control strategies are presented through the nonlinear 6 DOF simulations. Finally, some comments are made and future studies are mentioned based on theoretical and simulation studies.",
+    "authors": [
+      "Semih K\u00f6kl\u00fccan",
+      "M. Kemal Leblebicio\u011flu"
+    ],
+    "published": "2020-08-18",
+    "year": 2020,
+    "arxiv_id": "2008.08068v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Energy-Optimal Control of a Submarine-Launched Cruise Missile\n\nA typical mission profile of submarine-launched cruise missiles begins with the launch phase which covers the motion of the missile from the launch to the water-exit and continues with the boost phase which lasts from the water-exit to the beginning of the cruise phase. In order to achieve the desired range of the launch and boost phases, efficient utilization of available energy which carries the missile to the beginning of the cruise phase is necessary. For this purpose, this study presents a new approach for energy-optimal control of the underwater and air motion of a submarine-launched cruise missile. In this approach, the aforementioned problem is modeled and solved as a minimum-effort optimal control problem. Then, the effects of initial and final conditions on energy need are investigated, and the optimal conditions that result with the minimum energy need are determined. Prior to the guidance and control design steps, six degrees of freedom (6 DOF) motion equations are derived and the hydrodynamic and aerodynamic parameters are retrieved. The nonlinear 6 DOF motion model is simplified and linearized before minimum-effort optimal control design part. Results of the designed guidance and control strategies are presented through the nonlinear 6 DOF simulations. Finally, some comments are made and future studies are mentioned based on theoretical and simulation studies."
+  },
+  {
+    "title": "Parameter Identification of a PN-Guided Incoming Missile Using an Improved Multiple-Model Mechanism",
+    "abstract": "An active defense against an incoming missile requires information of it, including a guidance law parameter and a first-order lateral time constant. To this end, assuming that a missile with a proportional navigation (PN) guidance law attempts to attack an aerial target with bang-bang evasive maneuvers, a parameter identification model based on the gated recurrent unit (GRU) neural network is built in this paper. The analytic identification solutions for the guidance law parameter and the first-order lateral time constant are derived. The inputs of the identification model are available kinematic information between the aircraft and the missile, while the outputs contain the regression results of missile parameters. To increase the training speed and the identification accuracy of the Model, an output processing method called improved multiplemodel mechanism (IMMM) is proposed in this paper. The effectiveness of IMMM and the performance of the established model are demonstrated through numerical simulations under various engagement scenarios.",
+    "authors": [
+      "Yinhan Wang",
+      "Jiang Wang",
+      "Shipeng Fan"
+    ],
+    "published": "2022-01-25",
+    "year": 2022,
+    "arxiv_id": "2202.09361v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Parameter Identification of a PN-Guided Incoming Missile Using an Improved Multiple-Model Mechanism\n\nAn active defense against an incoming missile requires information of it, including a guidance law parameter and a first-order lateral time constant. To this end, assuming that a missile with a proportional navigation (PN) guidance law attempts to attack an aerial target with bang-bang evasive maneuvers, a parameter identification model based on the gated recurrent unit (GRU) neural network is built in this paper. The analytic identification solutions for the guidance law parameter and the first-order lateral time constant are derived. The inputs of the identification model are available kinematic information between the aircraft and the missile, while the outputs contain the regression results of missile parameters. To increase the training speed and the identification accuracy of the Model, an output processing method called improved multiplemodel mechanism (IMMM) is proposed in this paper. The effectiveness of IMMM and the performance of the established model are demonstrated through numerical simulations under various engagement scenarios."
+  },
+  {
+    "title": "Cooperative missile guidance design using Distributed Nonlinear Dynamic Inversion",
+    "abstract": "This paper presents a new cooperative guidance algorithm based on Distributed Nonlinear Dynamic Inversion (DNDI) to demonstrate a coordinated missile attack.",
+    "authors": [
+      "Sabyasachi Mondal",
+      "Bhaskar Biswas",
+      "Venkatraman Renganathan"
+    ],
+    "published": "2025-09-22",
+    "year": 2025,
+    "arxiv_id": "2509.18022v1",
+    "category": "math.OC",
+    "source": "arxiv",
+    "text": "Cooperative missile guidance design using Distributed Nonlinear Dynamic Inversion\n\nThis paper presents a new cooperative guidance algorithm based on Distributed Nonlinear Dynamic Inversion (DNDI) to demonstrate a coordinated missile attack."
+  },
+  {
+    "title": "Deep Learning Based Situation Awareness for Multiple Missiles Evasion",
+    "abstract": "As the effective range of air-to-air missiles increases, it becomes harder for human operators to maintain the situational awareness needed to keep a UAV safe. In this work, we propose a decision support tool to help UAV operators in Beyond Visual Range (BVR) air combat scenarios assess the risks of different options and make decisions based on those. Earlier work focused on the threat posed by a single missile, and in this work, we extend the ideas to several missile threats. The proposed method uses Deep Neural Networks (DNN) to learn from high-fidelity simulations to provide the operator with an outcome estimate for a set of different strategies. Our results demonstrate that the proposed system can manage multiple incoming missiles, evaluate a family of options, and recommend the least risky course of action.",
+    "authors": [
+      "Edvards Scukins",
+      "Markus Klein",
+      "Lars Kroon",
+      "Petter \u00d6gren"
+    ],
+    "published": "2024-02-07",
+    "year": 2024,
+    "arxiv_id": "2402.10101v1",
+    "category": "cs.LG",
+    "source": "arxiv",
+    "text": "Deep Learning Based Situation Awareness for Multiple Missiles Evasion\n\nAs the effective range of air-to-air missiles increases, it becomes harder for human operators to maintain the situational awareness needed to keep a UAV safe. In this work, we propose a decision support tool to help UAV operators in Beyond Visual Range (BVR) air combat scenarios assess the risks of different options and make decisions based on those. Earlier work focused on the threat posed by a single missile, and in this work, we extend the ideas to several missile threats. The proposed method uses Deep Neural Networks (DNN) to learn from high-fidelity simulations to provide the operator with an outcome estimate for a set of different strategies. Our results demonstrate that the proposed system can manage multiple incoming missiles, evaluate a family of options, and recommend the least risky course of action."
+  },
+  {
+    "title": "Advanced Prediction of Hypersonic Missile Trajectories with CNN-LSTM-GRU Architectures",
+    "abstract": "Advancements in the defense industry are paramount for ensuring the safety and security of nations, providing robust protection against emerging threats. Among these threats, hypersonic missiles pose a significant challenge due to their extreme speeds and maneuverability, making accurate trajectory prediction a critical necessity for effective countermeasures. This paper addresses this challenge by employing a novel hybrid deep learning approach, integrating Convolutional Neural Networks (CNNs), Long Short-Term Memory (LSTM) networks, and Gated Recurrent Units (GRUs). By leveraging the strengths of these architectures, the proposed method successfully predicts the complex trajectories of hypersonic missiles with high accuracy, offering a significant contribution to defense strategies and missile interception technologies. This research demonstrates the potential of advanced machine learning techniques in enhancing the predictive capabilities of defense systems.",
+    "authors": [
+      "Amir Hossein Baradaran"
+    ],
+    "published": "2025-03-20",
+    "year": 2025,
+    "arxiv_id": "2506.15043v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "Advanced Prediction of Hypersonic Missile Trajectories with CNN-LSTM-GRU Architectures\n\nAdvancements in the defense industry are paramount for ensuring the safety and security of nations, providing robust protection against emerging threats. Among these threats, hypersonic missiles pose a significant challenge due to their extreme speeds and maneuverability, making accurate trajectory prediction a critical necessity for effective countermeasures. This paper addresses this challenge by employing a novel hybrid deep learning approach, integrating Convolutional Neural Networks (CNNs), Long Short-Term Memory (LSTM) networks, and Gated Recurrent Units (GRUs). By leveraging the strengths of these architectures, the proposed method successfully predicts the complex trajectories of hypersonic missiles with high accuracy, offering a significant contribution to defense strategies and missile interception technologies. This research demonstrates the potential of advanced machine learning techniques in enhancing the predictive capabilities of defense systems."
+  },
+  {
+    "title": "Automatic planetary defense Deflecting NEOs by missiles shot from L1 and L3 (Earth-Moon)",
+    "abstract": "We develop the mathematical theory for an automatic, space-based system to deflect NEOs by virtue of missiles shot from the Earth-Moon L1 and L3 Lagrangian Points. A patent application has been filed for the relevant code dubbed AsterOFF (=Asteroids OFF !). This code was already implemented, and a copyright for it was registered. In a paper published in Acta Astronautica, this author proved mathematically the following theorem: \"Within the sphere of influence of the Earth, any NEO could be hit by a missile at just an angle of 90 degrees, was the missile shot from the Lagrangian Points L1 or L3 of the Earth-Moon system, rather than from the surface of the Earth\". As a consequence, the hitting missile would have to move along a \"confocal ellipse\" (centered at the Earth) uniquely determined by the NEO's incoming hyperbola. The author further shows in this paper that: 1) The proposed defense system would be ideal to deflect NEOs that are small, i.e. less than one kilometer in diameter. 2) The traditional theory of Keplerian orbits can successfully be applied to get an excellent first-order approximation of the mathematical formulae of the energy-momentum requested to achieve the NEO deflection. Many engineering details about the missiles shot from L1 and L3, however, still have to be implemented into our simulations. 3) Was one missile not enough to deflect the NEO completely, it is a great advantage of the \"confocal conics\" used here that the new, slightly deflected NEO's hyperbola would certainly be hit at nearly 90 degrees by another and slightly more eccentric elliptical missile trajectory. A sufficient number of missiles could thus be launched in a sequence from the Earth-Moon Lagrangian points L1 and L3 with the result that the SUM of all these small and repeated deflections will finally throw the NEO off its collision hyperbola with the Earth.",
+    "authors": [
+      "Claudio Maccone"
+    ],
+    "published": "2021-03-22",
+    "year": 2021,
+    "arxiv_id": "2103.13304v1",
+    "category": "astro-ph.EP",
+    "source": "arxiv",
+    "text": "Automatic planetary defense Deflecting NEOs by missiles shot from L1 and L3 (Earth-Moon)\n\nWe develop the mathematical theory for an automatic, space-based system to deflect NEOs by virtue of missiles shot from the Earth-Moon L1 and L3 Lagrangian Points. A patent application has been filed for the relevant code dubbed AsterOFF (=Asteroids OFF !). This code was already implemented, and a copyright for it was registered. In a paper published in Acta Astronautica, this author proved mathematically the following theorem: \"Within the sphere of influence of the Earth, any NEO could be hit by a missile at just an angle of 90 degrees, was the missile shot from the Lagrangian Points L1 or L3 of the Earth-Moon system, rather than from the surface of the Earth\". As a consequence, the hitting missile would have to move along a \"confocal ellipse\" (centered at the Earth) uniquely determined by the NEO's incoming hyperbola. The author further shows in this paper that: 1) The proposed defense system would be ideal to deflect NEOs that are small, i.e. less than one kilometer in diameter. 2) The traditional theory of Keplerian orbits can successfully be applied to get an excellent first-order approximation of the mathematical formulae of the energy-momentum requested to achieve the NEO deflection. Many engineering details about the missiles shot from L1 and L3, however, still have to be implemented into our simulations. 3) Was one missile not enough to deflect the NEO completely, it is a great advantage of the \"confocal conics\" used here that the new, slightly deflected NEO's hyperbola would certainly be hit at nearly 90 degrees by another and slightly more eccentric elliptical missile trajectory. A sufficient number of missiles could thus be launched in a sequence from the Earth-Moon Lagrangian points L1 and L3 with the result that the SUM of all these small and repeated deflections will finally throw the NEO off its collision hyperbola with the Earth."
+  },
+  {
+    "title": "Learning-Based Multi-Stage Strategy for a Fixed-Wing Aircraft to Evade a Missile Detected at a Short Distance",
+    "abstract": "Missiles pose a major threat to aircraft in modern air combat. Advances in technology make them increasingly difficult to detect until they are close to the target and highly resistant to jamming. The evasion maneuver is the last line of defense for an aircraft. However, conventional rule-based evasion strategies are limited by computational demands and aerodynamic constraints, and existing learning-based approaches remain unconvincing for manned aircraft against modern missiles. To enhance aircraft survivability, this study investigates missile evasion inspired by the pursuit-evasion game between a gazelle and a cheetah and proposes a multi-stage reinforcement learning-based evasion strategy. The strategy learns a large azimuth policy to turn to evade, a small azimuth policy to keep moving away, and a short distance policy to perform agile aggressive maneuvers to avoid. One of the three policies is activated at each stage based on distance and azimuth. To evaluate performance, a high-fidelity simulation environment modeling an F-16 aircraft and missile under various conditions is used to compare the proposed approach with baseline strategies. Experimental results show that the proposed method achieves superior performance, enabling the F-16 aircraft to successfully avoid missiles with a probability of 80.89 percent for velocities ranging from 800 m/s to 1400 m/s, maximum overloads from 40 g to 50 g, detection distances from 5000 m to 15000 m, and random azimuths. When the missile is detected beyond 8000 m, the success ratio increases to 85.06 percent.",
+    "authors": [
+      "Zhiguan Niu",
+      "Xiaochao Zhou",
+      "Hao Xiong"
+    ],
+    "published": "2025-11-08",
+    "year": 2025,
+    "arxiv_id": "2511.05828v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Learning-Based Multi-Stage Strategy for a Fixed-Wing Aircraft to Evade a Missile Detected at a Short Distance\n\nMissiles pose a major threat to aircraft in modern air combat. Advances in technology make them increasingly difficult to detect until they are close to the target and highly resistant to jamming. The evasion maneuver is the last line of defense for an aircraft. However, conventional rule-based evasion strategies are limited by computational demands and aerodynamic constraints, and existing learning-based approaches remain unconvincing for manned aircraft against modern missiles. To enhance aircraft survivability, this study investigates missile evasion inspired by the pursuit-evasion game between a gazelle and a cheetah and proposes a multi-stage reinforcement learning-based evasion strategy. The strategy learns a large azimuth policy to turn to evade, a small azimuth policy to keep moving away, and a short distance policy to perform agile aggressive maneuvers to avoid. One of the three policies is activated at each stage based on distance and azimuth. To evaluate performance, a high-fidelity simulation environment modeling an F-16 aircraft and missile under various conditions is used to compare the proposed approach with baseline strategies. Experimental results show that the proposed method achieves superior performance, enabling the F-16 aircraft to successfully avoid missiles with a probability of 80.89 percent for velocities ranging from 800 m/s to 1400 m/s, maximum overloads from 40 g to 50 g, detection distances from 5000 m to 15000 m, and random azimuths. When the missile is detected beyond 8000 m, the success ratio increases to 85.06 percent."
+  },
+  {
+    "title": "Cognitive Warfare: Definition, Framework, and Case Study",
+    "abstract": "Cognitive warfare has emerged as a central feature of modern conflict, yet it remains inconsistently defined and difficult to evaluate. Existing approaches often treat cognitive operations as a subset of information operations, limiting the ability to assess cognitive attacker-defender interactions or determine when advantage has been achieved. This article proposes a unified definition of cognitive warfare, introduces an interaction framework grounded in the OODA loop, and identifies measurable attributes associated with cognitive superiority. To illustrate the use of the framework, a notional case study demonstrates how these concepts can be applied to assess cognitive attacks and defenses in a contested environment. Thus, the framework provides joint force leaders and analysts with a practical foundation for understanding, comparing, and evaluating cognitive warfare campaigns.",
+    "authors": [
+      "Bonnie Rushing",
+      "William Hersch",
+      "Shouhuai Xu"
+    ],
+    "published": "2026-03-05",
+    "year": 2026,
+    "arxiv_id": "2603.05222v1",
+    "category": "cs.SI",
+    "source": "arxiv",
+    "text": "Cognitive Warfare: Definition, Framework, and Case Study\n\nCognitive warfare has emerged as a central feature of modern conflict, yet it remains inconsistently defined and difficult to evaluate. Existing approaches often treat cognitive operations as a subset of information operations, limiting the ability to assess cognitive attacker-defender interactions or determine when advantage has been achieved. This article proposes a unified definition of cognitive warfare, introduces an interaction framework grounded in the OODA loop, and identifies measurable attributes associated with cognitive superiority. To illustrate the use of the framework, a notional case study demonstrates how these concepts can be applied to assess cognitive attacks and defenses in a contested environment. Thus, the framework provides joint force leaders and analysts with a practical foundation for understanding, comparing, and evaluating cognitive warfare campaigns."
+  },
+  {
+    "title": "Cyber Warfare: Terms, Issues, Laws and Controversies",
+    "abstract": "Recent years have shown us the importance of cybersecurity. Especially, when the matter is national security, it is even more essential and crucial. Increasing cyber attacks, especially between countries in governmental level, created a new term cyber warfare. Creating some rules and regulations for this kind of war is necessary therefore international justice systems are working on it continuously. In this paper, we mentioned fundamental terms of cybersecurity, cyber capabilities of some countries, some important cyber attacks in near past, and finally, globally applied cyber warfare law for this attacks.",
+    "authors": [
+      "Kamile Nur Sevi\u015f",
+      "Ensar \u015eeker"
+    ],
+    "published": "2019-05-24",
+    "year": 2019,
+    "arxiv_id": "1905.13532v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "Cyber Warfare: Terms, Issues, Laws and Controversies\n\nRecent years have shown us the importance of cybersecurity. Especially, when the matter is national security, it is even more essential and crucial. Increasing cyber attacks, especially between countries in governmental level, created a new term cyber warfare. Creating some rules and regulations for this kind of war is necessary therefore international justice systems are working on it continuously. In this paper, we mentioned fundamental terms of cybersecurity, cyber capabilities of some countries, some important cyber attacks in near past, and finally, globally applied cyber warfare law for this attacks."
+  },
+  {
+    "title": "Antifragile Electronic Warfare",
+    "abstract": "This letter introduces the concept of antifragile electronic warfare (EW), which we define as the ability to allow a communications link to improve performance due to the presence of a jammer. This concept should not be confused with jamming countermeasures (a.k.a. anti-jamming or electronic protection). Rather, antifragile EW can be thought of as the next step beyond simply avoiding or mitigating jamming. After introducing the concept we narrow down the subset of jammers this concept can be applied to, and provide a brief example of an antifragile EW strategy.",
+    "authors": [
+      "Marc Lichtman"
+    ],
+    "published": "2014-09-18",
+    "year": 2014,
+    "arxiv_id": "1409.5429v3",
+    "category": "cs.NI",
+    "source": "arxiv",
+    "text": "Antifragile Electronic Warfare\n\nThis letter introduces the concept of antifragile electronic warfare (EW), which we define as the ability to allow a communications link to improve performance due to the presence of a jammer. This concept should not be confused with jamming countermeasures (a.k.a. anti-jamming or electronic protection). Rather, antifragile EW can be thought of as the next step beyond simply avoiding or mitigating jamming. After introducing the concept we narrow down the subset of jammers this concept can be applied to, and provide a brief example of an antifragile EW strategy."
+  },
+  {
+    "title": "Stability of a flexible missile described by asymptotics of the eigenvalues of fourth order boundary value problems",
+    "abstract": "Fourth order problems, with the differential equation $y^{(4)}-(gy')'=\u03bb^2y$, where $g\\in C^1[0,a]$ and $a>0$, occur in engineering on stability of elastic rods. They occur as well in aeronautics to describe the stability of a flexible missile. Fourth order Birkhoff regular problems with the differential equation $y^{(4)}-(gy')'=\u03bb^2y$ and eigenvalue dependent boundary conditions are considered. These problems have quadratic operator representations with non self-adjoint operators. The first four terms of the asymptotics of the eigenvalues of the problems as well as those of the eigenvalues of the problem describing the stability of a flexible missile are evaluated explicitly.",
+    "authors": [
+      "Bertin Zinsou"
+    ],
+    "published": "2021-10-05",
+    "year": 2021,
+    "arxiv_id": "2110.02306v1",
+    "category": "math.CA",
+    "source": "arxiv",
+    "text": "Stability of a flexible missile described by asymptotics of the eigenvalues of fourth order boundary value problems\n\nFourth order problems, with the differential equation $y^{(4)}-(gy')'=\u03bb^2y$, where $g\\in C^1[0,a]$ and $a>0$, occur in engineering on stability of elastic rods. They occur as well in aeronautics to describe the stability of a flexible missile. Fourth order Birkhoff regular problems with the differential equation $y^{(4)}-(gy')'=\u03bb^2y$ and eigenvalue dependent boundary conditions are considered. These problems have quadratic operator representations with non self-adjoint operators. The first four terms of the asymptotics of the eigenvalues of the problems as well as those of the eigenvalues of the problem describing the stability of a flexible missile are evaluated explicitly."
+  },
+  {
+    "title": "The Singularity Warfare: The metatheoretical Framework",
+    "abstract": "This paper introduces the \"Singularity Warfare\" concept, arguing that the accelerating pace of technological revolution, driven by artificial intelligence and quantum mechanics, is fundamentally reshaping the nature of conflict. Moving beyond traditional \"Newtonian\" warfare and current military doctrines, this framework posits that future battlefields will be defined by a merger of physical and abstract domains, where human imagination and algorithmic logic become a unified, actionable reality. Victory will hinge on a unit's ability to maintain cognitive and technological \"coherence\" while creating \"decoherence\" in the adversary. The paper synthesizes theories from physics, philosophy, and futurology to provide a metatheoretical framework for understanding this paradigm shift.",
+    "authors": [
+      "Ridvan Bari Urcosta"
+    ],
+    "published": "2025-11-11",
+    "year": 2025,
+    "arxiv_id": "2511.11674v1",
+    "category": "physics.soc-ph",
+    "source": "arxiv",
+    "text": "The Singularity Warfare: The metatheoretical Framework\n\nThis paper introduces the \"Singularity Warfare\" concept, arguing that the accelerating pace of technological revolution, driven by artificial intelligence and quantum mechanics, is fundamentally reshaping the nature of conflict. Moving beyond traditional \"Newtonian\" warfare and current military doctrines, this framework posits that future battlefields will be defined by a merger of physical and abstract domains, where human imagination and algorithmic logic become a unified, actionable reality. Victory will hinge on a unit's ability to maintain cognitive and technological \"coherence\" while creating \"decoherence\" in the adversary. The paper synthesizes theories from physics, philosophy, and futurology to provide a metatheoretical framework for understanding this paradigm shift."
+  },
+  {
+    "title": "Armoured Fighting Vehicle Team Performance Prediction against Missile Attacks with Directed Energy Weapons",
+    "abstract": "A recent study has introduced a procedure to quantify the survivability of a team of armoured fighting vehicles when it is subjected to a single missile attack. In particular this study investigated the concept of collaborative active protection systems, focusing on the case where vehicle defence is provided by high power radio frequency directed energy weapons. The purpose of the current paper is to demonstrate how this analysis can be extended to account for more than one missile threat. This is achieved by introducing a jump stochastic process whose states represent the number of missiles defeated at a given time instant. Analysis proceeds through consideration of the sojourn times of this stochastic process, and it is shown how consideration of these jump times can be related to transition probabilities of the auxiliary stochastic process. The latter probabilities are then related to the probabilities of detection and disruption of missile threats. The sum of these sojourn times can then be used to quantify the survivability of the team at any given time instant. Due to the fact that there is much interest in the application of high energy lasers in the context of this paper, the numerical examples will thus focus on such directed energy weapons for armoured fighting vehicle team defence.",
+    "authors": [
+      "Graham V. Weinberg",
+      "Mitchell Kracman"
+    ],
+    "published": "2021-06-28",
+    "year": 2021,
+    "arxiv_id": "2106.14381v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Armoured Fighting Vehicle Team Performance Prediction against Missile Attacks with Directed Energy Weapons\n\nA recent study has introduced a procedure to quantify the survivability of a team of armoured fighting vehicles when it is subjected to a single missile attack. In particular this study investigated the concept of collaborative active protection systems, focusing on the case where vehicle defence is provided by high power radio frequency directed energy weapons. The purpose of the current paper is to demonstrate how this analysis can be extended to account for more than one missile threat. This is achieved by introducing a jump stochastic process whose states represent the number of missiles defeated at a given time instant. Analysis proceeds through consideration of the sojourn times of this stochastic process, and it is shown how consideration of these jump times can be related to transition probabilities of the auxiliary stochastic process. The latter probabilities are then related to the probabilities of detection and disruption of missile threats. The sum of these sojourn times can then be used to quantify the survivability of the team at any given time instant. Due to the fact that there is much interest in the application of high energy lasers in the context of this paper, the numerical examples will thus focus on such directed energy weapons for armoured fighting vehicle team defence."
+  },
+  {
+    "title": "A Generalization of Lanchester's Model of Warfare",
+    "abstract": "The classical Lanchester's model is shortly reviewed and analysed, with particular attention to the critical issues that intrinsically arise from the mathematical formalization of the problem. We then generalize a particular version of such a model describing the dynamics of warfare when three or more armies are involved in the conflict. Several numerical simulations are provided.",
+    "authors": [
+      "Nicol\u00f2 Cangiotti",
+      "Marco Capolli",
+      "Mattia Sensi"
+    ],
+    "published": "2021-11-19",
+    "year": 2021,
+    "arxiv_id": "2112.06973v2",
+    "category": "physics.soc-ph",
+    "source": "arxiv",
+    "text": "A Generalization of Lanchester's Model of Warfare\n\nThe classical Lanchester's model is shortly reviewed and analysed, with particular attention to the critical issues that intrinsically arise from the mathematical formalization of the problem. We then generalize a particular version of such a model describing the dynamics of warfare when three or more armies are involved in the conflict. Several numerical simulations are provided."
+  },
+  {
+    "title": "The Two Faces of American Power: Military and Political Communication during the Cuban Missile Crisis",
+    "abstract": "Purpose: The mismatches between political discourse and military momentum in the American handling of the Cuban missile crisis are explained by using the model of the potential autopoiesis of subsystems. Under wartime conditions, the codes of political and military communications can increasingly be differentiated. Design/methodology/approach: The model of a further differentiation between political and military power is developed on the basis of a detailed description of the Cuban missile crisis. We introduce the concept of a \"semi-dormant autopoiesis\" for the difference in the dynamics between peacetime and wartime conditions. Findings: Several dangerous incidents during the crisis can be explained by a sociocybernetic model focusing on communication and control, but not by using an organization-theoretical approach. The further differentiation of the military as a subsystem became possible in the course of the twentieth century because of ongoing learning processes about previous wars.",
+    "authors": [
+      "Michael Deinema",
+      "Loet Leydesdorff"
+    ],
+    "published": "2009-11-18",
+    "year": 2009,
+    "arxiv_id": "0911.3638v1",
+    "category": "physics.soc-ph",
+    "source": "arxiv",
+    "text": "The Two Faces of American Power: Military and Political Communication during the Cuban Missile Crisis\n\nPurpose: The mismatches between political discourse and military momentum in the American handling of the Cuban missile crisis are explained by using the model of the potential autopoiesis of subsystems. Under wartime conditions, the codes of political and military communications can increasingly be differentiated. Design/methodology/approach: The model of a further differentiation between political and military power is developed on the basis of a detailed description of the Cuban missile crisis. We introduce the concept of a \"semi-dormant autopoiesis\" for the difference in the dynamics between peacetime and wartime conditions. Findings: Several dangerous incidents during the crisis can be explained by a sociocybernetic model focusing on communication and control, but not by using an organization-theoretical approach. The further differentiation of the military as a subsystem became possible in the course of the twentieth century because of ongoing learning processes about previous wars."
+  },
+  {
+    "title": "Robust Sliding Mode Control for Air-to-Air Missile",
+    "abstract": "Within the missile guidance and control system the autopilot must overcome an array of variables and uncertainties to maintain tracking trajectory. A large uncertainty explored in this paper is the difference between the assumed flight dynamics, the controller design relies on, and the true flight dynamics the missile experiences. To capture these differences experimental wind tunnel data was used to represent real life aerodynamics whereas a low fidelity wing and tube structure was used for the controller dynamics. Other variables affecting controller performance are also quantified and explored in this paper, such as the changing mass, center of gravity, dynamic pressure, actuator bandwidth and sensor noise. A second order sliding mode controller utilizing an exponential reaching law was developed to overcome the cumulative uncertainties. The designed controller is capable of a 0.2s settling time and a 3% overshoot in ideal conditions. The controller relies on measurements of both dynamic pressure and angle of attack, when a 10% and 2% respective noise is introduced at 200Hz, the controller maintains a 5% steady state error and a time constant of 0.29s. The exponential reaching law provides superior chattering mitigation over traditional techniques like the tanh function, with no loss in controller performance.",
+    "authors": [
+      "Eerik Cockin",
+      "Xinhua Wang"
+    ],
+    "published": "2024-11-11",
+    "year": 2024,
+    "arxiv_id": "2411.06754v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Robust Sliding Mode Control for Air-to-Air Missile\n\nWithin the missile guidance and control system the autopilot must overcome an array of variables and uncertainties to maintain tracking trajectory. A large uncertainty explored in this paper is the difference between the assumed flight dynamics, the controller design relies on, and the true flight dynamics the missile experiences. To capture these differences experimental wind tunnel data was used to represent real life aerodynamics whereas a low fidelity wing and tube structure was used for the controller dynamics. Other variables affecting controller performance are also quantified and explored in this paper, such as the changing mass, center of gravity, dynamic pressure, actuator bandwidth and sensor noise. A second order sliding mode controller utilizing an exponential reaching law was developed to overcome the cumulative uncertainties. The designed controller is capable of a 0.2s settling time and a 3% overshoot in ideal conditions. The controller relies on measurements of both dynamic pressure and angle of attack, when a 10% and 2% respective noise is introduced at 200Hz, the controller maintains a 5% steady state error and a time constant of 0.29s. The exponential reaching law provides superior chattering mitigation over traditional techniques like the tanh function, with no loss in controller performance."
+  },
+  {
+    "title": "Advancing Network Securing Strategies with Network Algorithms for Integrated Air Defense System (IADS) Missile Batteries",
+    "abstract": "Recently, the Integrated Air Defense System (IADS) has become vital for the defense system as the military defense system is vital for national security. Placing Integrated Air Defense System batteries among locations to protect locations assets is a crucial problem because optimal solutions are needed for interceptor missiles to intercept attacker missiles for maximizing protection of assets across locations or places. In this research, the procedures of using network algorithms along with developing several network algorithms are going to be demonstrated to develop a model for sequential development of seven network securing strategies of placing Surface to Air Missile (SAM) batteries to maximize the protection of assets across locations (based on given asset values) by generating optimal solutions through computation to destroy maximum attacker missiles by using minimum interceptor missiles with given intercept probability. This network securing strategies can be implemented not only for Integrated Air Defense System (IADS) planning but also Counter Air (CA) planning as Integrated Air Defense System (IADS) is conducted with defensive counter air supported by attack operations in offensive counter air.",
+    "authors": [
+      "Rakib Hassan Pran"
+    ],
+    "published": "2023-03-13",
+    "year": 2023,
+    "arxiv_id": "2303.11293v3",
+    "category": "cs.SI",
+    "source": "arxiv",
+    "text": "Advancing Network Securing Strategies with Network Algorithms for Integrated Air Defense System (IADS) Missile Batteries\n\nRecently, the Integrated Air Defense System (IADS) has become vital for the defense system as the military defense system is vital for national security. Placing Integrated Air Defense System batteries among locations to protect locations assets is a crucial problem because optimal solutions are needed for interceptor missiles to intercept attacker missiles for maximizing protection of assets across locations or places. In this research, the procedures of using network algorithms along with developing several network algorithms are going to be demonstrated to develop a model for sequential development of seven network securing strategies of placing Surface to Air Missile (SAM) batteries to maximize the protection of assets across locations (based on given asset values) by generating optimal solutions through computation to destroy maximum attacker missiles by using minimum interceptor missiles with given intercept probability. This network securing strategies can be implemented not only for Integrated Air Defense System (IADS) planning but also Counter Air (CA) planning as Integrated Air Defense System (IADS) is conducted with defensive counter air supported by attack operations in offensive counter air."
+  },
+  {
+    "title": "An electronic warfare approach for deploying a software-based Wi-Fi jammer",
+    "abstract": "Some prominent instances have been centered on electronic warfare. For example, the American military has made significant investments in automation through UAV programs, only for competitors like the Iranians to create strategies to interfere with these systems. Iran managed to capture a top-secret U.S. surveil-lance drone by fooling it into descending in the incorrect place by jamming its control signals and providing it with bogus GPS data. In this paper, the authors have focused on the electronic warfare approach for deploying a software-based Wi-Fi jammer. The software-based Wi-Fi jammer can disconnect the targets using the DoS pursuit mode. The paper describes the unique methodology of how software can also be used for jamming wireless signals.",
+    "authors": [
+      "Keshav Kaushik",
+      "Rahul Negi",
+      "Prabhav Dev"
+    ],
+    "published": "2022-12-29",
+    "year": 2022,
+    "arxiv_id": "2212.14470v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "An electronic warfare approach for deploying a software-based Wi-Fi jammer\n\nSome prominent instances have been centered on electronic warfare. For example, the American military has made significant investments in automation through UAV programs, only for competitors like the Iranians to create strategies to interfere with these systems. Iran managed to capture a top-secret U.S. surveil-lance drone by fooling it into descending in the incorrect place by jamming its control signals and providing it with bogus GPS data. In this paper, the authors have focused on the electronic warfare approach for deploying a software-based Wi-Fi jammer. The software-based Wi-Fi jammer can disconnect the targets using the DoS pursuit mode. The paper describes the unique methodology of how software can also be used for jamming wireless signals."
+  }
+]

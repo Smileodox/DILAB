@@ -1,0 +1,826 @@
+[
+  {
+    "title": "Can Maxwell's fish eye lens really give perfect imaging?",
+    "abstract": "Both explicit analysis and FEM numerical simulation are used to analyze the field distribution of a line current in the so-called Maxwell's fish eye lens [bounded with a perfectly electrical conductor (PEC) boundary]. We show that such a 2D Maxwell's fish eye lens cannot give perfect imaging due to the fact that high order modes of the object field can hardly reach the image point in Maxwell's fish eye lens. If only zeroth order mode is excited, a good image of a sharp object may be achieved in some cases, however, its spot-size is larger than the spot size of the initial object field. The image resolution is determined by the field spot size of the image corresponding to the zeroth order component of the object field. Our explicit analysis consists very well with the FEM results for a fish eye lens. Time-domain simulation is also given to verify our conclusion. Multi-point images for a single object point are also demonstrated.",
+    "authors": [
+      "Fei Sun",
+      "Sailing He"
+    ],
+    "published": "2010-09-24",
+    "year": 2010,
+    "arxiv_id": "1009.4751v2",
+    "category": "physics.optics",
+    "source": "arxiv",
+    "text": "Can Maxwell's fish eye lens really give perfect imaging?\n\nBoth explicit analysis and FEM numerical simulation are used to analyze the field distribution of a line current in the so-called Maxwell's fish eye lens [bounded with a perfectly electrical conductor (PEC) boundary]. We show that such a 2D Maxwell's fish eye lens cannot give perfect imaging due to the fact that high order modes of the object field can hardly reach the image point in Maxwell's fish eye lens. If only zeroth order mode is excited, a good image of a sharp object may be achieved in some cases, however, its spot-size is larger than the spot size of the initial object field. The image resolution is determined by the field spot size of the image corresponding to the zeroth order component of the object field. Our explicit analysis consists very well with the FEM results for a fish eye lens. Time-domain simulation is also given to verify our conclusion. Multi-point images for a single object point are also demonstrated."
+  },
+  {
+    "title": "Can Maxwell's Fish Eye Lens Really Give Perfect Imaging? Part II. The case with drains",
+    "abstract": "We use both FEM (finite element method) and FDTD (finite difference time domain method) to simulate the field distribution in Maxwell's fish eye lens with one or more passive drains around the image point. We use the same Maxwell's fish eye lens structure as the one used in recent microwave experiment [arXiv:1007.2530]: Maxwell's fish eye lens bounded by PEC (perfect electric conductor) is inserted between two parallel PEC plates (as a waveguide structure). Our simulation results indicate that if one uses an active coaxial cable as the object and set an array of passive drains around the image region, what one obtains is not an image of the object but only multiple spots resembling the array of passive drains. The resolution of Maxwell's fish eye is finite even with such passive drains at the image locations. We also found that the subwavelength spot around the passive drain is due to the local field enhancement of the metal tip of the drain rather than the fish eye medium or the ability of the drain in extracting waves.",
+    "authors": [
+      "Fei Sun",
+      "Xiaochen Ge",
+      "Sailing He"
+    ],
+    "published": "2010-11-04",
+    "year": 2010,
+    "arxiv_id": "1011.1048v2",
+    "category": "physics.optics",
+    "source": "arxiv",
+    "text": "Can Maxwell's Fish Eye Lens Really Give Perfect Imaging? Part II. The case with drains\n\nWe use both FEM (finite element method) and FDTD (finite difference time domain method) to simulate the field distribution in Maxwell's fish eye lens with one or more passive drains around the image point. We use the same Maxwell's fish eye lens structure as the one used in recent microwave experiment [arXiv:1007.2530]: Maxwell's fish eye lens bounded by PEC (perfect electric conductor) is inserted between two parallel PEC plates (as a waveguide structure). Our simulation results indicate that if one uses an active coaxial cable as the object and set an array of passive drains around the image region, what one obtains is not an image of the object but only multiple spots resembling the array of passive drains. The resolution of Maxwell's fish eye is finite even with such passive drains at the image locations. We also found that the subwavelength spot around the passive drain is due to the local field enhancement of the metal tip of the drain rather than the fish eye medium or the ability of the drain in extracting waves."
+  },
+  {
+    "title": "A Critical Look at Smart Wheelchairs",
+    "abstract": "Research into smart wheelchairs has been conducted for decades, but we have yet to see the widespread use of this technology among full-time wheelchair users. We argue that the main reason for this is that there is a mismatch between research and the actualities of using a powered mobility device in the real world. Based on our own research experiences, we enumerate some of these disparities, and offer some suggestions for where work in smart wheelchairs might focus in the coming years.",
+    "authors": [
+      "Benjamin Narin",
+      "Makenzie Brian",
+      "William D. Smart"
+    ],
+    "published": "2018-09-02",
+    "year": 2018,
+    "arxiv_id": "1809.00291v1",
+    "category": "cs.RO",
+    "source": "arxiv",
+    "text": "A Critical Look at Smart Wheelchairs\n\nResearch into smart wheelchairs has been conducted for decades, but we have yet to see the widespread use of this technology among full-time wheelchair users. We argue that the main reason for this is that there is a mismatch between research and the actualities of using a powered mobility device in the real world. Based on our own research experiences, we enumerate some of these disparities, and offer some suggestions for where work in smart wheelchairs might focus in the coming years."
+  },
+  {
+    "title": "Relating Eye-Tracking Measures With Changes In Knowledge on Search Tasks",
+    "abstract": "We conducted an eye-tracking study where 30 participants performed searches on the web. We measured their topical knowledge before and after each task. Their eye-fixations were labelled as \"reading\" or \"scanning\". The series of reading fixations in a line, called \"reading-sequences\" were characterized by their length in pixels, fixation duration, and the number of fixations making up the sequence. We hypothesize that differences in knowledge-change of participants are reflected in their eye-tracking measures related to reading. Our results show that the participants with higher change in knowledge differ significantly in terms of their total reading-sequence-length, reading-sequence-duration, and number of reading fixations, when compared to participants with lower knowledge-change.",
+    "authors": [
+      "Nilavra Bhattacharya",
+      "Jacek Gwizdka"
+    ],
+    "published": "2018-05-07",
+    "year": 2018,
+    "arxiv_id": "1805.02399v1",
+    "category": "cs.HC",
+    "source": "arxiv",
+    "text": "Relating Eye-Tracking Measures With Changes In Knowledge on Search Tasks\n\nWe conducted an eye-tracking study where 30 participants performed searches on the web. We measured their topical knowledge before and after each task. Their eye-fixations were labelled as \"reading\" or \"scanning\". The series of reading fixations in a line, called \"reading-sequences\" were characterized by their length in pixels, fixation duration, and the number of fixations making up the sequence. We hypothesize that differences in knowledge-change of participants are reflected in their eye-tracking measures related to reading. Our results show that the participants with higher change in knowledge differ significantly in terms of their total reading-sequence-length, reading-sequence-duration, and number of reading fixations, when compared to participants with lower knowledge-change."
+  },
+  {
+    "title": "Measurement of the Flux of Ultrahigh Energy Cosmic Rays from Monocular Observations by the High Resolution Fly's Eye Experiment",
+    "abstract": "We have measured the cosmic ray spectrum above 10^17.2 eV using the two air fluorescence detectors of the High Resolution Fly's Eye observatory operating in monocular mode. We describe the detector, photo-tube and atmospheric calibrations, as well as the analysis techniques for the two detectors. We fit the spectrum to a model consisting of galactic and extra-galactic sources.",
+    "authors": [
+      "The High Resolution Fly's Eye Collaboration"
+    ],
+    "published": "2002-08-12",
+    "year": 2002,
+    "arxiv_id": "0208243v7",
+    "category": "astro-ph",
+    "source": "arxiv",
+    "text": "Measurement of the Flux of Ultrahigh Energy Cosmic Rays from Monocular Observations by the High Resolution Fly's Eye Experiment\n\nWe have measured the cosmic ray spectrum above 10^17.2 eV using the two air fluorescence detectors of the High Resolution Fly's Eye observatory operating in monocular mode. We describe the detector, photo-tube and atmospheric calibrations, as well as the analysis techniques for the two detectors. We fit the spectrum to a model consisting of galactic and extra-galactic sources."
+  },
+  {
+    "title": "Digital Twin based Automatic Reconfiguration of Robotic Systems in Smart Environments",
+    "abstract": "Robotic systems have become integral to smart environments, enabling applications ranging from urban surveillance and automated agriculture to industrial automation. However, their effective operation in dynamic settings - such as smart cities and precision farming - is challenged by continuously evolving topographies and environmental conditions. Traditional control systems often struggle to adapt quickly, leading to inefficiencies or operational failures. To address this limitation, we propose a novel framework for autonomous and dynamic reconfiguration of robotic controllers using Digital Twin technology. Our approach leverages a virtual replica of the robot's operational environment to simulate and optimize movement trajectories in response to real-world changes. By recalculating paths and control parameters in the Digital Twin and deploying the updated code to the physical robot, our method ensures rapid and reliable adaptation without manual intervention. This work advances the integration of Digital Twins in robotics, offering a scalable solution for enhancing autonomy in smart, dynamic environments.",
+    "authors": [
+      "Angelos Alexopoulos",
+      "Agorakis Bompotas",
+      "Nikitas Rigas Kalogeropoulos",
+      "Panagiotis Kechagias",
+      "Athanasios P. Kalogeras",
+      "Christos Alexakos"
+    ],
+    "published": "2025-10-30",
+    "year": 2025,
+    "arxiv_id": "2511.00094v2",
+    "category": "cs.RO",
+    "source": "arxiv",
+    "text": "Digital Twin based Automatic Reconfiguration of Robotic Systems in Smart Environments\n\nRobotic systems have become integral to smart environments, enabling applications ranging from urban surveillance and automated agriculture to industrial automation. However, their effective operation in dynamic settings - such as smart cities and precision farming - is challenged by continuously evolving topographies and environmental conditions. Traditional control systems often struggle to adapt quickly, leading to inefficiencies or operational failures. To address this limitation, we propose a novel framework for autonomous and dynamic reconfiguration of robotic controllers using Digital Twin technology. Our approach leverages a virtual replica of the robot's operational environment to simulate and optimize movement trajectories in response to real-world changes. By recalculating paths and control parameters in the Digital Twin and deploying the updated code to the physical robot, our method ensures rapid and reliable adaptation without manual intervention. This work advances the integration of Digital Twins in robotics, offering a scalable solution for enhancing autonomy in smart, dynamic environments."
+  },
+  {
+    "title": "SUSTAINABLE Platform: Seamless Smart Farming Integration Towards Agronomy Automation",
+    "abstract": "The global agricultural sector is undergoing a transformative shift, driven by increasing food demands, climate variability and the need for sustainable practices. SUSTAINABLE is a smart farming platform designed to integrate IoT, AI, satellite imaging, and role-based task orchestration to enable efficient, traceable, and sustainable agriculture with a pilot usecase in viticulture. This paper explores current smart agriculture solutions, presents a comparative evaluation, and introduces SUSTAINABLE's key features, including satellite index integration, real-time environmental data, and role-aware task management tailored to Mediterranean vineyards.",
+    "authors": [
+      "Agorakis Bompotas",
+      "Konstantinos Koutras",
+      "Nikitas Rigas Kalogeropoulos",
+      "Panagiotis Kechagias",
+      "Dimitra Gariza",
+      "Athanasios P. Kalogeras",
+      "Christos Alexakos"
+    ],
+    "published": "2025-10-30",
+    "year": 2025,
+    "arxiv_id": "2510.26989v2",
+    "category": "cs.AI",
+    "source": "arxiv",
+    "text": "SUSTAINABLE Platform: Seamless Smart Farming Integration Towards Agronomy Automation\n\nThe global agricultural sector is undergoing a transformative shift, driven by increasing food demands, climate variability and the need for sustainable practices. SUSTAINABLE is a smart farming platform designed to integrate IoT, AI, satellite imaging, and role-based task orchestration to enable efficient, traceable, and sustainable agriculture with a pilot usecase in viticulture. This paper explores current smart agriculture solutions, presents a comparative evaluation, and introduces SUSTAINABLE's key features, including satellite index integration, real-time environmental data, and role-aware task management tailored to Mediterranean vineyards."
+  },
+  {
+    "title": "A Study of the Composition of Ultra High Energy Cosmic Rays Using the High Resolution Fly's Eye",
+    "abstract": "The composition of Ultra High Energy Cosmic Rays (UHECR) is measured with the High Resolution Fly's Eye cosmic ray observatory (HiRes) data using the Xmax technique. Data were collected in stereo between 1999 November and 2001 September. The data are reconstructed with well-determined geometry. Measurements of the atmospheric transmission are incorporated in the reconstruction. The detector resolution is found to be 30 g cm^-2 in Xmax and 13% in Energy. The Xmax elongation rate between 10^18.0 eV and 10^19.4 eV is measured to be 54.5 +/- 6.5 (stat) +/- 4.5 (sys) g cm^-2 per decade. This is compared to predictions using the QGSJet01 and SIBYLL 2.1 hadronic interaction models for both protons and iron nuclei. CORSIKA-generated Extensive Air Showers (EAS) are incorporated directly into a detailed detector Monte Carlo program. The elongation rate and the Xmax distribution widths are consistent with a constant or slowly changing and predominantly light composition. A simple model containing only protons and iron nuclei is compared to QGSJet and SIBYLL. The best agreement between the model and the data is at 80% protons for QGSJet and 60% protons for SIBYLL.",
+    "authors": [
+      "The High Resolution Fly's Eye Collaboration"
+    ],
+    "published": "2004-07-29",
+    "year": 2004,
+    "arxiv_id": "0407622v3",
+    "category": "astro-ph",
+    "source": "arxiv",
+    "text": "A Study of the Composition of Ultra High Energy Cosmic Rays Using the High Resolution Fly's Eye\n\nThe composition of Ultra High Energy Cosmic Rays (UHECR) is measured with the High Resolution Fly's Eye cosmic ray observatory (HiRes) data using the Xmax technique. Data were collected in stereo between 1999 November and 2001 September. The data are reconstructed with well-determined geometry. Measurements of the atmospheric transmission are incorporated in the reconstruction. The detector resolution is found to be 30 g cm^-2 in Xmax and 13% in Energy. The Xmax elongation rate between 10^18.0 eV and 10^19.4 eV is measured to be 54.5 +/- 6.5 (stat) +/- 4.5 (sys) g cm^-2 per decade. This is compared to predictions using the QGSJet01 and SIBYLL 2.1 hadronic interaction models for both protons and iron nuclei. CORSIKA-generated Extensive Air Showers (EAS) are incorporated directly into a detailed detector Monte Carlo program. The elongation rate and the Xmax distribution widths are consistent with a constant or slowly changing and predominantly light composition. A simple model containing only protons and iron nuclei is compared to QGSJet and SIBYLL. The best agreement between the model and the data is at 80% protons for QGSJet and 60% protons for SIBYLL."
+  },
+  {
+    "title": "Shear-selected clusters from the Deep Lens Survey",
+    "abstract": "Weak gravitational lensing has the potential to select clusters independently of their baryon content, dynamical state, and star formation history. We present steps toward the first shear-selected sample of clusters, from the Deep Lens Survey (DLS), a deep BVRz' imaging survey of 28 square degrees. Cluster redshifts are determined from photometric redshifts of members and from lensing tomography, and in some cases have been confirmed spectroscopically. DLS imaging data are also used to derive mass-to-light ratios, and upcoming Chandra and XMM time will yield X-ray luminosities and temperatures for a subsample of 12 clusters. Thus we can begin to address any baryon or luminous-matter bias which may be present in current optical and X-ray samples. When the DLS is complete, we expect to have a sample of ~ 100 shear-selected clusters from z ~ 0.2-1.",
+    "authors": [
+      "V. E. Margoniner",
+      "the Deep Lens Survey Team"
+    ],
+    "published": "2003-03-17",
+    "year": 2003,
+    "arxiv_id": "0303381v1",
+    "category": "astro-ph",
+    "source": "arxiv",
+    "text": "Shear-selected clusters from the Deep Lens Survey\n\nWeak gravitational lensing has the potential to select clusters independently of their baryon content, dynamical state, and star formation history. We present steps toward the first shear-selected sample of clusters, from the Deep Lens Survey (DLS), a deep BVRz' imaging survey of 28 square degrees. Cluster redshifts are determined from photometric redshifts of members and from lensing tomography, and in some cases have been confirmed spectroscopically. DLS imaging data are also used to derive mass-to-light ratios, and upcoming Chandra and XMM time will yield X-ray luminosities and temperatures for a subsample of 12 clusters. Thus we can begin to address any baryon or luminous-matter bias which may be present in current optical and X-ray samples. When the DLS is complete, we expect to have a sample of ~ 100 shear-selected clusters from z ~ 0.2-1."
+  },
+  {
+    "title": "Detection of False Data Injection Attacks in Smart Grid: A Secure Federated Deep Learning Approach",
+    "abstract": "As an important cyber-physical system (CPS), smart grid is highly vulnerable to cyber attacks. Amongst various types of attacks, false data injection attack (FDIA) proves to be one of the top-priority cyber-related issues and has received increasing attention in recent years. However, so far little attention has been paid to privacy preservation issues in the detection of FDIAs in smart grid. Inspired by federated learning, a FDIA detection method based on secure federated deep learning is proposed in this paper by combining Transformer, federated learning and Paillier cryptosystem. The Transformer, as a detector deployed in edge nodes, delves deep into the connection between individual electrical quantities by using its multi-head self-attention mechanism. By using federated learning framework, our approach utilizes the data from all nodes to collaboratively train a detection model while preserving data privacy by keeping the data locally during training. To improve the security of federated learning, a secure federated learning scheme is designed by combing Paillier cryptosystem with federated learning. Through extensive experiments on the IEEE 14-bus and 118-bus test systems, the effectiveness and superiority of the proposed method are verifed.",
+    "authors": [
+      "Yang Li",
+      "Xinhao Wei",
+      "Yuanzheng Li",
+      "Zhaoyang Dong",
+      "Mohammad Shahidehpour"
+    ],
+    "published": "2022-09-02",
+    "year": 2022,
+    "arxiv_id": "2209.00778v2",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "Detection of False Data Injection Attacks in Smart Grid: A Secure Federated Deep Learning Approach\n\nAs an important cyber-physical system (CPS), smart grid is highly vulnerable to cyber attacks. Amongst various types of attacks, false data injection attack (FDIA) proves to be one of the top-priority cyber-related issues and has received increasing attention in recent years. However, so far little attention has been paid to privacy preservation issues in the detection of FDIAs in smart grid. Inspired by federated learning, a FDIA detection method based on secure federated deep learning is proposed in this paper by combining Transformer, federated learning and Paillier cryptosystem. The Transformer, as a detector deployed in edge nodes, delves deep into the connection between individual electrical quantities by using its multi-head self-attention mechanism. By using federated learning framework, our approach utilizes the data from all nodes to collaboratively train a detection model while preserving data privacy by keeping the data locally during training. To improve the security of federated learning, a secure federated learning scheme is designed by combing Paillier cryptosystem with federated learning. Through extensive experiments on the IEEE 14-bus and 118-bus test systems, the effectiveness and superiority of the proposed method are verifed."
+  },
+  {
+    "title": "Smart Grid Monitoring Using Power Line Modems: Anomaly Detection and Localization",
+    "abstract": "The main subject of this paper is the sensing of network anomalies that span from harmless impedance changes at some network termination to more or less pronounced electrical faults, considering also cable degradation over time. In this paper, we present how to harvest information about such anomalies in distribution grids using high frequency signals spanning from few kHz to several MHz. Given the wide bandwidth considered, we rely on power line modems as network sensors. We firstly discuss the front-end architectures needed to perform the measurement and then introduce two algorithms to detect, classify and locate the different kinds of network anomalies listed above. Simulation results are finally presented. They validate the concept of sensing in smart grids using power line modems and show the efficiency of the proposed algorithms.",
+    "authors": [
+      "Federico Passerini",
+      "Andrea M. Tonello"
+    ],
+    "published": "2018-07-14",
+    "year": 2018,
+    "arxiv_id": "1807.05347v2",
+    "category": "eess.SP",
+    "source": "arxiv",
+    "text": "Smart Grid Monitoring Using Power Line Modems: Anomaly Detection and Localization\n\nThe main subject of this paper is the sensing of network anomalies that span from harmless impedance changes at some network termination to more or less pronounced electrical faults, considering also cable degradation over time. In this paper, we present how to harvest information about such anomalies in distribution grids using high frequency signals spanning from few kHz to several MHz. Given the wide bandwidth considered, we rely on power line modems as network sensors. We firstly discuss the front-end architectures needed to perform the measurement and then introduce two algorithms to detect, classify and locate the different kinds of network anomalies listed above. Simulation results are finally presented. They validate the concept of sensing in smart grids using power line modems and show the efficiency of the proposed algorithms."
+  },
+  {
+    "title": "A Big Data Architecture Design for Smart Grids Based on Random Matrix Theory",
+    "abstract": "Model-based analysis tools, built on assumptions and simplifications, are difficult to handle smart grids with data characterized by 4Vs data. This paper, using random matrix theory (RMT), motivates data-driven tools to perceive the complex grids in highdimension; meanwhile, an architecture with detailed procedures is proposed. In algorithm perspective, the architecture performs a high-dimensional analysis, and compares the findings with RMT predictions to conduct anomaly detections. Mean Spectral Radius (MSR), as a statistical indicator, is defined to reflect the correlations of system data in different dimensions. In management mode perspective, a group-work mode is discussed for smart grids operation. This mode breaks through regional limitations for energy flows and data flows, and makes advanced big data analyses possible. For a specific large-scale zone-dividing system with multiple connected utilities, each site, operating under the group-work mode, is able to work out the regional MSR only with its own measured/simulated data. The large-scale interconnected system, in this way, is naturally decoupled from statistical parameters perspective, rather than from engineering models perspective. Furthermore, a comparative analysis of these distributed MSRs, even with imperceptible different raw data, will produce a contour line to detect the event and locate the source. It demonstrates that the architecture is compatible with the block calculation only using the regional small database; beyond that, this architecture, as a data-driven solution, is sensitive to system situation awareness, and practical for real large-scale interconnected systems. Five case studies and their visualizations validate the designed architecture in various fields of power systems. To our best knowledge, this study is the first attempt to apply big data technology into smart grids.",
+    "authors": [
+      "X. He",
+      "Q. Ai",
+      "C. Qiu",
+      "W. Huang",
+      "L. Piao",
+      "H. Liu"
+    ],
+    "published": "2015-01-29",
+    "year": 2015,
+    "arxiv_id": "1501.07329v4",
+    "category": "stat.ME",
+    "source": "arxiv",
+    "text": "A Big Data Architecture Design for Smart Grids Based on Random Matrix Theory\n\nModel-based analysis tools, built on assumptions and simplifications, are difficult to handle smart grids with data characterized by 4Vs data. This paper, using random matrix theory (RMT), motivates data-driven tools to perceive the complex grids in highdimension; meanwhile, an architecture with detailed procedures is proposed. In algorithm perspective, the architecture performs a high-dimensional analysis, and compares the findings with RMT predictions to conduct anomaly detections. Mean Spectral Radius (MSR), as a statistical indicator, is defined to reflect the correlations of system data in different dimensions. In management mode perspective, a group-work mode is discussed for smart grids operation. This mode breaks through regional limitations for energy flows and data flows, and makes advanced big data analyses possible. For a specific large-scale zone-dividing system with multiple connected utilities, each site, operating under the group-work mode, is able to work out the regional MSR only with its own measured/simulated data. The large-scale interconnected system, in this way, is naturally decoupled from statistical parameters perspective, rather than from engineering models perspective. Furthermore, a comparative analysis of these distributed MSRs, even with imperceptible different raw data, will produce a contour line to detect the event and locate the source. It demonstrates that the architecture is compatible with the block calculation only using the regional small database; beyond that, this architecture, as a data-driven solution, is sensitive to system situation awareness, and practical for real large-scale interconnected systems. Five case studies and their visualizations validate the designed architecture in various fields of power systems. To our best knowledge, this study is the first attempt to apply big data technology into smart grids."
+  },
+  {
+    "title": "Dimensionality Reduction on IoT Monitoring Data of Smart Building for Energy Consumption Forecasting",
+    "abstract": "The Internet of Things (IoT) plays a major role today in smart building infrastructures, from simple smart-home applications, to more sophisticated industrial type installations. The vast amounts of data generated from relevant systems can be processed in different ways revealing important information. This is especially true in the era of edge computing, when advanced data analysis and decision-making is gradually moving to the edge of the network where devices are generally characterised by low computing resources. In this context, one of the emerging main challenges is related to maintaining data analysis accuracy even with less data that can be efficiently handled by low resource devices. The present work focuses on correlation analysis of data retrieved from a pilot IoT network installation monitoring a small smart office by means of environmental and energy consumption sensors. The research motivation was to find statistical correlation between the monitoring variables that will allow the use of machine learning (ML) prediction algorithms for energy consumption reducing input parameters. For this to happen, a series of hypothesis tests for the correlation of three different environmental variables with the energy consumption were carried out. A total of ninety tests were performed, thirty for each pair of variables. In these tests, p-values showed the existence of strong or semi-strong correlation with two environmental variables, and of a weak correlation with a third one. Using the proposed methodology, we manage without examining the entire data set to exclude weak correlated variables while keeping the same score of accuracy.",
+    "authors": [
+      "Konstantinos Koutras",
+      "Agorakis Bompotas",
+      "Constantinos Halkiopoulos",
+      "Athanasios Kalogeras",
+      "Christos Alexakos"
+    ],
+    "published": "2025-06-19",
+    "year": 2025,
+    "arxiv_id": "2506.22468v1",
+    "category": "eess.SP",
+    "source": "arxiv",
+    "text": "Dimensionality Reduction on IoT Monitoring Data of Smart Building for Energy Consumption Forecasting\n\nThe Internet of Things (IoT) plays a major role today in smart building infrastructures, from simple smart-home applications, to more sophisticated industrial type installations. The vast amounts of data generated from relevant systems can be processed in different ways revealing important information. This is especially true in the era of edge computing, when advanced data analysis and decision-making is gradually moving to the edge of the network where devices are generally characterised by low computing resources. In this context, one of the emerging main challenges is related to maintaining data analysis accuracy even with less data that can be efficiently handled by low resource devices. The present work focuses on correlation analysis of data retrieved from a pilot IoT network installation monitoring a small smart office by means of environmental and energy consumption sensors. The research motivation was to find statistical correlation between the monitoring variables that will allow the use of machine learning (ML) prediction algorithms for energy consumption reducing input parameters. For this to happen, a series of hypothesis tests for the correlation of three different environmental variables with the energy consumption were carried out. A total of ninety tests were performed, thirty for each pair of variables. In these tests, p-values showed the existence of strong or semi-strong correlation with two environmental variables, and of a weak correlation with a third one. Using the proposed methodology, we manage without examining the entire data set to exclude weak correlated variables while keeping the same score of accuracy."
+  },
+  {
+    "title": "Photonic crystal waveguide intersection design based on Maxwell's fish-eye lens",
+    "abstract": "The number of waveguides crossing an intersection increases with the development of complex photonic integrated circuits. Numerical simulations are presented to demonstrate that Maxwell's fish-eye (MFE) lens can be used as a multiband crossing medium. In previous designs of waveguide intersection, bends are needed before and after the intersection to adjust the crossing angle resulting in a larger footprint. The presented design incorporates the waveguide bends into the intersection which saves footprint. In this paper, 4x4 and 6x6 intersections based on ideal and graded photonic crystal (GPC) MFE lenses are investigated, where 4 and 6 waveguides intersect, respectively. The intersection based on ideal MFE lens partially covers the O, E, S, C, L, and U bands of optical communication, while the intersection based on GPC-MFE lens is optimized to cover the entire C-band. For 4x4 and 6x6 intersections based on GPC-MFE lens, crosstalk levels are below -24dB and -18dB, and the average insertion losses are 0.60dB and 0.85dB in the C-band with lenses' radii of 7xa and 10xa, respectively, where a is the lattice constant of the photonic crystal.",
+    "authors": [
+      "M. M. Gilarlue",
+      "S. Hadi Badri",
+      "H. Rasooli Saghai",
+      "J. Nourinia",
+      "Ch. Ghobadi"
+    ],
+    "published": "2018-08-21",
+    "year": 2018,
+    "arxiv_id": "1808.06781v2",
+    "category": "physics.optics",
+    "source": "arxiv",
+    "text": "Photonic crystal waveguide intersection design based on Maxwell's fish-eye lens\n\nThe number of waveguides crossing an intersection increases with the development of complex photonic integrated circuits. Numerical simulations are presented to demonstrate that Maxwell's fish-eye (MFE) lens can be used as a multiband crossing medium. In previous designs of waveguide intersection, bends are needed before and after the intersection to adjust the crossing angle resulting in a larger footprint. The presented design incorporates the waveguide bends into the intersection which saves footprint. In this paper, 4x4 and 6x6 intersections based on ideal and graded photonic crystal (GPC) MFE lenses are investigated, where 4 and 6 waveguides intersect, respectively. The intersection based on ideal MFE lens partially covers the O, E, S, C, L, and U bands of optical communication, while the intersection based on GPC-MFE lens is optimized to cover the entire C-band. For 4x4 and 6x6 intersections based on GPC-MFE lens, crosstalk levels are below -24dB and -18dB, and the average insertion losses are 0.60dB and 0.85dB in the C-band with lenses' radii of 7xa and 10xa, respectively, where a is the lattice constant of the photonic crystal."
+  },
+  {
+    "title": "How do eyes and brain search a randomly structured uninformative scene? Exploiting a basic interplay of attention and memory",
+    "abstract": "We tracked the eye movements of seven young and seven older adults performing a conjunctive visual search task similar to that performed by two highly trained monkeys in an original influential study of Motter and Belky (1998a, 1998b). We obtained results consistent with theirs regarding elements of perception, selection, attention and object recognition, but we found a much greater role played by long-range memory. A design inadequacy in the original Motter-Belky study is not sufficient to explain such discrepancy, nor is the high level of training of their monkeys. Perhaps monkeys and humans do not use mnemonic resources compatibly already in basic visual search tasks, contrary to a common expectation, further supported by cortical representation studies. We also found age-related differences in various measures of eye movements, consistently indicating slightly reduced conspicuity areas for the older adults, hence, correspondingly reduced processing and memory capacities. However, because of sample size and age differential limitations, statistically significant differences were found only for a few variables, most notably overall reaction times. Results reported here provide the basis for demonstrating the formation of spiraling or circulating patterns in the eye movement trajectories and for developing corresponding computational models and simulations.",
+    "authors": [
+      "Lorenzo Resca",
+      "Pamela M. Greenwood",
+      "Terrance D. Keech"
+    ],
+    "published": "2020-04-07",
+    "year": 2020,
+    "arxiv_id": "2004.02873v1",
+    "category": "q-bio.NC",
+    "source": "arxiv",
+    "text": "How do eyes and brain search a randomly structured uninformative scene? Exploiting a basic interplay of attention and memory\n\nWe tracked the eye movements of seven young and seven older adults performing a conjunctive visual search task similar to that performed by two highly trained monkeys in an original influential study of Motter and Belky (1998a, 1998b). We obtained results consistent with theirs regarding elements of perception, selection, attention and object recognition, but we found a much greater role played by long-range memory. A design inadequacy in the original Motter-Belky study is not sufficient to explain such discrepancy, nor is the high level of training of their monkeys. Perhaps monkeys and humans do not use mnemonic resources compatibly already in basic visual search tasks, contrary to a common expectation, further supported by cortical representation studies. We also found age-related differences in various measures of eye movements, consistently indicating slightly reduced conspicuity areas for the older adults, hence, correspondingly reduced processing and memory capacities. However, because of sample size and age differential limitations, statistically significant differences were found only for a few variables, most notably overall reaction times. Results reported here provide the basis for demonstrating the formation of spiraling or circulating patterns in the eye movement trajectories and for developing corresponding computational models and simulations."
+  },
+  {
+    "title": "Hierarchical HMM for Eye Movement Classification",
+    "abstract": "In this work, we tackle the problem of ternary eye movement classification, which aims to separate fixations, saccades and smooth pursuits from the raw eye positional data. The efficient classification of these different types of eye movements helps to better analyze and utilize the eye tracking data. Different from the existing methods that detect eye movement by several pre-defined threshold values, we propose a hierarchical Hidden Markov Model (HMM) statistical algorithm for detecting fixations, saccades and smooth pursuits. The proposed algorithm leverages different features from the recorded raw eye tracking data with a hierarchical classification strategy, separating one type of eye movement each time. Experimental results demonstrate the effectiveness and robustness of the proposed method by achieving competitive or better performance compared to the state-of-the-art methods.",
+    "authors": [
+      "Ye Zhu",
+      "Yan Yan",
+      "Oleg Komogortsev"
+    ],
+    "published": "2020-08-18",
+    "year": 2020,
+    "arxiv_id": "2008.07961v1",
+    "category": "cs.CV",
+    "source": "arxiv",
+    "text": "Hierarchical HMM for Eye Movement Classification\n\nIn this work, we tackle the problem of ternary eye movement classification, which aims to separate fixations, saccades and smooth pursuits from the raw eye positional data. The efficient classification of these different types of eye movements helps to better analyze and utilize the eye tracking data. Different from the existing methods that detect eye movement by several pre-defined threshold values, we propose a hierarchical Hidden Markov Model (HMM) statistical algorithm for detecting fixations, saccades and smooth pursuits. The proposed algorithm leverages different features from the recorded raw eye tracking data with a hierarchical classification strategy, separating one type of eye movement each time. Experimental results demonstrate the effectiveness and robustness of the proposed method by achieving competitive or better performance compared to the state-of-the-art methods."
+  },
+  {
+    "title": "Nonlinear modeling and preliminary stabilization results for a class of piezoelectric smart composite beams",
+    "abstract": "Existing smart composite piezoelectric beam models in the literature mostly ignore the electro-magnetic interactions and adopt the linear elasticity theory. However, these interactions substantially change the controllability and stabilizability at the high frequencies, and linear models fail to represent and predict the governing dynamics since mechanical nonlinearities are pronounced in certain applications such as energy harvesting. In this paper, first, a consistent variational approach is used by considering nonlinear elasticity theory to derive equations of motion for a single-layer piezoelectric beam with and without the electromagnetic interactions (fully dynamic and electrostatic). This modeling strategy is extended for the three-layer piezoelectric smart composites by adopting the two widely-accepted sandwich beam theories. For both single-layer and three-layer models, the resulting infinite dimensional equations of motion can be formulated in the state-space form. It is observed that the fully dynamic nonlinear models are unbounded boundary control systems (same in linear theory) ${\\bf \\dot y}(t)=(\\mathcal A +\\mathcal N) {\\bf y} (t) + \\mathcal B u(t)$, the electrostatic nonlinear models are unbounded bilinear control systems ${\\bf \\dot y}(t)=(\\mathcal A +\\mathcal N){\\bf y} (t) + (\\mathcal B_1+ \\mathcal B_2 {\\bf y}) u(t)$ in sharp contrast to the linear theory. Finally, we propose $\\mathcal B^*-$type feedback controllers to stabilize the single piezoelectric beam models. The filtered semi-discrete Finite Difference approximations is adopted to illustrate the findings.",
+    "authors": [
+      "Ahmet Ozkan Ozer"
+    ],
+    "published": "2017-09-05",
+    "year": 2017,
+    "arxiv_id": "1709.02258v2",
+    "category": "math.OC",
+    "source": "arxiv",
+    "text": "Nonlinear modeling and preliminary stabilization results for a class of piezoelectric smart composite beams\n\nExisting smart composite piezoelectric beam models in the literature mostly ignore the electro-magnetic interactions and adopt the linear elasticity theory. However, these interactions substantially change the controllability and stabilizability at the high frequencies, and linear models fail to represent and predict the governing dynamics since mechanical nonlinearities are pronounced in certain applications such as energy harvesting. In this paper, first, a consistent variational approach is used by considering nonlinear elasticity theory to derive equations of motion for a single-layer piezoelectric beam with and without the electromagnetic interactions (fully dynamic and electrostatic). This modeling strategy is extended for the three-layer piezoelectric smart composites by adopting the two widely-accepted sandwich beam theories. For both single-layer and three-layer models, the resulting infinite dimensional equations of motion can be formulated in the state-space form. It is observed that the fully dynamic nonlinear models are unbounded boundary control systems (same in linear theory) ${\\bf \\dot y}(t)=(\\mathcal A +\\mathcal N) {\\bf y} (t) + \\mathcal B u(t)$, the electrostatic nonlinear models are unbounded bilinear control systems ${\\bf \\dot y}(t)=(\\mathcal A +\\mathcal N){\\bf y} (t) + (\\mathcal B_1+ \\mathcal B_2 {\\bf y}) u(t)$ in sharp contrast to the linear theory. Finally, we propose $\\mathcal B^*-$type feedback controllers to stabilize the single piezoelectric beam models. The filtered semi-discrete Finite Difference approximations is adopted to illustrate the findings."
+  },
+  {
+    "title": "The role of open data in the transformation to Society 5.0: a resource or a tool for SDG-compliant Smart Living?",
+    "abstract": "Open data are characterized by a number of economic, technological, innovative and social benefits. They are seen as a significant contributor to the city's transformation into Smart City. This is all the more so when the society is on the border of Society 5.0, i.e., shift from the information society to a super smart society or society of imagination takes place. However, the question constantly asked by open data experts is, what are the key factors to be met and satisfied in order to achieve promised benefits? The current trend of openness suggests that the principle of openness should be followed not only by data but also research, education, software, standard, hardware etc., it should become a philosophy to be followed at different levels, in different domains. This should ensure greater transparency, eliminating inequalities, promoting, and achieving sustainable development goals. Therefore, many agendas now have openness as a prerequisite. This chapter deals with concepts of open (government) data and Society 5.0 pointing to their common objectives, providing some success stories of open data use in smart cities or transformation of cities towards smart cities, mapping them to the features of the Society 5.0. We believe that this trend develops a new form of society, which we refer to as \"open data-driven society\". It forms a bridge from Society 4.0 to Society 5.0. This Chapter attempts to identify the role of openness in promoting human-centric Smart Society, Smart city, and Smart Living.",
+    "authors": [
+      "Anastasija Nikiforova",
+      "Miguel Angel Alor Flores",
+      "Miltiadis D. Lytras"
+    ],
+    "published": "2022-06-23",
+    "year": 2022,
+    "arxiv_id": "2206.11784v3",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "The role of open data in the transformation to Society 5.0: a resource or a tool for SDG-compliant Smart Living?\n\nOpen data are characterized by a number of economic, technological, innovative and social benefits. They are seen as a significant contributor to the city's transformation into Smart City. This is all the more so when the society is on the border of Society 5.0, i.e., shift from the information society to a super smart society or society of imagination takes place. However, the question constantly asked by open data experts is, what are the key factors to be met and satisfied in order to achieve promised benefits? The current trend of openness suggests that the principle of openness should be followed not only by data but also research, education, software, standard, hardware etc., it should become a philosophy to be followed at different levels, in different domains. This should ensure greater transparency, eliminating inequalities, promoting, and achieving sustainable development goals. Therefore, many agendas now have openness as a prerequisite. This chapter deals with concepts of open (government) data and Society 5.0 pointing to their common objectives, providing some success stories of open data use in smart cities or transformation of cities towards smart cities, mapping them to the features of the Society 5.0. We believe that this trend develops a new form of society, which we refer to as \"open data-driven society\". It forms a bridge from Society 4.0 to Society 5.0. This Chapter attempts to identify the role of openness in promoting human-centric Smart Society, Smart city, and Smart Living."
+  },
+  {
+    "title": "5G-Enabled Smart Manufacturing -- A booklet by 5G-SMART",
+    "abstract": "In this booklet the most important learnings and key results of 5G-SMART in the area of smart manufacturing are summarized.",
+    "authors": [
+      "Leefke Grosjean",
+      "Krister Landern\u00e4s",
+      "Berna Sayrac",
+      "Ognjen Dobrijevic",
+      "Niels K\u00f6nig",
+      "Davit Harutyunyan",
+      "Dhruvin Patel",
+      "Jose F. Monserrat",
+      "Joachim Sachs"
+    ],
+    "published": "2022-09-21",
+    "year": 2022,
+    "arxiv_id": "2209.10300v1",
+    "category": "cs.NI",
+    "source": "arxiv",
+    "text": "5G-Enabled Smart Manufacturing -- A booklet by 5G-SMART\n\nIn this booklet the most important learnings and key results of 5G-SMART in the area of smart manufacturing are summarized."
+  },
+  {
+    "title": "Semantic Answer Type Prediction using BERT: IAI at the ISWC SMART Task 2020",
+    "abstract": "This paper summarizes our participation in the SMART Task of the ISWC 2020 Challenge. A particular question we are interested in answering is how well neural methods, and specifically transformer models, such as BERT, perform on the answer type prediction task compared to traditional approaches. Our main finding is that coarse-grained answer types can be identified effectively with standard text classification methods, with over 95% accuracy, and BERT can bring only marginal improvements. For fine-grained type detection, on the other hand, BERT clearly outperforms previous retrieval-based approaches.",
+    "authors": [
+      "Vinay Setty",
+      "Krisztian Balog"
+    ],
+    "published": "2021-09-14",
+    "year": 2021,
+    "arxiv_id": "2109.06714v1",
+    "category": "cs.CL",
+    "source": "arxiv",
+    "text": "Semantic Answer Type Prediction using BERT: IAI at the ISWC SMART Task 2020\n\nThis paper summarizes our participation in the SMART Task of the ISWC 2020 Challenge. A particular question we are interested in answering is how well neural methods, and specifically transformer models, such as BERT, perform on the answer type prediction task compared to traditional approaches. Our main finding is that coarse-grained answer types can be identified effectively with standard text classification methods, with over 95% accuracy, and BERT can bring only marginal improvements. For fine-grained type detection, on the other hand, BERT clearly outperforms previous retrieval-based approaches."
+  },
+  {
+    "title": "Getting the Most from Eye-Tracking: User-Interaction Based Reading Region Estimation Dataset and Models",
+    "abstract": "A single digital newsletter usually contains many messages (regions). Users' reading time spent on, and read level (skip/skim/read-in-detail) of each message is important for platforms to understand their users' interests, personalize their contents, and make recommendations. Based on accurate but expensive-to-collect eyetracker-recorded data, we built models that predict per-region reading time based on easy-to-collect Javascript browser tracking data.\n  With eye-tracking, we collected 200k ground-truth datapoints on participants reading news on browsers. Then we trained machine learning and deep learning models to predict message-level reading time based on user interactions like mouse position, scrolling, and clicking. We reached 27\\% percentage error in reading time estimation with a two-tower neural network based on user interactions only, against the eye-tracking ground truth data, while the heuristic baselines have around 46\\% percentage error. We also discovered the benefits of replacing per-session models with per-timestamp models, and adding user pattern features. We concluded with suggestions on developing message-level reading estimation techniques based on available data.",
+    "authors": [
+      "Ruoyan Kong",
+      "Ruixuan Sun",
+      "Charles Chuankai Zhang",
+      "Chen Chen",
+      "Sneha Patri",
+      "Gayathri Gajjela",
+      "Joseph A. Konstan"
+    ],
+    "published": "2023-06-12",
+    "year": 2023,
+    "arxiv_id": "2306.07455v1",
+    "category": "cs.HC",
+    "source": "arxiv",
+    "text": "Getting the Most from Eye-Tracking: User-Interaction Based Reading Region Estimation Dataset and Models\n\nA single digital newsletter usually contains many messages (regions). Users' reading time spent on, and read level (skip/skim/read-in-detail) of each message is important for platforms to understand their users' interests, personalize their contents, and make recommendations. Based on accurate but expensive-to-collect eyetracker-recorded data, we built models that predict per-region reading time based on easy-to-collect Javascript browser tracking data.\n  With eye-tracking, we collected 200k ground-truth datapoints on participants reading news on browsers. Then we trained machine learning and deep learning models to predict message-level reading time based on user interactions like mouse position, scrolling, and clicking. We reached 27\\% percentage error in reading time estimation with a two-tower neural network based on user interactions only, against the eye-tracking ground truth data, while the heuristic baselines have around 46\\% percentage error. We also discovered the benefits of replacing per-session models with per-timestamp models, and adding user pattern features. We concluded with suggestions on developing message-level reading estimation techniques based on available data."
+  },
+  {
+    "title": "Evolution and the Calcite Eye Lens",
+    "abstract": "Calcite is a uniaxial, birefringent crystal, which in its optically transparent form, has been used for animal eye lenses, the trilobite being one such animal. Because of the calcite birefringence there is a difficulty in using calcite as a lens. When the propagation direction of incoming light is not exactly on the c-axis, the mages blur. In this paper, calcite blurring is evaluated, and the non-blurring by a crystallin eye lens is compared to a calcite one.",
+    "authors": [
+      "Vernon L. Williams"
+    ],
+    "published": "2013-04-03",
+    "year": 2013,
+    "arxiv_id": "1304.4815v1",
+    "category": "physics.gen-ph",
+    "source": "arxiv",
+    "text": "Evolution and the Calcite Eye Lens\n\nCalcite is a uniaxial, birefringent crystal, which in its optically transparent form, has been used for animal eye lenses, the trilobite being one such animal. Because of the calcite birefringence there is a difficulty in using calcite as a lens. When the propagation direction of incoming light is not exactly on the c-axis, the mages blur. In this paper, calcite blurring is evaluated, and the non-blurring by a crystallin eye lens is compared to a calcite one."
+  },
+  {
+    "title": "Insights from Game Theory into the Impact of Smart Balancing on Power System Stability",
+    "abstract": "Smart balancing, also called passive balancing, is the intentional introduction of active power schedule deviations by balance responsible parties (BRPs) to receive a remuneration through the imbalance settlement mechanism. From a system perspective, smart balancing is meant to reduce the need for, and costs of, frequency restoration reserves (FRR), but it can also cause large oscillations in the FRR and jeopardize the system stability. Using a dynamic control area model, this work defines a 2x2 game in which two BRPs can choose to perform smart balancing. We study the impact of time delay, ramp rates, and pricing mechanisms on Nash equilibria and Experience-weighted Attraction (EWA) learning. It is found that, even in an idealized setting, a significant fraction of games in a learned equilibrium results in an overreaction relative to the baseline disturbance, creating an imbalance in the opposite direction. This suggests that the system stability risks are inherent to smart balancing and not a question of implementation. Recommendations are given for implementation choices that can reduce (but not eliminate) the risk of overreactions.",
+    "authors": [
+      "Johannes Lips",
+      "Hendrik Lens"
+    ],
+    "published": "2025-03-26",
+    "year": 2025,
+    "arxiv_id": "2503.20706v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Insights from Game Theory into the Impact of Smart Balancing on Power System Stability\n\nSmart balancing, also called passive balancing, is the intentional introduction of active power schedule deviations by balance responsible parties (BRPs) to receive a remuneration through the imbalance settlement mechanism. From a system perspective, smart balancing is meant to reduce the need for, and costs of, frequency restoration reserves (FRR), but it can also cause large oscillations in the FRR and jeopardize the system stability. Using a dynamic control area model, this work defines a 2x2 game in which two BRPs can choose to perform smart balancing. We study the impact of time delay, ramp rates, and pricing mechanisms on Nash equilibria and Experience-weighted Attraction (EWA) learning. It is found that, even in an idealized setting, a significant fraction of games in a learned equilibrium results in an overreaction relative to the baseline disturbance, creating an imbalance in the opposite direction. This suggests that the system stability risks are inherent to smart balancing and not a question of implementation. Recommendations are given for implementation choices that can reduce (but not eliminate) the risk of overreactions."
+  },
+  {
+    "title": "Design Principles for Architectures of Technical Smart Service Systems",
+    "abstract": "Successful smart services require seamless integration into existing corporate systems and an interdisciplinary approach that aligns the development of both business models and technical architectures. Multi-disciplinarity and cocreating with customers add a layer of complexity but are essential collaboration schemes for validating the value proposition of smart services and building longterm customer loyalty. This paper explores these challenges and distills the design principles for the architectures of technical smart service systems, based on empirical data from architecture projects in two manufacturing companies. These principles contribute to the sparse academic literature on this topic and help practitioners navigate several design trade-offs commonly arising in smart service projects.",
+    "authors": [
+      "Nikola Pascher",
+      "Jochen Wulf"
+    ],
+    "published": "2025-02-13",
+    "year": 2025,
+    "arxiv_id": "2502.09270v1",
+    "category": "stat.CO",
+    "source": "arxiv",
+    "text": "Design Principles for Architectures of Technical Smart Service Systems\n\nSuccessful smart services require seamless integration into existing corporate systems and an interdisciplinary approach that aligns the development of both business models and technical architectures. Multi-disciplinarity and cocreating with customers add a layer of complexity but are essential collaboration schemes for validating the value proposition of smart services and building longterm customer loyalty. This paper explores these challenges and distills the design principles for the architectures of technical smart service systems, based on empirical data from architecture projects in two manufacturing companies. These principles contribute to the sparse academic literature on this topic and help practitioners navigate several design trade-offs commonly arising in smart service projects."
+  },
+  {
+    "title": "Algebraic Error Estimates for the Stochastic Homogenization of Uniformly Parabolic Equations",
+    "abstract": "This article establishes an algebraic error estimate for the stochastic homogenization of fully nonlinear uniformly parabolic equations in stationary ergodic spatio-temporal media. The approach is similar to that of Armstrong and Smart in the study of quantitative stochastic homogenization of uniformly elliptic equations.",
+    "authors": [
+      "Jessica Lin",
+      "Charles K. Smart"
+    ],
+    "published": "2015-01-15",
+    "year": 2015,
+    "arxiv_id": "1501.03718v2",
+    "category": "math.AP",
+    "source": "arxiv",
+    "text": "Algebraic Error Estimates for the Stochastic Homogenization of Uniformly Parabolic Equations\n\nThis article establishes an algebraic error estimate for the stochastic homogenization of fully nonlinear uniformly parabolic equations in stationary ergodic spatio-temporal media. The approach is similar to that of Armstrong and Smart in the study of quantitative stochastic homogenization of uniformly elliptic equations."
+  },
+  {
+    "title": "Agent-Based Analysis of the Impact of Near Real-Time Data and Smart Balancing on the Frequency Stability of Power Systems",
+    "abstract": "Single imbalance pricing provides an incentive to balance responsible parties (BRPs) to intentionally introduce power schedule deviations in order to reduce the control area imbalance and receive a remuneration through the imbalance settlement mechanism. This is called smart balancing or passive balancing and is actively encouraged in, e.g., the Netherlands and Belgium through the publication of near real-time (NRT) data on the control area imbalance by the transmission system operator. It is known that under certain conditions, smart balancing can deteriorate the frequency stability of the power system. This paper examines how the publication of different types of NRT data affects smart balancing and the frequency stability. A Monte-Carlo simulation of a dynamic multi-agent model is performed to analyse the effects of smart balancing with different parameters for the agents and the environment, using historical time series of the power imbalance of the German control block as a basis. It is found that smart balancing can significantly reduce the amount and cost of frequency restoration reserve activation, but leads to a general increase of the frequency variability. Depending on the type of NRT data and agent parameters, the frequency stability margins are also reduced. The negative effects on the frequency stability are stronger when NRT data is published using large bins and with long delays.",
+    "authors": [
+      "Johannes Lips",
+      "Boyana Georgieva",
+      "Dominik Schlipf",
+      "Hendrik Lens"
+    ],
+    "published": "2025-03-26",
+    "year": 2025,
+    "arxiv_id": "2503.20665v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Agent-Based Analysis of the Impact of Near Real-Time Data and Smart Balancing on the Frequency Stability of Power Systems\n\nSingle imbalance pricing provides an incentive to balance responsible parties (BRPs) to intentionally introduce power schedule deviations in order to reduce the control area imbalance and receive a remuneration through the imbalance settlement mechanism. This is called smart balancing or passive balancing and is actively encouraged in, e.g., the Netherlands and Belgium through the publication of near real-time (NRT) data on the control area imbalance by the transmission system operator. It is known that under certain conditions, smart balancing can deteriorate the frequency stability of the power system. This paper examines how the publication of different types of NRT data affects smart balancing and the frequency stability. A Monte-Carlo simulation of a dynamic multi-agent model is performed to analyse the effects of smart balancing with different parameters for the agents and the environment, using historical time series of the power imbalance of the German control block as a basis. It is found that smart balancing can significantly reduce the amount and cost of frequency restoration reserve activation, but leads to a general increase of the frequency variability. Depending on the type of NRT data and agent parameters, the frequency stability margins are also reduced. The negative effects on the frequency stability are stronger when NRT data is published using large bins and with long delays."
+  },
+  {
+    "title": "A blockchain framework for smart mobility",
+    "abstract": "A blockchain framework is presented for addressing the privacy and security challenges associated with the Big Data in smart mobility. It is composed of individuals, companies, government and universities where all the participants collect, own, and control their data. Each participant shares their encrypted data to the blockchain network and can make information transactions with other participants as long as both party agrees to the transaction rules (smart contract) issued by the owner of the data. Data ownership, transparency, auditability and access control are the core principles of the proposed blockchain for smart mobility Big Data.",
+    "authors": [
+      "David Lopez",
+      "Bilal Farooq"
+    ],
+    "published": "2018-09-16",
+    "year": 2018,
+    "arxiv_id": "1809.05785v1",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "A blockchain framework for smart mobility\n\nA blockchain framework is presented for addressing the privacy and security challenges associated with the Big Data in smart mobility. It is composed of individuals, companies, government and universities where all the participants collect, own, and control their data. Each participant shares their encrypted data to the blockchain network and can make information transactions with other participants as long as both party agrees to the transaction rules (smart contract) issued by the owner of the data. Data ownership, transparency, auditability and access control are the core principles of the proposed blockchain for smart mobility Big Data."
+  },
+  {
+    "title": "Mutation Testing for Ethereum Smart Contract",
+    "abstract": "Smart contract is a special program that manages digital assets on blockchain. It is difficult to recover the loss if users make transactions through buggy smart contracts, which cannot be directly fixed. Hence, it is important to ensure the correctness of smart contracts before deploying them. This paper proposes a systematic framework to mutation testing for smart contracts on Ethereum, which is currently the most popular open blockchain for deploying and running smart contracts. Fifteen novel mutation operators have been designed for Ethereum Smart Contracts (ESC), in terms of keyword, global variable/function, variable unit, and error handling. An empirical study on 26 smart contracts in four Ethereum DApps has been conducted to evaluate the effectiveness of mutation testing. The experimental results show that our approach can outperform the coverage-based approach on defect detection rate (96.01% vs. 55.68%). The ESC mutation operators are effective to reveal real defects and we found 117 out of 729 real bug reports are related to our operators. These show the great potential of using mutation testing for quality assurance of ESC.",
+    "authors": [
+      "Haoran Wu",
+      "Xingya Wang",
+      "Jiehui Xu",
+      "Weiqin Zou",
+      "Lingming Zhang",
+      "Zhenyu Chen"
+    ],
+    "published": "2019-08-10",
+    "year": 2019,
+    "arxiv_id": "1908.03707v1",
+    "category": "cs.SE",
+    "source": "arxiv",
+    "text": "Mutation Testing for Ethereum Smart Contract\n\nSmart contract is a special program that manages digital assets on blockchain. It is difficult to recover the loss if users make transactions through buggy smart contracts, which cannot be directly fixed. Hence, it is important to ensure the correctness of smart contracts before deploying them. This paper proposes a systematic framework to mutation testing for smart contracts on Ethereum, which is currently the most popular open blockchain for deploying and running smart contracts. Fifteen novel mutation operators have been designed for Ethereum Smart Contracts (ESC), in terms of keyword, global variable/function, variable unit, and error handling. An empirical study on 26 smart contracts in four Ethereum DApps has been conducted to evaluate the effectiveness of mutation testing. The experimental results show that our approach can outperform the coverage-based approach on defect detection rate (96.01% vs. 55.68%). The ESC mutation operators are effective to reveal real defects and we found 117 out of 729 real bug reports are related to our operators. These show the great potential of using mutation testing for quality assurance of ESC."
+  },
+  {
+    "title": "A Synthetic Eye Movement Dataset for Script Reading Detection: Real Trajectory Replay on a 3D Simulator",
+    "abstract": "Large vision-language models have achieved remarkable capabilities by training on massive internet-scale data, yet a fundamental asymmetry persists: while LLMs can leverage self-supervised pretraining on abundant text and image data, the same is not true for many behavioral modalities. Video-based behavioral data -- gestures, eye movements, social signals -- remains scarce, expensive to annotate, and privacy-sensitive. A promising alternative is simulation: replace real data collection with controlled synthetic generation to produce automatically labeled data at scale.\n  We introduce infrastructure for this paradigm applied to eye movement, a behavioral signal with applications across vision-language modeling, virtual reality, robotics, accessibility systems, and cognitive science. We present a pipeline for generating synthetic labeled eye movement video by extracting real human iris trajectories from reference videos and replaying them on a 3D eye movement simulator via headless browser automation. Applying this to the task of script-reading detection during video interviews, we release final_dataset_v1: 144 sessions (72 reading, 72 conversation) totaling 12 hours of synthetic eye movement video at 25fps.\n  Evaluation shows that generated trajectories preserve the temporal dynamics of the source data (KS D < 0.14 across all metrics). A matched frame-by-frame comparison reveals that the 3D simulator exhibits bounded sensitivity at reading-scale movements, attributable to the absence of coupled head movement -- a finding that informs future simulator design. The pipeline, dataset, and evaluation tools are released to support downstream behavioral classifier development at the intersection of behavioral modeling and vision-language systems.",
+    "authors": [
+      "Kidus Zewde",
+      "Yuchen Zhou",
+      "Dennis Ng",
+      "Neo Tiangratanakul",
+      "Tommy Duong",
+      "Ankit Raj",
+      "Yuxin Zhang",
+      "Xingyu Shen",
+      "Simiao Ren"
+    ],
+    "published": "2026-04-07",
+    "year": 2026,
+    "arxiv_id": "2604.05475v1",
+    "category": "cs.CV",
+    "source": "arxiv",
+    "text": "A Synthetic Eye Movement Dataset for Script Reading Detection: Real Trajectory Replay on a 3D Simulator\n\nLarge vision-language models have achieved remarkable capabilities by training on massive internet-scale data, yet a fundamental asymmetry persists: while LLMs can leverage self-supervised pretraining on abundant text and image data, the same is not true for many behavioral modalities. Video-based behavioral data -- gestures, eye movements, social signals -- remains scarce, expensive to annotate, and privacy-sensitive. A promising alternative is simulation: replace real data collection with controlled synthetic generation to produce automatically labeled data at scale.\n  We introduce infrastructure for this paradigm applied to eye movement, a behavioral signal with applications across vision-language modeling, virtual reality, robotics, accessibility systems, and cognitive science. We present a pipeline for generating synthetic labeled eye movement video by extracting real human iris trajectories from reference videos and replaying them on a 3D eye movement simulator via headless browser automation. Applying this to the task of script-reading detection during video interviews, we release final_dataset_v1: 144 sessions (72 reading, 72 conversation) totaling 12 hours of synthetic eye movement video at 25fps.\n  Evaluation shows that generated trajectories preserve the temporal dynamics of the source data (KS D < 0.14 across all metrics). A matched frame-by-frame comparison reveals that the 3D simulator exhibits bounded sensitivity at reading-scale movements, attributable to the absence of coupled head movement -- a finding that informs future simulator design. The pipeline, dataset, and evaluation tools are released to support downstream behavioral classifier development at the intersection of behavioral modeling and vision-language systems."
+  },
+  {
+    "title": "On subwavelength imaging with Maxwell's fish eye lens",
+    "abstract": "Both explicit analysis and FEM numerical simulation are used to analyze the field distribution of a line current in the so-called Maxwell's fish eye lens [bounded with a perfectly electrical conductor (PEC) boundary]. We show that such a 2D Maxwell's fish eye lens cannot give perfect imaging due to the fact that high order modes of the object field can hardly reach the image point in Maxwell's fish eye lens. If only zeroth order mode is excited, a subwavelength image of a sharp object may be achieved in some cases, however, its spot-size is larger than the spot size of the initial object field. The image resolution is determined by the field spot size of the image corresponding to the zeroth order component of the object field. Our explicit analysis consists very well with the FEM results for a fish eye lens. Time-domain simulation is also given to verify our conclusion. Multi-point imaging for a single object point is also demonstrated.",
+    "authors": [
+      "Fei Sun",
+      "Sailing He"
+    ],
+    "published": "2010-09-15",
+    "year": 2010,
+    "arxiv_id": "1009.2814v1",
+    "category": "physics.optics",
+    "source": "arxiv",
+    "text": "On subwavelength imaging with Maxwell's fish eye lens\n\nBoth explicit analysis and FEM numerical simulation are used to analyze the field distribution of a line current in the so-called Maxwell's fish eye lens [bounded with a perfectly electrical conductor (PEC) boundary]. We show that such a 2D Maxwell's fish eye lens cannot give perfect imaging due to the fact that high order modes of the object field can hardly reach the image point in Maxwell's fish eye lens. If only zeroth order mode is excited, a subwavelength image of a sharp object may be achieved in some cases, however, its spot-size is larger than the spot size of the initial object field. The image resolution is determined by the field spot size of the image corresponding to the zeroth order component of the object field. Our explicit analysis consists very well with the FEM results for a fish eye lens. Time-domain simulation is also given to verify our conclusion. Multi-point imaging for a single object point is also demonstrated."
+  },
+  {
+    "title": "MambaPupil: Bidirectional Selective Recurrent model for Event-based Eye tracking",
+    "abstract": "Event-based eye tracking has shown great promise with the high temporal resolution and low redundancy provided by the event camera. However, the diversity and abruptness of eye movement patterns, including blinking, fixating, saccades, and smooth pursuit, pose significant challenges for eye localization. To achieve a stable event-based eye-tracking system, this paper proposes a bidirectional long-term sequence modeling and time-varying state selection mechanism to fully utilize contextual temporal information in response to the variability of eye movements. Specifically, the MambaPupil network is proposed, which consists of the multi-layer convolutional encoder to extract features from the event representations, a bidirectional Gated Recurrent Unit (GRU), and a Linear Time-Varying State Space Module (LTV-SSM), to selectively capture contextual correlation from the forward and backward temporal relationship. Furthermore, the Bina-rep is utilized as a compact event representation, and the tailor-made data augmentation, called as Event-Cutout, is proposed to enhance the model's robustness by applying spatial random masking to the event image. The evaluation on the ThreeET-plus benchmark shows the superior performance of the MambaPupil, which secured the 1st place in CVPR'2024 AIS Event-based Eye Tracking challenge.",
+    "authors": [
+      "Zhong Wang",
+      "Zengyu Wan",
+      "Han Han",
+      "Bohao Liao",
+      "Yuliang Wu",
+      "Wei Zhai",
+      "Yang Cao",
+      "Zheng-jun Zha"
+    ],
+    "published": "2024-04-18",
+    "year": 2024,
+    "arxiv_id": "2404.12083v2",
+    "category": "cs.CV",
+    "source": "arxiv",
+    "text": "MambaPupil: Bidirectional Selective Recurrent model for Event-based Eye tracking\n\nEvent-based eye tracking has shown great promise with the high temporal resolution and low redundancy provided by the event camera. However, the diversity and abruptness of eye movement patterns, including blinking, fixating, saccades, and smooth pursuit, pose significant challenges for eye localization. To achieve a stable event-based eye-tracking system, this paper proposes a bidirectional long-term sequence modeling and time-varying state selection mechanism to fully utilize contextual temporal information in response to the variability of eye movements. Specifically, the MambaPupil network is proposed, which consists of the multi-layer convolutional encoder to extract features from the event representations, a bidirectional Gated Recurrent Unit (GRU), and a Linear Time-Varying State Space Module (LTV-SSM), to selectively capture contextual correlation from the forward and backward temporal relationship. Furthermore, the Bina-rep is utilized as a compact event representation, and the tailor-made data augmentation, called as Event-Cutout, is proposed to enhance the model's robustness by applying spatial random masking to the event image. The evaluation on the ThreeET-plus benchmark shows the superior performance of the MambaPupil, which secured the 1st place in CVPR'2024 AIS Event-based Eye Tracking challenge."
+  },
+  {
+    "title": "Eye Gaze as a Signal for Conveying User Attention in Contextual AI Systems",
+    "abstract": "Advanced multimodal AI agents can now collaborate with users to solve challenges in the world. Yet, these emerging contextual AI systems rely on explicit communication channels between the user and system. We hypothesize that implicit communication of the user's interests and intent would reduce friction and improve user experience when collaborating with AI agents. In this work, we explore the potential of wearable eye tracking to convey signals about user attention. We measure the eye tracking signal quality requirements to effectively map gaze traces to physical objects, then conduct experiments that provide visual scanpath history as additional context when querying vision language models. Our results show that eye tracking provides high value as a user attention signal and can convey important context about the user's current task and interests, improving understanding of contextual AI agents.",
+    "authors": [
+      "Ethan Wilson",
+      "Naveen Sendhilnathan",
+      "Charlie S. Burlingham",
+      "Yusuf Mansour",
+      "Robert Cavin",
+      "Sai Deep Tetali",
+      "Ajoy Savio Fernandes",
+      "Michael J. Proulx"
+    ],
+    "published": "2025-01-23",
+    "year": 2025,
+    "arxiv_id": "2501.13878v3",
+    "category": "cs.HC",
+    "source": "arxiv",
+    "text": "Eye Gaze as a Signal for Conveying User Attention in Contextual AI Systems\n\nAdvanced multimodal AI agents can now collaborate with users to solve challenges in the world. Yet, these emerging contextual AI systems rely on explicit communication channels between the user and system. We hypothesize that implicit communication of the user's interests and intent would reduce friction and improve user experience when collaborating with AI agents. In this work, we explore the potential of wearable eye tracking to convey signals about user attention. We measure the eye tracking signal quality requirements to effectively map gaze traces to physical objects, then conduct experiments that provide visual scanpath history as additional context when querying vision language models. Our results show that eye tracking provides high value as a user attention signal and can convey important context about the user's current task and interests, improving understanding of contextual AI agents."
+  },
+  {
+    "title": "Crowdsensing and privacy in smart city applications",
+    "abstract": "Smartness in smart cities is achieved by sensing phenomena of interest and using them to make smart decisions. Since the decision makers may not own all the necessary sensing infrastructures, crowdsourced sensing, can help collect important information of the city in near real-time. However, involving people brings of the risk of exposing their private information.This chapter explores crowdsensing in smart city applications and its privacy implications.",
+    "authors": [
+      "Raj Gaire",
+      "Ratan K. Ghosh",
+      "Jongkil Kim",
+      "Alexander Krumpholz",
+      "Rajiv Ranjan",
+      "R. K. Shyamasundar",
+      "Surya Nepal"
+    ],
+    "published": "2018-06-20",
+    "year": 2018,
+    "arxiv_id": "1806.07534v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "Crowdsensing and privacy in smart city applications\n\nSmartness in smart cities is achieved by sensing phenomena of interest and using them to make smart decisions. Since the decision makers may not own all the necessary sensing infrastructures, crowdsourced sensing, can help collect important information of the city in near real-time. However, involving people brings of the risk of exposing their private information.This chapter explores crowdsensing in smart city applications and its privacy implications."
+  },
+  {
+    "title": "RITnet: Real-time Semantic Segmentation of the Eye for Gaze Tracking",
+    "abstract": "Accurate eye segmentation can improve eye-gaze estimation and support interactive computing based on visual attention; however, existing eye segmentation methods suffer from issues such as person-dependent accuracy, lack of robustness, and an inability to be run in real-time. Here, we present the RITnet model, which is a deep neural network that combines U-Net and DenseNet. RITnet is under 1 MB and achieves 95.3\\% accuracy on the 2019 OpenEDS Semantic Segmentation challenge. Using a GeForce GTX 1080 Ti, RITnet tracks at $>$ 300Hz, enabling real-time gaze tracking applications. Pre-trained models and source code are available https://bitbucket.org/eye-ush/ritnet/.",
+    "authors": [
+      "Aayush K. Chaudhary",
+      "Rakshit Kothari",
+      "Manoj Acharya",
+      "Shusil Dangi",
+      "Nitinraj Nair",
+      "Reynold Bailey",
+      "Christopher Kanan",
+      "Gabriel Diaz",
+      "Jeff B. Pelz"
+    ],
+    "published": "2019-10-01",
+    "year": 2019,
+    "arxiv_id": "1910.00694v1",
+    "category": "cs.CV",
+    "source": "arxiv",
+    "text": "RITnet: Real-time Semantic Segmentation of the Eye for Gaze Tracking\n\nAccurate eye segmentation can improve eye-gaze estimation and support interactive computing based on visual attention; however, existing eye segmentation methods suffer from issues such as person-dependent accuracy, lack of robustness, and an inability to be run in real-time. Here, we present the RITnet model, which is a deep neural network that combines U-Net and DenseNet. RITnet is under 1 MB and achieves 95.3\\% accuracy on the 2019 OpenEDS Semantic Segmentation challenge. Using a GeForce GTX 1080 Ti, RITnet tracks at $>$ 300Hz, enabling real-time gaze tracking applications. Pre-trained models and source code are available https://bitbucket.org/eye-ush/ritnet/."
+  },
+  {
+    "title": "Blockchain-based Smart Contracts: A Systematic Mapping Study",
+    "abstract": "An appealing feature of blockchain technology is smart contracts. A smart contract is executable code that runs on top of the blockchain to facilitate, execute and enforce an agreement between untrusted parties without the involvement of a trusted third party. In this paper, we conduct a systematic mapping study to collect all research that is relevant to smart contracts from a technical perspective. The aim of doing so is to identify current research topics and open challenges for future studies in smart contract research. We extract 24 papers from different scientific databases. The results show that about two thirds of the papers focus on identifying and tackling smart contract issues. Four key issues are identified, namely, codifying, security, privacy and performance issues. The rest of the papers focuses on smart contract applications or other smart contract related topics. Research gaps that need to be addressed in future studies are provided.",
+    "authors": [
+      "Maher Alharby",
+      "Aad van Moorsel"
+    ],
+    "published": "2017-10-17",
+    "year": 2017,
+    "arxiv_id": "1710.06372v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "Blockchain-based Smart Contracts: A Systematic Mapping Study\n\nAn appealing feature of blockchain technology is smart contracts. A smart contract is executable code that runs on top of the blockchain to facilitate, execute and enforce an agreement between untrusted parties without the involvement of a trusted third party. In this paper, we conduct a systematic mapping study to collect all research that is relevant to smart contracts from a technical perspective. The aim of doing so is to identify current research topics and open challenges for future studies in smart contract research. We extract 24 papers from different scientific databases. The results show that about two thirds of the papers focus on identifying and tackling smart contract issues. Four key issues are identified, namely, codifying, security, privacy and performance issues. The rest of the papers focuses on smart contract applications or other smart contract related topics. Research gaps that need to be addressed in future studies are provided."
+  },
+  {
+    "title": "pymovements: A Python Package for Eye Movement Data Processing",
+    "abstract": "We introduce pymovements: a Python package for analyzing eye-tracking data that follows best practices in software development, including rigorous testing and adherence to coding standards. The package provides functionality for key processes along the entire preprocessing pipeline. This includes parsing of eye tracker data files, transforming positional data into velocity data, detecting gaze events like saccades and fixations, computing event properties like saccade amplitude and fixational dispersion and visualizing data and results with several types of plotting methods. Moreover, pymovements also provides an easily accessible interface for downloading and processing publicly available datasets. Additionally, we emphasize how rigorous testing in scientific software packages is critical to the reproducibility and transparency of research, enabling other researchers to verify and build upon previous findings.",
+    "authors": [
+      "Daniel G. Krakowczyk",
+      "David R. Reich",
+      "Jakob Chwastek",
+      "Deborah N. Jakobi",
+      "Paul Prasse",
+      "Assunta S\u00fcss",
+      "Oleksii Turuta",
+      "Pawe\u0142 Kasprowski",
+      "Lena A. J\u00e4ger"
+    ],
+    "published": "2023-04-11",
+    "year": 2023,
+    "arxiv_id": "2304.09859v1",
+    "category": "cs.HC",
+    "source": "arxiv",
+    "text": "pymovements: A Python Package for Eye Movement Data Processing\n\nWe introduce pymovements: a Python package for analyzing eye-tracking data that follows best practices in software development, including rigorous testing and adherence to coding standards. The package provides functionality for key processes along the entire preprocessing pipeline. This includes parsing of eye tracker data files, transforming positional data into velocity data, detecting gaze events like saccades and fixations, computing event properties like saccade amplitude and fixational dispersion and visualizing data and results with several types of plotting methods. Moreover, pymovements also provides an easily accessible interface for downloading and processing publicly available datasets. Additionally, we emphasize how rigorous testing in scientific software packages is critical to the reproducibility and transparency of research, enabling other researchers to verify and build upon previous findings."
+  },
+  {
+    "title": "When Circular Economy Meets the Smart City Ecosystem: Defining the Smart and Circular City",
+    "abstract": "Smart cities have been a very active research area in the past 20 years, while continuously adapting to new technological advancements and keeping up with the times regarding sustainability and climate change. In this context, there have been numerous proposals to expand the scope of smart cities, focusing on resilience and sustainability, among other aspects, resulting in terms like smart sustainable cities. At the same time, there is an ongoing discussion regarding the degree in which smart cities put people at their centre. In this work, we argue toward expanding the current smart city definition by integrating the circular economy as one of its central pillars and adopting the term smart (and) circular city. We discuss the ways a smart and circular city encompasses both sustainability and smartness in an integral manner, while also being well-positioned to foster novel business activity and models and helping to place citizens at the heart of the smart city. In this sense, we also argue that previous research in smart cities and technologies, such as those related to Industry 4.0, can serve as a cornerstone to implement circular economy activities within cities, at a scale that exceeds current activities that are based on more conventional approaches. We also outline current open challenges in this domain and research questions that still need to be addressed.",
+    "authors": [
+      "Georgios Mylonas",
+      "Athanasios Kalogeras",
+      "Sobah Abbas Petersen",
+      "Luis Mu\u00f1oz",
+      "Ioannis Chatzigiannakis"
+    ],
+    "published": "2024-10-29",
+    "year": 2024,
+    "arxiv_id": "2410.22012v1",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "When Circular Economy Meets the Smart City Ecosystem: Defining the Smart and Circular City\n\nSmart cities have been a very active research area in the past 20 years, while continuously adapting to new technological advancements and keeping up with the times regarding sustainability and climate change. In this context, there have been numerous proposals to expand the scope of smart cities, focusing on resilience and sustainability, among other aspects, resulting in terms like smart sustainable cities. At the same time, there is an ongoing discussion regarding the degree in which smart cities put people at their centre. In this work, we argue toward expanding the current smart city definition by integrating the circular economy as one of its central pillars and adopting the term smart (and) circular city. We discuss the ways a smart and circular city encompasses both sustainability and smartness in an integral manner, while also being well-positioned to foster novel business activity and models and helping to place citizens at the heart of the smart city. In this sense, we also argue that previous research in smart cities and technologies, such as those related to Industry 4.0, can serve as a cornerstone to implement circular economy activities within cities, at a scale that exceeds current activities that are based on more conventional approaches. We also outline current open challenges in this domain and research questions that still need to be addressed."
+  },
+  {
+    "title": "Review of Smart Meter Data Analytics: Applications, Methodologies, and Challenges",
+    "abstract": "The widespread popularity of smart meters enables an immense amount of fine-grained electricity consumption data to be collected. Meanwhile, the deregulation of the power industry, particularly on the delivery side, has continuously been moving forward worldwide. How to employ massive smart meter data to promote and enhance the efficiency and sustainability of the power grid is a pressing issue. To date, substantial works have been conducted on smart meter data analytics. To provide a comprehensive overview of the current research and to identify challenges for future research, this paper conducts an application-oriented review of smart meter data analytics. Following the three stages of analytics, namely, descriptive, predictive and prescriptive analytics, we identify the key application areas as load analysis, load forecasting, and load management. We also review the techniques and methodologies adopted or developed to address each application. In addition, we also discuss some research trends, such as big data issues, novel machine learning technologies, new business models, the transition of energy systems, and data privacy and security.",
+    "authors": [
+      "Yi Wang",
+      "Qixin Chen",
+      "Tao Hong",
+      "Chongqing Kang"
+    ],
+    "published": "2018-02-09",
+    "year": 2018,
+    "arxiv_id": "1802.04117v2",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "Review of Smart Meter Data Analytics: Applications, Methodologies, and Challenges\n\nThe widespread popularity of smart meters enables an immense amount of fine-grained electricity consumption data to be collected. Meanwhile, the deregulation of the power industry, particularly on the delivery side, has continuously been moving forward worldwide. How to employ massive smart meter data to promote and enhance the efficiency and sustainability of the power grid is a pressing issue. To date, substantial works have been conducted on smart meter data analytics. To provide a comprehensive overview of the current research and to identify challenges for future research, this paper conducts an application-oriented review of smart meter data analytics. Following the three stages of analytics, namely, descriptive, predictive and prescriptive analytics, we identify the key application areas as load analysis, load forecasting, and load management. We also review the techniques and methodologies adopted or developed to address each application. In addition, we also discuss some research trends, such as big data issues, novel machine learning technologies, new business models, the transition of energy systems, and data privacy and security."
+  },
+  {
+    "title": "Interactive Restriction of a Mobile Robot's Workspace in a Smart Home Environment",
+    "abstract": "Virtual borders are employed to allow humans the interactive and flexible restriction of their mobile robots' workspaces in human-centered environments, e.g. to exclude privacy zones from the workspace or to indicate certain areas for working. They have been successfully specified in interaction processes using methods from human-robot interaction. However, these methods often lack an expressive feedback system, are restricted to robot's on-board interaction capabilities and require a direct line of sight between human and robot. This negatively affects the user experience and interaction time. Therefore, we investigate the effect of a smart environment on the teaching of virtual borders with the objective to enhance the perceptual and interaction capabilities of a robot. For this purpose, we propose a novel interaction method based on a laser pointer, that leverages a smart home environment in the interaction process. This interaction method comprises an architecture for a smart home environment designed to support the interaction process, the cooperation of human, robot and smart environment in the interaction process, a cooperative perception including stationary and mobile cameras to perceive laser spots and an algorithm to extract virtual borders from multiple camera observations. The results of an experimental evaluation support our hypotheses that our novel interaction method features a significantly shorter interaction time and a better user experience compared to an approach without support of a smart environment. Moreover, the interaction method does not negatively affect other user requirements concerning completeness and accuracy.",
+    "authors": [
+      "Dennis Sprute",
+      "Klaus T\u00f6nnies",
+      "Matthias K\u00f6nig"
+    ],
+    "published": "2019-02-19",
+    "year": 2019,
+    "arxiv_id": "1902.06997v2",
+    "category": "cs.RO",
+    "source": "arxiv",
+    "text": "Interactive Restriction of a Mobile Robot's Workspace in a Smart Home Environment\n\nVirtual borders are employed to allow humans the interactive and flexible restriction of their mobile robots' workspaces in human-centered environments, e.g. to exclude privacy zones from the workspace or to indicate certain areas for working. They have been successfully specified in interaction processes using methods from human-robot interaction. However, these methods often lack an expressive feedback system, are restricted to robot's on-board interaction capabilities and require a direct line of sight between human and robot. This negatively affects the user experience and interaction time. Therefore, we investigate the effect of a smart environment on the teaching of virtual borders with the objective to enhance the perceptual and interaction capabilities of a robot. For this purpose, we propose a novel interaction method based on a laser pointer, that leverages a smart home environment in the interaction process. This interaction method comprises an architecture for a smart home environment designed to support the interaction process, the cooperation of human, robot and smart environment in the interaction process, a cooperative perception including stationary and mobile cameras to perceive laser spots and an algorithm to extract virtual borders from multiple camera observations. The results of an experimental evaluation support our hypotheses that our novel interaction method features a significantly shorter interaction time and a better user experience compared to an approach without support of a smart environment. Moreover, the interaction method does not negatively affect other user requirements concerning completeness and accuracy."
+  },
+  {
+    "title": "PDFS: Practical Data Feed Service for Smart Contracts",
+    "abstract": "Smart contracts are a new paradigm that emerged with the rise of the blockchain technology. They allow untrusting parties to arrange agreements. These agreements are encoded as a programming language code and deployed on a blockchain platform, where all participants execute them and maintain their state. Smart contracts are promising since they are automated and decentralized, thus limiting the involvement of third trusted parties, and can contain monetary transfers. Due to these features, many people believe that smart contracts will revolutionize the way we think of distributed applications, information sharing, financial services, and infrastructures.\n  To release the potential of smart contracts, it is necessary to connect the contracts with the outside world, such that they can understand and use information from other infrastructures. For instance, smart contracts would greatly benefit when they have access to web content. However, there are many challenges associated with realizing such a system, and despite the existence of many proposals, no solution is secure, provides easily-parsable data, introduces small overheads, and is easy to deploy.\n  In this paper we propose PDFS, a practical system for data feeds that combines the advantages of the previous schemes and introduces new functionalities. PDFS extends content providers by including new features for data transparency and consistency validations. This combination provides multiple benefits like content which is easy to parse and efficient authenticity verification without breaking natural trust chains. PDFS keeps content providers auditable, mitigates their malicious activities (like data modification or censorship), and allows them to create a new business model. We show how PDFS is integrated with existing web services, report on a PDFS implementation and present results from conducted case studies and experiments.",
+    "authors": [
+      "Juan Guarnizo",
+      "Pawel Szalachowski"
+    ],
+    "published": "2018-08-20",
+    "year": 2018,
+    "arxiv_id": "1808.06641v2",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "PDFS: Practical Data Feed Service for Smart Contracts\n\nSmart contracts are a new paradigm that emerged with the rise of the blockchain technology. They allow untrusting parties to arrange agreements. These agreements are encoded as a programming language code and deployed on a blockchain platform, where all participants execute them and maintain their state. Smart contracts are promising since they are automated and decentralized, thus limiting the involvement of third trusted parties, and can contain monetary transfers. Due to these features, many people believe that smart contracts will revolutionize the way we think of distributed applications, information sharing, financial services, and infrastructures.\n  To release the potential of smart contracts, it is necessary to connect the contracts with the outside world, such that they can understand and use information from other infrastructures. For instance, smart contracts would greatly benefit when they have access to web content. However, there are many challenges associated with realizing such a system, and despite the existence of many proposals, no solution is secure, provides easily-parsable data, introduces small overheads, and is easy to deploy.\n  In this paper we propose PDFS, a practical system for data feeds that combines the advantages of the previous schemes and introduces new functionalities. PDFS extends content providers by including new features for data transparency and consistency validations. This combination provides multiple benefits like content which is easy to parse and efficient authenticity verification without breaking natural trust chains. PDFS keeps content providers auditable, mitigates their malicious activities (like data modification or censorship), and allows them to create a new business model. We show how PDFS is integrated with existing web services, report on a PDFS implementation and present results from conducted case studies and experiments."
+  },
+  {
+    "title": "Wireless Communications and Networking Technologies for Smart Grid: Paradigms and Challenges",
+    "abstract": "Smart grid, regarded as the next generation power grid, uses two-way flows of electricity and information to create a widely distributed automated energy delivery network. In this work we present our vision on smart grid from the perspective of wireless communications and networking technologies. We present wireless communication and networking paradigms for four typical scenarios in the future smart grid and also point out the research challenges of the wireless communication and networking technologies used in smart grid",
+    "authors": [
+      "Xi Fang",
+      "Dejun Yang",
+      "Guoliang Xue"
+    ],
+    "published": "2011-12-06",
+    "year": 2011,
+    "arxiv_id": "1112.1158v1",
+    "category": "cs.NI",
+    "source": "arxiv",
+    "text": "Wireless Communications and Networking Technologies for Smart Grid: Paradigms and Challenges\n\nSmart grid, regarded as the next generation power grid, uses two-way flows of electricity and information to create a widely distributed automated energy delivery network. In this work we present our vision on smart grid from the perspective of wireless communications and networking technologies. We present wireless communication and networking paradigms for four typical scenarios in the future smart grid and also point out the research challenges of the wireless communication and networking technologies used in smart grid"
+  },
+  {
+    "title": "Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models",
+    "abstract": "We introduce Lens, a 3.8B-parameter T2I model that achieves performance competitive with, and in several cases surpassing, state-of-the-art models with more than 6B parameters across various benchmarks, while requiring significantly less training compute. For example, Lens requires only about 19.3% of the training compute used by Z-Image. The training efficiency of Lens stems from two key strategies beyond its compact model size. First, we maximize data information density per training batch by (i) training on Lens-800M, a dataset of 800M densely captioned image-text pairs whose captions are generated by GPT-4.1 and contain approximately 109 words on average, providing richer semantic supervision than conventional short captions, and (ii) constructing each batch from images with multiple resolutions and diverse aspect ratios, thereby enlarging the effective visual coverage of each optimization step. Second, we improve convergence speed through careful architectural choices, including adopting a semantic VAE that provides better latent representations and employing a strong language encoder that accelerates optimization while enabling multilingual generalization from English-only training data. After pre-training, we apply RL with taxonomy-driven prompts (Lens-RL-8K) and structured reward rubrics to suppress artifacts and improve visual quality, a reasoner module with training-free system prompt search to better align user requests with the model, and distillation-based acceleration for 4-step inference. Through efficient training and systematic optimization, Lens generalizes to arbitrary aspect ratios from 1:2 to 2:1 and resolutions up to 1440^2, and supports prompts in several commonly used languages. Thanks to its compact size, Lens generates a 1024^2 image in 3.15 seconds on a single NVIDIA H100 GPU, while its distilled turbo version performs 4-step generation in 0.84 seconds.",
+    "authors": [
+      "Dong Chen",
+      "Fangyun Wei",
+      "Ziyu Wan",
+      "Dongdong Chen",
+      "Jiawei Zhang",
+      "Jinjing Zhao",
+      "Sirui Zhang",
+      "Yang Yue",
+      "Zhiyang Liang",
+      "Baining Guo",
+      "Chong Luo",
+      "Jianmin Bao",
+      "Ji Li",
+      "Lei Shi",
+      "Qinhong Yang",
+      "Xiuyu Wu",
+      "Xuelu Feng",
+      "Yan Lu",
+      "Yanchen Dong",
+      "Yitong Wang",
+      "Yunuo Chen"
+    ],
+    "published": "2026-05-20",
+    "year": 2026,
+    "arxiv_id": "2605.21573v1",
+    "category": "cs.CV",
+    "source": "arxiv",
+    "text": "Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models\n\nWe introduce Lens, a 3.8B-parameter T2I model that achieves performance competitive with, and in several cases surpassing, state-of-the-art models with more than 6B parameters across various benchmarks, while requiring significantly less training compute. For example, Lens requires only about 19.3% of the training compute used by Z-Image. The training efficiency of Lens stems from two key strategies beyond its compact model size. First, we maximize data information density per training batch by (i) training on Lens-800M, a dataset of 800M densely captioned image-text pairs whose captions are generated by GPT-4.1 and contain approximately 109 words on average, providing richer semantic supervision than conventional short captions, and (ii) constructing each batch from images with multiple resolutions and diverse aspect ratios, thereby enlarging the effective visual coverage of each optimization step. Second, we improve convergence speed through careful architectural choices, including adopting a semantic VAE that provides better latent representations and employing a strong language encoder that accelerates optimization while enabling multilingual generalization from English-only training data. After pre-training, we apply RL with taxonomy-driven prompts (Lens-RL-8K) and structured reward rubrics to suppress artifacts and improve visual quality, a reasoner module with training-free system prompt search to better align user requests with the model, and distillation-based acceleration for 4-step inference. Through efficient training and systematic optimization, Lens generalizes to arbitrary aspect ratios from 1:2 to 2:1 and resolutions up to 1440^2, and supports prompts in several commonly used languages. Thanks to its compact size, Lens generates a 1024^2 image in 3.15 seconds on a single NVIDIA H100 GPU, while its distilled turbo version performs 4-step generation in 0.84 seconds."
+  },
+  {
+    "title": "On subwavelength imaging of Maxwell's fish eye lens",
+    "abstract": "Both explicit analysis and FEM numerical simulation are used to analyze the field distribution of a line current in the so-called Maxwell's fish eye lens, which has been claimed recently to be able to achieve perfect imaging. We show that such a Maxwell's fish eye lens cannot give perfect imaging due to the fact that high order modes of the object field can hardly reach the image point in the Maxwell's fish eye. If only zero order mode is excited, a subwavelength image can be achieved, however, its spot-size is larger than the spot size of the source field. The image resolution is determined by the field spot size of the image corresponding to the zeroth order component of the object field. Our explicit analysis consists very well with the FEM results for a modified fish eye bounded with perfectly electrical conductor (PEC). Explicit condition is given for achieving a subwavelength image. When this condition is not satisfied, a single line current source may give multiple image spots.",
+    "authors": [
+      "Fei Sun",
+      "Sailing He"
+    ],
+    "published": "2010-05-22",
+    "year": 2010,
+    "arxiv_id": "1005.4119v1",
+    "category": "physics.optics",
+    "source": "arxiv",
+    "text": "On subwavelength imaging of Maxwell's fish eye lens\n\nBoth explicit analysis and FEM numerical simulation are used to analyze the field distribution of a line current in the so-called Maxwell's fish eye lens, which has been claimed recently to be able to achieve perfect imaging. We show that such a Maxwell's fish eye lens cannot give perfect imaging due to the fact that high order modes of the object field can hardly reach the image point in the Maxwell's fish eye. If only zero order mode is excited, a subwavelength image can be achieved, however, its spot-size is larger than the spot size of the source field. The image resolution is determined by the field spot size of the image corresponding to the zeroth order component of the object field. Our explicit analysis consists very well with the FEM results for a modified fish eye bounded with perfectly electrical conductor (PEC). Explicit condition is given for achieving a subwavelength image. When this condition is not satisfied, a single line current source may give multiple image spots."
+  },
+  {
+    "title": "Demand-Side Scheduling Based on Multi-Agent Deep Actor-Critic Learning for Smart Grids",
+    "abstract": "We consider the problem of demand-side energy management, where each household is equipped with a smart meter that is able to schedule home appliances online. The goal is to minimize the overall cost under a real-time pricing scheme. While previous works have introduced centralized approaches in which the scheduling algorithm has full observability, we propose the formulation of a smart grid environment as a Markov game. Each household is a decentralized agent with partial observability, which allows scalability and privacy-preservation in a realistic setting. The grid operator produces a price signal that varies with the energy demand. We propose an extension to a multi-agent, deep actor-critic algorithm to address partial observability and the perceived non-stationarity of the environment from the agent's viewpoint. This algorithm learns a centralized critic that coordinates training of decentralized agents. Our approach thus uses centralized learning but decentralized execution. Simulation results show that our online deep reinforcement learning method can reduce both the peak-to-average ratio of total energy consumed and the cost of electricity for all households based purely on instantaneous observations and a price signal.",
+    "authors": [
+      "Joash Lee",
+      "Wenbo Wang",
+      "Dusit Niyato"
+    ],
+    "published": "2020-05-05",
+    "year": 2020,
+    "arxiv_id": "2005.01979v2",
+    "category": "cs.LG",
+    "source": "arxiv",
+    "text": "Demand-Side Scheduling Based on Multi-Agent Deep Actor-Critic Learning for Smart Grids\n\nWe consider the problem of demand-side energy management, where each household is equipped with a smart meter that is able to schedule home appliances online. The goal is to minimize the overall cost under a real-time pricing scheme. While previous works have introduced centralized approaches in which the scheduling algorithm has full observability, we propose the formulation of a smart grid environment as a Markov game. Each household is a decentralized agent with partial observability, which allows scalability and privacy-preservation in a realistic setting. The grid operator produces a price signal that varies with the energy demand. We propose an extension to a multi-agent, deep actor-critic algorithm to address partial observability and the perceived non-stationarity of the environment from the agent's viewpoint. This algorithm learns a centralized critic that coordinates training of decentralized agents. Our approach thus uses centralized learning but decentralized execution. Simulation results show that our online deep reinforcement learning method can reduce both the peak-to-average ratio of total energy consumed and the cost of electricity for all households based purely on instantaneous observations and a price signal."
+  },
+  {
+    "title": "Ray-Singer Torsion and the Rumin Laplacian on Lens Spaces",
+    "abstract": "We express explicitly the analytic torsion functions associated with the Rumin complex on lens spaces in terms of the Hurwitz zeta function. In particular, we find that the functions vanish at the origin and determine the analytic torsions. Moreover, we have a formula between this torsion and the Ray-Singer torsion.",
+    "authors": [
+      "Akira Kitaoka"
+    ],
+    "published": "2020-09-04",
+    "year": 2020,
+    "arxiv_id": "2009.03276v6",
+    "category": "math.DG",
+    "source": "arxiv",
+    "text": "Ray-Singer Torsion and the Rumin Laplacian on Lens Spaces\n\nWe express explicitly the analytic torsion functions associated with the Rumin complex on lens spaces in terms of the Hurwitz zeta function. In particular, we find that the functions vanish at the origin and determine the analytic torsions. Moreover, we have a formula between this torsion and the Ray-Singer torsion."
+  },
+  {
+    "title": "Advanced statistical methods for eye movement analysis and modeling: a gentle introduction",
+    "abstract": "In this Chapter we show that by considering eye movements, and in particular, the resulting sequence of gaze shifts, a stochastic process, a wide variety of tools become available for analyses and modelling beyond conventional statistical methods. Such tools encompass random walk analyses and more complex techniques borrowed from the pattern recognition and machine learning fields.\n  After a brief, though critical, probabilistic tour of current computational models of eye movements and visual attention, we lay down the basis for gaze shift pattern analysis. To this end, the concepts of Markov Processes, the Wiener process and related random walks within the Gaussian framework of the Central Limit Theorem will be introduced. Then, we will deliberately violate fundamental assumptions of the Central Limit Theorem to elicit a larger perspective, rooted in statistical physics, for analysing and modelling eye movements in terms of anomalous, non-Gaussian, random walks and modern foraging theory.\n  Eventually, by resorting to machine learning techniques, we discuss how the analyses of movement patterns can develop into the inference of hidden patterns of the mind: inferring the observer's task, assessing cognitive impairments, classifying expertise.",
+    "authors": [
+      "Giuseppe Boccignone"
+    ],
+    "published": "2015-06-23",
+    "year": 2015,
+    "arxiv_id": "1506.07194v4",
+    "category": "physics.data-an",
+    "source": "arxiv",
+    "text": "Advanced statistical methods for eye movement analysis and modeling: a gentle introduction\n\nIn this Chapter we show that by considering eye movements, and in particular, the resulting sequence of gaze shifts, a stochastic process, a wide variety of tools become available for analyses and modelling beyond conventional statistical methods. Such tools encompass random walk analyses and more complex techniques borrowed from the pattern recognition and machine learning fields.\n  After a brief, though critical, probabilistic tour of current computational models of eye movements and visual attention, we lay down the basis for gaze shift pattern analysis. To this end, the concepts of Markov Processes, the Wiener process and related random walks within the Gaussian framework of the Central Limit Theorem will be introduced. Then, we will deliberately violate fundamental assumptions of the Central Limit Theorem to elicit a larger perspective, rooted in statistical physics, for analysing and modelling eye movements in terms of anomalous, non-Gaussian, random walks and modern foraging theory.\n  Eventually, by resorting to machine learning techniques, we discuss how the analyses of movement patterns can develop into the inference of hidden patterns of the mind: inferring the observer's task, assessing cognitive impairments, classifying expertise."
+  },
+  {
+    "title": "On Computational Infraestruture Requirements to Smart and Autonomic Cities Framework",
+    "abstract": "Smart cities are an actual trend being pursued by research that, fundamentally, tries to improve city's management on behalf of a better human quality of live. This paper proposes a new autonomic complementary approach for smart cities management. It is argued that smart city management systems with autonomic characteristics will improve and facilitate management functionalities in general. A framework is also presented as use case considering specific application scenarios like smart-health, smart-grid, smart-environment and smart-streets.",
+    "authors": [
+      "Romildo Bezerra",
+      "Flavia Nascimento",
+      "Joberto Martins"
+    ],
+    "published": "2018-07-21",
+    "year": 2018,
+    "arxiv_id": "1807.08165v1",
+    "category": "cs.NI",
+    "source": "arxiv",
+    "text": "On Computational Infraestruture Requirements to Smart and Autonomic Cities Framework\n\nSmart cities are an actual trend being pursued by research that, fundamentally, tries to improve city's management on behalf of a better human quality of live. This paper proposes a new autonomic complementary approach for smart cities management. It is argued that smart city management systems with autonomic characteristics will improve and facilitate management functionalities in general. A framework is also presented as use case considering specific application scenarios like smart-health, smart-grid, smart-environment and smart-streets."
+  },
+  {
+    "title": "Smart Microgrids: Overview and Outlook",
+    "abstract": "The idea of changing our energy system from a hierarchical design into a set of nearly independent microgrids becomes feasible with the availability of small renewable energy generators. The smart microgrid concept comes with several challenges in research and engineering targeting load balancing, pricing, consumer integration and home automation. In this paper we first provide an overview on these challenges and present approaches that target the problems identified. While there exist promising algorithms for the particular field, we see a missing integration which specifically targets smart microgrids. Therefore, we propose an architecture that integrates the presented approaches and defines interfaces between the identified components such as generators, storage, smart and \\dq{dumb} devices.",
+    "authors": [
+      "Anita Sobe",
+      "Wilfried Elmenreich"
+    ],
+    "published": "2013-04-14",
+    "year": 2013,
+    "arxiv_id": "1304.3944v1",
+    "category": "cs.ET",
+    "source": "arxiv",
+    "text": "Smart Microgrids: Overview and Outlook\n\nThe idea of changing our energy system from a hierarchical design into a set of nearly independent microgrids becomes feasible with the availability of small renewable energy generators. The smart microgrid concept comes with several challenges in research and engineering targeting load balancing, pricing, consumer integration and home automation. In this paper we first provide an overview on these challenges and present approaches that target the problems identified. While there exist promising algorithms for the particular field, we see a missing integration which specifically targets smart microgrids. Therefore, we propose an architecture that integrates the presented approaches and defines interfaces between the identified components such as generators, storage, smart and \\dq{dumb} devices."
+  },
+  {
+    "title": "Visual Multi-Metric Grouping of Eye-Tracking Data",
+    "abstract": "We present an algorithmic and visual grouping of participants and eye-tracking metrics derived from recorded eye-tracking data. Our method utilizes two well-established visualization concepts. First, parallel coordinates are used to provide an overview of the used metrics, their interactions, and similarities, which helps select suitable metrics that describe characteristics of the eye-tracking data. Furthermore, parallel coordinates plots enable an analyst to test the effects of creating a combination of a subset of metrics resulting in a newly derived eye-tracking metric. Second, a similarity matrix visualization is used to visually represent the affine combination of metrics utilizing an algorithmic grouping of subjects that leads to distinct visual groups of similar behavior. To keep the diagrams of the matrix visualization simple and understandable, we visually encode our eye-tracking data into the cells of a similarity matrix of participants. The algorithmic grouping is performed with a clustering based on the affine combination of metrics, which is also the basis for the similarity value computation of the similarity matrix. To illustrate the usefulness of our visualization, we applied it to an eye-tracking data set involving the reading behavior of metro maps of up to 40 participants. Finally, we discuss limitations and scalability issues of the approach focusing on visual and perceptual issues.",
+    "authors": [
+      "Ayush Kumar",
+      "Rudolf Netzel",
+      "Michael Burch",
+      "Daniel Weiskopf",
+      "Klaus Mueller"
+    ],
+    "published": "2019-10-09",
+    "year": 2019,
+    "arxiv_id": "1910.04273v1",
+    "category": "cs.HC",
+    "source": "arxiv",
+    "text": "Visual Multi-Metric Grouping of Eye-Tracking Data\n\nWe present an algorithmic and visual grouping of participants and eye-tracking metrics derived from recorded eye-tracking data. Our method utilizes two well-established visualization concepts. First, parallel coordinates are used to provide an overview of the used metrics, their interactions, and similarities, which helps select suitable metrics that describe characteristics of the eye-tracking data. Furthermore, parallel coordinates plots enable an analyst to test the effects of creating a combination of a subset of metrics resulting in a newly derived eye-tracking metric. Second, a similarity matrix visualization is used to visually represent the affine combination of metrics utilizing an algorithmic grouping of subjects that leads to distinct visual groups of similar behavior. To keep the diagrams of the matrix visualization simple and understandable, we visually encode our eye-tracking data into the cells of a similarity matrix of participants. The algorithmic grouping is performed with a clustering based on the affine combination of metrics, which is also the basis for the similarity value computation of the similarity matrix. To illustrate the usefulness of our visualization, we applied it to an eye-tracking data set involving the reading behavior of metro maps of up to 40 participants. Finally, we discuss limitations and scalability issues of the approach focusing on visual and perceptual issues."
+  },
+  {
+    "title": "State of the Art Report for Smart Habitat for Older Persons -- Working Group 3 -- Healthcare",
+    "abstract": "This document reports the State of the Art of science and practice on three topics related to smart and healthy ageing at home: furniture and habitats, Information and Communication Technologies (ICT), and healthcare. The reports were prepared by the working groups of COST Action CA16226, Sheld-on. Sheld-on is a network of researchers, user representatives, industry members, and other stakeholders. The three domains covered in this report were the areas of interest for three working groups from the COST Action. The aim of each working group was to assess the State of the Art for disciplinary understanding, identification of advances in smart furniture and habitat, products, industries and success stories. The findings on these topics of all working groups are compiled here. Due to the different backgrounds of the members of each of the working groups, the document is divided in three separate parts that can be considered as separate State of the Art reports. The goal of this document is to be used as input in the fourth working group of Sheld-on COST Action: Solutions for Ageing Well at Home, in the Community, and at Work, where experts from the three different domains converge to a single working group in order to achieve the action objectives.",
+    "authors": [
+      "Birgitta Langhammer",
+      "Oscar Martinez Mozos",
+      "Ana Mendes",
+      "Joana Madureira",
+      "Lina Seduikyte",
+      "Martin Weigl",
+      "Heidi Salonen",
+      "Veronika Kotradyova",
+      "Ondrej Krejcar",
+      "Sarmite Mikulioniene",
+      "Willeke van Staalduinen",
+      "Carina Dantas",
+      "Petra Maresova",
+      "Willeke van Staalduinen",
+      "Carina Dantas",
+      "Barakovic Sabina",
+      "Barakovic Husic Jasmina",
+      "Jonathan Gomez-Raja"
+    ],
+    "published": "2026-03-11",
+    "year": 2026,
+    "arxiv_id": "2604.03255v1",
+    "category": "cs.CY",
+    "source": "arxiv",
+    "text": "State of the Art Report for Smart Habitat for Older Persons -- Working Group 3 -- Healthcare\n\nThis document reports the State of the Art of science and practice on three topics related to smart and healthy ageing at home: furniture and habitats, Information and Communication Technologies (ICT), and healthcare. The reports were prepared by the working groups of COST Action CA16226, Sheld-on. Sheld-on is a network of researchers, user representatives, industry members, and other stakeholders. The three domains covered in this report were the areas of interest for three working groups from the COST Action. The aim of each working group was to assess the State of the Art for disciplinary understanding, identification of advances in smart furniture and habitat, products, industries and success stories. The findings on these topics of all working groups are compiled here. Due to the different backgrounds of the members of each of the working groups, the document is divided in three separate parts that can be considered as separate State of the Art reports. The goal of this document is to be used as input in the fourth working group of Sheld-on COST Action: Solutions for Ageing Well at Home, in the Community, and at Work, where experts from the three different domains converge to a single working group in order to achieve the action objectives."
+  }
+]

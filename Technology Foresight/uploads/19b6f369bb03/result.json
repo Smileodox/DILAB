@@ -1,0 +1,1444 @@
+{
+  "job_id": "19b6f369bb03",
+  "document_count": 30,
+  "documents": [
+    {
+      "title": "SurVigilance: An Application for Accessing Global Pharmacovigilance Data",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2510.21572v1"
+    },
+    {
+      "title": "Enhancing Pharmacovigilance with Drug Reviews and Social Media",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 0,
+      "arxiv_id": "2004.08731v1"
+    },
+    {
+      "title": "pvEBayes: An R Package for Empirical Bayes Methods in Pharmacovigilance",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2512.01057v1"
+    },
+    {
+      "title": "GASCADE: Grouped Summarization of Adverse Drug Event for Enhanced Cancer Pharmacovigilance",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2505.04284v1"
+    },
+    {
+      "title": "MDDC: An R and Python Package for Adverse Event Identification in Pharmacovigilance Data",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2410.01168v1"
+    },
+    {
+      "title": "Leveraging ChatGPT in Pharmacovigilance Event Extraction: An Empirical Study",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2402.15663v1"
+    },
+    {
+      "title": "Mining the Web for Pharmacovigilance: the Case Study of Duloxetine and Venlafaxine",
+      "source": "arxiv",
+      "year": 2016,
+      "topic_id": 0,
+      "arxiv_id": "1610.02567v1"
+    },
+    {
+      "title": "PHEE: A Dataset for Pharmacovigilance Event Extraction from Text",
+      "source": "arxiv",
+      "year": 2022,
+      "topic_id": 0,
+      "arxiv_id": "2210.12560v1"
+    },
+    {
+      "title": "Multi-Task Pharmacovigilance Mining from Social Media Posts",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 1,
+      "arxiv_id": "1801.06294v5"
+    },
+    {
+      "title": "Validation and Transparency in AI systems for pharmacovigilance: a case study applied to the medical literature monitoring of adverse events",
+      "source": "arxiv",
+      "year": 2021,
+      "topic_id": 1,
+      "arxiv_id": "2201.00692v1"
+    },
+    {
+      "title": "Retrofitting Vector Representations of Adverse Event Reporting Data to Structured Knowledge to Improve Pharmacovigilance Signal Detection",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 0,
+      "arxiv_id": "2008.03340v1"
+    },
+    {
+      "title": "PVLens: Enhancing Pharmacovigilance Through Automated Label Extraction",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2503.20639v2"
+    },
+    {
+      "title": "HODDI: A Dataset of High-Order Drug-Drug Interactions for Computational Pharmacovigilance",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2502.06274v1"
+    },
+    {
+      "title": "Flexible Empirical Bayesian Approaches to Pharmacovigilance for Simultaneous Signal Detection and Signal Strength Estimation in Spontaneous Reporting Systems Data",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2502.09816v1"
+    },
+    {
+      "title": "Critical appraisal of artificial intelligence for rare-event recognition: principles and pharmacovigilance case studies",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2510.04341v1"
+    },
+    {
+      "title": "Sequential FDR and pFDR control under arbitrary dependence, with application to pharmacovigilance database monitoring",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2406.01218v2"
+    },
+    {
+      "title": "The Need for Guardrails with Large Language Models in Medical Safety-Critical Settings: An Artificial Intelligence Application in the Pharmacovigilance Ecosystem",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2407.18322v2"
+    },
+    {
+      "title": "Explainable Artificial Intelligence for Pharmacovigilance: What Features Are Important When Predicting Adverse Outcomes?",
+      "source": "arxiv",
+      "year": 2021,
+      "topic_id": 0,
+      "arxiv_id": "2112.13210v1"
+    },
+    {
+      "title": "Pharmacovigilance Analysis of Drug-Induced Rhabdomyolysis Based on the FDA Adverse Event Reporting System (FAERS)",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2511.00093v1"
+    },
+    {
+      "title": "MALADE: Orchestration of LLM-powered Agents with Retrieval Augmented Generation for Pharmacovigilance",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 1,
+      "arxiv_id": "2408.01869v1"
+    },
+    {
+      "title": "Automating Pharmacovigilance Evidence Generation: Using Large Language Models to Produce Context-Aware SQL",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2406.10690v3"
+    },
+    {
+      "title": "BioDEX: Large-Scale Biomedical Adverse Drug Event Extraction for Real-World Pharmacovigilance",
+      "source": "arxiv",
+      "year": 2023,
+      "topic_id": 0,
+      "arxiv_id": "2305.13395v2"
+    },
+    {
+      "title": "Illuminating the Physics of Cosmic Origin and Evolution: A UK Space Frontiers 2035 White Paper",
+      "source": "arxiv",
+      "year": 2026,
+      "topic_id": 0,
+      "arxiv_id": "2601.16761v1"
+    },
+    {
+      "title": "Development of a European Union Time-Indexed Reference Dataset for Assessing the Performance of Signal Detection Methods in Pharmacovigilance using a Large Language Model",
+      "source": "arxiv",
+      "year": 2026,
+      "topic_id": 0,
+      "arxiv_id": "2603.26544v1"
+    },
+    {
+      "title": "Observing solar vortices with existing and future instrumentation. Solar Physics International Network for Swirls (SPINS) white paper (Helio)",
+      "source": "arxiv",
+      "year": 2026,
+      "topic_id": 0,
+      "arxiv_id": "2602.10170v1"
+    },
+    {
+      "title": "Analysis of the current status of tuberculosis transmission in China based on a heterogeneity model",
+      "source": "arxiv",
+      "year": 2023,
+      "topic_id": 0,
+      "arxiv_id": "2303.17791v1"
+    },
+    {
+      "title": "SceneEval: Evaluating Semantic Coherence in Text-Conditioned 3D Indoor Scene Synthesis",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2503.14756v3"
+    },
+    {
+      "title": "SceneMotifCoder: Example-driven Visual Program Learning for Generating 3D Object Arrangements",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2408.02211v2"
+    },
+    {
+      "title": "Towards an Embodied Composition Framework for Organizing Immersive Computational Notebooks",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2509.13291v1"
+    },
+    {
+      "title": "Reasoning Structure Matters for Safety Alignment of Reasoning Models",
+      "source": "arxiv",
+      "year": 2026,
+      "topic_id": 0,
+      "arxiv_id": "2604.18946v1"
+    }
+  ],
+  "clusters": [
+    {
+      "topic_id": 0,
+      "count": 11,
+      "keywords": [
+        "event",
+        "biomedical",
+        "adverse event",
+        "event extraction",
+        "reporting faers",
+        "pharmacovigilance databases",
+        "twitter",
+        "metrics",
+        "natural language",
+        "event reporting"
+      ],
+      "label": "event, biomedical, adverse event, event extraction",
+      "lifecycle_stage": "maturity",
+      "stage_color": "#9333EA",
+      "lifecycle_explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate.",
+      "lifecycle_llm": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+      "source_breakdown": {
+        "arxiv": 27,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "topic_id": 1,
+      "count": 3,
+      "keywords": [
+        "guidance",
+        "recall",
+        "social media",
+        "label",
+        "association",
+        "adrs",
+        "risk",
+        "validation",
+        "pharmacovigilance tasks",
+        "suspected adverse"
+      ],
+      "label": "guidance, recall, social media, label",
+      "lifecycle_stage": "maturity",
+      "stage_color": "#9333EA",
+      "lifecycle_explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate.",
+      "lifecycle_llm": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+      "source_breakdown": {
+        "arxiv": 3,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        8,
+        9,
+        19
+      ]
+    }
+  ],
+  "scatter": {
+    "points": [
+      {
+        "doc_index": 0,
+        "topic_id": 0,
+        "x": 0.8441046476364136,
+        "y": 2.866213798522949,
+        "preview": "SurVigilance: An Application for Accessing Global Pharmacovigilance Data  Even though several publicly accessible pharma",
+        "title": "SurVigilance: An Application for Accessing Global Pharmacovigilance Data",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 1,
+        "topic_id": 0,
+        "x": -0.011305361054837704,
+        "y": 3.605914831161499,
+        "preview": "Enhancing Pharmacovigilance with Drug Reviews and Social Media  This paper explores whether the use of drug reviews and ",
+        "title": "Enhancing Pharmacovigilance with Drug Reviews and Social Media",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 2,
+        "topic_id": 0,
+        "x": 1.7001813650131226,
+        "y": 3.789456605911255,
+        "preview": "pvEBayes: An R Package for Empirical Bayes Methods in Pharmacovigilance  Monitoring the safety of medical products is a ",
+        "title": "pvEBayes: An R Package for Empirical Bayes Methods in Pharmacovigilance",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 3,
+        "topic_id": 0,
+        "x": -0.15194639563560486,
+        "y": 2.585582971572876,
+        "preview": "GASCADE: Grouped Summarization of Adverse Drug Event for Enhanced Cancer Pharmacovigilance  In the realm of cancer treat",
+        "title": "GASCADE: Grouped Summarization of Adverse Drug Event for Enhanced Cancer Pharmac",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 4,
+        "topic_id": 0,
+        "x": 1.6184651851654053,
+        "y": 3.3394339084625244,
+        "preview": "MDDC: An R and Python Package for Adverse Event Identification in Pharmacovigilance Data  The safety of medical products",
+        "title": "MDDC: An R and Python Package for Adverse Event Identification in Pharmacovigila",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 5,
+        "topic_id": 0,
+        "x": -0.5933589935302734,
+        "y": 3.886620044708252,
+        "preview": "Leveraging ChatGPT in Pharmacovigilance Event Extraction: An Empirical Study  With the advent of large language models (",
+        "title": "Leveraging ChatGPT in Pharmacovigilance Event Extraction: An Empirical Study",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 6,
+        "topic_id": 0,
+        "x": 0.2086782306432724,
+        "y": 3.196732521057129,
+        "preview": "Mining the Web for Pharmacovigilance: the Case Study of Duloxetine and Venlafaxine  Adverse reactions caused by drugs fo",
+        "title": "Mining the Web for Pharmacovigilance: the Case Study of Duloxetine and Venlafaxi",
+        "source": "arxiv",
+        "year": 2016
+      },
+      {
+        "doc_index": 7,
+        "topic_id": 0,
+        "x": 0.0006158349569886923,
+        "y": 2.2898693084716797,
+        "preview": "PHEE: A Dataset for Pharmacovigilance Event Extraction from Text  The primary goal of drug safety researchers and regula",
+        "title": "PHEE: A Dataset for Pharmacovigilance Event Extraction from Text",
+        "source": "arxiv",
+        "year": 2022
+      },
+      {
+        "doc_index": 8,
+        "topic_id": 1,
+        "x": -0.2871582508087158,
+        "y": 3.292330741882324,
+        "preview": "Multi-Task Pharmacovigilance Mining from Social Media Posts  Social media has grown to be a crucial information source f",
+        "title": "Multi-Task Pharmacovigilance Mining from Social Media Posts",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 9,
+        "topic_id": 1,
+        "x": -0.8555905818939209,
+        "y": 3.0308921337127686,
+        "preview": "Validation and Transparency in AI systems for pharmacovigilance: a case study applied to the medical literature monitori",
+        "title": "Validation and Transparency in AI systems for pharmacovigilance: a case study ap",
+        "source": "arxiv",
+        "year": 2021
+      },
+      {
+        "doc_index": 10,
+        "topic_id": 0,
+        "x": 0.697199821472168,
+        "y": 3.7108592987060547,
+        "preview": "Retrofitting Vector Representations of Adverse Event Reporting Data to Structured Knowledge to Improve Pharmacovigilance",
+        "title": "Retrofitting Vector Representations of Adverse Event Reporting Data to Structure",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 11,
+        "topic_id": 0,
+        "x": 1.3106203079223633,
+        "y": 2.639716386795044,
+        "preview": "PVLens: Enhancing Pharmacovigilance Through Automated Label Extraction  Reliable drug safety reference databases are ess",
+        "title": "PVLens: Enhancing Pharmacovigilance Through Automated Label Extraction",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 12,
+        "topic_id": 0,
+        "x": 0.7610361576080322,
+        "y": 2.180736541748047,
+        "preview": "HODDI: A Dataset of High-Order Drug-Drug Interactions for Computational Pharmacovigilance  Drug-side effect research is ",
+        "title": "HODDI: A Dataset of High-Order Drug-Drug Interactions for Computational Pharmaco",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 13,
+        "topic_id": 0,
+        "x": 1.0837539434432983,
+        "y": 4.462777614593506,
+        "preview": "Flexible Empirical Bayesian Approaches to Pharmacovigilance for Simultaneous Signal Detection and Signal Strength Estima",
+        "title": "Flexible Empirical Bayesian Approaches to Pharmacovigilance for Simultaneous Sig",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 14,
+        "topic_id": 0,
+        "x": -0.4814458191394806,
+        "y": 2.188174247741699,
+        "preview": "Critical appraisal of artificial intelligence for rare-event recognition: principles and pharmacovigilance case studies ",
+        "title": "Critical appraisal of artificial intelligence for rare-event recognition: princi",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 15,
+        "topic_id": 0,
+        "x": 1.4531828165054321,
+        "y": 3.990766763687134,
+        "preview": "Sequential FDR and pFDR control under arbitrary dependence, with application to pharmacovigilance database monitoring  W",
+        "title": "Sequential FDR and pFDR control under arbitrary dependence, with application to ",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 16,
+        "topic_id": 0,
+        "x": -1.1233748197555542,
+        "y": 2.667675733566284,
+        "preview": "The Need for Guardrails with Large Language Models in Medical Safety-Critical Settings: An Artificial Intelligence Appli",
+        "title": "The Need for Guardrails with Large Language Models in Medical Safety-Critical Se",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 17,
+        "topic_id": 0,
+        "x": 0.12770651280879974,
+        "y": 4.09498929977417,
+        "preview": "Explainable Artificial Intelligence for Pharmacovigilance: What Features Are Important When Predicting Adverse Outcomes?",
+        "title": "Explainable Artificial Intelligence for Pharmacovigilance: What Features Are Imp",
+        "source": "arxiv",
+        "year": 2021
+      },
+      {
+        "doc_index": 18,
+        "topic_id": 0,
+        "x": 1.201607584953308,
+        "y": 3.3607258796691895,
+        "preview": "Pharmacovigilance Analysis of Drug-Induced Rhabdomyolysis Based on the FDA Adverse Event Reporting System (FAERS)  This ",
+        "title": "Pharmacovigilance Analysis of Drug-Induced Rhabdomyolysis Based on the FDA Adver",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 19,
+        "topic_id": 1,
+        "x": -1.4038583040237427,
+        "y": 3.271777629852295,
+        "preview": "MALADE: Orchestration of LLM-powered Agents with Retrieval Augmented Generation for Pharmacovigilance  In the era of Lar",
+        "title": "MALADE: Orchestration of LLM-powered Agents with Retrieval Augmented Generation ",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 20,
+        "topic_id": 0,
+        "x": -1.2533020973205566,
+        "y": 3.685142993927002,
+        "preview": "Automating Pharmacovigilance Evidence Generation: Using Large Language Models to Produce Context-Aware SQL  Objective: T",
+        "title": "Automating Pharmacovigilance Evidence Generation: Using Large Language Models to",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 21,
+        "topic_id": 0,
+        "x": 0.31875646114349365,
+        "y": 2.723813772201538,
+        "preview": "BioDEX: Large-Scale Biomedical Adverse Drug Event Extraction for Real-World Pharmacovigilance  Timely and accurate extra",
+        "title": "BioDEX: Large-Scale Biomedical Adverse Drug Event Extraction for Real-World Phar",
+        "source": "arxiv",
+        "year": 2023
+      },
+      {
+        "doc_index": 22,
+        "topic_id": 0,
+        "x": -1.1253209114074707,
+        "y": 1.4477943181991577,
+        "preview": "Illuminating the Physics of Cosmic Origin and Evolution: A UK Space Frontiers 2035 White Paper  Understanding the Univer",
+        "title": "Illuminating the Physics of Cosmic Origin and Evolution: A UK Space Frontiers 20",
+        "source": "arxiv",
+        "year": 2026
+      },
+      {
+        "doc_index": 23,
+        "topic_id": 0,
+        "x": 1.7692443132400513,
+        "y": 2.879122495651245,
+        "preview": "Development of a European Union Time-Indexed Reference Dataset for Assessing the Performance of Signal Detection Methods",
+        "title": "Development of a European Union Time-Indexed Reference Dataset for Assessing the",
+        "source": "arxiv",
+        "year": 2026
+      },
+      {
+        "doc_index": 24,
+        "topic_id": 0,
+        "x": -0.9273527264595032,
+        "y": 1.7826933860778809,
+        "preview": "Observing solar vortices with existing and future instrumentation. Solar Physics International Network for Swirls (SPINS",
+        "title": "Observing solar vortices with existing and future instrumentation. Solar Physics",
+        "source": "arxiv",
+        "year": 2026
+      },
+      {
+        "doc_index": 25,
+        "topic_id": 0,
+        "x": 1.560896635055542,
+        "y": 4.5270562171936035,
+        "preview": "Analysis of the current status of tuberculosis transmission in China based on a heterogeneity model  Tuberculosis (TB) i",
+        "title": "Analysis of the current status of tuberculosis transmission in China based on a ",
+        "source": "arxiv",
+        "year": 2023
+      },
+      {
+        "doc_index": 26,
+        "topic_id": 0,
+        "x": -1.5503826141357422,
+        "y": 1.7785924673080444,
+        "preview": "SceneEval: Evaluating Semantic Coherence in Text-Conditioned 3D Indoor Scene Synthesis  Despite recent advances in text-",
+        "title": "SceneEval: Evaluating Semantic Coherence in Text-Conditioned 3D Indoor Scene Syn",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 27,
+        "topic_id": 0,
+        "x": -1.9552217721939087,
+        "y": 2.0214645862579346,
+        "preview": "SceneMotifCoder: Example-driven Visual Program Learning for Generating 3D Object Arrangements  Despite advances in text-",
+        "title": "SceneMotifCoder: Example-driven Visual Program Learning for Generating 3D Object",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 28,
+        "topic_id": 0,
+        "x": -2.1588542461395264,
+        "y": 1.7247791290283203,
+        "preview": "Towards an Embodied Composition Framework for Organizing Immersive Computational Notebooks  As immersive technologies ev",
+        "title": "Towards an Embodied Composition Framework for Organizing Immersive Computational",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 29,
+        "topic_id": 0,
+        "x": -1.6195024251937866,
+        "y": 2.8305327892303467,
+        "preview": "Reasoning Structure Matters for Safety Alignment of Reasoning Models  Large reasoning models (LRMs) achieve strong perfo",
+        "title": "Reasoning Structure Matters for Safety Alignment of Reasoning Models",
+        "source": "arxiv",
+        "year": 2026
+      }
+    ],
+    "why": "Documents were embedded with all-MiniLM-L6-v2, projected with UMAP, and grouped by BERTopic (HDBSCAN + c-TF-IDF). Topic labels use an English + academic stop-word list, bigrams, reduced-frequent-word c-TF-IDF, and Maximal Marginal Relevance so keywords highlight technology terms\u2014not function words like \u201cthe\u201d or \u201cof\u201d."
+  },
+  "evolution": {
+    "timeline": {
+      "0": [
+        {
+          "year": 2016,
+          "count": 1
+        },
+        {
+          "year": 2020,
+          "count": 2
+        },
+        {
+          "year": 2021,
+          "count": 1
+        },
+        {
+          "year": 2022,
+          "count": 1
+        },
+        {
+          "year": 2023,
+          "count": 2
+        },
+        {
+          "year": 2024,
+          "count": 6
+        },
+        {
+          "year": 2025,
+          "count": 10
+        },
+        {
+          "year": 2026,
+          "count": 4
+        }
+      ],
+      "1": [
+        {
+          "year": 2018,
+          "count": 1
+        },
+        {
+          "year": 2021,
+          "count": 1
+        },
+        {
+          "year": 2024,
+          "count": 1
+        }
+      ]
+    },
+    "lifecycle": {
+      "0": {
+        "stage": "maturity",
+        "params": {
+          "L": 6.933992045001547,
+          "k": 2.908331019380951,
+          "t0": 7.283578585754302
+        },
+        "fitted": [
+          [
+            2016,
+            4.378227680234115e-09
+          ],
+          [
+            2016,
+            2.02335989606321e-08
+          ],
+          [
+            2017,
+            9.3507819467121e-08
+          ],
+          [
+            2017,
+            4.3213824608769003e-07
+          ],
+          [
+            2018,
+            1.9970889254950813e-06
+          ],
+          [
+            2018,
+            9.229363410088508e-06
+          ],
+          [
+            2019,
+            4.265249590224974e-05
+          ],
+          [
+            2019,
+            0.00019711041490089816
+          ],
+          [
+            2020,
+            0.0009108348991610685
+          ],
+          [
+            2020,
+            0.004207342948283474
+          ],
+          [
+            2021,
+            0.01940123841217148
+          ],
+          [
+            2021,
+            0.0887617444003594
+          ],
+          [
+            2022,
+            0.39203108889030286
+          ],
+          [
+            2022,
+            1.5038338044852284
+          ],
+          [
+            2023,
+            3.8925794833225407
+          ],
+          [
+            2023,
+            5.931210392477774
+          ],
+          [
+            2024,
+            6.689273323685985
+          ],
+          [
+            2024,
+            6.879532702196164
+          ],
+          [
+            2025,
+            6.9221349384845245
+          ],
+          [
+            2026,
+            6.93142291393064
+          ]
+        ],
+        "explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate."
+      },
+      "1": {
+        "stage": "maturity",
+        "params": {
+          "L": 1.9701632153839894,
+          "k": 0.010000000000000002,
+          "t0": 3.655159183459008e-10
+        },
+        "fitted": [
+          [
+            2018,
+            0.9850816076901946
+          ],
+          [
+            2018,
+            0.9866369984097711
+          ],
+          [
+            2018,
+            0.9881923813739695
+          ],
+          [
+            2018,
+            0.9897477488275662
+          ],
+          [
+            2019,
+            0.991303093015645
+          ],
+          [
+            2019,
+            0.9928584061837563
+          ],
+          [
+            2019,
+            0.9944136805780681
+          ],
+          [
+            2020,
+            0.9959689084455219
+          ],
+          [
+            2020,
+            0.9975240820339878
+          ],
+          [
+            2020,
+            0.9990791935924154
+          ],
+          [
+            2021,
+            1.000634235370994
+          ],
+          [
+            2021,
+            1.0021891996213035
+          ],
+          [
+            2021,
+            1.00374407859647
+          ],
+          [
+            2022,
+            1.0052988645513172
+          ],
+          [
+            2022,
+            1.0068535497425255
+          ],
+          [
+            2022,
+            1.0084081264287832
+          ],
+          [
+            2023,
+            1.0099625868709405
+          ],
+          [
+            2023,
+            1.011516923332166
+          ],
+          [
+            2023,
+            1.0130711280780946
+          ],
+          [
+            2024,
+            1.0146251933769888
+          ]
+        ],
+        "explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate."
+      }
+    },
+    "events": [
+      {
+        "year": 2016,
+        "topic_id": 0,
+        "type": "emerge",
+        "keywords": [
+          "event",
+          "biomedical",
+          "adverse event",
+          "event extraction",
+          "reporting faers",
+          "pharmacovigilance databases",
+          "twitter",
+          "metrics",
+          "natural language",
+          "event reporting"
+        ],
+        "count": 1,
+        "why": "Topic 0 first appears in 2016 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2018,
+        "topic_id": 1,
+        "type": "emerge",
+        "keywords": [
+          "guidance",
+          "recall",
+          "social media",
+          "label",
+          "association",
+          "adrs",
+          "risk",
+          "validation",
+          "pharmacovigilance tasks",
+          "suspected adverse"
+        ],
+        "count": 1,
+        "why": "Topic 1 first appears in 2018 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2020,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "event",
+          "biomedical",
+          "adverse event",
+          "event extraction",
+          "reporting faers",
+          "pharmacovigilance databases",
+          "twitter",
+          "metrics",
+          "natural language",
+          "event reporting"
+        ],
+        "count": 2,
+        "why": "Publication volume for topic 0 rose 1\u21922 (100% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2023,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "event",
+          "biomedical",
+          "adverse event",
+          "event extraction",
+          "reporting faers",
+          "pharmacovigilance databases",
+          "twitter",
+          "metrics",
+          "natural language",
+          "event reporting"
+        ],
+        "count": 2,
+        "why": "Publication volume for topic 0 rose 1\u21922 (100% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2024,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "event",
+          "biomedical",
+          "adverse event",
+          "event extraction",
+          "reporting faers",
+          "pharmacovigilance databases",
+          "twitter",
+          "metrics",
+          "natural language",
+          "event reporting"
+        ],
+        "count": 6,
+        "why": "Publication volume for topic 0 rose 2\u21926 (200% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2025,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "event",
+          "biomedical",
+          "adverse event",
+          "event extraction",
+          "reporting faers",
+          "pharmacovigilance databases",
+          "twitter",
+          "metrics",
+          "natural language",
+          "event reporting"
+        ],
+        "count": 10,
+        "why": "Publication volume for topic 0 rose 6\u219210 (67% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2026,
+        "topic_id": 1,
+        "type": "die",
+        "keywords": [
+          "guidance",
+          "recall",
+          "social media",
+          "label",
+          "association",
+          "adrs",
+          "risk",
+          "validation",
+          "pharmacovigilance tasks",
+          "suspected adverse"
+        ],
+        "why": "Topic 1 had no publications in 2026 after prior activity\u2014treated as decline/die-off.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      }
+    ],
+    "why": "Per-topic yearly counts were fitted to a logistic S-curve to assign lifecycle stages. Change events are detected by diffing topic presence and volume across years and measuring keyword overlap between co-active clusters.",
+    "weak_signals": []
+  },
+  "reasoning": {
+    "influence": [
+      {
+        "from": "event, biomedical, adverse event, event extraction",
+        "to": "guidance, recall, social media, label",
+        "relation": "enables",
+        "reason": "Shared methodological lineage between event, biomedical, adverse event, event extraction and guidance, recall, social media, label in the corpus.",
+        "why": "Heuristic edge from cluster ordering when LLM output was sparse."
+      }
+    ],
+    "sao": {
+      "0": {
+        "triples": [
+          {
+            "subject": "survigilance",
+            "action": "extract",
+            "object": "Data"
+          },
+          {
+            "subject": "tool",
+            "action": "exist",
+            "object": "database"
+          },
+          {
+            "subject": "we",
+            "action": "streamline",
+            "object": "SurVigilance"
+          },
+          {
+            "subject": "survigilance",
+            "action": "provide",
+            "object": "interface"
+          },
+          {
+            "subject": "survigilance",
+            "action": "utilize",
+            "object": "architecture"
+          },
+          {
+            "subject": "SurVigilance",
+            "action": "reduce",
+            "object": "barrier"
+          },
+          {
+            "subject": "paper",
+            "action": "enhance",
+            "object": "Pharmacovigilance"
+          },
+          {
+            "subject": "we",
+            "action": "examine",
+            "object": "performance"
+          },
+          {
+            "subject": "variety",
+            "action": "compare",
+            "object": "model"
+          },
+          {
+            "subject": "task",
+            "action": "include",
+            "object": "classification"
+          },
+          {
+            "subject": "BERT",
+            "action": "demonstrate",
+            "object": "flexibility"
+          },
+          {
+            "subject": "Package",
+            "action": "monitor",
+            "object": "Methods"
+          },
+          {
+            "subject": "Systems",
+            "action": "support",
+            "object": "assessment"
+          },
+          {
+            "subject": "method",
+            "action": "identify",
+            "object": "strength"
+          },
+          {
+            "subject": "we",
+            "action": "introduce",
+            "object": "pvebaye"
+          },
+          {
+            "subject": "example",
+            "action": "provide",
+            "object": "application"
+          },
+          {
+            "subject": "Summarization",
+            "action": "summarize",
+            "object": "Event"
+          },
+          {
+            "subject": "volume",
+            "action": "increase",
+            "object": "datum"
+          },
+          {
+            "subject": "work",
+            "action": "introduce",
+            "object": "task"
+          },
+          {
+            "subject": "we",
+            "action": "address",
+            "object": "challenge"
+          },
+          {
+            "subject": "dataset",
+            "action": "include",
+            "object": "post"
+          },
+          {
+            "subject": "we",
+            "action": "propose",
+            "object": "event"
+          },
+          {
+            "subject": "work",
+            "action": "apply",
+            "object": "technique"
+          },
+          {
+            "subject": "we",
+            "action": "demonstrate",
+            "object": "experiment"
+          },
+          {
+            "subject": "approach",
+            "action": "multitaske",
+            "object": "making"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "introduce",
+            "count": 5
+          },
+          {
+            "action": "provide",
+            "count": 4
+          },
+          {
+            "action": "demonstrate",
+            "count": 4
+          },
+          {
+            "action": "exist",
+            "count": 3
+          },
+          {
+            "action": "include",
+            "count": 3
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "1": {
+        "triples": [
+          {
+            "subject": "Mining",
+            "action": "grow",
+            "object": "medium"
+          },
+          {
+            "subject": "we",
+            "action": "aim",
+            "object": "aspect"
+          },
+          {
+            "subject": "framework",
+            "action": "classify",
+            "object": "post"
+          },
+          {
+            "subject": "mechanism",
+            "action": "base",
+            "object": "framework"
+          },
+          {
+            "subject": "we",
+            "action": "evaluate",
+            "object": "framework"
+          },
+          {
+            "subject": "validation",
+            "action": "apply",
+            "object": "system"
+          },
+          {
+            "subject": "we",
+            "action": "present",
+            "object": "paper"
+          },
+          {
+            "subject": "we",
+            "action": "describe",
+            "object": "system"
+          },
+          {
+            "subject": "we",
+            "action": "make",
+            "object": "use"
+          },
+          {
+            "subject": "we",
+            "action": "present",
+            "object": "addition"
+          },
+          {
+            "subject": "orchestration",
+            "action": "power",
+            "object": "Agents"
+          },
+          {
+            "subject": "paper",
+            "action": "focus",
+            "object": "problem"
+          },
+          {
+            "subject": "task",
+            "action": "hinder",
+            "object": "factor"
+          },
+          {
+            "subject": "we",
+            "action": "present",
+            "object": "MALADE"
+          },
+          {
+            "subject": "technique",
+            "action": "involve",
+            "object": "query"
+          },
+          {
+            "subject": "MALADE",
+            "action": "leverage",
+            "object": "variety"
+          },
+          {
+            "subject": "MALADE",
+            "action": "instantiate",
+            "object": "Turbo"
+          },
+          {
+            "subject": "implementation",
+            "action": "leverage",
+            "object": "framework"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "present",
+            "count": 3
+          },
+          {
+            "action": "leverage",
+            "count": 2
+          },
+          {
+            "action": "grow",
+            "count": 1
+          },
+          {
+            "action": "aim",
+            "count": 1
+          },
+          {
+            "action": "classify",
+            "count": 1
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      }
+    },
+    "why_influence": "Edges represent enabling or displacing relationships inferred from cluster themes and LLM foresight reasoning."
+  },
+  "scenarios": {
+    "drivers": [
+      {
+        "axis": "Adoption velocity",
+        "description": "2 emerging topic(s) create uncertainty about which technology will cross the chasm first.",
+        "why": "Derived from emerge events\u2014new clusters increase adoption-path uncertainty."
+      },
+      {
+        "axis": "Technology displacement",
+        "description": "1 declining topic(s) signal potential displacement of incumbent approaches.",
+        "why": "Derived from die events\u2014fading clusters imply replacement risk for legacy tech."
+      }
+    ],
+    "axis_labels": {
+      "x": "Adoption velocity",
+      "y": "Technology displacement"
+    },
+    "scenarios": {
+      "optimistic": {
+        "tone": "optimistic",
+        "title": "Optimistic",
+        "color": "#22C55E",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "disruptive": {
+        "tone": "disruptive",
+        "title": "Disruptive",
+        "color": "#EF4444",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "constrained": {
+        "tone": "constrained",
+        "title": "Constrained",
+        "color": "#F59E0B",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "stagnant": {
+        "tone": "stagnant",
+        "title": "Stagnant",
+        "color": "#6B7280",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      }
+    },
+    "why": "Four scenarios span the 2\u00d72 space of the two largest uncertainty drivers extracted from causal events.",
+    "impact_trees": {
+      "optimistic": {
+        "tree": {
+          "name": "Event",
+          "why": "Primary driver in the Optimistic scenario.",
+          "children": [
+            {
+              "name": "Supply chain shift",
+              "why": "Component demand reallocates toward new dominant designs.",
+              "children": [
+                {
+                  "name": "Cost reduction",
+                  "why": "Scale economies as adoption grows.",
+                  "children": []
+                },
+                {
+                  "name": "Skill gap",
+                  "why": "Workforce lags new tooling requirements.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Standards formation",
+              "why": "Interoperability pressure after fragmentation.",
+              "children": []
+            }
+          ]
+        },
+        "why": "D3 impact tree encodes cascading second-order effects implied by the scenario narrative."
+      },
+      "disruptive": {
+        "tree": {
+          "name": "Event",
+          "why": "Primary driver in the Disruptive scenario.",
+          "children": [
+            {
+              "name": "Supply chain shift",
+              "why": "Component demand reallocates toward new dominant designs.",
+              "children": [
+                {
+                  "name": "Cost reduction",
+                  "why": "Scale economies as adoption grows.",
+                  "children": []
+                },
+                {
+                  "name": "Skill gap",
+                  "why": "Workforce lags new tooling requirements.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Standards formation",
+              "why": "Interoperability pressure after fragmentation.",
+              "children": []
+            }
+          ]
+        },
+        "why": "D3 impact tree encodes cascading second-order effects implied by the scenario narrative."
+      },
+      "constrained": {
+        "tree": {
+          "name": "Event",
+          "why": "Primary driver in the Constrained scenario.",
+          "children": [
+            {
+              "name": "Supply chain shift",
+              "why": "Component demand reallocates toward new dominant designs.",
+              "children": [
+                {
+                  "name": "Cost reduction",
+                  "why": "Scale economies as adoption grows.",
+                  "children": []
+                },
+                {
+                  "name": "Skill gap",
+                  "why": "Workforce lags new tooling requirements.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Standards formation",
+              "why": "Interoperability pressure after fragmentation.",
+              "children": []
+            }
+          ]
+        },
+        "why": "D3 impact tree encodes cascading second-order effects implied by the scenario narrative."
+      },
+      "stagnant": {
+        "tree": {
+          "name": "Event",
+          "why": "Primary driver in the Stagnant scenario.",
+          "children": [
+            {
+              "name": "Supply chain shift",
+              "why": "Component demand reallocates toward new dominant designs.",
+              "children": [
+                {
+                  "name": "Cost reduction",
+                  "why": "Scale economies as adoption grows.",
+                  "children": []
+                },
+                {
+                  "name": "Skill gap",
+                  "why": "Workforce lags new tooling requirements.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Standards formation",
+              "why": "Interoperability pressure after fragmentation.",
+              "children": []
+            }
+          ]
+        },
+        "why": "D3 impact tree encodes cascading second-order effects implied by the scenario narrative."
+      }
+    }
+  },
+  "source_breakdown": {
+    "arxiv": 30,
+    "uploaded": 0
+  }
+}

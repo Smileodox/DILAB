@@ -1,0 +1,367 @@
+[
+  {
+    "title": "Transformer-Based Intrusion Detection for Post-5G and 6G Telecommunication Networks Using Dynamic Semantic Embedding",
+    "abstract": "Post-5G and 6G telecommunication infrastructures face critical information security challenges due to increasing network complexity and sophisticated cyberattacks. Traditional intrusion detection systems based on statistical traffic analysis struggle to identify advanced threats that exploit semantic-level vulnerabilities in modern communication protocols. This paper proposes a Transformer-based intrusion detection system specifically designed for post-5G and 6G networks. Our approach integrates three key innovations: First, a comprehensive feature extraction method capturing both semantic content characteristics and communication behavior patterns. Second, a dynamic semantic embedding mechanism that adaptively adjusts positional encoding based on semantic context changes. Third, a Transformer-based classifier with multi-head attention mechanisms to model long-range dependencies in attack sequences. Extensive experiments on CICIDS2017 and UNSW-NB15 datasets demonstrate superior performance compared to LSTM, GRU, and CNN baselines across multiple evaluation metrics. Robustness testing and cross-dataset validation confirm strong generalization capability, making the system suitable for deployment in heterogeneous post-5G and 6G telecommunication environments.",
+    "authors": [
+      "Haonan Yan",
+      "Xin Pang",
+      "Shaopeng Zhou",
+      "Honghui Fan"
+    ],
+    "published": "2025-11-27",
+    "year": 2025,
+    "paper_id": "945faf69782f19af2a0b3c4c8c191244192cb34c",
+    "doi": "10.3390/fi17120544",
+    "category": "Computer Science",
+    "source": "scholar",
+    "text": "Transformer-Based Intrusion Detection for Post-5G and 6G Telecommunication Networks Using Dynamic Semantic Embedding\n\nPost-5G and 6G telecommunication infrastructures face critical information security challenges due to increasing network complexity and sophisticated cyberattacks. Traditional intrusion detection systems based on statistical traffic analysis struggle to identify advanced threats that exploit semantic-level vulnerabilities in modern communication protocols. This paper proposes a Transformer-based intrusion detection system specifically designed for post-5G and 6G networks. Our approach integrates three key innovations: First, a comprehensive feature extraction method capturing both semantic content characteristics and communication behavior patterns. Second, a dynamic semantic embedding mechanism that adaptively adjusts positional encoding based on semantic context changes. Third, a Transformer-based classifier with multi-head attention mechanisms to model long-range dependencies in attack sequences. Extensive experiments on CICIDS2017 and UNSW-NB15 datasets demonstrate superior performance compared to LSTM, GRU, and CNN baselines across multiple evaluation metrics. Robustness testing and cross-dataset validation confirm strong generalization capability, making the system suitable for deployment in heterogeneous post-5G and 6G telecommunication environments."
+  },
+  {
+    "title": "Ultra wideband Metamaterial graphene supported patch antenna for 4G-6G telecommunication",
+    "abstract": "In this study, the metasurface structure and graphene layer is integrated into a microstrip patch antenna to enhance its performance across the 4G to 6G communication bands. By incorporating a split-ring resonator form (SRRF) metastructure on the substrate, the antenna achieves significant improvement in both bandwidth and gain. The metasurface induces resonant behavior that broadens the operating frequency range and improves energy radiation efficiency. Moreover, a thin graphene layer is applied on the patch surface to augment the electrical conductivity and electron mobility of the copper conductor. This hybrid approach not only enhances the antenna\u2019s gain but also opens possibilities for tunable and miniaturized antenna designs. Simulation results show an ultra-wide bandwidth exceeding 17 GHz (2.5 GHz\u201320 GHz) and a gain improvement reaching over 7.5 dBi, confirming the potential of graphene-assisted metamaterial antennas for high-performance telecommunication systems.",
+    "authors": [
+      "Lam Thi Hang",
+      "Pham V. Hai",
+      "P. V. Dien",
+      "P. Hong",
+      "B. Khuy\u1ebfn",
+      "B. T\u00f9ng",
+      "T. M. Cuong",
+      "Le Trong Lu",
+      "Nguyen Thi Thuy Trang",
+      "V\u0169 \u0110\u00ecnh L\u00e3m",
+      "P. Minh"
+    ],
+    "published": "2025-11-05",
+    "year": 2025,
+    "paper_id": "e0b71e93777ad5aa7a9b6e4d52b1551ffb84e496",
+    "doi": "10.1109/EEE-AM66675.2025.11473363",
+    "category": "",
+    "source": "scholar",
+    "text": "Ultra wideband Metamaterial graphene supported patch antenna for 4G-6G telecommunication\n\nIn this study, the metasurface structure and graphene layer is integrated into a microstrip patch antenna to enhance its performance across the 4G to 6G communication bands. By incorporating a split-ring resonator form (SRRF) metastructure on the substrate, the antenna achieves significant improvement in both bandwidth and gain. The metasurface induces resonant behavior that broadens the operating frequency range and improves energy radiation efficiency. Moreover, a thin graphene layer is applied on the patch surface to augment the electrical conductivity and electron mobility of the copper conductor. This hybrid approach not only enhances the antenna\u2019s gain but also opens possibilities for tunable and miniaturized antenna designs. Simulation results show an ultra-wide bandwidth exceeding 17 GHz (2.5 GHz\u201320 GHz) and a gain improvement reaching over 7.5 dBi, confirming the potential of graphene-assisted metamaterial antennas for high-performance telecommunication systems."
+  },
+  {
+    "title": "Smart Multi\u2010Objective Unmanned Aerial Vehicles as Base Stations Placement in 6G Cellular Telecommunication Networks Using NSGA\u2010II Optimisation Algorithm",
+    "abstract": "The deployment of unmanned aerial vehicles (UAVs) as aerial base stations in cellular networks presents a dynamic solution to meet the demands of high and fluctuating traffic patterns. Efficient placement of UAVs is crucial to harness their benefits and adapt intelligently to environmental changes. This paper introduces a multi\u2010objective optimisation model aimed at maximising user coverage and minimising overlap among drone\u2010based base stations in 6G networks. To address this optimisation issue, the Nondominated Sorting Genetic Algorithm II (NSGA\u2010II) is deployed, enabling the identification of Pareto optimal solutions that strike a balance between conflicting objectives. Through simulations conducted under various scenarios, the proposed model demonstrated significant improvements in user coverage and reduction of overlap among base stations compared to existing techniques. The findings reveal the effectiveness of the proposed model in balancing the objectives of coverage and overlap, resulting in an enhanced 6G network design. The method achieves an average coverage probability of 98.39% and an average overlap improvement percentage (OIP) of 92.39%, validated through 50 experimental runs. These results underscore the robustness and superiority of the proposed NSGA\u2010II\u2010based strategy in optimising DBS placement, contributing to the advancement of 6G cellular networks.",
+    "authors": [
+      "A. Q. Fahem",
+      "H. A. Jihad",
+      "J. M. Niya",
+      "Mohammad Asadpour"
+    ],
+    "published": "2025-01-01",
+    "year": 2025,
+    "paper_id": "3487427e04dd613720e586ddbaac5cebb3d066f2",
+    "doi": "10.1049/ntw2.70017",
+    "category": "",
+    "source": "scholar",
+    "text": "Smart Multi\u2010Objective Unmanned Aerial Vehicles as Base Stations Placement in 6G Cellular Telecommunication Networks Using NSGA\u2010II Optimisation Algorithm\n\nThe deployment of unmanned aerial vehicles (UAVs) as aerial base stations in cellular networks presents a dynamic solution to meet the demands of high and fluctuating traffic patterns. Efficient placement of UAVs is crucial to harness their benefits and adapt intelligently to environmental changes. This paper introduces a multi\u2010objective optimisation model aimed at maximising user coverage and minimising overlap among drone\u2010based base stations in 6G networks. To address this optimisation issue, the Nondominated Sorting Genetic Algorithm II (NSGA\u2010II) is deployed, enabling the identification of Pareto optimal solutions that strike a balance between conflicting objectives. Through simulations conducted under various scenarios, the proposed model demonstrated significant improvements in user coverage and reduction of overlap among base stations compared to existing techniques. The findings reveal the effectiveness of the proposed model in balancing the objectives of coverage and overlap, resulting in an enhanced 6G network design. The method achieves an average coverage probability of 98.39% and an average overlap improvement percentage (OIP) of 92.39%, validated through 50 experimental runs. These results underscore the robustness and superiority of the proposed NSGA\u2010II\u2010based strategy in optimising DBS placement, contributing to the advancement of 6G cellular networks."
+  },
+  {
+    "title": "Intelligent DRL-assisted decoding of error-correcting codes for 5G/6G telecommunication channels",
+    "abstract": "Abstract This paper presents an intelligent decoding methodology for low-density parity-check (LDPC) and Polar codes (P-C) based on deep reinforcement learning (DRL+Soft) for modern 5G and emerging 6G communication systems. The proposed decoder adapts its decoding strategy in real-time, optimizing bit error rate (BER) performance under varying channel conditions. Evaluation is formulated through performance metrics including BER convergence, reward dynamics, computational complexity (FLOPs), and inference latency. Simulation results show that the DRL+Soft decoder achieves up to a 2.5-fold reduction in computational cost and decreases inference time from 4.8 ms (BP) to 1.6 ms per data block, while maintaining superior BER compared to classical belief propagation (BP) and cyclic redundancy check-aided successive cancellation list (CA-SCL) decoders. The decoder exhibits improved robustness against unpredictable interference and channel impairments, making it suitable for dense device deployments and ultra-reliable low-latency communication (URLLC) scenarios. The methodology also supports reprogramming or retraining of DRL agents without hardware changes, ensuring long-term adaptability for evolving 6G networks. These results demonstrate both theoretical novelty and practical value, providing a scalable and energy-efficient solution for future wireless communication systems.",
+    "authors": [
+      "J. Boiko",
+      "I. Pyatin",
+      "O. Eromenko"
+    ],
+    "published": "2025-12-01",
+    "year": 2025,
+    "paper_id": "698d137441f53ecb9bd149295f819ea2452e5271",
+    "doi": "10.2478/jee-2025-0053",
+    "category": "",
+    "source": "scholar",
+    "text": "Intelligent DRL-assisted decoding of error-correcting codes for 5G/6G telecommunication channels\n\nAbstract This paper presents an intelligent decoding methodology for low-density parity-check (LDPC) and Polar codes (P-C) based on deep reinforcement learning (DRL+Soft) for modern 5G and emerging 6G communication systems. The proposed decoder adapts its decoding strategy in real-time, optimizing bit error rate (BER) performance under varying channel conditions. Evaluation is formulated through performance metrics including BER convergence, reward dynamics, computational complexity (FLOPs), and inference latency. Simulation results show that the DRL+Soft decoder achieves up to a 2.5-fold reduction in computational cost and decreases inference time from 4.8 ms (BP) to 1.6 ms per data block, while maintaining superior BER compared to classical belief propagation (BP) and cyclic redundancy check-aided successive cancellation list (CA-SCL) decoders. The decoder exhibits improved robustness against unpredictable interference and channel impairments, making it suitable for dense device deployments and ultra-reliable low-latency communication (URLLC) scenarios. The methodology also supports reprogramming or retraining of DRL agents without hardware changes, ensuring long-term adaptability for evolving 6G networks. These results demonstrate both theoretical novelty and practical value, providing a scalable and energy-efficient solution for future wireless communication systems."
+  },
+  {
+    "title": "Safe and Explainable AI in 6G Telecommunication Systems: The Way Forward",
+    "abstract": "Artificial Intelligence (AI) is crucial for realizing the evolution of 6 G cellular-based systems. However, the trustworthiness of AI-based models and systems-including their transparency, robustness, human agency, and safety-is equally important for rapid adoption and regulatory compliance. This position paper focuses on the aspects of AI safety and explainability, and on its importance to situation awareness in future networks. We summarize related work, identify research gaps, and provide recommendations for integrating these aspects in a future telecommunication system, such as a 6 G network. We observe that the current state-of-the-art primarily targets modellevel safety and explainability, but argue that there are bigger challenges at the system-level and runtime. As we move towards 6 G networks, there is an urgent need for new research directions to address these challenges. We aim to raise awareness among the research community about these critical issues.",
+    "authors": [
+      "Amadeu do Nascimento J\u00fanior",
+      "Alexandros Palaios",
+      "K. Raizer",
+      "S. Mohalik",
+      "Rafia Inam"
+    ],
+    "published": "2025-06-02",
+    "year": 2025,
+    "paper_id": "b79546d5d6064a8057655214a501c9d7a2e4213d",
+    "doi": "10.1109/CogSIMA64436.2025.11079488",
+    "category": "Computer Science",
+    "source": "scholar",
+    "text": "Safe and Explainable AI in 6G Telecommunication Systems: The Way Forward\n\nArtificial Intelligence (AI) is crucial for realizing the evolution of 6 G cellular-based systems. However, the trustworthiness of AI-based models and systems-including their transparency, robustness, human agency, and safety-is equally important for rapid adoption and regulatory compliance. This position paper focuses on the aspects of AI safety and explainability, and on its importance to situation awareness in future networks. We summarize related work, identify research gaps, and provide recommendations for integrating these aspects in a future telecommunication system, such as a 6 G network. We observe that the current state-of-the-art primarily targets modellevel safety and explainability, but argue that there are bigger challenges at the system-level and runtime. As we move towards 6 G networks, there is an urgent need for new research directions to address these challenges. We aim to raise awareness among the research community about these critical issues."
+  },
+  {
+    "title": "AI-Enabled Optical Communication Networks for 6G Telecommunication and Beyond",
+    "abstract": "The development of 5G to 6G wireless networks requires the use of infrastructure that is ultrareliable, capacitive, and low-latency communication. The 6G systems will most likely build on optical communication which has high bandwidth and scalability. Nevertheless, optical device and data heterogeneity, and large volumes of information generated by photonic transceivers has been a major challenge of real time monitoring, resource allocation, and network optimization. Artificial Intelligence (AI) provides the potential way out of such issues by providing predictive analytics, adaptive control, and intelligent decision-making. The current paper summarizes recent optical communication technologies in 6G, demonstrates the potential of AI to improve its performance, and suggests a new AIassisted architecture of optical fronthaul and transport networks. The suggested approach has lower latency, high energy efficiency, and high throughput levels in comparison to traditional systems through simulationbased evaluation. The findings stress that AI implementation together with the optical communication technologies will play a critical role in bringing the vision of 6G and beyond to reality.",
+    "authors": [
+      "Deepa Priyanshu",
+      "Shemseddine Ethani Barnat",
+      "Nasreen Abu Raya",
+      "Shireen Banu Mahboob",
+      "Ayeshah Almugahwi",
+      "Abeer Rafi Alabdulraheem"
+    ],
+    "published": "2025-12-04",
+    "year": 2025,
+    "paper_id": "18499e3f57d4eb2cfd446cc27347b94d3582d5dc",
+    "doi": "10.1109/OPTIMA67660.2025.11380339",
+    "category": "",
+    "source": "scholar",
+    "text": "AI-Enabled Optical Communication Networks for 6G Telecommunication and Beyond\n\nThe development of 5G to 6G wireless networks requires the use of infrastructure that is ultrareliable, capacitive, and low-latency communication. The 6G systems will most likely build on optical communication which has high bandwidth and scalability. Nevertheless, optical device and data heterogeneity, and large volumes of information generated by photonic transceivers has been a major challenge of real time monitoring, resource allocation, and network optimization. Artificial Intelligence (AI) provides the potential way out of such issues by providing predictive analytics, adaptive control, and intelligent decision-making. The current paper summarizes recent optical communication technologies in 6G, demonstrates the potential of AI to improve its performance, and suggests a new AIassisted architecture of optical fronthaul and transport networks. The suggested approach has lower latency, high energy efficiency, and high throughput levels in comparison to traditional systems through simulationbased evaluation. The findings stress that AI implementation together with the optical communication technologies will play a critical role in bringing the vision of 6G and beyond to reality."
+  },
+  {
+    "title": "RIS and UAV Aided Spatial Modulation for 6G Telecommunication Systems",
+    "abstract": "A paradigm shift in wireless communication is expected with the advent of 6G communications networks, which would need the development of innovative technologies for ultra-reliable, low-latency communication to support massive device connection. This study presents a novel method for 6G communication networks, which integrates the use of Unmanned Aerial Vehicles (UAVs) and Reconfigurable Intelligent Surfaces (RIS) with the Spatial Modulation (SM) architecture. The ultimate goal of the proposed 6G system's RIS and UAV-Aided spatial modulation is to increase communication's bit error rate (BER) and spectrum efficiency. In order to optimize signal propagation in UAVs acting as mobile communication nodes, RIS is positioned strategically in this strategy. Data bits are modulated into spatial symbols to activate certain RIS elements and UAV configurations. The study looks at how real-world issues like erroneous channel estimates affect RIS and UAV communication lines. Through thorough simulations and theoretical validation, the proposed system is assessed in terms of its BER and spectrum efficiency, indicating its superiority over traditional communication systems. The results show that RIS and UAV integration may enhance 6G communication systems' capabilities.",
+    "authors": [
+      "R. Rengaraj",
+      "V. R. Ravi",
+      "R. N. Kamali",
+      "K. Manoj",
+      "S. Jasmine",
+      "C. Dharani"
+    ],
+    "published": "2024-08-08",
+    "year": 2024,
+    "paper_id": "d90115fdaf6657f0b9c398253b9d3f1e83eac210",
+    "doi": "10.1109/ICCPCT61902.2024.10673157",
+    "category": "",
+    "source": "scholar",
+    "text": "RIS and UAV Aided Spatial Modulation for 6G Telecommunication Systems\n\nA paradigm shift in wireless communication is expected with the advent of 6G communications networks, which would need the development of innovative technologies for ultra-reliable, low-latency communication to support massive device connection. This study presents a novel method for 6G communication networks, which integrates the use of Unmanned Aerial Vehicles (UAVs) and Reconfigurable Intelligent Surfaces (RIS) with the Spatial Modulation (SM) architecture. The ultimate goal of the proposed 6G system's RIS and UAV-Aided spatial modulation is to increase communication's bit error rate (BER) and spectrum efficiency. In order to optimize signal propagation in UAVs acting as mobile communication nodes, RIS is positioned strategically in this strategy. Data bits are modulated into spatial symbols to activate certain RIS elements and UAV configurations. The study looks at how real-world issues like erroneous channel estimates affect RIS and UAV communication lines. Through thorough simulations and theoretical validation, the proposed system is assessed in terms of its BER and spectrum efficiency, indicating its superiority over traditional communication systems. The results show that RIS and UAV integration may enhance 6G communication systems' capabilities."
+  },
+  {
+    "title": "Signal Propagation and Path- Loss in 6G Mobile Telecommunication System",
+    "abstract": "As previous we know about many types of generation like (2G,3G and 4G network), and also it has been developed to the fifth \u2013 generation mobile communication system. Compare with 5G, 6G will be faster and lower latency, in 6G era, the theoretical network speed will reach to 1Tbps. That is 100 times the speed of the 5G, which is 10,000 times the speed of the current 4G. 5G is officially commercialized in 2019, but 5G has no yet covered a large area and have problems with high tariffs and incomplete network coverage ,6G network makes up for these problems. The 6G is through the integration of ground base stations and satellite communications, thus covering the whole world, it is also the real coverage. But also, there\u2019s some issues with 6G networks, like here in this article I will explain the propagation signal for 6G and I will talk about path loss signals because it uses sub-millimeter waves or tera-hertz waves to make faster connection but it will cause so much issues in propagation filed. And explained how to address path-loss challenge.",
+    "authors": [
+      "Zhala Soran",
+      "S. Askar",
+      "Dilshad Khosnawi",
+      "Hasan Saeed"
+    ],
+    "published": "2024-04-08",
+    "year": 2024,
+    "paper_id": "b8d38f464a997560faae3543d4528e96ab129a2c",
+    "doi": "10.33022/ijcs.v13i2.3850",
+    "category": "",
+    "source": "scholar",
+    "text": "Signal Propagation and Path- Loss in 6G Mobile Telecommunication System\n\nAs previous we know about many types of generation like (2G,3G and 4G network), and also it has been developed to the fifth \u2013 generation mobile communication system. Compare with 5G, 6G will be faster and lower latency, in 6G era, the theoretical network speed will reach to 1Tbps. That is 100 times the speed of the 5G, which is 10,000 times the speed of the current 4G. 5G is officially commercialized in 2019, but 5G has no yet covered a large area and have problems with high tariffs and incomplete network coverage ,6G network makes up for these problems. The 6G is through the integration of ground base stations and satellite communications, thus covering the whole world, it is also the real coverage. But also, there\u2019s some issues with 6G networks, like here in this article I will explain the propagation signal for 6G and I will talk about path loss signals because it uses sub-millimeter waves or tera-hertz waves to make faster connection but it will cause so much issues in propagation filed. And explained how to address path-loss challenge."
+  },
+  {
+    "title": "From 5G-Advanced to 6G in 2030: New Services, 3GPP Advances, and Enabling Technologies",
+    "abstract": "The telecommunications systems are in continuous evolution. After voice, video, mobile internet, and Internet of Things, what services will be supported in the near future? In the paper, three envisioned services are highlighted, which will be provided in the coming years by new telecommunication systems: immersive communications, everything connected, and high-positioning. The author provides a comprehensive description of their characteristics and investigates the developments that will be implemented in 3GPP Releases 17, Release 18, and Release 19, including technologies that could be integrated for supporting the three new services. In order to evaluate the performance of the new technologies and services, it is important to define appropriate Key Performance Indicators (KPIs). The paper reports and proposes new KPIs for network evaluation to support specific new services such as virtual/mixed reality, smart sensors, and gesture recognition, then facilitating the effective design of the next-generation network and its performance assessment optimally. Requirements of the major application fields that will see widespread adoption in the next 3\u20138 years due to these developments are also investigated. Finally, the paper further outlines the most promising enabling technologies, supporting the three bearer services.",
+    "authors": [
+      "Romeo Giuliano"
+    ],
+    "published": "",
+    "year": 2024,
+    "paper_id": "51bc7786199f8dc020665b8182e15cca3d67a2eb",
+    "doi": "10.1109/ACCESS.2024.3396361",
+    "category": "Computer Science",
+    "source": "scholar",
+    "text": "From 5G-Advanced to 6G in 2030: New Services, 3GPP Advances, and Enabling Technologies\n\nThe telecommunications systems are in continuous evolution. After voice, video, mobile internet, and Internet of Things, what services will be supported in the near future? In the paper, three envisioned services are highlighted, which will be provided in the coming years by new telecommunication systems: immersive communications, everything connected, and high-positioning. The author provides a comprehensive description of their characteristics and investigates the developments that will be implemented in 3GPP Releases 17, Release 18, and Release 19, including technologies that could be integrated for supporting the three new services. In order to evaluate the performance of the new technologies and services, it is important to define appropriate Key Performance Indicators (KPIs). The paper reports and proposes new KPIs for network evaluation to support specific new services such as virtual/mixed reality, smart sensors, and gesture recognition, then facilitating the effective design of the next-generation network and its performance assessment optimally. Requirements of the major application fields that will see widespread adoption in the next 3\u20138 years due to these developments are also investigated. Finally, the paper further outlines the most promising enabling technologies, supporting the three bearer services."
+  },
+  {
+    "title": "THz and Sub-THz CMOS Electronics for High-Speed Telecommunication - Architectures and Circuits for Future 6G Transceivers, 2",
+    "abstract": "",
+    "authors": [
+      "Carl D\u2019heer",
+      "Patrick Reynaert"
+    ],
+    "published": "",
+    "year": 2024,
+    "paper_id": "ef416a24891fee42d87acaf0b61025903dd66b6c",
+    "doi": "10.1007/978-3-031-64439-9",
+    "category": "Computer Science",
+    "source": "scholar",
+    "text": "THz and Sub-THz CMOS Electronics for High-Speed Telecommunication - Architectures and Circuits for Future 6G Transceivers, 2"
+  },
+  {
+    "title": "Introducing 6G technology to support metaverse for telecommunication engineering students in Universitas Pendidikan Indonesia",
+    "abstract": "Research on 6G have been started with many applications including on the support of Metaverse, where humans can interact in cyberspace with real experiences. To introduce and provide an understanding of this technology, Program Studi Sistem Telekomunikasi Universitas Pendidikan Indonesia kampus Purwakarta held a Studium Generalle with the theme of \"Knowing 6G Connectivity to Support the Metaverse\" which was held in a hybrid manner. This Studium Generalle was filled by Assoc. Prof. Dr. Eng. Khoirul Anwar ST., M.Eng. (Director of The University Center of Excellence for Advanced Intelligent Communications or AICOMS and Lecturer of Tel-U). Participants were given a detailed description to contribute in the field of telecommunication research, such as 6G technology mainly on machine learning and quantum information processing. Participants have their understanding measured through Pre-Test and Post-Test. There are 8 multiple choices that are used as indicators of the success of knowledge transfer between the presenters and participants. Based on the answers of 174 participants who have taken the Post-Test, the percentage accuracy of participants's answers is 45%. With the majority of participants managed to answer 5 to 8 questions accurately. Overall, the public lecture is performed well as expected. Evaluation for the next activity is that students must first learn the basic understanding of the material to be delivered so that they can follow easily the lecture. Supporting devices are needed to improve audio quality for online participants and a wider venue for activities to accommodate more offline participants.",
+    "authors": [
+      "Endah Setyowati",
+      "S. Fuada",
+      "Khairil Anwar",
+      "Muhamad Dzikri Danuarteu",
+      "Salwa Tasya Fathira Purba",
+      "Anggie Wijaya"
+    ],
+    "published": "2023-02-23",
+    "year": 2023,
+    "paper_id": "78873a4bf0d20b5fd733a50eb6bc7c854d8ddff6",
+    "doi": "10.31603/ce.8075",
+    "category": "",
+    "source": "scholar",
+    "text": "Introducing 6G technology to support metaverse for telecommunication engineering students in Universitas Pendidikan Indonesia\n\nResearch on 6G have been started with many applications including on the support of Metaverse, where humans can interact in cyberspace with real experiences. To introduce and provide an understanding of this technology, Program Studi Sistem Telekomunikasi Universitas Pendidikan Indonesia kampus Purwakarta held a Studium Generalle with the theme of \"Knowing 6G Connectivity to Support the Metaverse\" which was held in a hybrid manner. This Studium Generalle was filled by Assoc. Prof. Dr. Eng. Khoirul Anwar ST., M.Eng. (Director of The University Center of Excellence for Advanced Intelligent Communications or AICOMS and Lecturer of Tel-U). Participants were given a detailed description to contribute in the field of telecommunication research, such as 6G technology mainly on machine learning and quantum information processing. Participants have their understanding measured through Pre-Test and Post-Test. There are 8 multiple choices that are used as indicators of the success of knowledge transfer between the presenters and participants. Based on the answers of 174 participants who have taken the Post-Test, the percentage accuracy of participants's answers is 45%. With the majority of participants managed to answer 5 to 8 questions accurately. Overall, the public lecture is performed well as expected. Evaluation for the next activity is that students must first learn the basic understanding of the material to be delivered so that they can follow easily the lecture. Supporting devices are needed to improve audio quality for online participants and a wider venue for activities to accommodate more offline participants."
+  },
+  {
+    "title": "Technical capabilities and safe use of mobile communications 6G in railway transport",
+    "abstract": "The purpose of the study is to describe the technical capabilities and promising approach to the safe use of 6G mobile communications in railway transport. The study used risk management methods in railway transport in accordance with international experience. As a result of the study, information about future 6G networks was systematized, the advantages of their specific technical characteristics over 5G networks were demonstrated, and methods were proposed to ensure the safety and security of information messages transmitted in railway telecommunication networks. In the context of the technical description of 6G networks, the following issues are considered: assessing the quality of services provided (including using indicators of the quality of human physical experience), the use of radio frequencies and combating multipath propagation of signals (based on more advanced methods of multiple access and filtering), the use of more effective modulation and channel coding methods, development of antenna array technology with multiple transmitting and receiving antennas and the use of reconfigurable intelligent surfaces, functional network architecture (based on software-defined networks and network functions virtualization) and its physical implementation (through the construction of a space-terrestrial integrated network), the use of a new internet protocol (covering several levels of interconnection). In the context of ensuring the safety and security of transmitted information messages, the issues of identifying threats and possible countermeasures by implementing additional settings and functions of safety and security 6G networks are considered. The proposed approach allows us to justify the safe use of 6G mobile communications in railway transport.",
+    "authors": [
+      "P. Plekhanov",
+      "A. Kartashova"
+    ],
+    "published": "",
+    "year": 2024,
+    "paper_id": "4a1aeb509d12483909404500cf6598d10a41ab5e",
+    "doi": "10.1051/e3sconf/202454904013",
+    "category": "",
+    "source": "scholar",
+    "text": "Technical capabilities and safe use of mobile communications 6G in railway transport\n\nThe purpose of the study is to describe the technical capabilities and promising approach to the safe use of 6G mobile communications in railway transport. The study used risk management methods in railway transport in accordance with international experience. As a result of the study, information about future 6G networks was systematized, the advantages of their specific technical characteristics over 5G networks were demonstrated, and methods were proposed to ensure the safety and security of information messages transmitted in railway telecommunication networks. In the context of the technical description of 6G networks, the following issues are considered: assessing the quality of services provided (including using indicators of the quality of human physical experience), the use of radio frequencies and combating multipath propagation of signals (based on more advanced methods of multiple access and filtering), the use of more effective modulation and channel coding methods, development of antenna array technology with multiple transmitting and receiving antennas and the use of reconfigurable intelligent surfaces, functional network architecture (based on software-defined networks and network functions virtualization) and its physical implementation (through the construction of a space-terrestrial integrated network), the use of a new internet protocol (covering several levels of interconnection). In the context of ensuring the safety and security of transmitted information messages, the issues of identifying threats and possible countermeasures by implementing additional settings and functions of safety and security 6G networks are considered. The proposed approach allows us to justify the safe use of 6G mobile communications in railway transport."
+  },
+  {
+    "title": "Large language models for DAMA-aligned data management in telecommunication systems: a review of OSS/BSS and 5G/6G applications",
+    "abstract": "",
+    "authors": [
+      "Omar I. Alsaleh"
+    ],
+    "published": "2026-05-28",
+    "year": 2026,
+    "paper_id": "29717023051c8b4f96f16c471bd1233bed0aebe6",
+    "doi": "10.1007/s11235-026-01462-8",
+    "category": "",
+    "source": "scholar",
+    "text": "Large language models for DAMA-aligned data management in telecommunication systems: a review of OSS/BSS and 5G/6G applications"
+  },
+  {
+    "title": "Stacked assemblies of ultraporous nanocellulose foams and hybrid films as frequency-selective surfaces for 6G wireless telecommunication",
+    "abstract": "",
+    "authors": [
+      "Mohammad Karzarjeddi",
+      "Sami Myllym\u00e4ki",
+      "O. Laitinen",
+      "J. Sirvi\u00f6",
+      "Xiaomei Yang",
+      "Umme Sara Santona",
+      "Reijo Lappalainen",
+      "Tuomo Siponkoski",
+      "Niina Halonen",
+      "Heli Jantunen",
+      "H. Liimatainen"
+    ],
+    "published": "2026-04-01",
+    "year": 2026,
+    "paper_id": "53fe8ce92b94e8d87f67b0bada86d356ee9076bb",
+    "doi": "10.1016/j.matdes.2026.115845",
+    "category": "",
+    "source": "scholar",
+    "text": "Stacked assemblies of ultraporous nanocellulose foams and hybrid films as frequency-selective surfaces for 6G wireless telecommunication"
+  },
+  {
+    "title": "Optimization of 5G/6G Telecommunication Infrastructure through an NFV-Based Element Management System",
+    "abstract": "Network Function Virtualization (NFV) is an enabling technology that brings together automated network service management and corresponding virtualized network functions that use an NFV Infrastructure (NFVI) framework. The Virtual Network Function Manager (VNFM) placement in a large-scale distributed NFV deployment is therefore a challenging task due to the potential negative impact on performance and operating expense cost. The VNFM assigns Virtual Network Functions (VNFs) and operates efficiently based on network demands with resilient performance through efficient placement techniques. The degradation in performance and a tremendous increase in capital expenditure and operating expenses indicated this chaotic problem. This article proposed a method for VNFM placement using information on the resources of each nodes\u2019 Element Manager (EM), which is an efficient method to assign VNFs to each node of element management systems. In addition, this paper proposed an Optimized Element Manager (OEM) method for looking at appropriate EMs for the placement of VNF through periodic information on available resources. It also overcomes challenges such as delays and variations in VNFs workload for edge computing and distributed cloud regions. The performance is measured based on computations performed on various optimization algorithms such as linear programming and tabu search algorithms. The advent of the new service provisioning model of BGP-EVPN for VXLAN is materialized by integrating VTS with OpenStack. The numerical analysis shows that the proposed OEM algorithm gives an optimal solution with an average gap of 8%.",
+    "authors": [
+      "Arunkumar Arulappan",
+      "G. Raja",
+      "K. Passi",
+      "Aniket Mahanti"
+    ],
+    "published": "2022-05-10",
+    "year": 2022,
+    "paper_id": "5099df8a8c59b57c179e0bad234777dde729ab22",
+    "doi": "10.3390/sym14050978",
+    "category": "Computer Science",
+    "source": "scholar",
+    "text": "Optimization of 5G/6G Telecommunication Infrastructure through an NFV-Based Element Management System\n\nNetwork Function Virtualization (NFV) is an enabling technology that brings together automated network service management and corresponding virtualized network functions that use an NFV Infrastructure (NFVI) framework. The Virtual Network Function Manager (VNFM) placement in a large-scale distributed NFV deployment is therefore a challenging task due to the potential negative impact on performance and operating expense cost. The VNFM assigns Virtual Network Functions (VNFs) and operates efficiently based on network demands with resilient performance through efficient placement techniques. The degradation in performance and a tremendous increase in capital expenditure and operating expenses indicated this chaotic problem. This article proposed a method for VNFM placement using information on the resources of each nodes\u2019 Element Manager (EM), which is an efficient method to assign VNFs to each node of element management systems. In addition, this paper proposed an Optimized Element Manager (OEM) method for looking at appropriate EMs for the placement of VNF through periodic information on available resources. It also overcomes challenges such as delays and variations in VNFs workload for edge computing and distributed cloud regions. The performance is measured based on computations performed on various optimization algorithms such as linear programming and tabu search algorithms. The advent of the new service provisioning model of BGP-EVPN for VXLAN is materialized by integrating VTS with OpenStack. The numerical analysis shows that the proposed OEM algorithm gives an optimal solution with an average gap of 8%."
+  },
+  {
+    "title": "Corrigendum: Ultra-low permittivity porous silica-cellulose nanocomposite substrates for 6G telecommunication (2020 Nanotechnology 31 435203)",
+    "abstract": "K dielectric permittivity (\u03b5r = 1.183\uf0a0\u00b1\uf0a00.006 at 300 GHz and \u03b5r = 1.157\uf0a0\u00b1\uf0a00.012 at 2.0 THz) and K Results and discussion K \u03b5r is lightly decreasing with frequency from 1.199\uf0a0\u00b1\uf0a00.005 at 100 GHz to 1.157\uf0a0\u00b1\uf0a00.012 at 2.0 THz, whereas tan \u03b4 scatters around 0.012\uf0a0\u00b1\uf0a00.002 in the measured K In addition, we have noticed an inconsistency in the sentence: \u2018K the anticipated attenuation of 36.8% (i.e. 1\u2013e), which is probably due to K\u2019 which should read as Nanotechnology Nanotechnology 33 (2022) 379501 (2pp) https://doi.org/10.1088/1361-6528/ac75f6 Figure 4. (a) Complex dielectric permittivity and (b) loss factor of the composite films. 0957-4484/22/379501+02$33.00 Printed in the UK \u00a9 2022 IOP Publishing Ltd 1 \u2018K the anticipated attenuation of 63.2% (i.e. 1\u2013e), which is probably due to K\u2019 Furthermore, the page number and the hyperlink in [4] is incorrect, which should be 19891 not 1-9. (doi: 10.1038/srep19891). ORCID iDs Olli Pitk\u00e4nen https://orcid.org/0000-0003-2870-3229 Krisztian Kordas https://orcid.org/0000-0002-7331-1278 Figure 5. Experimental and simulated high frequency transmission of planar filter structures. Schematic drawing of the measurements setup is displayed in the inset of the plot. Panels on the right show a camera image and an optical micrograph of the filter device and double split-ring resonators, respectively. 2 Nanotechnology 33 (2022) 379501 Corrigendum",
+    "authors": [
+      "Petra S. P\u00e1lv\u00f6lgyi",
+      "M. Nelo",
+      "O. Pitk\u00e4nen",
+      "J. Per\u00e4ntie",
+      "H. Liimatainen",
+      "S. Myllym\u00e4ki",
+      "H. Jantunen",
+      "K. Kordas"
+    ],
+    "published": "2022-06-20",
+    "year": 2022,
+    "paper_id": "c981a0c1b04da504c5543ff2444a288f11628dec",
+    "doi": "10.1088/1361-6528/ac75f6",
+    "category": "Medicine, Physics",
+    "source": "scholar",
+    "text": "Corrigendum: Ultra-low permittivity porous silica-cellulose nanocomposite substrates for 6G telecommunication (2020 Nanotechnology 31 435203)\n\nK dielectric permittivity (\u03b5r = 1.183\uf0a0\u00b1\uf0a00.006 at 300 GHz and \u03b5r = 1.157\uf0a0\u00b1\uf0a00.012 at 2.0 THz) and K Results and discussion K \u03b5r is lightly decreasing with frequency from 1.199\uf0a0\u00b1\uf0a00.005 at 100 GHz to 1.157\uf0a0\u00b1\uf0a00.012 at 2.0 THz, whereas tan \u03b4 scatters around 0.012\uf0a0\u00b1\uf0a00.002 in the measured K In addition, we have noticed an inconsistency in the sentence: \u2018K the anticipated attenuation of 36.8% (i.e. 1\u2013e), which is probably due to K\u2019 which should read as Nanotechnology Nanotechnology 33 (2022) 379501 (2pp) https://doi.org/10.1088/1361-6528/ac75f6 Figure 4. (a) Complex dielectric permittivity and (b) loss factor of the composite films. 0957-4484/22/379501+02$33.00 Printed in the UK \u00a9 2022 IOP Publishing Ltd 1 \u2018K the anticipated attenuation of 63.2% (i.e. 1\u2013e), which is probably due to K\u2019 Furthermore, the page number and the hyperlink in [4] is incorrect, which should be 19891 not 1-9. (doi: 10.1038/srep19891). ORCID iDs Olli Pitk\u00e4nen https://orcid.org/0000-0003-2870-3229 Krisztian Kordas https://orcid.org/0000-0002-7331-1278 Figure 5. Experimental and simulated high frequency transmission of planar filter structures. Schematic drawing of the measurements setup is displayed in the inset of the plot. Panels on the right show a camera image and an optical micrograph of the filter device and double split-ring resonators, respectively. 2 Nanotechnology 33 (2022) 379501 Corrigendum"
+  },
+  {
+    "title": "Artificial Intelligence in the Telecommunication Sector: Exploratory Analysis of 6G\u2019s Potential for Organizational Agility",
+    "abstract": "",
+    "authors": [
+      "Seppo Yrj\u00f6l\u00e4",
+      "Petri Ahokangas",
+      "A. Arslan",
+      "Marja Matinmikko-Blue",
+      "Ismail Golgeci",
+      "S. Tarba"
+    ],
+    "published": "",
+    "year": 2021,
+    "paper_id": "ed7406e92814b5a914a812d57b56a8a33980b735",
+    "doi": "10.1007/978-981-16-5572-2_5",
+    "category": "",
+    "source": "scholar",
+    "text": "Artificial Intelligence in the Telecommunication Sector: Exploratory Analysis of 6G\u2019s Potential for Organizational Agility"
+  },
+  {
+    "title": "Ultra-low permittivity porous silica-cellulose nanocomposite substrates for 6G telecommunication",
+    "abstract": "The continuously increasing demand for faster data traffic of our telecommunication devices requires new and better materials and devices that operate at higher frequencies than today. In this work, a porous composite of silica nanoshells and cellulose nanofibers is demonstrated as a suitable candidate of dielectric substrates to be used in future 6G frequency bands. The hollow nanospheres of amorphous SiO2 with outstanding electromagnetic properties were obtained by a template-assisted St\u00f6ber process, in which a thin shell of silica is grown on polystyrene nanospheres first, and then the polymer core is burned off in a subsequent step. To be able to produce substrates with sufficient mechanical integrity, the nanoshells of SiO2 were reinforced with cellulose nanofibers resulting in a porous composite of very low mass density (0.19 \u00b1 0.02 g cm\u22123), which is easy to press and mold to form films or slabs. The low relative dielectric permittivity (\u03b5r = 1.19 \u00b1 0.01 at 300 GHz and \u03b5r = 1.17 \u00b1 0.01 at 2.0 THz) and corresponding loss tangent (tan \u03b4= 0.011 \u00b1 0.001 at 300 GHz and tan \u03b4 = 0.011 \u00b1 0.001 at 2.0 THz) of the composite films are exploited in substrates for radio frequency filter structures designed for 300 GHz operation.",
+    "authors": [
+      "Petra S. P\u00e1lv\u00f6lgyi",
+      "M. Nelo",
+      "O. Pitk\u00e4nen",
+      "J. Per\u00e4ntie",
+      "H. Liimatainen",
+      "S. Myllym\u00e4ki",
+      "H. Jantunen",
+      "K. Kordas"
+    ],
+    "published": "2020-07-10",
+    "year": 2020,
+    "paper_id": "c7c289f4f2cd46c07b5625544416673134047698",
+    "doi": "10.1088/1361-6528/aba4cc",
+    "category": "Medicine, Materials Science, Physics",
+    "source": "scholar",
+    "text": "Ultra-low permittivity porous silica-cellulose nanocomposite substrates for 6G telecommunication\n\nThe continuously increasing demand for faster data traffic of our telecommunication devices requires new and better materials and devices that operate at higher frequencies than today. In this work, a porous composite of silica nanoshells and cellulose nanofibers is demonstrated as a suitable candidate of dielectric substrates to be used in future 6G frequency bands. The hollow nanospheres of amorphous SiO2 with outstanding electromagnetic properties were obtained by a template-assisted St\u00f6ber process, in which a thin shell of silica is grown on polystyrene nanospheres first, and then the polymer core is burned off in a subsequent step. To be able to produce substrates with sufficient mechanical integrity, the nanoshells of SiO2 were reinforced with cellulose nanofibers resulting in a porous composite of very low mass density (0.19 \u00b1 0.02 g cm\u22123), which is easy to press and mold to form films or slabs. The low relative dielectric permittivity (\u03b5r = 1.19 \u00b1 0.01 at 300 GHz and \u03b5r = 1.17 \u00b1 0.01 at 2.0 THz) and corresponding loss tangent (tan \u03b4= 0.011 \u00b1 0.001 at 300 GHz and tan \u03b4 = 0.011 \u00b1 0.001 at 2.0 THz) of the composite films are exploited in substrates for radio frequency filter structures designed for 300 GHz operation."
+  },
+  {
+    "title": "240\u2009GHz meta\u2010surface band pass filter and lens integration in 6G telecommunication systems",
+    "abstract": "240\u2009GHz operated meta\u2010surface band pass filter consisting of split\u2010ring resonator (SRR) matrix was simulated and measured as single and second order modes. The filter was integrated with hemispherical and Luneburg type of antenna lenses. The SRR meta\u2010material filter was recommended component for 6G telecommunication applications characterizing measured values of 80\u2009GHz bandwidth, low insertion loss (\u22120.75 dB) and good attenuation (\u22128 dB) characteristics close to the band pass region, and the filters can be cascaded to enhance its filtering characteristics.",
+    "authors": [
+      "S. Myllymaki",
+      "M. Kokkonen"
+    ],
+    "published": "2020-06-16",
+    "year": 2020,
+    "paper_id": "b656426884954c4a98b9960654aa86a75e1041e1",
+    "doi": "10.1002/mop.32502",
+    "category": "Materials Science",
+    "source": "scholar",
+    "text": "240\u2009GHz meta\u2010surface band pass filter and lens integration in 6G telecommunication systems\n\n240\u2009GHz operated meta\u2010surface band pass filter consisting of split\u2010ring resonator (SRR) matrix was simulated and measured as single and second order modes. The filter was integrated with hemispherical and Luneburg type of antenna lenses. The SRR meta\u2010material filter was recommended component for 6G telecommunication applications characterizing measured values of 80\u2009GHz bandwidth, low insertion loss (\u22120.75 dB) and good attenuation (\u22128 dB) characteristics close to the band pass region, and the filters can be cascaded to enhance its filtering characteristics."
+  },
+  {
+    "title": "Toward Integrated Sensing and Communications for 6G: Key Enabling Technologies, Standardization, and Challenges",
+    "abstract": "The radio communication division of the International Telecommunication Union (ITU-R) has recently adopted integrated sensing and communication (ISAC) among the key usage scenarios for IMT-2030/6G. ISAC is envisioned to play a vital role in the upcoming wireless generation standards. In this work, we bring together several paramount and innovative aspects of ISAC technology from a global 6G standardization perspective, including both industrial and academic progress. Specifically, this article provides 6G requirements and ISAC-enabled vision, including various aspects of 6G standardization, benefits of ISAC co-existence, and integration challenges. Moreover, we present key enabling technologies, including intelligent metasurface-aided ISAC, as well as orthogonal time frequency space (OTFS) waveform design and interference management for ISAC. Finally, future aspects are discussed to open various research opportunities and challenges on the ISAC technology toward 6G wireless communications.",
+    "authors": [
+      "Aryan Kaushik",
+      "Rohit Singh",
+      "Shalanika Dayarathna",
+      "R. Senanayake",
+      "M. Renzo",
+      "Miguel Dajer",
+      "Hyoungju Ji",
+      "Younsun Kim",
+      "Vincenzo Sciancalepore",
+      "Alessio Zappone",
+      "Wonjae Shin"
+    ],
+    "published": "2024-06-01",
+    "year": 2024,
+    "paper_id": "6944b7c11e8aa00d069265b517f10ea8944ca447",
+    "doi": "10.1109/MCOMSTD.0007.2300043",
+    "category": "Computer Science",
+    "source": "scholar",
+    "text": "Toward Integrated Sensing and Communications for 6G: Key Enabling Technologies, Standardization, and Challenges\n\nThe radio communication division of the International Telecommunication Union (ITU-R) has recently adopted integrated sensing and communication (ISAC) among the key usage scenarios for IMT-2030/6G. ISAC is envisioned to play a vital role in the upcoming wireless generation standards. In this work, we bring together several paramount and innovative aspects of ISAC technology from a global 6G standardization perspective, including both industrial and academic progress. Specifically, this article provides 6G requirements and ISAC-enabled vision, including various aspects of 6G standardization, benefits of ISAC co-existence, and integration challenges. Moreover, we present key enabling technologies, including intelligent metasurface-aided ISAC, as well as orthogonal time frequency space (OTFS) waveform design and interference management for ISAC. Finally, future aspects are discussed to open various research opportunities and challenges on the ISAC technology toward 6G wireless communications."
+  }
+]

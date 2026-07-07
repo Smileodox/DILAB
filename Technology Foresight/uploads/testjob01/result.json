@@ -1,0 +1,853 @@
+{
+  "job_id": "testjob01",
+  "document_count": 8,
+  "documents": [
+    {
+      "title": "A Tutorial about Random Neural Networks in Supervised Learning",
+      "source": "arxiv",
+      "year": 2016,
+      "topic_id": 0,
+      "arxiv_id": "1609.04846v1"
+    },
+    {
+      "title": "Learning Universal Graph Neural Network Embeddings With Aid Of Transfer Learning",
+      "source": "arxiv",
+      "year": 2019,
+      "topic_id": 1,
+      "arxiv_id": "1909.10086v3"
+    },
+    {
+      "title": "Predicting concentration levels of air pollutants by transfer learning and recurrent neural network",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2502.01654v1"
+    },
+    {
+      "title": "Masked Conditional Neural Networks for Audio Classification",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 0,
+      "arxiv_id": "1803.02421v2"
+    },
+    {
+      "title": "The Deep Arbitrary Polynomial Chaos Neural Network or how Deep Artificial Neural Networks could benefit from Data-Driven Homogeneous Chaos Theory",
+      "source": "arxiv",
+      "year": 2023,
+      "topic_id": 0,
+      "arxiv_id": "2306.14753v1"
+    },
+    {
+      "title": "Graph Neural Network Training Systems: A Performance Comparison of Full-Graph and Mini-Batch",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2406.00552v4"
+    },
+    {
+      "title": "Proficient Graph Neural Network Design by Accumulating Knowledge on Large Language Models",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2408.06717v3"
+    },
+    {
+      "title": "Fast and Deep Graph Neural Networks",
+      "source": "arxiv",
+      "year": 2019,
+      "topic_id": 1,
+      "arxiv_id": "1911.08941v1"
+    }
+  ],
+  "clusters": [
+    {
+      "topic_id": 0,
+      "count": 3,
+      "keywords": [
+        "the",
+        "and",
+        "of",
+        "neural",
+        "to",
+        "in",
+        "learning",
+        "have",
+        "networks",
+        "as"
+      ],
+      "label": "the, and, of, neural",
+      "lifecycle_stage": "maturity",
+      "stage_color": "#9333EA",
+      "lifecycle_explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate.",
+      "lifecycle_llm": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+      "source_breakdown": {
+        "arxiv": 6,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "topic_id": 1,
+      "count": 2,
+      "keywords": [
+        "graph",
+        "the",
+        "of",
+        "learning",
+        "embeddings",
+        "and",
+        "deep",
+        "in",
+        "dugnn",
+        "neural"
+      ],
+      "label": "graph, the, of, learning",
+      "lifecycle_stage": "introduction",
+      "stage_color": "#22C55E",
+      "lifecycle_explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration.",
+      "lifecycle_llm": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+      "source_breakdown": {
+        "arxiv": 2,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        1,
+        7
+      ]
+    }
+  ],
+  "scatter": {
+    "points": [
+      {
+        "doc_index": 0,
+        "topic_id": 0,
+        "x": -9.52578353881836,
+        "y": -16.757362365722656,
+        "preview": "A Tutorial about Random Neural Networks in Supervised Learning  Random Neural Networks (RNNs) are a class of Neural Netw",
+        "title": "A Tutorial about Random Neural Networks in Supervised Learning",
+        "source": "arxiv",
+        "year": 2016
+      },
+      {
+        "doc_index": 1,
+        "topic_id": 1,
+        "x": -10.98649787902832,
+        "y": -16.576751708984375,
+        "preview": "Learning Universal Graph Neural Network Embeddings With Aid Of Transfer Learning  Learning powerful data embeddings has ",
+        "title": "Learning Universal Graph Neural Network Embeddings With Aid Of Transfer Learning",
+        "source": "arxiv",
+        "year": 2019
+      },
+      {
+        "doc_index": 2,
+        "topic_id": 0,
+        "x": -9.760854721069336,
+        "y": -16.021892547607422,
+        "preview": "Predicting concentration levels of air pollutants by transfer learning and recurrent neural network  Air pollution (AP) ",
+        "title": "Predicting concentration levels of air pollutants by transfer learning and recur",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 3,
+        "topic_id": 0,
+        "x": -10.232487678527832,
+        "y": -15.344121932983398,
+        "preview": "Masked Conditional Neural Networks for Audio Classification  We present the ConditionaL Neural Network (CLNN) and the Ma",
+        "title": "Masked Conditional Neural Networks for Audio Classification",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 4,
+        "topic_id": 0,
+        "x": -8.762060165405273,
+        "y": -16.38335418701172,
+        "preview": "The Deep Arbitrary Polynomial Chaos Neural Network or how Deep Artificial Neural Networks could benefit from Data-Driven",
+        "title": "The Deep Arbitrary Polynomial Chaos Neural Network or how Deep Artificial Neural",
+        "source": "arxiv",
+        "year": 2023
+      },
+      {
+        "doc_index": 5,
+        "topic_id": 0,
+        "x": -10.500953674316406,
+        "y": -17.233057022094727,
+        "preview": "Graph Neural Network Training Systems: A Performance Comparison of Full-Graph and Mini-Batch  Graph Neural Networks (GNN",
+        "title": "Graph Neural Network Training Systems: A Performance Comparison of Full-Graph an",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 6,
+        "topic_id": 0,
+        "x": -11.423542022705078,
+        "y": -17.11486053466797,
+        "preview": "Proficient Graph Neural Network Design by Accumulating Knowledge on Large Language Models  High-level automation is incr",
+        "title": "Proficient Graph Neural Network Design by Accumulating Knowledge on Large Langua",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 7,
+        "topic_id": 1,
+        "x": -11.057891845703125,
+        "y": -15.754839897155762,
+        "preview": "Fast and Deep Graph Neural Networks  We address the efficiency issue for the construction of a deep graph neural network",
+        "title": "Fast and Deep Graph Neural Networks",
+        "source": "arxiv",
+        "year": 2019
+      }
+    ],
+    "why": "Documents were embedded with all-MiniLM-L6-v2, projected with UMAP, and grouped by BERTopic (HDBSCAN density clustering + c-TF-IDF keyword labeling). Points that sit close together share semantic content in abstracts and titles."
+  },
+  "evolution": {
+    "timeline": {
+      "0": [
+        {
+          "year": 2016,
+          "count": 1
+        },
+        {
+          "year": 2018,
+          "count": 1
+        },
+        {
+          "year": 2023,
+          "count": 1
+        },
+        {
+          "year": 2024,
+          "count": 2
+        },
+        {
+          "year": 2025,
+          "count": 1
+        }
+      ],
+      "1": [
+        {
+          "year": 2019,
+          "count": 2
+        }
+      ]
+    },
+    "lifecycle": {
+      "0": {
+        "stage": "maturity",
+        "params": {
+          "L": 1.9224073692621975,
+          "k": 0.10026872328326494,
+          "t0": 1.5985322485334772e-13
+        },
+        "fitted": [
+          [
+            2016,
+            0.9612036846310911
+          ],
+          [
+            2016,
+            0.9840259207339944
+          ],
+          [
+            2016,
+            1.006822439324401
+          ],
+          [
+            2017,
+            1.0295676386796608
+          ],
+          [
+            2017,
+            1.0522361475508484
+          ],
+          [
+            2018,
+            1.0748029376525037
+          ],
+          [
+            2018,
+            1.097243432906104
+          ],
+          [
+            2019,
+            1.1195336144376358
+          ],
+          [
+            2019,
+            1.1416501203973048
+          ],
+          [
+            2020,
+            1.1635703397515074
+          ],
+          [
+            2020,
+            1.1852724992908232
+          ],
+          [
+            2021,
+            1.2067357432008197
+          ],
+          [
+            2021,
+            1.2279402046534587
+          ],
+          [
+            2022,
+            1.2488670689921115
+          ],
+          [
+            2022,
+            1.2694986282013694
+          ],
+          [
+            2023,
+            1.2898183264703835
+          ],
+          [
+            2023,
+            1.3098107967743358
+          ],
+          [
+            2024,
+            1.3294618885098228
+          ],
+          [
+            2024,
+            1.3487586863245478
+          ],
+          [
+            2025,
+            1.3676895203789492
+          ]
+        ],
+        "explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate."
+      },
+      "1": {
+        "stage": "introduction",
+        "params": {},
+        "fitted": [
+          [
+            2019,
+            2
+          ]
+        ],
+        "explanation": "Early-stage: low absolute volume but new presence in the corpus\u2014watch for acceleration."
+      }
+    },
+    "events": [
+      {
+        "year": 2016,
+        "topic_id": 0,
+        "type": "emerge",
+        "keywords": [
+          "the",
+          "and",
+          "of",
+          "neural",
+          "to",
+          "in",
+          "learning",
+          "have",
+          "networks",
+          "as"
+        ],
+        "count": 1,
+        "why": "Topic 0 first appears in 2016 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2019,
+        "topic_id": 1,
+        "type": "emerge",
+        "keywords": [
+          "graph",
+          "the",
+          "of",
+          "learning",
+          "embeddings",
+          "and",
+          "deep",
+          "in",
+          "dugnn",
+          "neural"
+        ],
+        "count": 2,
+        "why": "Topic 1 first appears in 2019 with 2 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2024,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "the",
+          "and",
+          "of",
+          "neural",
+          "to",
+          "in",
+          "learning",
+          "have",
+          "networks",
+          "as"
+        ],
+        "count": 2,
+        "why": "Publication volume for topic 0 rose 1\u21922 (100% YoY).",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      },
+      {
+        "year": 2025,
+        "topic_id": 1,
+        "type": "die",
+        "keywords": [
+          "graph",
+          "the",
+          "of",
+          "learning",
+          "embeddings",
+          "and",
+          "deep",
+          "in",
+          "dugnn",
+          "neural"
+        ],
+        "why": "Topic 1 had no publications in 2025 after prior activity\u2014treated as decline/die-off.",
+        "llm_explanation": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge."
+      }
+    ],
+    "why": "Per-topic yearly counts were fitted to a logistic S-curve to assign lifecycle stages. Change events are detected by diffing topic presence and volume across years and measuring keyword overlap between co-active clusters.",
+    "weak_signals": []
+  },
+  "reasoning": {
+    "influence": [
+      {
+        "from": "the, and, of, neural",
+        "to": "graph, the, of, learning",
+        "relation": "enables",
+        "reason": "Shared methodological lineage between the, and, of, neural and graph, the, of, learning in the corpus.",
+        "why": "Heuristic edge from cluster ordering when LLM output was sparse."
+      }
+    ],
+    "sao": {
+      "0": {
+        "triples": [
+          {
+            "subject": "Tutorial",
+            "action": "see",
+            "object": "Networks"
+          },
+          {
+            "subject": "they",
+            "action": "use",
+            "object": "domain"
+          },
+          {
+            "subject": "we",
+            "action": "focus",
+            "object": "article"
+          },
+          {
+            "subject": "we",
+            "action": "give",
+            "object": "description"
+          },
+          {
+            "subject": "we",
+            "action": "present",
+            "object": "procedure"
+          },
+          {
+            "subject": "we",
+            "action": "describe",
+            "object": "set"
+          },
+          {
+            "subject": "we",
+            "action": "discuss",
+            "object": "issue"
+          },
+          {
+            "subject": "tutorial",
+            "action": "describe",
+            "object": "application"
+          },
+          {
+            "subject": "pollution",
+            "action": "predict",
+            "object": "level"
+          },
+          {
+            "subject": "prediction",
+            "action": "help",
+            "object": "AP"
+          },
+          {
+            "subject": "memory",
+            "action": "use",
+            "object": "paper"
+          },
+          {
+            "subject": "datum",
+            "action": "utilize",
+            "object": "concentration"
+          },
+          {
+            "subject": "station",
+            "action": "have",
+            "object": "Macau"
+          },
+          {
+            "subject": "learning",
+            "action": "train",
+            "object": "aqms"
+          },
+          {
+            "subject": "sample",
+            "action": "cover",
+            "object": "year"
+          },
+          {
+            "subject": "record",
+            "action": "remain",
+            "object": "station"
+          },
+          {
+            "subject": "rnn",
+            "action": "show",
+            "object": "experimentation"
+          },
+          {
+            "subject": "Networks",
+            "action": "present",
+            "object": "Classification"
+          },
+          {
+            "subject": "CLNN",
+            "action": "take",
+            "object": "consideration"
+          },
+          {
+            "subject": "MCLNN",
+            "action": "achieve",
+            "object": "accuracy"
+          },
+          {
+            "subject": "Network",
+            "action": "benefit",
+            "object": "learning"
+          },
+          {
+            "subject": "approach",
+            "action": "base",
+            "object": "Networks"
+          },
+          {
+            "subject": "form",
+            "action": "depend",
+            "object": "task"
+          },
+          {
+            "subject": "structure",
+            "action": "base",
+            "object": "majority"
+          },
+          {
+            "subject": "we",
+            "action": "suggest",
+            "object": "paper"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "see",
+            "count": 2
+          },
+          {
+            "action": "use",
+            "count": 2
+          },
+          {
+            "action": "present",
+            "count": 2
+          },
+          {
+            "action": "describe",
+            "count": 2
+          },
+          {
+            "action": "have",
+            "count": 2
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "1": {
+        "triples": [
+          {
+            "subject": "crux",
+            "action": "pretraine",
+            "object": "embedding"
+          },
+          {
+            "subject": "embedding",
+            "action": "learn",
+            "object": "domain"
+          },
+          {
+            "subject": "we",
+            "action": "present",
+            "object": "paper"
+          },
+          {
+            "subject": "model",
+            "action": "incorporate",
+            "object": "network"
+          },
+          {
+            "subject": "DUGNN",
+            "action": "learn",
+            "object": "embedding"
+          },
+          {
+            "subject": "we",
+            "action": "show",
+            "object": "experiment"
+          },
+          {
+            "subject": "we",
+            "action": "address",
+            "object": "issue"
+          },
+          {
+            "subject": "approach",
+            "action": "exploit",
+            "object": "idea"
+          },
+          {
+            "subject": "efficiency",
+            "action": "gain",
+            "object": "aspect"
+          },
+          {
+            "subject": "this",
+            "action": "view",
+            "object": "way"
+          },
+          {
+            "subject": "we",
+            "action": "show",
+            "object": "result"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "learn",
+            "count": 2
+          },
+          {
+            "action": "show",
+            "count": 2
+          },
+          {
+            "action": "pretraine",
+            "count": 1
+          },
+          {
+            "action": "present",
+            "count": 1
+          },
+          {
+            "action": "incorporate",
+            "count": 1
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      }
+    },
+    "why_influence": "Edges represent enabling or displacing relationships inferred from cluster themes and LLM foresight reasoning."
+  },
+  "scenarios": {
+    "drivers": [
+      {
+        "axis": "Adoption velocity",
+        "description": "2 emerging topic(s) create uncertainty about which technology will cross the chasm first.",
+        "why": "Derived from emerge events\u2014new clusters increase adoption-path uncertainty."
+      },
+      {
+        "axis": "Technology displacement",
+        "description": "1 declining topic(s) signal potential displacement of incumbent approaches.",
+        "why": "Derived from die events\u2014fading clusters imply replacement risk for legacy tech."
+      }
+    ],
+    "axis_labels": {
+      "x": "Adoption velocity",
+      "y": "Technology displacement"
+    },
+    "scenarios": {
+      "optimistic": {
+        "tone": "optimistic",
+        "title": "Optimistic",
+        "color": "#22C55E",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "disruptive": {
+        "tone": "disruptive",
+        "title": "Disruptive",
+        "color": "#EF4444",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "constrained": {
+        "tone": "constrained",
+        "title": "Constrained",
+        "color": "#F59E0B",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 high Technology displacement quadrant using cluster themes and detected evolution events."
+      },
+      "stagnant": {
+        "tone": "stagnant",
+        "title": "Stagnant",
+        "color": "#6B7280",
+        "narrative": "Based on corpus patterns, this shift likely reflects converging research interest and cross-pollination between adjacent technology areas. Competing approaches may consolidate over the next five years as standards emerge.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 low Technology displacement quadrant using cluster themes and detected evolution events."
+      }
+    },
+    "why": "Four scenarios span the 2\u00d72 space of the two largest uncertainty drivers extracted from causal events.",
+    "impact_trees": {
+      "optimistic": {
+        "tree": {
+          "name": "The",
+          "why": "Primary driver in the Optimistic scenario.",
+          "children": [
+            {
+              "name": "Supply chain shift",
+              "why": "Component demand reallocates toward new dominant designs.",
+              "children": [
+                {
+                  "name": "Cost reduction",
+                  "why": "Scale economies as adoption grows.",
+                  "children": []
+                },
+                {
+                  "name": "Skill gap",
+                  "why": "Workforce lags new tooling requirements.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Standards formation",
+              "why": "Interoperability pressure after fragmentation.",
+              "children": []
+            }
+          ]
+        },
+        "why": "D3 impact tree encodes cascading second-order effects implied by the scenario narrative."
+      },
+      "disruptive": {
+        "tree": {
+          "name": "The",
+          "why": "Primary driver in the Disruptive scenario.",
+          "children": [
+            {
+              "name": "Supply chain shift",
+              "why": "Component demand reallocates toward new dominant designs.",
+              "children": [
+                {
+                  "name": "Cost reduction",
+                  "why": "Scale economies as adoption grows.",
+                  "children": []
+                },
+                {
+                  "name": "Skill gap",
+                  "why": "Workforce lags new tooling requirements.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Standards formation",
+              "why": "Interoperability pressure after fragmentation.",
+              "children": []
+            }
+          ]
+        },
+        "why": "D3 impact tree encodes cascading second-order effects implied by the scenario narrative."
+      },
+      "constrained": {
+        "tree": {
+          "name": "The",
+          "why": "Primary driver in the Constrained scenario.",
+          "children": [
+            {
+              "name": "Supply chain shift",
+              "why": "Component demand reallocates toward new dominant designs.",
+              "children": [
+                {
+                  "name": "Cost reduction",
+                  "why": "Scale economies as adoption grows.",
+                  "children": []
+                },
+                {
+                  "name": "Skill gap",
+                  "why": "Workforce lags new tooling requirements.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Standards formation",
+              "why": "Interoperability pressure after fragmentation.",
+              "children": []
+            }
+          ]
+        },
+        "why": "D3 impact tree encodes cascading second-order effects implied by the scenario narrative."
+      },
+      "stagnant": {
+        "tree": {
+          "name": "The",
+          "why": "Primary driver in the Stagnant scenario.",
+          "children": [
+            {
+              "name": "Supply chain shift",
+              "why": "Component demand reallocates toward new dominant designs.",
+              "children": [
+                {
+                  "name": "Cost reduction",
+                  "why": "Scale economies as adoption grows.",
+                  "children": []
+                },
+                {
+                  "name": "Skill gap",
+                  "why": "Workforce lags new tooling requirements.",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Standards formation",
+              "why": "Interoperability pressure after fragmentation.",
+              "children": []
+            }
+          ]
+        },
+        "why": "D3 impact tree encodes cascading second-order effects implied by the scenario narrative."
+      }
+    }
+  },
+  "source_breakdown": {
+    "arxiv": 8,
+    "uploaded": 0
+  }
+}

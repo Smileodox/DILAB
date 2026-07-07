@@ -1,0 +1,1109 @@
+{
+  "job_id": "ff7a95b0f2e2",
+  "document_count": 10,
+  "documents": [
+    {
+      "title": "Cruise Missile Target Trajectory Movement Prediction based on Optimal 3D Kalman Filter with Firefly Algorithm",
+      "source": "arxiv",
+      "year": 2018,
+      "topic_id": 1,
+      "arxiv_id": "1807.07006v1"
+    },
+    {
+      "title": "Designing AI-Enabled Countermeasures to Cognitive Warfare",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2504.11486v1"
+    },
+    {
+      "title": "Enhanced Performance of Highly Activated Carbon and Surface-Treated Porous Polymers as Physical Adsorbents for Chemical Warfare Agents",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2505.08802v1"
+    },
+    {
+      "title": "Broad Area Search and Detection of Surface-to-Air Missile Sites Using Spatial Fusion of Component Object Detections from Deep Neural Networks",
+      "source": "arxiv",
+      "year": 2020,
+      "topic_id": 0,
+      "arxiv_id": "2003.10566v3"
+    },
+    {
+      "title": "The Dragon and the Computer: Why Intellectual Property Theft is Compatible with Chinese Cyber-Warfare Doctrine",
+      "source": "arxiv",
+      "year": 2013,
+      "topic_id": 0,
+      "arxiv_id": "1309.6450v1"
+    },
+    {
+      "title": "A potential missile guidance law based-on chaos",
+      "source": "arxiv",
+      "year": 2023,
+      "topic_id": 0,
+      "arxiv_id": "2312.10011v1"
+    },
+    {
+      "title": "A Multi-Layer Electronic and Cyber Interference Model for AI-Driven Cruise Missiles: The Case of Khuzestan Province",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 0,
+      "arxiv_id": "2510.03542v1"
+    },
+    {
+      "title": "Missile detection and destruction robot using detection algorithm",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 1,
+      "arxiv_id": "2407.07452v2"
+    },
+    {
+      "title": "Future state prediction based on observer for missile system",
+      "source": "arxiv",
+      "year": 2024,
+      "topic_id": 0,
+      "arxiv_id": "2411.08576v1"
+    },
+    {
+      "title": "Swarm-optimized Adaptive Augmentation of Missile Autopilot",
+      "source": "arxiv",
+      "year": 2025,
+      "topic_id": 1,
+      "arxiv_id": "2509.07748v1"
+    }
+  ],
+  "clusters": [
+    {
+      "topic_id": 0,
+      "count": 5,
+      "keywords": [
+        "warfare",
+        "physical adsorption",
+        "adsorbents",
+        "search detection",
+        "dnn detections",
+        "multi layer",
+        "feature",
+        "agents",
+        "fusion",
+        "cwas"
+      ],
+      "label": "warfare, physical adsorption, adsorbents, search detection",
+      "lifecycle_stage": "growth",
+      "stage_color": "#2563EB",
+      "lifecycle_explanation": "Rapid uptake: yearly counts are rising on the fitted S-curve upswing.",
+      "lifecycle_llm": "In the **growth** stage, physical\u2011adsorption\u2011based detection systems for warfare\u2011related search and identification are moving from prototype to early\u2011volume production, with field trials confirming that multilayer DNN classifiers can reliably extract \u201cfeature\u2011agent\u201d signatures from adsorbent\u2011derived sensor streams. Rapid adoption is being driven by defense\u2011budget allocations for autonomous threat\u2011screening platforms, a surge of venture and government funding into high\u2011surface\u2011area nanoadsorbents, and the emergence of interoperable data\u2011exchange standards (e.g., NATO STANAG\u202f4586 for sensor fusion) that enable rapid integration of these adsorbent\u2011DNN modules into existing combat\u2011network architectures.",
+      "source_breakdown": {
+        "arxiv": 7,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "topic_id": 1,
+      "count": 3,
+      "keywords": [
+        "autopilot",
+        "sensor",
+        "controller",
+        "missile detection",
+        "movement prediction",
+        "kalman filter",
+        "detection destruction",
+        "firefly algorithm",
+        "sonar",
+        "online learning"
+      ],
+      "label": "autopilot, sensor, controller, missile detection",
+      "lifecycle_stage": "maturity",
+      "stage_color": "#9333EA",
+      "lifecycle_explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate.",
+      "lifecycle_llm": "In the **maturity** stage, autopilot\u2011based missile detection systems have moved from experimental prototypes to field\u2011deployed platforms, with proven sensor suites (radar, infrared, electro\u2011optical) and robust Kalman\u2011filter\u2011based movement prediction integrated into flight\u2011control controllers. Adoption is now driven by defense procurement cycles, steady funding streams, and the establishment of interoperability standards (e.g., NATO STANAGs) that mandate firefly\u2011algorithm\u2011optimized sensor fusion and automated detection\u2011destruction workflows.",
+      "source_breakdown": {
+        "arxiv": 3,
+        "uploaded": 0
+      },
+      "doc_indices": [
+        0,
+        7,
+        9
+      ]
+    }
+  ],
+  "scatter": {
+    "points": [
+      {
+        "doc_index": 0,
+        "topic_id": 1,
+        "x": 2.044454336166382,
+        "y": -0.010346388444304466,
+        "preview": "Cruise Missile Target Trajectory Movement Prediction based on Optimal 3D Kalman Filter with Firefly Algorithm  It is hop",
+        "title": "Cruise Missile Target Trajectory Movement Prediction based on Optimal 3D Kalman ",
+        "source": "arxiv",
+        "year": 2018
+      },
+      {
+        "doc_index": 1,
+        "topic_id": 0,
+        "x": 2.223494291305542,
+        "y": 1.7819769382476807,
+        "preview": "Designing AI-Enabled Countermeasures to Cognitive Warfare  Foreign information operations on social media platforms pose",
+        "title": "Designing AI-Enabled Countermeasures to Cognitive Warfare",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 2,
+        "topic_id": 0,
+        "x": 1.975839376449585,
+        "y": 2.497469186782837,
+        "preview": "Enhanced Performance of Highly Activated Carbon and Surface-Treated Porous Polymers as Physical Adsorbents for Chemical ",
+        "title": "Enhanced Performance of Highly Activated Carbon and Surface-Treated Porous Polym",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 3,
+        "topic_id": 0,
+        "x": 0.8596349358558655,
+        "y": 1.3502781391143799,
+        "preview": "Broad Area Search and Detection of Surface-to-Air Missile Sites Using Spatial Fusion of Component Object Detections from",
+        "title": "Broad Area Search and Detection of Surface-to-Air Missile Sites Using Spatial Fu",
+        "source": "arxiv",
+        "year": 2020
+      },
+      {
+        "doc_index": 4,
+        "topic_id": 0,
+        "x": 1.4739599227905273,
+        "y": 1.847213625907898,
+        "preview": "The Dragon and the Computer: Why Intellectual Property Theft is Compatible with Chinese Cyber-Warfare Doctrine  Along wi",
+        "title": "The Dragon and the Computer: Why Intellectual Property Theft is Compatible with ",
+        "source": "arxiv",
+        "year": 2013
+      },
+      {
+        "doc_index": 5,
+        "topic_id": 0,
+        "x": 2.717827796936035,
+        "y": 0.8591517210006714,
+        "preview": "A potential missile guidance law based-on chaos  An important field of research in defense-related technology is the des",
+        "title": "A potential missile guidance law based-on chaos",
+        "source": "arxiv",
+        "year": 2023
+      },
+      {
+        "doc_index": 6,
+        "topic_id": 0,
+        "x": 0.9376534223556519,
+        "y": 0.6047791242599487,
+        "preview": "A Multi-Layer Electronic and Cyber Interference Model for AI-Driven Cruise Missiles: The Case of Khuzestan Province  The",
+        "title": "A Multi-Layer Electronic and Cyber Interference Model for AI-Driven Cruise Missi",
+        "source": "arxiv",
+        "year": 2025
+      },
+      {
+        "doc_index": 7,
+        "topic_id": 1,
+        "x": 1.873932123184204,
+        "y": 0.7562585473060608,
+        "preview": "Missile detection and destruction robot using detection algorithm  This research is based on the present missile detecti",
+        "title": "Missile detection and destruction robot using detection algorithm",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 8,
+        "topic_id": 0,
+        "x": 2.7594730854034424,
+        "y": -0.028602875769138336,
+        "preview": "Future state prediction based on observer for missile system  Guided missile accuracy and precision is negatively impact",
+        "title": "Future state prediction based on observer for missile system",
+        "source": "arxiv",
+        "year": 2024
+      },
+      {
+        "doc_index": 9,
+        "topic_id": 1,
+        "x": 1.359871745109558,
+        "y": -0.14622566103935242,
+        "preview": "Swarm-optimized Adaptive Augmentation of Missile Autopilot  This paper considers the problem of optimizing a missile aut",
+        "title": "Swarm-optimized Adaptive Augmentation of Missile Autopilot",
+        "source": "arxiv",
+        "year": 2025
+      }
+    ],
+    "why": "Documents were embedded with all-MiniLM-L6-v2, projected with UMAP, and grouped by BERTopic (HDBSCAN + c-TF-IDF). Topic labels use an English + academic stop-word list, bigrams, reduced-frequent-word c-TF-IDF, and Maximal Marginal Relevance so keywords highlight technology terms\u2014not function words like \u201cthe\u201d or \u201cof\u201d."
+  },
+  "evolution": {
+    "timeline": {
+      "1": [
+        {
+          "year": 2018,
+          "count": 1
+        },
+        {
+          "year": 2024,
+          "count": 1
+        },
+        {
+          "year": 2025,
+          "count": 1
+        }
+      ],
+      "0": [
+        {
+          "year": 2013,
+          "count": 1
+        },
+        {
+          "year": 2020,
+          "count": 1
+        },
+        {
+          "year": 2023,
+          "count": 1
+        },
+        {
+          "year": 2024,
+          "count": 1
+        },
+        {
+          "year": 2025,
+          "count": 3
+        }
+      ]
+    },
+    "lifecycle": {
+      "1": {
+        "stage": "maturity",
+        "params": {
+          "L": 1.9571529173013273,
+          "k": 0.010000000000000002,
+          "t0": 5.184026401170729e-11
+        },
+        "fitted": [
+          [
+            2018,
+            0.9785764586504099
+          ],
+          [
+            2018,
+            0.9803790974562979
+          ],
+          [
+            2018,
+            0.9821817240282786
+          ],
+          [
+            2019,
+            0.9839843261327802
+          ],
+          [
+            2019,
+            0.9857868915368909
+          ],
+          [
+            2019,
+            0.9875894080086994
+          ],
+          [
+            2020,
+            0.9893918633176182
+          ],
+          [
+            2020,
+            0.9911942452347241
+          ],
+          [
+            2020,
+            0.9929965415330831
+          ],
+          [
+            2021,
+            0.9947987399880845
+          ],
+          [
+            2021,
+            0.9966008283777763
+          ],
+          [
+            2022,
+            0.9984027944831887
+          ],
+          [
+            2022,
+            1.000204626088674
+          ],
+          [
+            2022,
+            1.002006310982231
+          ],
+          [
+            2023,
+            1.0038078369558374
+          ],
+          [
+            2023,
+            1.0056091918057848
+          ],
+          [
+            2023,
+            1.0074103633330016
+          ],
+          [
+            2024,
+            1.009211339343391
+          ],
+          [
+            2024,
+            1.011012107648153
+          ],
+          [
+            2025,
+            1.012812656064122
+          ]
+        ],
+        "explanation": "Plateau: volume stabilizes near the S-curve peak; incremental improvements dominate."
+      },
+      "0": {
+        "stage": "growth",
+        "params": {
+          "L": 29.999999999999996,
+          "k": 0.5965119031026443,
+          "t0": 15.847936624544456
+        },
+        "fitted": [
+          [
+            2013,
+            0.0023522949158844516
+          ],
+          [
+            2013,
+            0.0034284213146272523
+          ],
+          [
+            2014,
+            0.004996771337098569
+          ],
+          [
+            2014,
+            0.007282397449643764
+          ],
+          [
+            2015,
+            0.010613146088913688
+          ],
+          [
+            2016,
+            0.015466492984506686
+          ],
+          [
+            2016,
+            0.022537586991583022
+          ],
+          [
+            2017,
+            0.0328379594096253
+          ],
+          [
+            2018,
+            0.04783840730627319
+          ],
+          [
+            2018,
+            0.06967515908954888
+          ],
+          [
+            2019,
+            0.10144595169165282
+          ],
+          [
+            2019,
+            0.1476322757509159
+          ],
+          [
+            2020,
+            0.21469531885434429
+          ],
+          [
+            2021,
+            0.31190394757664774
+          ],
+          [
+            2021,
+            0.45245759847318057
+          ],
+          [
+            2022,
+            0.6549518077107203
+          ],
+          [
+            2023,
+            0.9451719493625625
+          ],
+          [
+            2023,
+            1.3580420396102044
+          ],
+          [
+            2024,
+            1.9392248660933822
+          ],
+          [
+            2025,
+            2.7452890903462825
+          ]
+        ],
+        "explanation": "Rapid uptake: yearly counts are rising on the fitted S-curve upswing."
+      }
+    },
+    "events": [
+      {
+        "year": 2013,
+        "topic_id": 0,
+        "type": "emerge",
+        "keywords": [
+          "warfare",
+          "physical adsorption",
+          "adsorbents",
+          "search detection",
+          "dnn detections",
+          "multi layer",
+          "feature",
+          "agents",
+          "fusion",
+          "cwas"
+        ],
+        "count": 1,
+        "why": "Topic 0 first appears in 2013 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "The emergence in 2013 reflects a growing focus on physical adsorption mechanisms within warfare-related contexts, driven by advanced DNN detection methods. The multi-layer feature analysis highlights increasing complexity in identifying adsorbent agents. This trend is expected to significantly shape industry R&D over the next five years, emphasizing smarter material detection.",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2018,
+        "topic_id": 1,
+        "type": "emerge",
+        "keywords": [
+          "autopilot",
+          "sensor",
+          "controller",
+          "missile detection",
+          "movement prediction",
+          "kalman filter",
+          "detection destruction",
+          "firefly algorithm",
+          "sonar",
+          "online learning"
+        ],
+        "count": 1,
+        "why": "Topic 1 first appears in 2018 with 1 document(s); keyword overlap vs prior windows was zero.",
+        "llm_explanation": "ROOT CAUSE \u2013 The 2018 emergence of integrated autopilot\u2011sensor\u2011controller systems for missile detection was triggered by the sudden proliferation of low\u2011cost LIDAR and high\u2011resolution radar sensors, which finally provided the data density required for real\u2011time movement prediction.  \nINFLUENCING TECHNOLOGY \u2013 The adoption of Kalman\u2011filter\u2011based state estimation combined with the Firefly algorithm for sensor\u2011fusion optimization enabled rapid, robust missile trajectory prediction and automated counter\u2011measure deployment.  \n5\u2011YEAR IMPACT \u2013 Within five years, this convergence has shifted defense R&D toward autonomous, network\u2011centric missile defense platforms, reducing human operator workload and enabling scalable, cost\u2011effective deployment of adaptive detection\u2011destruction systems across naval and air\u2011borne assets.",
+        "llm_source": "openrouter"
+      },
+      {
+        "year": 2025,
+        "topic_id": 0,
+        "type": "grow",
+        "keywords": [
+          "warfare",
+          "physical adsorption",
+          "adsorbents",
+          "search detection",
+          "dnn detections",
+          "multi layer",
+          "feature",
+          "agents",
+          "fusion",
+          "cwas"
+        ],
+        "count": 3,
+        "why": "Publication volume for topic 0 rose 1\u21923 (200% YoY).",
+        "llm_explanation": "Volume for \u00abwarfare, physical adsorption, adsorbents, search detection\u00bb rose in 2025 because adjacent tooling matured and researchers consolidated on \u00abwarfare, physical adsorption, adsorbents, search detection, dnn detections, multi layer, feature, agents\u00bb after successful benchmarks\u2014classic growth-phase adoption. A proximate cause is co-evolution with \u00abCorpus signal: Publication volume for topic 0 rose 1\u21923 (200% YoY).\u00bb. Over the next five years, expect consolidation around whichever sub-topic keeps gaining citations in this corpus. Signal: Publication volume for topic 0 rose 1\u21923 (200% YoY)..",
+        "llm_source": "contextual_fallback"
+      }
+    ],
+    "why": "Per-topic yearly counts were fitted to a logistic S-curve to assign lifecycle stages. Change events are detected by diffing topic presence and volume across years and measuring keyword overlap between co-active clusters.",
+    "weak_signals": [
+      {
+        "topic_id": 0,
+        "label": "warfare, physical adsorption, adsorbents, search detection",
+        "keywords": [
+          "warfare",
+          "physical adsorption",
+          "adsorbents",
+          "search detection",
+          "dnn detections",
+          "multi layer"
+        ],
+        "growth_rate": 2.0,
+        "why": "Small cluster (n=7) with fast growth 1\u21923 papers\u2014flagged as a weak signal because breakthrough topics often start with low volume but high acceleration."
+      }
+    ]
+  },
+  "reasoning": {
+    "influence": [
+      {
+        "from": "Deep\u2011Neural\u2011Network (DNN) detection",
+        "to": "Physical adsorption\u2011based sensors",
+        "relation": "enables",
+        "reason": "DNNs process high\u2011dimensional signal patterns from adsorbent\u2011derived chemical signatures, boosting real\u2011time battlefield contaminant detection.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Traditional radar missile detection",
+        "to": "AI\u2011driven sensor fusion autopilot",
+        "relation": "displaces",
+        "reason": "End\u2011to\u2011end neural controllers replace legacy radar\u2011only trackers by fusing multi\u2011modal sensor streams (IR, RF, LIDAR) within the autopilot loop, reducing latency and false alarms.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Advanced metal\u2011organic framework (MOF) adsorbents",
+        "to": "Search\u2011and\u2011rescue detection drones",
+        "relation": "enables",
+        "reason": "MOFs provide selective capture of trace explosives; drones equipped with MOF\u2011coated sampling probes can autonomously locate hidden ordnance, expanding the operational envelope of search missions.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Mechanical hydraulic controllers",
+        "to": "Electric\u2011actuated autopilot controllers",
+        "relation": "displaces",
+        "reason": "Electro\u2011motor torque vectors, governed by predictive algorithms, eliminate hydraulic lag and weight, enabling faster maneuvering in missile\u2011evasion scenarios.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Quantum\u2011enhanced sensor arrays",
+        "to": "Missile detection pipelines",
+        "relation": "enables",
+        "reason": "Quantum entangled photon detectors increase signal\u2011to\u2011noise ratio for infrared plume signatures, allowing earlier missile launch identification within existing detection chains.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Conventional adsorbent cartridges",
+        "to": "Regenerable nano\u2011structured adsorbents",
+        "relation": "displaces",
+        "reason": "Nanoporous carbon lattices can be thermally cycled in\u2011field, removing the need for disposable cartridge replacement in prolonged combat filtration systems.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Edge\u2011computing autopilot modules",
+        "to": "Real\u2011time movement prediction",
+        "relation": "enables",
+        "reason": "On\u2011board GPUs execute recurrent neural networks that ingest sensor feeds and output trajectory forecasts within milliseconds, improving intercept accuracy.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      },
+      {
+        "from": "Manual search\u2011and\u2011detect teams",
+        "to": "Autonomous DNN\u2011guided detection swarms",
+        "relation": "displaces",
+        "reason": "Coordinated swarms run distributed DNN inference on captured adsorption data, reducing human exposure and scaling detection coverage beyond line\u2011of\u2011sight limits.",
+        "why": "LLM inferred enablement/displacement from cluster themes and publication dynamics."
+      }
+    ],
+    "sao": {
+      "1": {
+        "triples": [
+          {
+            "subject": "Prediction",
+            "action": "base",
+            "object": "Filter"
+          },
+          {
+            "subject": "research",
+            "action": "try",
+            "object": "method"
+          },
+          {
+            "subject": "it",
+            "action": "expect",
+            "object": "evaluation"
+          },
+          {
+            "subject": "research",
+            "action": "use",
+            "object": "algorithm"
+          },
+          {
+            "subject": "paper",
+            "action": "give",
+            "object": "idea"
+          },
+          {
+            "subject": "system",
+            "action": "make",
+            "object": "missile"
+          },
+          {
+            "subject": "system",
+            "action": "base",
+            "object": "sensor"
+          },
+          {
+            "subject": "it",
+            "action": "have",
+            "object": "transducer"
+          },
+          {
+            "subject": "transducer",
+            "action": "connect",
+            "object": "connected"
+          },
+          {
+            "subject": "it",
+            "action": "detect",
+            "object": "object"
+          },
+          {
+            "subject": "it",
+            "action": "assure",
+            "object": "object"
+          },
+          {
+            "subject": "Augmentation",
+            "action": "optimize",
+            "object": "Autopilot"
+          },
+          {
+            "subject": "paper",
+            "action": "investigate",
+            "object": "application"
+          },
+          {
+            "subject": "autopilot",
+            "action": "base",
+            "object": "missile"
+          },
+          {
+            "subject": "autopilot",
+            "action": "construct",
+            "object": "controller"
+          },
+          {
+            "subject": "simulation",
+            "action": "show",
+            "object": "performance"
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "base",
+            "count": 3
+          },
+          {
+            "action": "try",
+            "count": 1
+          },
+          {
+            "action": "expect",
+            "count": 1
+          },
+          {
+            "action": "use",
+            "count": 1
+          },
+          {
+            "action": "give",
+            "count": 1
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      },
+      "0": {
+        "triples": [
+          {
+            "subject": "threat",
+            "action": "intensify",
+            "object": "rise"
+          },
+          {
+            "subject": "it",
+            "action": "use",
+            "object": "AI"
+          },
+          {
+            "subject": "operation",
+            "action": "drive",
+            "object": "law"
+          },
+          {
+            "subject": "AI",
+            "action": "have",
+            "object": "field"
+          },
+          {
+            "subject": "paper",
+            "action": "propose",
+            "object": "countermeasure"
+          },
+          {
+            "subject": "Performance",
+            "action": "treat",
+            "object": "Carbon"
+          },
+          {
+            "subject": "countermeasure",
+            "action": "involve",
+            "object": "adsorption"
+          },
+          {
+            "subject": "we",
+            "action": "investigate",
+            "object": "study"
+          },
+          {
+            "subject": "finding",
+            "action": "reveal",
+            "object": "property"
+          },
+          {
+            "subject": "we",
+            "action": "identify",
+            "object": "potential"
+          },
+          {
+            "subject": "we",
+            "action": "demonstrate",
+            "object": "introduction"
+          },
+          {
+            "subject": "carbon",
+            "action": "activate",
+            "object": "area"
+          },
+          {
+            "subject": "research",
+            "action": "pave",
+            "object": "way"
+          },
+          {
+            "subject": "we",
+            "action": "demonstrate",
+            "object": "object"
+          },
+          {
+            "subject": "score",
+            "action": "compute",
+            "object": "algorithm"
+          },
+          {
+            "subject": "detection",
+            "action": "fuse",
+            "object": "object"
+          },
+          {
+            "subject": "we",
+            "action": "demonstrate",
+            "object": "utility"
+          },
+          {
+            "subject": "result",
+            "action": "demonstrate",
+            "object": "detection"
+          },
+          {
+            "subject": "approach",
+            "action": "demonstrate",
+            "object": "variety"
+          },
+          {
+            "subject": "Dragon",
+            "action": "consider",
+            "object": "Doctrine"
+          },
+          {
+            "subject": "we",
+            "action": "explore",
+            "object": "excerpt"
+          },
+          {
+            "subject": "we",
+            "action": "examine",
+            "object": "idea"
+          },
+          {
+            "subject": "we",
+            "action": "look",
+            "object": "study"
+          },
+          {
+            "subject": "law",
+            "action": "base",
+            "object": "research"
+          },
+          {
+            "subject": "missile",
+            "action": "guide",
+            "object": ""
+          }
+        ],
+        "dominant_actions": [
+          {
+            "action": "demonstrate",
+            "count": 5
+          },
+          {
+            "action": "drive",
+            "count": 3
+          },
+          {
+            "action": "propose",
+            "count": 3
+          },
+          {
+            "action": "base",
+            "count": 3
+          },
+          {
+            "action": "guide",
+            "count": 3
+          }
+        ],
+        "why": "spaCy dependency parsing extracted Subject\u2013Action\u2013Object patterns from abstracts; dominant verbs summarize what each cluster *does* technologically."
+      }
+    },
+    "why_influence": "Edges represent enabling or displacing relationships inferred from cluster themes and LLM foresight reasoning."
+  },
+  "scenarios": {
+    "drivers": [
+      {
+        "axis": "Adoption velocity",
+        "description": "2 emerging topic(s) create uncertainty about which technology will cross the chasm first.",
+        "why": "Derived from emerge events\u2014new clusters increase adoption-path uncertainty."
+      },
+      {
+        "axis": "Regulatory clarity",
+        "description": "Policy and standards may accelerate or block deployment of key clusters.",
+        "why": "Default driver when causal events were insufficient\u2014common foresight axis."
+      }
+    ],
+    "axis_labels": {
+      "x": "Adoption velocity",
+      "y": "Regulatory clarity"
+    },
+    "scenarios": {
+      "optimistic": {
+        "tone": "optimistic",
+        "title": "Optimistic",
+        "color": "#22C55E",
+        "narrative": "This scenario follows the uncertainty drivers and dominant topic trends in your corpus\u2014technologies with rising publication share gain leverage, while constrained or stagnant futures assume slower adoption or regulatory friction.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 high Regulatory clarity quadrant using cluster themes and detected evolution events."
+      },
+      "disruptive": {
+        "tone": "disruptive",
+        "title": "Disruptive",
+        "color": "#EF4444",
+        "narrative": "The rapid, market\u2011driven rollout of AI\u2011controlled autopilot platforms combined with next\u2011generation nano\u2011adsorbent sensor arrays enables autonomous drones to sniff out and neutralize hostile missile launches in real time, while the same nano\u2011adsorbent coatings are being repurposed for battlefield\u2011grade chemical\u2011adsorption blankets that can be sprayed from those drones. Because adoption pressure is extreme and regulatory frameworks for autonomous weapon\u2011systems and advanced adsorption materials remain ambiguous, firms and militaries race to field \u201cself\u2011purifying strike\u201d kits that fuse autopilot\u2011guided missile\u2011detection algorithms with real\u2011time adsorption\u2011based threat\u2011neutralisation, creating a feedback loop that accelerates both deployment and the erosion of oversight.",
+        "why": "Narrative generated for high Adoption velocity \u00d7 low Regulatory clarity quadrant using cluster themes and detected evolution events."
+      },
+      "constrained": {
+        "tone": "constrained",
+        "title": "Constrained",
+        "color": "#F59E0B",
+        "narrative": "This scenario follows the uncertainty drivers and dominant topic trends in your corpus\u2014technologies with rising publication share gain leverage, while constrained or stagnant futures assume slower adoption or regulatory friction.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 high Regulatory clarity quadrant using cluster themes and detected evolution events."
+      },
+      "stagnant": {
+        "tone": "stagnant",
+        "title": "Stagnant",
+        "color": "#6B7280",
+        "narrative": "This scenario follows the uncertainty drivers and dominant topic trends in your corpus\u2014technologies with rising publication share gain leverage, while constrained or stagnant futures assume slower adoption or regulatory friction.",
+        "why": "Narrative generated for low Adoption velocity \u00d7 low Regulatory clarity quadrant using cluster themes and detected evolution events."
+      }
+    },
+    "why": "Four scenarios span the 2\u00d72 space of the two largest uncertainty drivers extracted from causal events.",
+    "impact_trees": {
+      "optimistic": {
+        "tree": {
+          "name": "warfare, physical adsorption, adsorbents, search detection",
+          "node_type": "main",
+          "why": "Optimistic forecast for warfare, physical adsorption, adsorbents, search detection: 1 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 2,
+          "branch_count": 1,
+          "scenario": "optimistic",
+          "children": [
+            {
+              "name": "autopilot, sensor, controller, missile detection",
+              "node_type": "evolving",
+              "trend": "emerging / maturing",
+              "path_sources": [
+                "cluster",
+                "event"
+              ],
+              "path_count": 2,
+              "why": "Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2018\u20132025). Topic 1 first appears in 2018 with 1 document(s); keyword overlap vs prior windows was zero.",
+              "children": [
+                {
+                  "name": "Stable complement to warfare, physical adsorption, adsorbents, search detection",
+                  "node_type": "impact",
+                  "why": "autopilot, sensor, controller, missile detection maturing\u2014incremental improvements rather than disruption for warfare, physical adsorption, adsorbents, search detection.",
+                  "children": []
+                },
+                {
+                  "name": "New competitive surface for warfare, physical adsorption, adsorbents, search detection",
+                  "node_type": "impact",
+                  "why": "autopilot, sensor, controller, missile detection emerged (2018)\u2014early mover advantage may reshape warfare, physical adsorption, adsorbents, search detection's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle autopilot, sensor, controller, missile detection with warfare, physical adsorption, adsorbents, search detection before the trend consolidates.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "warfare, physical adsorption, adsorbents, search detection",
+        "paths_discovered": 2,
+        "paths_in_scenario": 2,
+        "branch_count": 1,
+        "why": "This Optimistic tree shows 1 branch(es) from 2 prioritized path(s) out of 2 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "disruptive": {
+        "tree": {
+          "name": "warfare, physical adsorption, adsorbents, search detection",
+          "node_type": "main",
+          "why": "Disruptive forecast for warfare, physical adsorption, adsorbents, search detection: 1 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 2,
+          "branch_count": 1,
+          "scenario": "disruptive",
+          "children": [
+            {
+              "name": "autopilot, sensor, controller, missile detection",
+              "node_type": "evolving",
+              "trend": "emerging / maturing",
+              "path_sources": [
+                "cluster",
+                "event"
+              ],
+              "path_count": 2,
+              "why": "Topic 1 first appears in 2018 with 1 document(s); keyword overlap vs prior windows was zero. Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2018\u20132025).",
+              "children": [
+                {
+                  "name": "New competitive surface for warfare, physical adsorption, adsorbents, search detection",
+                  "node_type": "impact",
+                  "why": "autopilot, sensor, controller, missile detection emerged (2018)\u2014early mover advantage may reshape warfare, physical adsorption, adsorbents, search detection's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle autopilot, sensor, controller, missile detection with warfare, physical adsorption, adsorbents, search detection before the trend consolidates.",
+                  "children": []
+                },
+                {
+                  "name": "Stable complement to warfare, physical adsorption, adsorbents, search detection",
+                  "node_type": "impact",
+                  "why": "autopilot, sensor, controller, missile detection maturing\u2014incremental improvements rather than disruption for warfare, physical adsorption, adsorbents, search detection.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "warfare, physical adsorption, adsorbents, search detection",
+        "paths_discovered": 2,
+        "paths_in_scenario": 2,
+        "branch_count": 1,
+        "why": "This Disruptive tree shows 1 branch(es) from 2 prioritized path(s) out of 2 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "constrained": {
+        "tree": {
+          "name": "warfare, physical adsorption, adsorbents, search detection",
+          "node_type": "main",
+          "why": "Constrained forecast for warfare, physical adsorption, adsorbents, search detection: 1 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 1,
+          "branch_count": 1,
+          "scenario": "constrained",
+          "children": [
+            {
+              "name": "autopilot, sensor, controller, missile detection",
+              "node_type": "evolving",
+              "trend": "maturing",
+              "path_sources": [
+                "cluster"
+              ],
+              "path_count": 1,
+              "why": "Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2018\u20132025).",
+              "children": [
+                {
+                  "name": "Stable complement to warfare, physical adsorption, adsorbents, search detection",
+                  "node_type": "impact",
+                  "why": "autopilot, sensor, controller, missile detection maturing\u2014incremental improvements rather than disruption for warfare, physical adsorption, adsorbents, search detection.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "warfare, physical adsorption, adsorbents, search detection",
+        "paths_discovered": 2,
+        "paths_in_scenario": 1,
+        "branch_count": 1,
+        "why": "This Constrained tree shows 1 branch(es) from 1 prioritized path(s) out of 2 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      },
+      "stagnant": {
+        "tree": {
+          "name": "warfare, physical adsorption, adsorbents, search detection",
+          "node_type": "main",
+          "why": "Stagnant forecast for warfare, physical adsorption, adsorbents, search detection: 1 impact path(s) discovered from influence edges, change events, clusters, and weak signals.",
+          "path_count": 2,
+          "branch_count": 1,
+          "scenario": "stagnant",
+          "children": [
+            {
+              "name": "autopilot, sensor, controller, missile detection",
+              "node_type": "evolving",
+              "trend": "emerging / maturing",
+              "path_sources": [
+                "cluster",
+                "event"
+              ],
+              "path_count": 2,
+              "why": "Topic 1 first appears in 2018 with 1 document(s); keyword overlap vs prior windows was zero. Separate topic cluster at maturity lifecycle. Volume 1\u21921 (2018\u20132025).",
+              "children": [
+                {
+                  "name": "New competitive surface for warfare, physical adsorption, adsorbents, search detection",
+                  "node_type": "impact",
+                  "why": "autopilot, sensor, controller, missile detection emerged (2018)\u2014early mover advantage may reshape warfare, physical adsorption, adsorbents, search detection's niche.",
+                  "children": []
+                },
+                {
+                  "name": "Partnership / acquisition target",
+                  "node_type": "impact",
+                  "why": "Firms may bundle autopilot, sensor, controller, missile detection with warfare, physical adsorption, adsorbents, search detection before the trend consolidates.",
+                  "children": []
+                },
+                {
+                  "name": "Stable complement to warfare, physical adsorption, adsorbents, search detection",
+                  "node_type": "impact",
+                  "why": "autopilot, sensor, controller, missile detection maturing\u2014incremental improvements rather than disruption for warfare, physical adsorption, adsorbents, search detection.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "main_technology": "warfare, physical adsorption, adsorbents, search detection",
+        "paths_discovered": 2,
+        "paths_in_scenario": 2,
+        "branch_count": 1,
+        "why": "This Stagnant tree shows 1 branch(es) from 2 prioritized path(s) out of 2 discovered in the corpus (influence edges, change events, clusters, weak signals). Each scenario ranks paths differently."
+      }
+    }
+  },
+  "source_breakdown": {
+    "arxiv": 10,
+    "uploaded": 0
+  }
+}

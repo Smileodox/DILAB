@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}Upload — Technology Foresight{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <h1>Build your foresight corpus</h1>
+  <p class="lead">Upload research PDFs and patent JSON, or fetch papers from Semantic Scholar. Both sources merge into one analysis pipeline.</p>
+</section>
+
+<div class="upload-grid">
+  <div class="card">
+    <h2>Local documents</h2>
+    <p class="card-hint">Drag & drop PDF research papers and/or patent data (JSON).</p>
+    <div id="drop-zone" class="drop-zone" tabindex="0">
+      <p class="drop-zone-title">Drop files here</p>
+      <p class="drop-zone-sub">or click to browse</p>
+      <input type="file" id="file-input" multiple accept=".pdf,.json" hidden>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Semantic Scholar search</h2>
+    <p class="card-hint">Enter any technology domain (e.g. quantum computing, renewable energy, biotechnology). Add a future year like <strong>2035</strong> as your forecast horizon — it guides scenarios but does not filter paper search.</p>
+    <div class="scholar-form">
+      <input type="text" id="scholar-query" placeholder="quantum computing 2035" class="input-text">
+      <label class="inline-label">
+        Papers
+        <input type="number" id="scholar-count" value="20" min="1" max="100" class="input-number">
+      </label>
+      <button type="button" id="scholar-fetch-btn" class="btn btn-secondary">Fetch preview</button>
+    </div>
+    <p id="scholar-status" class="scholar-status hidden" role="status"></p>
+    <ul id="scholar-preview-list" class="preview-list"></ul>
+  </div>
+</div>
+
+<div class="card combined-preview-card">
+  <h2>Corpus preview</h2>
+  <p class="card-hint why-text">Documents from both sources are labeled <span class="pill">scholar</span> or <span class="pill">uploaded</span> and merged before clustering.</p>
+  <ul id="combined-preview" class="preview-list combined-list"></ul>
+  <p id="empty-preview" class="empty-state">No documents yet — upload files or fetch Semantic Scholar papers.</p>
+</div>
+
+<div class="card actions-card">
+  <button type="button" id="run-btn" class="btn btn-primary" disabled>Run Analysis</button>
+  <div id="progress-wrap" class="progress-wrap hidden">
+    <div class="progress-label-row">
+      <span id="progress-label">Starting…</span>
+      <span id="progress-pct">0%</span>
+    </div>
+    <div class="progress-track">
+      <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+    </div>
+    <ol class="progress-steps">
+      <li data-stage="ingesting">Ingesting</li>
+      <li data-stage="embedding">Embedding</li>
+      <li data-stage="clustering">Clustering</li>
+      <li data-stage="evolution">Computing evolution</li>
+      <li data-stage="reasoning">LLM reasoning</li>
+      <li data-stage="scenarios">Building scenarios</li>
+      <li data-stage="done">Done</li>
+    </ol>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,286 @@
+[
+  {
+    "title": "Deep Learning Based Situation Awareness for Multiple Missiles Evasion",
+    "abstract": "As the effective range of air-to-air missiles increases, it becomes harder for human operators to maintain the situational awareness needed to keep a UAV safe. In this work, we propose a decision support tool to help UAV operators in Beyond Visual Range (BVR) air combat scenarios assess the risks of different options and make decisions based on those. Earlier work focused on the threat posed by a single missile, and in this work, we extend the ideas to several missile threats. The proposed method uses Deep Neural Networks (DNN) to learn from high-fidelity simulations to provide the operator with an outcome estimate for a set of different strategies. Our results demonstrate that the proposed system can manage multiple incoming missiles, evaluate a family of options, and recommend the least risky course of action.",
+    "authors": [
+      "Edvards Scukins",
+      "Markus Klein",
+      "Lars Kroon",
+      "Petter \u00d6gren"
+    ],
+    "published": "2024-02-07",
+    "year": 2024,
+    "arxiv_id": "2402.10101v1",
+    "category": "cs.LG",
+    "source": "arxiv",
+    "text": "Deep Learning Based Situation Awareness for Multiple Missiles Evasion\n\nAs the effective range of air-to-air missiles increases, it becomes harder for human operators to maintain the situational awareness needed to keep a UAV safe. In this work, we propose a decision support tool to help UAV operators in Beyond Visual Range (BVR) air combat scenarios assess the risks of different options and make decisions based on those. Earlier work focused on the threat posed by a single missile, and in this work, we extend the ideas to several missile threats. The proposed method uses Deep Neural Networks (DNN) to learn from high-fidelity simulations to provide the operator with an outcome estimate for a set of different strategies. Our results demonstrate that the proposed system can manage multiple incoming missiles, evaluate a family of options, and recommend the least risky course of action."
+  },
+  {
+    "title": "Cruise Missile Target Trajectory Movement Prediction based on Optimal 3D Kalman Filter with Firefly Algorithm",
+    "abstract": "It is hoped that there will never be a war in the world, but one of the defensive requirements of any country during the war is the missiles used for destruction and defense. Todays, missiles movement from origin to destination is an important problem due to abundant application of missiles in wars. This is important because of the range of some missiles is low and other are very high. Parametric indeterminacy are several factors in missile movement prediction and trajectory such as speed, movement angle, accuracy, movement time, and situation and direct control. So this research trying to provide a method based on LQR controller with 3d Kalman filter and then set motion and specify path without deviations based on Firefly Algorithm. It is expected that the results of an appropriate evaluation can be obtained by simulating the MATLAB environment and graphic display of a cruise missile.",
+    "authors": [
+      "Mahdi Mir"
+    ],
+    "published": "2018-07-18",
+    "year": 2018,
+    "arxiv_id": "1807.07006v1",
+    "category": "eess.SP",
+    "source": "arxiv",
+    "text": "Cruise Missile Target Trajectory Movement Prediction based on Optimal 3D Kalman Filter with Firefly Algorithm\n\nIt is hoped that there will never be a war in the world, but one of the defensive requirements of any country during the war is the missiles used for destruction and defense. Todays, missiles movement from origin to destination is an important problem due to abundant application of missiles in wars. This is important because of the range of some missiles is low and other are very high. Parametric indeterminacy are several factors in missile movement prediction and trajectory such as speed, movement angle, accuracy, movement time, and situation and direct control. So this research trying to provide a method based on LQR controller with 3d Kalman filter and then set motion and specify path without deviations based on Firefly Algorithm. It is expected that the results of an appropriate evaluation can be obtained by simulating the MATLAB environment and graphic display of a cruise missile."
+  },
+  {
+    "title": "Robust control for uncertain air-to-air missile systems",
+    "abstract": "Air-to-air missiles are used on many modern military combat aircraft for self-defence. It is imperative for the pilots using the weapons that the missiles hit their target first time. The important goals for a missile control system to achieve are minimising the time constant, overshoot, and settling time of the missile dynamics. The combination of high angles of attack, time-varying mass, thrust, and centre of gravity, actuator delay, and signal noise create a highly non-linear dynamic system with many uncertainties that is extremely challenging to control. A robust control system based on saturated sliding mode control is proposed to overcome the time-varying parameters and non-linearities. A lag compensator is designed to overcome actuator delay. A second-order filter is selected to reduce high-frequency measurement noise. When combined, the proposed solutions can make the system stable despite the existence of changing mass, centre of gravity, thrust, and sensor noise. The system was evaluated for desired pitch angles of 0\u00b0 to 90\u00b0. The time constant for the system stayed below 0.27s for all conditions, with satisfactory performance for both settling time and overshoot.",
+    "authors": [
+      "Joshua Farrington",
+      "Xinhua Wang"
+    ],
+    "published": "2024-11-12",
+    "year": 2024,
+    "arxiv_id": "2411.07593v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Robust control for uncertain air-to-air missile systems\n\nAir-to-air missiles are used on many modern military combat aircraft for self-defence. It is imperative for the pilots using the weapons that the missiles hit their target first time. The important goals for a missile control system to achieve are minimising the time constant, overshoot, and settling time of the missile dynamics. The combination of high angles of attack, time-varying mass, thrust, and centre of gravity, actuator delay, and signal noise create a highly non-linear dynamic system with many uncertainties that is extremely challenging to control. A robust control system based on saturated sliding mode control is proposed to overcome the time-varying parameters and non-linearities. A lag compensator is designed to overcome actuator delay. A second-order filter is selected to reduce high-frequency measurement noise. When combined, the proposed solutions can make the system stable despite the existence of changing mass, centre of gravity, thrust, and sensor noise. The system was evaluated for desired pitch angles of 0\u00b0 to 90\u00b0. The time constant for the system stayed below 0.27s for all conditions, with satisfactory performance for both settling time and overshoot."
+  },
+  {
+    "title": "Advanced Prediction of Hypersonic Missile Trajectories with CNN-LSTM-GRU Architectures",
+    "abstract": "Advancements in the defense industry are paramount for ensuring the safety and security of nations, providing robust protection against emerging threats. Among these threats, hypersonic missiles pose a significant challenge due to their extreme speeds and maneuverability, making accurate trajectory prediction a critical necessity for effective countermeasures. This paper addresses this challenge by employing a novel hybrid deep learning approach, integrating Convolutional Neural Networks (CNNs), Long Short-Term Memory (LSTM) networks, and Gated Recurrent Units (GRUs). By leveraging the strengths of these architectures, the proposed method successfully predicts the complex trajectories of hypersonic missiles with high accuracy, offering a significant contribution to defense strategies and missile interception technologies. This research demonstrates the potential of advanced machine learning techniques in enhancing the predictive capabilities of defense systems.",
+    "authors": [
+      "Amir Hossein Baradaran"
+    ],
+    "published": "2025-03-20",
+    "year": 2025,
+    "arxiv_id": "2506.15043v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "Advanced Prediction of Hypersonic Missile Trajectories with CNN-LSTM-GRU Architectures\n\nAdvancements in the defense industry are paramount for ensuring the safety and security of nations, providing robust protection against emerging threats. Among these threats, hypersonic missiles pose a significant challenge due to their extreme speeds and maneuverability, making accurate trajectory prediction a critical necessity for effective countermeasures. This paper addresses this challenge by employing a novel hybrid deep learning approach, integrating Convolutional Neural Networks (CNNs), Long Short-Term Memory (LSTM) networks, and Gated Recurrent Units (GRUs). By leveraging the strengths of these architectures, the proposed method successfully predicts the complex trajectories of hypersonic missiles with high accuracy, offering a significant contribution to defense strategies and missile interception technologies. This research demonstrates the potential of advanced machine learning techniques in enhancing the predictive capabilities of defense systems."
+  },
+  {
+    "title": "Automatic planetary defense Deflecting NEOs by missiles shot from L1 and L3 (Earth-Moon)",
+    "abstract": "We develop the mathematical theory for an automatic, space-based system to deflect NEOs by virtue of missiles shot from the Earth-Moon L1 and L3 Lagrangian Points. A patent application has been filed for the relevant code dubbed AsterOFF (=Asteroids OFF !). This code was already implemented, and a copyright for it was registered. In a paper published in Acta Astronautica, this author proved mathematically the following theorem: \"Within the sphere of influence of the Earth, any NEO could be hit by a missile at just an angle of 90 degrees, was the missile shot from the Lagrangian Points L1 or L3 of the Earth-Moon system, rather than from the surface of the Earth\". As a consequence, the hitting missile would have to move along a \"confocal ellipse\" (centered at the Earth) uniquely determined by the NEO's incoming hyperbola. The author further shows in this paper that: 1) The proposed defense system would be ideal to deflect NEOs that are small, i.e. less than one kilometer in diameter. 2) The traditional theory of Keplerian orbits can successfully be applied to get an excellent first-order approximation of the mathematical formulae of the energy-momentum requested to achieve the NEO deflection. Many engineering details about the missiles shot from L1 and L3, however, still have to be implemented into our simulations. 3) Was one missile not enough to deflect the NEO completely, it is a great advantage of the \"confocal conics\" used here that the new, slightly deflected NEO's hyperbola would certainly be hit at nearly 90 degrees by another and slightly more eccentric elliptical missile trajectory. A sufficient number of missiles could thus be launched in a sequence from the Earth-Moon Lagrangian points L1 and L3 with the result that the SUM of all these small and repeated deflections will finally throw the NEO off its collision hyperbola with the Earth.",
+    "authors": [
+      "Claudio Maccone"
+    ],
+    "published": "2021-03-22",
+    "year": 2021,
+    "arxiv_id": "2103.13304v1",
+    "category": "astro-ph.EP",
+    "source": "arxiv",
+    "text": "Automatic planetary defense Deflecting NEOs by missiles shot from L1 and L3 (Earth-Moon)\n\nWe develop the mathematical theory for an automatic, space-based system to deflect NEOs by virtue of missiles shot from the Earth-Moon L1 and L3 Lagrangian Points. A patent application has been filed for the relevant code dubbed AsterOFF (=Asteroids OFF !). This code was already implemented, and a copyright for it was registered. In a paper published in Acta Astronautica, this author proved mathematically the following theorem: \"Within the sphere of influence of the Earth, any NEO could be hit by a missile at just an angle of 90 degrees, was the missile shot from the Lagrangian Points L1 or L3 of the Earth-Moon system, rather than from the surface of the Earth\". As a consequence, the hitting missile would have to move along a \"confocal ellipse\" (centered at the Earth) uniquely determined by the NEO's incoming hyperbola. The author further shows in this paper that: 1) The proposed defense system would be ideal to deflect NEOs that are small, i.e. less than one kilometer in diameter. 2) The traditional theory of Keplerian orbits can successfully be applied to get an excellent first-order approximation of the mathematical formulae of the energy-momentum requested to achieve the NEO deflection. Many engineering details about the missiles shot from L1 and L3, however, still have to be implemented into our simulations. 3) Was one missile not enough to deflect the NEO completely, it is a great advantage of the \"confocal conics\" used here that the new, slightly deflected NEO's hyperbola would certainly be hit at nearly 90 degrees by another and slightly more eccentric elliptical missile trajectory. A sufficient number of missiles could thus be launched in a sequence from the Earth-Moon Lagrangian points L1 and L3 with the result that the SUM of all these small and repeated deflections will finally throw the NEO off its collision hyperbola with the Earth."
+  },
+  {
+    "title": "Advancing Network Securing Strategies with Network Algorithms for Integrated Air Defense System (IADS) Missile Batteries",
+    "abstract": "Recently, the Integrated Air Defense System (IADS) has become vital for the defense system as the military defense system is vital for national security. Placing Integrated Air Defense System batteries among locations to protect locations assets is a crucial problem because optimal solutions are needed for interceptor missiles to intercept attacker missiles for maximizing protection of assets across locations or places. In this research, the procedures of using network algorithms along with developing several network algorithms are going to be demonstrated to develop a model for sequential development of seven network securing strategies of placing Surface to Air Missile (SAM) batteries to maximize the protection of assets across locations (based on given asset values) by generating optimal solutions through computation to destroy maximum attacker missiles by using minimum interceptor missiles with given intercept probability. This network securing strategies can be implemented not only for Integrated Air Defense System (IADS) planning but also Counter Air (CA) planning as Integrated Air Defense System (IADS) is conducted with defensive counter air supported by attack operations in offensive counter air.",
+    "authors": [
+      "Rakib Hassan Pran"
+    ],
+    "published": "2023-03-13",
+    "year": 2023,
+    "arxiv_id": "2303.11293v3",
+    "category": "cs.SI",
+    "source": "arxiv",
+    "text": "Advancing Network Securing Strategies with Network Algorithms for Integrated Air Defense System (IADS) Missile Batteries\n\nRecently, the Integrated Air Defense System (IADS) has become vital for the defense system as the military defense system is vital for national security. Placing Integrated Air Defense System batteries among locations to protect locations assets is a crucial problem because optimal solutions are needed for interceptor missiles to intercept attacker missiles for maximizing protection of assets across locations or places. In this research, the procedures of using network algorithms along with developing several network algorithms are going to be demonstrated to develop a model for sequential development of seven network securing strategies of placing Surface to Air Missile (SAM) batteries to maximize the protection of assets across locations (based on given asset values) by generating optimal solutions through computation to destroy maximum attacker missiles by using minimum interceptor missiles with given intercept probability. This network securing strategies can be implemented not only for Integrated Air Defense System (IADS) planning but also Counter Air (CA) planning as Integrated Air Defense System (IADS) is conducted with defensive counter air supported by attack operations in offensive counter air."
+  },
+  {
+    "title": "Future state prediction based on observer for missile system",
+    "abstract": "Guided missile accuracy and precision is negatively impacted by seeker delay, more specifically by the delay introduced by a mechanical seeker gimbal and the computational time taken to process the raw data. To meet the demands and expectations of modern missiles systems, the impact of this hardware limitation must be reduced. This paper presents a new observer design that predicts the future state of a seeker signal, augmenting the guidance system to mitigate the effects of this delay. The design is based on a novel two-step differentiator, which produces the estimated future time derivatives of the signal. The input signal can be nonlinear and provides for simple integration into existing systems. A bespoke numerical guided missile simulation is used to demonstrate the performance of the observer within a missile guidance system. Both non-manoeuvring and randomly manoeuvring target engagement scenarios are considered.",
+    "authors": [
+      "W. K. Smithson",
+      "Xinhua Wang"
+    ],
+    "published": "2024-11-13",
+    "year": 2024,
+    "arxiv_id": "2411.08576v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Future state prediction based on observer for missile system\n\nGuided missile accuracy and precision is negatively impacted by seeker delay, more specifically by the delay introduced by a mechanical seeker gimbal and the computational time taken to process the raw data. To meet the demands and expectations of modern missiles systems, the impact of this hardware limitation must be reduced. This paper presents a new observer design that predicts the future state of a seeker signal, augmenting the guidance system to mitigate the effects of this delay. The design is based on a novel two-step differentiator, which produces the estimated future time derivatives of the signal. The input signal can be nonlinear and provides for simple integration into existing systems. A bespoke numerical guided missile simulation is used to demonstrate the performance of the observer within a missile guidance system. Both non-manoeuvring and randomly manoeuvring target engagement scenarios are considered."
+  },
+  {
+    "title": "Learning-Based Multi-Stage Strategy for a Fixed-Wing Aircraft to Evade a Missile Detected at a Short Distance",
+    "abstract": "Missiles pose a major threat to aircraft in modern air combat. Advances in technology make them increasingly difficult to detect until they are close to the target and highly resistant to jamming. The evasion maneuver is the last line of defense for an aircraft. However, conventional rule-based evasion strategies are limited by computational demands and aerodynamic constraints, and existing learning-based approaches remain unconvincing for manned aircraft against modern missiles. To enhance aircraft survivability, this study investigates missile evasion inspired by the pursuit-evasion game between a gazelle and a cheetah and proposes a multi-stage reinforcement learning-based evasion strategy. The strategy learns a large azimuth policy to turn to evade, a small azimuth policy to keep moving away, and a short distance policy to perform agile aggressive maneuvers to avoid. One of the three policies is activated at each stage based on distance and azimuth. To evaluate performance, a high-fidelity simulation environment modeling an F-16 aircraft and missile under various conditions is used to compare the proposed approach with baseline strategies. Experimental results show that the proposed method achieves superior performance, enabling the F-16 aircraft to successfully avoid missiles with a probability of 80.89 percent for velocities ranging from 800 m/s to 1400 m/s, maximum overloads from 40 g to 50 g, detection distances from 5000 m to 15000 m, and random azimuths. When the missile is detected beyond 8000 m, the success ratio increases to 85.06 percent.",
+    "authors": [
+      "Zhiguan Niu",
+      "Xiaochao Zhou",
+      "Hao Xiong"
+    ],
+    "published": "2025-11-08",
+    "year": 2025,
+    "arxiv_id": "2511.05828v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Learning-Based Multi-Stage Strategy for a Fixed-Wing Aircraft to Evade a Missile Detected at a Short Distance\n\nMissiles pose a major threat to aircraft in modern air combat. Advances in technology make them increasingly difficult to detect until they are close to the target and highly resistant to jamming. The evasion maneuver is the last line of defense for an aircraft. However, conventional rule-based evasion strategies are limited by computational demands and aerodynamic constraints, and existing learning-based approaches remain unconvincing for manned aircraft against modern missiles. To enhance aircraft survivability, this study investigates missile evasion inspired by the pursuit-evasion game between a gazelle and a cheetah and proposes a multi-stage reinforcement learning-based evasion strategy. The strategy learns a large azimuth policy to turn to evade, a small azimuth policy to keep moving away, and a short distance policy to perform agile aggressive maneuvers to avoid. One of the three policies is activated at each stage based on distance and azimuth. To evaluate performance, a high-fidelity simulation environment modeling an F-16 aircraft and missile under various conditions is used to compare the proposed approach with baseline strategies. Experimental results show that the proposed method achieves superior performance, enabling the F-16 aircraft to successfully avoid missiles with a probability of 80.89 percent for velocities ranging from 800 m/s to 1400 m/s, maximum overloads from 40 g to 50 g, detection distances from 5000 m to 15000 m, and random azimuths. When the missile is detected beyond 8000 m, the success ratio increases to 85.06 percent."
+  },
+  {
+    "title": "A Multi-Layer Electronic and Cyber Interference Model for AI-Driven Cruise Missiles: The Case of Khuzestan Province",
+    "abstract": "The rapid advancement of Artificial Intelligence has enabled the development of cruise missiles endowed with high levels of autonomy, adaptability, and precision. These AI driven missiles integrating deep learning algorithms, real time data processing, and advanced guidance systems pose critical threats to strategic infrastructures, especially under complex geographic and climatic conditions such as those found in Irans Khuzestan Province. In this paper, we propose a multi layer interference model, encompassing electronic warfare, cyberattacks, and deception strategies, to degrade the performance of AI guided cruise missiles significantly. Our experimental results, derived from 400 simulation runs across four distinct scenarios, demonstrate notable improvements when employing the integrated multi layer approach compared to single layer or no interference baselines. Specifically, the average missile deviation from its intended target increases from 0.25 to 8.65 under multi layer interference a more than 3300 increase in angular deviation. Furthermore, the target acquisition success rate is reduced from 92.7 in the baseline scenario to 31.5, indicating a 66 decrease in successful strikes. While resource consumption for multi layer strategies rises by approximately 25 compared to single layer methods, the significant drop in missile accuracy and reliability justifies the more intensive deployment of jamming power, cyber resources, and decoy measures. Beyond these quantitative improvements, the proposed framework uses a deep reinforcement learning based defense coordinator to adaptively select the optimal configuration of EW, cyber, and deception tactics in real time.",
+    "authors": [
+      "Pouriya Alimoradi",
+      "Ali Barati",
+      "Hamid Barati"
+    ],
+    "published": "2025-10-03",
+    "year": 2025,
+    "arxiv_id": "2510.03542v1",
+    "category": "cs.CR",
+    "source": "arxiv",
+    "text": "A Multi-Layer Electronic and Cyber Interference Model for AI-Driven Cruise Missiles: The Case of Khuzestan Province\n\nThe rapid advancement of Artificial Intelligence has enabled the development of cruise missiles endowed with high levels of autonomy, adaptability, and precision. These AI driven missiles integrating deep learning algorithms, real time data processing, and advanced guidance systems pose critical threats to strategic infrastructures, especially under complex geographic and climatic conditions such as those found in Irans Khuzestan Province. In this paper, we propose a multi layer interference model, encompassing electronic warfare, cyberattacks, and deception strategies, to degrade the performance of AI guided cruise missiles significantly. Our experimental results, derived from 400 simulation runs across four distinct scenarios, demonstrate notable improvements when employing the integrated multi layer approach compared to single layer or no interference baselines. Specifically, the average missile deviation from its intended target increases from 0.25 to 8.65 under multi layer interference a more than 3300 increase in angular deviation. Furthermore, the target acquisition success rate is reduced from 92.7 in the baseline scenario to 31.5, indicating a 66 decrease in successful strikes. While resource consumption for multi layer strategies rises by approximately 25 compared to single layer methods, the significant drop in missile accuracy and reliability justifies the more intensive deployment of jamming power, cyber resources, and decoy measures. Beyond these quantitative improvements, the proposed framework uses a deep reinforcement learning based defense coordinator to adaptively select the optimal configuration of EW, cyber, and deception tactics in real time."
+  },
+  {
+    "title": "Energy-Optimal Control of a Submarine-Launched Cruise Missile",
+    "abstract": "A typical mission profile of submarine-launched cruise missiles begins with the launch phase which covers the motion of the missile from the launch to the water-exit and continues with the boost phase which lasts from the water-exit to the beginning of the cruise phase. In order to achieve the desired range of the launch and boost phases, efficient utilization of available energy which carries the missile to the beginning of the cruise phase is necessary. For this purpose, this study presents a new approach for energy-optimal control of the underwater and air motion of a submarine-launched cruise missile. In this approach, the aforementioned problem is modeled and solved as a minimum-effort optimal control problem. Then, the effects of initial and final conditions on energy need are investigated, and the optimal conditions that result with the minimum energy need are determined. Prior to the guidance and control design steps, six degrees of freedom (6 DOF) motion equations are derived and the hydrodynamic and aerodynamic parameters are retrieved. The nonlinear 6 DOF motion model is simplified and linearized before minimum-effort optimal control design part. Results of the designed guidance and control strategies are presented through the nonlinear 6 DOF simulations. Finally, some comments are made and future studies are mentioned based on theoretical and simulation studies.",
+    "authors": [
+      "Semih K\u00f6kl\u00fccan",
+      "M. Kemal Leblebicio\u011flu"
+    ],
+    "published": "2020-08-18",
+    "year": 2020,
+    "arxiv_id": "2008.08068v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Energy-Optimal Control of a Submarine-Launched Cruise Missile\n\nA typical mission profile of submarine-launched cruise missiles begins with the launch phase which covers the motion of the missile from the launch to the water-exit and continues with the boost phase which lasts from the water-exit to the beginning of the cruise phase. In order to achieve the desired range of the launch and boost phases, efficient utilization of available energy which carries the missile to the beginning of the cruise phase is necessary. For this purpose, this study presents a new approach for energy-optimal control of the underwater and air motion of a submarine-launched cruise missile. In this approach, the aforementioned problem is modeled and solved as a minimum-effort optimal control problem. Then, the effects of initial and final conditions on energy need are investigated, and the optimal conditions that result with the minimum energy need are determined. Prior to the guidance and control design steps, six degrees of freedom (6 DOF) motion equations are derived and the hydrodynamic and aerodynamic parameters are retrieved. The nonlinear 6 DOF motion model is simplified and linearized before minimum-effort optimal control design part. Results of the designed guidance and control strategies are presented through the nonlinear 6 DOF simulations. Finally, some comments are made and future studies are mentioned based on theoretical and simulation studies."
+  },
+  {
+    "title": "Homing missile guidance law with imperfect measurements and imperfect information about the system",
+    "abstract": "In this study, the generic imperfect dynamic models of air-to-surface missiles are given in addition to the related simple guidance law.",
+    "authors": [
+      "Jaykov Foukzon",
+      "A. A. Potapov"
+    ],
+    "published": "2012-10-08",
+    "year": 2012,
+    "arxiv_id": "1210.2933v1",
+    "category": "math.GM",
+    "source": "arxiv",
+    "text": "Homing missile guidance law with imperfect measurements and imperfect information about the system\n\nIn this study, the generic imperfect dynamic models of air-to-surface missiles are given in addition to the related simple guidance law."
+  },
+  {
+    "title": "Cooperative guidance of multiple missiles: a hybrid co-evolutionary approach",
+    "abstract": "Cooperative guidance of multiple missiles is a challenging task with rigorous constraints of time and space consensus, especially when attacking dynamic targets. In this paper, the cooperative guidance task is described as a distributed multi-objective cooperative optimization problem. To address the issues of non-stationarity and continuous control faced by cooperative guidance, the natural evolutionary strategy (NES) is improved along with an elitist adaptive learning technique to develop a novel natural co-evolutionary strategy (NCES). The gradients of original evolutionary strategy are rescaled to reduce the estimation bias caused by the interaction between the multiple missiles. Then, a hybrid co-evolutionary cooperative guidance law (HCCGL) is proposed by integrating the highly scalable co-evolutionary mechanism and the traditional guidance strategy. Finally, three simulations under different conditions demonstrate the effectiveness and superiority of this guidance law in solving cooperative guidance tasks with high accuracy. The proposed co-evolutionary approach has great prospects not only in cooperative guidance, but also in other application scenarios of multi-objective optimization, dynamic optimization and distributed control.",
+    "authors": [
+      "Xuejing Lan",
+      "Junda Chen",
+      "Zhijia Zhao",
+      "Tao Zou"
+    ],
+    "published": "2022-08-15",
+    "year": 2022,
+    "arxiv_id": "2208.07156v2",
+    "category": "cs.NE",
+    "source": "arxiv",
+    "text": "Cooperative guidance of multiple missiles: a hybrid co-evolutionary approach\n\nCooperative guidance of multiple missiles is a challenging task with rigorous constraints of time and space consensus, especially when attacking dynamic targets. In this paper, the cooperative guidance task is described as a distributed multi-objective cooperative optimization problem. To address the issues of non-stationarity and continuous control faced by cooperative guidance, the natural evolutionary strategy (NES) is improved along with an elitist adaptive learning technique to develop a novel natural co-evolutionary strategy (NCES). The gradients of original evolutionary strategy are rescaled to reduce the estimation bias caused by the interaction between the multiple missiles. Then, a hybrid co-evolutionary cooperative guidance law (HCCGL) is proposed by integrating the highly scalable co-evolutionary mechanism and the traditional guidance strategy. Finally, three simulations under different conditions demonstrate the effectiveness and superiority of this guidance law in solving cooperative guidance tasks with high accuracy. The proposed co-evolutionary approach has great prospects not only in cooperative guidance, but also in other application scenarios of multi-objective optimization, dynamic optimization and distributed control."
+  },
+  {
+    "title": "Adaptive Scale Factor Compensation for Missiles with Strapdown Seekers via Predictive Coding",
+    "abstract": "In this work we present a method to adaptively compensate for scale factor errors in both rotational velocity and seeker angle measurements. The adaptation scheme estimates the scale factor errors using a predictive coding model implemented as a deep neural network with recurrent layer, and then uses these estimates to compensate for the error. During training, the model learns over a wide range of scale factor errors that ideally bound the expected errors that can occur during deployment, allowing the deployed model to quickly adapt in real time to the ground truth error. We demonstrate in a realistic six degrees-of-freedom simulation of an exoatmospheric intercept that our method effectively compensates for concurrent rotational velocity and seeker angle scale factor errors. The compensation method is general in that it is independent of a given guidance, navigation, and control system implementation. Although demonstrated using an exoatmospheric missile with strapdown seeker, the method is also applicable to endoatmospheric missiles with both gimbaled and strapdown seekers, as well as general purpose inertial measurement unit rate gyro compensation.",
+    "authors": [
+      "Brian Gaudet"
+    ],
+    "published": "2020-08-31",
+    "year": 2020,
+    "arxiv_id": "2009.00975v2",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Adaptive Scale Factor Compensation for Missiles with Strapdown Seekers via Predictive Coding\n\nIn this work we present a method to adaptively compensate for scale factor errors in both rotational velocity and seeker angle measurements. The adaptation scheme estimates the scale factor errors using a predictive coding model implemented as a deep neural network with recurrent layer, and then uses these estimates to compensate for the error. During training, the model learns over a wide range of scale factor errors that ideally bound the expected errors that can occur during deployment, allowing the deployed model to quickly adapt in real time to the ground truth error. We demonstrate in a realistic six degrees-of-freedom simulation of an exoatmospheric intercept that our method effectively compensates for concurrent rotational velocity and seeker angle scale factor errors. The compensation method is general in that it is independent of a given guidance, navigation, and control system implementation. Although demonstrated using an exoatmospheric missile with strapdown seeker, the method is also applicable to endoatmospheric missiles with both gimbaled and strapdown seekers, as well as general purpose inertial measurement unit rate gyro compensation."
+  },
+  {
+    "title": "A potential missile guidance law based-on chaos",
+    "abstract": "An important field of research in defense-related technology is the design of guidance laws. A guided missile is generally challenging to intercept if its trajectory becomes unpredictable. In this short communication, we have discussed a possible application of the chaos theory in developing an advanced guided missile, where the guidance law is based upon a robust chaotic map. This type of guided missile may be almost impossible to intercept by existing missile defense systems due to its unpredictable trajectory.",
+    "authors": [
+      "Dhrubajyoti Mandal"
+    ],
+    "published": "2023-12-15",
+    "year": 2023,
+    "arxiv_id": "2312.10011v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "A potential missile guidance law based-on chaos\n\nAn important field of research in defense-related technology is the design of guidance laws. A guided missile is generally challenging to intercept if its trajectory becomes unpredictable. In this short communication, we have discussed a possible application of the chaos theory in developing an advanced guided missile, where the guidance law is based upon a robust chaotic map. This type of guided missile may be almost impossible to intercept by existing missile defense systems due to its unpredictable trajectory."
+  },
+  {
+    "title": "Armoured Fighting Vehicle Team Performance Prediction against Missile Attacks with Directed Energy Weapons",
+    "abstract": "A recent study has introduced a procedure to quantify the survivability of a team of armoured fighting vehicles when it is subjected to a single missile attack. In particular this study investigated the concept of collaborative active protection systems, focusing on the case where vehicle defence is provided by high power radio frequency directed energy weapons. The purpose of the current paper is to demonstrate how this analysis can be extended to account for more than one missile threat. This is achieved by introducing a jump stochastic process whose states represent the number of missiles defeated at a given time instant. Analysis proceeds through consideration of the sojourn times of this stochastic process, and it is shown how consideration of these jump times can be related to transition probabilities of the auxiliary stochastic process. The latter probabilities are then related to the probabilities of detection and disruption of missile threats. The sum of these sojourn times can then be used to quantify the survivability of the team at any given time instant. Due to the fact that there is much interest in the application of high energy lasers in the context of this paper, the numerical examples will thus focus on such directed energy weapons for armoured fighting vehicle team defence.",
+    "authors": [
+      "Graham V. Weinberg",
+      "Mitchell Kracman"
+    ],
+    "published": "2021-06-28",
+    "year": 2021,
+    "arxiv_id": "2106.14381v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Armoured Fighting Vehicle Team Performance Prediction against Missile Attacks with Directed Energy Weapons\n\nA recent study has introduced a procedure to quantify the survivability of a team of armoured fighting vehicles when it is subjected to a single missile attack. In particular this study investigated the concept of collaborative active protection systems, focusing on the case where vehicle defence is provided by high power radio frequency directed energy weapons. The purpose of the current paper is to demonstrate how this analysis can be extended to account for more than one missile threat. This is achieved by introducing a jump stochastic process whose states represent the number of missiles defeated at a given time instant. Analysis proceeds through consideration of the sojourn times of this stochastic process, and it is shown how consideration of these jump times can be related to transition probabilities of the auxiliary stochastic process. The latter probabilities are then related to the probabilities of detection and disruption of missile threats. The sum of these sojourn times can then be used to quantify the survivability of the team at any given time instant. Due to the fact that there is much interest in the application of high energy lasers in the context of this paper, the numerical examples will thus focus on such directed energy weapons for armoured fighting vehicle team defence."
+  },
+  {
+    "title": "Modelling and Control of Subsonic Missile for Air-to-Air Interception",
+    "abstract": "Subsonic missiles play an important role in modern air-to-air combat scenarios - utilized by the F-35 Lightning II - but require complex Guidance, Navigation and Control systems to manoeuvre with 30G's of acceleration to intercept successfully. Challenges with mathematically modelling and controlling such a dynamic system must be addressed, high frequency noise rejected, and actuator delay compensated for. This paper aims to investigate the control systems necessary for interception. It also proposes a subsonic design utilizing literature and prior research, suggests aerodynamic derivatives, and analyses a designed 2D reduced pitch autopilot control system response against performances. The pitch autopilot model contains an optimized PID controller, 2nd order actuator, lead compensator and Kalman Filter, that rejects time varying disturbances and high frequency noise expected during flight. Simulation results confirm the effectiveness of the proposed method through reduction in rise time (21%), settle time (10%), and highlighted its high frequency deficiency with respect to the compensator integration. The actuator delay of 100ms has been negated by the augmented compensator autopilot controller so that it exceeds system performance requirements (1) & (3). However, (2) is not satisfied as 370% overshoot exists. This research confirms the importance of a lead compensator in missile GNC systems and furthers control design application through a specific configuration. Future research should build upon methods and models presented to construct and test an interception scenario.",
+    "authors": [
+      "Rory Jenkins",
+      "Xinhua Wang"
+    ],
+    "published": "2024-11-12",
+    "year": 2024,
+    "arxiv_id": "2411.07594v3",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Modelling and Control of Subsonic Missile for Air-to-Air Interception\n\nSubsonic missiles play an important role in modern air-to-air combat scenarios - utilized by the F-35 Lightning II - but require complex Guidance, Navigation and Control systems to manoeuvre with 30G's of acceleration to intercept successfully. Challenges with mathematically modelling and controlling such a dynamic system must be addressed, high frequency noise rejected, and actuator delay compensated for. This paper aims to investigate the control systems necessary for interception. It also proposes a subsonic design utilizing literature and prior research, suggests aerodynamic derivatives, and analyses a designed 2D reduced pitch autopilot control system response against performances. The pitch autopilot model contains an optimized PID controller, 2nd order actuator, lead compensator and Kalman Filter, that rejects time varying disturbances and high frequency noise expected during flight. Simulation results confirm the effectiveness of the proposed method through reduction in rise time (21%), settle time (10%), and highlighted its high frequency deficiency with respect to the compensator integration. The actuator delay of 100ms has been negated by the augmented compensator autopilot controller so that it exceeds system performance requirements (1) & (3). However, (2) is not satisfied as 370% overshoot exists. This research confirms the importance of a lead compensator in missile GNC systems and furthers control design application through a specific configuration. Future research should build upon methods and models presented to construct and test an interception scenario."
+  },
+  {
+    "title": "Formation control with connectivity assurance for missile swarm: a natural co-evolutionary strategy approach",
+    "abstract": "Formation control problem is one of the most concerned topics within the realm of swarm intelligence, which is usually solved by conventional mathematical approaches. In this paper, however, we presents a metaheuristic approach that leverages a natural co-evolutionary strategy to solve the formation control problem for a swarm of missiles. The missile swarm is modeled by a second-order system with heterogeneous reference target, and exponential error function is made to be the objective function such that the swarm converge to optimal equilibrium states satisfying certain formation requirements. Focusing on the issue of local optimum and unstable evolution, we incorporate a novel model-based policy constraint and a population adaptation strategies that greatly alleviates the performance degradation. With application of the Molloy-Reed criterion in the field of network communication, we developed an adaptive topology method that assure the connectivity under node failure and its effectiveness are validated both theoretically and experimentally. Experimental results valid the effectiveness of the proposed formation control approach. More significantly, we showed that it is feasible to treat generic formation control problem as Markov Decision Process(MDP) and solve it through iterative learning.",
+    "authors": [
+      "Junda Chen"
+    ],
+    "published": "2022-08-24",
+    "year": 2022,
+    "arxiv_id": "2208.11347v1",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Formation control with connectivity assurance for missile swarm: a natural co-evolutionary strategy approach\n\nFormation control problem is one of the most concerned topics within the realm of swarm intelligence, which is usually solved by conventional mathematical approaches. In this paper, however, we presents a metaheuristic approach that leverages a natural co-evolutionary strategy to solve the formation control problem for a swarm of missiles. The missile swarm is modeled by a second-order system with heterogeneous reference target, and exponential error function is made to be the objective function such that the swarm converge to optimal equilibrium states satisfying certain formation requirements. Focusing on the issue of local optimum and unstable evolution, we incorporate a novel model-based policy constraint and a population adaptation strategies that greatly alleviates the performance degradation. With application of the Molloy-Reed criterion in the field of network communication, we developed an adaptive topology method that assure the connectivity under node failure and its effectiveness are validated both theoretically and experimentally. Experimental results valid the effectiveness of the proposed formation control approach. More significantly, we showed that it is feasible to treat generic formation control problem as Markov Decision Process(MDP) and solve it through iterative learning."
+  },
+  {
+    "title": "Real-Time Surface-to-Air Missile Engagement Zone Prediction Using Simulation and Machine Learning",
+    "abstract": "Surface-to-Air Missiles (SAMs) are crucial in modern air defense systems. A critical aspect of their effectiveness is the Engagement Zone (EZ), the spatial region within which a SAM can effectively engage and neutralize a target. Notably, the EZ is intrinsically related to the missile's maximum range; it defines the furthest distance at which a missile can intercept a target. The accurate computation of this EZ is essential but challenging due to the dynamic and complex factors involved, which often lead to high computational costs and extended processing times when using conventional simulation methods. In light of these challenges, our study investigates the potential of machine learning techniques, proposing an approach that integrates machine learning with a custom-designed simulation tool to train supervised algorithms. We leverage a comprehensive dataset of pre-computed SAM EZ simulations, enabling our model to accurately predict the SAM EZ for new input parameters. It accelerates SAM EZ simulations, enhances air defense strategic planning, and provides real-time insights, improving SAM system performance. The study also includes a comparative analysis of machine learning algorithms, illuminating their capabilities and performance metrics and suggesting areas for future research, highlighting the transformative potential of machine learning in SAM EZ simulations.",
+    "authors": [
+      "Joao P. A. Dantas",
+      "Diego Geraldo",
+      "Felipe L. L. Medeiros",
+      "Marcos R. O. A. Maximo",
+      "Takashi Yoneyama"
+    ],
+    "published": "2023-11-20",
+    "year": 2023,
+    "arxiv_id": "2311.11905v2",
+    "category": "cs.LG",
+    "source": "arxiv",
+    "text": "Real-Time Surface-to-Air Missile Engagement Zone Prediction Using Simulation and Machine Learning\n\nSurface-to-Air Missiles (SAMs) are crucial in modern air defense systems. A critical aspect of their effectiveness is the Engagement Zone (EZ), the spatial region within which a SAM can effectively engage and neutralize a target. Notably, the EZ is intrinsically related to the missile's maximum range; it defines the furthest distance at which a missile can intercept a target. The accurate computation of this EZ is essential but challenging due to the dynamic and complex factors involved, which often lead to high computational costs and extended processing times when using conventional simulation methods. In light of these challenges, our study investigates the potential of machine learning techniques, proposing an approach that integrates machine learning with a custom-designed simulation tool to train supervised algorithms. We leverage a comprehensive dataset of pre-computed SAM EZ simulations, enabling our model to accurately predict the SAM EZ for new input parameters. It accelerates SAM EZ simulations, enhances air defense strategic planning, and provides real-time insights, improving SAM system performance. The study also includes a comparative analysis of machine learning algorithms, illuminating their capabilities and performance metrics and suggesting areas for future research, highlighting the transformative potential of machine learning in SAM EZ simulations."
+  },
+  {
+    "title": "Integrated and Adaptive Guidance and Control for Endoatmospheric Missiles via Reinforcement Learning",
+    "abstract": "We apply a reinforcement meta-learning framework to optimize an integrated and adaptive guidance and flight control system for an air-to-air missile. The system is implemented as a policy that maps navigation system outputs directly to commanded rates of change for the missile's control surface deflections. The system induces intercept trajectories against a maneuvering target that satisfy control constraints on fin deflection angles, and path constraints on look angle and load. We test the optimized system in a six degrees-of-freedom simulator that includes a non-linear radome model and a strapdown seeker model, and demonstrate that the system adapts to both a large flight envelope and off-nominal flight conditions including perturbation of aerodynamic coefficient parameters and center of pressure locations, and flexible body dynamics. Moreover, we find that the system is robust to the parasitic attitude loop induced by radome refraction and imperfect seeker stabilization. We compare our system's performance to a longitudinal model of proportional navigation coupled with a three loop autopilot, and find that our system outperforms this benchmark by a large margin. Additional experiments investigate the impact of removing the recurrent layer from the policy and value function networks, performance with an infrared seeker, and flexible body dynamics.",
+    "authors": [
+      "Brian Gaudet",
+      "Roberto Furfaro"
+    ],
+    "published": "2021-09-08",
+    "year": 2021,
+    "arxiv_id": "2109.03880v6",
+    "category": "eess.SY",
+    "source": "arxiv",
+    "text": "Integrated and Adaptive Guidance and Control for Endoatmospheric Missiles via Reinforcement Learning\n\nWe apply a reinforcement meta-learning framework to optimize an integrated and adaptive guidance and flight control system for an air-to-air missile. The system is implemented as a policy that maps navigation system outputs directly to commanded rates of change for the missile's control surface deflections. The system induces intercept trajectories against a maneuvering target that satisfy control constraints on fin deflection angles, and path constraints on look angle and load. We test the optimized system in a six degrees-of-freedom simulator that includes a non-linear radome model and a strapdown seeker model, and demonstrate that the system adapts to both a large flight envelope and off-nominal flight conditions including perturbation of aerodynamic coefficient parameters and center of pressure locations, and flexible body dynamics. Moreover, we find that the system is robust to the parasitic attitude loop induced by radome refraction and imperfect seeker stabilization. We compare our system's performance to a longitudinal model of proportional navigation coupled with a three loop autopilot, and find that our system outperforms this benchmark by a large margin. Additional experiments investigate the impact of removing the recurrent layer from the policy and value function networks, performance with an infrared seeker, and flexible body dynamics."
+  },
+  {
+    "title": "Missile detection and destruction robot using detection algorithm",
+    "abstract": "This research is based on the present missile detection technologies in the world and the analysis of these technologies to find a cost effective solution to implement the system in Bangladesh. The paper will give an idea of the missile detection technologies using the electro-optical sensor and the pulse doppler radar. The system is made to detect the target missile. Automatic detection and destruction with the help of ultrasonic sonar, a metal detector sensor, and a smoke detector sensor. The system is mainly based on an ultrasonic sonar sensor. It has a transducer, a transmitter, and a receiver. Transducer is connected with the connected with controller. When it detects an object by following the algorithm, it finds its distance and angle. It can also assure whether the system can destroy the object or not by using another algorithm's simulation.",
+    "authors": [
+      "Md Kamrul Siam",
+      "Shafayet Ahmed",
+      "Md Habibur Rahman",
+      "Amir Hossain Mollah"
+    ],
+    "published": "2024-07-10",
+    "year": 2024,
+    "arxiv_id": "2407.07452v2",
+    "category": "cs.RO",
+    "source": "arxiv",
+    "text": "Missile detection and destruction robot using detection algorithm\n\nThis research is based on the present missile detection technologies in the world and the analysis of these technologies to find a cost effective solution to implement the system in Bangladesh. The paper will give an idea of the missile detection technologies using the electro-optical sensor and the pulse doppler radar. The system is made to detect the target missile. Automatic detection and destruction with the help of ultrasonic sonar, a metal detector sensor, and a smoke detector sensor. The system is mainly based on an ultrasonic sonar sensor. It has a transducer, a transmitter, and a receiver. Transducer is connected with the connected with controller. When it detects an object by following the algorithm, it finds its distance and angle. It can also assure whether the system can destroy the object or not by using another algorithm's simulation."
+  }
+]
