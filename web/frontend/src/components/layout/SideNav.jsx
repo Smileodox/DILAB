@@ -1,7 +1,7 @@
 import { NavLink, useLocation } from 'react-router-dom'
 import {
   LayoutDashboard, Workflow, Zap, Network, Grid3X3, GitBranch,
-  Globe, Map, Atom, Target, ChevronLeft, ChevronRight,
+  Globe, Map, Shapes, Atom, Target, ChevronLeft, ChevronRight,
 } from 'lucide-react'
 import { useState } from 'react'
 import { useKb } from '@/context/KbContext'
@@ -15,6 +15,7 @@ const NAV_ITEMS = [
   { path: '/cib', label: 'CIB', icon: Network },
   { path: '/scenarios', label: 'Scenarios', icon: Globe },
   { path: '/landscape', label: 'Landscape', icon: Map },
+  { path: '/archetypes', label: 'Archetypes', icon: Shapes },
   { path: '/embeddings', label: 'Embeddings', icon: Atom },
   { path: '/strategy', label: 'Strategy', icon: Target },
 ]

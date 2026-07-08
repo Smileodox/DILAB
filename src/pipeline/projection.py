@@ -64,8 +64,10 @@ def _axis_drivers(component, vocab, driver_by_manif, pos_by_manif, name_of):
         if d is None:
             continue
         load = float(component[col])
+        pos = pos_by_manif.get(mid)
+        pos = 0.5 if pos is None else float(pos)  # defensive: never let a missing pos reach arithmetic
         weight[d] = weight.get(d, 0.0) + abs(load)
-        signed[d] = signed.get(d, 0.0) + load * pos_by_manif.get(mid, 0.5)
+        signed[d] = signed.get(d, 0.0) + load * pos
     drivers = []
     for d, w in sorted(weight.items(), key=lambda kv: -kv[1]):
         pole = "pessimistic" if signed.get(d, 0.0) >= 0 else "optimistic"
@@ -220,7 +222,13 @@ def project_config(scenarios, morphbox: dict, driver_names: dict | None = None,
             d = driver_by_manif.get(mid)
             if d is not None:
                 manif_by_driver[d] = mid
-        values = [pos_in_driver.get(manif_by_driver.get(d), -1) for d in morphbox["drivers"]]
+        # always an int per driver (-1 = driver unassigned in this scenario); never None,
+        # so no downstream offset can raise NoneType + int.
+        values = []
+        for d in morphbox["drivers"]:
+            mid = manif_by_driver.get(d)
+            idx = pos_in_driver.get(mid) if mid is not None else None
+            values.append(int(idx) if idx is not None else -1)
         rows.append({
             "scenario_id": ids[i],
             "type": s.get("type", "evolutionary"),

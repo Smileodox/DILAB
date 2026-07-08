@@ -83,7 +83,7 @@ def test_driver_enums():
 
 
 def test_dimension_type_enum():
-    for t in ["hardware", "software", "regulatory", "market", "geopolitical", "unclassified"]:
+    for t in ["hardware", "software", "regulatory", "market", "geopolitical", "technological", "unclassified"]:
         assert DimensionType(t)
 
 
@@ -105,6 +105,7 @@ def test_derive_axis_role_by_dimension():
     assert derive_axis_role(DimensionType.REGULATORY, DriverOrigin.TREND) == AxisRole.DRIVING
     assert derive_axis_role(DimensionType.MARKET, DriverOrigin.TREND) == AxisRole.DRIVING
     assert derive_axis_role(DimensionType.GEOPOLITICAL, DriverOrigin.TREND) == AxisRole.DRIVING
+    assert derive_axis_role(DimensionType.TECHNOLOGICAL, DriverOrigin.TREND) == AxisRole.DRIVING
 
 
 def test_derive_axis_role_unclassified_falls_back_on_origin():

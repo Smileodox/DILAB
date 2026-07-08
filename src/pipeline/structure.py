@@ -31,7 +31,7 @@ import random
 
 import numpy as np
 
-from src.pipeline.clustering import cluster_and_select, config_matrix
+from src.pipeline.clustering import cluster_and_select, config_matrix, hdbscan_cluster
 
 log = logging.getLogger(__name__)
 
@@ -228,3 +228,71 @@ def axis_direction_stability(field_a: list[dict], field_b: list[dict], vocab: li
     m = min(La.shape[0], Lb.shape[0])
     cosines = [round(abs(float(La[i] @ Lb[i])), 4) for i in range(m)]
     return {"abs_cos": cosines, "stable_axes": sum(1 for c in cosines if c >= bar), "bar": bar}
+
+
+# --- multi-method lens comparison -----------------------------------------------------
+# The default verdict uses ONE lens (one-hot + KMeans silhouette). KMeans forces every point
+# into a spherical cluster, so a HYBRID field (a dense archetypal core inside a continuum halo)
+# reads as pure continuum. Run several lenses side by side — KMeans vs HDBSCAN (density, permits a
+# noise halo) × one-hot vs ordinal encoding (ordinal keeps the optimistic→pessimistic ordering) —
+# so the UI can show the core IS clusterable even when the all-points silhouette is near zero.
+
+
+def _ordinal_matrix_from_scenarios(scenarios: list[dict], morphbox: dict) -> np.ndarray:
+    """One ordinal value per driver: manifestation position 0 (optimistic) … 1 (pessimistic)."""
+    drivers = morphbox["drivers"]
+    manifs = morphbox["manifestations"]
+    pos: dict[str, tuple[str, float]] = {}
+    for d in drivers:
+        ms = manifs.get(d, [])
+        for i, mid in enumerate(ms):
+            pos[mid] = (d, (i / (len(ms) - 1)) if len(ms) > 1 else 0.5)
+    didx = {d: i for i, d in enumerate(drivers)}
+    x = np.full((len(scenarios), len(drivers)), 0.5)
+    for r, s in enumerate(scenarios):
+        for a in s.get("assumptions", []):
+            hit = pos.get(a.get("manifestation_id"))
+            if hit:
+                d, p = hit
+                x[r, didx[d]] = p
+    return x
+
+
+def _kmeans_lens(x, ids, encoding, k_range, seed) -> dict:
+    cl = cluster_and_select(x, ids, k=None, k_range=k_range, seed=seed)
+    return {"method": "kmeans", "encoding": encoding, "silhouette": cl["silhouette"],
+            "n_clusters": cl["k"], "noise_fraction": 0.0}
+
+
+def _hdbscan_lens(x, encoding, min_cluster_size, seed) -> dict:
+    labels, sil = hdbscan_cluster(x, min_cluster_size=min_cluster_size, seed=seed)
+    n_noise = int((labels == -1).sum())
+    n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
+    return {"method": "hdbscan", "encoding": encoding, "silhouette": sil,
+            "n_clusters": n_clusters, "noise_fraction": round(n_noise / max(1, len(labels)), 3)}
+
+
+def analyze_multi(scenarios: list[dict], morphbox: dict, k_range: tuple[int, int] = (2, 10),
+                  seed: int = 42, embeddings=None, min_cluster_size: int = 5) -> dict:
+    """Several geometric lenses on the same field for an honest multi-method comparison.
+
+    Returns ``{"lenses": {name: {method, encoding, silhouette, n_clusters, noise_fraction}},
+    "floor": USABLE_SILHOUETTE_FLOOR, "primary_verdict": ...}``. Pass narrative ``embeddings``
+    (one row per scenario) to add the semantic lens; omit to keep it offline. HDBSCAN silhouettes
+    are computed on the NON-noise subset only and are NOT comparable to the all-points KMeans value.
+    """
+    vocab = [m["id"] for m in morphbox["all_manifestations"]]
+    ids = [s.get("id", f"s{i}") for i, s in enumerate(scenarios)]
+    x_oh = config_matrix(scenarios, vocab).astype(float)
+    x_or = _ordinal_matrix_from_scenarios(scenarios, morphbox)
+    lenses = {
+        "onehot_kmeans": _kmeans_lens(x_oh, ids, "onehot", k_range, seed),
+        "ordinal_kmeans": _kmeans_lens(x_or, ids, "ordinal", k_range, seed),
+        "onehot_hdbscan": _hdbscan_lens(x_oh, "onehot", min_cluster_size, seed),
+        "ordinal_hdbscan": _hdbscan_lens(x_or, "ordinal", min_cluster_size, seed),
+    }
+    if embeddings is not None and len(embeddings) == len(scenarios):
+        lenses["narrative_hdbscan"] = _hdbscan_lens(
+            np.asarray(embeddings, dtype=float), "narrative", min_cluster_size, seed)
+    return {"lenses": lenses, "floor": USABLE_SILHOUETTE_FLOOR,
+            "primary_verdict": analyze(scenarios, morphbox, k_range=(4, 10), seed=seed)["verdict"]}

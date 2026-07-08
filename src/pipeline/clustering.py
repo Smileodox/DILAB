@@ -130,3 +130,29 @@ def cluster_and_select(
         "k": chosen_k,
         "silhouette": round(sil, 4),
     }
+
+
+def hdbscan_cluster(x: np.ndarray, min_cluster_size: int = 5, n_components: int = 5, seed: int = 42):
+    """UMAP-reduce then density-cluster with HDBSCAN — the density lens (permits a noise halo).
+
+    Unlike ``cluster_and_select`` (KMeans, forces every point into a spherical cluster), this
+    isolates dense cores and labels the rest ``-1`` (continuum). Returns ``(labels, silhouette)``
+    where the silhouette is computed on the NON-noise subset only (``None`` if <2 clusters).
+    UMAP/HDBSCAN are imported lazily so importing this module stays light. Deterministic (seeded).
+    """
+    import warnings
+
+    import hdbscan
+    import umap
+
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        emb = umap.UMAP(n_neighbors=15, n_components=min(n_components, x.shape[1]),
+                        metric="euclidean", random_state=seed).fit_transform(x)
+        labels = hdbscan.HDBSCAN(min_cluster_size=min_cluster_size).fit_predict(emb)
+    mask = labels != -1
+    n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
+    sil = None
+    if n_clusters > 1 and mask.sum() > n_clusters:
+        sil = round(float(silhouette_score(emb[mask], labels[mask])), 4)
+    return labels, sil

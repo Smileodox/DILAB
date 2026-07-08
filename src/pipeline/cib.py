@@ -130,6 +130,39 @@ def _aggregate_panel(scores: list[PersonaScore]) -> tuple[int, float, str]:
     return impact, std, consensus
 
 
+def _aggregate_panel_dissent(scores: list[PersonaScore]) -> tuple[int, float, str]:
+    """Median aggregation that preserves a strong minority dissent instead of washing it out.
+
+    Plain median can erase a real trade-off (e.g. nets [2,2,2,-3] -> median 2, hiding a panelist
+    who sees strong inhibition). When a strong OPPOSING extreme (|net| >= 2) sits on the far side
+    of the median, blend the median halfway toward that extreme so the trade-off survives in the
+    aggregated cell. A genuine bipolar split keeps the median (no arbitrary sign). Same
+    (impact, std, consensus) contract as _aggregate_panel — std/consensus are computed identically.
+    """
+    nets = [s.net_score for s in scores]
+    median = statistics.median(nets)
+    std = statistics.stdev(nets) if len(nets) > 1 else 0.0
+    lo, hi = min(nets), max(nets)
+
+    if lo <= -2 and hi >= 2:
+        impact = round(median)              # genuine bipolar split → keep the median, don't sign it
+    elif median >= 0 and lo <= -2:
+        impact = round((median + lo) / 2)   # strong inhibiting minority pulls a positive cell down
+    elif median <= 0 and hi >= 2:
+        impact = round((median + hi) / 2)   # strong promoting minority pulls a negative cell up
+    else:
+        impact = round(median)
+
+    if std < 0.5:
+        consensus = "strong"
+    elif std < 1.0:
+        consensus = "moderate"
+    else:
+        consensus = "divergent"
+
+    return impact, std, consensus
+
+
 def _find_outlier(scores: list[PersonaScore]) -> PersonaScore:
     """Find the persona whose net score is furthest from the median."""
     nets = [s.net_score for s in scores]
@@ -149,12 +182,14 @@ def run(
     delphi_rounds: int = 2,
     profile: DomainProfile | None = None,
     cib_mode: str | None = None,
+    dissent_preserving: bool = False,
 ) -> dict:
     if profile is None:
         from src.pipeline.domain import load_profile
         profile = load_profile()
     from src import config
     cib_mode = cib_mode or config.CIB_MODE
+    dissent_preserving = dissent_preserving or config.CIB_DISSENT_PRESERVING
     pkw = profile.prompt_kwargs()
     prompt_template = CIB_PROMPTS.get(cib_mode, CIB_EVALUATE)
     print(f"  CIB elicitation mode: {cib_mode}", flush=True)
@@ -288,7 +323,8 @@ def run(
 
     for (i, j), scores in results.items():
         if panel_mode and len(scores) > 1:
-            impact, std, consensus = _aggregate_panel(scores)
+            impact, std, consensus = (_aggregate_panel_dissent(scores) if dissent_preserving
+                                      else _aggregate_panel(scores))
         else:
             impact = scores[0].net_score if scores else 0
             std = 0.0
@@ -333,6 +369,7 @@ def run(
         "panel_metadata": {
             "mode": "multi_perspective_panel" if panel_mode else "single",
             "cib_mode": cib_mode,
+            "dissent_preserving": dissent_preserving,
             "delphi_rounds": delphi_rounds if panel_mode else 1,
             "personas": [
                 {"id": p["id"], "name": p["name"], "model": p["model"]}

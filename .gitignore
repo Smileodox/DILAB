@@ -16,3 +16,11 @@ build/
 node_modules/
 knowledge_base/pdfs/
 .claude/
+# LaTeX build artifacts (keep .tex + .pdf, drop the rest)
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.synctex.gz

@@ -8,15 +8,23 @@ HONEST, coarse temporal signal per driver — is it grounded in recent or older 
 
 Deliberately NOT logistic S-curve lifecycle fitting: a small curated KB is temporally too
 thin for that, and manufacturing a lifecycle stage we can't support is exactly the kind of
-over-reading ``structure.py`` exists to prevent. So the signal is:
-  - relative to the CORPUS baseline (a driver is "emerging" only if its median year is
-    younger than the corpus as a whole — recency alone means nothing if the whole corpus is
-    recent), and
-  - guarded by an ``insufficient temporal evidence`` verdict when the corpus has too few /
-    too-undated / single-year sources (mirrors ``structure.py``'s ``has_usable_clusters``).
+over-reading ``structure.py`` exists to prevent. So the signal is three honest, orthogonal
+axes per driver, all grounded through ``source_chunk_ids``:
+  - LEVEL  — ``recency_shift``/``emergence``: is the driver's median year younger than the
+    corpus baseline? (recency alone means nothing if the whole corpus is recent), and
+  - SLOPE  — ``visibility_trend``: is its evidence accumulating recently (rising) or older
+    (waning)? — the DoV/growth intent of the Yoon (2012) / Wang & Zhu (2026) weak-signal
+    method, reduced to a robust recent-vs-older split (no fragile curve fit or normalization),
+  - BREADTH — ``diffusion``: how many DISTINCT sources ground the driver? — the DoD intent,
+    computed from our explicit driver→source graph rather than by matching a term string.
+The temporal axes (level, slope) are guarded by an ``insufficient temporal evidence`` verdict
+when the corpus has too few / too-undated / single-year sources (mirrors ``structure.py``'s
+``has_usable_clusters``); breadth is reported whenever source data is present (it makes no
+temporal claim). A weak signal is now the classic combination: emerging AND thinly grounded
+AND not broadly sourced.
 
 The core (``temporal_stats``) is pure and numpy-free → fully unit-testable offline. ``run``
-only adds the I/O (read merge_state + chunk years, write temporal_state.json).
+only adds the I/O (read merge_state + chunk year/source metadata, write temporal_state.json).
 """
 from __future__ import annotations
 
@@ -37,16 +45,26 @@ def _parse_year(value) -> int | None:
 def temporal_stats(
     driver_years: dict[str, list[int]],
     corpus_years: list[int],
+    driver_sources: dict[str, list[str]] | None = None,
     min_corpus_dated: int = 4,
     min_driver_dated: int = 2,
     shift_threshold: float = 1.5,
     weak_signal_max_dated: int = 3,
+    broad_diffusion_min: int = 3,
 ) -> dict:
     """Per-driver temporal profile relative to the corpus baseline. Pure (no I/O).
 
     ``recency_shift`` = driver median year − corpus median year (positive ⇒ grounded in
     younger-than-typical literature). Emergence is classified off that RELATIVE shift, never
-    off absolute recency. Returns per-driver records + a corpus summary + an honesty verdict.
+    off absolute recency.
+
+    Adds two DVI-lineage axes: ``visibility_trend`` (rising/flat/waning from a recent-vs-older
+    evidence split — the slope) and ``diffusion`` (broad/moderate/narrow from the count of
+    DISTINCT sources in ``driver_sources`` — the breadth). ``driver_sources`` maps a driver id
+    to the source id of each of its grounding chunks (parallel to ``driver_years``); when
+    omitted, diffusion is ``"unknown"`` and the weak-signal test degrades to level+thinness.
+
+    Returns per-driver records + a corpus summary + an honesty verdict.
     """
     corpus = [y for y in (int(v) for v in corpus_years)]
     n_corpus = len(corpus)
@@ -71,14 +89,31 @@ def temporal_stats(
     for did, years in driver_years.items():
         ys = [int(v) for v in years]
         n = len(ys)
+
+        # BREADTH (DoD analogue) — distinct sources grounding the driver. Not a temporal claim,
+        # so it is reported whenever source data is present, independent of has_signal.
+        n_sources = None
+        diffusion = "unknown"
+        if driver_sources is not None:
+            n_sources = len(set(driver_sources.get(did, [])))
+            if n_sources >= broad_diffusion_min:
+                diffusion = "broad"
+            elif n_sources >= 2:
+                diffusion = "moderate"
+            elif n_sources == 1:
+                diffusion = "narrow"
+
         rec = {
             "driver_id": did,
             "n_dated": n,
+            "n_sources": n_sources,
             "year_min": min(ys) if ys else None,
             "year_median": statistics.median(ys) if ys else None,
             "year_max": max(ys) if ys else None,
             "recency_shift": None,
-            "emergence": "unknown",     # emerging | established | steady | unknown
+            "emergence": "unknown",         # emerging | established | steady | unknown
+            "visibility_trend": "unknown",  # rising | flat | waning | unknown
+            "diffusion": diffusion,         # broad | moderate | narrow | unknown
             "is_weak_signal": False,
             "confidence": "low",
         }
@@ -91,9 +126,20 @@ def temporal_stats(
                 rec["emergence"] = "established"        # grounded in older-than-typical work
             else:
                 rec["emergence"] = "steady"
+            # SLOPE (DoV/growth analogue) — is the driver's evidence accumulating recently?
+            # Robust recent-vs-older split at the corpus median (no curve fit, no normalization).
+            recent = sum(1 for y in ys if y >= c_med)
+            older = n - recent
+            rec["visibility_trend"] = (
+                "rising" if recent > older else "waning" if recent < older else "flat"
+            )
             rec["confidence"] = "medium" if n >= min_corpus_dated else "low"
-            # A weak signal: recent-skewed AND thinly grounded — an early indicator, low confidence.
-            rec["is_weak_signal"] = rec["emergence"] == "emerging" and n <= weak_signal_max_dated
+            # Weak signal (classic): emerging AND thinly grounded AND NOT broadly sourced.
+            rec["is_weak_signal"] = (
+                rec["emergence"] == "emerging"
+                and n <= weak_signal_max_dated
+                and diffusion != "broad"
+            )
         drivers.append(rec)
 
     return {
@@ -106,6 +152,7 @@ def temporal_stats(
             "min_driver_dated": min_driver_dated,
             "shift_threshold": shift_threshold,
             "weak_signal_max_dated": weak_signal_max_dated,
+            "broad_diffusion_min": broad_diffusion_min,
         },
     }
 
@@ -131,9 +178,14 @@ def run(
 
     res = collection.get(include=["metadatas"], limit=100000)
     cid_year: dict[str, int] = {}
+    cid_source: dict[str, str] = {}
     corpus_years: list[int] = []
     for cid, meta in zip(res.get("ids", []), res.get("metadatas") or []):
-        y = _parse_year((meta or {}).get("year"))
+        meta = meta or {}
+        src = meta.get("source_id")
+        if src:
+            cid_source[cid] = src
+        y = _parse_year(meta.get("year"))
         if y is not None:
             cid_year[cid] = y
             corpus_years.append(y)
@@ -143,12 +195,17 @@ def run(
         d["id"]: [cid_year[c] for c in d.get("source_chunk_ids", []) if c in cid_year]
         for d in drivers
     }
+    # Source id of each grounding chunk (breadth signal) — all chunks, dated or not.
+    driver_sources = {
+        d["id"]: [cid_source[c] for c in d.get("source_chunk_ids", []) if c in cid_source]
+        for d in drivers
+    }
 
-    stats = temporal_stats(driver_years, corpus_years, **stats_kwargs)
+    stats = temporal_stats(driver_years, corpus_years, driver_sources=driver_sources, **stats_kwargs)
     for rec in stats["drivers"]:
         rec["name"] = names.get(rec["driver_id"], rec["driver_id"])
-    stats["metadata"] = {"method": "corpus_year_profile", "n_drivers": len(drivers),
-                         "n_dated_chunks": len(cid_year)}
+    stats["metadata"] = {"method": "corpus_year_profile+diffusion", "n_drivers": len(drivers),
+                         "n_dated_chunks": len(cid_year), "n_sourced_chunks": len(cid_source)}
 
     os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
     with open(output_path, "w") as f:

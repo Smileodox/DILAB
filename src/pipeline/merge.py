@@ -58,6 +58,16 @@ def classify_drivers(drivers: list[TechDriver]) -> list[TechDriver]:
 CONF_RANK = {"high": 3, "medium": 2, "low": 1}
 
 
+def _same_dim(a: TechDriver, b: TechDriver) -> bool:
+    """True if the two drivers may be consolidated: either is UNCLASSIFIED, or they match.
+    Distinct classified dimensions are independent morphological axes — never collapse them."""
+    return (
+        a.dimension_type == DimensionType.UNCLASSIFIED
+        or b.dimension_type == DimensionType.UNCLASSIFIED
+        or a.dimension_type == b.dimension_type
+    )
+
+
 def normalize_name(name: str) -> str:
     name = name.lower().strip()
     name = re.sub(r'\s*\([^)]*\)\s*', ' ', name)
@@ -196,7 +206,7 @@ def consolidate(unified_drivers: list[TechDriver]) -> list[TechDriver]:
         for j in range(i + 1, len(unified_drivers)):
             if j in merged_indices:
                 continue
-            if sim_matrix[i][j] > SIMILARITY_THRESHOLD:
+            if sim_matrix[i][j] > SIMILARITY_THRESHOLD and _same_dim(unified_drivers[i], unified_drivers[j]):
                 cluster.append(j)
                 merged_indices.add(j)
 
@@ -258,7 +268,7 @@ Only include groups with 2+ members. If no duplicates remain, return {{"groups":
             rep = unified_drivers[best_idx]
             rep.name = best_name
             for idx in indices:
-                if idx != best_idx:
+                if idx != best_idx and _same_dim(rep, unified_drivers[idx]):
                     rep.source_chunk_ids = list(set(rep.source_chunk_ids + unified_drivers[idx].source_chunk_ids))
                     remove_indices.add(idx)
         unified_drivers = [d for i, d in enumerate(unified_drivers) if i not in remove_indices]

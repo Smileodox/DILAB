@@ -8,6 +8,7 @@ dependencies = [
     "beautifulsoup4>=4.14.3",
     "chromadb>=1.5.9",
     "fastapi>=0.136.1",
+    "hdbscan>=0.8.44",
     "ipykernel>=7.2.0",
     "jupyter>=1.1.1",
     "matplotlib>=3.10.9",

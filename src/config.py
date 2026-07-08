@@ -5,7 +5,7 @@ load_dotenv()
 
 AZURE_OPENAI_ENDPOINT = os.environ.get("AZURE_OPENAI_ENDPOINT", "")
 AZURE_OPENAI_API_KEY = os.environ.get("AZURE_OPENAI_API_KEY", "")
-AZURE_OPENAI_CHAT_DEPLOYMENT = os.environ.get("AZURE_OPENAI_CHAT_DEPLOYMENT", "gpt-4.1-mini")
+AZURE_OPENAI_CHAT_DEPLOYMENT = os.environ.get("AZURE_OPENAI_CHAT_DEPLOYMENT", "gpt-5.4")
 AZURE_OPENAI_EMBEDDING_DEPLOYMENT = os.environ.get("AZURE_OPENAI_EMBEDDING_DEPLOYMENT", "text-embedding-3-small")
 AZURE_OPENAI_API_VERSION = os.environ.get("AZURE_OPENAI_API_VERSION", "2025-01-01-preview")
 
@@ -22,6 +22,10 @@ CIB_MC_RESTARTS = int(os.environ.get("CIB_MC_RESTARTS", "100"))
 # Default stays "absolute" until the de-biased variant is validated downstream on the null-model
 # structure verdict (an earlier tension-primed draft over-corrected to ~71% negative).
 CIB_MODE = os.environ.get("CIB_MODE", "absolute")
+# When on, CIB panel aggregation preserves a strong minority dissent (net <= -2) instead of
+# median-washing trade-offs to ~0/positive — a low-cost backstop against the positivity bias.
+# Default OFF so the test suite and legacy runs are unchanged; enable via CIB_DISSENT_PRESERVING=1.
+CIB_DISSENT_PRESERVING = os.environ.get("CIB_DISSENT_PRESERVING", "").lower() in ("1", "true", "yes", "on")
 
 EVAL_MODEL = os.environ.get("AZURE_OPENAI_EVAL_MODEL", "gpt-4.1")
 SCENARIO_MODEL = os.environ.get("AZURE_OPENAI_SCENARIO_MODEL", "gpt-4.1")
@@ -54,6 +58,19 @@ COMBI_CLUSTER_K_MAX = int(os.environ.get("COMBI_CLUSTER_K_MAX", "10"))
 COMBI_CLUSTER_K_RANGE = (COMBI_CLUSTER_K_MIN, COMBI_CLUSTER_K_MAX)
 COMBI_NARRATIVE_WORDS = os.environ.get("COMBI_NARRATIVE_WORDS", "250-300")
 COMBI_SEED = int(os.environ.get("COMBI_SEED", "42"))
+
+# --- Evidence-grounded pointwise evaluation (scenario auditor) ---
+# The evaluation stage scores each scenario in its own bounded prompt against a per-scenario
+# evidence budget (its own chunks + driver chunks + "stress" RAG chunks), extracting facts
+# before scoring to counter LLM positivity bias. These knobs cap the evidence context (fixed
+# per scenario so narrative length cannot bias the score) and the CIB relationships injected.
+MAX_EVIDENCE_CHUNKS_PER_SCENARIO = int(os.environ.get("MAX_EVIDENCE_CHUNKS_PER_SCENARIO", "6"))
+MAX_EVIDENCE_CHARS_PER_CHUNK = int(os.environ.get("MAX_EVIDENCE_CHARS_PER_CHUNK", "700"))
+TARGET_SCENARIO_EVIDENCE_CHUNKS = int(os.environ.get("TARGET_SCENARIO_EVIDENCE_CHUNKS", "2"))
+TARGET_DRIVER_EVIDENCE_CHUNKS = int(os.environ.get("TARGET_DRIVER_EVIDENCE_CHUNKS", "2"))
+TARGET_STRESS_EVIDENCE_CHUNKS = int(os.environ.get("TARGET_STRESS_EVIDENCE_CHUNKS", "2"))
+CIB_RELEVANCE_THRESHOLD = int(os.environ.get("CIB_RELEVANCE_THRESHOLD", "2"))     # |score| >= this counts
+MAX_CIB_RELATIONSHIPS_PER_SCENARIO = int(os.environ.get("MAX_CIB_RELATIONSHIPS_PER_SCENARIO", "6"))
 
 MCDA_CRITERIA = ["impact", "probability", "actionability", "time_horizon", "risk_severity"]
 

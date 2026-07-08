@@ -67,6 +67,9 @@ def run(
     outdir: str = DATA_DIR,
 ) -> dict:
     n_clusters = config.COMBI_N_CLUSTERS if n_clusters is None else n_clusters
+    # Default narratives to the pooled SCENARIO_MODEL (gpt-5.4, spread across all endpoints)
+    # instead of scenario_gen's fallback chat deployment (gpt-4.1-mini, single endpoint → 429s).
+    model = model or config.SCENARIO_MODEL
 
     combi_path = os.path.join(outdir, "combinatorial_state.json")
     scen_path = os.path.join(outdir, "scenario_state_combi.json")
@@ -206,6 +209,7 @@ def run(
                 scenario_state_path=reps_path,
                 merge_state_path=_p("merge_state.json"),
                 kb_state_path=_p("kb_state.json"),
+                cib_state_path=_p("cib_state.json"),
                 output_path=final_path,
             )
         except Exception as e:  # noqa: BLE001

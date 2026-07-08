@@ -77,6 +77,9 @@ class TestPromptsAreDomainNeutral:
             "trend_name", "trend_description", "parent_context", "component_name",
             "component_description", "name", "description", "bom_path", "bom_drivers",
             "trend_drivers", "kb_sample", "origin",
+            # pointwise evidence-grounded auditor (SCENARIO_POINTWISE_EVIDENCE_ASSESS)
+            "scenario_title", "scenario_perspective", "scenario_assumptions",
+            "scenario_narrative", "evidence_block",
         }
         allowed = slots | call_kwargs
         unknown = []

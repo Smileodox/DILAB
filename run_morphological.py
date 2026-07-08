@@ -147,7 +147,7 @@ def run(n_samples=None, reject_threshold=None, n_clusters=None, model="gpt-5.4",
             print(f"\n[MCDA] on {len(reps)} representatives ...", flush=True)
             evaluation.run(scenario_state_path=reps_path, merge_state_path=merge_path,
                            kb_state_path=p("kb_state.json"), output_path=final_path,
-                           profile=profile, collection=coll_arg)
+                           cib_state_path=cib_path, profile=profile, collection=coll_arg)
         except Exception as e:  # noqa: BLE001
             print(f"  MCDA failed ({e}); other *_zwicky outputs still written.")
 

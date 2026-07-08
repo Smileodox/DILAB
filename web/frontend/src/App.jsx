@@ -9,6 +9,7 @@ import MorphBoxPage from '@/pages/MorphBoxPage'
 import CIBPage from '@/pages/CIBPage'
 import ScenariosPage from '@/pages/ScenariosPage'
 import LandscapePage from '@/pages/LandscapePage'
+import ArchetypesPage from '@/pages/ArchetypesPage'
 import StrategyPage from '@/pages/StrategyPage'
 import PipelinePage from '@/pages/PipelinePage'
 import EmbeddingsLabPage from '@/pages/EmbeddingsLabPage'
@@ -34,6 +35,7 @@ export default function App() {
           <Route path="/cib" element={<Guarded path="/cib"><CIBPage /></Guarded>} />
           <Route path="/scenarios" element={<Guarded path="/scenarios"><ScenariosPage /></Guarded>} />
           <Route path="/landscape" element={<Guarded path="/landscape"><LandscapePage /></Guarded>} />
+          <Route path="/archetypes" element={<Guarded path="/archetypes"><ArchetypesPage /></Guarded>} />
           <Route path="/embeddings" element={<Guarded path="/embeddings"><EmbeddingsLabPage /></Guarded>} />
           <Route path="/strategy" element={<Guarded path="/strategy"><StrategyPage /></Guarded>} />
         </Routes>

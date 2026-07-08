@@ -1,6 +1,6 @@
 import { useState, useRef, useCallback } from 'react'
 import { motion } from 'framer-motion'
-import { Map, Crosshair, Layers, Star, Activity, TrendingUp, AlertTriangle } from 'lucide-react'
+import { Map, Crosshair, Layers, Star, Activity, TrendingUp } from 'lucide-react'
 import { useApi } from '@/hooks/useApi'
 import { useKb } from '@/context/KbContext'
 import MetricCard from '@/components/ui/MetricCard'
@@ -39,6 +39,7 @@ function StructStat({ label, value, sub, icon: Icon, warn }) {
 export default function LandscapePage() {
   const { kb, kbs } = useKb()  // KB is the global selection (TopBar); method stays local
   const [method, setMethod] = useState('cib')
+  const [colorMode, setColorMode] = useState('archetype')  // colour scatter by cluster or type
   const [selectedPointId, setSelectedPointId] = useState(null)
   const detailRef = useRef(null)
 
@@ -78,6 +79,10 @@ export default function LandscapePage() {
   const nRepresentatives = landscape.points?.filter((p) => p.is_representative).length ?? 0
   const showHeatmap = !isSampled && (landscape.similarity_matrix?.length ?? 0) > 0
   const selectedPoint = landscape.points?.find((p) => p.scenario_id === selectedPointId) || null
+
+  // Cluster colouring: the combinatorial landscape points carry an `archetype` label.
+  const hasArchetypes = (landscape.points || []).some((p) => p.archetype)
+  const colorBy = hasArchetypes ? colorMode : 'type'
 
   // Interpretable PCA projection (sampled methods): axis labels + honest structure verdict.
   const axes = landscape.axes
@@ -119,6 +124,24 @@ export default function LandscapePage() {
               </button>
             ))}
           </div>
+          {/* Colour the scatter by named cluster (archetype) or by scenario type. */}
+          {hasArchetypes && (
+            <div className="flex gap-2">
+              {[['archetype', 'Clusters'], ['type', 'Type']].map(([mode, label]) => (
+                <button
+                  key={mode}
+                  onClick={() => setColorMode(mode)}
+                  className={`px-3 py-1.5 rounded-md text-sm font-medium transition ${
+                    colorMode === mode
+                      ? 'bg-emerald-600 text-white'
+                      : 'bg-zinc-800 text-zinc-400 hover:text-zinc-200'
+                  }`}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       </motion.div>
 
@@ -147,19 +170,47 @@ export default function LandscapePage() {
         )}
       </motion.div>
 
-      {/* Honesty banner: the null test says this field has no clusters to read as
-          archetypes — so navigate the continuum (axes + parallel-coords), don't cluster. */}
-      {isSampled && structure && !structure.has_usable_clusters && (
-        <motion.div variants={fadeIn}
-          className="flex items-start gap-3 rounded-lg border border-amber-500/30 bg-amber-500/5 px-4 py-3">
-          <AlertTriangle className="w-4 h-4 text-amber-400 mt-0.5 shrink-0" />
-          <p className="text-sm text-amber-200/90">
-            <span className="font-medium">No usable clustering</span> — geometrically the field is
-            {structure.verdict === '≈ uniform random' ? ' indistinguishable from random'
-              : ' barely structured'} (silhouette {structure.best_silhouette} ≈ null{' '}
-            {structure.null?.silhouette_mean}). It's a continuum, not archetypes: navigate it
-            along the PCA axes and the driver recipe, not by clusters.
+
+      {/* Multi-method structure — several geometric lenses side by side. KMeans forces every
+          point into a cluster (all-points silhouette); HDBSCAN permits a continuum halo and
+          reports the silhouette of the dense subset only; ordinal keeps the manifestation
+          ordering. Shows the archetypal core IS clusterable even when the default is near-zero. */}
+      {isSampled && structure?.lenses && (
+        <motion.div variants={fadeIn}>
+          <h2 className="text-lg font-semibold text-white mb-1">Structure — method comparison</h2>
+          <p className="text-sm text-zinc-500 mb-3">
+            HDBSCAN silhouettes are on the dense subset only (see continuum %), NOT comparable to the
+            all-points KMeans value. “Usable” floor = {structure.floor ?? 0.25}.
           </p>
+          <div className="glass rounded-xl overflow-hidden">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="text-xs text-zinc-500 uppercase tracking-wider border-b border-white/[0.06]">
+                  <th className="text-left px-4 py-2 font-medium">Encoding · method</th>
+                  <th className="text-right px-4 py-2 font-medium">Silhouette</th>
+                  <th className="text-right px-4 py-2 font-medium">Clusters</th>
+                  <th className="text-right px-4 py-2 font-medium">Continuum</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Object.entries(structure.lenses).map(([name, l]) => {
+                  const usable = l.silhouette != null && l.silhouette >= (structure.floor ?? 0.25)
+                  return (
+                    <tr key={name} className="border-b border-white/[0.03]">
+                      <td className="px-4 py-2 text-zinc-300">{l.encoding} · {l.method}</td>
+                      <td className={`px-4 py-2 text-right font-semibold ${usable ? 'text-emerald-300' : 'text-zinc-400'}`}>
+                        {l.silhouette ?? '—'}
+                      </td>
+                      <td className="px-4 py-2 text-right text-zinc-400">{l.n_clusters}</td>
+                      <td className="px-4 py-2 text-right text-zinc-400">
+                        {l.noise_fraction ? `${(l.noise_fraction * 100).toFixed(0)}%` : '—'}
+                      </td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            </table>
+          </div>
         </motion.div>
       )}
 
@@ -172,13 +223,18 @@ export default function LandscapePage() {
 
       {/* Scatter — PCA config-space axes (sampled) or legacy UMAP (CIB) */}
       <motion.div variants={fadeIn}>
-        {isSampled && axes && (
+        {isSampled && (colorBy === 'archetype' ? (
+          <h2 className="text-lg font-semibold text-white mb-1">
+            Scenario clusters — named archetypes + continuum
+          </h2>
+        ) : axes && (
           <h2 className="text-lg font-semibold text-white mb-1">Config space (PCA)</h2>
-        )}
+        ))}
         <UMAPScatter
           points={landscape.points}
           onPointClick={handlePointClick}
           axisTitles={axisTitles}
+          colorBy={colorBy}
         />
       </motion.div>
 

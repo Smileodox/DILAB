@@ -43,6 +43,10 @@ class _ClientPool:
                 azure_endpoint=ep["endpoint"],
                 api_key=ep["api_key"],
                 api_version=ep["api_version"],
+                # Bound each attempt so an occasionally-stalled gpt-5.4 request fails fast and is
+                # retried by safe_chat_json (APITimeoutError is retryable) instead of blocking the
+                # whole pipeline until the SDK's 600s default — the CIB/narrative-phase stalls.
+                timeout=120.0,
             ))
             self._per_client_locks.append(threading.Lock())
             self._per_client_last_call.append(0.0)
@@ -80,8 +84,15 @@ _POOLED_MODELS = {"gpt-5.4", "gpt-5.4-mini"}
 
 
 def _get_client(model: str | None):
-    """Round-robin for models available on all endpoints, primary-only for others."""
-    if model and model in _POOLED_MODELS:
+    """Round-robin for models available on all endpoints, primary-only for others.
+
+    Uses the EFFECTIVE model (explicit arg, else the default chat deployment) so that
+    calls made without a model — manifestations/trends/merge — also round-robin whenever
+    the default deployment is a pooled model. Otherwise they'd all hammer the primary
+    endpoint (the gpt-4.1-mini single-endpoint 429 storm).
+    """
+    effective = model or config.AZURE_OPENAI_CHAT_DEPLOYMENT
+    if effective in _POOLED_MODELS:
         return _pool.get()[0]
     return _pool.get_primary()
 
@@ -185,10 +196,27 @@ def validated_chat_json(
     raise last_error  # type: ignore[misc]
 
 
-def embed(texts: list[str]) -> list[list[float]]:
-    client = _pool.get_primary()
-    response = client.embeddings.create(
-        model=config.AZURE_OPENAI_EMBEDDING_DEPLOYMENT,
-        input=texts,
-    )
-    return [item.embedding for item in response.data]
+def embed(texts: list[str], retries: int = 4) -> list[list[float]]:
+    """Embed texts via the primary endpoint, retrying transient network/rate errors.
+
+    Embeddings use a single deployment (not pooled across endpoints), and embed() is called deep
+    inside trends/merge/scenario_gen with no other safety net — so a single transient
+    APIConnectionError/RateLimitError here would otherwise crash a whole (multi-minute) run.
+    Mirrors safe_chat_json's backoff; re-raises after the last attempt (embeddings can't be faked).
+    """
+    for attempt in range(retries + 1):
+        try:
+            client = _pool.get_primary()
+            response = client.embeddings.create(
+                model=config.AZURE_OPENAI_EMBEDDING_DEPLOYMENT,
+                input=texts,
+            )
+            return [item.embedding for item in response.data]
+        except _RETRYABLE as e:
+            if attempt < retries:
+                wait = 2 ** attempt * 5 + random.uniform(0, 3)
+                print(f"  Embed error: {type(e).__name__}, retrying in {wait:.0f}s "
+                      f"({attempt + 1}/{retries})...", flush=True)
+                time.sleep(wait)
+                continue
+            raise

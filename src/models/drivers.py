@@ -34,6 +34,7 @@ class DimensionType(str, Enum):
     REGULATORY = "regulatory"
     MARKET = "market"
     GEOPOLITICAL = "geopolitical"
+    TECHNOLOGICAL = "technological"
     UNCLASSIFIED = "unclassified"
 
 
@@ -55,18 +56,21 @@ class AxisRole(str, Enum):
 
 
 # Endogenous (system-response) dimensions vs. exogenous (driving) dimensions.
+# `technological` is the EXTERNAL tech-push uncertainty (e.g. AI/ML maturity, new methods) —
+# distinct from hardware/software, which are the endogenous product/BOM the study is *about*.
 _RESPONSE_DIMENSIONS = {DimensionType.HARDWARE, DimensionType.SOFTWARE}
 _DRIVING_DIMENSIONS = {
     DimensionType.REGULATORY,
     DimensionType.MARKET,
     DimensionType.GEOPOLITICAL,
+    DimensionType.TECHNOLOGICAL,
 }
 
 
 def derive_axis_role(dimension_type: DimensionType, origin: DriverOrigin) -> AxisRole:
     """Default layer for a driver from its dimension type, falling back on origin.
 
-    Hardware/software → response; regulatory/market/geopolitical → driving. When the
+    Hardware/software → response; regulatory/market/geopolitical/technological → driving. When the
     dimension is unclassified, BOM-origin drivers (decomposed from the product) are
     responses and everything else is treated as a candidate driving uncertainty.
     """

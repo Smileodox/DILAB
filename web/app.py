@@ -73,6 +73,7 @@ VIEW_REQUIREMENTS = {
     "/scenarios": ["final_analysis"],
     "/strategy": ["strategic_framing"],
     "/embeddings": ["cib_state"],
+    "/archetypes": ["archetypes_state"],
 }
 
 
@@ -488,6 +489,15 @@ async def landscape(kb: str = "spectrum", method: str = "cib"):
         return load(f"landscape_state{suffix}", kb)
     except FileNotFoundError:
         return {"points": [], "similarity_matrix": [], "metadata": {}}
+
+
+@app.get("/api/archetypes")
+async def archetypes(kb: str = "spectrum"):
+    """Named archetypes (HDBSCAN+ordinal dense-core clusters) + the honest continuum halo."""
+    try:
+        return load("archetypes_state", kb)
+    except FileNotFoundError:
+        return {"unavailable": True, "archetypes": []}
 
 
 @app.get("/api/landscape_combi")

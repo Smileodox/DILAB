@@ -70,8 +70,17 @@ def select_top_drivers(merge_path: str, n: int) -> list[TechDriver]:
 
 
 def generate_manifestations_parallel(
-    drivers: list[TechDriver], collection, max_workers: int = MANIF_WORKERS
+    drivers: list[TechDriver], collection, max_workers: int = MANIF_WORKERS, profile=None
 ) -> dict:
+    # MANIFESTATION_DETERMINE is a neutralized prompt ({domain}/{horizon}/{manifestation_example});
+    # inject the docked domain profile so the call is domain-agnostic (was hardwired to spectrum).
+    if profile is None:
+        from src.pipeline.domain import load_profile
+        profile = load_profile()
+    pkw = profile.prompt_kwargs()
+    manif_system = (f"You are determining technology manifestations for {pkw['domain']} "
+                    "foresight. Be specific and domain-grounded.")
+
     all_manifestations: list[DriverManifestation] = []
     manifestation_map: dict[str, list[str]] = {}
 
@@ -85,13 +94,14 @@ def generate_manifestations_parallel(
             driver_origin=driver.origin.value,
             driver_confidence=driver.confidence.value,
             rag_chunks=rag_text,
+            **pkw,
         )
 
         try:
             result = validated_chat_json(
                 prompt,
                 ManifestationResponse,
-                system="You are determining technology manifestations for regulatory frequency monitoring foresight. Be specific and domain-grounded.",
+                system=manif_system,
             )
             manifs = [
                 DriverManifestation(
@@ -106,7 +116,7 @@ def generate_manifestations_parallel(
         except Exception:
             raw = safe_chat_json(
                 prompt,
-                system="You are determining technology manifestations for regulatory frequency monitoring foresight. Be specific and domain-grounded.",
+                system=manif_system,
             )
             manifs = [
                 DriverManifestation(
