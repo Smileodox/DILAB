@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import secrets
 from pathlib import Path
 
@@ -74,6 +75,8 @@ VIEW_REQUIREMENTS = {
     "/strategy": ["strategic_framing"],
     "/embeddings": ["cib_state"],
     "/archetypes": ["archetypes_state"],
+    "/present": ["landscape_state_combi", "archetypes_state", "engine_validation_fields"],
+    "/methodology": [],  # static content page — available for every KB (all([]) is True)
 }
 
 
@@ -168,7 +171,8 @@ async def bom(kb: str = "spectrum"):
     bom_data = load("bom_state", kb)
     nodes = bom_data["bom_nodes"]
     root_id = bom_data["root_id"]
-    driver_ids = {d["id"] for d in bom_data["bom_drivers"]}
+    # bom_drivers carry their own driver id; the BOM tree is keyed by bom_node_id.
+    driver_ids = {d["bom_node_id"] for d in bom_data["bom_drivers"] if d.get("bom_node_id")}
 
     children_map = {}
     for nid, n in nodes.items():
@@ -183,7 +187,9 @@ async def bom(kb: str = "spectrum"):
             "name": n["name"],
             "level": n.get("level", 0),
             "is_driver": nid in driver_ids or n.get("is_driver", False),
-            "description": n.get("description", "")[:200],
+            "description": (n.get("description", "")[:200] + "…"
+                            if len(n.get("description", "")) > 200
+                            else n.get("description", "")),
             "children": [build_tree(cid) for cid in children_map.get(nid, [])],
         }
 
@@ -340,11 +346,16 @@ async def traceability(scenario_id: str, kb: str = "spectrum"):
             "driver": driver,
         })
 
+    # Some recorded chunk ids may not resolve in the current KB (re-ingested corpus);
+    # count them so the UI can report resolution honestly instead of dropping silently.
     source_chain = []
     seen_sources = set()
+    resolved_chunks = 0
+    total_chunks = len(scenario["source_chunk_ids"])
     for chunk_id in scenario["source_chunk_ids"]:
         chunk = kb_data["chunks"].get(chunk_id)
         if chunk:
+            resolved_chunks += 1
             src = kb_data["sources"].get(chunk["source_id"])
             if src and src["id"] not in seen_sources:
                 seen_sources.add(src["id"])
@@ -359,6 +370,8 @@ async def traceability(scenario_id: str, kb: str = "spectrum"):
         "assessment": assessment,
         "assumptions": assumptions,
         "source_chain": source_chain,
+        "resolved_chunks": resolved_chunks,
+        "total_chunks": total_chunks,
     }
 
 
@@ -542,6 +555,247 @@ async def strategic_framing(kb: str = "spectrum"):
         return load("strategic_framing", kb)
     except FileNotFoundError:
         return {"critical_uncertainties": [], "no_regret_moves": [], "scenario_strategy": [], "recommended_priority": {}}
+
+
+# ---------------------------------------------------------------------------
+# Presentation mode (/present) — one precomputed bundle so the live talk never
+# waits on a fetch. Everything is derived from the persisted final-run artifacts.
+# ---------------------------------------------------------------------------
+
+# The example driver whose journey the presentation follows through every stage.
+_PRESENT_DRIVER_ID = "f33ab61e5a83"  # "Shift to dynamic shared and harmonised spectrum access"
+_present_cache: dict = {"mtime": None, "data": None}
+
+
+def _build_present_bundle(kb: str) -> dict:
+    merge = load("merge_state", kb)
+    morph = load("morphbox_state", kb)
+    cib_data = load("cib_state", kb)
+    kb_data = load("kb_state", kb)
+    land = load("landscape_state_combi", kb)
+    scen = load("scenario_state_combi", kb)["scenarios"]
+    arch = load("archetypes_state", kb)
+    validation = load("engine_validation_fields", kb)
+    ov = load("kb_state", kb)  # sources/chunks counts come from kb_state directly
+
+    did = _PRESENT_DRIVER_ID
+    driver = next(d for d in merge["unified_drivers"] if d["id"] == did)
+
+    # --- Journey: source evidence -------------------------------------------------
+    chunk_ids = driver.get("source_chunk_ids", [])
+    by_source: dict[str, list] = {}
+    resolved = 0
+    for cid in chunk_ids:
+        ch = kb_data["chunks"].get(cid)
+        if ch:
+            resolved += 1
+            src = kb_data["sources"].get(ch["source_id"], {})
+            by_source.setdefault(src.get("title", "?"), []).append(ch)
+    top_sources = sorted(by_source.items(), key=lambda kv: -len(kv[1]))
+
+    def _clean_preview(text: str) -> str | None:
+        # Strip private-use glyphs (render as tofu boxes), collapse whitespace, then
+        # start the excerpt at the first sentence that reads like prose - chunk starts
+        # are often running page headers ("RSPG25-006 FINAL 33", "74 THE ROAD TO 5G").
+        t = "".join(c for c in text if not ("\ue000" <= c <= "\uf8ff")).strip()
+        t = " ".join(t.split())
+        sentences = re.split(r"(?<=[.!?]) +", t)
+        for i, s in enumerate(sentences):
+            if re.match(r"^[A-Z][a-z]", s) and len(s.split()) >= 8 and "http" not in s.lower():
+                out = " ".join(sentences[i:])
+                return out[:260] if len(out) >= 120 else None
+        return None
+
+    chunk_previews = []
+    for title, chunks in top_sources[:4]:
+        picked = 0
+        for ch in chunks:
+            if picked >= 2:
+                break
+            cleaned = _clean_preview(ch.get("content", ""))
+            if cleaned:
+                chunk_previews.append({"source": title, "text": cleaned})
+                picked += 1
+
+    # --- Journey: extraction + selection ------------------------------------------
+    cib_ids = cib_data["driver_ids"]
+    all_drivers = [{
+        "id": d["id"], "name": d["name"], "origin": d.get("origin"),
+        "dimension": d.get("dimension_type"), "selected": d["id"] in cib_ids,
+    } for d in merge["unified_drivers"]]
+
+    # --- Journey: manifestations (in morphbox order = optimistic → pessimistic) ---
+    manif_order = morph["manifestations"].get(did, [])
+    manif_by_id = {m["id"]: m for m in morph["all_manifestations"]}
+    manifestations = [{
+        "id": mid,
+        "label": manif_by_id[mid].get("label", mid),
+        "description": manif_by_id[mid].get("description", "")[:220],
+        "plausibility": manif_by_id[mid].get("plausibility", "medium"),
+    } for mid in manif_order if mid in manif_by_id]
+
+    # --- Journey: couplings with the 5-persona panel votes ------------------------
+    name_by_id = dict(zip(cib_data["driver_ids"], cib_data["driver_names"]))
+    personas = [p.get("name", p.get("id", "?"))
+                for p in cib_data.get("panel_metadata", {}).get("personas", [])]
+    out_entries = {e["driver_b_id"]: e for e in cib_data["entries"] if e["driver_a_id"] == did}
+    in_entries = {e["driver_a_id"]: e for e in cib_data["entries"] if e["driver_b_id"] == did}
+    couplings = []
+    for other in set(out_entries) | set(in_entries):
+        eo, ei = out_entries.get(other), in_entries.get(other)
+        if (eo and eo["impact_score"]) or (ei and ei["impact_score"]):
+            couplings.append({
+                "other_id": other,
+                "other_name": name_by_id.get(other, other),
+                "score_out": eo["impact_score"] if eo else 0,
+                "score_in": ei["impact_score"] if ei else 0,
+                "persona_scores": eo.get("persona_scores") if eo else None,
+                "consensus": eo.get("consensus_level") if eo else None,
+                "reasoning": (eo.get("reasoning", "") or "")[:400] if eo else "",
+            })
+    couplings.sort(key=lambda c: -abs(c["score_out"]))
+
+    # --- Journey: how the driver's futures distribute over the 120 scenarios ------
+    manif_idx = {mid: i for i, mid in enumerate(manif_order)}
+    scenario_manif = {}
+    for s in scen:
+        for a in s.get("assumptions", []):
+            if a.get("driver_id") == did:
+                idx = manif_idx.get(a.get("manifestation_id"))
+                if idx is not None:
+                    scenario_manif[s["id"]] = idx
+    dist_counts = [0] * len(manif_order)
+    for idx in scenario_manif.values():
+        dist_counts[idx] += 1
+    distribution = [{"label": manifestations[i]["label"], "count": dist_counts[i]}
+                    for i in range(len(manifestations))]
+
+    # --- Journey: archetype stances (join via seed_id, ties flagged honestly) -----
+    by_seed = {}
+    for s in scen:
+        by_seed.setdefault(s.get("seed_id"), s)
+    stances = []
+    for a in arch.get("archetypes", []):
+        counts: dict[str, int] = {}
+        for sid in a.get("member_scenario_ids", []):
+            s = by_seed.get(sid)
+            if not s:
+                continue
+            for asm in s.get("assumptions", []):
+                if asm.get("driver_id") == did:
+                    idx = manif_idx.get(asm.get("manifestation_id"))
+                    if idx is not None:
+                        lbl = manifestations[idx]["label"]
+                        counts[lbl] = counts.get(lbl, 0) + 1
+        ordered = sorted(counts.items(), key=lambda kv: -kv[1])
+        top_n = ordered[0][1] if ordered else 0
+        tie = len([1 for _, n in ordered if n == top_n]) > 1
+        stances.append({
+            "archetype": a["label"], "size": a["size"],
+            "top": ordered[0][0] if ordered and not tie else None,
+            "top_count": top_n, "tie": tie, "counts": counts,
+        })
+
+    # --- Field (120 points incl. 3D) + lenses -------------------------------------
+    points = [{
+        "id": p["scenario_id"], "title": p.get("title", ""),
+        "x": p.get("x"), "y": p.get("y"),
+        "cx": p.get("cx"), "cy": p.get("cy"), "cz": p.get("cz"),
+        # cluster-space coords (UMAP of the ordinal matrix HDBSCAN clustered)
+        "ox": p.get("ox"), "oy": p.get("oy"),
+        "ox3": p.get("ox3"), "oy3": p.get("oy3"), "oz3": p.get("oz3"),
+        "archetype": p.get("archetype", "Continuum"),
+        "is_representative": p.get("is_representative", False),
+    } for p in land.get("points", [])]
+
+    structure = land.get("structure", {})
+
+    # Extraction-mechanism scene data (optional artifact — the deck must not die on it)
+    try:
+        extraction = load("present_extraction", kb)
+    except FileNotFoundError:
+        extraction = None
+
+    # CIB inhibiting share measured LIVE from the persisted matrix — single source of truth
+    # for the improvement lever, the validation chip and the coupling stat bar. (The old
+    # hardcoded 22% was the historical fix-time measurement; the final run sits at 53/182.)
+    cib_matrix = cib_data.get("matrix") or []
+    cib_signs = [[(1 if v > 0 else -1 if v < 0 else 0) for v in row] for row in cib_matrix]
+    offdiag = [v for i, row in enumerate(cib_matrix) for j, v in enumerate(row) if i != j]
+    n_cib_pairs = len(offdiag)
+    n_cib_inhibiting = sum(1 for v in offdiag if v < 0)
+    cib_share = round(n_cib_inhibiting / n_cib_pairs, 3) if n_cib_pairs else 0.22
+
+    return {
+        "meta": {
+            "sources": len(ov.get("sources", {})),
+            "chunks": len(ov.get("chunks", {})),
+            "drivers_total": len(merge["unified_drivers"]),
+            "cib_drivers": len(cib_ids),
+            "combinations": 268435456,
+            "scenarios": len(scen),
+            "archetypes": arch.get("n_archetypes", 5),
+            "fixed_points": 510,
+            "mc_samples": 2000,
+        },
+        "journey": {
+            "driver": {
+                "id": did, "name": driver["name"],
+                "description": driver.get("description", "")[:300],
+                "origin": driver.get("origin"), "confidence": driver.get("confidence"),
+                "dimension": driver.get("dimension_type"),
+                "axis_role": driver.get("axis_role"),
+                "n_chunks": len(chunk_ids), "n_chunks_resolved": resolved,
+                "n_sources": len(by_source),
+                "top_sources": [{"title": t, "count": len(cs)} for t, cs in top_sources[:5]],
+            },
+            "chunk_previews": chunk_previews,
+            "all_drivers": all_drivers,
+            "manifestations": manifestations,
+            "couplings": couplings,
+            "personas": personas,
+            "distribution": distribution,
+            "scenario_manif": scenario_manif,
+            "archetype_stances": stances,
+        },
+        "extraction": extraction,
+        "field": {
+            "points": points,
+            "pc_shares_3d": structure.get("pc_shares_3d"),
+        },
+        "lenses": {
+            "summary": structure.get("lenses", {}),
+            "labels": structure.get("lens_labels", {}),
+            "floor": structure.get("floor", 0.25),
+        },
+        "validation": validation,
+        # Improvement levers: CIB share computed from the live matrix, the rest historically
+        # measured (differentiation_fix_results.md).
+        "improvement": {
+            "cib_negative_share": {"before": 0.0, "after": cib_share,
+                                   "band": [0.20, 0.30], "band_label": "Weimer-Jehle 20–30%"},
+            "cib_matrix_signs": cib_signs,
+            "cib_counts": {"pairs": n_cib_pairs, "inhibiting": n_cib_inhibiting},
+            "z_score": {"before": 1.4, "after": 3.55, "significant_at": 2.0},
+            "corpus_chunks": {"before": 2875, "after": 3905},
+            "lens_progression": [
+                {"name": "one-hot · k-means", "key": "onehot_kmeans", "silhouette": 0.074},
+                {"name": "ordinal · k-means", "key": "ordinal_kmeans", "silhouette": 0.17},
+                {"name": "one-hot · HDBSCAN", "key": "onehot_hdbscan", "silhouette": 0.3365},
+                {"name": "ordinal · HDBSCAN", "key": "ordinal_hdbscan", "silhouette": 0.3799},
+            ],
+        },
+        "parcoords": land.get("parcoords"),
+    }
+
+
+@app.get("/api/present")
+async def present(kb: str = "spectrum"):
+    mtime = os.path.getmtime(_resolve("landscape_state_combi", kb))
+    if _present_cache["data"] is None or _present_cache["mtime"] != mtime:
+        _present_cache["data"] = _build_present_bundle(kb)
+        _present_cache["mtime"] = mtime
+    return _present_cache["data"]
 
 
 @app.get("/api/export")

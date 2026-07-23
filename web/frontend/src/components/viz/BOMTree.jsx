@@ -72,11 +72,12 @@ function TreeNode({ node, level = 0, defaultExpanded }) {
           L{node.level}
         </span>
 
-        {/* Tooltip */}
+        {/* Tooltip — below the row; a left-full placement gets clipped by the
+            tree's overflow container. */}
         {showTooltip && node.description && (
           <div
-            className="absolute left-full top-0 ml-2 z-50 glass rounded-md px-3 py-2 text-xs text-zinc-300 max-w-xs leading-relaxed pointer-events-none"
-            style={{ minWidth: 160 }}
+            className="absolute top-full mt-1 z-50 glass-solid rounded-md px-3 py-2 text-xs text-zinc-300 max-w-md leading-relaxed pointer-events-none border border-white/10 shadow-xl"
+            style={{ minWidth: 160, left: level * 24 + 32 }}
           >
             {node.description.length > 200
               ? node.description.slice(0, 200) + '...'

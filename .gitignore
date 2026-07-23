@@ -24,3 +24,6 @@ knowledge_base/pdfs/
 *.out
 *.toc
 *.synctex.gz
+# Local tool state / regenerable previews
+.cortex/
+viz_preview/

@@ -51,8 +51,8 @@ export default function ScenarioDetail({ scenario, onShowNarrative, onShowEviden
           <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-zinc-800 text-zinc-300">
             Rank #{scenario.rank}
           </span>
-          <span className="text-sm font-mono text-zinc-400">
-            TOPSIS {(scenario.topsis_closeness * 100).toFixed(0)}%
+          <span className="text-sm font-mono text-zinc-400" title="TOPSIS closeness to ideal (1 = best, 0 = worst within set)">
+            TOPSIS {(scenario.topsis_closeness ?? 0).toFixed(2)}
           </span>
         </div>
       </motion.div>
@@ -95,6 +95,10 @@ export default function ScenarioDetail({ scenario, onShowNarrative, onShowEviden
             Assessment
           </h3>
           <RadarChart assessment={scenario.assessment} color={colors.dot} />
+          <p className="text-[11px] text-zinc-600 mt-1">
+            Criteria scores are near-uniform across scenarios (grounded auditor);
+            ranking differentiation comes from TOPSIS closeness.
+          </p>
           <div className="space-y-2 mt-4">
             {CRITERIA.map(c => (
               <ScoreBar
@@ -104,6 +108,14 @@ export default function ScenarioDetail({ scenario, onShowNarrative, onShowEviden
                 color={colors.dot}
               />
             ))}
+            {scenario.assessment.confidence != null && (
+              <ScoreBar
+                label="Confidence"
+                value={scenario.assessment.confidence}
+                max={1}
+                color={colors.dot}
+              />
+            )}
           </div>
         </motion.div>
       )}
@@ -114,13 +126,14 @@ export default function ScenarioDetail({ scenario, onShowNarrative, onShowEviden
           <h3 className="text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-2">
             Driver Assumptions
           </h3>
-          <div className="flex gap-2 overflow-x-auto pb-2 -mx-1 px-1">
+          <div className="flex flex-wrap gap-2 pb-2 -mx-1 px-1">
             {scenario.assumptions.map((a, i) => {
               const parsed = parseAssumption(a)
               return (
                 <div
                   key={i}
-                  className="shrink-0 glass rounded-lg p-2.5 min-w-[140px] max-w-[180px]"
+                  className="glass rounded-lg p-2.5 min-w-[140px] max-w-[180px]"
+                  title={parsed.detail || undefined}
                 >
                   <p className="text-xs text-zinc-400 truncate" title={parsed.driver}>
                     {parsed.driver}

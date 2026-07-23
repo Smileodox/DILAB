@@ -1,8 +1,9 @@
 import { useState, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown, FileText } from 'lucide-react'
-import { useKbApi } from '@/context/KbContext'
+import { useKbApi, useKb } from '@/context/KbContext'
 import Card from '@/components/ui/Card'
+import LoadError from '@/components/ui/LoadError'
 import { OriginBadge } from '@/components/ui/Badge'
 import { staggerContainer, fadeUp } from '@/utils/animation'
 
@@ -13,11 +14,13 @@ const FILTERS = [
 ]
 
 export default function DriversPage() {
-  const { data, loading } = useKbApi('/api/drivers')
+  const { data, loading, error } = useKbApi('/api/drivers')
+  const { kb, kbs } = useKb()
   const [filter, setFilter] = useState('all')
   const [expandedId, setExpandedId] = useState(null)
 
-  const drivers = data || []
+  const drivers = Array.isArray(data) ? data : []
+  const hasCib = kbs.find((k) => k.id === kb)?.views?.includes('/cib')
 
   const counts = useMemo(() => {
     const c = { all: drivers.length, bom: 0, trend: 0 }
@@ -36,6 +39,10 @@ export default function DriversPage() {
     )
   }
 
+  if (error || (!loading && drivers.length === 0 && data?.unavailable)) {
+    return <LoadError title="Technology Drivers" />
+  }
+
   const filtered = filter === 'all'
     ? drivers
     : drivers.filter((d) => d.origin === filter)
@@ -44,7 +51,12 @@ export default function DriversPage() {
     <div className="max-w-7xl mx-auto px-8 py-8">
       {/* Header + filters */}
       <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold text-white">Technology Drivers</h1>
+        <div>
+          <h1 className="text-2xl font-bold text-white">Technology Drivers</h1>
+          <p className="text-xs text-zinc-500 mt-1">
+            {drivers.length} unified drivers{hasCib && ' · relevance-ranked top 14 consolidated into CIB axes'}
+          </p>
+        </div>
         <div className="flex gap-2">
           {FILTERS.map((f) => {
             const active = filter === f.key
@@ -75,6 +87,11 @@ export default function DriversPage() {
         animate="center"
         className="grid md:grid-cols-2 xl:grid-cols-3 gap-4"
       >
+        {filtered.length === 0 && (
+          <p className="text-sm text-zinc-500 col-span-full py-8 text-center">
+            No drivers match this filter for the current knowledge base.
+          </p>
+        )}
         {filtered.map((driver) => {
           const expanded = expandedId === driver.id
           const accentColor = driver.origin === 'bom' ? '#0ea5e9' : '#8b5cf6'
@@ -106,9 +123,23 @@ export default function DriversPage() {
                     />
                   </div>
 
-                  {/* Badge */}
-                  <div className="mb-2.5">
+                  {/* Badges */}
+                  <div className="mb-2.5 flex items-center gap-1.5 flex-wrap">
                     <OriginBadge origin={driver.origin} />
+                    {driver.axis_role && (
+                      <span className={`px-2 py-0.5 rounded text-[10px] font-medium capitalize ${
+                        driver.axis_role === 'driving'
+                          ? 'bg-amber-500/10 text-amber-400 border border-amber-500/20'
+                          : 'bg-zinc-800/80 text-zinc-400 border border-zinc-700/40'
+                      }`}>
+                        {driver.axis_role}
+                      </span>
+                    )}
+                    {driver.dimension_type && (
+                      <span className="px-2 py-0.5 rounded text-[10px] font-medium capitalize bg-zinc-800/80 text-zinc-500 border border-zinc-700/40">
+                        {driver.dimension_type}
+                      </span>
+                    )}
                   </div>
 
                   {/* Description */}

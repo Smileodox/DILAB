@@ -22,6 +22,17 @@ export default function SimilarityHeatmap({ matrix, scenarioIds, scenarioTitles 
       ),
     )
 
+    // Off-diagonal similarities all sit near the top of [0,1] (cosine of narratives);
+    // anchoring zmin at the real off-diagonal minimum keeps the contrast visible
+    // instead of rendering a uniformly green square.
+    let offDiagMin = 1
+    matrix.forEach((row, i) =>
+      row.forEach((val, j) => {
+        if (i !== j && val < offDiagMin) offDiagMin = val
+      }),
+    )
+    const zmin = offDiagMin >= 1 ? 0 : Math.max(0, offDiagMin - 0.02)
+
     const trace = {
       type: 'heatmap',
       z: matrix,
@@ -29,16 +40,19 @@ export default function SimilarityHeatmap({ matrix, scenarioIds, scenarioTitles 
       y: labels,
       text: hoverText,
       hoverinfo: 'text',
+      // Small matrix (fixed-point set) — print the values right on the cells.
+      texttemplate: n <= 12 ? '%{z:.2f}' : undefined,
+      textfont: { size: 10, color: '#e4e4e7' },
       colorscale: [
         [0, '#1e1b4b'],
         [0.5, '#3b82f6'],
         [1, '#10b981'],
       ],
-      zmin: 0,
+      zmin,
       zmax: 1,
       colorbar: {
         tickfont: { color: '#a1a1aa', size: 10 },
-        titlefont: { color: '#a1a1aa' },
+        title: { text: 'cosine similarity', side: 'right', font: { color: '#a1a1aa', size: 11 } },
       },
     }
 

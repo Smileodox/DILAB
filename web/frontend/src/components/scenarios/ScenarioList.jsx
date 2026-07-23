@@ -1,12 +1,17 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { motion } from 'framer-motion'
 import { SCENARIO_TYPE_COLORS } from '@/utils/colors'
 import { staggerContainer, fadeUp } from '@/utils/animation'
 
-const FILTERS = ['all', 'disruptive', 'cautionary', 'wildcard', 'evolutionary']
-
 export default function ScenarioList({ scenarios, selectedId, onSelect }) {
   const [filter, setFilter] = useState('all')
+
+  // Only offer type pills that actually exist in the data — a pill with zero
+  // matches would filter the list into a silent void.
+  const filters = useMemo(() => {
+    const present = [...new Set(scenarios.map(s => s.type).filter(Boolean))]
+    return ['all', ...present]
+  }, [scenarios])
 
   const filtered =
     filter === 'all'
@@ -15,9 +20,15 @@ export default function ScenarioList({ scenarios, selectedId, onSelect }) {
 
   return (
     <div className="flex flex-col h-full">
+      {/* Context header */}
+      <p className="px-3 pt-3 text-[11px] text-zinc-500 leading-snug">
+        CIB fixed-point set — {scenarios.length} consistent scenarios.
+        See Landscape for the 120-scenario combinatorial field.
+      </p>
+
       {/* Filter pills */}
       <div className="flex flex-wrap gap-1.5 p-3 border-b border-white/5">
-        {FILTERS.map(f => {
+        {filters.map(f => {
           const active = filter === f
           const colors = f !== 'all' ? SCENARIO_TYPE_COLORS[f] : null
           return (
@@ -51,6 +62,9 @@ export default function ScenarioList({ scenarios, selectedId, onSelect }) {
         initial="enter"
         animate="center"
       >
+        {filtered.length === 0 && (
+          <p className="text-xs text-zinc-500 p-3">No scenarios of this type.</p>
+        )}
         {filtered.map(s => {
           const selected = s.id === selectedId
           const colors = SCENARIO_TYPE_COLORS[s.type] || SCENARIO_TYPE_COLORS.evolutionary
@@ -97,8 +111,8 @@ export default function ScenarioList({ scenarios, selectedId, onSelect }) {
               </div>
 
               {/* TOPSIS score */}
-              <span className="text-xs font-mono text-zinc-400 shrink-0">
-                {(s.topsis_closeness * 100).toFixed(0)}%
+              <span className="text-xs font-mono text-zinc-400 shrink-0" title="TOPSIS closeness (1 = best)">
+                {(s.topsis_closeness ?? 0).toFixed(2)}
               </span>
             </motion.div>
           )

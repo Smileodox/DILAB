@@ -2,9 +2,10 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { Database, Zap, Grid3X3, Globe, Maximize2, X } from 'lucide-react'
-import { useKbApi } from '@/context/KbContext'
+import { useKbApi, useKb } from '@/context/KbContext'
 import MetricCard from '@/components/ui/MetricCard'
 import Card from '@/components/ui/Card'
+import LoadError from '@/components/ui/LoadError'
 import PipelineFlow from '@/components/viz/PipelineFlow'
 import { staggerContainer, fadeUp, fadeIn } from '@/utils/animation'
 
@@ -27,9 +28,11 @@ const METHOD_CARDS = [
 ]
 
 export default function OverviewPage() {
-  const { data, loading } = useKbApi('/api/overview')
+  const { data, loading, error } = useKbApi('/api/overview')
+  const { kb, kbs } = useKb()
   const navigate = useNavigate()
   const [pipelineExpanded, setPipelineExpanded] = useState(false)
+  const hasCombi = kbs.find((k) => k.id === kb)?.methods?.includes('combi')
 
   if (loading) {
     return (
@@ -37,6 +40,10 @@ export default function OverviewPage() {
         <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
       </div>
     )
+  }
+
+  if (error || !data || data.unavailable) {
+    return <LoadError title="Overview" />
   }
 
   return (
@@ -76,10 +83,13 @@ export default function OverviewPage() {
           variants={staggerContainer}
           className="grid grid-cols-2 lg:grid-cols-4 gap-4"
         >
-          <MetricCard label="Sources" value={data.sources} icon={Database} />
-          <MetricCard label="Drivers" value={data.drivers_total} icon={Zap} />
+          <MetricCard label="Sources" value={data.sources} icon={Database}
+            sub={`${(data.chunks ?? 0).toLocaleString()} chunks`} />
+          <MetricCard label="Merged Drivers" value={data.drivers_total} icon={Zap}
+            sub={data.cib_drivers ? `${data.cib_drivers} CIB-active` : undefined} />
           <MetricCard label="Manifestations" value={data.manifestations} icon={Grid3X3} />
-          <MetricCard label="Scenarios" value={data.scenarios} icon={Globe} />
+          <MetricCard label="Scenarios" value={data.scenarios} icon={Globe}
+            sub={hasCombi ? '+ 120 combinatorial' : undefined} />
         </motion.div>
 
         {/* Pipeline flow (inline) */}

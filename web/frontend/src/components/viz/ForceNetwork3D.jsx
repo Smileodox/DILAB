@@ -48,6 +48,12 @@ export default function ForceNetwork3D({ nodes, edges, selectedId, onNodeClick }
   const medInf = useMemo(() => median(infValues), [infValues])
   const medDep = useMemo(() => median(depValues), [depValues])
   const maxInf = useMemo(() => Math.max(...infValues, 1), [infValues])
+  const minInf = useMemo(() => Math.min(...infValues, 0), [infValues])
+  // Min-max normalized so negative-influence nodes keep a visible size.
+  const sizeOf = useCallback(
+    (inf) => 8 + 18 * ((inf - minInf) / ((maxInf - minInf) || 1)),
+    [minInf, maxInf],
+  )
 
   const buildTraces = useCallback(() => {
     const quadrants = {}
@@ -74,7 +80,7 @@ export default function ForceNetwork3D({ nodes, edges, selectedId, onNodeClick }
         textposition: 'top center',
         textfont: { size: 9, color: '#a1a1aa' },
         marker: {
-          size: qNodes.map(n => 8 + (n.influence / maxInf) * 18),
+          size: qNodes.map(n => sizeOf(n.influence)),
           color: CIB_QUADRANT_COLORS[q],
           opacity: qNodes.map(n => (selectedId && n.id !== selectedId) ? 0.15 : 0.9),
           line: { color: CIB_QUADRANT_COLORS[q], width: 1 },
@@ -92,7 +98,7 @@ export default function ForceNetwork3D({ nodes, edges, selectedId, onNodeClick }
           y: [sel.y],
           z: [sel.z],
           marker: {
-            size: 20 + (sel.influence / maxInf) * 14,
+            size: 14 + sizeOf(sel.influence),
             color: 'rgba(59,130,246,0.3)',
             line: { color: '#3b82f6', width: 2 },
           },
@@ -144,7 +150,7 @@ export default function ForceNetwork3D({ nodes, edges, selectedId, onNodeClick }
     }
 
     return traces
-  }, [nodes, edges, selectedId, posById, medInf, medDep, maxInf])
+  }, [nodes, edges, selectedId, posById, medInf, medDep, maxInf, sizeOf])
 
   useEffect(() => {
     if (!ref.current || !nodes.length) return

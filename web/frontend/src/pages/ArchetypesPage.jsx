@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion'
-import { Boxes, Layers, Waves, Crosshair, Sparkles } from 'lucide-react'
+import { Boxes, Layers, Waves, Crosshair } from 'lucide-react'
 import { useApi } from '@/hooks/useApi'
 import { useKb } from '@/context/KbContext'
 import Card from '@/components/ui/Card'
+import { archetypeColor } from '@/utils/colors'
 import { staggerContainer, fadeUp, fadeIn } from '@/utils/animation'
+
+const truncate = (s, n) => (s.length > n ? s.slice(0, n - 1) + '…' : s)
 
 // Fractional stat tile (matches LandscapePage's StructStat convention).
 function Stat({ label, value, sub, icon: Icon, warn }) {
@@ -53,6 +56,8 @@ export default function ArchetypesPage() {
 
   const maxSize = Math.max(...arch.map((a) => a.size), 1)
   const pct = (v) => (v == null ? '—' : `${(v * 100).toFixed(0)}%`)
+  // Same label→color mapping as the Landscape scatter, so the pages tell one story.
+  const allLabels = arch.map((a) => a.label)
 
   return (
     <motion.div variants={staggerContainer} initial="enter" animate="center"
@@ -71,18 +76,27 @@ export default function ArchetypesPage() {
         <Stat label="Continuum halo" value={pct(data.noise_fraction)}
           sub={`${data.continuum?.n_noise}/${data.n_configs} configs`} icon={Waves}
           warn={data.noise_fraction > 0.5} />
-        <Stat label="Core silhouette" value={data.hdbscan_silhouette ?? '—'}
+        <Stat label="Core silhouette" value={data.hdbscan_silhouette?.toFixed(2) ?? '—'}
           sub="dense subset only" icon={Layers} />
-        <Stat label="Attractors" value={data.n_fixed_points ?? 0} sub="CIB fixed points" icon={Crosshair} />
+        {data.n_fixed_points > 0 ? (
+          <Stat label="Attractors" value={data.n_fixed_points}
+            sub="CIB fixed points among sampled configs" icon={Crosshair} />
+        ) : (
+          <Stat label="Sampled configs" value={data.n_configs ?? '—'}
+            sub="soft-CIB field sample" icon={Crosshair} />
+        )}
       </motion.div>
 
       <motion.div variants={staggerContainer} className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        {arch.map((a) => (
+        {arch.map((a) => {
+          const color = archetypeColor(a.label, allLabels)
+          return (
           <motion.div key={a.id} variants={fadeUp}>
             <Card>
               <div className="flex items-start justify-between gap-3 mb-2">
                 <h3 className="text-lg font-semibold text-white flex items-center gap-2">
-                  <Sparkles size={16} className="text-blue-400 shrink-0" />{a.label}
+                  <span className="w-3 h-3 rounded-full shrink-0" style={{ background: color }} />
+                  {a.label}
                 </h3>
                 {a.contains_attractor && (
                   <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs
@@ -97,21 +111,25 @@ export default function ArchetypesPage() {
                   <span>{a.size} scenarios</span>
                 </div>
                 <div className="h-1.5 rounded-full bg-white/5 overflow-hidden">
-                  <div className="h-full bg-blue-500/60" style={{ width: `${(100 * a.size) / maxSize}%` }} />
+                  <div className="h-full" style={{ width: `${(100 * a.size) / maxSize}%`, background: color, opacity: 0.7 }} />
                 </div>
               </div>
+              {/* Top distinguishing driver states, with the lift printed — the quantitative
+                  "what makes this archetype different" evidence. */}
               <div className="flex flex-wrap gap-1.5">
-                {(a.distinguishing_drivers || []).map((d, i) => (
-                  <span key={i} title={`lift +${d.lift}`}
+                {(a.distinguishing_drivers || []).slice(0, 3).map((d, i) => (
+                  <span key={i} title={`${d.driver}: ${d.manifestation} (lift +${Math.round(d.lift * 100)}pp vs. field)`}
                     className="inline-flex items-center px-2 py-0.5 rounded text-[11px]
                       bg-white/[0.04] text-zinc-300 border border-white/[0.06]">
-                    <span className="text-zinc-500">{d.driver}:</span>&nbsp;{d.manifestation}
+                    <span className="text-zinc-500">{truncate(d.driver, 24)}:</span>&nbsp;{truncate(d.manifestation, 32)}
+                    <span className="text-emerald-400 ml-1.5 font-medium">+{Math.round(d.lift * 100)}pp</span>
                   </span>
                 ))}
               </div>
             </Card>
           </motion.div>
-        ))}
+          )
+        })}
       </motion.div>
 
       {data.continuum?.note && (

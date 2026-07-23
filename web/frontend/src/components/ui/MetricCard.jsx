@@ -25,7 +25,7 @@ function useCountUp(target, duration = 1200) {
   return value
 }
 
-export default function MetricCard({ label, value, icon: Icon, suffix = '' }) {
+export default function MetricCard({ label, value, icon: Icon, suffix = '', sub }) {
   const count = useCountUp(value)
 
   return (
@@ -36,6 +36,7 @@ export default function MetricCard({ label, value, icon: Icon, suffix = '' }) {
           <p className="text-3xl font-extrabold text-white tracking-tight">
             {count.toLocaleString()}{suffix}
           </p>
+          {sub && <p className="text-xs text-zinc-500 mt-1">{sub}</p>}
         </div>
         {Icon && (
           <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center">

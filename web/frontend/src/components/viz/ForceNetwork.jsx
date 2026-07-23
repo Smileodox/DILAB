@@ -28,6 +28,7 @@ export default function ForceNetwork({ matrix, driverNames, driverIds, influence
   const [dimensions, setDimensions] = useState({ width: 800, height: 500 })
   const [tooltip, setTooltip] = useState(null)
   const [hoveredNode, setHoveredNode] = useState(null)
+  const [showWeak, setShowWeak] = useState(false)
 
   // Observe container size
   useEffect(() => {
@@ -56,9 +57,11 @@ export default function ForceNetwork({ matrix, driverNames, driverIds, influence
     const medInf = median(infValues)
     const medDep = median(depValues)
 
-    // Scale for node radius based on influence
+    // Scale for node radius based on influence — contrastive CIB yields negative values,
+    // so the domain must span the real min or low-influence nodes get a negative radius.
     const maxInf = Math.max(...infValues, 1)
-    const radiusScale = scaleLinear().domain([0, maxInf]).range([8, 24])
+    const minInf = Math.min(...infValues, 0)
+    const radiusScale = scaleLinear().domain([minInf, maxInf]).range([7, 24]).clamp(true)
 
     // Build nodes
     const nodes = driverNames.map((name, i) => {
@@ -76,11 +79,13 @@ export default function ForceNetwork({ matrix, driverNames, driverIds, influence
       }
     })
 
-    // Build links
+    // Build links — weak couplings (|score| < 2) hidden by default so the strong
+    // structure stays readable; draw weak-first / negatives-last so an inhibiting
+    // edge is never painted over by its promoting counterpart.
     const links = []
     for (let i = 0; i < n; i++) {
       for (let j = 0; j < n; j++) {
-        if (i !== j && matrix[i][j] !== 0) {
+        if (i !== j && matrix[i][j] !== 0 && (showWeak || Math.abs(matrix[i][j]) >= 2)) {
           links.push({
             source: i,
             target: j,
@@ -89,6 +94,7 @@ export default function ForceNetwork({ matrix, driverNames, driverIds, influence
         }
       }
     }
+    links.sort((a, b) => (Math.abs(a.value) - Math.abs(b.value)) || ((a.value < 0) - (b.value < 0)))
 
     // Simulation
     if (simulationRef.current) simulationRef.current.stop()
@@ -193,7 +199,7 @@ export default function ForceNetwork({ matrix, driverNames, driverIds, influence
     return () => {
       sim.stop()
     }
-  }, [matrix, driverNames, driverIds, influence, dependence, dimensions])
+  }, [matrix, driverNames, driverIds, influence, dependence, dimensions, showWeak])
 
   // Hover interactions via event delegation
   const handleMouseMove = useCallback(
@@ -295,6 +301,16 @@ export default function ForceNetwork({ matrix, driverNames, driverIds, influence
           {tooltip.text}
         </div>
       )}
+
+      {/* Edge-strength toggle */}
+      <button
+        onClick={() => setShowWeak((v) => !v)}
+        className={`absolute top-3 right-3 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+          showWeak ? 'bg-blue-600/20 text-blue-400' : 'bg-zinc-800 text-zinc-400 hover:text-zinc-200'
+        }`}
+      >
+        {showWeak ? 'All couplings' : 'Strong couplings (|score| ≥ 2)'}
+      </button>
 
       {/* Legend */}
       <div className="absolute bottom-3 left-3 flex flex-col gap-1.5 text-[10px] text-zinc-400">

@@ -10,6 +10,7 @@ const PAGE_TITLES = {
   '/cib': 'Cross-Impact Balance',
   '/scenarios': 'Scenarios',
   '/landscape': 'Scenario Landscape',
+  '/archetypes': 'Scenario Archetypes',
   '/embeddings': 'Embeddings Lab',
   '/strategy': 'Strategic Framing',
 }
@@ -24,7 +25,10 @@ export default function TopBar() {
       {kbs.length > 1 ? (
         <select
           value={kb}
-          onChange={(e) => setKb(e.target.value)}
+          onChange={(e) => {
+            setKb(e.target.value)
+            e.target.blur() // release focus so arrow keys navigate pages again
+          }}
           title="Switch knowledge base"
           className="text-xs font-medium text-emerald-300 bg-zinc-900 border border-white/10 rounded px-2 py-1 tracking-wide focus:outline-none focus:border-emerald-500 cursor-pointer"
         >

@@ -1,6 +1,8 @@
 import { useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 
+// Demo walk order. /embeddings stays reachable via the sidebar but is deliberately
+// not part of the arrow-key path.
 const PAGE_ORDER = [
   '/',
   '/pipeline',
@@ -10,8 +12,9 @@ const PAGE_ORDER = [
   '/cib',
   '/scenarios',
   '/landscape',
-  '/embeddings',
+  '/archetypes',
   '/strategy',
+  '/methodology',
 ]
 
 export function usePresentationMode() {
@@ -25,10 +28,14 @@ export function usePresentationMode() {
       const idx = PAGE_ORDER.indexOf(location.pathname)
       if (idx === -1) return
 
-      if (e.key === 'ArrowRight' && idx < PAGE_ORDER.length - 1) {
+      // Space/PageDown/PageUp so a presenter clicker works too.
+      const forward = e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' '
+      const backward = e.key === 'ArrowLeft' || e.key === 'PageUp'
+
+      if (forward && idx < PAGE_ORDER.length - 1) {
         e.preventDefault()
         navigate(PAGE_ORDER[idx + 1])
-      } else if (e.key === 'ArrowLeft' && idx > 0) {
+      } else if (backward && idx > 0) {
         e.preventDefault()
         navigate(PAGE_ORDER[idx - 1])
       }

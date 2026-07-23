@@ -3,11 +3,38 @@ import { X } from 'lucide-react'
 import { TypeBadge } from '@/components/ui/Badge'
 import { SCENARIO_TYPE_COLORS } from '@/utils/colors'
 
+// The generator leaves raw chunk-id citations in the prose — both "(abc…, def…)" lists and
+// "[abc…][def…]" chains. Strip them for display; the evidence panel is the real source view.
+function stripChunkIds(text) {
+  return (text || '')
+    .replace(/\s*\((?:[0-9a-f]{12}(?:,\s*)?)+\)/g, '')
+    .replace(/(?:\[[0-9a-f]{12}\])+/g, '')
+}
+
+// Render "[Extrapolation]" markers as a small amber badge instead of raw brackets.
+function NarrativeParagraph({ text }) {
+  const parts = text.split('[Extrapolation]')
+  return (
+    <p className="text-[15px] leading-relaxed text-zinc-300 mb-5 last:mb-0">
+      {parts.map((part, i) => (
+        <span key={i}>
+          {part}
+          {i < parts.length - 1 && (
+            <span className="inline-block align-middle mx-1 px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-500/15 text-amber-400 border border-amber-500/25">
+              Extrapolation
+            </span>
+          )}
+        </span>
+      ))}
+    </p>
+  )
+}
+
 export default function NarrativeView({ scenario, onClose }) {
   if (!scenario) return null
 
   const colors = SCENARIO_TYPE_COLORS[scenario.type] || SCENARIO_TYPE_COLORS.evolutionary
-  const paragraphs = (scenario.narrative || '').split('\n\n').filter(Boolean)
+  const paragraphs = stripChunkIds(scenario.narrative).split('\n\n').filter(Boolean)
 
   return (
     <motion.div
@@ -51,12 +78,7 @@ export default function NarrativeView({ scenario, onClose }) {
           style={{ borderLeft: `2px solid ${colors.border}20` }}
         >
           {paragraphs.map((para, i) => (
-            <p
-              key={i}
-              className="text-[15px] leading-relaxed text-zinc-300 mb-5 last:mb-0"
-            >
-              {para}
-            </p>
+            <NarrativeParagraph key={i} text={para} />
           ))}
         </div>
       </div>

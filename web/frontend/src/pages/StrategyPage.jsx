@@ -6,6 +6,7 @@ import {
 } from 'lucide-react'
 import { useKbApi } from '@/context/KbContext'
 import Card from '@/components/ui/Card'
+import LoadError from '@/components/ui/LoadError'
 import { TypeBadge } from '@/components/ui/Badge'
 import { SCENARIO_TYPE_COLORS } from '@/utils/colors'
 import { staggerContainer, fadeUp, fadeIn } from '@/utils/animation'
@@ -19,8 +20,8 @@ const RANK_BORDER = ['border-amber-500/30', 'border-zinc-400/20', 'border-amber-
 const RANK_GLOW = ['shadow-amber-500/10', 'shadow-zinc-400/5', '']
 
 export default function StrategyPage() {
-  const { data: framing, loading: fLoading } = useKbApi('/api/strategic_framing')
-  const { data: scenarios, loading: sLoading } = useKbApi('/api/scenarios')
+  const { data: framing, loading: fLoading, error: fError } = useKbApi('/api/strategic_framing')
+  const { data: scenarios, loading: sLoading, error: sError } = useKbApi('/api/scenarios')
   const [expandedStrategy, setExpandedStrategy] = useState(null)
 
   const loading = fLoading || sLoading
@@ -31,7 +32,7 @@ export default function StrategyPage() {
   }, [framing])
 
   const scenarioMap = useMemo(() => {
-    if (!scenarios) return {}
+    if (!Array.isArray(scenarios)) return {}
     const m = {}
     for (const s of scenarios) m[s.title] = s
     return m
@@ -45,6 +46,11 @@ export default function StrategyPage() {
     )
   }
 
+  if (fError || sError || !framing || framing.unavailable) {
+    return <LoadError title="Strategic Framing" />
+  }
+
+  const scenarioList = Array.isArray(scenarios) ? scenarios : []
   const priority = framing?.recommended_priority
   const hasFraming = framing?.critical_uncertainties?.length > 0
 
@@ -133,7 +139,7 @@ export default function StrategyPage() {
                           <span className="text-[10px] font-medium text-emerald-500 uppercase tracking-wider">High →</span>
                           <div className="flex flex-wrap gap-1 mt-1">
                             {cu.scenarios_high.map((s, si) => (
-                              <span key={si} className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/15">{s.length > 40 ? s.slice(0, 38) + '…' : s}</span>
+                              <span key={si} title={s} className="text-xs px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/15">{s.length > 40 ? s.slice(0, 38) + '…' : s}</span>
                             ))}
                           </div>
                         </div>
@@ -143,7 +149,7 @@ export default function StrategyPage() {
                           <span className="text-[10px] font-medium text-rose-400 uppercase tracking-wider">Low →</span>
                           <div className="flex flex-wrap gap-1 mt-1">
                             {cu.scenarios_low.map((s, si) => (
-                              <span key={si} className="text-[10px] px-1.5 py-0.5 rounded bg-rose-500/10 text-rose-400 border border-rose-500/15">{s.length > 40 ? s.slice(0, 38) + '…' : s}</span>
+                              <span key={si} title={s} className="text-xs px-1.5 py-0.5 rounded bg-rose-500/10 text-rose-400 border border-rose-500/15">{s.length > 40 ? s.slice(0, 38) + '…' : s}</span>
                             ))}
                           </div>
                         </div>
@@ -164,7 +170,8 @@ export default function StrategyPage() {
                   const action = typeof move === 'string' ? move : move.action || move.description
                   const rationale = typeof move === 'object' ? move.rationale : null
                   const horizon = typeof move === 'object' ? move.horizon : null
-                  const covered = typeof move === 'object' ? move.scenarios_covered : null
+                  const coveredRaw = typeof move === 'object' ? move.scenarios_covered : null
+                  const covered = Array.isArray(coveredRaw) ? coveredRaw.length : coveredRaw
                   return (
                     <motion.div key={i} variants={fadeUp}>
                       <Card>
@@ -180,12 +187,15 @@ export default function StrategyPage() {
                             <div className="flex flex-wrap items-center gap-2 mt-2">
                               {horizon && (
                                 <span className="inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/15">
-                                  <Clock size={10} /> {horizon}
+                                  <Clock size={10} /> {String(horizon).replace(/_/g, ' ')}
                                 </span>
                               )}
                               {covered != null && (
-                                <span className="text-[10px] text-zinc-600">
-                                  covers {covered} of {scenarios?.length || '?'} scenarios
+                                <span
+                                  className="text-[10px] text-zinc-600"
+                                  title={Array.isArray(coveredRaw) ? coveredRaw.join('\n') : undefined}
+                                >
+                                  covers {covered} of {scenarioList.length || '?'} scenarios
                                 </span>
                               )}
                             </div>
@@ -207,7 +217,7 @@ export default function StrategyPage() {
                 {sortedStrategies.map((ss, i) => {
                   const expanded = expandedStrategy === i
                   const scenario = scenarioMap[ss.scenario_title]
-                  const rankIdx = Math.min(ss.mcda_rank - 1, 2)
+                  const rankIdx = ss.mcda_rank - 1 // medals only for ranks 1-3; rest fall back to zinc
                   return (
                     <motion.div key={i} variants={fadeUp}>
                       <div
@@ -229,10 +239,9 @@ export default function StrategyPage() {
                               <p className="text-xs text-zinc-500 mt-0.5 truncate">{scenario.narrative}</p>
                             )}
                           </div>
-                          {scenario && (
-                            <span className="text-lg font-mono font-bold text-zinc-400 shrink-0">
-                              {(scenario.topsis_closeness * 100).toFixed(0)}
-                              <span className="text-xs text-zinc-600">%</span>
+                          {scenario && scenario.topsis_closeness != null && (
+                            <span className="text-lg font-mono font-bold text-zinc-400 shrink-0" title="TOPSIS closeness to ideal (1 = best, 0 = worst within set)">
+                              {scenario.topsis_closeness.toFixed(2)}
                             </span>
                           )}
                           <ChevronDown
@@ -318,13 +327,18 @@ export default function StrategyPage() {
       )}
 
       {/* Top Scenarios quick reference */}
-      {scenarios?.length > 0 && (
+      {scenarioList.length > 0 && (
         <motion.div variants={fadeIn}>
-          <SectionHeader icon={Trophy} color="blue" title="Scenario Rankings" subtitle="MCDA TOPSIS scores" />
+          <SectionHeader icon={Trophy} color="blue" title="Scenario Rankings"
+            subtitle="TOPSIS closeness to ideal (1 = best, 0 = worst within set)" />
+          <p className="text-xs text-zinc-600 -mt-2 mb-4">
+            Criteria scores are near-uniform across scenarios by design of the grounded auditor;
+            the ranking differentiation comes from TOPSIS closeness.
+          </p>
           <div className="grid gap-2">
-            {[...scenarios].sort((a, b) => a.rank - b.rank).map((s) => {
+            {[...scenarioList].sort((a, b) => a.rank - b.rank).map((s) => {
               const colors = SCENARIO_TYPE_COLORS[s.type] || SCENARIO_TYPE_COLORS.evolutionary
-              const pct = (s.topsis_closeness * 100).toFixed(0)
+              const closeness = s.topsis_closeness ?? 0
               return (
                 <div key={s.id} className="flex items-center gap-3 glass rounded-lg px-4 py-2.5">
                   <span className="text-sm font-extrabold w-6 text-center" style={{ color: colors.text }}>
@@ -337,10 +351,10 @@ export default function StrategyPage() {
                   <div className="w-24 h-1.5 bg-zinc-800 rounded-full overflow-hidden shrink-0">
                     <div
                       className="h-full rounded-full transition-all duration-700"
-                      style={{ width: `${pct}%`, backgroundColor: colors.dot }}
+                      style={{ width: `${Math.max(3, closeness * 100)}%`, backgroundColor: colors.dot }}
                     />
                   </div>
-                  <span className="text-xs font-mono text-zinc-400 w-10 text-right">{pct}%</span>
+                  <span className="text-xs font-mono text-zinc-400 w-10 text-right">{closeness.toFixed(2)}</span>
                 </div>
               )
             })}

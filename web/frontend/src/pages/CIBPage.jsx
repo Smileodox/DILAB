@@ -6,6 +6,7 @@ import ForceNetwork from '@/components/viz/ForceNetwork'
 import { DARK_LAYOUT, PLOTLY_CONFIG } from '@/utils/plotly'
 import { CIB_QUADRANT_COLORS } from '@/utils/colors'
 import Card from '@/components/ui/Card'
+import LoadError from '@/components/ui/LoadError'
 import { staggerContainer, fadeUp, fadeIn } from '@/utils/animation'
 
 const TABS = [
@@ -28,6 +29,8 @@ function QuadrantScatter({ driverIds, driverNames, influence, dependence }) {
   const depVals = driverIds.map((id) => dependence[id] || 0)
   const medInf = median(infVals)
   const medDep = median(depVals)
+  // Contrastive CIB yields negative influence/dependence too — axes must not clip below 0.
+  const shortNames = driverNames.map((n) => (n.length > 20 ? n.slice(0, 19) + '…' : n))
 
   useEffect(() => {
     if (!plotRef.current) return
@@ -44,7 +47,9 @@ function QuadrantScatter({ driverIds, driverNames, influence, dependence }) {
     const trace = {
       x: depVals,
       y: infVals,
-      text: driverNames,
+      text: shortNames,
+      hovertext: driverNames,
+      hoverinfo: 'text+x+y',
       mode: 'markers+text',
       textposition: 'top center',
       textfont: { size: 10, color: '#a1a1aa' },
@@ -52,30 +57,34 @@ function QuadrantScatter({ driverIds, driverNames, influence, dependence }) {
       type: 'scatter',
     }
 
+    const minDep = Math.min(0, Math.min(...depVals)) * 1.15
     const maxDep = Math.max(...depVals) * 1.15
+    const minInf = Math.min(0, Math.min(...infVals)) * 1.15
     const maxInf = Math.max(...infVals) * 1.15
+    const posDep = (f) => minDep + (maxDep - minDep) * f
+    const posInf = (f) => minInf + (maxInf - minInf) * f
 
     const layout = {
       ...DARK_LAYOUT,
       xaxis: {
         ...DARK_LAYOUT.xaxis,
         title: { text: 'Dependence', font: { size: 12, color: '#71717a' } },
-        range: [0, maxDep],
+        range: [minDep, maxDep],
       },
       yaxis: {
         ...DARK_LAYOUT.yaxis,
         title: { text: 'Influence', font: { size: 12, color: '#71717a' } },
-        range: [0, maxInf],
+        range: [minInf, maxInf],
       },
       shapes: [
-        { type: 'line', x0: medDep, x1: medDep, y0: 0, y1: maxInf, line: { color: 'rgba(161,161,170,0.2)', dash: 'dash' } },
-        { type: 'line', x0: 0, x1: maxDep, y0: medInf, y1: medInf, line: { color: 'rgba(161,161,170,0.2)', dash: 'dash' } },
+        { type: 'line', x0: medDep, x1: medDep, y0: minInf, y1: maxInf, line: { color: 'rgba(161,161,170,0.2)', dash: 'dash' } },
+        { type: 'line', x0: minDep, x1: maxDep, y0: medInf, y1: medInf, line: { color: 'rgba(161,161,170,0.2)', dash: 'dash' } },
       ],
       annotations: [
-        { x: maxDep * 0.05, y: maxInf * 0.95, text: 'Enabler', showarrow: false, font: { color: CIB_QUADRANT_COLORS.enabler, size: 11 } },
-        { x: maxDep * 0.95, y: maxInf * 0.95, text: 'Critical', showarrow: false, font: { color: CIB_QUADRANT_COLORS.critical, size: 11 } },
-        { x: maxDep * 0.95, y: maxInf * 0.05, text: 'Dependent', showarrow: false, font: { color: CIB_QUADRANT_COLORS.dependent, size: 11 } },
-        { x: maxDep * 0.05, y: maxInf * 0.05, text: 'Isolated', showarrow: false, font: { color: CIB_QUADRANT_COLORS.isolated, size: 11 } },
+        { x: posDep(0.05), y: posInf(0.95), text: 'Enabler', showarrow: false, font: { color: CIB_QUADRANT_COLORS.enabler, size: 11 } },
+        { x: posDep(0.95), y: posInf(0.95), text: 'Critical', showarrow: false, font: { color: CIB_QUADRANT_COLORS.critical, size: 11 } },
+        { x: posDep(0.95), y: posInf(0.05), text: 'Dependent', showarrow: false, font: { color: CIB_QUADRANT_COLORS.dependent, size: 11 } },
+        { x: posDep(0.05), y: posInf(0.05), text: 'Isolated', showarrow: false, font: { color: CIB_QUADRANT_COLORS.isolated, size: 11 } },
       ],
       height: 400,
       margin: { t: 20, r: 30, b: 50, l: 50 },
@@ -211,7 +220,7 @@ function InfluenceTab({ matrix, panelMetadata }) {
           <div className="grid grid-cols-3 gap-4">
             <div>
               <p className="text-xs text-zinc-500 mb-1">Panel Mode</p>
-              <p className="text-sm font-medium text-white capitalize">{panelMetadata.panel_mode || 'N/A'}</p>
+              <p className="text-sm font-medium text-white capitalize">{(panelMetadata.panel_mode || 'N/A').replace(/_/g, ' ')}</p>
             </div>
             <div>
               <p className="text-xs text-zinc-500 mb-1">Personas</p>
@@ -230,7 +239,7 @@ function InfluenceTab({ matrix, panelMetadata }) {
 
 /* ── Main page ── */
 export default function CIBPage() {
-  const { data, loading } = useKbApi('/api/cib')
+  const { data, loading, error } = useKbApi('/api/cib')
   const [tab, setTab] = useState('network')
 
   if (loading) {
@@ -241,10 +250,14 @@ export default function CIBPage() {
     )
   }
 
+  if (error || !data || data.unavailable || !data.matrix) {
+    return <LoadError title="Cross-Impact Balance Analysis" />
+  }
+
   const panelMeta = {
-    panel_mode: data.panel_metadata?.panel_mode || data.panel_mode,
-    n_personas: data.panel_metadata?.n_personas || data.n_personas,
-    total_pairs: data.panel_metadata?.total_pairs || data.entries,
+    panel_mode: data.panel_metadata?.panel_mode || data.panel_metadata?.mode || data.panel_mode,
+    n_personas: data.panel_metadata?.n_personas ?? data.panel_metadata?.personas?.length ?? data.n_personas,
+    total_pairs: data.panel_metadata?.total_pairs ?? (Array.isArray(data.entries) ? data.entries.length : data.entries),
   }
 
   return (

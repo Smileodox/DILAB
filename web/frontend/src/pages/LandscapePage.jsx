@@ -1,10 +1,11 @@
-import { useState, useRef, useCallback } from 'react'
+import { useState, useRef, useCallback, useMemo } from 'react'
 import { motion } from 'framer-motion'
-import { Map, Crosshair, Layers, Star, Activity, TrendingUp } from 'lucide-react'
+import { Map, Crosshair, Layers, Star, Activity, TrendingUp, Shapes } from 'lucide-react'
 import { useApi } from '@/hooks/useApi'
 import { useKb } from '@/context/KbContext'
 import MetricCard from '@/components/ui/MetricCard'
 import Card from '@/components/ui/Card'
+import LoadError from '@/components/ui/LoadError'
 import { TypeBadge } from '@/components/ui/Badge'
 import UMAPScatter from '@/components/viz/UMAPScatter'
 import DriverRecipeHeatmap from '@/components/viz/DriverRecipeHeatmap'
@@ -40,6 +41,7 @@ export default function LandscapePage() {
   const { kb, kbs } = useKb()  // KB is the global selection (TopBar); method stays local
   const [method, setMethod] = useState('cib')
   const [colorMode, setColorMode] = useState('archetype')  // colour scatter by cluster or type
+  const [projection, setProjection] = useState('ordinal')  // cluster space (ordinal UMAP) vs PCA
   const [selectedPointId, setSelectedPointId] = useState(null)
   const detailRef = useRef(null)
 
@@ -50,8 +52,8 @@ export default function LandscapePage() {
   const isSampled = activeMethod !== 'cib'
 
   const q = `kb=${kb}&method=${activeMethod}`
-  const { data: landscape, loading: lLoading } = useApi(`/api/landscape?${q}`)
-  const { data: scenarios, loading: sLoading } = useApi(`/api/scenarios?${q}`)
+  const { data: landscape, loading: lLoading, error: lError } = useApi(`/api/landscape?${q}`)
+  const { data: scenarios, loading: sLoading, error: sError } = useApi(`/api/scenarios?${q}`)
 
   const loading = lLoading || sLoading
 
@@ -62,12 +64,30 @@ export default function LandscapePage() {
     }, 100)
   }, [])
 
+  // Cluster-space projection (UMAP of the ordinal matrix the archetype HDBSCAN clustered)
+  // is only available where the backfill stamped ox/oy — currently the combi landscape.
+  const hasOrdinal = (landscape?.points || []).some((p) => p.ox !== undefined)
+  const activeProjection = hasOrdinal && projection === 'ordinal' ? 'ordinal' : 'pca'
+
+  // Memoized so selecting a point doesn't hand UMAPScatter a fresh array and force a redraw.
+  const axes = landscape?.axes
+  const axisTitles = useMemo(
+    () => (activeProjection === 'ordinal'
+      ? ['UMAP 1 (ordinal config space)', 'UMAP 2 (ordinal config space)']
+      : axes ? [axes.pc1?.label, axes.pc2?.label] : undefined),
+    [axes, activeProjection],
+  )
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-[calc(100vh-44px)]">
         <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
       </div>
     )
+  }
+
+  if (lError || sError || !landscape || landscape.unavailable) {
+    return <LoadError title="Scenario Landscape" />
   }
 
   const selectedScenario = scenarios?.find((s) => s.id === selectedPointId) || null
@@ -85,11 +105,13 @@ export default function LandscapePage() {
   const colorBy = hasArchetypes ? colorMode : 'type'
 
   // Interpretable PCA projection (sampled methods): axis labels + honest structure verdict.
-  const axes = landscape.axes
   const structure = landscape.structure
-  const axisTitles = axes ? [axes.pc1?.label, axes.pc2?.label] : undefined
   const hasParcoords = (landscape.parcoords?.rows?.length ?? 0) > 0
   const pct = (v) => (v == null ? '—' : `${(v * 100).toFixed(0)}%`)
+  // Distinct named archetypes among the points (excluding the Continuum label).
+  const nArchetypes = new Set(
+    (landscape.points || []).map((p) => p.archetype).filter((a) => a && a !== 'Continuum'),
+  ).size
 
   // Build scenario titles list for heatmap, matching scenario_ids order
   const scenarioTitles = (landscape.scenario_ids || []).map((id) => {
@@ -142,6 +164,24 @@ export default function LandscapePage() {
               ))}
             </div>
           )}
+          {/* Projection: cluster space (the geometry HDBSCAN clustered) vs interpretable PCA. */}
+          {hasOrdinal && (
+            <div className="flex gap-2">
+              {[['ordinal', 'Cluster space'], ['pca', 'PCA']].map(([mode, label]) => (
+                <button
+                  key={mode}
+                  onClick={() => setProjection(mode)}
+                  className={`px-3 py-1.5 rounded-md text-sm font-medium transition ${
+                    activeProjection === mode
+                      ? 'bg-violet-600 text-white'
+                      : 'bg-zinc-800 text-zinc-400 hover:text-zinc-200'
+                  }`}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       </motion.div>
 
@@ -150,7 +190,7 @@ export default function LandscapePage() {
           structure the null test rejects. */}
       <motion.div variants={staggerContainer} className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         <MetricCard label="Scenarios" value={nScenarios} icon={Map} />
-        {isSampled && structure ? (
+        {isSampled && structure?.pc1_share != null ? (
           <>
             <StructStat label="Dominant axis (PC1)" value={pct(structure.pc1_share)}
               sub={`null ${pct(structure.null?.pc1_mean)}`} icon={TrendingUp} />
@@ -162,7 +202,7 @@ export default function LandscapePage() {
           </>
         ) : isSampled ? (
           <>
-            <MetricCard label="Clusters" value={nClusters} icon={Layers} />
+            <MetricCard label="Archetypes" value={nArchetypes || nClusters} icon={Shapes} />
             <MetricCard label="Representatives" value={nRepresentatives} icon={Star} />
           </>
         ) : (
@@ -221,20 +261,32 @@ export default function LandscapePage() {
         </motion.p>
       )}
 
-      {/* Scatter — PCA config-space axes (sampled) or legacy UMAP (CIB) */}
+      {/* Scatter — cluster space (ordinal UMAP), PCA config-space axes, or legacy UMAP (CIB) */}
       <motion.div variants={fadeIn}>
         {isSampled && (colorBy === 'archetype' ? (
-          <h2 className="text-lg font-semibold text-white mb-1">
-            Scenario clusters — named archetypes + continuum
-          </h2>
+          <>
+            <h2 className="text-lg font-semibold text-white mb-1">
+              Scenario clusters — named archetypes + continuum
+            </h2>
+            {activeProjection === 'ordinal' && (
+              <p className="text-sm text-zinc-500 mb-3">
+                Cluster space: UMAP of the same ordinal encoding HDBSCAN clustered — dense
+                cores show as islands, the dimmed continuum stays in the background. Switch
+                to PCA for interpretable axes.
+              </p>
+            )}
+          </>
         ) : axes && (
-          <h2 className="text-lg font-semibold text-white mb-1">Config space (PCA)</h2>
+          <h2 className="text-lg font-semibold text-white mb-1">
+            {activeProjection === 'ordinal' ? 'Config space (cluster-space UMAP)' : 'Config space (PCA)'}
+          </h2>
         ))}
         <UMAPScatter
           points={landscape.points}
           onPointClick={handlePointClick}
           axisTitles={axisTitles}
           colorBy={colorBy}
+          projection={activeProjection}
         />
       </motion.div>
 
@@ -276,7 +328,13 @@ export default function LandscapePage() {
                 <span>TOPSIS {(selectedScenario.topsis_closeness * 100).toFixed(0)}%</span>
               )}
               <span>Coverage {(selectedScenario.coverage_ratio * 100).toFixed(0)}%</span>
-              {selectedPoint?.cluster >= 0 && <span>Cluster {selectedPoint.cluster}</span>}
+              {selectedPoint?.archetype ? (
+                <span className={selectedPoint.archetype === 'Continuum' ? '' : 'text-emerald-400'}>
+                  {selectedPoint.archetype}
+                </span>
+              ) : (
+                selectedPoint?.cluster >= 0 && <span>Cluster {selectedPoint.cluster}</span>
+              )}
               {selectedPoint?.is_representative && (
                 <span className="text-amber-400">★ Representative</span>
               )}

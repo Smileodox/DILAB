@@ -2,13 +2,15 @@ import { useState, useEffect, useCallback } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import axios from 'axios'
 import { useKbApi, useKb } from '@/context/KbContext'
+import LoadError from '@/components/ui/LoadError'
 import ScenarioList from '@/components/scenarios/ScenarioList'
 import ScenarioDetail from '@/components/scenarios/ScenarioDetail'
 import NarrativeView from '@/components/scenarios/NarrativeView'
 import EvidencePanel from '@/components/scenarios/EvidencePanel'
 
 export default function ScenariosPage() {
-  const { data: scenarios, loading } = useKbApi('/api/scenarios')
+  const { data, loading, error } = useKbApi('/api/scenarios')
+  const scenarios = Array.isArray(data) ? data : null
   const { kb } = useKb()
   const [selectedId, setSelectedId] = useState(null)
   const [showNarrative, setShowNarrative] = useState(false)
@@ -61,6 +63,10 @@ export default function ScenariosPage() {
         <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
       </div>
     )
+  }
+
+  if (error || !scenarios) {
+    return <LoadError title="Scenarios" />
   }
 
   return (

@@ -1,7 +1,7 @@
 import { NavLink, useLocation } from 'react-router-dom'
 import {
   LayoutDashboard, Workflow, Zap, Network, Grid3X3, GitBranch,
-  Globe, Map, Shapes, Atom, Target, ChevronLeft, ChevronRight,
+  Globe, Map, Shapes, Atom, Target, ChevronLeft, ChevronRight, MonitorPlay, BookOpen,
 } from 'lucide-react'
 import { useState } from 'react'
 import { useKb } from '@/context/KbContext'
@@ -18,6 +18,8 @@ const NAV_ITEMS = [
   { path: '/archetypes', label: 'Archetypes', icon: Shapes },
   { path: '/embeddings', label: 'Embeddings', icon: Atom },
   { path: '/strategy', label: 'Strategy', icon: Target },
+  { path: '/methodology', label: 'Methodology', icon: BookOpen },
+  { path: '/present', label: 'Present', icon: MonitorPlay },
 ]
 
 export default function SideNav() {

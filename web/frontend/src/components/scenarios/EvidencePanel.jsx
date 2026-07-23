@@ -1,5 +1,10 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { X, Loader2, AlertTriangle, Radio, FileText } from 'lucide-react'
+
+// The assessment text references its own (non-persisted) evidence list via [E1]-[E6]
+// markers — strip them rather than imply a mapping onto the source cards below.
+const cleanText = (t) => (t || '').replace(/\s*\[E\d+\]/g, '')
 
 function SectionConnector() {
   return (
@@ -14,6 +19,7 @@ function SectionConnector() {
 }
 
 export default function EvidencePanel({ traceability, loading, onClose }) {
+  const [showFullReasoning, setShowFullReasoning] = useState(false)
   return (
     <motion.div
       initial={{ x: '100%' }}
@@ -50,9 +56,19 @@ export default function EvidencePanel({ traceability, loading, onClose }) {
                 </h3>
 
                 {traceability.assessment.reasoning && (
-                  <p className="text-sm text-zinc-300 leading-relaxed mb-4">
-                    {traceability.assessment.reasoning}
-                  </p>
+                  <div className="mb-4">
+                    <p className={`text-sm text-zinc-300 leading-relaxed whitespace-pre-line ${
+                      showFullReasoning ? '' : 'line-clamp-6'
+                    }`}>
+                      {cleanText(traceability.assessment.reasoning)}
+                    </p>
+                    <button
+                      onClick={() => setShowFullReasoning((v) => !v)}
+                      className="mt-1.5 text-xs font-medium text-blue-400 hover:text-blue-300"
+                    >
+                      {showFullReasoning ? 'Collapse reasoning' : 'Show full reasoning'}
+                    </button>
+                  </div>
                 )}
 
                 {traceability.assessment.key_risks && (
@@ -64,7 +80,7 @@ export default function EvidencePanel({ traceability, loading, onClose }) {
                       </span>
                     </div>
                     <p className="text-sm text-zinc-400 leading-relaxed">
-                      {traceability.assessment.key_risks}
+                      {cleanText(traceability.assessment.key_risks)}
                     </p>
                   </div>
                 )}
@@ -78,7 +94,7 @@ export default function EvidencePanel({ traceability, loading, onClose }) {
                       </span>
                     </div>
                     <p className="text-sm text-zinc-400 leading-relaxed">
-                      {traceability.assessment.early_signals}
+                      {cleanText(traceability.assessment.early_signals)}
                     </p>
                   </div>
                 )}
@@ -120,6 +136,12 @@ export default function EvidencePanel({ traceability, loading, onClose }) {
               <section>
                 <h3 className="text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-3">
                   Source Evidence
+                  {traceability.total_chunks > 0 && (
+                    <span className="normal-case tracking-normal font-normal text-zinc-600 ml-2">
+                      ({traceability.resolved_chunks} of {traceability.total_chunks} recorded
+                      chunks resolved in current KB)
+                    </span>
+                  )}
                 </h3>
                 <div className="space-y-2">
                   {traceability.source_chain.map((src, i) => (

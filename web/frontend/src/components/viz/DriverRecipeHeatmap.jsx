@@ -42,7 +42,9 @@ export default function DriverRecipeHeatmap({ parcoords }) {
       type: 'heatmap',
       z,
       text,
-      x: drivers.map((d) => TRUNC(d.name, 18)),
+      // Numeric x + explicit ticks: categorical labels would silently MERGE two drivers
+      // whose names truncate to the same string.
+      x: drivers.map((_, j) => j),
       hoverinfo: 'text',
       hoverongaps: false,
       xgap: 1,
@@ -69,6 +71,9 @@ export default function DriverRecipeHeatmap({ parcoords }) {
         tickangle: -45,
         tickfont: { size: 10, color: '#a1a1aa' },
         ticks: '',
+        tickmode: 'array',
+        tickvals: drivers.map((_, j) => j),
+        ticktext: drivers.map((d) => TRUNC(d.name, 26)),
       },
       yaxis: {
         ...DARK_LAYOUT.yaxis,

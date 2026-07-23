@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useLocation } from 'react-router-dom'
 import SideNav from './SideNav'
@@ -8,6 +9,11 @@ import { pageVariants } from '@/utils/animation'
 export default function Shell({ children }) {
   const location = useLocation()
   const { currentIndex, totalPages } = usePresentationMode()
+
+  // Every page should open at its headline, not wherever the last page was scrolled.
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }, [location.pathname])
 
   return (
     <div className="min-h-screen bg-zinc-950 bg-mesh">

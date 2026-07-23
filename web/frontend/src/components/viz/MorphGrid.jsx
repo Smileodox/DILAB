@@ -1,14 +1,29 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useRef } from 'react'
+import { createPortal } from 'react-dom'
 import { OriginBadge, TypeBadge } from '@/components/ui/Badge'
 import { PLAUSIBILITY_COLORS } from '@/utils/colors'
 
 function ManifestationCell({ manifestation, highlighted, dimmed }) {
-  const [showTooltip, setShowTooltip] = useState(false)
+  // Tooltip rendered through a portal: an absolutely-positioned child would be
+  // clipped by the grid's overflow-x-auto container.
+  const [tooltip, setTooltip] = useState(null)
+  const cellRef = useRef(null)
   const level = (manifestation.plausibility || 'medium').toLowerCase()
   const borderColor = PLAUSIBILITY_COLORS[level]
 
+  const openTooltip = () => {
+    const r = cellRef.current?.getBoundingClientRect()
+    if (!r) return
+    const openUp = r.bottom + 300 > window.innerHeight
+    setTooltip({
+      left: Math.min(r.left, window.innerWidth - 340),
+      ...(openUp ? { bottom: window.innerHeight - r.top + 8 } : { top: r.bottom + 8 }),
+    })
+  }
+
   return (
     <div
+      ref={cellRef}
       className="relative flex-shrink-0 w-52 rounded-lg p-3 transition-all duration-200"
       style={{
         background: highlighted
@@ -25,8 +40,8 @@ function ManifestationCell({ manifestation, highlighted, dimmed }) {
           ? `0 0 16px ${borderColor}20, 0 0 4px ${borderColor}10`
           : 'none',
       }}
-      onMouseEnter={() => setShowTooltip(true)}
-      onMouseLeave={() => setShowTooltip(false)}
+      onMouseEnter={openTooltip}
+      onMouseLeave={() => setTooltip(null)}
     >
       <div className="text-xs font-semibold text-zinc-100 leading-tight mb-1">
         {manifestation.label}
@@ -45,13 +60,17 @@ function ManifestationCell({ manifestation, highlighted, dimmed }) {
       </div>
 
       {/* Full description tooltip */}
-      {showTooltip && manifestation.description && (
-        <div className="absolute bottom-full left-0 mb-2 z-50 glass rounded-md px-3 py-2 text-xs text-zinc-300 max-w-xs leading-relaxed pointer-events-none whitespace-normal">
+      {tooltip && manifestation.description && createPortal(
+        <div
+          className="fixed z-[100] glass-solid rounded-md px-3 py-2 text-xs text-zinc-300 leading-relaxed pointer-events-none whitespace-normal shadow-xl border border-white/10"
+          style={{ ...tooltip, maxWidth: 330, maxHeight: 280, overflowY: 'auto' }}
+        >
           <div className="font-semibold text-zinc-100 mb-1">
             {manifestation.label}
           </div>
           {manifestation.description}
-        </div>
+        </div>,
+        document.body,
       )}
     </div>
   )
@@ -120,6 +139,17 @@ export default function MorphGrid({ drivers, scenarios }) {
           )}
         </div>
       )}
+
+      {/* Plausibility legend */}
+      <div className="flex items-center gap-4 text-xs text-zinc-400">
+        <span className="text-zinc-500">Plausibility:</span>
+        {Object.entries(PLAUSIBILITY_COLORS).map(([level, color]) => (
+          <span key={level} className="flex items-center gap-1.5 capitalize">
+            <span className="w-2 h-2 rounded-full" style={{ background: color }} />
+            {level}
+          </span>
+        ))}
+      </div>
 
       {/* Scrollable grid */}
       <div className="glass rounded-xl overflow-x-auto">

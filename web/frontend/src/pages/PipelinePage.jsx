@@ -4,10 +4,11 @@ import { useNavigate } from 'react-router-dom'
 import {
   Database, Boxes, TrendingUp, Merge, Grid3x3,
   ArrowLeftRight, CheckCircle, FileText, BarChart3,
-  ChevronRight, ExternalLink, ArrowRight,
+  ChevronRight, ExternalLink, ArrowRight, Map, Shapes,
 } from 'lucide-react'
 import { useKbApi } from '@/context/KbContext'
 import Card from '@/components/ui/Card'
+import LoadError from '@/components/ui/LoadError'
 import { staggerContainer, fadeUp } from '@/utils/animation'
 import { PIPELINE_COLORS } from '@/utils/colors'
 
@@ -32,11 +33,11 @@ function FlowBox({ label, sub, color = '#3b82f6', accent }) {
 function KBVisual({ data }) {
   return (
     <div className="flex items-center justify-center gap-1 flex-wrap">
-      <FlowBox label="45 PDFs" sub="R&S docs" color="#3b82f6" />
+      <FlowBox label={`${data?.sources ?? '–'} Sources`} sub="docs + arXiv" color="#3b82f6" />
       <FlowArrow />
       <FlowBox label="Split" sub="1500 tok" color="#3b82f6" accent="#60a5fa" />
       <FlowArrow />
-      <FlowBox label="2,850 Chunks" sub="+ metadata" color="#3b82f6" accent="#93c5fd" />
+      <FlowBox label={`${(data?.chunks ?? 0).toLocaleString()} Chunks`} sub="+ metadata" color="#3b82f6" accent="#93c5fd" />
       <FlowArrow />
       <FlowBox label="Vector DB" sub="RAG-ready" color="#10b981" />
     </div>
@@ -101,9 +102,9 @@ function TrendVisual() {
 }
 
 function MergeVisual({ data }) {
-  const bom = data?.drivers_by_origin?.bom || 19
-  const trend = data?.drivers_by_origin?.trend || 5
-  const total = data?.drivers_total || 24
+  const bom = data?.drivers_by_origin?.bom || 24
+  const trend = data?.drivers_by_origin?.trend || 17
+  const total = data?.drivers_total || 41
   return (
     <div className="flex items-center justify-center gap-2">
       <div className="flex flex-col items-center gap-1">
@@ -218,10 +219,11 @@ function CIBVisual() {
         <div className="text-[9px] text-zinc-500 font-medium uppercase tracking-wider mb-1">Simulated Delphi Panel</div>
         <div className="space-y-1.5">
           {[
-            { name: 'RF Systems Engineer', model: 'gpt-4.1', color: '#3b82f6', scores: ['+2', '+1', '+1', '+2'] },
-            { name: 'Regulatory Analyst', model: 'gpt-4.1-mini', color: '#f59e0b', scores: ['+2', '0', '+1', '+2'] },
-            { name: 'R&D Strategy Manager', model: 'gpt-4.1-mini', color: '#8b5cf6', scores: ['+1', '+1', '+2', '+1'] },
-            { name: 'Academic Researcher', model: 'gpt-4.1', color: '#10b981', scores: ['+1', '0', '+1', '+1'] },
+            { name: 'Systems Engineer', model: 'gpt-5.4', color: '#3b82f6', scores: ['+2', '+1', '-1', '+2'] },
+            { name: 'Standards & Compliance', model: 'gpt-5.4', color: '#f59e0b', scores: ['+2', '0', '-2', '+2'] },
+            { name: 'R&D Strategy Manager', model: 'gpt-5.4', color: '#8b5cf6', scores: ['+1', '+1', '-1', '+1'] },
+            { name: 'Academic Researcher', model: 'gpt-5.4', color: '#10b981', scores: ['+1', '0', '-1', '+1'] },
+            { name: 'Disruption Analyst', model: 'gpt-5.4', color: '#ec4899', scores: ['+2', '-1', '-2', '+1'] },
           ].map((p) => (
             <div key={p.name} className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full shrink-0" style={{ background: p.color }} />
@@ -264,8 +266,8 @@ function CIBVisual() {
 function FunnelVisual({ data }) {
   const stages = [
     { label: 'Combinatorial space', value: '268M+', width: 100, color: '#3f3f46' },
-    { label: 'Fixed points (CIB)', value: data?.total_fixed_points || 106, width: 40, color: '#8b5cf6' },
-    { label: 'Scenario seeds', value: data?.consistency_seeds || 20, width: 20, color: '#10b981' },
+    { label: 'Fixed points (CIB)', value: data?.total_fixed_points || 510, width: 40, color: '#8b5cf6' },
+    { label: 'Scenario seeds', value: data?.consistency_seeds || 6, width: 20, color: '#10b981' },
   ]
   return (
     <div className="flex flex-col items-center gap-1.5">
@@ -298,10 +300,10 @@ function FunnelVisual({ data }) {
 
 function ScenarioGenVisual() {
   const types = [
-    { label: 'Evolutionary', color: '#3b82f6', count: 8 },
-    { label: 'Disruptive', color: '#10b981', count: 5 },
-    { label: 'Cautionary', color: '#f59e0b', count: 4 },
-    { label: 'Wildcard', color: '#8b5cf6', count: 3 },
+    { label: 'Evolutionary', color: '#3b82f6' },
+    { label: 'Disruptive', color: '#10b981' },
+    { label: 'Cautionary', color: '#f59e0b' },
+    { label: 'Wildcard', color: '#8b5cf6' },
   ]
   return (
     <div className="space-y-2">
@@ -314,12 +316,12 @@ function ScenarioGenVisual() {
         <FlowArrow color="#10b981" />
         <FlowBox label="Typed Scenario" color="#10b981" accent="#34d399" />
       </div>
-      <div className="flex gap-2 mt-2">
+      <div className="flex gap-2 mt-2 items-center">
+        <span className="text-[9px] text-zinc-600">Types:</span>
         {types.map(t => (
           <div key={t.label} className="flex items-center gap-1.5">
             <div className="w-2 h-2 rounded-full" style={{ background: t.color }} />
             <span className="text-[9px] text-zinc-500">{t.label}</span>
-            <span className="text-[9px] font-bold" style={{ color: t.color }}>{t.count}</span>
           </div>
         ))}
       </div>
@@ -328,12 +330,13 @@ function ScenarioGenVisual() {
 }
 
 function MCDAVisual() {
+  // Real AHP weights from final_analysis (consistency ratio 0.016).
   const criteria = [
     { label: 'Impact', weight: 0.35 },
-    { label: 'Probability', weight: 0.25 },
-    { label: 'Actionability', weight: 0.20 },
-    { label: 'Time Horizon', weight: 0.12 },
-    { label: 'Risk Severity', weight: 0.08 },
+    { label: 'Probability', weight: 0.21 },
+    { label: 'Risk Severity', weight: 0.19 },
+    { label: 'Time Horizon', weight: 0.14 },
+    { label: 'Actionability', weight: 0.11 },
   ]
   return (
     <div className="space-y-2">
@@ -364,6 +367,34 @@ function MCDAVisual() {
   )
 }
 
+function CombiVisual() {
+  return (
+    <div className="flex items-center justify-center gap-1 flex-wrap">
+      <FlowBox label="268M space" sub="4¹⁴ configs" color="#8b5cf6" />
+      <FlowArrow color="#8b5cf6" />
+      <FlowBox label="Soft-CIB sampling" sub="consistency-weighted" color="#8b5cf6" accent="#a78bfa" />
+      <FlowArrow color="#8b5cf6" />
+      <FlowBox label="120 scenarios" sub="field coverage" color="#3b82f6" />
+      <FlowArrow />
+      <FlowBox label="UMAP 2D" sub="landscape map" color="#10b981" />
+    </div>
+  )
+}
+
+function ArchetypeVisual() {
+  return (
+    <div className="flex items-center justify-center gap-1 flex-wrap">
+      <FlowBox label="120 configs" sub="ordinal encoding" color="#3b82f6" />
+      <FlowArrow />
+      <FlowBox label="HDBSCAN" sub="density clustering" color="#8b5cf6" />
+      <FlowArrow color="#8b5cf6" />
+      <FlowBox label="5 archetypes" sub="LLM-named" color="#10b981" />
+      <FlowArrow color="#10b981" />
+      <FlowBox label="+ 40 continuum" sub="honestly unclustered" color="#f59e0b" />
+    </div>
+  )
+}
+
 function StepVisual({ stepId, data }) {
   switch (stepId) {
     case 'kb': return <KBVisual data={data} />
@@ -375,6 +406,8 @@ function StepVisual({ stepId, data }) {
     case 'consistency': return <FunnelVisual data={data} />
     case 'scenarios': return <ScenarioGenVisual />
     case 'mcda': return <MCDAVisual />
+    case 'combinatorial': return <CombiVisual />
+    case 'archetypes': return <ArchetypeVisual />
     default: return null
   }
 }
@@ -438,9 +471,9 @@ const STEPS = [
     category: 'analysis',
     link: '/morphbox',
     description: 'For each driver, generate 3–4 discrete future manifestations spanning the plausibility spectrum from optimistic to pessimistic.',
-    methodology: 'Zwicky morphological analysis → LLM generates manifestation variants per driver → plausibility assessment (high/medium/low) → source chunk grounding → manifestation ordering by optimism gradient.',
+    methodology: 'Relevance-ranked top-14 driver selection from the 41 unified drivers → Zwicky morphological analysis → LLM generates manifestation variants per driver → plausibility assessment (high/medium/low) → source chunk grounding → manifestation ordering by optimism gradient.',
     metricsFn: (d) => [
-      { label: 'Drivers', value: d.cib_drivers },
+      { label: 'Selected Drivers', value: d.cib_drivers && d.drivers_total ? `${d.cib_drivers} / ${d.drivers_total}` : d.cib_drivers },
       { label: 'Manifestations', value: d.manifestations },
       { label: 'Avg per Driver', value: d.manifestations && d.cib_drivers ? (d.manifestations / d.cib_drivers).toFixed(1) : '–' },
     ],
@@ -452,7 +485,7 @@ const STEPS = [
     category: 'analysis',
     link: '/cib',
     description: 'Assess pairwise cross-impact relationships between all drivers using a simulated expert panel, producing a scored interaction matrix.',
-    methodology: 'Weimer-Jehle Cross-Impact Balance method → simulated Delphi panel (4 personas × LLM) → pairwise scoring (-3 to +3) → Monte Carlo aggregation (2000 samples) → influence/dependence profiling.',
+    methodology: 'Weimer-Jehle Cross-Impact Balance method → simulated Delphi panel (5 personas × LLM, dissent-preserving) → pairwise scoring (-3 to +3) → Monte Carlo aggregation (2000 samples) → influence/dependence profiling.',
     metricsFn: (d) => [
       { label: 'Driver Pairs', value: d.cib_pairs },
       { label: 'Personas', value: d.n_personas },
@@ -497,6 +530,32 @@ const STEPS = [
     metricsFn: (d) => [
       { label: 'Criteria', value: 5 },
       { label: 'Scenarios Ranked', value: d.scenarios },
+    ],
+  },
+  {
+    id: 'combinatorial',
+    label: 'Combinatorial Landscape',
+    icon: Map,
+    category: 'output',
+    link: '/landscape',
+    description: 'Sample the full 268-million-configuration space with consistency-weighted soft-CIB sampling to map the entire scenario field, not just its fixed points.',
+    methodology: 'Soft-CIB field sampling (consistency-weighted, oversampled + rejection-filtered) → 120 scenarios covering the whole configuration space → embedding + UMAP projection into a 2D landscape → multi-lens structure analysis with null-model referee.',
+    metricsFn: () => [
+      { label: 'Config Space', value: '268M+' },
+      { label: 'Sampled Scenarios', value: 120 },
+    ],
+  },
+  {
+    id: 'archetypes',
+    label: 'Archetype Extraction',
+    icon: Shapes,
+    category: 'output',
+    link: '/archetypes',
+    description: 'Condense the 120-scenario field into named archetypes — dense regions of the landscape — while honestly keeping unclusterable scenarios as continuum.',
+    methodology: 'Ordinal manifestation encoding → HDBSCAN density clustering (silhouette 0.38, validated against uniform-random null model) → LLM naming + characterization per cluster → 1/3 of scenarios deliberately left as continuum instead of force-assigned.',
+    metricsFn: () => [
+      { label: 'Archetypes', value: 5 },
+      { label: 'Continuum', value: '33%' },
     ],
   },
 ]
@@ -628,7 +687,7 @@ function StepCard({ step, metrics, index, isExpanded, onToggle, onNavigate, over
 }
 
 export default function PipelinePage() {
-  const { data, loading } = useKbApi('/api/overview')
+  const { data, loading, error } = useKbApi('/api/overview')
   const [expandedStep, setExpandedStep] = useState(null)
   const navigate = useNavigate()
 
@@ -638,6 +697,10 @@ export default function PipelinePage() {
         <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
       </div>
     )
+  }
+
+  if (error || !data || data.unavailable) {
+    return <LoadError title="Pipeline Architecture" />
   }
 
   return (
@@ -651,7 +714,7 @@ export default function PipelinePage() {
       <motion.div variants={fadeUp} className="text-center mb-12">
         <h1 className="text-3xl font-extrabold text-white mb-2">Pipeline Architecture</h1>
         <p className="text-sm text-zinc-400 max-w-xl mx-auto">
-          Nine-stage AI pipeline transforming raw product documentation and regulatory intelligence
+          Eleven-stage AI pipeline transforming raw product documentation and regulatory intelligence
           into ranked, evidence-grounded technology scenarios for Horizon 2035.
         </p>
       </motion.div>

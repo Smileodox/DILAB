@@ -27,7 +27,7 @@ const ICONS = {
 }
 
 const PATHS = {
-  kb: '/',
+  kb: '/pipeline',
   bom: '/bom',
   trends: '/drivers',
   merge: '/drivers',
@@ -45,7 +45,10 @@ function PipelineNode({ data }) {
 
   return (
     <div
-      onClick={() => data.onClick?.(PATHS[data.key])}
+      onClick={(e) => {
+        e.stopPropagation()
+        data.onClick?.(PATHS[data.key])
+      }}
       className={`flex items-center rounded-lg cursor-pointer transition-all duration-200 hover:scale-105 ${big ? 'gap-3 px-5 py-3.5' : 'gap-2 px-3 py-2'}`}
       style={{
         background: `${color}18`,
@@ -62,11 +65,11 @@ function PipelineNode({ data }) {
         <Icon size={big ? 20 : 14} style={{ color }} />
       </div>
       <div className="flex flex-col min-w-0">
-        <span className={`font-semibold text-zinc-100 leading-tight truncate ${big ? 'text-sm' : 'text-[11px]'}`}>
+        <span className={`font-semibold text-zinc-100 leading-tight truncate ${big ? 'text-sm' : 'text-xs'}`}>
           {data.label}
         </span>
         {data.metric != null && (
-          <span className={`font-medium mt-0.5 ${big ? 'text-xs' : 'text-[10px]'}`} style={{ color }}>
+          <span className={`font-medium mt-0.5 whitespace-nowrap ${big ? 'text-xs' : 'text-[11px]'}`} style={{ color }}>
             {data.metric}
           </span>
         )}
@@ -92,14 +95,14 @@ const defaultEdgeOptions = {
 
 const INLINE_POSITIONS = {
   kb:          { x: 0,    y: 20  },
-  bom:         { x: 200,  y: -20 },
-  trends:      { x: 200,  y: 60  },
-  merge:       { x: 400,  y: 20  },
-  morph:       { x: 580,  y: 20  },
-  cib:         { x: 760,  y: 20  },
-  consistency: { x: 940,  y: 20  },
-  scenarios:   { x: 1120, y: 20  },
-  mcda:        { x: 1300, y: 20  },
+  bom:         { x: 160,  y: -20 },
+  trends:      { x: 160,  y: 60  },
+  merge:       { x: 320,  y: 20  },
+  morph:       { x: 480,  y: 20  },
+  cib:         { x: 640,  y: 20  },
+  consistency: { x: 800,  y: 20  },
+  scenarios:   { x: 960,  y: 20  },
+  mcda:        { x: 1120, y: 20  },
 }
 
 const EXPANDED_POSITIONS = {
@@ -114,16 +117,27 @@ const EXPANDED_POSITIONS = {
   mcda:        { x: 1100,y: 280 },
 }
 
+// Each node derives its metric from the overview payload — the metric must belong to
+// the node's own pipeline stage (the BOM node once showed the KB's chunk count).
 const NODE_DEFS = [
-  { id: 'kb',          label: 'Knowledge Base',     fullLabel: 'Knowledge Base',      category: 'input',    metricKey: 'sources',          metricSuffix: 'sources' },
-  { id: 'bom',         label: 'BOM Decomp.',        fullLabel: 'BOM Decomposition',   category: 'input',    metricKey: 'chunks',           metricSuffix: 'chunks' },
-  { id: 'trends',      label: 'Trend Scanning',     fullLabel: 'Trend Scanning',      category: 'input',    metricKey: null },
-  { id: 'merge',       label: 'Driver Merge',       fullLabel: 'Driver Merge',        category: 'analysis', metricKey: 'drivers_total',    metricSuffix: 'drivers' },
-  { id: 'morph',       label: 'Morph Box',          fullLabel: 'Morphological Box',   category: 'analysis', metricKey: 'manifestations',   metricSuffix: 'manif.' },
-  { id: 'cib',         label: 'CIB Analysis',       fullLabel: 'CIB Analysis',        category: 'analysis', metricKey: null },
-  { id: 'consistency', label: 'Consistency',         fullLabel: 'Consistency Filter',  category: 'analysis', metricKey: 'consistency_seeds',metricSuffix: 'seeds' },
-  { id: 'scenarios',   label: 'Scenarios',           fullLabel: 'Scenario Generation', category: 'output',   metricKey: 'scenarios',        metricSuffix: 'scenarios' },
-  { id: 'mcda',        label: 'MCDA Eval',           fullLabel: 'MCDA Evaluation',     category: 'output',   metricKey: null },
+  { id: 'kb',          label: 'Knowledge Base',     fullLabel: 'Knowledge Base',      category: 'input',
+    metricFn: (d) => (d.sources != null ? `${d.sources} sources · ${(d.chunks ?? 0).toLocaleString()} chunks` : null) },
+  { id: 'bom',         label: 'BOM Decomp.',        fullLabel: 'BOM Decomposition',   category: 'input',
+    metricFn: (d) => (d.drivers_by_origin?.bom != null ? `${d.drivers_by_origin.bom} drivers` : null) },
+  { id: 'trends',      label: 'Trend Scanning',     fullLabel: 'Trend Scanning',      category: 'input',
+    metricFn: (d) => (d.drivers_by_origin?.trend != null ? `${d.drivers_by_origin.trend} drivers` : null) },
+  { id: 'merge',       label: 'Driver Merge',       fullLabel: 'Driver Merge',        category: 'analysis',
+    metricFn: (d) => (d.drivers_total != null ? `${d.drivers_total} drivers` : null) },
+  { id: 'morph',       label: 'Morph Box',          fullLabel: 'Morphological Box',   category: 'analysis',
+    metricFn: (d) => (d.manifestations != null ? `${d.manifestations} manif.` : null) },
+  { id: 'cib',         label: 'CIB Analysis',       fullLabel: 'CIB Analysis',        category: 'analysis',
+    metricFn: (d) => (d.cib_pairs != null ? `${d.cib_pairs} pairs` : null) },
+  { id: 'consistency', label: 'Consistency',         fullLabel: 'Consistency Filter',  category: 'analysis',
+    metricFn: (d) => (d.consistency_seeds != null ? `${d.consistency_seeds} seeds` : null) },
+  { id: 'scenarios',   label: 'Scenarios',           fullLabel: 'Scenario Generation', category: 'output',
+    metricFn: (d) => (d.scenarios != null ? `${d.scenarios} scenarios` : null) },
+  { id: 'mcda',        label: 'MCDA Eval',           fullLabel: 'MCDA Evaluation',     category: 'output',
+    metricFn: (d) => (d.scenarios != null ? `${d.scenarios} ranked` : null) },
 ]
 
 const INLINE_EDGES = [
@@ -171,10 +185,7 @@ export default function PipelineFlow({ overview = {}, onNodeClick, height = 220,
           label: expanded ? def.fullLabel : def.label,
           category: def.category,
           expanded,
-          metric:
-            def.metricKey && overview[def.metricKey] != null
-              ? `${overview[def.metricKey]} ${def.metricSuffix}`
-              : null,
+          metric: def.metricFn ? def.metricFn(overview || {}) : null,
           onClick: handleNodeClick,
         },
       })),
@@ -194,12 +205,13 @@ export default function PipelineFlow({ overview = {}, onNodeClick, height = 220,
         nodeTypes={nodeTypes}
         defaultEdgeOptions={defaultEdgeOptions}
         fitView
-        fitViewOptions={{ padding: expanded ? 0.12 : 0.15 }}
+        fitViewOptions={{ padding: expanded ? 0.12 : 0.05 }}
         proOptions={{ hideAttribution: true }}
         nodesDraggable={false}
         nodesConnectable={false}
         elementsSelectable={false}
         panOnDrag={false}
+        preventScrolling={false}
         zoomOnScroll={false}
         zoomOnPinch={false}
         zoomOnDoubleClick={false}
