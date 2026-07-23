@@ -41,6 +41,47 @@ def _p(name: str) -> str:
     return os.path.join(DATA_DIR, name)
 
 
+def _stamp_cluster_space(landscape_state: dict, configs: list[dict], morphbox_state: dict) -> None:
+    """Stamp cluster-space UMAP coords (ox/oy 2D + ox3/oy3/oz3 3D) onto the landscape points.
+
+    Same geometry and params as the archetype HDBSCAN (ordinal config matrix,
+    n_neighbors=15, euclidean, seed 42) so the dashboard's "Cluster space" toggle
+    shows the space the archetypes were actually found in. Mirrors
+    scripts/backfill_cluster_space.py, which remains for stamping old artifacts.
+    """
+    from umap import UMAP
+
+    from src.models.morphological import DriverManifestation, MorphologicalBox
+    from src.pipeline.archetypes import _ordinal_matrix
+
+    box = MorphologicalBox(
+        drivers=morphbox_state["drivers"],
+        manifestations=morphbox_state["manifestations"],
+        all_manifestations=[DriverManifestation(**m) for m in morphbox_state["all_manifestations"]],
+    )
+    row_by_id = {c.get("id"): i for i, c in enumerate(configs)}
+    points = landscape_state.get("points", [])
+    rows = [row_by_id.get(p.get("seed_id")) for p in points]
+    if not points or any(r is None for r in rows):
+        raise ValueError("landscape points do not align with combinatorial configs")
+
+    x = _ordinal_matrix(configs, box)
+    n_neighbors = min(15, len(configs) - 1)
+    emb2, emb3 = (
+        UMAP(n_neighbors=n_neighbors, n_components=nc, metric="euclidean",
+             random_state=42).fit_transform(x)
+        for nc in (2, 3)
+    )
+    for p, r in zip(points, rows):
+        p["ox"], p["oy"] = round(float(emb2[r, 0]), 4), round(float(emb2[r, 1]), 4)
+        p["ox3"], p["oy3"], p["oz3"] = (round(float(emb3[r, k]), 4) for k in range(3))
+    landscape_state.setdefault("metadata", {})["ordinal_umap"] = {
+        "n_neighbors": n_neighbors, "metric": "euclidean", "seed": 42,
+        "source": "ordinal config matrix (same space as archetype HDBSCAN, fresh 2D/3D fits)",
+        "fields": ["ox", "oy", "ox3", "oy3", "oz3"],
+    }
+
+
 def _try_get_collection():
     """Return the Chroma KB collection, or None if unavailable (e.g. KB not built)."""
     try:
@@ -156,6 +197,10 @@ def run(
     landscape_state.setdefault("metadata", {}).update({
         "method": "combinatorial",
         "geometry": landscape_space,
+        # landscape.run() only knows it got precomputed geometry; record what it was.
+        "embedding_model": (config.AZURE_OPENAI_EMBEDDING_DEPLOYMENT
+                            if landscape_space == "narrative"
+                            else "none (one-hot config vectors)"),
         "n_clusters": clustering["k"],
         "silhouette": clustering["silhouette"],
     })
@@ -186,6 +231,17 @@ def run(
         import traceback
         traceback.print_exc()
         print(f"  projection failed ({e}); landscape written without PCA axes.")
+
+    # Cluster-space coords (ordinal-UMAP, the space the archetype HDBSCAN clusters in) —
+    # the dashboard's "Cluster space" toggle needs these on every fresh run.
+    try:
+        with open(_p("morphbox_state.json")) as f:
+            morphbox_state = json.load(f)
+        _stamp_cluster_space(landscape_state, combi_state["configs"], morphbox_state)
+        print(f"  cluster space: ordinal-UMAP coords (2D+3D) stamped on "
+              f"{len(landscape_state['points'])} points")
+    except Exception as e:  # noqa: BLE001
+        print(f"  cluster-space stamping failed ({e}); toggle will fall back to PCA.")
 
     with open(landscape_path, "w") as f:
         json.dump(landscape_state, f, indent=2)

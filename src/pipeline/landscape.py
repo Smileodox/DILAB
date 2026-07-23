@@ -13,6 +13,7 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from umap import UMAP
 
+from src.config import AZURE_OPENAI_EMBEDDING_DEPLOYMENT
 from src.llm import embed
 
 log = logging.getLogger(__name__)
@@ -38,10 +39,12 @@ def run(
     # re-embedding — the combinatorial path reuses the embeddings it clustered on.
     if embeddings is not None:
         embeddings = np.asarray(embeddings)
+        embedding_model = "precomputed (caller-supplied geometry)"
     else:
         narratives = [s["narrative"][:8000] for s in scenarios]
         log.info("Embedding %d scenario narratives", n)
         embeddings = np.array(embed(narratives))
+        embedding_model = AZURE_OPENAI_EMBEDDING_DEPLOYMENT
 
     n_neighbors = min(15, n - 1)
     log.info("Running UMAP (n_neighbors=%d)", n_neighbors)
@@ -96,7 +99,7 @@ def run(
             "n_fixed_points": sum(1 for p in points if p["is_fixed_point"]),
             "n_near_neighbors": sum(1 for p in points if not p["is_fixed_point"]),
             "total_combinatorial_space": total_space,
-            "embedding_model": "text-embedding-3-small",
+            "embedding_model": embedding_model,
             "embedding_dim": embeddings.shape[1],
             "umap_params": {
                 "n_neighbors": n_neighbors,
