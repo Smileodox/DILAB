@@ -1,0 +1,30 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="journey" name="One driver's journey">
+    <mxGraphModel dx="900" dy="800" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="840" pageHeight="980" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="KB" value="Knowledge base&#10;~70 sources · 3,905 chunks" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#F0F9F9;strokeColor=#038387;strokeWidth=1.5;fontColor=#014D4E;fontSize=12;fontFamily=Helvetica;" vertex="1" parent="1"><mxGeometry x="300" y="30" width="220" height="90" as="geometry" /></mxCell>
+        <mxCell id="S1" value="Extract + ground one driver&#10;(keeps source_chunk_ids)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#EFF6FC;strokeColor=#0078D4;strokeWidth=1.5;fontColor=#004578;fontSize=12;fontFamily=Helvetica;" vertex="1" parent="1"><mxGeometry x="310" y="175" width="200" height="55" as="geometry" /></mxCell>
+        <mxCell id="N1" value="1 of 14 selected factors" style="text;html=1;align=left;verticalAlign=middle;fontColor=#8A8886;fontSize=11;fontStyle=2;fontFamily=Helvetica;" vertex="1" parent="1"><mxGeometry x="525" y="188" width="180" height="30" as="geometry" /></mxCell>
+        <mxCell id="S2" value="4 manifestations&#10;optimistic → pessimistic" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#EFF6FC;strokeColor=#0078D4;strokeWidth=1.5;fontColor=#004578;fontSize=12;fontFamily=Helvetica;" vertex="1" parent="1"><mxGeometry x="310" y="285" width="200" height="55" as="geometry" /></mxCell>
+        <mxCell id="S3" value="CIB couplings&#10;5 personas · 182 pairs&#10;dissent preserved" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#EFF6FC;strokeColor=#0078D4;strokeWidth=1.5;fontColor=#004578;fontSize=12;fontFamily=Helvetica;" vertex="1" parent="1"><mxGeometry x="310" y="395" width="200" height="70" as="geometry" /></mxCell>
+        <mxCell id="S4" value="Sample 4^14 = 268,435,456&#10;keep 120 consistent" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#EFF6FC;strokeColor=#0078D4;strokeWidth=1.5;fontColor=#004578;fontSize=12;fontFamily=Helvetica;" vertex="1" parent="1"><mxGeometry x="300" y="515" width="220" height="55" as="geometry" /></mxCell>
+        <mxCell id="S5" value="HDBSCAN on ordinal encoding" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#EFF6FC;strokeColor=#0078D4;strokeWidth=1.5;fontColor=#004578;fontSize=12;fontFamily=Helvetica;" vertex="1" parent="1"><mxGeometry x="310" y="620" width="200" height="50" as="geometry" /></mxCell>
+        <mxCell id="END" value="5 named archetypes&#10;+ ~40 continuum" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E3F6EC;strokeColor=#1F9D57;strokeWidth=3;fontColor=#0F5132;fontSize=13;fontStyle=1;fontFamily=Helvetica;" vertex="1" parent="1"><mxGeometry x="335" y="720" width="210" height="95" as="geometry" /></mxCell>
+
+        <mxCell id="CHAIN" value="Scale at each hop&#10;&#10;70 sources&#10;→ 14 factors&#10;→ 268,435,456 combos&#10;→ 120 scenarios&#10;→ 5 archetypes" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#F3F2F1;strokeColor=#A19F9D;strokeWidth=1;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;fontColor=#3B3A39;fontSize=12;fontFamily=Helvetica;" vertex="1" parent="1"><mxGeometry x="600" y="360" width="200" height="180" as="geometry" /></mxCell>
+        <mxCell id="TRACE" value="Every step traces back to its source chunks" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;dashed=1;fillColor=#FCFCFB;strokeColor=#C8C6C4;fontColor=#605E5C;fontStyle=2;fontSize=12;fontFamily=Helvetica;" vertex="1" parent="1"><mxGeometry x="140" y="860" width="600" height="40" as="geometry" /></mxCell>
+
+        <mxCell id="j1" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#8A8886;strokeWidth=1.5;fontColor=#5B6472;fontSize=11;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="KB" target="S1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="j2" value="2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#8A8886;strokeWidth=1.5;fontColor=#5B6472;fontSize=11;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="S1" target="S2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="j3" value="3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#8A8886;strokeWidth=1.5;fontColor=#5B6472;fontSize=11;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="S2" target="S3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="j4" value="4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#8A8886;strokeWidth=1.5;fontColor=#5B6472;fontSize=11;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="S3" target="S4"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="j5" value="5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#8A8886;strokeWidth=1.5;fontColor=#5B6472;fontSize=11;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="S4" target="S5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="j6" value="6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#8A8886;strokeWidth=1.5;fontColor=#5B6472;fontSize=11;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="S5" target="END"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

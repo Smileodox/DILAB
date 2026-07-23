@@ -1,0 +1,26 @@
+sequenceDiagram
+  autonumber
+  actor U as CLI
+  participant O as Orchestrator
+  participant C as ChromaDB
+  participant L as Azure LLM
+
+  U->>O: uv run run_full.py
+  opt arXiv augmentation
+    O->>C: ingest papers - embed + add chunks
+  end
+  O->>L: trends.run - drivers from KB coverage gaps
+  O->>L: merge.run - consolidate BOM + trend drivers
+  O->>O: select_top_drivers - evidence-weighted, N=14
+  O->>L: manifestations - 4 states x 14 = 56
+  O->>L: cib.run - 5 personas x 2 Delphi rounds, 182 pairs
+  O->>O: run_consistency - fixed points
+  O->>L: scenario_gen.run
+  O->>O: landscape.run - UMAP
+  O->>L: evaluation.run - auditor then AHP + TOPSIS
+  O->>O: temporal.run DVI + strategic_framing.run
+  Note over O: fork - reuse morphbox + cib
+  O->>O: run_combinatorial.run - soft-CIB, 120 scenarios
+  O->>L: short narratives for kept combos
+  O->>O: archetypes.run HDBSCAN+ordinal + structure.analyze_multi
+  O-->>U: JSON artifacts in data/outputs/

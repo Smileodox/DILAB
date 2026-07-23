@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Foresight Engine — Final Presentation (Mock)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --surface:#fcfcfb; --ink:#0b0b0b; --sec:#52514e; --muted:#898781;
+    --grid:#e1e0d9; --base:#c3c2b7; --accent:#2a78d6;
+    --c1:#2a78d6; --c2:#1baf7a; --c3:#eda100; --c4:#008300; --c5:#4a3aa7; --cont:#b8b6ac;
+    --neg:#e34948; --good:#006300;
+  }
+  *{box-sizing:border-box; margin:0}
+  html,body{height:100%; background:#191917}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; color:var(--ink)}
+  #stage{position:fixed; inset:0; display:flex; align-items:center; justify-content:center}
+  .slide{
+    width:1280px; height:720px; background:var(--surface); border-radius:6px;
+    padding:64px 76px 56px; position:absolute; display:none; flex-direction:column;
+    box-shadow:0 20px 60px rgba(0,0,0,.5);
+  }
+  .slide.active{display:flex}
+  .kicker{font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-weight:600; margin-bottom:10px}
+  h1{font-size:46px; line-height:1.12; letter-spacing:-.01em; margin-bottom:26px}
+  h1 .dim{color:var(--sec); font-weight:600}
+  .body{flex:1; display:flex; flex-direction:column; min-height:0}
+  .foot{display:flex; justify-content:space-between; font-size:13px; color:var(--muted); margin-top:auto; padding-top:18px}
+  .takeaway{font-size:21px; color:var(--ink); border-top:1.5px solid var(--grid); padding-top:16px; margin-top:auto}
+  .takeaway b{font-weight:700}
+  .notes{display:none}
+
+  /* ---------- components ---------- */
+  .chips{display:flex; gap:14px; flex-wrap:wrap; font-size:15px; color:var(--sec)}
+  .chip i{display:inline-block; width:12px; height:12px; border-radius:3px; margin-right:6px; vertical-align:-1px}
+  table{border-collapse:collapse; width:100%; font-size:19px}
+  th{font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); font-weight:600; text-align:left; padding:0 18px 10px 0}
+  td{padding:13px 18px 13px 0; border-top:1px solid var(--grid); vertical-align:top}
+  tr.rule td{border-top:1.5px solid var(--base)}
+  .num{font-variant-numeric:tabular-nums}
+  .flow{display:flex; align-items:stretch; gap:0; margin:8px 0 4px}
+  .block{flex:1; border:1.5px solid var(--base); border-radius:10px; padding:14px 12px; background:#fff}
+  .block h3{font-size:17px; margin-bottom:5px}
+  .block p{font-size:13.5px; color:var(--sec); line-height:1.35}
+  .block .who{margin-top:8px; font-size:12.5px; color:var(--accent); font-weight:600}
+  .arrow{align-self:center; padding:0 6px; color:var(--base); font-size:22px}
+  .numchain{display:flex; align-items:baseline; gap:8px; justify-content:center; margin-top:44px; white-space:nowrap}
+  .numchain b{font-size:25px; letter-spacing:-.01em}
+  .numchain span{font-size:13px; color:var(--muted)}
+  .numchain .sep{color:var(--base); font-size:19px; align-self:center}
+  .card{border:1.5px solid var(--grid); border-radius:12px; padding:18px 20px; background:#fff}
+  .quote{font-size:17px; line-height:1.45; color:var(--sec)}
+  .quote .who{display:block; margin-top:8px; font-size:13px; color:var(--muted)}
+  .score{font-size:26px; font-weight:700; font-variant-numeric:tabular-nums}
+  .score.pos{color:var(--good)} .score.neg{color:var(--neg)}
+  .fig{display:flex; align-items:center; justify-content:center; min-height:0; flex:1}
+  .fig img{max-width:100%; max-height:100%}
+  .cols{display:flex; gap:36px; flex:1; min-height:0}
+  .cols>div:not(.arrow){flex:1; min-width:0}
+  .cols .arrow{flex:0 0 auto}
+  .foot-note{font-size:15px; color:var(--muted); margin-top:12px}
+  .callout{border-left:3px solid var(--ink); padding:10px 16px; background:#f4f3ef; border-radius:0 8px 8px 0; font-size:17.5px}
+
+  /* slider widget */
+  .slider{margin:26px 8px 0}
+  .slider .track{position:relative; height:3px; background:var(--base); border-radius:2px}
+  .slider .stop{position:absolute; top:-7px; width:17px; height:17px; border-radius:50%; background:var(--surface); border:3px solid var(--sec)}
+  .slider .stop.on{background:var(--accent); border-color:var(--accent)}
+  .slider .labels{display:flex; margin-top:16px}
+  .slider .labels div{flex:1; font-size:15px; line-height:1.3; color:var(--sec); padding-right:14px}
+  .slider .labels b{display:block; color:var(--ink); font-size:15.5px; margin-bottom:2px}
+
+  /* typographic funnel */
+  .funnel{display:flex; align-items:center; gap:14px; justify-content:space-between; margin-top:8px}
+  .fstep{text-align:center; flex:1}
+  .fstep b{display:block; font-size:29px; letter-spacing:-.01em; font-variant-numeric:tabular-nums}
+  .fstep span{font-size:13.5px; color:var(--muted); display:block; margin-top:3px; line-height:1.3}
+  .funnel .arrow{font-size:20px}
+
+  /* verdict pills */
+  .pill{display:inline-block; font-size:13px; font-weight:600; padding:3px 10px; border-radius:99px; border:1.5px solid}
+  .pill.ok{color:var(--good); border-color:var(--good)}
+  .pill.no{color:var(--muted); border-color:var(--base)}
+
+  /* title slide */
+  .title-slide{justify-content:center}
+  .title-slide h1{font-size:58px; max-width:1050px}
+  .title-slide .sub{font-size:23px; color:var(--sec); margin-top:6px}
+  .title-slide .team{margin-top:56px; font-size:16.5px; color:var(--sec)}
+  .title-slide .team b{color:var(--ink)}
+
+  /* HUD */
+  #hud{position:fixed; right:18px; bottom:14px; color:#777; font-size:13px; font-variant-numeric:tabular-nums; z-index:10}
+  #notesbar{position:fixed; left:0; right:0; bottom:0; background:#111; color:#ddd; font-size:15px; line-height:1.5;
+    padding:14px 26px; display:none; z-index:9; max-height:30vh; overflow:auto; border-top:2px solid #333}
+  #notesbar .tag{color:#888; font-size:12px; text-transform:uppercase; letter-spacing:.1em; margin-right:10px}
+
+  @media print{
+    html,body{background:#fff}
+    #stage{position:static; display:block}
+    .slide{display:flex !important; position:relative; box-shadow:none; border-radius:0; page-break-after:always; margin:0 auto}
+    #hud,#notesbar{display:none !important}
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+
+<!-- ============ 1 · TITLE ============ -->
+<section class="slide title-slide">
+  <div class="kicker">LMU Digital Innovation Lab &times; Rohde &amp; Schwarz · Team 2</div>
+  <h1>How does R&amp;S know today which monitoring products it will need in&nbsp;2035?</h1>
+  <div class="sub">AI-driven technology foresight — a domain-agnostic scenario engine, traceable to the source.</div>
+  <div class="team">
+    Christian Diogo Götsch · Paul Keck · Aditya Purwar · Lovepreet Singh · Adam Foster-Baird
+    &ensp;·&ensp; <b>Product Owner:</b> Dr. Andrew Schaefer (R&amp;S)
+  </div>
+  <div class="foot"><span>Technology Foresight — Final Presentation</span><span></span></div>
+  <aside class="notes">Frage stehen lassen, kurz Pause. Dann: „Unsere Antwort ist keine Prognose, sondern eine Landkarte möglicher Zukünfte — erzeugt aus Dokumenten, nachprüfbar bis zum Absatz." Team einmal nennen, dann direkt in den Flow.</aside>
+</section>
+
+<!-- ============ 2 · PIPELINE OVERVIEW ============ -->
+<section class="slide">
+  <div class="kicker">The pipeline — one command, end to end</div>
+  <h1>From a pile of documents to a map of futures</h1>
+  <div class="body">
+    <div class="flow">
+      <div class="block"><h3>1 · Dock a knowledge base</h3><p>PDFs &rarr; searchable chunks. The engine derives the domain itself.</p></div>
+      <div class="arrow">&rarr;</div>
+      <div class="block"><h3>2 · Find the drivers</h3><p>Bottom-up from the product (BOM) + top-down trend scan of the corpus.</p></div>
+      <div class="arrow">&rarr;</div>
+      <div class="block"><h3>3 · Open the space</h3><p>Each driver becomes a slider with 4 future positions (Zwicky box).</p></div>
+      <div class="arrow">&rarr;</div>
+      <div class="block"><h3>4 · Filter for consistency</h3><p>An expert panel scores which slider positions fit together (CIB).</p></div>
+      <div class="arrow">&rarr;</div>
+      <div class="block"><h3>5 · Read the structure</h3><p>Density clustering condenses the field into named archetypes — honestly.</p></div>
+      <div class="arrow">&rarr;</div>
+      <div class="block"><h3>6 · Evaluate &amp; deliver</h3><p>Evidence-grounded scoring, MCDA ranking, interactive dashboard.</p></div>
+    </div>
+    <div class="numchain">
+      <div><b class="num">69</b> <span>sources</span></div><div class="sep">→</div>
+      <div><b class="num">3,905</b> <span>chunks</span></div><div class="sep">→</div>
+      <div><b class="num">41→14</b> <span>drivers</span></div><div class="sep">→</div>
+      <div><b class="num">268 M</b> <span>combinations</span></div><div class="sep">→</div>
+      <div><b class="num">510</b> <span>consistent</span></div><div class="sep">→</div>
+      <div><b class="num">120</b> <span>scenarios</span></div><div class="sep">→</div>
+      <div><b class="num">5</b> <span>archetypes</span></div>
+    </div>
+    <div class="takeaway">Every arrow is machine-executed <b>and</b> traceable — from an archetype back to the source paragraph.</div>
+  </div>
+  <div class="foot"><span>DiLab × R&amp;S — Technology Foresight</span><span>2</span></div>
+  <aside class="notes">Ein Kommando (run_full.py), 14 Stufen, ~30 Minuten. Nur die Kette zeigen, NICHT erklären — „das schauen wir uns jetzt an einem echten Beispiel an, das durch alle sechs Kästen läuft." Zahlenkette einmal langsam vorlesen.</aside>
+</section>
+
+<!-- ============ 3 · EXAMPLE 1/3: THE SLIDER ============ -->
+<section class="slide">
+  <div class="kicker">The example · step 1 of 3</div>
+  <h1>From documents to a future driver <span class="dim">— a slider with four positions</span></h1>
+  <div class="body">
+    <div class="cols" style="flex:0 0 auto; gap:22px">
+      <div class="card" style="flex:0 0 300px">
+        <div class="kicker" style="margin-bottom:6px">Real sources</div>
+        <div style="font-size:16.5px; line-height:1.5">ITU <i>Spectrum Monitoring Handbook</i><br>OECD <i>The Road to 5G Networks</i><br>arXiv, NTIA, GSMA …<br>
+        <span style="color:var(--muted); font-size:14px">69 sources · 3,905 chunks</span></div>
+      </div>
+      <div class="arrow" style="font-size:28px">&rarr;</div>
+      <div class="card" style="flex:1">
+        <div class="kicker" style="margin-bottom:6px">Extracted driver · market dimension</div>
+        <div style="font-size:22px; font-weight:700">Shift to dynamic, shared spectrum access — away from exclusive licences</div>
+        <div style="color:var(--muted); font-size:14px; margin-top:6px">grounded in 416 source passages — every one linked</div>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="track">
+        <div class="stop on" style="left:1%"></div><div class="stop" style="left:26%"></div>
+        <div class="stop" style="left:51%"></div><div class="stop" style="left:76%"></div>
+      </div>
+      <div class="labels">
+        <div><b>Cross-border observatories</b>Regulators run near-real-time monitoring across harmonised shared bands.</div>
+        <div><b>Automated enforcement</b>Monitoring becomes the operational backbone of dynamic licensing.</div>
+        <div><b>National islands</b>Sharing expands, but monitoring stays nationally bespoke.</div>
+        <div><b>Hot-spot policing</b>Rules outpace capability; complaint-driven investigations.</div>
+      </div>
+    </div>
+    <div class="takeaway">The system found <b>41</b> such drivers; the <b>14</b> most important remain. &ensp;14 sliders × 4 positions = <b class="num">268,435,456</b> conceivable futures.</div>
+  </div>
+  <div class="foot"><span>DiLab × R&amp;S — Technology Foresight</span><span>3</span></div>
+  <aside class="notes">„Wir denken uns keine Szenarien aus. Alles beginnt mit 69 echten Dokumenten. Daraus extrahiert das System Zukunftsfaktoren — zum Beispiel diesen: Frequenzen werden dynamisch geteilt statt exklusiv vergeben. Jeder Faktor ist ein Regler mit vier Positionen, und jeder Regler zeigt auf seine Quellstellen zurück — hier 416 Passagen. 14 Regler à 4 Positionen: 268 Millionen denkbare Kombinationen. Die allermeisten sind Unsinn — wie wir die stimmigen finden: nächste Folie."</aside>
+</section>
+
+<!-- ============ 4 · EXAMPLE 2/3: CIB ============ -->
+<section class="slide">
+  <div class="kicker">The example · step 2 of 3</div>
+  <h1>Which settings are internally consistent?</h1>
+  <div class="body">
+    <div class="cols" style="flex:0 0 auto">
+      <div class="card">
+        <div class="score pos">+2</div>
+        <div style="font-size:16.5px; margin:4px 0 8px"><b>Dynamic shared access</b> &times; <b>International dynamic governance</b></div>
+        <div class="quote">“Without the broader international move toward dynamic, data-informed shared-spectrum governance and harmonised rules, [it] could not scale beyond isolated deployments.”
+          <span class="who">— Portfolio &amp; Market Strategist (panel of 5 personas, derived from the corpus)</span></div>
+      </div>
+      <div class="card">
+        <div class="score neg">&minus;1</div>
+        <div style="font-size:16.5px; margin:4px 0 8px"><b>Dynamic shared access</b> &times; <b>Affordable coverage-first licensing</b></div>
+        <div class="quote">“They compete for the same policy and monitoring resources, and [the] dynamic-sharing architecture can make affordable, predictable coverage licences harder to administer and defend.”
+          <span class="who">— Regulatory Compliance Analyst</span></div>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:20px">Like a Sudoku: every cell must fit all the others. The panel scored all <b>182</b> driver pairs — <b>29&thinsp;%</b> of couplings came out negative, inside the 20–30&thinsp;% band reported for real cross-impact systems (Weimer-Jehle 2006).</div>
+    <div class="funnel" style="margin-top:26px">
+      <div class="fstep"><b class="num">268,435,456</b><span>conceivable settings</span></div>
+      <div class="arrow">→</div>
+      <div class="fstep"><b class="num">2,000</b><span>Monte-Carlo runs<br>against the CIB rules</span></div>
+      <div class="arrow">→</div>
+      <div class="fstep"><b class="num">510</b><span>internally consistent<br>settings (fixed points)</span></div>
+      <div class="arrow">→</div>
+      <div class="fstep"><b class="num">120</b><span>scenarios covering<br>the whole field</span></div>
+    </div>
+  </div>
+  <div class="foot"><span>DiLab × R&amp;S — Technology Foresight</span><span>4</span></div>
+  <aside class="notes">„Ob zwei Reglerpositionen zusammenpassen, bewertet ein Panel aus fünf Experten-Personas — automatisch aus dem Domänenprofil abgeleitet; bei einem anderen Korpus wären es andere. Hier zwei echte Urteile aus unserem System. 29 Prozent der Kopplungen sind negativ — genau im Band der Literatur. Ein Szenario ist wie ein fertig gelöstes Sudoku. Monte-Carlo-Suche: 2.000 Läufe, 510 widerspruchsfreie Einstellungen, daraus 120 Szenarien, die das Feld abdecken." Zitate sind wörtlich (gekürzt) aus cib_state.json.</aside>
+</section>
+
+<!-- ============ 5 · EXAMPLE 3/3: WHERE DOES IT LAND ============ -->
+<section class="slide">
+  <div class="kicker">The example · step 3 of 3</div>
+  <h1>One slider, four positions — <span class="dim">where do the scenarios land?</span></h1>
+  <div class="body">
+    <div class="chips" style="margin-bottom:10px">
+      <span class="chip"><i style="background:var(--c1)"></i>State-Orchestrated Sharing Grid</span>
+      <span class="chip"><i style="background:var(--c2)"></i>Federated Edge Assurance</span>
+      <span class="chip"><i style="background:var(--c3)"></i>Certified Patchwork Oversight</span>
+      <span class="chip"><i style="background:var(--c4)"></i>Policing the Shared Frontier</span>
+      <span class="chip"><i style="background:var(--c5)"></i>Algorithmic Spectrum Commons</span>
+      <span class="chip"><i style="background:var(--cont)"></i>Continuum</span>
+    </div>
+    <div class="fig"><img src="assets/bars_slider_archetype.svg" alt="Counts of scenarios per slider position, stacked by archetype"></div>
+    <div class="takeaway">One driver <b>shifts</b> the world — it doesn’t determine it: 13 other sliders play along.<br>That is why the map shows <b>5 dense archetypes</b> <i>and</i> an honest <b>continuum</b>.</div>
+  </div>
+  <div class="foot"><span>DiLab × R&amp;S — Technology Foresight</span><span>5</span></div>
+  <aside class="notes">„Steht unser Regler auf ‚Observatorien', landen Szenarien meist im State-Orchestrated Sharing Grid. Auf ‚Hot-spot-Policing': in der Enforcement-Welt. Aber auf ‚Nationale Inseln' landet fast die Hälfte im grauen Kontinuum — kein klares Muster, weil 13 andere Regler mitspielen. Ein Regler verschiebt die Wahrscheinlichkeit, er determiniert nicht. Und dass das System das Kontinuum NICHT in Cluster presst — dazu gleich mehr." → Überleitung Rigor.</aside>
+</section>
+
+<!-- ============ 5b · ALT: THE EXAMPLE ON ONE SLIDE ============ -->
+<section class="slide">
+  <div class="kicker">Alt · the example on one slide — use instead of steps 1–3 if time is tight</div>
+  <h1>One driver’s journey <span class="dim">— from paragraph to future</span></h1>
+  <div class="body">
+    <div class="flow" style="align-items:stretch">
+      <div class="block">
+        <h3>A real source</h3>
+        <p style="margin-top:6px">OECD <i>The Road to 5G</i>, ITU <i>Spectrum Monitoring Handbook</i>, arXiv …</p>
+        <p style="margin-top:8px; color:var(--muted)">69 sources · 3,905 chunks</p>
+      </div>
+      <div class="arrow">&rarr;</div>
+      <div class="block" style="flex:1.35">
+        <h3>… becomes a driver</h3>
+        <p style="margin-top:6px"><b style="color:var(--ink)">Dynamic, shared spectrum access</b> — a slider with 4 positions:</p>
+        <div style="position:relative; height:3px; background:var(--base); border-radius:2px; margin:12px 4px 8px">
+          <div class="stop on" style="position:absolute; top:-6px; left:2%; width:13px; height:13px; border-radius:50%; background:var(--accent); border:3px solid var(--accent)"></div>
+          <div class="stop" style="position:absolute; top:-6px; left:33%; width:13px; height:13px; border-radius:50%; background:var(--surface); border:3px solid var(--sec)"></div>
+          <div class="stop" style="position:absolute; top:-6px; left:64%; width:13px; height:13px; border-radius:50%; background:var(--surface); border:3px solid var(--sec)"></div>
+          <div class="stop" style="position:absolute; top:-6px; left:95%; width:13px; height:13px; border-radius:50%; background:var(--surface); border:3px solid var(--sec)"></div>
+        </div>
+        <p style="font-size:12.5px; line-height:1.45">observatories · automated enforcement · national islands · hot-spot policing</p>
+        <p style="margin-top:8px; color:var(--muted)">grounded in 416 passages</p>
+      </div>
+      <div class="arrow">&rarr;</div>
+      <div class="block" style="flex:1.25">
+        <h3>… is checked against every other driver</h3>
+        <p style="margin-top:8px"><span class="score pos" style="font-size:17px">+2</span>&ensp;international dynamic governance</p>
+        <p style="margin-top:4px"><span class="score neg" style="font-size:17px">&minus;1</span>&ensp;affordable coverage-first licensing</p>
+        <p style="margin-top:8px; color:var(--muted)">5-persona panel · 182 pairs · 29&thinsp;% negative</p>
+      </div>
+      <div class="arrow">&rarr;</div>
+      <div class="block" style="flex:1.25">
+        <h3>… and lands in a named future</h3>
+        <p style="margin-top:8px"><i style="display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--c1);margin-right:6px"></i>observatories → Sharing Grid</p>
+        <p style="margin-top:4px"><i style="display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--c4);margin-right:6px"></i>hot-spot → Shared Frontier</p>
+        <p style="margin-top:4px"><i style="display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--cont);margin-right:6px"></i>islands → mostly continuum</p>
+      </div>
+    </div>
+    <div class="numchain" style="margin-top:34px">
+      <div><b class="num">268,435,456</b> <span>conceivable settings</span></div><div class="sep">→</div>
+      <div><b class="num">510</b> <span>consistent (2,000 MC runs)</span></div><div class="sep">→</div>
+      <div><b class="num">120</b> <span>scenarios</span></div><div class="sep">→</div>
+      <div><b class="num">5</b> <span>archetypes + continuum</span></div>
+    </div>
+    <div class="takeaway">One slider <b>shifts</b> the world — 13 others play along. And every step traces back to the paragraph it came from.</div>
+  </div>
+  <div class="foot"><span>DiLab × R&amp;S — Technology Foresight</span><span>5b</span></div>
+  <aside class="notes">Kompaktversion, falls die 3er-Sequenz zu lang ist: dieselbe Geschichte in einem Bild. Von links nach rechts erzählen, ~90 Sekunden. Die vier Stationen: echtes Dokument → Regler mit 4 Positionen → Panel-Check (echte Urteile) → benannte Zukunft. Zahlenkette einmal vorlesen, Takeaway als Abschluss.</aside>
+</section>
+
+<!-- ============ 6 · METHOD INTERPLAY ============ -->
+<section class="slide">
+  <div class="kicker">Why this chain of methods</div>
+  <h1>Every method has exactly one job</h1>
+  <div class="body">
+    <table>
+      <tr><th>Method</th><th>Its job</th><th>Without it</th></tr>
+      <tr><td><b>Morphological box</b> <span style="color:var(--muted)">(Zwicky 1969)</span></td><td>opens the space — what is conceivable</td><td>only the obvious scenarios</td></tr>
+      <tr><td><b>Cross-impact panel</b> <span style="color:var(--muted)">(Weimer-Jehle 2006)</span></td><td>closes it — what is consistent</td><td>268 M arbitrary combinations</td></tr>
+      <tr><td><b>Monte-Carlo + fixed points</b></td><td>searches it — every region, not corners</td><td>hand-picked futures</td></tr>
+      <tr><td><b>HDBSCAN on ordinal encoding</b></td><td>condenses honestly — may say “no cluster”</td><td>forced clusters</td></tr>
+      <tr><td><b>AHP + TOPSIS</b> <span style="color:var(--muted)">(Saaty; Hwang/Yoon)</span></td><td>ranks transparently</td><td>gut feeling</td></tr>
+      <tr class="rule"><td><b>Null-model referee</b></td><td>audits every step against random fields</td><td>unverifiable structure claims</td></tr>
+    </table>
+    <div class="takeaway">None of these methods is new. New is that every <b>hand-over between them is machine-executed and traceable</b> — from archetype back to source paragraph.</div>
+  </div>
+  <div class="foot"><span>DiLab × R&amp;S — Technology Foresight</span><span>6</span></div>
+  <aside class="notes">Zeile für Zeile, je ein Satz. Die Literaturanker nebenbei nennen (zeigt Fundament, kostet nichts). Letzte Zeile betonen: der Referee ist der Übergang zur nächsten Folie.</aside>
+</section>
+
+<!-- ============ 7 · RIGOR ============ -->
+<section class="slide">
+  <div class="kicker">Rigor</div>
+  <h1>Test the metal detector <span class="dim">before searching the beach</span></h1>
+  <div class="body">
+    <table style="font-size:20px">
+      <tr><th>Field fed to the engine</th><th>Silhouette</th><th>z-score</th><th>Engine’s verdict</th></tr>
+      <tr><td>Synthetic, <b>coupled</b> — a buried coin</td><td class="num"><b>0.72</b></td><td class="num">+8.6</td><td><span class="pill ok">beeps — usable structure</span></td></tr>
+      <tr><td>Synthetic, <b>uncoupled</b> — empty sand</td><td class="num">0.22</td><td class="num">&minus;0.7</td><td><span class="pill no">silent — ≈ random</span></td></tr>
+      <tr class="rule"><td><b>Real spectrum field</b> (120 scenarios)</td><td class="num">0.07</td><td class="num">+1.4</td><td><span class="pill no">silent — ≈ random</span></td></tr>
+    </table>
+    <div class="foot-note">z-score = how many standard deviations the structure sits above uniform-random fields of the same shape (20 draws). Same engine, same test — only the input differs.</div>
+    <div class="takeaway"><b>The engine does not hallucinate clusters.</b> The flat first reading of the real field was an honest measurement of the input — not a defect of the tool.</div>
+  </div>
+  <div class="foot"><span>DiLab × R&amp;S — Technology Foresight</span><span>7</span></div>
+  <aside class="notes">Metalldetektor: „Er muss auf einer Münze piepen und auf leerem Sand schweigen — genau das haben wir mit der Engine gemacht." z-Score: Abstand in Standardabweichungen über zufällig gewürfelten Vergleichsfeldern gleicher Form. Credit: Null-Modell-Test von Aditya. Wenn Frage kommt: synthetische Matrix = 8 Treiber, zwei antagonistische Blöcke.</aside>
+</section>
+
+<!-- ============ 8 · IMPROVEMENT ============ -->
+<section class="slide">
+  <div class="kicker">Making the result better — without touching the result</div>
+  <h1>Fix the inputs, prove each fix with a number</h1>
+  <div class="body">
+    <table style="font-size:19px">
+      <tr><th>Lever</th><th>Before</th><th>After</th></tr>
+      <tr><td><b>Dissent-preserving panel aggregation</b><br><span style="color:var(--sec); font-size:16px">LLMs are relentlessly positive — the median washed out every trade-off</span></td>
+          <td class="num">~2&thinsp;% negative couplings</td><td class="num"><b>29&thinsp;%</b> — inside the 20–30&thinsp;% literature band</td></tr>
+      <tr><td><b>Dimension-bucketed trend extraction + merge guard</b><br><span style="color:var(--sec); font-size:16px">the field had collapsed to a single driving axis</span></td>
+          <td class="num">1 driving axis, 1 dimension</td><td class="num"><b>17 axes</b> across 4 dimensions</td></tr>
+      <tr><td><b>Targeted corpus enrichment</b><br><span style="color:var(--sec); font-size:16px">market / geopolitics / tech sources added</span></td>
+          <td class="num">2,875 chunks · z = 1.4</td><td class="num">3,905 chunks · <b>z = 3.55</b> — significantly above random</td></tr>
+    </table>
+    <div class="callout" style="margin-top:18px">We also tested a <b>contrastive elicitation prompt</b>. It failed — overshooting to 71&thinsp;% negative — <b>and we report that</b>. De-biasing lives in the aggregation, not in prompt wording.</div>
+  </div>
+  <div class="foot"><span>DiLab × R&amp;S — Technology Foresight</span><span>8</span></div>
+  <aside class="notes">Kernsatz: „Wir haben nie am Ergebnis gedreht — nur an den Eingaben, und jeden Fix am Zufalls-Referee gemessen." CIB-Fix: Christian. Wichtig: Das Negativergebnis AKTIV bringen — gelebter Rigor. Ehrlich bleiben: die Silhouette blieb trotzdem flach (~0.07) — Überleitung: „also war die Frage nicht, wie wir Cluster erzwingen, sondern welche Brille die Struktur liest, die da ist."</aside>
+</section>
+
+<!-- ============ 9 · RESULT: HYBRID ============ -->
+<section class="slide">
+  <div class="kicker">The finding</div>
+  <h1>The field is a hybrid: <span class="dim">five archetypes inside a continuum</span></h1>
+  <div class="body">
+    <div class="fig"><img src="assets/space_two_lenses.svg" alt="The same 120 scenarios under two lenses: one cloud vs five dense archetypes plus continuum halo"></div>
+    <div class="foot-note" style="text-align:center; font-size:14px; white-space:nowrap">
+      Lens chain, same 120 scenarios: one-hot·k-means <b class="num">0.07</b> → ordinal·k-means <b class="num">0.17</b> → one-hot·HDBSCAN <b class="num">0.34</b> <span style="color:var(--muted)">(50&thinsp;% noise)</span> → <b>ordinal·HDBSCAN <span class="num">0.38</span></b> <span style="color:var(--muted)">(33&thinsp;% continuum)</span>
+    </div>
+    <div class="takeaway" style="font-size:18px">⚠ 0.07 measures <b>all</b> 120 points; 0.38 only the <b>dense core</b> — different measurements, not an “improvement”. A third of the field honestly remains a continuum.</div>
+  </div>
+  <div class="foot"><span>DiLab × R&amp;S — Technology Foresight</span><span>9</span></div>
+  <aside class="notes">„Die Standard-Brille — links — presst alles in eine Wolke. Die Dichte-Brille auf der ordinalen Kodierung — rechts — findet fünf dichte Kerne und lässt ein Drittel ehrlich grau." Die fünf Namen nennen (Chips auf Backup-Folie): State-Orchestrated Sharing Grid, Federated Edge Assurance, Certified Patchwork Oversight, Policing the Shared Frontier, Algorithmic Spectrum Commons. Roter Faden aller fünf: von hardware- zu software-/KI-definiertem Monitoring. Die Fußnoten-Warnung LAUT vorlesen — das ist der Glaubwürdigkeitsmoment.</aside>
+</section>
+
+<!-- ============ 10 · ONE FRAMEWORK ============ -->
+<section class="slide">
+  <div class="kicker">Bringing it together — where the deep dives dock in</div>
+  <h1>One framework, interchangeable knowledge base</h1>
+  <div class="body">
+    <div class="flow">
+      <div class="block"><h3>Knowledge base</h3><p>docking + arXiv auto-enrichment</p><div class="who">Aditya</div></div>
+      <div class="arrow">&rarr;</div>
+      <div class="block"><h3>Drivers</h3><p>BOM + bucketed trend scan</p><div class="who">Paul</div></div>
+      <div class="arrow">&rarr;</div>
+      <div class="block"><h3>Possibility space</h3><p>morphological box</p><div class="who">Paul</div></div>
+      <div class="arrow">&rarr;</div>
+      <div class="block"><h3>Consistency</h3><p>de-biased CIB panel</p><div class="who">Christian</div></div>
+      <div class="arrow">&rarr;</div>
+      <div class="block"><h3>Structure</h3><p>archetypes + referee tests</p><div class="who">Paul · Aditya</div></div>
+      <div class="arrow">&rarr;</div>
+      <div class="block"><h3>Evaluation &amp; UI</h3><p>grounded auditor → MCDA · dashboard</p><div class="who">Lovepreet · Adam</div></div>
+    </div>
+    <div class="callout" style="margin-top:24px">Proof, not promise: we docked an unrelated <b>agriculture corpus</b> — coherent analysis, <b>zero code changes</b>, same honest structure verdict. The dashboard switches between both knowledge bases live.</div>
+    <div class="takeaway">Spectrum monitoring was only our <b>test case</b>. The deliverable is the reusable engine.</div>
+  </div>
+  <div class="foot"><span>DiLab × R&amp;S — Technology Foresight</span><span>10</span></div>
+  <aside class="notes">Der Rettungs-Slide: jeder Deep-Dive der anderen bekommt hier seinen Kasten — Reihenfolge/Namen an die tatsächliche Redner-Reihenfolge anpassen! Agrar-Beweis: 300 Chunks, eigene Collection, im Dashboard umschaltbar. Schlusssatz exakt so bringen — das ist Andrews Kernanforderung.</aside>
+</section>
+
+<!-- ============ 11 · CLOSING ============ -->
+<section class="slide">
+  <div class="kicker">Closing</div>
+  <h1 style="max-width:1050px">An engine that would rather say “random” <span class="dim">than invent clusters.</span></h1>
+  <div class="body">
+    <table style="font-size:20px; max-width:1080px">
+      <tr><td style="width:34%"><b>What the five worlds share</b></td><td>a shift from hardware-defined to software- and AI-defined monitoring — invest where it pays off in every world</td></tr>
+      <tr><td><b>What we say out loud</b></td><td>a third of the field remains a continuum; figures are ranges, not decimals</td></tr>
+      <tr><td><b>What comes next</b></td><td>R&amp;S local-inference endpoints · human-in-the-loop CIB validation · evaluation score anchoring</td></tr>
+    </table>
+    <div class="takeaway">Thank you. &ensp;<span style="color:var(--muted)">Live dashboard &amp; repository available — every number on these slides traces back to a source passage.</span></div>
+  </div>
+  <div class="foot"><span>DiLab × R&amp;S — Technology Foresight</span><span>11</span></div>
+  <aside class="notes">Kurz halten. Der erste Satz der Folie ist der Schlusssatz — danach nur noch danke. Bei Zeitdruck: Tabelle überspringen, nur den Satz + Ausblick.</aside>
+</section>
+
+<!-- ============ BACKUPS ============ -->
+<section class="slide">
+  <div class="kicker">Backup · structure</div>
+  <h1>Five lenses on the same field</h1>
+  <div class="body">
+    <div class="fig"><img src="assets/silhouette_by_lens.svg" alt="Silhouette per lens with 0.25 usable floor and 0.72 synthetic control"></div>
+  </div>
+  <div class="foot"><span>Backup</span><span>B1</span></div>
+  <aside class="notes">Falls jemand die Linsen hinterfragt: 0.25-Floor + 0.72-Positivkontrolle sind markiert. Gleiche Engine, gleiche Daten — nur die Kodierung/Methode variiert.</aside>
+</section>
+
+<section class="slide">
+  <div class="kicker">Backup · archetypes</div>
+  <h1>Archetype signatures <span class="dim">— which slider positions define each world</span></h1>
+  <div class="body">
+    <div class="chips" style="margin-bottom:10px">
+      <span class="chip"><i style="background:var(--c1)"></i>State-Orchestrated Sharing Grid (20)</span>
+      <span class="chip"><i style="background:var(--c2)"></i>Federated Edge Assurance (20)</span>
+      <span class="chip"><i style="background:var(--c3)"></i>Certified Patchwork Oversight (15)</span>
+      <span class="chip"><i style="background:var(--c4)"></i>Policing the Shared Frontier (13)</span>
+      <span class="chip"><i style="background:var(--c5)"></i>Algorithmic Spectrum Commons (12)</span>
+    </div>
+    <div class="fig"><img src="assets/archetype_signatures.svg" alt="Archetype by driver mean-stance heatmap"></div>
+  </div>
+  <div class="foot"><span>Backup</span><span>B2</span></div>
+  <aside class="notes">Heatmap: mittlere Reglerstellung je Archetyp und Treiber. 40 von 120 Szenarien = Kontinuum (nicht abgebildet).</aside>
+</section>
+
+<section class="slide">
+  <div class="kicker">Backup · CIB mechanics</div>
+  <h1>Why aggregation, not prompt wording</h1>
+  <div class="body">
+    <table style="font-size:19px">
+      <tr><th>Approach</th><th>Negative share</th><th>Verdict</th></tr>
+      <tr><td>Absolute prompt, median aggregation</td><td class="num">~2&thinsp;%</td><td>positivity bias — trade-offs washed out</td></tr>
+      <tr><td>Contrastive (“tension-primed”) prompt</td><td class="num">71&thinsp;%</td><td><b>failed</b> — overshoots into fake pessimism</td></tr>
+      <tr class="rule"><td><b>Dissent-preserving aggregation</b> — a strong minority trade-off (≤ &minus;2) survives the median</td><td class="num"><b>29&thinsp;%</b></td><td>inside Weimer-Jehle’s 20–30&thinsp;% band</td></tr>
+    </table>
+    <div class="takeaway">Both levers were tested against the null-model referee; the failed one is documented in the sprint report.</div>
+  </div>
+  <div class="foot"><span>Backup</span><span>B3</span></div>
+  <aside class="notes">Sharma et al. 2023 (Sycophancy) als Beleg für den Bias. 182 Paare × 5 Personas × 2 Delphi-Runden.</aside>
+</section>
+
+<section class="slide">
+  <div class="kicker">Backup · the canonical numbers</div>
+  <h1>One consistent number set <span class="dim">(final run, 8 July)</span></h1>
+  <div class="body">
+    <table style="font-size:18.5px">
+      <tr><td>Knowledge base</td><td class="num">69 sources · 2,875 → <b>3,905</b> chunks (enriched) · agriculture KB: 300 chunks</td></tr>
+      <tr><td>Drivers</td><td class="num">41 unified → <b>14</b> selected (all driving) · driving axes 1 → <b>17</b> in 4 dimensions</td></tr>
+      <tr><td>Cross-impact</td><td class="num"><b>182</b> pairs · 5 corpus-derived personas · 2 Delphi rounds · <b>29.1&thinsp;%</b> negative</td></tr>
+      <tr><td>Consistency</td><td class="num">2,000 MC runs → <b>510</b> fixed points → <b>120</b> field scenarios</td></tr>
+      <tr><td>Structure</td><td class="num">lenses 0.07 / 0.17 / 0.34 / <b>0.38</b> · <b>5</b> archetypes · <b>33&thinsp;%</b> continuum · floor 0.25</td></tr>
+      <tr><td>Engine validation</td><td class="num">coupled <b>0.72</b> (z 8.6) · uncoupled 0.22 (z &minus;0.7) · real 0.07 (z 1.4) · enrichment z 1.4 → <b>3.55</b></td></tr>
+      <tr class="rule"><td>Delivery</td><td class="num">one command (run_full.py, 14 stages, ~30 min) · 176 tests green · CI · dashboard</td></tr>
+    </table>
+  </div>
+  <div class="foot"><span>Backup</span><span>B4</span></div>
+  <aside class="notes">Bei jeder Zahlenfrage hierher springen. Alle Werte am 11.07. gegen die finalen Artefakte verifiziert.</aside>
+</section>
+
+</div>
+
+<div id="hud">1 / 15</div>
+<div id="notesbar"><span class="tag">Speaker notes (N)</span><span id="notestext"></span></div>
+
+<script>
+  const slides=[...document.querySelectorAll('.slide')];
+  const hud=document.getElementById('hud');
+  const bar=document.getElementById('notesbar');
+  const ntext=document.getElementById('notestext');
+  let i=Math.min(Math.max((parseInt(location.hash.slice(1))||1)-1,0),slides.length-1);
+  let notes=false;
+  function show(){
+    slides.forEach((s,k)=>s.classList.toggle('active',k===i));
+    hud.textContent=(i+1)+' / '+slides.length;
+    location.hash=i+1;
+    const n=slides[i].querySelector('.notes');
+    ntext.textContent=n?n.textContent:'—';
+  }
+  function fit(){
+    const s=Math.min(innerWidth/1320,(innerHeight-(notes?innerHeight*.3:0))/760);
+    slides.forEach(el=>{el.style.transform=`scale(${s})`; el.style.transformOrigin='center';
+      if(notes) el.style.translate=`0 ${-innerHeight*.14}px`; else el.style.translate='0 0';});
+  }
+  addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){i=Math.min(i+1,slides.length-1);show();}
+    if(e.key==='ArrowLeft'||e.key==='PageUp'){i=Math.max(i-1,0);show();}
+    if(e.key==='Home'){i=0;show();}
+    if(e.key.toLowerCase()==='n'){notes=!notes;bar.style.display=notes?'block':'none';fit();}
+  });
+  addEventListener('resize',fit);
+  show();fit();
+</script>
+</body>
+</html>

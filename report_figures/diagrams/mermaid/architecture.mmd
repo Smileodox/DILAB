@@ -1,0 +1,93 @@
+flowchart TB
+  %% Technology Foresight Engine - System Architecture (numbers as of final run)
+
+  subgraph L1["1 - Knowledge base & ingestion"]
+    direction TB
+    SRC["Curated corpus<br/>~70 documents<br/>ITU RSPG WRC ECC FCC R&S"]
+    KBPY["kb.py<br/>PDF to chunks, embed"]
+    ARX["arxiv_ingest.py<br/>corpus expander"]
+    CHROMA[("ChromaDB - data/.chroma<br/>3,905 chunks<br/>pools: product / trend")]
+    SRC --> KBPY --> CHROMA
+    ARX --> CHROMA
+  end
+
+  subgraph L3["3 - Driver discovery"]
+    direction TB
+    BOM["bom.py<br/>static product BOM"]
+    TR["trends.py<br/>KB coverage-gap scan"]
+    MG["merge.py<br/>dedup + dimension guard"]
+    MGO["18 unified to 14 selected factors"]
+    BOM --> MG
+    TR --> MG
+    MG --> MGO
+  end
+
+  subgraph L4["4 - Morphological setup"]
+    direction TB
+    MAN["manifestations<br/>4 states x 14 = 56"]
+    CIBM["cib.py<br/>5-persona Delphi, 182 pairs"]
+    MAN --> CIBM
+  end
+
+  subgraph L5["5 - Scenario methods (parallel)"]
+    direction TB
+    FP["CIB fixed-point<br/>morphological.py"]
+    CB["Combinatorial soft-CIB<br/>combinatorial.py to 120 scenarios"]
+    ZW["Functional / Zwicky + CCA<br/>functional.py"]
+  end
+
+  subgraph L6["6 - Structure & analysis"]
+    direction TB
+    ARCH["archetypes.py<br/>HDBSCAN + ordinal to 5 archetypes"]
+    STR["structure.py<br/>null-model test"]
+    PROJ["projection.py / landscape.py<br/>PCA / UMAP"]
+    TMP["temporal.py DVI / collinearity.py"]
+  end
+
+  subgraph L7["7 - Decision"]
+    direction TB
+    EVAL["evaluation.py<br/>grounded auditor to AHP + TOPSIS"]
+    STRAT["strategic_framing.py"]
+    EVAL --> STRAT
+  end
+
+  subgraph L8["8 - Presentation"]
+    direction TB
+    API["web/app.py FastAPI<br/>read-only over JSON"]
+    UI["React dashboard<br/>/present + /live"]
+    API --> UI
+  end
+
+  %% main flow
+  CHROMA --> TR
+  MGO --> MAN
+  CIBM --> FP
+  CIBM --> CB
+  CIBM --> ZW
+  CB --> ARCH
+  CB --> STR
+  CB --> PROJ
+  ARCH --> EVAL
+  PROJ --> EVAL
+  EVAL --> API
+  STRAT --> API
+
+  %% cross-cutting infrastructure
+  DOMPY["domain.py to DomainProfile<br/>injected into every prompt"]
+  LLM["src/llm.py<br/>Azure OpenAI pool"]
+  RAG["src/rag.py<br/>Chroma retrieval"]
+  DOMPY -.-> MG
+  DOMPY -.-> MAN
+  DOMPY -.-> CB
+  LLM -.-> KBPY
+  LLM -.-> CIBM
+  LLM -.-> CB
+  LLM -.-> EVAL
+  RAG -.-> CIBM
+  RAG -.-> CB
+  RAG -.-> EVAL
+
+  classDef infra fill:#eef2ff,stroke:#6366f1,color:#1e1b4b;
+  classDef store fill:#ecfeff,stroke:#0891b2,color:#083344;
+  class DOMPY,LLM,RAG infra
+  class CHROMA store

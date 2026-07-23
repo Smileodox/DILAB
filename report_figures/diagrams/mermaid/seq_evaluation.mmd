@@ -1,0 +1,16 @@
+sequenceDiagram
+  autonumber
+  participant E as evaluation.run
+  participant R as rag.retrieve
+  participant L as Azure LLM auditor
+  participant M as MCDA
+
+  loop per scenario
+    E->>R: retrieve evidence chunks
+    E->>L: extract facts, THEN score 5 criteria
+    Note over L: fact-first order counters positivity bias
+    L-->>E: Assessment + source_chunk_ids
+  end
+  E->>M: compute_ahp_weights (Saaty consistency ratio)
+  E->>M: compute_topsis - rank scenarios
+  M-->>E: final_analysis.json + traceability report

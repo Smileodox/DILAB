@@ -1,0 +1,20 @@
+sequenceDiagram
+  autonumber
+  participant KB as Knowledge base
+  participant DR as One driver
+  participant MB as Morphological box
+  participant CIB as CIB panel
+  participant FLD as Scenario field
+  participant AR as Archetypes
+
+  Note over KB: ~70 sources, 3,905 chunks
+  KB->>DR: extract + ground (keeps source_chunk_ids)
+  Note over DR: 1 of 14 selected factors
+  DR->>MB: 4 manifestations (optimistic to pessimistic)
+  MB->>CIB: how does this factor couple to the others?
+  Note over CIB: 5 personas, dissent preserved
+  CIB-->>MB: 182 pairwise scores (-3 to +3)
+  MB->>FLD: sample 4^14 = 268,435,456, keep 120 consistent
+  FLD->>AR: HDBSCAN on ordinal encoding
+  AR-->>AR: 5 named archetypes + ~40 continuum
+  Note over KB,AR: every step traces back to source chunks

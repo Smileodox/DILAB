@@ -1,0 +1,69 @@
+flowchart LR
+  %% Artifact / data-flow chain - every stage reads/writes JSON in data/outputs/
+
+  KB["kb_state.json"]
+  BOMs["bom_state.json<br/>(static)"]
+  TRs["trend_state.json"]
+  MRG["merge_state.json"]
+  MB["morphbox_state.json"]
+  CIBs["cib_state.json"]
+  CON["consistency_state.json"]
+  SC["scenario_state.json"]
+  LND["landscape_state.json"]
+  FA["final_analysis.json"]
+  TMP["temporal_state.json"]
+  SF["strategic_framing.json"]
+
+  KB --> TRs
+  BOMs --> MRG
+  TRs --> MRG
+  MRG --> MB
+  MB --> CIBs
+  MB --> CON
+  CIBs --> CON
+  CON --> SC
+  SC --> LND
+  SC --> FA
+  FA --> TMP
+  FA --> SF
+
+  subgraph COMBI["Combinatorial branch (_combi)"]
+    direction LR
+    CBs["combinatorial_state.json"]
+    SCc["scenario_state_combi.json"]
+    REP["..._combi_representatives.json"]
+    LNDc["landscape_state_combi.json"]
+    FAc["final_analysis_combi.json"]
+    ARCH["archetypes_state.json"]
+    CBs --> SCc
+    SCc --> REP
+    SCc --> LNDc
+    REP --> FAc
+    LNDc --> ARCH
+  end
+
+  MB --> CBs
+  CIBs --> CBs
+
+  subgraph ZW["Zwicky branch (_zwicky)"]
+    direction LR
+    MBz["morphbox_zwicky_state.json"]
+    CCA["cca_state.json"]
+    SCz["scenario_state_zwicky.json"]
+    FAz["final_analysis_zwicky.json"]
+    MBz --> CCA
+    CCA --> SCz
+    SCz --> FAz
+  end
+
+  API(["web/app.py reads all artifacts (read-only)"])
+  FA --> API
+  FAc --> API
+  ARCH --> API
+  SF --> API
+  FAz --> API
+
+  classDef combi fill:#fff7ed,stroke:#ea580c,color:#7c2d12;
+  classDef zw fill:#f0fdf4,stroke:#16a34a,color:#14532d;
+  class CBs,SCc,REP,LNDc,FAc,ARCH combi
+  class MBz,CCA,SCz,FAz zw
