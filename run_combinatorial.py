@@ -183,6 +183,8 @@ def run(
         print(f"  projection: {proj['structure']['verdict']} "
               f"(PC1 {proj['axes']['pc1']['share']:.0%}, silhouette {proj['structure']['best_silhouette']})")
     except Exception as e:  # noqa: BLE001
+        import traceback
+        traceback.print_exc()
         print(f"  projection failed ({e}); landscape written without PCA axes.")
 
     with open(landscape_path, "w") as f:
